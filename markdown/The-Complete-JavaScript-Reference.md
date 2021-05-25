@@ -106,11 +106,9 @@ The **string** data type is a primitive data type that used to represent textual
 - <span id="f8ad">If your string contains quotation marks inside, can layer single or double quotation marks to allow it to work.  
    “That’s a great string”; (valid)
 
-    
-   ‘Shakespeare wrote, “To be or not to be”’; (valid)
+  ‘Shakespeare wrote, “To be or not to be”’; (valid)
 
-    
-   ‘That’s a bad string’; (invalid)</span>
+  ‘That’s a bad string’; (invalid)</span>
 
 - <span id="b2cb">Alt. way to add other quotes within strings is to use template literals.  
    \ `This is a temp’l’ate literal ${function}\` // use ${} to invoke functions within.</span>
