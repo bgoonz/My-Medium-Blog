@@ -5,70 +5,16 @@
     <title>
       An Introduction to Markdown (Bonus Markdown Templates Included)
     </title>
-    <style>
-      * {
-        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-      }
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-      }
-      h1 {
-        font-size: 50px;
-        margin-bottom: 17px;
-        color: #333;
-      }
-      h2 {
-        font-size: 24px;
-        line-height: 1.6;
-        margin: 30px 0 0 0;
-        margin-bottom: 18px;
-        margin-top: 33px;
-        color: #333;
-      }
-      h3 {
-        font-size: 30px;
-        margin: 10px 0 20px 0;
-        color: #333;
-      }
-      header {
-        width: 640px;
-        margin: auto;
-      }
-      section {
-        width: 640px;
-        margin: auto;
-      }
-      section p {
-        margin-bottom: 27px;
-        font-size: 20px;
-        line-height: 1.6;
-        color: #333;
-      }
-      section img {
-        max-width: 640px;
-      }
-      footer {
-        padding: 0 20px;
-        margin: 50px 0;
-        text-align: center;
-        font-size: 12px;
-      }
-      .aspectRatioPlaceholder {
-        max-width: auto !important;
-        max-height: auto !important;
-      }
-      .aspectRatioPlaceholder-fill {
-        padding-bottom: 0 !important;
-      }
-      header,
-      section[data-field="subtitle"],
-      section[data-field="description"] {
-        display: none;
-      }
-    </style>
-  </head>
+    <link rel="stylesheet" href="./medium.css">
+  <!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js" integrity="sha512-YBk7HhgDZvBxmtOfUdvX0z8IH2d10Hp3aEygaMNhtF8fSOvBZ16D/1bXZTJV6ndk/L/DlXxYStP8jrF77v2MIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-dark.min.css" integrity="sha512-Njdz7T/p6Ud1FiTMqH87bzDxaZBsVNebOWmacBjMdgWyeIhUSFU4V52oGwo3sT+ud+lyIE98sS291/zxBfozKw==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
   <body>
     <article class="h-entry">
       <header>
@@ -188,7 +134,7 @@ markdown</pre
                 name="dcf8"
                 id="dcf8"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code u-paddingRight0 u-marginRight0">This text <strong class="markup--strong markup--pre-strong">**is bold**</strong>. <br>This text <em class="markup--em markup--pre-em">*is italic*</em>.</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code u-paddingRight0 u-marginRight0">This text <strong class="markup--strong markup--pre-strong">**is bold**</strong>. <br>This text <em class="markup--em markup--pre-em">*is italic*</em>.</code></pre>
               <p name="f05b" id="f05b" class="graf graf--p graf-after--pre">
                 This text is bold.<br />This text
                 <em class="markup--em markup--p-em">is italic</em>.
@@ -203,7 +149,7 @@ markdown</pre
                 name="1b13"
                 id="1b13"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code"># Header 1<br>## Header 2<br>### Header 3<br>#### Header 4<br>##### Header 5<br>###### Header 6</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code"># Header 1<br>## Header 2<br>### Header 3<br>#### Header 4<br>##### Header 5<br>###### Header 6</code></pre>
               <h3 name="7ae2" id="7ae2" class="graf graf--h3 graf-after--pre">
                 Header 1
               </h3>
@@ -235,17 +181,17 @@ markdown</pre
                 name="54d6"
                 id="54d6"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code">This line has a paragraph break at the end (empty line after).</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">This line has a paragraph break at the end (empty line after).</code></pre>
               <pre
                 name="0550"
                 id="0550"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code">Theses two lines should display as a single<br>line because there&#39;s no double space at the end.</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">Theses two lines should display as a single<br>line because there&#39;s no double space at the end.</code></pre>
               <pre
                 name="1948"
                 id="1948"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code">The following line has a soft break at the end (two spaces at end)  <br>This line should be following on the very next line.</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">The following line has a soft break at the end (two spaces at end)  <br>This line should be following on the very next line.</code></pre>
               <p name="41e5" id="41e5" class="graf graf--p graf-after--pre">
                 This line has a paragraph break at the end (empty line after).
               </p>
@@ -267,7 +213,7 @@ markdown</pre
                 name="388a"
                 id="388a"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code">[Help Builder Web Site](http://helpbuilder.west-wind.com/)</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">[Help Builder Web Site](http://helpbuilder.west-wind.com/)</code></pre>
               <p name="b20f" id="b20f" class="graf graf--p graf-after--pre">
                 <a
                   href="http://helpbuilder.west-wind.com/"
@@ -289,7 +235,7 @@ markdown</pre
                 name="5aa8"
                 id="5aa8"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code">Go the Help Builder sitest Wind site: &lt;a href=&quot;http://west-wind.com/&quot; target=&quot;_blank&quot;&gt;Help Builder Site&lt;/a&gt;.</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">Go the Help Builder sitest Wind site: &lt;a href=&quot;http://west-wind.com/&quot; target=&quot;_blank&quot;&gt;Help Builder Site&lt;/a&gt;.</code></pre>
               <h3 name="5a30" id="5a30" class="graf graf--h3 graf-after--pre">
                 Images
               </h3>
@@ -300,7 +246,7 @@ markdown</pre
                 name="0fb7"
                 id="0fb7"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code">![Help Builder Web Site](https://helpbuilder.west-wind.com/images/HelpBuilder_600.png)</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">![Help Builder Web Site](https://helpbuilder.west-wind.com/images/HelpBuilder_600.png)</code></pre>
               <figure
                 name="50bc"
                 id="50bc"
@@ -332,7 +278,7 @@ markdown</pre
                 name="a33c"
                 id="a33c"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code u-paddingRight0 u-marginRight0"><em class="markup--em markup--pre-em">&gt; ###  Headers break on their own</em><br><em class="markup--em markup--pre-em">&gt; Note that headers don&#39;t need line continuation characters </em><br>as they are block elements and automatically break. Only text<br>lines require the double spaces for single line breaks.</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code u-paddingRight0 u-marginRight0"><em class="markup--em markup--pre-em">&gt; ###  Headers break on their own</em><br><em class="markup--em markup--pre-em">&gt; Note that headers don&#39;t need line continuation characters </em><br>as they are block elements and automatically break. Only text<br>lines require the double spaces for single line breaks.</code></pre>
               <blockquote
                 name="7555"
                 id="7555"
@@ -371,7 +317,7 @@ markdown</pre
                   >FontAwesome</a
                 >
                 icons in its templates. You can embed a
-                <code class="markup--code markup--p-code">@ icon-</code>
+                <code lang="js" class="markup--code markup--p-code">@ icon-</code>
                 followed by a font-awesome icon name to automatically embed that
                 icon without full HTML syntax.
               </p>
@@ -382,7 +328,7 @@ markdown</pre
                 name="8415"
                 id="8415"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code">Gear:  Configuration</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">Gear:  Configuration</code></pre>
               <p name="a716" id="a716" class="graf graf--p graf-after--pre">
                 Configuration
               </p>
@@ -401,7 +347,7 @@ markdown</pre
                 name="ac01"
                 id="ac01"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code u-paddingRight0 u-marginRight0">This text can be <strong class="markup--strong markup--pre-strong">**embedded**</strong> into Markdown:  <br>&lt;i class=&quot;fa fa-refresh fa-spin fa-lg&quot;&gt;&lt;/i&gt; Refresh Page</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code u-paddingRight0 u-marginRight0">This text can be <strong class="markup--strong markup--pre-strong">**embedded**</strong> into Markdown:  <br>&lt;i class=&quot;fa fa-refresh fa-spin fa-lg&quot;&gt;&lt;/i&gt; Refresh Page</code></pre>
               <p name="0720" id="0720" class="graf graf--p graf-after--pre">
                 This text can be embedded into Markdown:<br /> Refresh Page
               </p>
@@ -415,12 +361,12 @@ markdown</pre
                 name="95f5"
                 id="95f5"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code">* Item 1<br>* Item 2<br>* Item 3<br>This text is part of the third item. Use two spaces at end of the the list item to break the line.</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">* Item 1<br>* Item 2<br>* Item 3<br>This text is part of the third item. Use two spaces at end of the the list item to break the line.</code></pre>
               <pre
                 name="20ae"
                 id="20ae"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code">A double line break, breaks out of the list.</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">A double line break, breaks out of the list.</code></pre>
               <ul class="postList">
                 <li name="7904" id="7904" class="graf graf--li graf-after--pre">
                   Item 1
@@ -446,12 +392,12 @@ markdown</pre
                 name="8948"
                 id="8948"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code u-paddingRight0 u-marginRight0">1. <strong class="markup--strong markup--pre-strong">**Item 1**</strong>  <br>Item 1 is really something<br>2. <strong class="markup--strong markup--pre-strong">**Item 2**</strong>  <br>Item two is really something else</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code u-paddingRight0 u-marginRight0">1. <strong class="markup--strong markup--pre-strong">**Item 1**</strong>  <br>Item 1 is really something<br>2. <strong class="markup--strong markup--pre-strong">**Item 2**</strong>  <br>Item two is really something else</code></pre>
               <pre
                 name="a0da"
                 id="a0da"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code">If you want lines to break using soft returns use two spaces at the end of a line.</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">If you want lines to break using soft returns use two spaces at the end of a line.</code></pre>
               <ol class="postList">
                 <li name="01d6" id="01d6" class="graf graf--li graf-after--pre">
                   Item 1 Item 1 is really something
@@ -479,10 +425,10 @@ markdown</pre
                 name="8855"
                 id="8855"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code">Structured statements like `for x =1 to 10` loop structures <br>can be codified using single back ticks.</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">Structured statements like `for x =1 to 10` loop structures <br>can be codified using single back ticks.</code></pre>
               <p name="0d1c" id="0d1c" class="graf graf--p graf-after--pre">
                 Structured statements like
-                <code class="markup--code markup--p-code">for x =1 to 10</code>
+                <code lang="js" class="markup--code markup--p-code">for x =1 to 10</code>
                 loop structures can be codified using single back ticks.
               </p>
               <h3 name="4bcf" id="4bcf" class="graf graf--h3 graf-after--p">
@@ -498,17 +444,17 @@ markdown</pre
                 name="edc3"
                 id="edc3"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code">The following code demonstrates:</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">The following code demonstrates:</code></pre>
               <pre
                 name="17b2"
                 id="17b2"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code">    // This is code by way of four leading spaces<br>    // or a leading tab</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">    // This is code by way of four leading spaces<br>    // or a leading tab</code></pre>
               <pre
                 name="5277"
                 id="5277"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code">More text here</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">More text here</code></pre>
               <p name="5920" id="5920" class="graf graf--p graf-after--pre">
                 The following code demonstrates:
               </p>
@@ -519,7 +465,7 @@ pgsql</pre
                 name="6ca4"
                 id="6ca4"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code">// This is code by way of four leading spaces<br>// or a leading tab</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">// This is code by way of four leading spaces<br>// or a leading tab</code></pre>
               <p name="f223" id="f223" class="graf graf--p graf-after--pre">
                 More text here
               </p>
@@ -538,7 +484,7 @@ markdown</pre
                 name="df76"
                 id="df76"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code">`` `csharp<br>// this code will be syntax highlighted<br>for(var i=0; i++; i &lt; 10)<br>{<br>    Console.WriteLine(i);<br>}<br>`` `</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">`` `csharp<br>// this code will be syntax highlighted<br>for(var i=0; i++; i &lt; 10)<br>{<br>    Console.WriteLine(i);<br>}<br>`` `</code></pre>
               <pre name="b5ed" id="b5ed" class="graf graf--pre graf-after--pre">
 csharp</pre
               >
@@ -546,7 +492,7 @@ csharp</pre
                 name="574f"
                 id="574f"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code u-paddingRight0 u-marginRight0"><em class="markup--em markup--pre-em">// this code will be syntax highlighted</em><br>for(var i=0; i++; i &lt; 10)<br>{<br>    Console.WriteLine(i);<br>}</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code u-paddingRight0 u-marginRight0"><em class="markup--em markup--pre-em">// this code will be syntax highlighted</em><br>for(var i=0; i++; i &lt; 10)<br>{<br>    Console.WriteLine(i);<br>}</code></pre>
               <p name="4af3" id="4af3" class="graf graf--p graf-after--pre">
                 Many languages are supported: html, xml, javascript, css,
                 csharp, foxpro, vbnet, sql, python, ruby, php and many more. Use
@@ -563,7 +509,7 @@ markdown</pre
                 name="a4a4"
                 id="a4a4"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code">`` `dos<br>robocopy c:\temp\test d:\temp\test<br>`` `</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">`` `dos<br>robocopy c:\temp\test d:\temp\test<br>`` `</code></pre>
               <pre name="7b70" id="7b70" class="graf graf--pre graf-after--pre">
 dos</pre
               >
@@ -571,10 +517,10 @@ dos</pre
                 name="c768"
                 id="c768"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code">robocopy c:\temp\test d:\temp\test</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">robocopy c:\temp\test d:\temp\test</code></pre>
               <p name="8a87" id="8a87" class="graf graf--p graf-after--pre">
                 To create a formatted block but without formatting use the
-                <code class="markup--code markup--p-code">txt</code>
+                <code lang="js" class="markup--code markup--p-code">txt</code>
                 format:
               </p>
               <pre name="00e7" id="00e7" class="graf graf--pre graf-after--p">
@@ -584,7 +530,7 @@ markdown</pre
                 name="81fd"
                 id="81fd"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code">`` `txt<br>This is some text that will not be syntax highlighted<br>but shows up in a code box.<br>`` `</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">`` `txt<br>This is some text that will not be syntax highlighted<br>but shows up in a code box.<br>`` `</code></pre>
               <p name="7a13" id="7a13" class="graf graf--p graf-after--pre">
                 which gives you:
               </p>
@@ -595,7 +541,7 @@ text</pre
                 name="aa90"
                 id="aa90"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code">This is some text that will not be syntax highlighted<br>but shows up in a code box.</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">This is some text that will not be syntax highlighted<br>but shows up in a code box.</code></pre>
               <h4 name="2f9a" id="2f9a" class="graf graf--h4 graf-after--pre">
                 If you found this guide helpful feel free to checkout my
                 github/gists where I host similar content:

@@ -3,70 +3,16 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Learn CSS So That Your Site Doesn’t Look Like Garbage</title>
-    <style>
-      * {
-        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-      }
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-      }
-      h1 {
-        font-size: 50px;
-        margin-bottom: 17px;
-        color: #333;
-      }
-      h2 {
-        font-size: 24px;
-        line-height: 1.6;
-        margin: 30px 0 0 0;
-        margin-bottom: 18px;
-        margin-top: 33px;
-        color: #333;
-      }
-      h3 {
-        font-size: 30px;
-        margin: 10px 0 20px 0;
-        color: #333;
-      }
-      header {
-        width: 640px;
-        margin: auto;
-      }
-      section {
-        width: 640px;
-        margin: auto;
-      }
-      section p {
-        margin-bottom: 27px;
-        font-size: 20px;
-        line-height: 1.6;
-        color: #333;
-      }
-      section img {
-        max-width: 640px;
-      }
-      footer {
-        padding: 0 20px;
-        margin: 50px 0;
-        text-align: center;
-        font-size: 12px;
-      }
-      .aspectRatioPlaceholder {
-        max-width: auto !important;
-        max-height: auto !important;
-      }
-      .aspectRatioPlaceholder-fill {
-        padding-bottom: 0 !important;
-      }
-      header,
-      section[data-field="subtitle"],
-      section[data-field="description"] {
-        display: none;
-      }
-    </style>
-  </head>
+    <link rel="stylesheet" href="./medium.css">
+  <!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js" integrity="sha512-YBk7HhgDZvBxmtOfUdvX0z8IH2d10Hp3aEygaMNhtF8fSOvBZ16D/1bXZTJV6ndk/L/DlXxYStP8jrF77v2MIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-dark.min.css" integrity="sha512-Njdz7T/p6Ud1FiTMqH87bzDxaZBsVNebOWmacBjMdgWyeIhUSFU4V52oGwo3sT+ud+lyIE98sS291/zxBfozKw==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
   <body>
     <article class="h-entry">
       <header>
@@ -94,7 +40,7 @@
               </h3>
               <ul class="postList">
                 <li name="62c3" id="62c3" class="graf graf--li graf-after--h3">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >CSS Selector</strong
                     ></code
@@ -102,35 +48,35 @@
                   various types:
                 </li>
                 <li name="d60d" id="d60d" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >Type Selectors</strong
                     ></code
                   > : Matches by node name.
                 </li>
                 <li name="9826" id="9826" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >Class Selectors</strong
                     ></code
                   > : Matches by class name.
                 </li>
                 <li name="10a7" id="10a7" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >ID Selectors</strong
                     ></code
                   > : Matches by ID name.
                 </li>
                 <li name="64c0" id="64c0" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >Universal Selectors</strong
                     ></code
                   > : Selects all HTML elements on a page.
                 </li>
                 <li name="9c6b" id="9c6b" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >Attribute Selectors</strong
                     ></code
@@ -152,7 +98,7 @@
               <ul class="postList">
                 <li name="fddf" id="fddf" class="graf graf--li graf-after--p">
                   Used to select all elements of a certain class denoted with
-                  a <code class="markup--code markup--li-code"
+                  a <code lang="js" class="markup--code markup--li-code"
                     >.[class name]</code
                   >
                 </li>
@@ -199,9 +145,9 @@
               <ul class="postList">
                 <li name="a8bc" id="a8bc" class="graf graf--li graf-after--pre">
                   When we want to target all
-                  <code class="markup--code markup--li-code">h1</code>
+                  <code lang="js" class="markup--code markup--li-code">h1</code>
                   tags with the id of
-                  <code class="markup--code markup--li-code">heading</code>.
+                  <code lang="js" class="markup--code markup--li-code">heading</code>.
                 </li>
               </ul>
               <p name="7eb6" id="7eb6" class="graf graf--p graf-after--li">
@@ -219,7 +165,7 @@
                   CSS far too complex.
                 </li>
                 <li name="6032" id="6032" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >Descendant Selectors</strong
                     ></code
@@ -232,7 +178,7 @@
                   Selects all descendants of a parent container.
                 </li>
                 <li name="e90c" id="e90c" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >Direct Child Selectors</strong
                     ></code
@@ -240,19 +186,19 @@
                 </li>
                 <li name="52b5" id="52b5" class="graf graf--li graf-after--li">
                   Indicated with a
-                  <code class="markup--code markup--li-code">&gt;</code>.
+                  <code lang="js" class="markup--code markup--li-code">&gt;</code>.
                 </li>
                 <li name="ea8e" id="ea8e" class="graf graf--li graf-after--li">
                   Different from descendants because it only affects the direct
                   children of an element.
                 </li>
                 <li name="486f" id="486f" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >.menu &gt; .is-active { background-color: #ffe0b2; }</code
                   >
                 </li>
                 <li name="96f9" id="96f9" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >&lt;body&gt; &lt;div class=&quot;menu&quot;&gt; &lt;div
                     class=&quot;is-active&quot;&gt;Belka&lt;/div&gt; &lt;div&gt;
                     &lt;div class=&quot;is-active&quot;&gt;Strelka&lt;/div&gt;
@@ -265,7 +211,7 @@
                   Belka would be the only element selected.
                 </li>
                 <li name="0266" id="0266" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >Adjacent Sibling Selectors</strong
                     ></code
@@ -273,7 +219,7 @@
                 </li>
                 <li name="a648" id="a648" class="graf graf--li graf-after--li">
                   Uses the
-                  <code class="markup--code markup--li-code">+</code>
+                  <code lang="js" class="markup--code markup--li-code">+</code>
                   symbol.
                 </li>
                 <li name="9d79" id="9d79" class="graf graf--li graf-after--li">
@@ -281,7 +227,7 @@
                   both have the same parent.
                 </li>
                 <li name="4865" id="4865" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >h1 + h2 { font-style: italic; } &lt;h1&gt;Big
                     header&lt;/h1&gt; &lt;h2&gt;This one is styled because it is
                     directly adjacent to the H1&lt;/h2&gt; &lt;h2&gt;This one is
@@ -297,7 +243,7 @@
               </p>
               <ul class="postList">
                 <li name="b638" id="b638" class="graf graf--li graf-after--p">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >Pseudo-Class</strong
                     ></code
@@ -307,14 +253,14 @@
                 </li>
                 <li name="0360" id="0360" class="graf graf--li graf-after--li">
                   Format is a
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >Selector:Pseudo-Class Name</code
                   >
                   or
-                  <code class="markup--code markup--li-code">A:B</code>
+                  <code lang="js" class="markup--code markup--li-code">A:B</code>
                 </li>
                 <li name="91ee" id="91ee" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >a:hover { font-family: &quot;Roboto Condensed&quot;,
                     sans-serif; color: #4fc3f7; text-decoration: none;
                     border-bottom: 2px solid #4fc3f7; }</code
@@ -324,49 +270,49 @@
                   Some common pseudo-classes that are frequently used are:
                 </li>
                 <li name="9b2b" id="9b2b" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >active</strong
                     ></code
                   > : ‘push down’, when ele are activated.
                 </li>
                 <li name="5b2f" id="5b2f" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >checked</strong
                     ></code
                   > : applies to things like radio buttons or checkbox inputs.
                 </li>
                 <li name="58da" id="58da" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >disabled</strong
                     ></code
                   > : any disabled element.
                 </li>
                 <li name="d3bd" id="d3bd" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >first-child</strong
                     ></code
                   > : first element in a group of children/siblings.
                 </li>
                 <li name="40fc" id="40fc" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >focus</strong
                     ></code
                   > : elements that have current focus.
                 </li>
                 <li name="ed43" id="ed43" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >hover</strong
                     ></code
                   > : elements that have cursor hovering over it.
                 </li>
                 <li name="6fa2" id="6fa2" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >invalid</strong
                     ></code
@@ -374,35 +320,35 @@
                   form validation.
                 </li>
                 <li name="7811" id="7811" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >last-child</strong
                     ></code
                   > : last element in a group of children/siblings.
                 </li>
                 <li name="1bdf" id="1bdf" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >not(selector)</strong
                     ></code
                   > : elements that do not match the provided selector.
                 </li>
                 <li name="be5c" id="be5c" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >required</strong
                     ></code
                   > : form elements that are required.
                 </li>
                 <li name="43ed" id="43ed" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >valid</strong
                     ></code
                   > : form elements in a valid state.
                 </li>
                 <li name="6460" id="6460" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >visited</strong
                     ></code
@@ -411,7 +357,7 @@
                 </li>
               </ul>
               <p name="4f7f" id="4f7f" class="graf graf--p graf-after--li">
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   ><strong class="markup--strong markup--p-strong"
                     >Pseudo-Selectors</strong
                   ></code
@@ -423,10 +369,10 @@
                   which the property applies.
                 </li>
                 <li name="0bef" id="0bef" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code">::after</code>
+                  <code lang="js" class="markup--code markup--li-code">::after</code>
                 </li>
                 <li name="52f9" id="52f9" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code">::before</code>
+                  <code lang="js" class="markup--code markup--li-code">::before</code>
                 </li>
               </ul>
               <pre
@@ -446,7 +392,7 @@
               </p>
               <ul class="postList">
                 <li name="919a" id="919a" class="graf graf--li graf-after--p">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >CSS Rule</strong
                     ></code
@@ -454,7 +400,7 @@
                   zero or more properties
                 </li>
                 <li name="555f" id="555f" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >CSS Rule Specificity</strong
                     ></code
@@ -464,7 +410,7 @@
                   precedence.
                 </li>
                 <li name="a1db" id="a1db" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >The Four Number Calculation</strong
                     ></code
@@ -549,7 +495,7 @@
                 >
                   Coming back to our example where all the CSS Rules have tied,
                   the last step 4 wins out so our element will have a
-                  <code class="markup--code markup--li-code">purple border</code
+                  <code lang="js" class="markup--code markup--li-code">purple border</code
                   >.
                 </li>
               </ul>
@@ -572,7 +518,7 @@
               </p>
               <ul class="postList">
                 <li name="d6fc" id="d6fc" class="graf graf--li graf-after--p">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >font-family</strong
                     ></code
@@ -617,7 +563,7 @@
                   You can import web fonts via an api by using
                 </li>
                 <li name="0c5d" id="0c5d" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >@import
                     url(&#39;https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&amp;display=swap&#39;);</code
                   >
@@ -627,7 +573,7 @@
                   And then reference it in your font-family.
                 </li>
                 <li name="ee9f" id="ee9f" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >font-size</strong
                     ></code
@@ -637,19 +583,19 @@
                   Keep in mind the two kind of units CSS uses:
                 </li>
                 <li name="c4f7" id="c4f7" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >Absolute</strong
                     ></code
                   > :
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >Pixels</strong
                     ></code
                   >, Points, Inches, Centimeters.
                 </li>
                 <li name="2884" id="2884" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >Relative</strong
                     ></code
@@ -663,28 +609,28 @@
                   Rem: Calulates relative to the parent element always.
                 </li>
                 <li name="79b0" id="79b0" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >font-style</strong
                     ></code
                   > : Used to set a font to italics.
                 </li>
                 <li name="f464" id="f464" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >font-weight</strong
                     ></code
                   > : Used to make a font bold.
                 </li>
                 <li name="3d56" id="3d56" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >text-align</strong
                     ></code
                   > : Used to align your text to the left, center, or right.
                 </li>
                 <li name="4cbc" id="4cbc" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >text-decoration</strong
                     ></code
@@ -692,7 +638,7 @@
                   be solid, dashed, or wavy!
                 </li>
                 <li name="1c96" id="1c96" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >text-transform</strong
                     ></code
@@ -737,9 +683,9 @@
                 </li>
                 <li name="38fb" id="38fb" class="graf graf--li graf-after--li">
                   rgba() is used to make an rbg value more transparent, the
-                  <code class="markup--code markup--li-code">a</code> is used to
+                  <code lang="js" class="markup--code markup--li-code">a</code> is used to
                   specify the
-                  <code class="markup--code markup--li-code">alpha channel</code
+                  <code lang="js" class="markup--code markup--li-code">alpha channel</code
                   >.
                 </li>
                 <li name="cb05" id="cb05" class="graf graf--li graf-after--li">
@@ -767,13 +713,13 @@
               <ul class="postList">
                 <li name="bccb" id="bccb" class="graf graf--li graf-after--p">
                   There are two kinds of shadows in CSS:
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >box shadows</strong
                     ></code
                   >
                   and
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >text shadows</strong
                     ></code
@@ -818,17 +764,17 @@
                 (padding), and the giftbox outside of it (border) and then a
                 wrapping paper on the giftbox (margin).- For items that are
                 using
-                <code class="markup--code markup--p-code">block</code>
+                <code lang="js" class="markup--code markup--p-code">block</code>
                 as it’s display, the browser will follow these rules to layout
                 the element: - The box fills 100% of the available container
                 space. - Every new box takes on a new line/row. - Width and
                 Height properties are respected. - Padding, Margin, and Border
                 will push other elements away from the box. - Certain elements
                 have
-                <code class="markup--code markup--p-code">block</code>
+                <code lang="js" class="markup--code markup--p-code">block</code>
                 as their default display, such as: divs, headers, and
                 paragraphs.- For items that are using
-                <code class="markup--code markup--p-code">inline</code>
+                <code lang="js" class="markup--code markup--p-code">inline</code>
                 as it’s display, the browser will follow these rules to layout
                 the element: - Each box appears in a single line until it fills
                 up the space. - Width and height are
@@ -836,7 +782,7 @@
                 respected. - Padding, Margin, and Border are applied but they
                 <strong class="markup--strong markup--p-strong">do not</strong>
                 push other elements away from the box. - Certain elements have
-                <code class="markup--code markup--p-code">inline</code>
+                <code lang="js" class="markup--code markup--p-code">inline</code>
                 as their default display, such as: span tags, anchors, and
                 images.
               </p>
@@ -858,9 +804,9 @@
                 <strong class="markup--strong markup--p-strong"
                   >Inline-Block</strong
                 >- Inline-block uses the best features of both
-                <code class="markup--code markup--p-code">block</code>
+                <code lang="js" class="markup--code markup--p-code">block</code>
                 and
-                <code class="markup--code markup--p-code">inline</code>. -
+                <code lang="js" class="markup--code markup--p-code">inline</code>. -
                 Elements still get laid out left to right. - Layout takes into
                 account specified width and height.
               </p>
@@ -868,19 +814,19 @@
                 <strong class="markup--strong markup--p-strong">Padding</strong
                 >- Padding applies padding to every side of a box. It is
                 shorthand for four padding properties in this order:
-                <code class="markup--code markup--p-code">padding-top</code>,
-                <code class="markup--code markup--p-code">padding-right</code>,
-                <code class="markup--code markup--p-code">padding-bottom</code>,
-                <code class="markup--code markup--p-code">padding-left</code>
+                <code lang="js" class="markup--code markup--p-code">padding-top</code>,
+                <code lang="js" class="markup--code markup--p-code">padding-right</code>,
+                <code lang="js" class="markup--code markup--p-code">padding-bottom</code>,
+                <code lang="js" class="markup--code markup--p-code">padding-left</code>
                 (clockwise!)
               </p>
               <p name="c9f5" id="c9f5" class="graf graf--p graf-after--p">
                 <strong class="markup--strong markup--p-strong">Border</strong>-
                 Border applies a border on all sides of an element. It takes
                 three values in this order:
-                <code class="markup--code markup--p-code">border-width</code>,
-                <code class="markup--code markup--p-code">border-style</code>,
-                <code class="markup--code markup--p-code">border-color</code>. -
+                <code lang="js" class="markup--code markup--p-code">border-width</code>,
+                <code lang="js" class="markup--code markup--p-code">border-style</code>,
+                <code lang="js" class="markup--code markup--p-code">border-color</code>. -
                 All three properties can be broken down in the four sides
                 clockwise: top, right, bottom, left.
               </p>
@@ -888,12 +834,12 @@
                 <strong class="markup--strong markup--p-strong">Margin</strong>-
                 Margin sets margins on every side of an element. It takes four
                 values in this order:
-                <code class="markup--code markup--p-code">margin-top</code>,
-                <code class="markup--code markup--p-code">margin-right</code>,
-                <code class="markup--code markup--p-code">margin-bottom</code>,
-                <code class="markup--code markup--p-code">margin-left</code>. -
+                <code lang="js" class="markup--code markup--p-code">margin-top</code>,
+                <code lang="js" class="markup--code markup--p-code">margin-right</code>,
+                <code lang="js" class="markup--code markup--p-code">margin-bottom</code>,
+                <code lang="js" class="markup--code markup--p-code">margin-left</code>. -
                 You can use
-                <code class="markup--code markup--p-code">margin: 0 auto</code>
+                <code lang="js" class="markup--code markup--p-code">margin: 0 auto</code>
                 to center an element.
               </p>
               <h3 name="debc" id="debc" class="graf graf--h3 graf-after--p">
@@ -902,26 +848,26 @@
               <ul class="postList">
                 <li name="d380" id="d380" class="graf graf--li graf-after--h3">
                   The
-                  <code class="markup--code markup--li-code">position</code>
+                  <code lang="js" class="markup--code markup--li-code">position</code>
                   property allows us to set the position of elements on a page
                   and is an integral part of creatnig a Web page layout.
                 </li>
                 <li name="1bd6" id="1bd6" class="graf graf--li graf-after--li">
                   It accepts five values:
-                  <code class="markup--code markup--li-code">static</code>,
-                  <code class="markup--code markup--li-code">relative</code>,
-                  <code class="markup--code markup--li-code">absolute</code>,
-                  <code class="markup--code markup--li-code">fixed</code>,
-                  <code class="markup--code markup--li-code">sticky</code>.
+                  <code lang="js" class="markup--code markup--li-code">static</code>,
+                  <code lang="js" class="markup--code markup--li-code">relative</code>,
+                  <code lang="js" class="markup--code markup--li-code">absolute</code>,
+                  <code lang="js" class="markup--code markup--li-code">fixed</code>,
+                  <code lang="js" class="markup--code markup--li-code">sticky</code>.
                 </li>
                 <li name="0b53" id="0b53" class="graf graf--li graf-after--li">
                   Every property (minus
-                  <code class="markup--code markup--li-code">static</code>) is
+                  <code lang="js" class="markup--code markup--li-code">static</code>) is
                   used with:
-                  <code class="markup--code markup--li-code">top</code>,
-                  <code class="markup--code markup--li-code">right</code>,
-                  <code class="markup--code markup--li-code">bottom</code>, and
-                  <code class="markup--code markup--li-code">left</code>
+                  <code lang="js" class="markup--code markup--li-code">top</code>,
+                  <code lang="js" class="markup--code markup--li-code">right</code>,
+                  <code lang="js" class="markup--code markup--li-code">bottom</code>, and
+                  <code lang="js" class="markup--code markup--li-code">left</code>
                   to position an element on a page.
                 </li>
               </ul>
@@ -1338,7 +1284,7 @@
               >.container {<br>  display: flex; /*sets display to use flex*/<br>  flex-wrap: wrap; /*bc flex tries to fit everything into one line, use wrap to have the elements wrap to the next line*/<br>  flex-direction: row; /*lets us create either rows or columns*/<br>}</pre>
               <ul class="postList">
                 <li name="4898" id="4898" class="graf graf--li graf-after--pre">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >flex-flow</strong
                     ></code
@@ -1346,7 +1292,7 @@
                   can be used to combine wrap and direction.
                 </li>
                 <li name="acdb" id="acdb" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >justify-content</strong
                     ></code
@@ -1355,7 +1301,7 @@
                   axis.
                 </li>
                 <li name="68d6" id="68d6" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >align-items</strong
                     ></code
@@ -1363,7 +1309,7 @@
                   used to define the alignment on the Y-axis.
                 </li>
                 <li name="f0d8" id="f0d8" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >align-content</strong
                     ></code
@@ -1373,27 +1319,27 @@
                 <li name="531c" id="531c" class="graf graf--li graf-after--li">
                   By default, flex items will appear in the order they are added
                   to the DOM, but we can use the
-                  <code class="markup--code markup--li-code">order</code>
+                  <code lang="js" class="markup--code markup--li-code">order</code>
                   property to change that.
                 </li>
                 <li name="39b0" id="39b0" class="graf graf--li graf-after--li">
                   Some other properties we can use on flex items are:
                 </li>
                 <li name="ec38" id="ec38" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code">flex-grow</code> :
+                  <code lang="js" class="markup--code markup--li-code">flex-grow</code> :
                   dictates amount of avail. space the item should take up.
                 </li>
                 <li name="0916" id="0916" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code">flex-shrink</code
+                  <code lang="js" class="markup--code markup--li-code">flex-shrink</code
                   > : defines the ability for a flex item to shrink.
                 </li>
                 <li name="4dda" id="4dda" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code">flex-basis</code> :
+                  <code lang="js" class="markup--code markup--li-code">flex-basis</code> :
                   Default size of an element before the remaining space is
                   distributed.
                 </li>
                 <li name="d9f2" id="d9f2" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code">flex</code> :
+                  <code lang="js" class="markup--code markup--li-code">flex</code> :
                   shorthand for grow, shrink and basis.
                 </li>
                 <li
@@ -1401,7 +1347,7 @@
                   id="f127"
                   class="graf graf--li graf-after--li graf--trailing"
                 >
-                  <code class="markup--code markup--li-code">align-self</code> :
+                  <code lang="js" class="markup--code markup--li-code">align-self</code> :
                   Overrides default alignment in the container.
                 </li>
               </ul>
@@ -1449,11 +1395,11 @@
                 <li name="26c3" id="26c3" class="graf graf--li graf-after--pre">
                   Columns and Rows can be defined with: pixels, percentages,
                   auto, named grid lines, using
-                  <code class="markup--code markup--li-code">repeat</code>,
+                  <code lang="js" class="markup--code markup--li-code">repeat</code>,
                   fractions.
                 </li>
                 <li name="a117" id="a117" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >Grid Template Areas</strong
                     ></code
@@ -1466,7 +1412,7 @@
                   should take up.
                 </li>
                 <li name="f90a" id="f90a" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >Grid Gaps</strong
                     ></code
@@ -1475,11 +1421,11 @@
                 </li>
                 <li name="d7c0" id="d7c0" class="graf graf--li graf-after--li">
                   The way we have defined our grid with
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >grid-templates</code
                   >
                   and
-                  <code class="markup--code markup--li-code">areas</code>
+                  <code lang="js" class="markup--code markup--li-code">areas</code>
                   are considered
                   <strong class="markup--strong markup--li-strong"
                     >explicit</strong
@@ -1487,7 +1433,7 @@
                 </li>
                 <li name="cef6" id="cef6" class="graf graf--li graf-after--li">
                   We can also
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >implicitly</strong
                     ></code
@@ -1518,28 +1464,28 @@
                   of cols and rows.
                 </li>
                 <li name="0208" id="0208" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >grid-column-start</strong
                     ></code
                   >
                 </li>
                 <li name="437a" id="437a" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >grid-column-end</strong
                     ></code
                   >
                 </li>
                 <li name="7d03" id="7d03" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >grid-row-start</strong
                     ></code
                   >
                 </li>
                 <li name="0a8e" id="0a8e" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >grid-row-end</strong
                     ></code
@@ -1626,25 +1572,25 @@
                 >
               </p>
               <p name="ae00" id="ae00" class="graf graf--p graf-after--p">
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >css .btn { background-color: #00bfff; color: #ffffff;
                   border-radius: 10px; padding: 1.5rem; }</code
                 >
               </p>
               <p name="6d2a" id="6d2a" class="graf graf--p graf-after--p">
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >.btn--active:hover { cursor: pointer; transform:
                   translateY(-0.25rem);</code
                 >
               </p>
               <p name="a9b6" id="a9b6" class="graf graf--p graf-after--p">
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >/* Moves our button up/down on the Y axis */ }</code
                 >
               </p>
               <p name="4947" id="4947" class="graf graf--p graf-after--p">
                 The Pseudo Class Selector
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   ><strong class="markup--strong markup--p-strong"
                     >hover</strong
                   ></code
@@ -1655,23 +1601,23 @@
                 <strong class="markup--strong markup--p-strong"
                   >Content Overflow</strong
                 >- You can apply an
-                <code class="markup--code markup--p-code">overflow</code>
+                <code lang="js" class="markup--code markup--p-code">overflow</code>
                 content property to an element if it’s inner contents are
                 spilling over.
               </p>
               <p name="3c70" id="3c70" class="graf graf--p graf-after--p">
-                There are three members in the overflow family: — <code
+                There are three members in the overflow family: — <code lang="js"
                   class="markup--code markup--p-code"
                   ><strong class="markup--strong markup--p-strong"
                     >overflow-x</strong
                   ></code
                 > : Apply horizontally. -
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   ><strong class="markup--strong markup--p-strong"
                     >overflow-y</strong
                   ></code
                 > : Apply vertically. -
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   ><strong class="markup--strong markup--p-strong"
                     >overflow</strong
                   ></code
@@ -1698,7 +1644,7 @@
               </p>
               <ul class="postList">
                 <li name="bbd6" id="bbd6" class="graf graf--li graf-after--p">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >transition-property</strong
                     ></code
@@ -1706,14 +1652,14 @@
                   transition.
                 </li>
                 <li name="6340" id="6340" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >transition-duration</strong
                     ></code
                   > : during of the transition.
                 </li>
                 <li name="7463" id="7463" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >transition-delay</strong
                     ></code
@@ -1826,9 +1772,9 @@
                 <li name="6d0c" id="6d0c" class="graf graf--li graf-after--li">
                   <strong class="markup--strong markup--li-strong">BEM</strong>
                   stands for
-                  <code class="markup--code markup--li-code">block</code>,
-                  <code class="markup--code markup--li-code">element</code>,
-                  <code class="markup--code markup--li-code">modifier</code>.
+                  <code lang="js" class="markup--code markup--li-code">block</code>,
+                  <code lang="js" class="markup--code markup--li-code">element</code>,
+                  <code lang="js" class="markup--code markup--li-code">modifier</code>.
                 </li>
                 <li name="3eb9" id="3eb9" class="graf graf--li graf-after--li">
                   <strong class="markup--strong markup--li-strong"

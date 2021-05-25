@@ -3,70 +3,16 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Beginner’s Guide To React Part 2</title>
-    <style>
-      * {
-        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-      }
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-      }
-      h1 {
-        font-size: 50px;
-        margin-bottom: 17px;
-        color: #333;
-      }
-      h2 {
-        font-size: 24px;
-        line-height: 1.6;
-        margin: 30px 0 0 0;
-        margin-bottom: 18px;
-        margin-top: 33px;
-        color: #333;
-      }
-      h3 {
-        font-size: 30px;
-        margin: 10px 0 20px 0;
-        color: #333;
-      }
-      header {
-        width: 640px;
-        margin: auto;
-      }
-      section {
-        width: 640px;
-        margin: auto;
-      }
-      section p {
-        margin-bottom: 27px;
-        font-size: 20px;
-        line-height: 1.6;
-        color: #333;
-      }
-      section img {
-        max-width: 640px;
-      }
-      footer {
-        padding: 0 20px;
-        margin: 50px 0;
-        text-align: center;
-        font-size: 12px;
-      }
-      .aspectRatioPlaceholder {
-        max-width: auto !important;
-        max-height: auto !important;
-      }
-      .aspectRatioPlaceholder-fill {
-        padding-bottom: 0 !important;
-      }
-      header,
-      section[data-field="subtitle"],
-      section[data-field="description"] {
-        display: none;
-      }
-    </style>
-  </head>
+    <link rel="stylesheet" href="./medium.css">
+  <!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js" integrity="sha512-YBk7HhgDZvBxmtOfUdvX0z8IH2d10Hp3aEygaMNhtF8fSOvBZ16D/1bXZTJV6ndk/L/DlXxYStP8jrF77v2MIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-dark.min.css" integrity="sha512-Njdz7T/p6Ud1FiTMqH87bzDxaZBsVNebOWmacBjMdgWyeIhUSFU4V52oGwo3sT+ud+lyIE98sS291/zxBfozKw==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
   <body>
     <article class="h-entry">
       <header>
@@ -300,7 +246,7 @@
               </p>
               <p name="b009" id="b009" class="graf graf--p graf-after--p">
                 Inside of
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >BasicComponent.js</code
                 > , first import React at the top of the file. Our most basic of
                 components looks like this:
@@ -339,7 +285,7 @@
               >
                 Notice that this component looks exactly like an anonymous arrow
                 function that we’ve named
-                <code class="markup--code markup--p-code">BasicComponent</code
+                <code lang="js" class="markup--code markup--p-code">BasicComponent</code
                 > .
               </p>
               <p name="37ae" id="37ae" class="graf graf--p graf-after--p">
@@ -399,25 +345,25 @@ import React, { Component } from &#39;react&#39;;</pre
               <p name="a262" id="a262" class="graf graf--p graf-after--h4">
                 Components defined as classes currently provide more features .
                 To define a React component class, you need to extend
-                <code class="markup--code markup--p-code">React.Component</code
+                <code lang="js" class="markup--code markup--p-code">React.Component</code
                 >:
               </p>
               <pre
                 name="ebdd"
                 id="ebdd"
                 class="graf graf--pre graf-after--p"
-              ><code class="markup--code markup--pre-code">class Welcome extends React.Component {<br>  render() {<br>    return &lt;h1&gt;Hello, {this.props.name}&lt;/h1&gt;;<br>  }<br>}</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">class Welcome extends React.Component {<br>  render() {<br>    return &lt;h1&gt;Hello, {this.props.name}&lt;/h1&gt;;<br>  }<br>}</code></pre>
               <p name="a2c9" id="a2c9" class="graf graf--p graf-after--pre">
                 <strong class="markup--strong markup--p-strong"
                   >The only method you
                   <em class="markup--em markup--p-em">must</em> define in a </strong
-                ><code class="markup--code markup--p-code"
+                ><code lang="js" class="markup--code markup--p-code"
                   ><strong class="markup--strong markup--p-strong"
                     >React.Component</strong
                   ></code
                 ><strong class="markup--strong markup--p-strong">
                   subclass is called </strong
-                ><code class="markup--code markup--p-code"
+                ><code lang="js" class="markup--code markup--p-code"
                   ><a
                     href="https://reactjs.org/docs/react-component.html#render"
                     data-href="https://reactjs.org/docs/react-component.html#render"
@@ -431,18 +377,18 @@ import React, { Component } from &#39;react&#39;;</pre
                 ><strong class="markup--strong markup--p-strong">.</strong>
               </p>
               <h3 name="2c45" id="2c45" class="graf graf--h3 graf-after--p">
-                <code class="markup--code markup--h3-code">render()</code>
+                <code lang="js" class="markup--code markup--h3-code">render()</code>
               </h3>
               <p name="369e" id="369e" class="graf graf--p graf-after--h3">
                 The
-                <code class="markup--code markup--p-code">render()</code>
+                <code lang="js" class="markup--code markup--p-code">render()</code>
                 method is the only required method in a class component.
               </p>
               <p name="1cac" id="1cac" class="graf graf--p graf-after--p">
                 When called, it should examine
-                <code class="markup--code markup--p-code">this.props</code>
+                <code lang="js" class="markup--code markup--p-code">this.props</code>
                 and
-                <code class="markup--code markup--p-code">this.state</code>
+                <code lang="js" class="markup--code markup--p-code">this.state</code>
                 and return one of the following types:
               </p>
               <ul class="postList">
@@ -459,11 +405,11 @@ import React, { Component } from &#39;react&#39;;</pre
                     target="_blank"
                     >JSX</a
                   >. For example,
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >&lt;div /&gt;</code
                   >
                   and
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >&lt;MyComponent /&gt;</code
                   >
                   are React elements that instruct React to render a DOM node,
@@ -509,33 +455,33 @@ import React, { Component } from &#39;react&#39;;</pre
                 <li name="5c6a" id="5c6a" class="graf graf--li graf-after--li">
                   <strong class="markup--strong markup--li-strong"
                     >Booleans or </strong
-                  ><code class="markup--code markup--li-code"
+                  ><code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >null</strong
                     ></code
                   >. Render nothing. (Mostly exists to support
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >return test &amp;&amp; &lt;Child /&gt;</code
                   >
                   pattern, where
-                  <code class="markup--code markup--li-code">test</code>
+                  <code lang="js" class="markup--code markup--li-code">test</code>
                   is boolean.)
                 </li>
               </ul>
               <p name="38fd" id="38fd" class="graf graf--p graf-after--li">
                 The
-                <code class="markup--code markup--p-code">render()</code>
+                <code lang="js" class="markup--code markup--p-code">render()</code>
                 function should be pure, meaning that it does not modify
                 component state, it returns the same result each time it’s
                 invoked, and it does not directly interact with the browser.
               </p>
               <p name="60ba" id="60ba" class="graf graf--p graf-after--p">
                 If you need to interact with the browser, perform your work in
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >componentDidMount()</code
                 >
                 or the other lifecycle methods instead. Keeping
-                <code class="markup--code markup--p-code">render()</code>
+                <code lang="js" class="markup--code markup--p-code">render()</code>
                 pure makes components easier to think about.
               </p>
               <blockquote
@@ -550,13 +496,13 @@ import React, { Component } from &#39;react&#39;;</pre
                 id="c315"
                 class="graf graf--blockquote graf-after--blockquote"
               >
-                <code class="markup--code markup--blockquote-code"
+                <code lang="js" class="markup--code markup--blockquote-code"
                   ><em class="markup--em markup--blockquote-em"
                     >render()</em
                   ></code
                 ><em class="markup--em markup--blockquote-em">
                   will not be invoked if </em
-                ><code class="markup--code markup--blockquote-code"
+                ><code lang="js" class="markup--code markup--blockquote-code"
                   ><a
                     href="https://reactjs.org/docs/react-component.html#shouldcomponentupdate"
                     data-href="https://reactjs.org/docs/react-component.html#shouldcomponentupdate"
@@ -590,13 +536,13 @@ import React, { Component } from &#39;react&#39;;</pre
               <p name="15f4" id="15f4" class="graf graf--p graf-after--figure">
                 <strong class="markup--strong markup--p-strong"
                   >Notice that our </strong
-                ><code class="markup--code markup--p-code"
+                ><code lang="js" class="markup--code markup--p-code"
                   ><strong class="markup--strong markup--p-strong"
                     >BasicClassComponent</strong
                   ></code
                 ><strong class="markup--strong markup--p-strong">
                   inherits from the base </strong
-                ><code class="markup--code markup--p-code"
+                ><code lang="js" class="markup--code markup--p-code"
                   ><strong class="markup--strong markup--p-strong"
                     >Component</strong
                   ></code
@@ -615,7 +561,7 @@ import React, { Component } from &#39;react&#39;;</pre
               <p name="920e" id="920e" class="graf graf--p graf-after--p">
                 <strong class="markup--strong markup--p-strong"
                   >All we have is a method on our component class called </strong
-                ><code class="markup--code markup--p-code"
+                ><code lang="js" class="markup--code markup--p-code"
                   ><strong class="markup--strong markup--p-strong"
                     >render</strong
                   ></code
@@ -745,7 +691,7 @@ import React, { Component } from &#39;react&#39;;</pre
                   >Additionally, if a class is extending off of another class
                   and wants access to its parent class’s methods and properties,
                   then the </strong
-                ><code class="markup--code markup--p-code"
+                ><code lang="js" class="markup--code markup--p-code"
                   ><strong class="markup--strong markup--p-strong"
                     >super</strong
                   ></code
@@ -756,7 +702,7 @@ import React, { Component } from &#39;react&#39;;</pre
               </p>
               <h4 name="7791" id="7791" class="graf graf--h4 graf-after--p">
                 Point being, the constructor function and the call to the
-                <code class="markup--code markup--h4-code">super</code>
+                <code lang="js" class="markup--code markup--h4-code">super</code>
                 function are
                 <em class="markup--em markup--h4-em">not</em> associated with
                 React, they are associated with all JavaScript classes.
@@ -764,7 +710,7 @@ import React, { Component } from &#39;react&#39;;</pre
               <ul class="postList">
                 <li name="0d56" id="0d56" class="graf graf--li graf-after--h4">
                   Then there is the
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >this.state</strong
                     ></code
@@ -775,7 +721,7 @@ import React, { Component } from &#39;react&#39;;</pre
                 </li>
                 <li name="7b29" id="7b29" class="graf graf--li graf-after--li">
                   We&#39;re adding a property called
-                  <code class="markup--code markup--li-code">state</code>
+                  <code lang="js" class="markup--code markup--li-code">state</code>
                   to our class and setting it to an empty object.
                 </li>
               </ul>
@@ -802,19 +748,19 @@ import React, { Component } from &#39;react&#39;;</pre
               <p name="1c8c" id="1c8c" class="graf graf--p graf-after--p">
                 <strong class="markup--strong markup--p-strong"
                   >The call to </strong
-                ><code class="markup--code markup--p-code"
+                ><code lang="js" class="markup--code markup--p-code"
                   ><strong class="markup--strong markup--p-strong"
                     >super</strong
                   ></code
                 ><strong class="markup--strong markup--p-strong">
                   is needed because we can&#39;t reference </strong
-                ><code class="markup--code markup--p-code"
+                ><code lang="js" class="markup--code markup--p-code"
                   ><strong class="markup--strong markup--p-strong"
                     >this</strong
                   ></code
                 ><strong class="markup--strong markup--p-strong">
                   inside of our constructor without a call to </strong
-                ><code class="markup--code markup--p-code"
+                ><code lang="js" class="markup--code markup--p-code"
                   ><strong class="markup--strong markup--p-strong"
                     >super</strong
                   ></code
@@ -857,7 +803,7 @@ import React, { Component } from &#39;react&#39;;</pre
                 <li name="eb34" id="eb34" class="graf graf--li graf-after--li">
                   Notice that inside the div tags we’re using a template string
                   literal so that we can access the value of
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >this.state.someData</code
                   >
                   straight inside of our rendered content.
@@ -907,10 +853,10 @@ import React, { Component } from &#39;react&#39;;</pre
               <p name="a769" id="a769" class="graf graf--p graf-after--p">
                 The clue to this is the fact that when we want to access some
                 data from the state object, we still need to call it with
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >this.state.someData</code
                 > ; changing it to just
-                <code class="markup--code markup--p-code">state.someData</code>
+                <code lang="js" class="markup--code markup--p-code">state.someData</code>
                 does not work.
               </p>
               <h3 name="3e29" id="3e29" class="graf graf--h3 graf-after--p">
@@ -940,32 +886,32 @@ import React, { Component } from &#39;react&#39;;</pre
               </figure>
               <p name="78c5" id="78c5" class="graf graf--p graf-after--figure">
                 Notice that we’ve added two methods to our class:
-                <code class="markup--code markup--p-code">increment</code>
+                <code lang="js" class="markup--code markup--p-code">increment</code>
                 and
-                <code class="markup--code markup--p-code">decrement</code> .
+                <code lang="js" class="markup--code markup--p-code">decrement</code> .
               </p>
               <p name="fb42" id="fb42" class="graf graf--p graf-after--p">
-                <code class="markup--code markup--p-code">increment</code>
+                <code lang="js" class="markup--code markup--p-code">increment</code>
                 and
-                <code class="markup--code markup--p-code">decrement</code>
+                <code lang="js" class="markup--code markup--p-code">decrement</code>
                 are methods that
                 <em class="markup--em markup--p-em">we</em> are adding to our
                 class component.
               </p>
               <p name="61e7" id="61e7" class="graf graf--p graf-after--p">
                 Unlike the
-                <code class="markup--code markup--p-code">render</code>
+                <code lang="js" class="markup--code markup--p-code">render</code>
                 method,
-                <code class="markup--code markup--p-code">increment</code>
+                <code lang="js" class="markup--code markup--p-code">increment</code>
                 and
-                <code class="markup--code markup--p-code">decrement</code>
+                <code lang="js" class="markup--code markup--p-code">decrement</code>
                 were not already a part of our class component.
               </p>
               <p name="b3eb" id="b3eb" class="graf graf--p graf-after--p">
                 This is why
-                <code class="markup--code markup--p-code">increment</code>
+                <code lang="js" class="markup--code markup--p-code">increment</code>
                 and
-                <code class="markup--code markup--p-code">decrement</code>
+                <code lang="js" class="markup--code markup--p-code">decrement</code>
                 are written as arrow functions,
                 <strong class="markup--strong markup--p-strong"
                   ><em class="markup--em markup--p-em"
@@ -985,12 +931,12 @@ import React, { Component } from &#39;react&#39;;</pre
               </p>
               <h4 name="3d7e" id="3d7e" class="graf graf--h4 graf-after--p">
                 Each calls the
-                <code class="markup--code markup--h4-code">setState</code>
+                <code lang="js" class="markup--code markup--h4-code">setState</code>
                 function.
               </h4>
               <ul class="postList">
                 <li name="df3c" id="df3c" class="graf graf--li graf-after--h4">
-                  <code class="markup--code markup--li-code">setState</code>
+                  <code lang="js" class="markup--code markup--li-code">setState</code>
                   in fact
                   <em class="markup--em markup--li-em">is</em> provided to us by
                   React.
@@ -1019,24 +965,24 @@ import React, { Component } from &#39;react&#39;;</pre
                 class="graf graf--h4 graf-after--figure"
               >
                 So the way to use
-                <code class="markup--code markup--h4-code">setState</code>
+                <code lang="js" class="markup--code markup--h4-code">setState</code>
                 to update a component&#39;s state is to pass it an object with
                 each of the state keys you wish to update, along with the
                 updated value.
               </h4>
               <p name="68a9" id="68a9" class="graf graf--p graf-after--h4">
                 In our
-                <code class="markup--code markup--p-code">increment</code>
+                <code lang="js" class="markup--code markup--p-code">increment</code>
                 method we said &quot;I would like to update the
-                <code class="markup--code markup--p-code">aNumber</code>
+                <code lang="js" class="markup--code markup--p-code">aNumber</code>
                 property on my component state by adding one to it and then
                 setting the new value as my new
-                <code class="markup--code markup--p-code">aNumber</code>
+                <code lang="js" class="markup--code markup--p-code">aNumber</code>
                 &quot;.
               </p>
               <p name="d49d" id="d49d" class="graf graf--p graf-after--p">
                 The same thing happens in our
-                <code class="markup--code markup--p-code">decrement</code>
+                <code lang="js" class="markup--code markup--p-code">decrement</code>
                 method, only we&#39;re subtracting instead of adding.
               </p>
               <p name="ee7b" id="ee7b" class="graf graf--p graf-after--p">
@@ -1058,9 +1004,9 @@ import React, { Component } from &#39;react&#39;;</pre
               </figure>
               <p name="0fd9" id="0fd9" class="graf graf--p graf-after--figure">
                 We added two HTML button tags within our
-                <code class="markup--code markup--p-code">render</code>
+                <code lang="js" class="markup--code markup--p-code">render</code>
                 function, then in their respective
-                <code class="markup--code markup--p-code">onClick</code>
+                <code lang="js" class="markup--code markup--p-code">onClick</code>
                 handlers, we specify the method that should be called whenever
                 this button gets clicked. So whenever we click either of the
                 buttons, our state gets updated appropriately and our component
@@ -1112,9 +1058,9 @@ import React, { Component } from &#39;react&#39;;</pre
               </p>
               <p name="fe40" id="fe40" class="graf graf--p graf-after--p">
                 The
-                <code class="markup--code markup--p-code">addIngredient</code>
+                <code lang="js" class="markup--code markup--p-code">addIngredient</code>
                 and
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >handleIngredientInput</code
                 >
                 methods we&#39;ve added to our class receives a parameter called
@@ -1142,7 +1088,7 @@ import React, { Component } from &#39;react&#39;;</pre
                 </li>
                 <li name="5de7" id="5de7" class="graf graf--li graf-after--li">
                   The
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >handleIngredientInput</code
                   >
                   method is what gets invoked every time the user presses a key
@@ -1150,7 +1096,7 @@ import React, { Component } from &#39;react&#39;;</pre
                 </li>
                 <li name="514e" id="514e" class="graf graf--li graf-after--li">
                   Every character the user types gets persisted in the
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >newIngredient</code
                   >
                   field on the state object.
@@ -1158,7 +1104,7 @@ import React, { Component } from &#39;react&#39;;</pre
               </ul>
               <p name="501c" id="501c" class="graf graf--p graf-after--li">
                 We&#39;re able to grab the text in the input box using
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >event.target.value</code
                 >
               </p>
@@ -1174,7 +1120,7 @@ import React, { Component } from &#39;react&#39;;</pre
                 class="graf graf--blockquote graf-after--p"
               >
                 We use that to update our
-                <code class="markup--code markup--blockquote-code"
+                <code lang="js" class="markup--code markup--blockquote-code"
                   >newIngredient</code
                 >
                 string field.
@@ -1185,9 +1131,9 @@ import React, { Component } from &#39;react&#39;;</pre
                 class="graf graf--p graf-after--blockquote"
               >
                 Breaking down the
-                <code class="markup--code markup--p-code">addIngredient</code>
+                <code lang="js" class="markup--code markup--p-code">addIngredient</code>
                 method, we see this
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >event.preventDefault()</code
                 >
                 invocation.
@@ -1205,7 +1151,7 @@ import React, { Component } from &#39;react&#39;;</pre
                 id="3e31"
                 class="graf graf--blockquote graf-after--p"
               >
-                <code class="markup--code markup--blockquote-code"
+                <code lang="js" class="markup--code markup--blockquote-code"
                   >event.preventDefault()</code
                 >
                 will prevent this default form behavior, meaning our form will
@@ -1229,11 +1175,11 @@ import React, { Component } from &#39;react&#39;;</pre
               </figure>
               <p name="a795" id="a795" class="graf graf--p graf-after--figure">
                 Next, we store a reference to
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >this.state.ingredients</code
                 >
                 in a variable called
-                <code class="markup--code markup--p-code">ingredientsList</code
+                <code lang="js" class="markup--code markup--p-code">ingredientsList</code
                 > .
               </p>
               <p name="268d" id="268d" class="graf graf--p graf-after--p">
@@ -1249,25 +1195,25 @@ import React, { Component } from &#39;react&#39;;</pre
               </p>
               <p name="27e4" id="27e4" class="graf graf--p graf-after--p">
                 Now we push whatever value is being stored at our
-                <code class="markup--code markup--p-code">newIngredient</code>
+                <code lang="js" class="markup--code markup--p-code">newIngredient</code>
                 field onto the
-                <code class="markup--code markup--p-code">ingredientsList</code>
+                <code lang="js" class="markup--code markup--p-code">ingredientsList</code>
                 array so that our
-                <code class="markup--code markup--p-code">ingredientsList</code>
+                <code lang="js" class="markup--code markup--p-code">ingredientsList</code>
                 array is now more up-to-date than our
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >this.state.ingredients</code
                 >
                 array.
               </p>
               <p name="43ec" id="43ec" class="graf graf--p graf-after--p">
                 So all we have to do now is call
-                <code class="markup--code markup--p-code">setState</code>
+                <code lang="js" class="markup--code markup--p-code">setState</code>
                 appropriately in order to update the value in our state object.
               </p>
               <p name="bbba" id="bbba" class="graf graf--p graf-after--p">
                 Additionally, we also set the
-                <code class="markup--code markup--p-code">newIngredient</code>
+                <code lang="js" class="markup--code markup--p-code">newIngredient</code>
                 field back to an empty string in order to clear out the input
                 field once we submit a new ingredient.
               </p>
@@ -1289,14 +1235,14 @@ import React, { Component } from &#39;react&#39;;</pre
               </figure>
               <p name="3720" id="3720" class="graf graf--p graf-after--figure">
                 Looking at our render function, first note the
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >this.state.ingredients.map</code
                 >
                 call.
               </p>
               <p name="6645" id="6645" class="graf graf--p graf-after--p">
                 This is looping through each ingredient in our
-                <code class="markup--code markup--p-code">ingredients</code>
+                <code lang="js" class="markup--code markup--p-code">ingredients</code>
                 array and returning each one within its own div tag.
               </p>
               <p name="3d35" id="3d35" class="graf graf--p graf-after--p">
@@ -1309,21 +1255,21 @@ import React, { Component } from &#39;react&#39;;</pre
               <p name="336d" id="336d" class="graf graf--p graf-after--p">
                 The purpose of this form is to allow a user to add new
                 ingredients to the list. Note that we’re passing our
-                <code class="markup--code markup--p-code">addIngredient</code>
+                <code lang="js" class="markup--code markup--p-code">addIngredient</code>
                 method to the form&#39;s
-                <code class="markup--code markup--p-code">onSubmit</code>
+                <code lang="js" class="markup--code markup--p-code">onSubmit</code>
                 handler.
               </p>
               <p name="ba08" id="ba08" class="graf graf--p graf-after--p">
                 This means that our
-                <code class="markup--code markup--p-code">addIngredient</code>
+                <code lang="js" class="markup--code markup--p-code">addIngredient</code>
                 method gets invoked whenever our form is submitted.
               </p>
               <p name="395d" id="395d" class="graf graf--p graf-after--p">
                 Lastly, the input field has an
-                <code class="markup--code markup--p-code">onChange</code>
+                <code lang="js" class="markup--code markup--p-code">onChange</code>
                 handler that invokes our
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >handleIngredientInput</code
                 >
                 method whenever there is some sort of change in the input field,
@@ -1344,18 +1290,18 @@ import React, { Component } from &#39;react&#39;;</pre
               </figure>
               <p name="f927" id="f927" class="graf graf--p graf-after--figure">
                 Notice that the
-                <code class="markup--code markup--p-code">value</code>
+                <code lang="js" class="markup--code markup--p-code">value</code>
                 field in our input tag reads off of
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >this.state.newIngredient</code
                 >
                 in order to know what value to display.
               </p>
               <p name="aa23" id="aa23" class="graf graf--p graf-after--p">
                 So when a user enters text into the input field, the
-                <code class="markup--code markup--p-code">onChange</code>
+                <code lang="js" class="markup--code markup--p-code">onChange</code>
                 handler is invoked every time, which updates our
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >this.state.newIngredient</code
                 >
                 field, which the input field and then renders.
@@ -1381,7 +1327,7 @@ import React, { Component } from &#39;react&#39;;</pre
               >
                 Let’s start off with the component we just saw, but let’s change
                 its name to
-                <code class="markup--code markup--blockquote-code"
+                <code lang="js" class="markup--code markup--blockquote-code"
                   ><em class="markup--em markup--blockquote-em"
                     >ParentComponent</em
                   ></code
@@ -1397,15 +1343,15 @@ import React, { Component } from &#39;react&#39;;</pre
               <p name="d87f" id="d87f" class="graf graf--p graf-after--figure">
                 The only two other differences in this component are that we’re
                 importing a
-                <code class="markup--code markup--p-code">ChildComponent</code>
+                <code lang="js" class="markup--code markup--p-code">ChildComponent</code>
                 and then using it inside our
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >this.state.ingredients.map</code
                 >
                 call.
               </p>
               <p name="0013" id="0013" class="graf graf--p graf-after--p">
-                <code class="markup--code markup--p-code">ChildComponent</code>
+                <code lang="js" class="markup--code markup--p-code">ChildComponent</code>
                 is another React component.
               </p>
               <p name="07cd" id="07cd" class="graf graf--p graf-after--p">
@@ -1486,7 +1432,7 @@ import React, { Component } from &#39;react&#39;;</pre
                 haven’t seen. It’s just another class component with its own
                 s<strong class="markup--strong markup--p-strong"
                   >tate object and a method called </strong
-                ><code class="markup--code markup--p-code"
+                ><code lang="js" class="markup--code markup--p-code"
                   ><strong class="markup--strong markup--p-strong"
                     >handleClick</strong
                   ></code
@@ -1495,7 +1441,7 @@ import React, { Component } from &#39;react&#39;;</pre
               <p name="c50c" id="c50c" class="graf graf--p graf-after--p">
                 <strong class="markup--strong markup--p-strong"
                   >A component accesses its props via the </strong
-                ><code class="markup--code markup--p-code"
+                ><code lang="js" class="markup--code markup--p-code"
                   ><strong class="markup--strong markup--p-strong"
                     >this.props</strong
                   ></code
@@ -1507,7 +1453,7 @@ import React, { Component } from &#39;react&#39;;</pre
                 <em class="markup--em markup--p-em"
                   >Any prop a parent component passes down to a child component
                   is accessible inside the child component&#39;s </em
-                ><code class="markup--code markup--p-code"
+                ><code lang="js" class="markup--code markup--p-code"
                   ><em class="markup--em markup--p-em">this.prop</em></code
                 ><em class="markup--em markup--p-em"> object.</em>
               </p>
@@ -1517,18 +1463,18 @@ import React, { Component } from &#39;react&#39;;</pre
               </p>
               <p name="c838" id="c838" class="graf graf--p graf-after--p">
                 Then at the top of the
-                <code class="markup--code markup--p-code">render</code>
+                <code lang="js" class="markup--code markup--p-code">render</code>
                 function, it uses a ternary condition to determine whether the
                 div tag that is being rendered should have a strikethrough or
                 not.
               </p>
               <p name="4389" id="4389" class="graf graf--p graf-after--p">
                 The
-                <code class="markup--code markup--p-code">handleClick</code>
+                <code lang="js" class="markup--code markup--p-code">handleClick</code>
                 method is then invoked via an
-                <code class="markup--code markup--p-code">onClick</code>
+                <code lang="js" class="markup--code markup--p-code">onClick</code>
                 handler on the div tag; it does the work of toggling the
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >this.state.clicked</code
                 >
                 Boolean.
@@ -1668,7 +1614,7 @@ import React, { Component } from &#39;react&#39;;</pre
                 <em class="markup--em markup--p-em">declare</em> what the user
                 interface should<br />look like, React provides the same
                 mechanism in its
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   ><strong class="markup--strong markup--p-strong"
                     >createElement</strong
                   ></code
@@ -1867,9 +1813,9 @@ import React, { Component } from &#39;react&#39;;</pre
                 A React component is considered pure if it renders the same
                 output for the same state and props. For class components like
                 this, React provides the
-                <code class="markup--code markup--p-code">PureComponent</code>
+                <code lang="js" class="markup--code markup--p-code">PureComponent</code>
                 base class. Class components that extend the
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >React.PureComponent</code
                 >
                 class are treated as pure components.
@@ -1877,7 +1823,7 @@ import React, { Component } from &#39;react&#39;;</pre
               <p name="4c32" id="4c32" class="graf graf--p graf-after--p">
                 Pure components have some performance improvements and render
                 optimizations since React implements the
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >shouldComponentUpdate()</code
                 >
                 method for them with a shallow comparison for props and state.
@@ -1893,7 +1839,7 @@ import React, { Component } from &#39;react&#39;;</pre
               <p name="8dd7" id="8dd7" class="graf graf--p graf-after--p">
                 However, functional components cannot leverage the performance
                 improvements and render optimizations that come with
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >React.PureComponent</code
                 >
                 since they are not classes by definition.
@@ -1902,7 +1848,7 @@ import React, { Component } from &#39;react&#39;;</pre
                 If you want React to treat a functional component as a pure
                 component, you’ll have to convert the functional component to a
                 class component that extends
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >React.PureComponent</code
                 >.
               </p>
@@ -2145,7 +2091,7 @@ import React, { Component } from &#39;react&#39;;</pre
                 name="bece"
                 id="bece"
                 class="graf graf--pre graf-after--li"
-              ><code class="markup--code markup--pre-code">this.setState({<br>  highlight: !this.state.highlight,<br>})</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">this.setState({<br>  highlight: !this.state.highlight,<br>})</code></pre>
               <h4 name="d1c5" id="d1c5" class="graf graf--h4 graf-after--pre">
                 7.1. First component
               </h4>
@@ -2348,13 +2294,13 @@ export default Hello;</pre
               </h4>
               <p name="d377" id="d377" class="graf graf--p graf-after--h4">
                 React components implement a
-                <code class="markup--code markup--p-code">render()</code>
+                <code lang="js" class="markup--code markup--p-code">render()</code>
                 method that takes input data and returns what to display. This
                 example uses an XML-like syntax called JSX. Input data that is
                 passed into the component can be accessed by
-                <code class="markup--code markup--p-code">render()</code>
+                <code lang="js" class="markup--code markup--p-code">render()</code>
                 via
-                <code class="markup--code markup--p-code">this.props</code>.
+                <code lang="js" class="markup--code markup--p-code">this.props</code>.
               </p>
               <p name="a154" id="a154" class="graf graf--p graf-after--p">
                 JSX is optional and not required to use React. Try the
@@ -2378,12 +2324,12 @@ export default Hello;</pre
               </figure>
               <p name="79a9" id="79a9" class="graf graf--p graf-after--figure">
                 In addition to taking input data (accessed via
-                <code class="markup--code markup--p-code">this.props</code>), a
+                <code lang="js" class="markup--code markup--p-code">this.props</code>), a
                 component can maintain internal state data (accessed via
-                <code class="markup--code markup--p-code">this.state</code>).
+                <code lang="js" class="markup--code markup--p-code">this.state</code>).
                 When a component’s state data changes, the rendered markup will
                 be updated by re-invoking
-                <code class="markup--code markup--p-code">render()</code>.
+                <code lang="js" class="markup--code markup--p-code">render()</code>.
               </p>
               <figure
                 name="73d0"
@@ -2401,11 +2347,11 @@ export default Hello;</pre
               </h4>
               <p name="e376" id="e376" class="graf graf--p graf-after--h4">
                 Using
-                <code class="markup--code markup--p-code">props</code>
+                <code lang="js" class="markup--code markup--p-code">props</code>
                 and
-                <code class="markup--code markup--p-code">state</code>, we can
+                <code lang="js" class="markup--code markup--p-code">state</code>, we can
                 put together a small Todo application. This example uses
-                <code class="markup--code markup--p-code">state</code>
+                <code lang="js" class="markup--code markup--p-code">state</code>
                 to track the current list of items as well as the text that the
                 user has entered. Although event handlers appear to be rendered
                 inline, they will be collected and implemented using event
@@ -2429,7 +2375,7 @@ export default Hello;</pre
                 React allows you to interface with other libraries and
                 frameworks. This example uses remarkable, an external Markdown
                 library, to convert the
-                <code class="markup--code markup--p-code">&lt;textarea&gt;</code
+                <code lang="js" class="markup--code markup--p-code">&lt;textarea&gt;</code
                 >’s value in real time.
               </p>
               <figure

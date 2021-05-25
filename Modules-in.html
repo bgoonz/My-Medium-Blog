@@ -3,70 +3,16 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Modules in Javascript</title>
-    <style>
-      * {
-        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-      }
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-      }
-      h1 {
-        font-size: 50px;
-        margin-bottom: 17px;
-        color: #333;
-      }
-      h2 {
-        font-size: 24px;
-        line-height: 1.6;
-        margin: 30px 0 0 0;
-        margin-bottom: 18px;
-        margin-top: 33px;
-        color: #333;
-      }
-      h3 {
-        font-size: 30px;
-        margin: 10px 0 20px 0;
-        color: #333;
-      }
-      header {
-        width: 640px;
-        margin: auto;
-      }
-      section {
-        width: 640px;
-        margin: auto;
-      }
-      section p {
-        margin-bottom: 27px;
-        font-size: 20px;
-        line-height: 1.6;
-        color: #333;
-      }
-      section img {
-        max-width: 640px;
-      }
-      footer {
-        padding: 0 20px;
-        margin: 50px 0;
-        text-align: center;
-        font-size: 12px;
-      }
-      .aspectRatioPlaceholder {
-        max-width: auto !important;
-        max-height: auto !important;
-      }
-      .aspectRatioPlaceholder-fill {
-        padding-bottom: 0 !important;
-      }
-      header,
-      section[data-field="subtitle"],
-      section[data-field="description"] {
-        display: none;
-      }
-    </style>
-  </head>
+    <link rel="stylesheet" href="./medium.css">
+  <!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js" integrity="sha512-YBk7HhgDZvBxmtOfUdvX0z8IH2d10Hp3aEygaMNhtF8fSOvBZ16D/1bXZTJV6ndk/L/DlXxYStP8jrF77v2MIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-dark.min.css" integrity="sha512-Njdz7T/p6Ud1FiTMqH87bzDxaZBsVNebOWmacBjMdgWyeIhUSFU4V52oGwo3sT+ud+lyIE98sS291/zxBfozKw==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
   <body>
     <article class="h-entry">
       <header>
@@ -229,10 +175,10 @@
                 <strong class="markup--strong markup--p-strong">S</strong>ystem
                 through JavaScript. No additional installations are required; to
                 access this module we can simply
-                <code class="markup--code markup--p-code">require</code>
+                <code lang="js" class="markup--code markup--p-code">require</code>
                 it. We recommend that you code along with this reading.
                 Let&#39;s begin with a
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >change-some-files.js</code
                 >
                 script that imports the module:
@@ -244,12 +190,12 @@
                 name="6d9a"
                 id="6d9a"
                 class="graf graf--pre graf-after--pre"
-              >const<code class="markup--code markup--pre-code"> fs </code>=<code class="markup--code markup--pre-code"> </code>require(&quot;fs&quot;);</pre>
+              >const<code lang="js" class="markup--code markup--pre-code"> fs </code>=<code lang="js" class="markup--code markup--pre-code"> </code>require(&quot;fs&quot;);</pre>
               <p name="ab25" id="ab25" class="graf graf--p graf-after--pre">
                 Similar to what we saw in the
-                <code class="markup--code markup--p-code">readline</code>
+                <code lang="js" class="markup--code markup--p-code">readline</code>
                 lesson,
-                <code class="markup--code markup--p-code">require</code>
+                <code lang="js" class="markup--code markup--p-code">require</code>
                 will return to us a object with many properties that will enable
                 us to do file I/O.
               </p>
@@ -265,10 +211,10 @@
               </p>
               <p name="cda5" id="cda5" class="graf graf--p graf-after--p">
                 The
-                <code class="markup--code markup--p-code">fs</code>
+                <code lang="js" class="markup--code markup--p-code">fs</code>
                 module contains tons of functionality! Chances are that if there
                 is some operation you need to perform regarding files, the
-                <code class="markup--code markup--p-code">fs</code>
+                <code lang="js" class="markup--code markup--p-code">fs</code>
                 module supports it. The module also offers both synchronous and
                 asynchronous implementations of these methods. We prefer to not
                 block the thread and so we&#39;ll opt for the asynchronous
@@ -279,7 +225,7 @@
               </h3>
               <p name="9056" id="9056" class="graf graf--p graf-after--h3">
                 To create a file, we can use the
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   ><a
                     href="https://nodejs.org/api/fs.html#fs_fs_writefile_file_data_options_callback"
                     data-href="https://nodejs.org/api/fs.html#fs_fs_writefile_file_data_options_callback"
@@ -308,13 +254,13 @@
                   target="_blank"
                   >create-a-nnew-file.js (github.com)</a
                 >bove will create a new file called
-                <code class="markup--code markup--p-code">foo.txt</code>
+                <code lang="js" class="markup--code markup--p-code">foo.txt</code>
                 in the same directory as our
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >change-some-file.js</code
                 >
                 script. It will write the string
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >&#39;Hello world!&#39;</code
                 >
                 into that newly created file. The third argument specifies the
@@ -330,14 +276,14 @@
                 >
                 is the most common and you&#39;ll use this in most scenarios.
                 The fourth argument to
-                <code class="markup--code markup--p-code">writeFile</code>
+                <code lang="js" class="markup--code markup--p-code">writeFile</code>
                 is a callback that will be invoked when the write operation is
                 complete. The docs indicate that if there is an error during the
                 operation (such as an invalid encoding argument), an error
                 object will be passed into the callback. This type of error
                 handling is quite common for asynchronous functions. Like we are
                 used to, since
-                <code class="markup--code markup--p-code">writeFile</code>
+                <code lang="js" class="markup--code markup--p-code">writeFile</code>
                 is asynchronous, we need to utilize
                 <em class="markup--em markup--p-em">callback chaining</em>
                 if we want to guarantee that commands occur
@@ -347,7 +293,7 @@
               <p name="86a2" id="86a2" class="graf graf--p graf-after--p">
                 <em class="markup--em markup--p-em"
                   >Beware! If the file name specified to </em
-                ><code class="markup--code markup--p-code"
+                ><code lang="js" class="markup--code markup--p-code"
                   ><em class="markup--em markup--p-em">writeFile</em></code
                 ><em class="markup--em markup--p-em">
                   already exists, it will completely overwrite the contents of
@@ -356,7 +302,7 @@
               </p>
               <p name="9ed1" id="9ed1" class="graf graf--p graf-after--p">
                 We won’t be using the
-                <code class="markup--code markup--p-code">foo.txt</code>
+                <code lang="js" class="markup--code markup--p-code">foo.txt</code>
                 file in the rest of this reading.
               </p>
               <h3 name="aac1" id="aac1" class="graf graf--h3 graf-after--p">
@@ -365,41 +311,41 @@
               <p name="4145" id="4145" class="graf graf--p graf-after--h3">
                 To explore how to read a file, we’ll use VSCode to manually
                 create a
-                <code class="markup--code markup--p-code">poetry.txt</code>
+                <code lang="js" class="markup--code markup--p-code">poetry.txt</code>
                 file within the same directory as our
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >change-some-file.js</code
                 >
                 script. Be sure to create this if you are following along.
               </p>
               <p name="d291" id="d291" class="graf graf--p graf-after--p">
                 Our
-                <code class="markup--code markup--p-code">poetry.txt</code>
+                <code lang="js" class="markup--code markup--p-code">poetry.txt</code>
                 file will contain the following lines:
               </p>
               <pre
                 name="f380"
                 id="f380"
                 class="graf graf--pre graf-after--p"
-              ><code class="markup--code markup--pre-code"><em class="markup--em markup--pre-em">My code fails</em></code></pre>
+              ><code lang="js" class="markup--code markup--pre-code"><em class="markup--em markup--pre-em">My code fails</em></code></pre>
               <pre
                 name="86f7"
                 id="86f7"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code"><em class="markup--em markup--pre-em">I do not know why</em></code></pre>
+              ><code lang="js" class="markup--code markup--pre-code"><em class="markup--em markup--pre-em">I do not know why</em></code></pre>
               <pre
                 name="c931"
                 id="c931"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code"><em class="markup--em markup--pre-em">My code works</em></code></pre>
+              ><code lang="js" class="markup--code markup--pre-code"><em class="markup--em markup--pre-em">My code works</em></code></pre>
               <pre
                 name="af50"
                 id="af50"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code"><em class="markup--em markup--pre-em">I do not know why</em></code></pre>
+              ><code lang="js" class="markup--code markup--pre-code"><em class="markup--em markup--pre-em">I do not know why</em></code></pre>
               <p name="eaa0" id="eaa0" class="graf graf--p graf-after--pre">
                 We can use the
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   ><a
                     href="https://nodejs.org/api/fs.html#fs_fs_readfile_path_options_callback"
                     data-href="https://nodejs.org/api/fs.html#fs_fs_readfile_path_options_callback"
@@ -411,13 +357,13 @@
                 >
                 method to read the contents of this file. The method accepts
                 very similar arguments to
-                <code class="markup--code markup--p-code">writeFile</code>,
+                <code lang="js" class="markup--code markup--p-code">writeFile</code>,
                 except that the callback may be passed an error object and
                 string containing the file contents. In the snippet below, we
                 have replaced our previous
-                <code class="markup--code markup--p-code">writeFile</code>
+                <code lang="js" class="markup--code markup--p-code">writeFile</code>
                 code with
-                <code class="markup--code markup--p-code">readFile</code>:
+                <code lang="js" class="markup--code markup--p-code">readFile</code>:
               </p>
               <figure
                 name="a095"
@@ -438,33 +384,33 @@
                 name="64d5"
                 id="64d5"
                 class="graf graf--pre graf-after--blockquote"
-              ><code class="markup--code markup--pre-code">THE CONTENTS ARE:</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">THE CONTENTS ARE:</code></pre>
               <pre
                 name="28a7"
                 id="28a7"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code"><strong class="markup--strong markup--pre-strong">My code fails</strong></code></pre>
+              ><code lang="js" class="markup--code markup--pre-code"><strong class="markup--strong markup--pre-strong">My code fails</strong></code></pre>
               <pre
                 name="7e4e"
                 id="7e4e"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code"><strong class="markup--strong markup--pre-strong">I do not know why</strong></code></pre>
+              ><code lang="js" class="markup--code markup--pre-code"><strong class="markup--strong markup--pre-strong">I do not know why</strong></code></pre>
               <pre
                 name="f038"
                 id="f038"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code"><strong class="markup--strong markup--pre-strong">My code works</strong></code></pre>
+              ><code lang="js" class="markup--code markup--pre-code"><strong class="markup--strong markup--pre-strong">My code works</strong></code></pre>
               <pre
                 name="3242"
                 id="3242"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code"><strong class="markup--strong markup--pre-strong">I do not know why</strong></code></pre>
+              ><code lang="js" class="markup--code markup--pre-code"><strong class="markup--strong markup--pre-strong">I do not know why</strong></code></pre>
               <p name="00d8" id="00d8" class="graf graf--p graf-after--pre">
                 Success! From here, you can do anything you please with the data
                 read from the file. For example, since
-                <code class="markup--code markup--p-code">data</code> is a
+                <code lang="js" class="markup--code markup--p-code">data</code> is a
                 string, we could split the string on the newline character
-                <code class="markup--code markup--p-code">\n</code> to obtain an
+                <code lang="js" class="markup--code markup--p-code">\n</code> to obtain an
                 array of the file&#39;s lines:
               </p>
               <figure
@@ -478,38 +424,38 @@
                 name="9da1"
                 id="9da1"
                 class="graf graf--pre graf-after--figure"
-              ><code class="markup--code markup--pre-code">THE CONTENTS ARE:</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">THE CONTENTS ARE:</code></pre>
               <pre
                 name="0548"
                 id="0548"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code">[ &#39;My code fails&#39;,</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">[ &#39;My code fails&#39;,</code></pre>
               <pre
                 name="9220"
                 id="9220"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code">&#39;I do not know why&#39;,</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">&#39;I do not know why&#39;,</code></pre>
               <pre
                 name="7098"
                 id="7098"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code">&#39;My code works&#39;,</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">&#39;My code works&#39;,</code></pre>
               <pre
                 name="9b85"
                 id="9b85"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code">&#39;I do not know why&#39; ]</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">&#39;I do not know why&#39; ]</code></pre>
               <pre
                 name="16ca"
                 id="16ca"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code">The third line is My code works</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">The third line is My code works</code></pre>
               <h3 name="4ead" id="4ead" class="graf graf--h3 graf-after--pre">
                 File I/O
               </h3>
               <p name="21f5" id="21f5" class="graf graf--p graf-after--h3">
                 <em class="markup--em markup--p-em">Using the same </em
-                ><code class="markup--code markup--p-code"
+                ><code lang="js" class="markup--code markup--p-code"
                   ><em class="markup--em markup--p-em">poetry.txt</em></code
                 ><em class="markup--em markup--p-em"> file from before:</em>
               </p>
@@ -517,22 +463,22 @@
                 name="ccdf"
                 id="ccdf"
                 class="graf graf--pre graf-after--p"
-              ><code class="markup--code markup--pre-code">My code fails</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">My code fails</code></pre>
               <pre
                 name="1b83"
                 id="1b83"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code">I do not know why</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">I do not know why</code></pre>
               <pre
                 name="b0ae"
                 id="b0ae"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code">My code works</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">My code works</code></pre>
               <pre
                 name="6b46"
                 id="6b46"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code">I do not know why</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">I do not know why</code></pre>
               <p name="d019" id="d019" class="graf graf--p graf-after--pre">
                 Let’s replace occurrences of the phrase ‘do not’ with the word
                 ‘should’.
@@ -554,29 +500,29 @@
               </figure>
               <p name="86d4" id="86d4" class="graf graf--p graf-after--figure">
                 Executing the script above will edit the
-                <code class="markup--code markup--p-code">poetry.txt</code>
+                <code lang="js" class="markup--code markup--p-code">poetry.txt</code>
                 file to contain:
               </p>
               <pre
                 name="500f"
                 id="500f"
                 class="graf graf--pre graf-after--p"
-              ><code class="markup--code markup--pre-code">My code fails</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">My code fails</code></pre>
               <pre
                 name="ed11"
                 id="ed11"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code">I should know why</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">I should know why</code></pre>
               <pre
                 name="c062"
                 id="c062"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code">My code works</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">My code works</code></pre>
               <pre
                 name="4161"
                 id="4161"
                 class="graf graf--pre graf-after--pre"
-              ><code class="markup--code markup--pre-code">I should know why</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">I should know why</code></pre>
               <h4 name="ef0d" id="ef0d" class="graf graf--h4 graf-after--pre">
                 Refactor:
               </h4>

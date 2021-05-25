@@ -3,70 +3,16 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Objects in Javascript</title>
-    <style>
-      * {
-        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-      }
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-      }
-      h1 {
-        font-size: 50px;
-        margin-bottom: 17px;
-        color: #333;
-      }
-      h2 {
-        font-size: 24px;
-        line-height: 1.6;
-        margin: 30px 0 0 0;
-        margin-bottom: 18px;
-        margin-top: 33px;
-        color: #333;
-      }
-      h3 {
-        font-size: 30px;
-        margin: 10px 0 20px 0;
-        color: #333;
-      }
-      header {
-        width: 640px;
-        margin: auto;
-      }
-      section {
-        width: 640px;
-        margin: auto;
-      }
-      section p {
-        margin-bottom: 27px;
-        font-size: 20px;
-        line-height: 1.6;
-        color: #333;
-      }
-      section img {
-        max-width: 640px;
-      }
-      footer {
-        padding: 0 20px;
-        margin: 50px 0;
-        text-align: center;
-        font-size: 12px;
-      }
-      .aspectRatioPlaceholder {
-        max-width: auto !important;
-        max-height: auto !important;
-      }
-      .aspectRatioPlaceholder-fill {
-        padding-bottom: 0 !important;
-      }
-      header,
-      section[data-field="subtitle"],
-      section[data-field="description"] {
-        display: none;
-      }
-    </style>
-  </head>
+    <link rel="stylesheet" href="./medium.css">
+  <!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js" integrity="sha512-YBk7HhgDZvBxmtOfUdvX0z8IH2d10Hp3aEygaMNhtF8fSOvBZ16D/1bXZTJV6ndk/L/DlXxYStP8jrF77v2MIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-dark.min.css" integrity="sha512-Njdz7T/p6Ud1FiTMqH87bzDxaZBsVNebOWmacBjMdgWyeIhUSFU4V52oGwo3sT+ud+lyIE98sS291/zxBfozKw==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
   <body>
     <article class="h-entry">
       <header>
@@ -119,7 +65,7 @@
               </h3>
               <p name="d7ad" id="d7ad" class="graf graf--p graf-after--h3">
                 The
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   ><strong class="markup--strong markup--p-strong"
                     >object</strong
                   ></code
@@ -175,7 +121,7 @@
               <ul class="postList">
                 <li name="2839" id="2839" class="graf graf--li graf-after--p">
                   Objects are indexed with
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >keys</strong
                     ></code
@@ -187,7 +133,7 @@
                 </li>
                 <li name="4575" id="4575" class="graf graf--li graf-after--li">
                   Objects are defined by using curly braces
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >{}</strong
                     ></code
@@ -318,7 +264,7 @@
               </p>
               <ul class="postList">
                 <li name="b0e3" id="b0e3" class="graf graf--li graf-after--p">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >Object.keys()</strong
                     ></code
@@ -327,7 +273,7 @@
                   keys.
                 </li>
                 <li name="7fbd" id="7fbd" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >Object.values()</strong
                     ></code
@@ -425,7 +371,7 @@
               </p>
               <ul class="postList">
                 <li name="e9b5" id="e9b5" class="graf graf--li graf-after--p">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >Rest Parameter Syntax</strong
                     ></code
@@ -525,11 +471,11 @@ let empty_object = {};</pre
               <ul class="postList">
                 <li name="ee43" id="ee43" class="graf graf--li graf-after--h3">
                   Can be done with either dot notation
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >today.weather.morning</code
                   >
                   or with square brackets
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >today[&#39;month&#39;]</code
                   >
                 </li>
@@ -538,7 +484,7 @@ let empty_object = {};</pre
                   nonexistent data to prevent and
                   <em class="markup--em markup--li-em">undefined</em>
                   error:
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >var weath = today.weather.evening ||
                     &quot;unknown&quot;</code
                   >
@@ -596,7 +542,7 @@ let empty_object = {};</pre
                   class="graf graf--li graf-after--figure"
                 >
                   The
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >Object.create</code
                   >
                   method is now available in ES5 (but the method is in the book
@@ -638,13 +584,13 @@ let empty_object = {};</pre
                 </li>
                 <li name="a00d" id="a00d" class="graf graf--li graf-after--li">
                   Using
-                  <code class="markup--code markup--li-code">typeof</code>
+                  <code lang="js" class="markup--code markup--li-code">typeof</code>
                   includes all properties in the prototype chain including
                   functions
                 </li>
                 <li name="4365" id="4365" class="graf graf--li graf-after--li">
                   To avoid inherited properties, use
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >hasOwnProperty(type);</code
                   >
                   which returns
@@ -687,7 +633,7 @@ today.hasOwnProperty(‘number’) //will return true today.hasOwnProperty(‘co
                 </li>
                 <li name="9258" id="9258" class="graf graf--li graf-after--li">
                   Format:
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >delete today.month</code
                   >
                 </li>

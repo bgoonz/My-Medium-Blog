@@ -3,70 +3,16 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>PostgreSQL Setup For Windows &amp; WSL/Ubuntu</title>
-    <style>
-      * {
-        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-      }
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-      }
-      h1 {
-        font-size: 50px;
-        margin-bottom: 17px;
-        color: #333;
-      }
-      h2 {
-        font-size: 24px;
-        line-height: 1.6;
-        margin: 30px 0 0 0;
-        margin-bottom: 18px;
-        margin-top: 33px;
-        color: #333;
-      }
-      h3 {
-        font-size: 30px;
-        margin: 10px 0 20px 0;
-        color: #333;
-      }
-      header {
-        width: 640px;
-        margin: auto;
-      }
-      section {
-        width: 640px;
-        margin: auto;
-      }
-      section p {
-        margin-bottom: 27px;
-        font-size: 20px;
-        line-height: 1.6;
-        color: #333;
-      }
-      section img {
-        max-width: 640px;
-      }
-      footer {
-        padding: 0 20px;
-        margin: 50px 0;
-        text-align: center;
-        font-size: 12px;
-      }
-      .aspectRatioPlaceholder {
-        max-width: auto !important;
-        max-height: auto !important;
-      }
-      .aspectRatioPlaceholder-fill {
-        padding-bottom: 0 !important;
-      }
-      header,
-      section[data-field="subtitle"],
-      section[data-field="description"] {
-        display: none;
-      }
-    </style>
-  </head>
+    <link rel="stylesheet" href="./medium.css">
+  <!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js" integrity="sha512-YBk7HhgDZvBxmtOfUdvX0z8IH2d10Hp3aEygaMNhtF8fSOvBZ16D/1bXZTJV6ndk/L/DlXxYStP8jrF77v2MIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-dark.min.css" integrity="sha512-Njdz7T/p6Ud1FiTMqH87bzDxaZBsVNebOWmacBjMdgWyeIhUSFU4V52oGwo3sT+ud+lyIE98sS291/zxBfozKw==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
   <body>
     <article class="h-entry">
       <header>
@@ -109,7 +55,7 @@
               <p name="0047" id="0047" class="graf graf--p graf-after--figure">
                 If you follow this guide to a tee… you will install PostgreSQL
                 itself on your Windows installation. Then, you will install
-                <code class="markup--code markup--p-code">psql</code> in your
+                <code lang="js" class="markup--code markup--p-code">psql</code> in your
                 Ubuntu installation. Then you will also install Postbird, a
                 cross-platform graphical user interface that makes working with
                 SQL and PostgreSQL ‘allegedly’ …(personally I prefer to just use
@@ -117,7 +63,7 @@
                 complicated tutorial than postbird)… better than just using the
                 <strong class="markup--strong markup--p-strong"
                   >command line tool </strong
-                ><code class="markup--code markup--p-code"
+                ><code lang="js" class="markup--code markup--p-code"
                   ><strong class="markup--strong markup--p-strong"
                     >psql</strong
                   ></code
@@ -165,7 +111,7 @@
                   >front-end</a
                 >
                 for PostgreSQL is the
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   ><strong class="markup--strong markup--p-strong"
                     >psql</strong
                   ></code
@@ -344,7 +290,7 @@
                 to do this so that the Node.js (and later Python) programs
                 running on your Ubuntu installation can access the PostgreSQL
                 server running on your Windows installation. You need to tell
-                <code class="markup--code markup--p-code">apt</code>, the
+                <code lang="js" class="markup--code markup--p-code">apt</code>, the
                 package manager, that you want it to go find the PostgreSQL 12
                 client tools from PostgreSQL itself rather than the common
                 package repositories. You do that by issuing the following two
@@ -378,7 +324,7 @@
               <p name="2875" id="2875" class="graf graf--p graf-after--p">
                 Now that you’ve registered the PostgreSQL repositories as a
                 source to look for PostgreSQL, you need to update the
-                <code class="markup--code markup--p-code">apt</code>
+                <code lang="js" class="markup--code markup--p-code">apt</code>
                 registry. You should do this before you install
                 <em class="markup--em markup--p-em">any</em> software on Ubuntu.
               </p>
@@ -398,7 +344,7 @@ sudo apt install postgresql-client-12 postgresql-common</pre
               </p>
               <p name="aeab" id="aeab" class="graf graf--p graf-after--p">
                 Test that it installed by typing
-                <code class="markup--code markup--p-code">psql --version</code>.
+                <code lang="js" class="markup--code markup--p-code">psql --version</code>.
                 You should see it print out information about the version of the
                 installed tools. If it tells you that it can&#39;t find the
                 command, try these instructions over.
@@ -422,28 +368,28 @@ sudo apt install postgresql-client-12 postgresql-common</pre
               <p name="91e2" id="91e2" class="graf graf--p graf-after--p">
                 Make sure you’re in your Ubuntu home directory. You can do that
                 by typing
-                <code class="markup--code markup--p-code">cd</code> and hitting
+                <code lang="js" class="markup--code markup--p-code">cd</code> and hitting
                 enter. Use
-                <code class="markup--code markup--p-code">ls</code> to find out
-                if you have a <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code">ls</code> to find out
+                if you have a <code lang="js" class="markup--code markup--p-code"
                   >.bashrc</code
                 >
                 file. Type
-                <code class="markup--code markup--p-code">ls .bashrc</code>. If
+                <code lang="js" class="markup--code markup--p-code">ls .bashrc</code>. If
                 it shows you that one exists, that&#39;s the one you will add
                 the alias to. If it tells you that there is no file named that,
                 then type
-                <code class="markup--code markup--p-code">ls .profile</code>. If
+                <code lang="js" class="markup--code markup--p-code">ls .profile</code>. If
                 it shows you that one exists, that&#39;s the one you will add
                 the alias to. If it shows you that it does not exist, then use
-                the file name <code class="markup--code markup--p-code"
+                the file name <code lang="js" class="markup--code markup--p-code"
                   >.bashrc</code
                 >
                 in the following section.
               </p>
               <p name="8c06" id="8c06" class="graf graf--p graf-after--p">
                 Now that you know which profile file to use, type
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >code «profile file name»</code
                 >
                 where &quot;profile file name&quot; is the name of the file you
@@ -456,7 +402,7 @@ alias psql=&quot;psql -h localhost&quot;</pre
               >
               <p name="55b4" id="55b4" class="graf graf--p graf-after--pre">
                 When you run
-                <code class="markup--code markup--p-code">psql</code>
+                <code lang="js" class="markup--code markup--p-code">psql</code>
                 from the command line, it will now always add the part about
                 wanting to connect to
                 <em class="markup--em markup--p-em">localhost</em> every time.
@@ -464,13 +410,13 @@ alias psql=&quot;psql -h localhost&quot;</pre
               </p>
               <p name="6b42" id="6b42" class="graf graf--p graf-after--p">
                 To make sure that you set that up correctly, type
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >psql -U postgres postgres</code
                 >. This tells the
-                <code class="markup--code markup--p-code">psql</code>
+                <code lang="js" class="markup--code markup--p-code">psql</code>
                 client that you want to connect as the user &quot;postgres&quot;
-                (<code class="markup--code markup--p-code">-U postgres</code>)
-                to the database postgres (<code
+                (<code lang="js" class="markup--code markup--p-code">-U postgres</code>)
+                to the database postgres (<code lang="js"
                   class="markup--code markup--p-code"
                   >postgres</code
                 >
@@ -491,7 +437,7 @@ postgres=#</pre
               >
               <p name="1b19" id="1b19" class="graf graf--p graf-after--pre">
                 Type
-                <code class="markup--code markup--p-code">\q</code> and hit
+                <code lang="js" class="markup--code markup--p-code">\q</code> and hit
                 Enter to exit the PostgreSQL client tool.
               </p>
               <p name="401d" id="401d" class="graf graf--p graf-after--p">
@@ -533,7 +479,7 @@ code ~/.pgpass</pre
                 <strong class="markup--strong markup--p-strong"
                   >use your Ubuntu user name and the password that you just
                   created for that user with the </strong
-                ><code class="markup--code markup--p-code"
+                ><code lang="js" class="markup--code markup--p-code"
                   ><strong class="markup--strong markup--p-strong"
                     >psql</strong
                   ></code
@@ -541,7 +487,7 @@ code ~/.pgpass</pre
                   command you just typed.</strong
                 >
                 (If you have forgotten your Ubuntu user name, type
-                <code class="markup--code markup--p-code">whoami</code>
+                <code lang="js" class="markup--code markup--p-code">whoami</code>
                 on the command line.) Your entry in the file should have this
                 format.
               </p>
@@ -566,7 +512,7 @@ chmod go-rw ~/.pgpass</pre
               <p name="1f6a" id="1f6a" class="graf graf--p graf-after--pre">
                 You can confirm that only you have read/write permission by
                 typing
-                <code class="markup--code markup--p-code">ls -al ~/.pgpass</code
+                <code lang="js" class="markup--code markup--p-code">ls -al ~/.pgpass</code
                 >. That should return output that looks like this,
                 <strong class="markup--strong markup--p-strong"
                   >with your Ubuntu user name instead of
@@ -578,14 +524,14 @@ chmod go-rw ~/.pgpass</pre
               >
               <p name="a9f8" id="a9f8" class="graf graf--p graf-after--pre">
                 Now, try connecting to PostreSQL by typing
-                <code class="markup--code markup--p-code">psql postgres</code>.
+                <code lang="js" class="markup--code markup--p-code">psql postgres</code>.
                 Because you added the alias to your startup script, and because
                 you created your <strong class="markup--strong markup--p-strong"
                   >.pgpass</strong
                 >
                 file, it should now connect without prompting you for any
                 credentials! Type
-                <code class="markup--code markup--p-code">\q</code> and press
+                <code lang="js" class="markup--code markup--p-code">\q</code> and press
                 Enter to exit the PostgreSQL command line client.
               </p>
               <h3 name="bb3a" id="bb3a" class="graf graf--h3 graf-after--p">
@@ -707,7 +653,7 @@ chmod go-rw ~/.pgpass</pre
               </p>
               <p name="78b0" id="78b0" class="graf graf--p graf-after--p">
                 We install node-postgres with
-                <code class="markup--code markup--p-code">nmp i pg</code>.
+                <code lang="js" class="markup--code markup--p-code">nmp i pg</code>.
               </p>
               <p name="4c2f" id="4c2f" class="graf graf--p graf-after--p">
                 npm i ramda
@@ -735,7 +681,7 @@ chmod go-rw ~/.pgpass</pre
               </p>
               <p name="abb9" id="abb9" class="graf graf--p graf-after--p">
                 In some of the examples, we use this
-                <code class="markup--code markup--p-code">cars</code>
+                <code lang="js" class="markup--code markup--p-code">cars</code>
                 table.
               </p>
               <h3 name="e064" id="e064" class="graf graf--h3 graf-after--p">
@@ -772,8 +718,8 @@ const result = R.head(R.values(R.head(res.rows)))</pre
               >const pg = require(‘pg’);<br>const R = require(‘ramda’);</pre>
               <p name="013a" id="013a" class="graf graf--p graf-after--pre">
                 We include the
-                <code class="markup--code markup--p-code">pg</code> and
-                <code class="markup--code markup--p-code">ramda</code>
+                <code lang="js" class="markup--code markup--p-code">pg</code> and
+                <code lang="js" class="markup--code markup--p-code">ramda</code>
                 modules.
               </p>
               <pre name="9141" id="9141" class="graf graf--pre graf-after--p">
@@ -790,7 +736,7 @@ const cs = ‘postgres://postgres:s$cret@localhost:5432/ydb’;</pre
               >const client = new pg.Client(cs);<br>client.connect();</pre>
               <p name="39b7" id="39b7" class="graf graf--p graf-after--pre">
                 A client is created. We connect to the database with
-                <code class="markup--code markup--p-code">connect()</code>.
+                <code lang="js" class="markup--code markup--p-code">connect()</code>.
               </p>
               <pre name="852f" id="852f" class="graf graf--pre graf-after--p">
 client.query(‘SELECT 1 + 4’).then(res =&gt; {</pre
@@ -807,10 +753,10 @@ console.log(result);</pre
               <p name="8637" id="8637" class="graf graf--p graf-after--pre">
                 We issue a simple SELECT query. We get the result and output it
                 to the console. The
-                <code class="markup--code markup--p-code">res.rows</code>
+                <code lang="js" class="markup--code markup--p-code">res.rows</code>
                 is an array of objects; we use Ramda to get the returned scalar
                 value. In the end, we close the connection with
-                <code class="markup--code markup--p-code">end()</code>.
+                <code lang="js" class="markup--code markup--p-code">end()</code>.
               </p>
               <pre
                 name="ddba"
@@ -866,9 +812,9 @@ console.log(fields);</pre
               >}).catch(err =&gt; {<br>console.log(err.stack);<br>}).finally(() =&gt; {<br>client.end()<br>});</pre>
               <p name="76c5" id="76c5" class="graf graf--p graf-after--pre">
                 The column names are retrieved with
-                <code class="markup--code markup--p-code">res.fields</code>
+                <code lang="js" class="markup--code markup--p-code">res.fields</code>
                 attribute. We also use the
-                <code class="markup--code markup--p-code">catch</code>
+                <code lang="js" class="markup--code markup--p-code">catch</code>
                 clause to output potential errors.
               </p>
               <pre
@@ -878,7 +824,7 @@ console.log(fields);</pre
               >node column_names.js<br>‘id’, ‘name’, ‘price’′<em class="markup--em markup--pre-em">id</em>′,′<em class="markup--em markup--pre-em">name</em>′,′<em class="markup--em markup--pre-em">price</em>′</pre>
               <p name="bd66" id="bd66" class="graf graf--p graf-after--pre">
                 The output shows three column names of the
-                <code class="markup--code markup--p-code">cars</code>
+                <code lang="js" class="markup--code markup--p-code">cars</code>
                 table.
               </p>
               <h3 name="1234" id="1234" class="graf graf--h3 graf-after--p">

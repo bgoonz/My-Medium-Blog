@@ -3,70 +3,16 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>The Beginner’s Guide To JavaScript</title>
-    <style>
-      * {
-        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-      }
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-      }
-      h1 {
-        font-size: 50px;
-        margin-bottom: 17px;
-        color: #333;
-      }
-      h2 {
-        font-size: 24px;
-        line-height: 1.6;
-        margin: 30px 0 0 0;
-        margin-bottom: 18px;
-        margin-top: 33px;
-        color: #333;
-      }
-      h3 {
-        font-size: 30px;
-        margin: 10px 0 20px 0;
-        color: #333;
-      }
-      header {
-        width: 640px;
-        margin: auto;
-      }
-      section {
-        width: 640px;
-        margin: auto;
-      }
-      section p {
-        margin-bottom: 27px;
-        font-size: 20px;
-        line-height: 1.6;
-        color: #333;
-      }
-      section img {
-        max-width: 640px;
-      }
-      footer {
-        padding: 0 20px;
-        margin: 50px 0;
-        text-align: center;
-        font-size: 12px;
-      }
-      .aspectRatioPlaceholder {
-        max-width: auto !important;
-        max-height: auto !important;
-      }
-      .aspectRatioPlaceholder-fill {
-        padding-bottom: 0 !important;
-      }
-      header,
-      section[data-field="subtitle"],
-      section[data-field="description"] {
-        display: none;
-      }
-    </style>
-  </head>
+    <link rel="stylesheet" href="./medium.css">
+  <!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js" integrity="sha512-YBk7HhgDZvBxmtOfUdvX0z8IH2d10Hp3aEygaMNhtF8fSOvBZ16D/1bXZTJV6ndk/L/DlXxYStP8jrF77v2MIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-dark.min.css" integrity="sha512-Njdz7T/p6Ud1FiTMqH87bzDxaZBsVNebOWmacBjMdgWyeIhUSFU4V52oGwo3sT+ud+lyIE98sS291/zxBfozKw==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
   <body>
     <article class="h-entry">
       <header>
@@ -399,7 +345,7 @@
                   id="2fbf"
                   class="graf graf--li graf-after--li graf--trailing"
                 >
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >console.log(7 % 10); // =&gt; 7;</code
                   >
                 </li>
@@ -442,18 +388,18 @@
                   single or double quotation marks to allow it to work.
                 </li>
                 <li name="46e7" id="46e7" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >&quot;That&#39;s a great string&quot;; (valid)</code
                   >
                 </li>
                 <li name="4667" id="4667" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >&#39;Shakespeare wrote, &quot;To be or not to
                     be&quot;&#39;; (valid)</code
                   >
                 </li>
                 <li name="9674" id="9674" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >&#39;That&#39;s a bad string&#39;; (invalid)</code
                   >
                 </li>
@@ -462,7 +408,7 @@
                   literals.
                 </li>
                 <li name="caf5" id="caf5" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >`This is a temp&#39;l&#39;ate literal ${function}` // use
                     ${} to invoke functions within.</code
                   >
@@ -484,25 +430,25 @@
                 </li>
               </ul>
               <p name="20a2" id="20a2" class="graf graf--p graf-after--li">
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >console.log(&quot;bootcamp&quot;[0]); // =&gt;
                   &quot;b&quot;</code
                 >
               </p>
               <p name="d9ed" id="d9ed" class="graf graf--p graf-after--p">
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >console.log(&quot;bootcamp&quot;[10]); // =&gt;
                   &quot;undefined&quot;</code
                 >
               </p>
               <p name="f4a6" id="f4a6" class="graf graf--p graf-after--p">
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >console.log(&quot;boots&quot;[1 * 2]); // =&gt;
                   &quot;o&quot;</code
                 >
               </p>
               <p name="988f" id="988f" class="graf graf--p graf-after--p">
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >console.log(&quot;boots&quot;[&quot;boot&quot;.length - 1]);
                   // =&gt; &quot;t&quot;</code
                 >
@@ -523,7 +469,7 @@
                   within a string.
                 </li>
                 <li name="442d" id="442d" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >console.log(&quot;bagel&quot;.indexOf(&quot;b&quot;)); //
                     =&gt; 0
                     console.log(&quot;bagel&quot;.indexOf(&quot;z&quot;)); //
@@ -583,7 +529,7 @@
                   (not) : reverses a boolean value.
                 </li>
                 <li name="bdba" id="bdba" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >console.log(!true); // =&gt; false console.log(!!false); //
                     =&gt; false</code
                   >
@@ -628,7 +574,7 @@
                   distributing ! across parentheses.
                 </li>
                 <li name="7400" id="7400" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >!(A || B) === !A &amp;&amp; !B; !(A &amp;&amp; B) === !A
                     || !B;</code
                   >
@@ -651,7 +597,7 @@
                   id="58a3"
                   class="graf graf--li graf-after--li graf--trailing"
                 >
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >console.log(true || !false); // =&gt; stops after it sees
                     &quot;true ||&quot;</code
                   >
@@ -780,7 +726,7 @@
                   single equals sign (assignment operator).
                 </li>
                 <li name="e03b" id="e03b" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >let bootcamp = &quot;Lambda&quot;; console.log(bootcamp);
                     // &quot;Lambda&quot;</code
                   >
@@ -794,7 +740,7 @@
                   automatically set.
                 </li>
                 <li name="0c6f" id="0c6f" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >let bootcamp; console.log(bootcamp); // undefined</code
                   >
                 </li>
@@ -820,7 +766,7 @@
                 name="0c8b"
                 id="0c8b"
                 class="graf graf--pre graf-after--p"
-              ><code class="markup--code markup--pre-code">let num = 0;<br>num += 10; // same as num = num + 10<br>num -= 2; // same as num = num - 2<br>num /= 4; // same as num = num / 4<br>num *= 7; // same as num = num * 7</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">let num = 0;<br>num += 10; // same as num = num + 10<br>num -= 2; // same as num = num - 2<br>num /= 4; // same as num = num / 4<br>num *= 7; // same as num = num * 7</code></pre>
               <ul class="postList">
                 <li name="ab22" id="ab22" class="graf graf--li graf-after--pre">
                   In general, any nonsensical arithmetic will result in

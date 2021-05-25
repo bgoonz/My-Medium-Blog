@@ -3,70 +3,16 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Regular Expressions</title>
-    <style>
-      * {
-        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-      }
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-      }
-      h1 {
-        font-size: 50px;
-        margin-bottom: 17px;
-        color: #333;
-      }
-      h2 {
-        font-size: 24px;
-        line-height: 1.6;
-        margin: 30px 0 0 0;
-        margin-bottom: 18px;
-        margin-top: 33px;
-        color: #333;
-      }
-      h3 {
-        font-size: 30px;
-        margin: 10px 0 20px 0;
-        color: #333;
-      }
-      header {
-        width: 640px;
-        margin: auto;
-      }
-      section {
-        width: 640px;
-        margin: auto;
-      }
-      section p {
-        margin-bottom: 27px;
-        font-size: 20px;
-        line-height: 1.6;
-        color: #333;
-      }
-      section img {
-        max-width: 640px;
-      }
-      footer {
-        padding: 0 20px;
-        margin: 50px 0;
-        text-align: center;
-        font-size: 12px;
-      }
-      .aspectRatioPlaceholder {
-        max-width: auto !important;
-        max-height: auto !important;
-      }
-      .aspectRatioPlaceholder-fill {
-        padding-bottom: 0 !important;
-      }
-      header,
-      section[data-field="subtitle"],
-      section[data-field="description"] {
-        display: none;
-      }
-    </style>
-  </head>
+    <link rel="stylesheet" href="./medium.css">
+  <!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js" integrity="sha512-YBk7HhgDZvBxmtOfUdvX0z8IH2d10Hp3aEygaMNhtF8fSOvBZ16D/1bXZTJV6ndk/L/DlXxYStP8jrF77v2MIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-dark.min.css" integrity="sha512-Njdz7T/p6Ud1FiTMqH87bzDxaZBsVNebOWmacBjMdgWyeIhUSFU4V52oGwo3sT+ud+lyIE98sS291/zxBfozKw==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
   <body>
     <article class="h-entry">
       <header>
@@ -151,7 +97,7 @@
                   >Regular expressions are patterns used to match character
                   combinations in strings. In JavaScript, regular expressions
                   are also objects. These patterns are used with the </em
-                ><code class="markup--code markup--p-code"
+                ><code lang="js" class="markup--code markup--p-code"
                   ><a
                     href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/RegExp/exec.html"
                     data-href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/RegExp/exec.html"
@@ -161,7 +107,7 @@
                     ><em class="markup--em markup--p-em">exec()</em></a
                   ></code
                 ><em class="markup--em markup--p-em"> and </em
-                ><code class="markup--code markup--p-code"
+                ><code lang="js" class="markup--code markup--p-code"
                   ><a
                     href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/RegExp/test.html"
                     data-href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/RegExp/test.html"
@@ -171,7 +117,7 @@
                     ><em class="markup--em markup--p-em">test()</em></a
                   ></code
                 ><em class="markup--em markup--p-em"> methods of </em
-                ><code class="markup--code markup--p-code"
+                ><code lang="js" class="markup--code markup--p-code"
                   ><a
                     href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/RegExp.html"
                     data-href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/RegExp.html"
@@ -181,7 +127,7 @@
                     ><em class="markup--em markup--p-em">RegExp</em></a
                   ></code
                 ><em class="markup--em markup--p-em">, and with the </em
-                ><code class="markup--code markup--p-code"
+                ><code lang="js" class="markup--code markup--p-code"
                   ><a
                     href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String/match.html"
                     data-href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String/match.html"
@@ -191,7 +137,7 @@
                     ><em class="markup--em markup--p-em">match()</em></a
                   ></code
                 ><em class="markup--em markup--p-em">, </em
-                ><code class="markup--code markup--p-code"
+                ><code lang="js" class="markup--code markup--p-code"
                   ><a
                     href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String/matchAll.html"
                     data-href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String/matchAll.html"
@@ -201,7 +147,7 @@
                     ><em class="markup--em markup--p-em">matchAll()</em></a
                   ></code
                 ><em class="markup--em markup--p-em">, </em
-                ><code class="markup--code markup--p-code"
+                ><code lang="js" class="markup--code markup--p-code"
                   ><a
                     href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String/replace.html"
                     data-href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String/replace.html"
@@ -211,7 +157,7 @@
                     ><em class="markup--em markup--p-em">replace()</em></a
                   ></code
                 ><em class="markup--em markup--p-em">, </em
-                ><code class="markup--code markup--p-code"
+                ><code lang="js" class="markup--code markup--p-code"
                   ><a
                     href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String/replaceAll.html"
                     data-href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String/replaceAll.html"
@@ -221,7 +167,7 @@
                     ><em class="markup--em markup--p-em">replaceAll()</em></a
                   ></code
                 ><em class="markup--em markup--p-em">, </em
-                ><code class="markup--code markup--p-code"
+                ><code lang="js" class="markup--code markup--p-code"
                   ><a
                     href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String/search.html"
                     data-href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String/search.html"
@@ -231,7 +177,7 @@
                     ><em class="markup--em markup--p-em">search()</em></a
                   ></code
                 ><em class="markup--em markup--p-em">, and </em
-                ><code class="markup--code markup--p-code"
+                ><code lang="js" class="markup--code markup--p-code"
                   ><a
                     href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String/split.html"
                     data-href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String/split.html"
@@ -241,7 +187,7 @@
                     ><em class="markup--em markup--p-em">split()</em></a
                   ></code
                 ><em class="markup--em markup--p-em"> methods of </em
-                ><code class="markup--code markup--p-code"
+                ><code lang="js" class="markup--code markup--p-code"
                   ><a
                     href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String.html"
                     data-href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String.html"
@@ -269,7 +215,7 @@
                 </li>
               </ol>
               <p name="304d" id="304d" class="graf graf--p graf-after--li">
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   ><strong class="markup--strong markup--p-strong"
                     >let re = /ab+c/;</strong
                   ></code
@@ -286,7 +232,7 @@
               <p name="247d" id="247d" class="graf graf--p graf-after--li">
                 <strong class="markup--strong markup--p-strong"
                   >2. Or calling the constructor function of the </strong
-                ><code class="markup--code markup--p-code"
+                ><code lang="js" class="markup--code markup--p-code"
                   ><a
                     href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/RegExp.html"
                     data-href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/RegExp.html"
@@ -303,7 +249,7 @@
               </p>
               <ul class="postList">
                 <li name="2016" id="2016" class="graf graf--li graf-after--p">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >let re = new RegExp(&#39;ab+c&#39;);</code
                   >
                 </li>
@@ -331,11 +277,11 @@
               <p name="8477" id="8477" class="graf graf--p graf-after--h3">
                 A regular expression pattern is composed of simple characters,
                 such as
-                <code class="markup--code markup--p-code">/abc/</code>, or a
+                <code lang="js" class="markup--code markup--p-code">/abc/</code>, or a
                 combination of simple and special characters, such as
-                <code class="markup--code markup--p-code">/ab*c/</code>
+                <code lang="js" class="markup--code markup--p-code">/ab*c/</code>
                 or
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >/Chapter (\d+)\.\d*/</code
                 >.
               </p>
@@ -358,37 +304,37 @@
               </p>
               <p name="3448" id="3448" class="graf graf--p graf-after--p">
                 For example, the pattern
-                <code class="markup--code markup--p-code">/abc/</code>
+                <code lang="js" class="markup--code markup--p-code">/abc/</code>
                 matches character combinations in strings only when the exact
                 sequence
-                <code class="markup--code markup--p-code">&quot;abc&quot;</code>
+                <code lang="js" class="markup--code markup--p-code">&quot;abc&quot;</code>
                 occurs (all characters together and in that order).
               </p>
               <p name="b662" id="b662" class="graf graf--p graf-after--p">
                 Such a match would succeed in the strings
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >&quot;Hi, do you know your abc&#39;s?&quot;</code
                 >
                 and
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >&quot;The latest airplane designs evolved from
                   slabcraft.&quot;</code
                 >
               </p>
               <p name="cc18" id="cc18" class="graf graf--p graf-after--p">
                 In both cases the match is with the substring
-                <code class="markup--code markup--p-code">&quot;abc&quot;</code
+                <code lang="js" class="markup--code markup--p-code">&quot;abc&quot;</code
                 >.
               </p>
               <p name="6f82" id="6f82" class="graf graf--p graf-after--p">
                 There is no match in the string
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >&quot;Grab crab&quot;</code
                 >
                 because while it contains the substring
-                <code class="markup--code markup--p-code">&quot;ab c&quot;</code
+                <code lang="js" class="markup--code markup--p-code">&quot;ab c&quot;</code
                 >, it does not contain the exact substring
-                <code class="markup--code markup--p-code">&quot;abc&quot;</code
+                <code lang="js" class="markup--code markup--p-code">&quot;abc&quot;</code
                 >.
               </p>
               <h3 name="6ffc" id="6ffc" class="graf graf--h3 graf-after--p">
@@ -402,17 +348,17 @@
               <p name="0193" id="0193" class="graf graf--p graf-after--p">
                 For example, to match
                 <em class="markup--em markup--p-em">a single </em
-                ><code class="markup--code markup--p-code"
+                ><code lang="js" class="markup--code markup--p-code"
                   ><em class="markup--em markup--p-em">&quot;a&quot;</em></code
                 ><em class="markup--em markup--p-em">
                   followed by zero or more </em
-                ><code class="markup--code markup--p-code"
+                ><code lang="js" class="markup--code markup--p-code"
                   ><em class="markup--em markup--p-em">&quot;b&quot;</em></code
                 ><em class="markup--em markup--p-em">s followed by </em
-                ><code class="markup--code markup--p-code"
+                ><code lang="js" class="markup--code markup--p-code"
                   ><em class="markup--em markup--p-em">&quot;c&quot;</em></code
                 >, you&#39;d use the pattern
-                <code class="markup--code markup--p-code">/ab*c/</code>:
+                <code lang="js" class="markup--code markup--p-code">/ab*c/</code>:
               </p>
               <blockquote
                 name="12ff"
@@ -420,17 +366,17 @@
                 class="graf graf--blockquote graf-after--p"
               >
                 the
-                <code class="markup--code markup--blockquote-code">*</code>
+                <code lang="js" class="markup--code markup--blockquote-code">*</code>
                 after
-                <code class="markup--code markup--blockquote-code"
+                <code lang="js" class="markup--code markup--blockquote-code"
                   >&quot;b&quot;</code
                 >
                 means &quot;0 or more occurrences of the preceding item.&quot;
                 In the string
-                <code class="markup--code markup--blockquote-code"
+                <code lang="js" class="markup--code markup--blockquote-code"
                   >&quot;cbbabbbbcdebc&quot;</code
                 >, this pattern will match the substring
-                <code class="markup--code markup--blockquote-code"
+                <code lang="js" class="markup--code markup--blockquote-code"
                   >&quot;abbbbc&quot;</code
                 >.
               </blockquote>
@@ -547,7 +493,7 @@
               <p name="ebfd" id="ebfd" class="graf graf--p graf-after--h3">
                 If you need to use any of the special characters literally
                 (actually searching for a
-                <code class="markup--code markup--p-code">&quot;*&quot;</code>,
+                <code lang="js" class="markup--code markup--p-code">&quot;*&quot;</code>,
                 for instance), you must escape it by putting a
                 <strong class="markup--strong markup--p-strong"
                   >backslash</strong
@@ -556,11 +502,11 @@
               </p>
               <p name="06ac" id="06ac" class="graf graf--p graf-after--p">
                 For instance, to search for
-                <code class="markup--code markup--p-code">&quot;a&quot;</code>
+                <code lang="js" class="markup--code markup--p-code">&quot;a&quot;</code>
                 followed by
-                <code class="markup--code markup--p-code">&quot;*&quot;</code>
+                <code lang="js" class="markup--code markup--p-code">&quot;*&quot;</code>
                 followed by
-                <code class="markup--code markup--p-code">&quot;b&quot;</code>,
+                <code lang="js" class="markup--code markup--p-code">&quot;b&quot;</code>,
               </p>
               <blockquote
                 name="4052"
@@ -568,9 +514,9 @@
                 class="graf graf--blockquote graf-after--p"
               >
                 you&#39;d use
-                <code class="markup--code markup--blockquote-code">/a\*b/</code>
+                <code lang="js" class="markup--code markup--blockquote-code">/a\*b/</code>
                 --- the backslash &quot;escapes&quot; the
-                <code class="markup--code markup--blockquote-code"
+                <code lang="js" class="markup--code markup--blockquote-code"
                   >&quot;*&quot;</code
                 >, making it literal instead of special.
               </blockquote>
@@ -586,7 +532,7 @@
               <p name="e031" id="e031" class="graf graf--p graf-after--p">
                 For instance, to search for the string &quot;/example/&quot;
                 followed by one or more alphabetic characters, you&#39;d use
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >/\/example\/[a-z]+/i</code
                 >
               </p>
@@ -605,7 +551,7 @@
               </p>
               <p name="acec" id="acec" class="graf graf--p graf-after--p">
                 you&#39;d use
-                <code class="markup--code markup--p-code">/[A-Z]:\\/</code>
+                <code lang="js" class="markup--code markup--p-code">/[A-Z]:\\/</code>
               </p>
               <p name="ff5c" id="ff5c" class="graf graf--p graf-after--p">
                 --- the first backslash escapes the one after it, so the
@@ -613,7 +559,7 @@
               </p>
               <p name="3f44" id="3f44" class="graf graf--p graf-after--p">
                 If using the
-                <code class="markup--code markup--p-code">RegExp</code>
+                <code lang="js" class="markup--code markup--p-code">RegExp</code>
                 constructor with a string literal,<strong
                   class="markup--strong markup--p-strong"
                 >
@@ -623,9 +569,9 @@
                 >.
               </p>
               <p name="6c1a" id="6c1a" class="graf graf--p graf-after--p">
-                <code class="markup--code markup--p-code">/a\*b/</code>
+                <code lang="js" class="markup--code markup--p-code">/a\*b/</code>
                 and
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >new RegExp(&quot;a\\*b&quot;)</code
                 >
                 create the same expression,
@@ -637,7 +583,7 @@
               <p name="02aa" id="02aa" class="graf graf--p graf-after--p">
                 If escape strings are not already part of your pattern you can
                 add them using
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   ><a
                     href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String/replace.html"
                     data-href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String/replace.html"
@@ -652,7 +598,7 @@
                 name="56af"
                 id="56af"
                 class="graf graf--pre graf-after--p"
-              ><code class="markup--code markup--pre-code">function escapeRegExp(string) {<br>  return string.replace(/[.*+\-?^${}()|[\]\\]/g, &#39;\\$&amp;&#39;); // $&amp; means the whole matched string<br>}</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">function escapeRegExp(string) {<br>  return string.replace(/[.*+\-?^${}()|[\]\\]/g, &#39;\\$&amp;&#39;); // $&amp; means the whole matched string<br>}</code></pre>
               <p name="5513" id="5513" class="graf graf--p graf-after--pre">
                 <strong class="markup--strong markup--p-strong"
                   >The &quot;g&quot; after the regular expression is an option
@@ -675,7 +621,7 @@
               </h3>
               <p name="38ec" id="38ec" class="graf graf--p graf-after--h3">
                 Regular expressions are used with the
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   ><strong class="markup--strong markup--p-strong"
                     >RegExp</strong
                   ></code
@@ -684,12 +630,12 @@
                 >
               </p>
               <p name="f7d2" id="f7d2" class="graf graf--p graf-after--p">
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   ><strong class="markup--strong markup--p-strong"
                     >test()</strong
                   ></code
                 ><strong class="markup--strong markup--p-strong"> and </strong
-                ><code class="markup--code markup--p-code"
+                ><code lang="js" class="markup--code markup--p-code"
                   ><strong class="markup--strong markup--p-strong"
                     >exec()</strong
                   ></code
@@ -701,28 +647,28 @@
                 class="graf graf--p graf-after--p graf--trailing"
               >
                 and with the
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   ><strong class="markup--strong markup--p-strong"
                     >String</strong
                   ></code
                 ><strong class="markup--strong markup--p-strong">
                   methods </strong
-                ><code class="markup--code markup--p-code"
+                ><code lang="js" class="markup--code markup--p-code"
                   ><strong class="markup--strong markup--p-strong"
                     >match()</strong
                   ></code
                 ><strong class="markup--strong markup--p-strong">, </strong
-                ><code class="markup--code markup--p-code"
+                ><code lang="js" class="markup--code markup--p-code"
                   ><strong class="markup--strong markup--p-strong"
                     >replace()</strong
                   ></code
                 ><strong class="markup--strong markup--p-strong">, </strong
-                ><code class="markup--code markup--p-code"
+                ><code lang="js" class="markup--code markup--p-code"
                   ><strong class="markup--strong markup--p-strong"
                     >search()</strong
                   ></code
                 ><strong class="markup--strong markup--p-strong">, and </strong
-                ><code class="markup--code markup--p-code"
+                ><code lang="js" class="markup--code markup--p-code"
                   ><strong class="markup--strong markup--p-strong"
                     >split()</strong
                   ></code
@@ -741,7 +687,7 @@
                 Method Descriptions
               </h3>
               <h4 name="d476" id="d476" class="graf graf--h4 graf-after--h3">
-                <code class="markup--code markup--h4-code"
+                <code lang="js" class="markup--code markup--h4-code"
                   ><a
                     href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/RegExp/exec.html"
                     data-href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/RegExp/exec.html"
@@ -757,11 +703,11 @@
               </p>
               <p name="6fc8" id="6fc8" class="graf graf--p graf-after--p">
                 It returns an array of information or
-                <code class="markup--code markup--p-code">null</code> on a
+                <code lang="js" class="markup--code markup--p-code">null</code> on a
                 mismatch.
               </p>
               <h4 name="14b8" id="14b8" class="graf graf--h4 graf-after--p">
-                <code class="markup--code markup--h4-code"
+                <code lang="js" class="markup--code markup--h4-code"
                   ><a
                     href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/RegExp/test.html"
                     data-href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/RegExp/test.html"
@@ -777,11 +723,11 @@
               </p>
               <p name="dc58" id="dc58" class="graf graf--p graf-after--p">
                 It returns
-                <code class="markup--code markup--p-code">true</code> or
-                <code class="markup--code markup--p-code">false</code>.
+                <code lang="js" class="markup--code markup--p-code">true</code> or
+                <code lang="js" class="markup--code markup--p-code">false</code>.
               </p>
               <h4 name="cac7" id="cac7" class="graf graf--h4 graf-after--p">
-                <code class="markup--code markup--h4-code"
+                <code lang="js" class="markup--code markup--h4-code"
                   ><a
                     href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String/match.html"
                     data-href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String/match.html"
@@ -795,11 +741,11 @@
               <p name="2f10" id="2f10" class="graf graf--p graf-after--h4">
                 Returns an array containing all of the matches, including
                 capturing groups, or
-                <code class="markup--code markup--p-code">null</code> if no
+                <code lang="js" class="markup--code markup--p-code">null</code> if no
                 match is found.
               </p>
               <h4 name="4816" id="4816" class="graf graf--h4 graf-after--p">
-                <code class="markup--code markup--h4-code"
+                <code lang="js" class="markup--code markup--h4-code"
                   ><a
                     href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String/matchAll.html"
                     data-href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String/matchAll.html"
@@ -815,7 +761,7 @@
                 capturing groups.
               </p>
               <h4 name="1d4f" id="1d4f" class="graf graf--h4 graf-after--p">
-                <code class="markup--code markup--h4-code"
+                <code lang="js" class="markup--code markup--h4-code"
                   ><a
                     href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String/search.html"
                     data-href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String/search.html"
@@ -831,11 +777,11 @@
               </p>
               <p name="7b87" id="7b87" class="graf graf--p graf-after--p">
                 It returns the index of the match, or
-                <code class="markup--code markup--p-code">-1</code> if the
+                <code lang="js" class="markup--code markup--p-code">-1</code> if the
                 search fails.
               </p>
               <h4 name="d25d" id="d25d" class="graf graf--h4 graf-after--p">
-                <code class="markup--code markup--h4-code"
+                <code lang="js" class="markup--code markup--h4-code"
                   ><a
                     href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String/replace.html"
                     data-href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String/replace.html"
@@ -851,7 +797,7 @@
                 matched substring with a replacement substring.
               </p>
               <h4 name="fa24" id="fa24" class="graf graf--h4 graf-after--p">
-                <code class="markup--code markup--h4-code"
+                <code lang="js" class="markup--code markup--h4-code"
                   ><a
                     href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String/replaceAll.html"
                     data-href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String/replaceAll.html"
@@ -867,7 +813,7 @@
                 matched substrings with a replacement substring.
               </p>
               <h4 name="e692" id="e692" class="graf graf--h4 graf-after--p">
-                <code class="markup--code markup--h4-code"
+                <code lang="js" class="markup--code markup--h4-code"
                   ><a
                     href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String/split.html"
                     data-href="https://github.com/bgoonz/Cheat-Sheets/blob/Reference/Global_Objects/String/split.html"
@@ -888,66 +834,66 @@
               <p name="bcd1" id="bcd1" class="graf graf--p graf-after--h3">
                 When you want to know whether a pattern is found in a string,
                 use the
-                <code class="markup--code markup--p-code">test()</code>
+                <code lang="js" class="markup--code markup--p-code">test()</code>
                 or
-                <code class="markup--code markup--p-code">search()</code>
+                <code lang="js" class="markup--code markup--p-code">search()</code>
                 methods;
               </p>
               <p name="884d" id="884d" class="graf graf--p graf-after--p">
                 for more information (but slower execution) use the
-                <code class="markup--code markup--p-code">exec()</code>
+                <code lang="js" class="markup--code markup--p-code">exec()</code>
                 or
-                <code class="markup--code markup--p-code">match()</code>
+                <code lang="js" class="markup--code markup--p-code">match()</code>
                 methods.
               </p>
               <p name="fe15" id="fe15" class="graf graf--p graf-after--p">
                 If you use
-                <code class="markup--code markup--p-code">exec()</code>
+                <code lang="js" class="markup--code markup--p-code">exec()</code>
                 or
-                <code class="markup--code markup--p-code">match()</code>
+                <code lang="js" class="markup--code markup--p-code">match()</code>
                 and if the match succeeds, these methods return an array and
                 update properties of the associated regular expression object
                 and also of the predefined regular expression object,
-                <code class="markup--code markup--p-code">RegExp</code>.
+                <code lang="js" class="markup--code markup--p-code">RegExp</code>.
               </p>
               <p name="61f7" id="61f7" class="graf graf--p graf-after--p">
                 If the<strong class="markup--strong markup--p-strong">
                   match fails, the </strong
-                ><code class="markup--code markup--p-code"
+                ><code lang="js" class="markup--code markup--p-code"
                   ><strong class="markup--strong markup--p-strong"
                     >exec()</strong
                   ></code
                 ><strong class="markup--strong markup--p-strong">
                   method returns </strong
-                ><code class="markup--code markup--p-code"
+                ><code lang="js" class="markup--code markup--p-code"
                   ><strong class="markup--strong markup--p-strong"
                     >null</strong
                   ></code
                 >
                 (which coerces to
-                <code class="markup--code markup--p-code">false</code>).
+                <code lang="js" class="markup--code markup--p-code">false</code>).
               </p>
               <p name="214c" id="214c" class="graf graf--p graf-after--p">
                 In the following example, the script uses the
-                <code class="markup--code markup--p-code">exec()</code>
+                <code lang="js" class="markup--code markup--p-code">exec()</code>
                 method to find a match in a string.
               </p>
               <pre
                 name="26c1"
                 id="26c1"
                 class="graf graf--pre graf-after--p"
-              ><code class="markup--code markup--pre-code">let myRe = /d(b+)d/g;<br>let myArray = myRe.exec(&#39;cdbbdbsbz&#39;);</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">let myRe = /d(b+)d/g;<br>let myArray = myRe.exec(&#39;cdbbdbsbz&#39;);</code></pre>
               <p name="3311" id="3311" class="graf graf--p graf-after--pre">
                 If you do not need to access the properties of the regular
                 expression, an alternative way of creating
-                <code class="markup--code markup--p-code">myArray</code>
+                <code lang="js" class="markup--code markup--p-code">myArray</code>
                 is with this script:
               </p>
               <pre
                 name="583a"
                 id="583a"
                 class="graf graf--pre graf-after--p"
-              ><code class="markup--code markup--pre-code">let myArray = /d(b+)d/g.exec(&#39;cdbbdbsbz&#39;); <br>    // similar to &quot;cdbbdbsbz&quot;.match(/d(b+)d/g); however,<br>    // &quot;cdbbdbsbz&quot;.match(/d(b+)d/g) outputs Array [ &quot;dbbd&quot; ], while <br>    // /d(b+)d/g.exec(&#39;cdbbdbsbz&#39;) outputs Array [ &#39;dbbd&#39;, &#39;bb&#39;, index: 1, input: &#39;cdbbdbsbz&#39; ].</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">let myArray = /d(b+)d/g.exec(&#39;cdbbdbsbz&#39;); <br>    // similar to &quot;cdbbdbsbz&quot;.match(/d(b+)d/g); however,<br>    // &quot;cdbbdbsbz&quot;.match(/d(b+)d/g) outputs Array [ &quot;dbbd&quot; ], while <br>    // /d(b+)d/g.exec(&#39;cdbbdbsbz&#39;) outputs Array [ &#39;dbbd&#39;, &#39;bb&#39;, index: 1, input: &#39;cdbbdbsbz&#39; ].</code></pre>
               <p name="7da5" id="7da5" class="graf graf--p graf-after--pre">
                 (See
                 <a
@@ -968,7 +914,7 @@
                 name="58f4"
                 id="58f4"
                 class="graf graf--pre graf-after--p"
-              ><code class="markup--code markup--pre-code">let myRe = new RegExp(&#39;d(b+)d&#39;, &#39;g&#39;);<br>let myArray = myRe.exec(&#39;cdbbdbsbz&#39;);</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">let myRe = new RegExp(&#39;d(b+)d&#39;, &#39;g&#39;);<br>let myArray = myRe.exec(&#39;cdbbdbsbz&#39;);</code></pre>
               <p name="2ebf" id="2ebf" class="graf graf--p graf-after--pre">
                 With these scripts, the match succeeds and returns the array and
                 updates the properties shown in the following table.
@@ -996,7 +942,7 @@
                 name="9628"
                 id="9628"
                 class="graf graf--pre graf-after--p"
-              ><code class="markup--code markup--pre-code">let myRe = /d(b+)d/g;<br>let myArray = myRe.exec(&#39;cdbbdbsbz&#39;);<br>console.log(&#39;The value of lastIndex is &#39; + myRe.lastIndex);<br><br>// &quot;The value of lastIndex is 5&quot;</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">let myRe = /d(b+)d/g;<br>let myArray = myRe.exec(&#39;cdbbdbsbz&#39;);<br>console.log(&#39;The value of lastIndex is &#39; + myRe.lastIndex);<br><br>// &quot;The value of lastIndex is 5&quot;</code></pre>
               <p name="cbdd" id="cbdd" class="graf graf--p graf-after--pre">
                 However, if you have this script:
               </p>
@@ -1004,13 +950,13 @@
                 name="b3e2"
                 id="b3e2"
                 class="graf graf--pre graf-after--p"
-              ><code class="markup--code markup--pre-code">let myArray = /d(b+)d/g.exec(&#39;cdbbdbsbz&#39;);<br>console.log(&#39;The value of lastIndex is &#39; + /d(b+)d/g.lastIndex);<br><br>// &quot;The value of lastIndex is 0&quot;</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">let myArray = /d(b+)d/g.exec(&#39;cdbbdbsbz&#39;);<br>console.log(&#39;The value of lastIndex is &#39; + /d(b+)d/g.lastIndex);<br><br>// &quot;The value of lastIndex is 0&quot;</code></pre>
               <p name="00fc" id="00fc" class="graf graf--p graf-after--pre">
                 The occurrences of
-                <code class="markup--code markup--p-code">/d(b+)d/g</code>
+                <code lang="js" class="markup--code markup--p-code">/d(b+)d/g</code>
                 in the two statements are different regular expression objects
                 and hence have different values for their
-                <code class="markup--code markup--p-code">lastIndex</code>
+                <code lang="js" class="markup--code markup--p-code">lastIndex</code>
                 property.
               </p>
               <p name="db41" id="db41" class="graf graf--p graf-after--p">
@@ -1050,47 +996,47 @@
           <div class="section-content">
             <div class="section-inner sectionLayout--insetColumn">
               <p name="7872" id="7872" class="graf graf--p graf--leading">
-                <code class="markup--code markup--p-code">g</code>
+                <code lang="js" class="markup--code markup--p-code">g</code>
                 Global search.
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >RegExp.prototype.global</code
                 >
               </p>
               <p name="db22" id="db22" class="graf graf--p graf-after--p">
-                <code class="markup--code markup--p-code">i</code>
+                <code lang="js" class="markup--code markup--p-code">i</code>
                 Case-insensitive search.
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >RegExp.prototype.ignoreCase</code
                 >
               </p>
               <p name="2f61" id="2f61" class="graf graf--p graf-after--p">
-                <code class="markup--code markup--p-code">m</code>
+                <code lang="js" class="markup--code markup--p-code">m</code>
                 Multi-line search.
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >RegExp.prototype.multiline</code
                 >
               </p>
               <p name="1723" id="1723" class="graf graf--p graf-after--p">
-                <code class="markup--code markup--p-code">s</code>
-                Allows <code class="markup--code markup--p-code">.</code>
+                <code lang="js" class="markup--code markup--p-code">s</code>
+                Allows <code lang="js" class="markup--code markup--p-code">.</code>
                 to match newline characters.
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >RegExp.prototype.dotAll</code
                 >
               </p>
               <p name="0eaf" id="0eaf" class="graf graf--p graf-after--p">
-                <code class="markup--code markup--p-code">u</code>
+                <code lang="js" class="markup--code markup--p-code">u</code>
                 &quot;unicode&quot;; treat a pattern as a sequence of unicode
                 code points.
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >RegExp.prototype.unicode</code
                 >
               </p>
               <p name="a221" id="a221" class="graf graf--p graf-after--p">
-                <code class="markup--code markup--p-code">y</code>
+                <code lang="js" class="markup--code markup--p-code">y</code>
                 Perform a &quot;sticky&quot; search that matches starting at the
                 current position in the target string.
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >RegExp.prototype.sticky</code
                 >
               </p>
@@ -1107,7 +1053,7 @@
                 name="1267"
                 id="1267"
                 class="graf graf--pre graf-after--p"
-              ><code class="markup--code markup--pre-code">let re = /pattern/flags;</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">let re = /pattern/flags;</code></pre>
               <p name="d937" id="d937" class="graf graf--p graf-after--pre">
                 or
               </p>
@@ -1115,14 +1061,14 @@
                 name="43d5"
                 id="43d5"
                 class="graf graf--pre graf-after--p"
-              ><code class="markup--code markup--pre-code">let re = new RegExp(&#39;pattern&#39;, &#39;flags&#39;);</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">let re = new RegExp(&#39;pattern&#39;, &#39;flags&#39;);</code></pre>
               <p name="6874" id="6874" class="graf graf--p graf-after--pre">
                 Note that the flags are an integral part of a regular
                 expression. They cannot be added or removed later.
               </p>
               <p name="7b10" id="7b10" class="graf graf--p graf-after--p">
                 For example,
-                <code class="markup--code markup--p-code">re = /\w+\s/g</code>
+                <code lang="js" class="markup--code markup--p-code">re = /\w+\s/g</code>
                 creates a regular expression that looks for one or more
                 characters followed by a space, and it looks for this
                 combination throughout the string.
@@ -1131,7 +1077,7 @@
                 name="2f0b"
                 id="2f0b"
                 class="graf graf--pre graf-after--p"
-              ><code class="markup--code markup--pre-code">let re = /\w+\s/g;<br>let str = &#39;fee fi fo fum&#39;;<br>let myArray = str.match(re);<br>console.log(myArray);<br><br>// [&quot;fee &quot;, &quot;fi &quot;, &quot;fo &quot;]</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">let re = /\w+\s/g;<br>let str = &#39;fee fi fo fum&#39;;<br>let myArray = str.match(re);<br>console.log(myArray);<br><br>// [&quot;fee &quot;, &quot;fi &quot;, &quot;fo &quot;]</code></pre>
               <p name="8f5c" id="8f5c" class="graf graf--p graf-after--pre">
                 You could replace the line:
               </p>
@@ -1139,7 +1085,7 @@
                 name="29cf"
                 id="29cf"
                 class="graf graf--pre graf-after--p"
-              ><code class="markup--code markup--pre-code">let re = /\w+\s/g;</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">let re = /\w+\s/g;</code></pre>
               <p name="7f55" id="7f55" class="graf graf--p graf-after--pre">
                 with:
               </p>
@@ -1147,14 +1093,14 @@
                 name="35d6"
                 id="35d6"
                 class="graf graf--pre graf-after--p"
-              ><code class="markup--code markup--pre-code">let re = new RegExp(&#39;\\w+\\s&#39;, &#39;g&#39;);</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">let re = new RegExp(&#39;\\w+\\s&#39;, &#39;g&#39;);</code></pre>
               <p name="0586" id="0586" class="graf graf--p graf-after--pre">
                 and get the same result.
               </p>
               <p name="4d55" id="4d55" class="graf graf--p graf-after--p">
                 The behavior associated with the
-                <code class="markup--code markup--p-code">g</code> flag is
-                different when the <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code">g</code> flag is
+                different when the <code lang="js" class="markup--code markup--p-code"
                   >.exec()</code
                 >
                 method is used.
@@ -1164,31 +1110,31 @@
                 reversed:
               </p>
               <p name="5dd2" id="5dd2" class="graf graf--p graf-after--p">
-                In the case of <code class="markup--code markup--p-code"
+                In the case of <code lang="js" class="markup--code markup--p-code"
                   >.match()</code
                 >, the string class (or data type) owns the method and the
                 regular expression is just an argument,
               </p>
               <p name="b185" id="b185" class="graf graf--p graf-after--p">
-                while in the case of <code class="markup--code markup--p-code"
+                while in the case of <code lang="js" class="markup--code markup--p-code"
                   >.exec()</code
                 >, it is the regular expression that owns the method, with the
                 string being the argument.
               </p>
               <p name="9f23" id="9f23" class="graf graf--p graf-after--p">
                 Contrast this
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   ><em class="markup--em markup--p-em">str.match(re)</em></code
                 >
                 versus
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   ><em class="markup--em markup--p-em">re.exec(str)</em></code
                 >.
               </p>
               <p name="6927" id="6927" class="graf graf--p graf-after--p">
                 The
-                <code class="markup--code markup--p-code">g</code> flag is used
-                with the <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code">g</code> flag is used
+                with the <code lang="js" class="markup--code markup--p-code"
                   >.exec()</code
                 >
                 method to get iterative progression.
@@ -1197,18 +1143,18 @@
                 name="cc36"
                 id="cc36"
                 class="graf graf--pre graf-after--p"
-              ><code class="markup--code markup--pre-code">let xArray; while(xArray = re.exec(str)) console.log(xArray);<br>// produces: <br>// [&quot;fee &quot;, index: 0, input: &quot;fee fi fo fum&quot;]<br>// [&quot;fi &quot;, index: 4, input: &quot;fee fi fo fum&quot;]<br>// [&quot;fo &quot;, index: 7, input: &quot;fee fi fo fum&quot;]</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">let xArray; while(xArray = re.exec(str)) console.log(xArray);<br>// produces: <br>// [&quot;fee &quot;, index: 0, input: &quot;fee fi fo fum&quot;]<br>// [&quot;fi &quot;, index: 4, input: &quot;fee fi fo fum&quot;]<br>// [&quot;fo &quot;, index: 7, input: &quot;fee fi fo fum&quot;]</code></pre>
               <p name="485a" id="485a" class="graf graf--p graf-after--pre">
                 The
-                <code class="markup--code markup--p-code">m</code> flag is used
+                <code lang="js" class="markup--code markup--p-code">m</code> flag is used
                 to specify that a multiline input string should be treated as
                 multiple lines.
               </p>
               <p name="19f5" id="19f5" class="graf graf--p graf-after--p">
                 If the
-                <code class="markup--code markup--p-code">m</code> flag is used,
-                <code class="markup--code markup--p-code">^</code> and
-                <code class="markup--code markup--p-code">$</code> match at the
+                <code lang="js" class="markup--code markup--p-code">m</code> flag is used,
+                <code lang="js" class="markup--code markup--p-code">^</code> and
+                <code lang="js" class="markup--code markup--p-code">$</code> match at the
                 start or end of any line within the input string instead of the
                 start or end of the entire string.
               </p>
@@ -1226,35 +1172,35 @@
               </p>
               <p name="a969" id="a969" class="graf graf--p graf-after--p">
                 Within non-capturing parentheses
-                <code class="markup--code markup--p-code">(?:</code> , the
+                <code lang="js" class="markup--code markup--p-code">(?:</code> , the
                 regular expression looks for three numeric characters
-                <code class="markup--code markup--p-code">\d{3}</code>
-                OR <code class="markup--code markup--p-code">|</code> a left
+                <code lang="js" class="markup--code markup--p-code">\d{3}</code>
+                OR <code lang="js" class="markup--code markup--p-code">|</code> a left
                 parenthesis
-                <code class="markup--code markup--p-code">\(</code>
-                followed by three digits<code
+                <code lang="js" class="markup--code markup--p-code">\(</code>
+                followed by three digits<code lang="js"
                   class="markup--code markup--p-code"
                 >
                   \d{3}</code
                 >, followed by a close parenthesis
-                <code class="markup--code markup--p-code">\)</code>, (end
+                <code lang="js" class="markup--code markup--p-code">\)</code>, (end
                 non-capturing parenthesis
-                <code class="markup--code markup--p-code">)</code>), followed by
+                <code lang="js" class="markup--code markup--p-code">)</code>), followed by
                 one dash, forward slash, or decimal point and when found,
                 remember the character
-                <code class="markup--code markup--p-code">([-\/\.])</code>,
+                <code lang="js" class="markup--code markup--p-code">([-\/\.])</code>,
                 followed by three digits
-                <code class="markup--code markup--p-code">\d{3}</code>, followed
+                <code lang="js" class="markup--code markup--p-code">\d{3}</code>, followed
                 by the remembered match of a dash, forward slash, or decimal
-                point <code class="markup--code markup--p-code">\1</code>,
+                point <code lang="js" class="markup--code markup--p-code">\1</code>,
                 followed by four digits
-                <code class="markup--code markup--p-code">\d{4}</code>.
+                <code lang="js" class="markup--code markup--p-code">\d{4}</code>.
               </p>
               <p name="d4d0" id="d4d0" class="graf graf--p graf-after--p">
                 The
-                <code class="markup--code markup--p-code">Change</code>
+                <code lang="js" class="markup--code markup--p-code">Change</code>
                 event activated when the user presses Enter sets the value of
-                <code class="markup--code markup--p-code">RegExp.input</code>.
+                <code lang="js" class="markup--code markup--p-code">RegExp.input</code>.
               </p>
               <h4 name="0806" id="0806" class="graf graf--h4 graf-after--p">
                 HTML
@@ -1263,7 +1209,7 @@
                 name="2a30"
                 id="2a30"
                 class="graf graf--pre graf-after--h4"
-              ><code class="markup--code markup--pre-code">&lt;p&gt;<br>  Enter your phone number (with area code) and then click &quot;Check&quot;.<br>  &lt;br&gt;<br>  The expected format is like ###-###-####.<br>&lt;/p&gt;<br>&lt;form action=&quot;#&quot;&gt;<br>  &lt;input id=&quot;phone&quot;&gt;<br>    &lt;button onclick=&quot;testInfo(document.getElementById(&#39;phone&#39;));&quot;&gt;Check&lt;/button&gt;<br>&lt;/form&gt;</code></pre>
+              ><code lang="js" class="markup--code markup--pre-code">&lt;p&gt;<br>  Enter your phone number (with area code) and then click &quot;Check&quot;.<br>  &lt;br&gt;<br>  The expected format is like ###-###-####.<br>&lt;/p&gt;<br>&lt;form action=&quot;#&quot;&gt;<br>  &lt;input id=&quot;phone&quot;&gt;<br>    &lt;button onclick=&quot;testInfo(document.getElementById(&#39;phone&#39;));&quot;&gt;Check&lt;/button&gt;<br>&lt;/form&gt;</code></pre>
               <h4 name="dbf1" id="dbf1" class="graf graf--h4 graf-after--pre">
                 JavaScript
               </h4>

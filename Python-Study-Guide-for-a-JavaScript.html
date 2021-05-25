@@ -3,70 +3,16 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Python Study Guide for a JavaScript Programmer</title>
-    <style>
-      * {
-        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-      }
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-      }
-      h1 {
-        font-size: 50px;
-        margin-bottom: 17px;
-        color: #333;
-      }
-      h2 {
-        font-size: 24px;
-        line-height: 1.6;
-        margin: 30px 0 0 0;
-        margin-bottom: 18px;
-        margin-top: 33px;
-        color: #333;
-      }
-      h3 {
-        font-size: 30px;
-        margin: 10px 0 20px 0;
-        color: #333;
-      }
-      header {
-        width: 640px;
-        margin: auto;
-      }
-      section {
-        width: 640px;
-        margin: auto;
-      }
-      section p {
-        margin-bottom: 27px;
-        font-size: 20px;
-        line-height: 1.6;
-        color: #333;
-      }
-      section img {
-        max-width: 640px;
-      }
-      footer {
-        padding: 0 20px;
-        margin: 50px 0;
-        text-align: center;
-        font-size: 12px;
-      }
-      .aspectRatioPlaceholder {
-        max-width: auto !important;
-        max-height: auto !important;
-      }
-      .aspectRatioPlaceholder-fill {
-        padding-bottom: 0 !important;
-      }
-      header,
-      section[data-field="subtitle"],
-      section[data-field="description"] {
-        display: none;
-      }
-    </style>
-  </head>
+    <link rel="stylesheet" href="./medium.css">
+  <!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js" integrity="sha512-YBk7HhgDZvBxmtOfUdvX0z8IH2d10Hp3aEygaMNhtF8fSOvBZ16D/1bXZTJV6ndk/L/DlXxYStP8jrF77v2MIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-dark.min.css" integrity="sha512-Njdz7T/p6Ud1FiTMqH87bzDxaZBsVNebOWmacBjMdgWyeIhUSFU4V52oGwo3sT+ud+lyIE98sS291/zxBfozKw==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
   <body>
     <article class="h-entry">
       <header>
@@ -120,9 +66,9 @@
                   > : Python Enhancement Proposals, style-guide for Python.
                 </li>
                 <li name="c0bf" id="c0bf" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code">print</code>
+                  <code lang="js" class="markup--code markup--li-code">print</code>
                   is the equivalent of
-                  <code class="markup--code markup--li-code">console.log</code>.
+                  <code lang="js" class="markup--code markup--li-code">console.log</code>.
                 </li>
               </ul>
               <blockquote
@@ -140,7 +86,7 @@
                 id="117c"
                 class="graf graf--h3 graf-after--blockquote"
               >
-                <code class="markup--code markup--h3-code">#</code> is used to
+                <code lang="js" class="markup--code markup--h3-code">#</code> is used to
                 make comments in your code.
               </h3>
               <pre
@@ -200,7 +146,7 @@
                 <strong class="markup--strong markup--blockquote-strong"
                   >or</strong
                 > … with the
-                <code class="markup--code markup--blockquote-code"
+                <code lang="js" class="markup--code markup--blockquote-code"
                   ><em class="markup--em markup--blockquote-em">int()</em></code
                 >
                 constructor.
@@ -273,13 +219,13 @@
               >
                 <strong class="markup--strong markup--blockquote-strong"
                   >The </strong
-                ><code class="markup--code markup--blockquote-code"
+                ><code lang="js" class="markup--code markup--blockquote-code"
                   ><strong class="markup--strong markup--blockquote-strong"
                     >i</strong
                   ></code
                 ><strong class="markup--strong markup--blockquote-strong">
                   is switched to a </strong
-                ><code class="markup--code markup--blockquote-code"
+                ><code lang="js" class="markup--code markup--blockquote-code"
                   ><strong class="markup--strong markup--blockquote-strong"
                     >j</strong
                   ></code
@@ -376,7 +322,7 @@
                   <strong class="markup--strong markup--li-strong"
                     >Integer Division gives the other part of the number from
                     Module; it is a way to do round down numbers replacing </strong
-                  ><code class="markup--code markup--li-code"
+                  ><code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >Math.floor()</strong
                     ></code
@@ -387,13 +333,13 @@
                 <li name="a6a3" id="a6a3" class="graf graf--li graf-after--li">
                   <strong class="markup--strong markup--li-strong"
                     >There are no </strong
-                  ><code class="markup--code markup--li-code"
+                  ><code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >++</strong
                     ></code
                   ><strong class="markup--strong markup--li-strong">
                     and </strong
-                  ><code class="markup--code markup--li-code"
+                  ><code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >--</strong
                     ></code
@@ -437,7 +383,7 @@
                 </li>
                 <li name="225e" id="225e" class="graf graf--li graf-after--li">
                   You can escape strings like so
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >&#39;Jodi asked, &quot;What\&#39;s up,
                     Sam?&quot;&#39;</code
                   >
@@ -453,7 +399,7 @@
               >print(&#39;&#39;&#39;My instructions are very long so to make them<br>more readable in the code I am putting them on<br>more than one line. I can even include &quot;quotes&quot;<br>of any kind because they won&#39;t get confused with<br>the end of the string!&#39;&#39;&#39;)</pre>
               <p name="1e40" id="1e40" class="graf graf--p graf-after--pre">
                 <strong class="markup--strong markup--p-strong">Use the </strong
-                ><code class="markup--code markup--p-code"
+                ><code lang="js" class="markup--code markup--p-code"
                   ><strong class="markup--strong markup--p-strong"
                     >len()</strong
                   ></code
@@ -467,7 +413,7 @@ print(len(“Spaghetti”)) # =&gt; 9</pre
               <h3 name="3f9c" id="3f9c" class="graf graf--h3 graf-after--pre">
                 <strong class="markup--strong markup--h3-strong"
                   >Python uses </strong
-                ><code class="markup--code markup--h3-code"
+                ><code lang="js" class="markup--code markup--h3-code"
                   ><strong class="markup--strong markup--h3-strong"
                     >zero-based indexing</strong
                   ></code
@@ -513,7 +459,7 @@ print(“Spaghetti”[-4]) # =&gt; e</pre
               <ul class="postList">
                 <li name="1366" id="1366" class="graf graf--li graf-after--pre">
                   The end range is exclusive just like
-                  <code class="markup--code markup--li-code">slice</code>
+                  <code lang="js" class="markup--code markup--li-code">slice</code>
                   in JS.
                 </li>
               </ul>
@@ -530,9 +476,9 @@ print(“Spaghetti”[-4]) # =&gt; e</pre
               <ul class="postList">
                 <li name="c786" id="c786" class="graf graf--li graf-after--pre">
                   The
-                  <code class="markup--code markup--li-code">index</code>
+                  <code lang="js" class="markup--code markup--li-code">index</code>
                   string function is the equiv. of
-                  <code class="markup--code markup--li-code">indexOf()</code>
+                  <code lang="js" class="markup--code markup--li-code">indexOf()</code>
                   in JS
                 </li>
               </ul>
@@ -544,7 +490,7 @@ print(“Spaghetti”[-4]) # =&gt; e</pre
               <ul class="postList">
                 <li name="fbb6" id="fbb6" class="graf graf--li graf-after--pre">
                   The
-                  <code class="markup--code markup--li-code">count</code>
+                  <code lang="js" class="markup--code markup--li-code">count</code>
                   function finds out how many times a substring appears in a
                   string… pretty nifty for a hard coded feature of the language.
                 </li>
@@ -558,7 +504,7 @@ print(“Spaghetti”[-4]) # =&gt; e</pre
                 <li name="7816" id="7816" class="graf graf--li graf-after--pre">
                   <strong class="markup--strong markup--li-strong"
                     >You can use </strong
-                  ><code class="markup--code markup--li-code"
+                  ><code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >+</strong
                     ></code
@@ -575,7 +521,7 @@ print(“Spaghetti”[-4]) # =&gt; e</pre
                 <li name="f95c" id="f95c" class="graf graf--li graf-after--li">
                   <strong class="markup--strong markup--li-strong"
                     >Use the </strong
-                  ><code class="markup--code markup--li-code"
+                  ><code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >format()</strong
                     ></code
@@ -594,7 +540,7 @@ print(“Spaghetti”[-4]) # =&gt; e</pre
                 <li name="445b" id="445b" class="graf graf--li graf-after--pre">
                   <em class="markup--em markup--li-em"
                     >Shorthand way to use format function is:<br /></em
-                  ><code class="markup--code markup--li-code"
+                  ><code lang="js" class="markup--code markup--li-code"
                     >print(f&#39;Your name is {first_name}
                     {last_name}&#39;)</code
                   >
@@ -607,7 +553,7 @@ print(“Spaghetti”[-4]) # =&gt; e</pre
                 <li name="118c" id="118c" class="graf graf--li graf-after--h4">
                   <strong class="markup--strong markup--li-strong"
                     >Note that in JS </strong
-                  ><code class="markup--code markup--li-code"
+                  ><code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >join</strong
                     ></code
@@ -710,12 +656,12 @@ print(“Spaghetti”[-4]) # =&gt; e</pre
               >a = 17<br>print(a)         # =&gt; 17<br>a = &#39;seventeen&#39;<br>print(a)         # =&gt; seventeen</pre>
               <ul class="postList">
                 <li name="4605" id="4605" class="graf graf--li graf-after--pre">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><em class="markup--em markup--li-em">NaN</em></code
                   ><em class="markup--em markup--li-em">
                     does not exist in Python, but you can &#39;create&#39; it
                     like so:<br /></em
-                  ><code class="markup--code markup--li-code"
+                  ><code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       ><em class="markup--em markup--li-em"
                         >print(float(&quot;nan&quot;))</em
@@ -725,15 +671,15 @@ print(“Spaghetti”[-4]) # =&gt; e</pre
                 </li>
                 <li name="d150" id="d150" class="graf graf--li graf-after--li">
                   <em class="markup--em markup--li-em">Python replaces </em
-                  ><code class="markup--code markup--li-code"
+                  ><code lang="js" class="markup--code markup--li-code"
                     ><em class="markup--em markup--li-em">null</em></code
                   ><em class="markup--em markup--li-em"> with </em
-                  ><code class="markup--code markup--li-code"
+                  ><code lang="js" class="markup--code markup--li-code"
                     ><em class="markup--em markup--li-em">none</em></code
                   ><em class="markup--em markup--li-em">.</em>
                 </li>
                 <li name="6fa7" id="6fa7" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       ><em class="markup--em markup--li-em">none</em></strong
                     ></code
@@ -807,9 +753,9 @@ print(“Spaghetti”[-4]) # =&gt; e</pre
                 </li>
                 <li name="6e0a" id="6e0a" class="graf graf--li graf-after--li">
                   Constant
-                  <code class="markup--code markup--li-code">None</code>
+                  <code lang="js" class="markup--code markup--li-code">None</code>
                   or
-                  <code class="markup--code markup--li-code">False</code>
+                  <code lang="js" class="markup--code markup--li-code">False</code>
                 </li>
                 <li name="9552" id="9552" class="graf graf--li graf-after--li">
                   Zero of any numeric type.
@@ -822,9 +768,9 @@ print(“Spaghetti”[-4]) # =&gt; e</pre
                   id="11d6"
                   class="graf graf--li graf-after--li graf--trailing"
                 >
-                  <code class="markup--code markup--li-code">True</code>
+                  <code lang="js" class="markup--code markup--li-code">True</code>
                   and
-                  <code class="markup--code markup--li-code">False</code>
+                  <code lang="js" class="markup--code markup--li-code">False</code>
                   must be capitalized
                 </li>
               </ul>
@@ -869,7 +815,7 @@ print(“Spaghetti”[-4]) # =&gt; e</pre
                 class="graf graf--blockquote graf-after--li"
               >
                 Just like in JS, you can use
-                <code class="markup--code markup--blockquote-code"
+                <code lang="js" class="markup--code markup--blockquote-code"
                   >parentheses</code
                 >
                 to change the inherent order of operations.
@@ -882,9 +828,9 @@ print(“Spaghetti”[-4]) # =&gt; e</pre
                 <strong class="markup--strong markup--blockquote-strong"
                   >Short Circuit</strong
                 > : Stopping a program when a
-                <code class="markup--code markup--blockquote-code">true</code>
+                <code lang="js" class="markup--code markup--blockquote-code">true</code>
                 or
-                <code class="markup--code markup--blockquote-code">false</code>
+                <code lang="js" class="markup--code markup--blockquote-code">false</code>
                 has been reached.
               </blockquote>
               <figure
@@ -934,12 +880,12 @@ print(“Spaghetti”[-4]) # =&gt; e</pre
                   class="graf graf--li graf-after--pre graf--trailing"
                 >
                   In the Python community it is better to use
-                  <code class="markup--code markup--li-code">is</code>
+                  <code lang="js" class="markup--code markup--li-code">is</code>
                   and
-                  <code class="markup--code markup--li-code">is not</code>
+                  <code lang="js" class="markup--code markup--li-code">is not</code>
                   over
-                  <code class="markup--code markup--li-code">==</code>
-                  or <code class="markup--code markup--li-code">!=</code>
+                  <code lang="js" class="markup--code markup--li-code">==</code>
+                  or <code lang="js" class="markup--code markup--li-code">!=</code>
                 </li>
               </ul>
             </div>
@@ -975,7 +921,7 @@ print(“Spaghetti”[-4]) # =&gt; e</pre
                 class="graf graf--blockquote graf-after--pre graf--trailing"
               >
                 Remember the order of
-                <code class="markup--code markup--blockquote-code">elif</code>
+                <code lang="js" class="markup--code markup--blockquote-code">elif</code>
                 statements matter.
               </blockquote>
             </div>
@@ -997,7 +943,7 @@ print(“Spaghetti”[-4]) # =&gt; e</pre
               >spam = 0<br>while spam &lt; 5:<br>  print(&#39;Hello, world.&#39;)<br>  spam = spam + 1</pre>
               <ul class="postList">
                 <li name="c7f3" id="c7f3" class="graf graf--li graf-after--pre">
-                  <code class="markup--code markup--li-code">Break</code>
+                  <code lang="js" class="markup--code markup--li-code">Break</code>
                   statement also exists in Python.
                 </li>
               </ul>
@@ -1009,7 +955,7 @@ print(“Spaghetti”[-4]) # =&gt; e</pre
               <ul class="postList">
                 <li name="7a99" id="7a99" class="graf graf--li graf-after--pre">
                   As are
-                  <code class="markup--code markup--li-code">continue</code>
+                  <code lang="js" class="markup--code markup--li-code">continue</code>
                   statements
                 </li>
               </ul>
@@ -1033,7 +979,7 @@ print(“Spaghetti”[-4]) # =&gt; e</pre
               <ul class="postList">
                 <li name="72ec" id="72ec" class="graf graf--li graf-after--h3">
                   Python equivalent to
-                  <code class="markup--code markup--li-code">try/catch</code>
+                  <code lang="js" class="markup--code markup--li-code">try/catch</code>
                 </li>
               </ul>
               <pre
@@ -1069,7 +1015,7 @@ print(“Spaghetti”[-4]) # =&gt; e</pre
               <ul class="postList">
                 <li name="4027" id="4027" class="graf graf--li graf-after--pre">
                   You can also use the
-                  <code class="markup--code markup--li-code">pass</code>
+                  <code lang="js" class="markup--code markup--li-code">pass</code>
                   commmand to by pass a certain error.
                 </li>
               </ul>
@@ -1081,7 +1027,7 @@ print(“Spaghetti”[-4]) # =&gt; e</pre
               <ul class="postList">
                 <li name="030b" id="030b" class="graf graf--li graf-after--pre">
                   The
-                  <code class="markup--code markup--li-code">pass</code>
+                  <code lang="js" class="markup--code markup--li-code">pass</code>
                   method won&#39;t allow you to bypass every single error so you
                   can chain an exception series like so:
                 </li>
@@ -1094,9 +1040,9 @@ print(“Spaghetti”[-4]) # =&gt; e</pre
               <ul class="postList">
                 <li name="bf45" id="bf45" class="graf graf--li graf-after--pre">
                   You can use an
-                  <code class="markup--code markup--li-code">else</code>
+                  <code lang="js" class="markup--code markup--li-code">else</code>
                   statement to end a chain of
-                  <code class="markup--code markup--li-code">except</code>
+                  <code lang="js" class="markup--code markup--li-code">except</code>
                   statements.
                 </li>
               </ul>
@@ -1112,7 +1058,7 @@ print(“Spaghetti”[-4]) # =&gt; e</pre
               ># simple loop<br>for filename in files:<br>    try:<br>        # open the file in read mode<br>        f = open(filename, &#39;r&#39;)<br>    except OSError:<br>        # handle the case where file does not exist or permission is denied<br>        print(&#39;cannot open file&#39;, filename)<br>    else:<br>        # do stuff with the file object (f)<br>        print(filename, &#39;opened successfully&#39;)<br>        print(&#39;found&#39;, len(f.readlines()), &#39;lines&#39;)<br>        f.close()</pre>
               <ul class="postList">
                 <li name="0e91" id="0e91" class="graf graf--li graf-after--pre">
-                  <code class="markup--code markup--li-code">finally</code>
+                  <code lang="js" class="markup--code markup--li-code">finally</code>
                   is used at the end to clean up all actions under any
                   circumstance.
                 </li>
@@ -1193,7 +1139,7 @@ while (true) {}</pre
                 </li>
                 <li name="1f11" id="1f11" class="graf graf--li graf-after--li">
                   <strong class="markup--strong markup--li-strong">The </strong
-                  ><code class="markup--code markup--li-code"
+                  ><code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >def</strong
                     ></code
@@ -1274,10 +1220,10 @@ while (true) {}</pre
               <ul class="postList">
                 <li name="54ac" id="54ac" class="graf graf--li graf-after--pre">
                   The
-                  <code class="markup--code markup--li-code">lambda</code>
+                  <code lang="js" class="markup--code markup--li-code">lambda</code>
                   keyword is used to create anonymous functions and are supposed
                   to be
-                  <code class="markup--code markup--li-code">one-liners</code>.
+                  <code lang="js" class="markup--code markup--li-code">one-liners</code>.
                 </li>
               </ul>
               <p
@@ -1285,7 +1231,7 @@ while (true) {}</pre
                 id="bf63"
                 class="graf graf--p graf-after--li graf--trailing"
               >
-                <code class="markup--code markup--p-code"
+                <code lang="js" class="markup--code markup--p-code"
                   >toUpper = lambda s: s.upper()</code
                 >
               </p>

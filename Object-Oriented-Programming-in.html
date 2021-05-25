@@ -3,70 +3,16 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Object Oriented Programming in JavaScript</title>
-    <style>
-      * {
-        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-      }
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-      }
-      h1 {
-        font-size: 50px;
-        margin-bottom: 17px;
-        color: #333;
-      }
-      h2 {
-        font-size: 24px;
-        line-height: 1.6;
-        margin: 30px 0 0 0;
-        margin-bottom: 18px;
-        margin-top: 33px;
-        color: #333;
-      }
-      h3 {
-        font-size: 30px;
-        margin: 10px 0 20px 0;
-        color: #333;
-      }
-      header {
-        width: 640px;
-        margin: auto;
-      }
-      section {
-        width: 640px;
-        margin: auto;
-      }
-      section p {
-        margin-bottom: 27px;
-        font-size: 20px;
-        line-height: 1.6;
-        color: #333;
-      }
-      section img {
-        max-width: 640px;
-      }
-      footer {
-        padding: 0 20px;
-        margin: 50px 0;
-        text-align: center;
-        font-size: 12px;
-      }
-      .aspectRatioPlaceholder {
-        max-width: auto !important;
-        max-height: auto !important;
-      }
-      .aspectRatioPlaceholder-fill {
-        padding-bottom: 0 !important;
-      }
-      header,
-      section[data-field="subtitle"],
-      section[data-field="description"] {
-        display: none;
-      }
-    </style>
-  </head>
+    <link rel="stylesheet" href="./medium.css">
+  <!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js" integrity="sha512-YBk7HhgDZvBxmtOfUdvX0z8IH2d10Hp3aEygaMNhtF8fSOvBZ16D/1bXZTJV6ndk/L/DlXxYStP8jrF77v2MIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-dark.min.css" integrity="sha512-Njdz7T/p6Ud1FiTMqH87bzDxaZBsVNebOWmacBjMdgWyeIhUSFU4V52oGwo3sT+ud+lyIE98sS291/zxBfozKw==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
   <body>
     <article class="h-entry">
       <header>
@@ -113,7 +59,7 @@
                 Overview:
               </h3>
               <h4 name="3c81" id="3c81" class="graf graf--h4 graf-after--h3">
-                <code class="markup--code markup--h4-code">Encapsulation</code>
+                <code lang="js" class="markup--code markup--h4-code">Encapsulation</code>
               </h4>
               <ul class="postList">
                 <li name="b36d" id="b36d" class="graf graf--li graf-after--h4">
@@ -123,7 +69,7 @@
               </ul>
               <h4 name="0ee2" id="0ee2" class="graf graf--h4 graf-after--li">
                 How can a
-                <code class="markup--code markup--h4-code"
+                <code lang="js" class="markup--code markup--h4-code"
                   >CommonJS Module import functionality</code
                 >
                 from another module?
@@ -142,14 +88,14 @@
                   this:
                 </li>
                 <li name="7d93" id="7d93" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >import SymbolName from &#39;./relative-path.js&#39;;</code
                   >
                 </li>
               </ul>
               <h4 name="fa45" id="fa45" class="graf graf--h4 graf-after--li">
                 How do
-                <code class="markup--code markup--h4-code"
+                <code lang="js" class="markup--code markup--h4-code"
                   >CommonJS Modules</code
                 >
                 allow other modules to access exported symbols?
@@ -161,7 +107,7 @@
               </ul>
               <h4 name="b496" id="b496" class="graf graf--h4 graf-after--li">
                 How do
-                <code class="markup--code markup--h4-code"
+                <code lang="js" class="markup--code markup--h4-code"
                   >ES6 Modules export</code
                 >
                 functionality so other modules can use them?
@@ -172,7 +118,7 @@
                 </li>
               </ul>
               <h4 name="be8d" id="be8d" class="graf graf--h4 graf-after--li">
-                <code class="markup--code markup--h4-code"
+                <code lang="js" class="markup--code markup--h4-code"
                   >Implementation inheritance</code
                 >
               </h4>
@@ -184,7 +130,7 @@
                 </li>
               </ul>
               <h4 name="84c2" id="84c2" class="graf graf--h4 graf-after--li">
-                <code class="markup--code markup--h4-code">Inheritance</code>
+                <code lang="js" class="markup--code markup--h4-code">Inheritance</code>
               </h4>
               <ul class="postList">
                 <li name="ed6e" id="ed6e" class="graf graf--li graf-after--h4">
@@ -193,7 +139,7 @@
                 </li>
               </ul>
               <h4 name="ace5" id="ace5" class="graf graf--h4 graf-after--li">
-                <code class="markup--code markup--h4-code"
+                <code lang="js" class="markup--code markup--h4-code"
                   >Prototypal inheritance</code
                 >
               </h4>
@@ -205,7 +151,7 @@
                 </li>
               </ul>
               <h4 name="1616" id="1616" class="graf graf--h4 graf-after--li">
-                <code class="markup--code markup--h4-code"
+                <code lang="js" class="markup--code markup--h4-code"
                   >The constructor method</code
                 >
               </h4>
@@ -217,7 +163,7 @@
                 </li>
               </ul>
               <h4 name="59a0" id="59a0" class="graf graf--h4 graf-after--li">
-                <code class="markup--code markup--h4-code"
+                <code lang="js" class="markup--code markup--h4-code"
                   >The Dependency Inversion Principle</code
                 >
               </h4>
@@ -230,7 +176,7 @@
               </ul>
               <h4 name="3680" id="3680" class="graf graf--h4 graf-after--li">
                 The
-                <code class="markup--code markup--h4-code">extends</code
+                <code lang="js" class="markup--code markup--h4-code">extends</code
                 > keyword
               </h4>
               <ul class="postList">
@@ -240,7 +186,7 @@
                 </li>
               </ul>
               <h4 name="e42d" id="e42d" class="graf graf--h4 graf-after--li">
-                <code class="markup--code markup--h4-code"
+                <code lang="js" class="markup--code markup--h4-code"
                   >The Interface Segregation Principle</code
                 >
               </h4>
@@ -251,7 +197,7 @@
                 </li>
               </ul>
               <h4 name="fd47" id="fd47" class="graf graf--h4 graf-after--li">
-                <code class="markup--code markup--h4-code"
+                <code lang="js" class="markup--code markup--h4-code"
                   >The Law Of Demeter</code
                 >
               </h4>
@@ -270,7 +216,7 @@
                 </li>
               </ul>
               <h4 name="941e" id="941e" class="graf graf--h4 graf-after--li">
-                <code class="markup--code markup--h4-code"
+                <code lang="js" class="markup--code markup--h4-code"
                   >The Liskov Substitution Principle</code
                 >
               </h4>
@@ -281,7 +227,7 @@
                 </li>
               </ul>
               <h4 name="47c5" id="47c5" class="graf graf--h4 graf-after--li">
-                <code class="markup--code markup--h4-code"
+                <code lang="js" class="markup--code markup--h4-code"
                   >The Open-Close Principle</code
                 >
               </h4>
@@ -291,7 +237,7 @@
                 </li>
               </ul>
               <h4 name="5ff9" id="5ff9" class="graf graf--h4 graf-after--li">
-                <code class="markup--code markup--h4-code"
+                <code lang="js" class="markup--code markup--h4-code"
                   >The Single-Responsibility Principle</code
                 >
               </h4>
@@ -345,7 +291,7 @@
                   The above literal is a “Book” object type.
                 </li>
                 <li name="a5d6" id="a5d6" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code">Object Type</code>
+                  <code lang="js" class="markup--code markup--li-code">Object Type</code>
                   is defined by it&#39;s attributes and behaviors.
                 </li>
               </ul>
@@ -354,7 +300,7 @@
                 id="9b5a"
                 class="graf graf--blockquote graf-after--li"
               >
-                <code class="markup--code markup--blockquote-code"
+                <code lang="js" class="markup--code markup--blockquote-code"
                   ><strong class="markup--strong markup--blockquote-strong"
                     >Behaviors</strong
                   ></code
@@ -368,7 +314,7 @@
                   id="ccb5"
                   class="graf graf--li graf-after--blockquote"
                 >
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >Constructor Functions</code
                   > : Handle the creation of an object - it&#39;s a factory for
                   creating objects of a specific type.
@@ -406,7 +352,7 @@
               <ul class="postList">
                 <li name="dc26" id="dc26" class="graf graf--li graf-after--h3">
                   We can invoke a constructor function using the
-                  <code class="markup--code markup--li-code">new</code>
+                  <code lang="js" class="markup--code markup--li-code">new</code>
                   keyword.
                 </li>
               </ul>
@@ -435,12 +381,12 @@ console.log(fellowshipOfTheRing); // Book { title: &#39;The Fellowship of the Ri
                 </li>
                 <li name="3c79" id="3c79" class="graf graf--li graf-after--li">
                   The new obj’s
-                  <code class="markup--code markup--li-code">prototype</code>
+                  <code lang="js" class="markup--code markup--li-code">prototype</code>
                   is set to the object referenced by the constructors prototype
                   property.
                 </li>
                 <li name="6b2e" id="6b2e" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code">This</code>
+                  <code lang="js" class="markup--code markup--li-code">This</code>
                   is bound to the new object.
                 </li>
                 <li name="a360" id="a360" class="graf graf--li graf-after--li">
@@ -453,7 +399,7 @@ console.log(fellowshipOfTheRing); // Book { title: &#39;The Fellowship of the Ri
               </h3>
               <ul class="postList">
                 <li name="1263" id="1263" class="graf graf--li graf-after--h3">
-                  <code class="markup--code markup--li-code">Instance</code> :
+                  <code lang="js" class="markup--code markup--li-code">Instance</code> :
                   term to describe an objected created from a constructor
                   function.
                 </li>
@@ -471,7 +417,7 @@ console.log(fellowshipOfTheRing instanceof Book); // true</pre
               <ul class="postList">
                 <li name="f5e2" id="f5e2" class="graf graf--li graf-after--pre">
                   By using the
-                  <code class="markup--code markup--li-code">instanceof</code>
+                  <code lang="js" class="markup--code markup--li-code">instanceof</code>
                   operator we can verify that an object was created from a
                   certain object type.
                 </li>
@@ -490,7 +436,7 @@ console.log(fellowshipOfTheRing instanceof Book); // true</pre
               <ul class="postList">
                 <li name="e812" id="e812" class="graf graf--li graf-after--h3">
                   If we invoke a constructor function without the
-                  <code class="markup--code markup--li-code">new</code>
+                  <code lang="js" class="markup--code markup--li-code">new</code>
                   keyword, we may result in one of two unexpected outcomes:
                 </li>
               </ul>
@@ -501,14 +447,14 @@ console.log(fellowshipOfTheRing instanceof Book); // true</pre
                 </li>
                 <li name="8654" id="8654" class="graf graf--li graf-after--li">
                   In
-                  <code class="markup--code markup--li-code">strict</code>
+                  <code lang="js" class="markup--code markup--li-code">strict</code>
                   mode, this will become undefined.
                 </li>
               </ol>
               <ul class="postList">
                 <li name="4f03" id="4f03" class="graf graf--li graf-after--li">
                   You can enable strict mode by typing
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >&quot;use strict&quot;</code
                   >
                   at the top of your file.
@@ -527,7 +473,7 @@ console.log(fellowshipOfTheRing instanceof Book); // true</pre
                   >
                 </li>
                 <li name="a9e8" id="a9e8" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code">Prototype</code> :
+                  <code lang="js" class="markup--code markup--li-code">Prototype</code> :
                   An object that is delegated to when a reference to an object
                   property or method can&#39;t be resolved.
                 </li>
@@ -536,18 +482,18 @@ console.log(fellowshipOfTheRing instanceof Book); // true</pre
                   same prototype.
                 </li>
                 <li name="ddba" id="ddba" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >Object.setPrototypeOf()</code
                   >
                   and
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >Object.getPrototypeOf()</code
                   >
                   are just used to set a prototype of one object to another
                   object; and also the verify a prototype.
                 </li>
                 <li name="144c" id="144c" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code">proto</code> : aka
+                  <code lang="js" class="markup--code markup--li-code">proto</code> : aka
                   &quot;dunder proto&quot; is a property used to gain easy
                   access to an object&#39;s prototype - it is widely supported
                   by browsers but is considered deprecated.
@@ -610,13 +556,13 @@ console.log(fellowshipOfTheRing.getInformation());</pre
               </h3>
               <p name="b79f" id="b79f" class="graf graf--p graf-after--h3">
                 In ES2015, JS gained the
-                <code class="markup--code markup--p-code">class</code>
+                <code lang="js" class="markup--code markup--p-code">class</code>
                 keyword - replacing the need to use only constructor functions
                 &amp; prototypes to mimic classes!
               </p>
               <ul class="postList">
                 <li name="df3e" id="df3e" class="graf graf--li graf-after--p">
-                  <code class="markup--code markup--li-code">class</code> :
+                  <code lang="js" class="markup--code markup--li-code">class</code> :
                   keyword that gives developers a formal way to create a class
                   definition to specify an object type&#39;s attributes and
                   behavior; also used to create objects of that specific type.
@@ -636,7 +582,7 @@ console.log(fellowshipOfTheRing.getInformation());</pre
                 </li>
                 <li name="28ed" id="28ed" class="graf graf--li graf-after--li">
                   Although not required, class definitions can include a
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >class constructor function</code
                   >
                   - these are similar to regular constructors in that:
@@ -657,7 +603,7 @@ console.log(fellowshipOfTheRing.getInformation());</pre
                 class="graf graf--blockquote graf-after--h3"
               >
                 We can also use the
-                <code class="markup--code markup--blockquote-code">new</code>.
+                <code lang="js" class="markup--code markup--blockquote-code">new</code>.
               </blockquote>
               <h3
                 name="e67f"
@@ -675,7 +621,7 @@ console.log(fellowshipOfTheRing.getInformation());</pre
                   property value.
                 </li>
                 <li name="eddc" id="eddc" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code">This</code>
+                  <code lang="js" class="markup--code markup--li-code">This</code>
                   is bound to the new object.
                 </li>
                 <li name="0814" id="0814" class="graf graf--li graf-after--li">
@@ -706,7 +652,7 @@ test();</pre
                 <li name="bf4e" id="bf4e" class="graf graf--li graf-after--pre">
                   In JS you can call a function before it’s declared — this is
                   known as
-                  <code class="markup--code markup--li-code">hoisting</code>.
+                  <code lang="js" class="markup--code markup--li-code">hoisting</code>.
                 </li>
                 <li name="8dd6" id="8dd6" class="graf graf--li graf-after--li">
                   Class definitions are
@@ -724,29 +670,29 @@ test();</pre
                   A class can contain two types of methods:
                 </li>
                 <li name="6099" id="6099" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >Instance Method</code
                   > : Methods that are invoked on an instance of the class -
                   useful for performing an action on a specific instance.
                 </li>
                 <li name="ed85" id="ed85" class="graf graf--li graf-after--li">
                   Instance methods are also sometimes referred to as
-                  <code class="markup--code markup--li-code">prototype</code>
+                  <code lang="js" class="markup--code markup--li-code">prototype</code>
                   methods because they are defined on a shared prototype object.
                 </li>
                 <li name="ca19" id="ca19" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code">Static Method</code
+                  <code lang="js" class="markup--code markup--li-code">Static Method</code
                   > : Methods that invoked directly on a class, not on an
                   instance.
                 </li>
                 <li name="3c58" id="3c58" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code">Important</code>:
+                  <code lang="js" class="markup--code markup--li-code">Important</code>:
                   Invoking a static method on an instance will result in a
                   runtime error.
                 </li>
                 <li name="a067" id="a067" class="graf graf--li graf-after--li">
                   Prepending the
-                  <code class="markup--code markup--li-code">static</code>
+                  <code lang="js" class="markup--code markup--li-code">static</code>
                   keyword at the beginning on the method name will make it
                   static.
                 </li>
@@ -864,16 +810,16 @@ console.log(bookTitles.join(&quot;, &quot;)); // The Fellowship of the Ring, The
               </h3>
               <ul class="postList">
                 <li name="76a3" id="76a3" class="graf graf--li graf-after--h3">
-                  <code class="markup--code markup--li-code">Child Class</code
+                  <code lang="js" class="markup--code markup--li-code">Child Class</code
                   > : Class that is based upon another class and inherits
                   properties and methods from that other class.
                 </li>
                 <li name="9c4b" id="9c4b" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code">Parent Class</code
+                  <code lang="js" class="markup--code markup--li-code">Parent Class</code
                   > : Class that is being inherited downwards.
                 </li>
                 <li name="673c" id="673c" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code">Inheritance</code
+                  <code lang="js" class="markup--code markup--li-code">Inheritance</code
                   > : The process of basing a class upon another class.
                 </li>
               </ul>
@@ -910,7 +856,7 @@ console.log(bookTitles.join(&quot;, &quot;)); // The Fellowship of the Ring, The
               <ul class="postList">
                 <li name="8dcd" id="8dcd" class="graf graf--li graf-after--pre">
                   A
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >prototype chain</code
                   >
                   defines a series of prototype objects that are delegated to
@@ -924,7 +870,7 @@ console.log(theGrapesOfWrath.getInformation()); // The Grapes of Wrath</pre
               <ul class="postList">
                 <li name="cdf9" id="cdf9" class="graf graf--li graf-after--pre">
                   When the
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >getInformation()</code
                   >
                   method is invoked:
@@ -945,7 +891,7 @@ console.log(theGrapesOfWrath.getInformation()); // The Grapes of Wrath</pre
               </p>
               <ul class="postList">
                 <li name="71f7" id="71f7" class="graf graf--li graf-after--p">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >Method Overriding</code
                   > : when a child class provides an implementation of a method
                   that&#39;s already defined in a parent class.
@@ -979,7 +925,7 @@ console.log(theGrapesOfWrath.getInformation()); // The Grapes of Wrath</pre
                 >
                   We can simply declare our own method of the same name in our
                   child class to override our parent’s version of
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >getInformation()</code
                   >
                 </li>
@@ -1002,30 +948,30 @@ console.log(theGrapesOfWrath.getInformation()); // The Grapes of Wrath</pre
               <ul class="postList">
                 <li name="7869" id="7869" class="graf graf--li graf-after--p">
                   In Node.js, each JS file in a project defines a
-                  <code class="markup--code markup--li-code">module</code>.
+                  <code lang="js" class="markup--code markup--li-code">module</code>.
                 </li>
                 <li name="fdaa" id="fdaa" class="graf graf--li graf-after--li">
                   Module’s contents are private by default.
                 </li>
                 <li name="1ee7" id="1ee7" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code">Local Modules</code
+                  <code lang="js" class="markup--code markup--li-code">Local Modules</code
                   > : Modules defined within your project.
                 </li>
                 <li name="47f2" id="47f2" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code">Core Modules</code
+                  <code lang="js" class="markup--code markup--li-code">Core Modules</code
                   > : Native modules contained within Node.js that you can use
                   to perform tasks or to add functionality to your application.
                 </li>
                 <li name="dc6e" id="dc6e" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code">CommonJS</code> : A
+                  <code lang="js" class="markup--code markup--li-code">CommonJS</code> : A
                   legacy module system.
                 </li>
                 <li name="20cd" id="20cd" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code">ES Modules</code> :
+                  <code lang="js" class="markup--code markup--li-code">ES Modules</code> :
                   Newer module sysem that will eventually replace CommonJS.
                 </li>
                 <li name="5889" id="5889" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code">Entry Point</code
+                  <code lang="js" class="markup--code markup--li-code">Entry Point</code
                   > : JS File that is passed to Node for access to the entire
                   application.
                 </li>
@@ -1076,11 +1022,11 @@ console.log(theGrapesOfWrath.getInformation()); // The Grapes of Wrath</pre
                   core, or third-party:
                 </li>
                 <li name="42b7" id="42b7" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code">Local Module</code
+                  <code lang="js" class="markup--code markup--li-code">Local Module</code
                   >: identifier starts with ./ ../ or /
                 </li>
                 <li name="7f81" id="7f81" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code">Node.js Core</code
+                  <code lang="js" class="markup--code markup--li-code">Node.js Core</code
                   >: identifier matches name
                 </li>
                 <li
@@ -1088,7 +1034,7 @@ console.log(theGrapesOfWrath.getInformation()); // The Grapes of Wrath</pre
                   id="ecfe"
                   class="graf graf--li graf-after--li graf--trailing"
                 >
-                  <code class="markup--code markup--li-code">Third-Party</code>:
+                  <code lang="js" class="markup--code markup--li-code">Third-Party</code>:
                   identifier matches a module in the node modules folder
                   (installed package)
                 </li>
@@ -1103,7 +1049,7 @@ console.log(theGrapesOfWrath.getInformation()); // The Grapes of Wrath</pre
           <div class="section-content">
             <div class="section-inner sectionLayout--insetColumn">
               <h3 name="eb20" id="eb20" class="graf graf--h3 graf--leading">
-                <code class="markup--code markup--h3-code">Encapsulation</code>
+                <code lang="js" class="markup--code markup--h3-code">Encapsulation</code>
               </h3>
               <ul class="postList">
                 <li name="74af" id="74af" class="graf graf--li graf-after--h3">
@@ -1113,11 +1059,11 @@ console.log(theGrapesOfWrath.getInformation()); // The Grapes of Wrath</pre
                 </li>
               </ul>
               <h3 name="176b" id="176b" class="graf graf--h3 graf-after--li">
-                <code class="markup--code markup--h3-code">Inheritance</code>
+                <code lang="js" class="markup--code markup--h3-code">Inheritance</code>
               </h3>
               <ul class="postList">
                 <li name="5328" id="5328" class="graf graf--li graf-after--h3">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >Implementation Inheritance</strong
                     ></code
@@ -1127,12 +1073,12 @@ console.log(theGrapesOfWrath.getInformation()); // The Grapes of Wrath</pre
                   those parent classes.
                 </li>
                 <li name="743c" id="743c" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >Prototypal Inheritance</strong
                     ></code
                   > : Means that JS uses prototype objects to make its
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     ><strong class="markup--strong markup--li-strong"
                       >implementation inheritance</strong
                     ></code
@@ -1275,33 +1221,33 @@ class ClothingStore extends Retail {}</pre
               </p>
               <ul class="postList">
                 <li name="cdba" id="cdba" class="graf graf--li graf-after--p">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >The Single-Responsibility Principle</code
                   >
                 </li>
                 <li name="be3a" id="be3a" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >The Open-Close Principle</code
                   >
                 </li>
                 <li name="0822" id="0822" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >The Liskov Substitution Principle</code
                   >
                 </li>
                 <li name="f90a" id="f90a" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >The Interface Segregation Principle</code
                   >
                 </li>
                 <li name="05aa" id="05aa" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >The Dependency Inversion Principle</code
                   >
                 </li>
               </ul>
               <h3 name="e3b0" id="e3b0" class="graf graf--h3 graf-after--li">
-                <code class="markup--code markup--h3-code"
+                <code lang="js" class="markup--code markup--h3-code"
                   >Single-Responsibility Principle</code
                 >
               </h3>
@@ -1324,7 +1270,7 @@ class ClothingStore extends Retail {}</pre
                 </li>
               </ul>
               <h3 name="5571" id="5571" class="graf graf--h3 graf-after--li">
-                <code class="markup--code markup--h3-code"
+                <code lang="js" class="markup--code markup--h3-code"
                   >The Liskov Substitution Principle:</code
                 >
               </h3>
@@ -1350,20 +1296,20 @@ class ClothingStore extends Retail {}</pre
                 id="5e0d"
                 class="graf graf--p graf-after--blockquote"
               >
-                <code class="markup--code markup--p-code">The Other Three</code>
+                <code lang="js" class="markup--code markup--p-code">The Other Three</code>
               </p>
               <ul class="postList">
                 <li name="11ae" id="11ae" class="graf graf--li graf-after--p">
                   The remaining three principles are important for languages
                   that have
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >static typing</code
                   >
                   - which means a variable can have only one kind of thing in
                   it.
                 </li>
                 <li name="c644" id="c644" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >Open-Close Principle</code
                   >
                 </li>
@@ -1375,7 +1321,7 @@ class ClothingStore extends Retail {}</pre
                   not the original class.
                 </li>
                 <li name="9cb7" id="9cb7" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >Interface Segregation Principle</code
                   >
                 </li>
@@ -1384,7 +1330,7 @@ class ClothingStore extends Retail {}</pre
                   collections called “interfaces”.
                 </li>
                 <li name="7861" id="7861" class="graf graf--li graf-after--li">
-                  <code class="markup--code markup--li-code"
+                  <code lang="js" class="markup--code markup--li-code"
                     >Dependency Inversion Principle</code
                   >
                 </li>
@@ -1399,7 +1345,7 @@ class ClothingStore extends Retail {}</pre
               </h3>
               <ul class="postList">
                 <li name="2e83" id="2e83" class="graf graf--li graf-after--h3">
-                  <code class="markup--code markup--li-code">Coupling</code> :
+                  <code lang="js" class="markup--code markup--li-code">Coupling</code> :
                   The degree of interdependence between two or more classes.
                 </li>
                 <li name="d484" id="d484" class="graf graf--li graf-after--li">
