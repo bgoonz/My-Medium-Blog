@@ -1,5 +1,3 @@
-
-
 A list of all of my articles to link to future posts
 ====================================================
 
@@ -51,7 +49,7 @@ You should probably skip this one… seriously it’s just for internal use!
 <em>This installment is going to be the least technically demanding thus far however these questions are a more realistic…</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/web-development-interview-part-3-826ae81a9107" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://medium.com/star-gazers/the-web-developers-technical-interview-e347d7db3822" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/star-gazers/the-web-developers-technical-interview-e347d7db3822"><strong>The Web Developer’s Technical Interview</strong><br />
-<em>Questions….Answers… and links to the missing pieces.</em>medium.com</a><a href="https://medium.com/star-gazers/the-web-developers-technical-interview-e347d7db3822" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
+<em>Questions…. Answers… and links to the missing pieces.</em>medium.com</a><a href="https://medium.com/star-gazers/the-web-developers-technical-interview-e347d7db3822" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 <a href="https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443"><strong>Front End Interview Questions Part 2</strong><br />
 <em>These will focus more on vocabulary and concepts than the application driven approach in my last post!</em>medium.com</a><a href="https://medium.com/codex/front-end-interview-questions-part-2-86ddc0e91443" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>

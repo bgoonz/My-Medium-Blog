@@ -1,5 +1,3 @@
-
-
 An Introduction to Markdown (Bonus Markdown Templates Included)
 ===============================================================
 
@@ -96,7 +94,9 @@ If you need additional image tags like targets or title attributes you can also 
 
     markdown
 
-    ![Help Builder Web Site](https://helpbuilder.west-wind.com/images/HelpBuilder_600.png)
+    
+
+![Help Builder Web Site](https://helpbuilder.west-wind.com/images/HelpBuilder_600.png)
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*ibU0D-Zr0qDT5h3z.png" class="graf-image" /></figure>### Block Quotes
 
@@ -139,16 +139,16 @@ This text can be embedded into Markdown:
 
     markdown
 
-    * Item 1
-    * Item 2
-    * Item 3
+    - Item 1
+    - Item 2
+    - Item 3
     This text is part of the third item. Use two spaces at end of the the list item to break the line.
 
     A double line break, breaks out of the list.
 
--   <span id="7904">Item 1</span>
--   <span id="1cf1">Item 2</span>
--   <span id="ded6">Item 3  
+*   <span id="7904">Item 1</span>
+*   <span id="1cf1">Item 2</span>
+*   <span id="ded6">Item 3  
     This text is part of the third item. Use two spaces at end of the the list item to break the line.</span>
 
 A double line break, breaks out of the list.
@@ -159,6 +159,7 @@ A double line break, breaks out of the list.
 
     1. **Item 1**  
     Item 1 is really something
+
     2. **Item 2**  
     Item two is really something else
 
@@ -209,13 +210,15 @@ You can also use triple back ticks plus an optional coding language to support f
 
     markdown
 
-    `` `csharp
+    ` ` ` csharp
+
     // this code will be syntax highlighted
     for(var i=0; i++; i < 10)
     {
         Console.WriteLine(i);
     }
-    `` `
+
+    ` ` `
 
     csharp
 
@@ -231,9 +234,11 @@ You can also leave out the language to get no syntax coloring but the code box:
 
     markdown
 
-    `` `dos
+    ` ` ` dos
+
     robocopy c:\temp\test d:\temp\test
-    `` `
+
+    ` ` `
 
     dos
 
@@ -243,10 +248,12 @@ To create a formatted block but without formatting use the `txt` format:
 
     markdown
 
-    `` `txt
+    ` ` ` txt
+
     This is some text that will not be syntax highlighted
     but shows up in a code box.
-    `` `
+
+    ` ` `
 
 which gives you:
 

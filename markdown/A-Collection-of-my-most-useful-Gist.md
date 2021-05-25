@@ -1,5 +1,3 @@
-
-
 A Collection of my most useful Gist Entries
 ===========================================
 

@@ -1,5 +1,3 @@
-
-
 Deploy React App To Heroku Using Postgres & Express
 ===================================================
 
@@ -11,11 +9,11 @@ Heroku is an web application that makes deploying applications easy for a beginn
 
 Heroku is an web application that makes deploying applications easy for a beginner.
 
-Before you begin deploying, make sure to remove any `console.log`'s or `debugger`'s in any production code. You can search your entire project folder if you are using them anywhere.
+Before you begin deploying, make sure to remove any `console.log` 's or `debugger` 's in any production code. You can search your entire project folder if you are using them anywhere.
 
-You will set up Heroku to run on a production, not development, version of your application. When a Node.js application like yours is pushed up to Heroku, it is identified as a Node.js application because of the `package.json` file. It runs `npm install` automatically. Then, if there is a `heroku-postbuild` script in the `package.json` file, it will run that script. Afterwards, it will automatically run `npm start`.
+You will set up Heroku to run on a production, not development, version of your application. When a Node.js application like yours is pushed up to Heroku, it is identified as a Node.js application because of the `package.json` file. It runs `npm install` automatically. Then, if there is a `heroku-postbuild` script in the `package.json` file, it will run that script. Afterwards, it will automatically run `npm start` .
 
-In the following phases, you will configure your application to work in production, not just in development, and configure the `package.json` scripts for `install`, `heroku-postbuild` and `start` scripts to install, build your React application, and start the Express production server.
+In the following phases, you will configure your application to work in production, not just in development, and configure the `package.json` scripts for `install` , `heroku-postbuild` and `start` scripts to install, build your React application, and start the Express production server.
 
 ### Phase 1: Heroku Connection
 
@@ -39,7 +37,7 @@ Right now, your React application is on a different localhost port than your Exp
 
 Add the following changes into your `backend/routes.index.js` file.
 
-At the root route, serve the React application’s static `index.html` file along with `XSRF-TOKEN` cookie. Then serve up all the React application's static files using the `express.static` middleware. Serve the `index.html` and set the `XSRF-TOKEN` cookie again on all routes that don't start in `/api`. You should already have this set up in `backend/routes/index.js` which should now look like this:
+At the root route, serve the React application’s static `index.html` file along with `XSRF-TOKEN` cookie. Then serve up all the React application's static files using the `express.static` middleware. Serve the `index.html` and set the `XSRF-TOKEN` cookie again on all routes that don't start in `/api` . You should already have this set up in `backend/routes/index.js` which should now look like this:
 
     // backend/routes/index.js
     const express = require('express');
@@ -84,7 +82,7 @@ At the root route, serve the React application’s static `index.html` file alon
 
 Your Express backend’s `package.json` should include scripts to run the `sequelize` CLI commands.
 
-The `backend/package.json`'s scripts should now look like this:
+The `backend/package.json` 's scripts should now look like this:
 
     "scripts": {
         "sequelize": "sequelize",
@@ -94,21 +92,21 @@ The `backend/package.json`'s scripts should now look like this:
         "start:production": "node ./bin/www"
       },
 
-Initialize a `package.json` file at the very root of your project directory (outside of both the `backend` and `frontend` folders). The scripts defined in this `package.json` file will be run by Heroku, not the scripts defined in the `backend/package.json` or the `frontend/package.json`.
+Initialize a `package.json` file at the very root of your project directory (outside of both the `backend` and `frontend` folders). The scripts defined in this `package.json` file will be run by Heroku, not the scripts defined in the `backend/package.json` or the `frontend/package.json` .
 
-When Heroku runs `npm install`, it should install packages for both the `backend` and the `frontend`. Overwrite the `install` script in the root `package.json` with:
+When Heroku runs `npm install` , it should install packages for both the `backend` and the `frontend` . Overwrite the `install` script in the root `package.json` with:
 
     npm --prefix backend install backend && npm --prefix frontend install frontend
 
 This will run `npm install` in the `backend` folder then run `npm install` in the `frontend` folder.
 
-Next, define a `heroku-postbuild` script that will run the `npm run build` command in the `frontend` folder. Remember, Heroku will automatically run this script after running `npm install`.
+Next, define a `heroku-postbuild` script that will run the `npm run build` command in the `frontend` folder. Remember, Heroku will automatically run this script after running `npm install` .
 
 Define a `sequelize` script that will run `npm run sequelize` in the `backend` folder.
 
 Finally, define a `start` that will run `npm start` in the \`backend folder.
 
-The root `package.json`'s scripts should look like this:
+The root `package.json` 's scripts should look like this:
 
     "scripts": {
         "heroku-postbuild": "npm run build --prefix frontend",
@@ -160,7 +158,7 @@ Another way to interact with the production application is by opening a bash she
 
     heroku bash
 
-In the opened shell, you can run things like `npm run sequelize db:migrate`.
+In the opened shell, you can run things like `npm run sequelize db:migrate` .
 
 Open your deployed site and check to see if you successfully deployed your Express + React application to Heroku!
 
