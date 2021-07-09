@@ -4,7 +4,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>What is Memoization?</title>
 
-
     <style>
       * {
         font-family: Georgia, Cambria, "Times New Roman", Times, serif;
@@ -68,10 +67,12 @@
         display: none;
       }
     </style>
-<link rel="stylesheet" href="/path/to/styles/default.css">
-<script src="/path/to/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>
-             </head>
+    <link rel="stylesheet" href="/path/to/styles/default.css" />
+    <script src="/path/to/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </head>
   <body>
     <article class="h-entry">
       <header>
@@ -275,22 +276,30 @@
               </figure>
               <p name="4b01" id="4b01" class="graf graf--p graf-after--figure">
                 From this plain
-                <code class="language-js markup--code markup--p-code">factorial</code>
+                <code class="language-js markup--code markup--p-code"
+                  >factorial</code
+                >
                 above, it is clear that every time you call<br /><code
                   class="markup--code markup--p-code"
                   >factorial(6)</code
                 >
                 you should get the same result of
-                <code class="language-js markup--code markup--p-code">720</code> each time.
-                The code is<br />somewhat inefficient because you must go down
-                the full recursive stack for each top-level call to
-                <code class="language-js markup--code markup--p-code">factorial(6)</code>.
+                <code class="language-js markup--code markup--p-code">720</code>
+                each time. The code is<br />somewhat inefficient because you
+                must go down the full recursive stack for each top-level call to
+                <code class="language-js markup--code markup--p-code"
+                  >factorial(6)</code
+                >.
               </p>
               <p name="6ac3" id="6ac3" class="graf graf--p graf-after--p">
                 If we can store the result of
-                <code class="language-js markup--code markup--p-code">factorial(6)</code>
+                <code class="language-js markup--code markup--p-code"
+                  >factorial(6)</code
+                >
                 the first time you calculate it, then on subsequent calls to
-                <code class="language-js markup--code markup--p-code">factorial(6)</code>
+                <code class="language-js markup--code markup--p-code"
+                  >factorial(6)</code
+                >
                 you simply fetch the stored result in constant time.
               </p>
               <figure
@@ -303,18 +312,22 @@
               <p name="e6ec" id="e6ec" class="graf graf--p graf-after--figure">
                 The <code class="markup--code markup--p-code">memo</code> object
                 above will map an argument of
-                <code class="language-js markup--code markup--p-code">factorial</code> to
-                its return<br />value. That is, the keys will be arguments and
-                their values will be the<br />corresponding results returned. By
-                using the memo, you are able to avoid<br />duplicate recursive
-                calls!
+                <code class="language-js markup--code markup--p-code"
+                  >factorial</code
+                >
+                to its return<br />value. That is, the keys will be arguments
+                and their values will be the<br />corresponding results
+                returned. By using the memo, you are able to avoid<br />duplicate
+                recursive calls!
               </p>
               <p name="55ee" id="55ee" class="graf graf--p graf-after--p">
                 By the time your first call to
-                <code class="language-js markup--code markup--p-code">factorial(6) </code
+                <code class="language-js markup--code markup--p-code"
+                  >factorial(6) </code
                 >returns, you will not have just the argument
-                <code class="language-js markup--code markup--p-code">6</code> stored in the
-                memo. Rather, y<strong class="markup--strong markup--p-strong"
+                <code class="language-js markup--code markup--p-code">6</code>
+                stored in the memo. Rather, y<strong
+                  class="markup--strong markup--p-strong"
                   >ou will have
                   <em class="markup--em markup--p-em">all</em> arguments 2 to 6
                   stored in the memo.</strong
@@ -341,12 +354,18 @@
                 a function that calculates the Fibonacci<br />number for a given
                 input.
               </p>
-              <pre class="language-js"
+              <pre
+                class="language-js"
                 name="fcad"
                 id="fcad"
                 class="graf graf--pre graf-after--p"
               >function fib(n) {<br>  if (n === 1 || n === 2) return 1;<br>  return fib(n - 1) + fib(n - 2);<br>}</pre>
-              <pre class="language-js" name="8605" id="8605" class="graf graf--pre graf-after--pre">
+              <pre
+                class="language-js"
+                name="8605"
+                id="8605"
+                class="graf graf--pre graf-after--pre"
+              >
 fib(6);     // =&gt; 8</pre
               >
               <p name="6dc7" id="6dc7" class="graf graf--p graf-after--pre">
@@ -379,9 +398,9 @@ fib(6);     // =&gt; 8</pre
                 >
                   <em class="markup--em markup--li-em">n </em>, the height of
                   this tree will be
-                  <code class="language-js markup--code markup--li-code">n</code>. You
-                  derive this by following<br />the path going straight down the
-                  left side of the tree.
+                  <code class="language-js markup--code markup--li-code">n</code
+                  >. You derive this by following<br />the path going straight
+                  down the left side of the tree.
                 </li>
                 <li name="855a" id="855a" class="graf graf--li graf-after--li">
                   each internal node leads to two more nodes. Overall, this
@@ -389,8 +408,9 @@ fib(6);     // =&gt; 8</pre
                 </li>
                 <li name="df50" id="df50" class="graf graf--li graf-after--li">
                   which is the same as saying that the
-                  <code class="language-js markup--code markup--li-code">fib </code>function
-                  has an exponential time complexity of 2n.
+                  <code class="language-js markup--code markup--li-code"
+                    >fib </code
+                  >function has an exponential time complexity of 2n.
                 </li>
                 <li name="42df" id="42df" class="graf graf--li graf-after--li">
                   That is very slow!
@@ -398,9 +418,11 @@ fib(6);     // =&gt; 8</pre
               </ul>
               <p name="4bca" id="4bca" class="graf graf--p graf-after--li">
                 See for yourself, try running
-                <code class="language-js markup--code markup--p-code">fib(50)</code> -
-                you&#39;ll be waiting for quite a lot longer than you’ve gotten
-                used to waiting for a program to run in the last decade.
+                <code class="language-js markup--code markup--p-code"
+                  >fib(50)</code
+                >
+                - you&#39;ll be waiting for quite a lot longer than you’ve
+                gotten used to waiting for a program to run in the last decade.
               </p>
               <p name="8712" id="8712" class="graf graf--p graf-after--p">
                 The green regions highlighted above are repetitive.
@@ -430,11 +452,13 @@ fib(6);     // =&gt; 8</pre
                 You can see the marked nodes (function calls) that access the
                 memo in green.<br />It’s easy to see that this version of the
                 Fibonacci generator will do far fewer<br />computations as
-                <code class="language-js markup--code markup--p-code">n</code> grows larger!
-                In fact, this memoization has brought the time complexity down
-                to linear
-                <code class="language-js markup--code markup--p-code">O(n)</code> time
-                because the tree only branches on the left side. This is an
+                <code class="language-js markup--code markup--p-code">n</code>
+                grows larger! In fact, this memoization has brought the time
+                complexity down to linear
+                <code class="language-js markup--code markup--p-code"
+                  >O(n)</code
+                >
+                time because the tree only branches on the left side. This is an
                 enormous gain if you recall the complexity of class hierarchy.
               </p>
               <h3 name="dc1a" id="dc1a" class="graf graf--h3 graf-after--p">
