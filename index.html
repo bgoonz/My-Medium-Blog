@@ -1126,7 +1126,7 @@ D.p(["./Updates/may-update*0*1626278367","2021-02-27_A-Quick-Guide-to-Big-O-Nota
 
 							table_html += 
 								"<tr>" + 
-									"<td><span class='file_folder'><a href=\"#\" class=\"folder_link\" id=\"" + SearchLocationsID[index] + "\"> " + SearchFilenames[index][3] + "</a></span></td>" + 
+									"<td><span class='file_folder'><a target=\"iframe_a\" href=\"#\" class=\"folder_link\" id=\"" + SearchLocationsID[index] + "\"> " + SearchFilenames[index][3] + "</a></span></td>" + 
 									locationHtml + 
 									"<td class='size' data-sort='" + SearchFilenames[index][1] + "'>" + bytesToSize( SearchFilenames[index][1] ) + "</td>" + 
 									"<td class='date' data-sort='" + SearchFilenames[index][2] + "'>" + timestamp + "</td>" + 
@@ -1167,7 +1167,7 @@ D.p(["./Updates/may-update*0*1626278367","2021-02-27_A-Quick-Guide-to-Big-O-Nota
 										file_tmp = file_tmp.replace(/\/\//g,"/");
 									}
 
-									file_tmp = "<a href=\"" + file_tmp + SearchFilenames[index][3] + "</a>";
+									file_tmp = "<a  target=\"iframe_a\" href=\"" + file_tmp + SearchFilenames[index][3] + "</a>";
 								}
 							}
 
@@ -1175,7 +1175,7 @@ D.p(["./Updates/may-update*0*1626278367","2021-02-27_A-Quick-Guide-to-Big-O-Nota
 							if(showLocationColumn) {
 								var located_in = SearchLocations[index];
 								if( located_in === "" ) located_in = "[.]"
-								locationHtml = "<td><span class='file_folder'><a href=\"#\" class=\"folder_link\" id=\"" + SearchLocationsID[index] + "\"> " + located_in + "</a></span></td>";
+								locationHtml = "<td><span class='file_folder'><a target=\"iframe_a\" href=\"#\" class=\"folder_link\" id=\"" + SearchLocationsID[index] + "\"> " + located_in + "</a></span></td>";
 							}
 
 
@@ -1263,7 +1263,7 @@ D.p(["./Updates/may-update*0*1626278367","2021-02-27_A-Quick-Guide-to-Big-O-Nota
 					if(c===0) {
 						dirName = dirName.replace(/\:\//g,"");	// remove :\ from volume labels
 					}
-					breadcrumbs += "<a href=\"#\" class=\"folder_link\" id=\"" + path[c] + "\">" + dirName + "</a>" + "<span class='path_divider'></span>";
+					breadcrumbs += "<a target=\"iframe_a\" href=\"#\" class=\"folder_link\" id=\"" + path[c] + "\">" + dirName + "</a>" + "<span class='path_divider'></span>";
 				}
 
 				currentDir = getDirNameAndPath(FolderID);
@@ -1277,7 +1277,7 @@ D.p(["./Updates/may-update*0*1626278367","2021-02-27_A-Quick-Guide-to-Big-O-Nota
 				var showParentFolderClass = "";
 				if( FolderID != 0 ) {
 					showParentFolderClass = " has-parent-folder"
-					table_html += "<span id='parent_folder' class='file_folder'><a href=\"#\" class=\"folder_link\" id=\"" + parent_folders[FolderID] + "\"> [..]</a></span>\n";
+					table_html += "<span id='parent_folder' class='file_folder'><a target=\"iframe_a\" href=\"#\" class=\"folder_link\" id=\"" + parent_folders[FolderID] + "\"> [..]</a></span>\n";
 					table_html += "<div id='parent_folder_border'></div>";
 				}
 				table_html += "<table id='files' class='tablesorter" + showParentFolderClass + "'><thead><th>Name</th><th>Size</th><th>Modified</th></tr></thead><tbody>\n";
@@ -1301,7 +1301,7 @@ D.p(["./Updates/may-update*0*1626278367","2021-02-27_A-Quick-Guide-to-Big-O-Nota
 						var timestamp = timestampToDate(sTmp[2]);
 						table_html += 
 							"<tr>" + 
-								"<td><span class='file_folder'><a href=\"#\" class=\"folder_link\" id=\"" + subdirs[c] + "\"> " + name + "</a></span></td>" + 
+								"<td><span class='file_folder'><a target=\"iframe_a\" href=\"#\" class=\"folder_link\" id=\"" + subdirs[c] + "\"> " + name + "</a></span></td>" + 
 								"<td class='size' data-sort='" + dirSize + "'>" + bytesToSize( dirSize ) + "</td>" + 
 								"<td class='date' data-sort='" + sTmp[2] + "'>" + timestamp + "</td>" + 
 							"</tr>\n";
@@ -1344,7 +1344,7 @@ D.p(["./Updates/may-update*0*1626278367","2021-02-27_A-Quick-Guide-to-Big-O-Nota
 								file_tmp = file_tmp.replace(/\/\//g,"/");
 							}
 
-							file_tmp = "<a href=\"" + file_tmp + sTmp[0] + "</a>";
+							file_tmp = "<a target=\"iframe_a\" href=\"" + file_tmp + sTmp[0] + "</a>";
 						}
 					}
 					
@@ -1737,8 +1737,9 @@ D.p(["./Updates/may-update*0*1626278367","2021-02-27_A-Quick-Guide-to-Big-O-Nota
 			</form>
 
 			<h1>My-Medium-Blog</h1>
-			<div class="app_header_stats">489 files in 10 folders (<span id="tot_size">38928138</span>)<br>Generated 7/14/2021 1:59 PM</div>
 
+			<div style="color:red;font-weight:bold;" class="app_header_stats">489 files in 10 folders (<span id="tot_size">38928138</span>)<br>Generated 7/14/2021 1:59 PM  ~~~ The link you click will appear in the iframe below ~~~</div>
+      <h6></h6>
 		</div>
 
 		<div id="loading" class="loading"><b>Loading...</b><p class="loading_info">(if nothing happens, make sure javascript is enabled and allowed to execute, or try another browser)</p></div>
@@ -1764,7 +1765,7 @@ D.p(["./Updates/may-update*0*1626278367","2021-02-27_A-Quick-Guide-to-Big-O-Nota
   	<div id="export_lightbox" class="export_lightbox">
 		<div id="export_content" class="export_content">
 			<div class="export_options">
-				<a href="#" id="export_close" class="export_close"><b>×</b> Close</a>
+				<a target="iframe_a" href="#" id="export_close" class="export_close"><b>×</b> Close</a>
 				<span>Show:</span>
 				<input type="checkbox" id="export_checkbox_files"><label for="export_checkbox_files">Files</label>
 				<input type="checkbox" id="export_checkbox_dirs"><label for="export_checkbox_dirs">Folders</label>
@@ -1787,6 +1788,6 @@ D.p(["./Updates/may-update*0*1626278367","2021-02-27_A-Quick-Guide-to-Big-O-Nota
 		</div>
 		<div id="export_tip">Tip: Search for * to export all files and folders</div>
 	</div>
- 
+ <iframe src="demo_iframe.htm" name="iframe_a" height="800px" width="100%" style="text-align:center;border: 4px solid white;background-color:white;" title="iframe_a" frameborder="0"></iframe>
 </body>
 </html>
