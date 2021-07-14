@@ -1,9 +1,8 @@
-Life Saving Bash Scripts Part 2
-===============================
+# Life Saving Bash Scripts Part 2
 
 I am not saying they’re in any way special compared with other bash scripts… but when I consider that you can never recover time spent… the…
 
-------------------------------------------------------------------------
+---
 
 ### Life Saving Bash Scripts Part 2
 
@@ -11,7 +10,7 @@ I am not saying they’re in any way special compared with other bash scripts…
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*aWKygEnTVdHuulB4.gif" class="graf-image" /></figure>Below the following 20 commands I will include <a href="https://gist.github.com/bgoonz/2d2314216d337a69b31bcb5a8880ade7" class="markup--anchor markup--pullquote-anchor">the gist files</a> so you can download these commands all at once as well as see them syntax highlighted but I decided to include them as plain code blocks for the ease with which they can be copied and pasted as well as detected by the web crawlers of various search engines (it could be the case that it has no affect on seo… but that’s a chance I don’t have to take).
 
-------------------------------------------------------------------------
+---
 
 ### Discover More:
 
