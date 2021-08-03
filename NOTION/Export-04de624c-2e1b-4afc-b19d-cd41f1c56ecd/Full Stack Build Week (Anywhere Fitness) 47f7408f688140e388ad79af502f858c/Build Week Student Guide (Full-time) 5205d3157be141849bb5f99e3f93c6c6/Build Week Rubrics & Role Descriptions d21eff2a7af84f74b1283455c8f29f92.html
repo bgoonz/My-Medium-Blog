@@ -1,0 +1,644 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Build Week Rubrics &amp; Role Descriptions </title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="d21eff2a-7af8-4f74-b128-3455c8f29f92" class="page sans"><header><img class="page-cover-image" src="https://images.unsplash.com/photo-1555831622-d311c959af42?ixlib=rb-1.2.1&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb" style="object-position:center 50%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">✅</span></div><h1 class="page-title">Build Week Rubrics &amp; Role Descriptions </h1></header><div class="page-body"><div id="82c57bc8-29bb-4435-bf9d-f7a9358bf694" class="column-list"><div id="1154fb02-c90c-49d7-925e-6d54647c4af5" style="width:50%" class="column"><h3 id="5b349597-fd5d-4cf7-ab5a-c3d6d34a6d48" class="">Data Science</h3><hr id="bf8f7273-083f-4638-9256-b67cba28ffb9"/><figure id="fa525e82-3487-40e0-9075-3afa34146374" class="link-to-page"><a href="Build%20Week%20Rubrics%20&amp;%20Role%20Descriptions%20d21eff2a7af84f74b1283455c8f29f92/Data%20Science%20Unit%202%20Rubric%20(Independent)%20fa525e82348740e090753afa34146374.html"><span class="icon">📈</span>Data Science Unit 2 Rubric (Independent)</a></figure><figure id="032d3e4a-4f6e-4a79-a4a7-5acd92ffeb6a" class="link-to-page"><a href="Build%20Week%20Rubrics%20&amp;%20Role%20Descriptions%20d21eff2a7af84f74b1283455c8f29f92/Data%20Science%20Unit%203%20Rubric%20032d3e4a4f6e4a79a4a75acd92ffeb6a.html"><span class="icon">🚀</span>Data Science Unit 3 Rubric</a></figure><figure id="75df4ee4-5176-4433-87ee-6ba58c3975d2" class="link-to-page"><a href="Build%20Week%20Rubrics%20&amp;%20Role%20Descriptions%20d21eff2a7af84f74b1283455c8f29f92/Data%20Science%20Unit%204%20Rubric%2075df4ee45176443387ee6ba58c3975d2.html"><span class="icon">🤖</span>Data Science Unit 4 Rubric</a></figure><p id="1cfaa736-a05b-4afa-a4d0-f4954f04541d" class="">
+</p><p id="f320c305-ea42-4b17-a98a-4b048d72e53c" class="">
+</p></div><div id="284b5696-c975-4b10-be3b-cacfe65a6f57" style="width:50%" class="column"><h3 id="684138b4-04a4-412a-ab63-ab06f7ae2f49" class="">Full-Stack Web </h3><hr id="5a947848-19cd-4714-85ac-7bb02e8a9abe"/><figure id="72e200b1-599b-4c28-aee9-40d03801fecc" class="link-to-page"><a href="Build%20Week%20Rubrics%20&amp;%20Role%20Descriptions%20d21eff2a7af84f74b1283455c8f29f92/Web%20Unit%202%20Rubric%2072e200b1599b4c28aee940d03801fecc.html"><span class="icon">🎧</span>Web Unit 2 Rubric</a></figure><figure id="6b33b8d7-c98c-42f5-a4e6-a0bb3a0deec1" class="link-to-page"><a href="Build%20Week%20Rubrics%20&amp;%20Role%20Descriptions%20d21eff2a7af84f74b1283455c8f29f92/Web%20Unit%203%20Rubric%206b33b8d7c98c42f5a4e6a0bb3a0deec1.html"><span class="icon">🏀</span>Web Unit 3 Rubric </a></figure><figure id="68148c10-0aea-43bf-b5d2-269f19470ad7" class="link-to-page"><a href="Build%20Week%20Rubrics%20&amp;%20Role%20Descriptions%20d21eff2a7af84f74b1283455c8f29f92/Web%20Unit%204%20-%20Node%20Rubric%2068148c100aea43bfb5d2269f19470ad7.html"><span class="icon">🛥</span>Web Unit 4 - Node Rubric</a></figure><figure id="d0a39374-a5c2-4bdc-893b-629724372b6c" class="link-to-page"><a href="Build%20Week%20Rubrics%20&amp;%20Role%20Descriptions%20d21eff2a7af84f74b1283455c8f29f92/Web%20Unit%204%20-%20Java%20Rubric%20d0a39374a5c24bdc893b629724372b6c.html"><span class="icon">☕</span>Web Unit 4 - Java Rubric</a></figure><p id="ecd28df8-834e-4ecf-a6f0-a2b14395189f" class="">
+</p></div></div><h3 id="bd2aa0bf-297c-4f1a-96a2-a3e31fb72b21" class="">Track Team Roles in Build Week</h3><hr id="7b2990da-9ef2-46bd-99bf-785b06052a6f"/><div id="ff991fd9-5681-4ebf-a6d4-22ba24f9fc60" class="column-list"><div id="8e93b1b7-4992-48dc-a560-382378ce9cf8" style="width:50.000000000000014%" class="column"><figure id="fa5d1950-98f1-4066-8588-148224eb68c4" class="link-to-page"><a href="Build%20Week%20Rubrics%20&amp;%20Role%20Descriptions%20d21eff2a7af84f74b1283455c8f29f92/DS%20Unit%203%20-%20Zoom%20Master%20+%20fa5d195098f140668588148224eb68c4.html"><span class="icon">📹</span>DS Unit 3 - Zoom Master +</a></figure><figure id="c8ded7f2-5a64-47b7-80f7-ac5b8c02a03a" class="link-to-page"><a href="Build%20Week%20Rubrics%20&amp;%20Role%20Descriptions%20d21eff2a7af84f74b1283455c8f29f92/DS%20Unit%204%20-%20Facilitator%20+%20c8ded7f25a6447b780f7ac5b8c02a03a.html"><span class="icon">🗣️</span>DS Unit 4 - Facilitator +</a></figure></div><div id="e3e0dfab-eb01-413b-ac98-bbbba1221e0b" style="width:50%" class="column"><figure id="c4237c52-2297-435d-8fbe-1b348d6a02ce" class="link-to-page"><a href="Build%20Week%20Rubrics%20&amp;%20Role%20Descriptions%20d21eff2a7af84f74b1283455c8f29f92/Web%20Unit%202%20-%20Note%20Taker%20c4237c522297435d8fbe1b348d6a02ce.html"><span class="icon">🗒️</span>Web Unit 2 - Note Taker</a></figure><figure id="64bb9947-4339-49cd-b6c7-ea3d4da5f6d3" class="link-to-page"><a href="Build%20Week%20Rubrics%20&amp;%20Role%20Descriptions%20d21eff2a7af84f74b1283455c8f29f92/Web%20Unit%203%20-%20Zoom%20Master%2064bb9947433949cdb6c7ea3d4da5f6d3.html"><span class="icon">📹</span>Web Unit 3 - Zoom Master</a></figure><figure id="f58ca97b-9d94-4bb1-8502-142907d2e995" class="link-to-page"><a href="Build%20Week%20Rubrics%20&amp;%20Role%20Descriptions%20d21eff2a7af84f74b1283455c8f29f92/Web%20Unit%204%20-%20Facilitator%20f58ca97b9d944bb18502142907d2e995.html"><span class="icon">🗣️</span>Web Unit 4 - Facilitator</a></figure></div></div><p id="44f44b8a-b209-4bad-92e9-4b5df6a00422" class="">
+</p><p id="6409a2e9-e5ef-4500-a721-3109badccc7f" class="">
+</p><p id="e2367470-80dd-4913-8747-551ed934750c" class="">
+</p><ul id="ee550a2d-8d69-497b-a56b-79a98a4f5e6c" class="toggle"><li><details open=""><summary>Other</summary><figure id="c0dfcfec-c9d5-4a4f-ae54-4697f6fe49e2" class="link-to-page"><a href="Build%20Week%20Rubrics%20&amp;%20Role%20Descriptions%20d21eff2a7af84f74b1283455c8f29f92/Unit%201,%20Sprint%203%20Questions%20Rubric%20c0dfcfecc9d54a4fae544697f6fe49e2.html"><span class="icon">📓</span>Unit 1, Sprint 3: Questions Rubric</a></figure><figure id="52c71548-fa7f-4f87-b3e9-3f79ac398916" class="link-to-page"><a href="Build%20Week%20Rubrics%20&amp;%20Role%20Descriptions%20d21eff2a7af84f74b1283455c8f29f92/CS%20Unit%202%20-%20Interview%20Prep%20Rubrics%2052c71548fa7f4f87b3e93f79ac398916.html"><span class="icon">🥇</span>CS Unit 2 - Interview Prep Rubrics</a></figure><figure id="15c4cdb8-2488-4be9-a5ed-d78daf979776" class="link-to-page"><a href="Build%20Week%20Rubrics%20&amp;%20Role%20Descriptions%20d21eff2a7af84f74b1283455c8f29f92/iOS%20Unit%203%2015c4cdb824884be9a5edd78daf979776.html"><span class="icon">📱</span>iOS Unit 3</a></figure><figure id="4c310e4b-2c08-4a58-af3b-8db53669754b" class="link-to-page"><a href="Build%20Week%20Rubrics%20&amp;%20Role%20Descriptions%20d21eff2a7af84f74b1283455c8f29f92/iOS%20Unit%204%204c310e4b2c084a58af3b8db53669754b.html"><span class="icon">📱</span>iOS Unit 4 </a></figure><h3 id="d6d6d77f-d4e1-4cf6-b114-b10b2200f52a" class="">iOS</h3><figure id="f0dcf1ac-774d-4f0e-bdc2-01d2d37415de" class="link-to-page"><a href="Build%20Week%20Rubrics%20&amp;%20Role%20Descriptions%20d21eff2a7af84f74b1283455c8f29f92/Web%20Unit%201%20f0dcf1ac774d4f0ebdc201d2d37415de.html"><span class="icon">🦊</span>Web Unit 1</a></figure></details></li></ul><ul id="3556b749-22dd-4d3d-8427-166675dde862" class="toggle"><li><details open=""><summary>Revision History</summary><p id="2c301f75-2bfa-443e-a6fa-593f0b27a507" class="">October 24, 2019, shared with students October 25, 2019</p><p id="353a044b-cf07-4f3a-896b-4cf0d0407097" class="">February 24, 2020 </p><p id="08bbfaea-b208-4929-bda1-54b1edc1e62f" class="">July 30, 3030 updated CS Unit 1 rubric</p><p id="7ef4e99d-f9c7-4636-9014-e20811fffe6c" class="">
+</p></details></li></ul><p id="7bcc27e3-854c-41a2-9644-ba1fb3adcf96" class="">
+</p><p id="2c1af726-eef1-4b95-a67a-4901eb2545e5" class="">Copyright Lambda School 2020, All Rights Reserved</p></div></article></body></html>

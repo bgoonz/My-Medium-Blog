@@ -1,0 +1,765 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Bash-Commands</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="294b447e-9a6e-4d81-9118-53d98c4c035a" class="page sans"><header><h1 class="page-title">Bash-Commands</h1></header><div class="page-body"><h1 id="0303a129-e87e-42dd-9041-db835513b152" class="">Bash Commands That Save Me Time and Frustration</h1><h2 id="c0c3c787-87a1-40fa-b87a-f29a56be2e38" class="">Here’s a list of bash commands that stand between me and insanity.</h2><figure id="339d2baf-5092-4232-a414-4a9020de64a5" class="image"><a href="https://miro.medium.com/fit/c/52/52/1*4fzEKCI8uJO85RqLCiNWLw.png"><img src="https://miro.medium.com/fit/c/52/52/1*4fzEKCI8uJO85RqLCiNWLw.png"/></a></figure><p id="7ef910fa-ee04-423a-be3b-fd4c8b4456d2" class=""><a href="https://bryanguner.medium.com/?source=post_page-----920fb6ab9d0a--------------------------------">Bryan Guner</a></p><p id="7dc72141-4a4f-4479-abc8-e1ad0ffb3907" class=""><a href="https://medium.com/geekculture/bash-commands-that-save-time-920fb6ab9d0a?source=post_page-----920fb6ab9d0a--------------------------------">Jun 29</a> · 15 min read</p><figure id="97b15bce-3993-4335-b4a6-6e563e76163d" class="image"><a href="https://miro.medium.com/max/734/0*w0J8u6jWTikYVZzW.jpg"><img src="https://miro.medium.com/max/734/0*w0J8u6jWTikYVZzW.jpg"/></a></figure><h1 id="ebda4251-4cf6-46a7-bb44-e29eda6afe4b" class=""><strong>This article will be accompanied by the following </strong><strong> which will contain all the commands listed as well as folders that demonstrate before and after usage!</strong></h1><p id="cd882c9b-be73-4e00-8286-075000f92298" class=""><a href="https://github.com/bgoonz/bash-commands-walkthrough"><strong>bgoonz/bash-commands-walkthrough</strong></a><a href="https://github.com/bgoonz/bash-commands-walkthrough"><strong>to accompany the medium article I am writing. Contribute to bgoonz/bash-commands-walkthrough development by creating an…</strong></a><a href="https://github.com/bgoonz/bash-commands-walkthrough">
+</a><a href="https://github.com/bgoonz/bash-commands-walkthrough">github.com</a></p><h1 id="a67521b9-1dcb-4cb5-9d5d-f051768df9aa" class="">The for this git repo will provide a much more condensed list… whereas this article will break up the commands with explanations… images &amp; links!</h1><p id="6b03ce07-9e9d-4520-b7f6-c6eda50e38a1" class=""><strong>I will include the code examples as both github gists (for proper syntax highlighting) and as code snippets adjacent to said gists so that they can easily be copied and pasted… or … if you’re like me for instance; and like to use an extension to grab the markdown content of a page… the code will be included rather than just a link to the gist!</strong></p><figure id="2ee2fd15-afba-4e3a-9862-a756179dfd19" class="image"><a href="https://miro.medium.com/max/1080/1*3m_UcQOAyKtIpHQ6j9JzZw.gif"><img src="https://miro.medium.com/max/1080/1*3m_UcQOAyKtIpHQ6j9JzZw.gif"/></a></figure><p id="1443f794-dbc7-4812-81b3-53f86e93ba94" class=""><strong><strong>Here’s a Cheatsheet:</strong></strong><strong>
+</strong><strong><strong>Getting Started (Advanced Users Skip Section):</strong></strong></p><h2 id="a8eba3ee-23a0-4063-b86c-f6bebf9c59ce" class=""><strong>✔ Check the Current Directory ➡ </strong><code><strong>pwd</strong></code><strong>:</strong></h2><p id="d6b5620b-c66b-4a10-9dfa-f049070b358a" class="">On the command line, it’s important to know the directory we are currently working on. For that, we can use <code>pwd</code> command.</p><figure id="c1ab129a-9da2-49f5-ab4f-fc0d61c7a95c" class="image"><a href="https://miro.medium.com/max/648/0*dimzLUrmDI4Ufev6.gif"><img src="https://miro.medium.com/max/648/0*dimzLUrmDI4Ufev6.gif"/></a></figure><p id="c931a0d9-6b0c-4e54-895e-c996cc1a8517" class="">It shows that I’m working on my Desktop directory.</p><h2 id="11516d37-e5b8-4f76-9ac6-4429802ef83b" class=""><strong>✔ Display List of Files ➡ </strong><code><strong>ls</strong></code><strong>:</strong></h2><p id="cebd66b7-75c8-4753-91b5-8cdcc3c1d3f1" class="">To see the list of files and directories in the current directory use <code>ls</code> command in your CLI.</p><figure id="f13ac6a5-c701-40e9-ac60-502b0140d4df" class="image"><a href="https://miro.medium.com/freeze/max/32/0*HHzVrK2CtTPwTdYT.gif?q=20"><img src="https://miro.medium.com/freeze/max/32/0*HHzVrK2CtTPwTdYT.gif?q=20"/></a></figure><figure id="9da070ac-c36c-44b8-a667-5403953299a8" class="image"><a href="https://miro.medium.com/max/648/0*HHzVrK2CtTPwTdYT.gif"><img src="https://miro.medium.com/max/648/0*HHzVrK2CtTPwTdYT.gif"/></a></figure><p id="5c2eb407-f826-4f18-be3d-1ed4c512008a" class="">Shows all of my files and directories of my Desktop directory.</p><ul id="6169f519-9a9e-4c43-a2b1-bdf2f9c247e6" class="bulleted-list"><li>To show the contents of a directory pass the directory name to the <code>ls</code> command i.e. <code>ls directory_name</code>.</li></ul><ul id="57bf8a65-eec5-457d-9173-ce200c9e9442" class="bulleted-list"><li>Some useful <code>ls</code> command options:-</li></ul><p id="27799891-5e4e-405d-994f-4c48d3ceb2f7" class="">OptionDescriptionls -alist all files including hidden file starting with ‘.’ls -llist with the long formatls -lalist long format including hidden files</p><h2 id="33515366-60b2-4e6b-a636-2300b76dde5c" class=""><strong>✔ Create a Directory ➡ </strong><code><strong>mkdir</strong></code><strong>:</strong></h2><p id="450cd0eb-bd4a-4d25-a072-9291b7ea20df" class="">We can create a new folder using the <code>mkdir</code> command. To use it type <code>mkdir folder_name</code>.</p><figure id="682aab8b-529e-4554-8eca-83a234bfbc84" class="image"><a href="https://miro.medium.com/freeze/max/32/0*m3dDyC9vRJBUZSxR.gif?q=20"><img src="https://miro.medium.com/freeze/max/32/0*m3dDyC9vRJBUZSxR.gif?q=20"/></a></figure><figure id="8a9afec9-b081-44dd-8130-2b57eba17196" class="image"><a href="https://miro.medium.com/max/648/0*m3dDyC9vRJBUZSxR.gif"><img src="https://miro.medium.com/max/648/0*m3dDyC9vRJBUZSxR.gif"/></a></figure><p id="11a4a162-b21c-4d94-9b43-ecd0662fa062" class="">Use <code>ls</code> command to see the directory is created or not.</p><p id="c6137102-36fc-4a7f-b4d7-42ef058cb244" class="">I created a cli-practice directory in my working directory i.e. Desktop directory.</p><h2 id="b73be9c8-4403-4955-9e0c-f38e2ffc257c" class=""><strong>✔ Move Between Directories ➡ </strong><code><strong>cd</strong></code><strong>:</strong></h2><p id="0bb43e8f-5072-4317-a8aa-b4f5a427be62" class="">It’s used to change directory or to move other directories. To use it type <code>cd directory_name</code>.</p><figure id="ba0c7117-0fa4-4723-bb77-46c722b416ce" class="image"><a href="https://miro.medium.com/freeze/max/32/0*34KGxT2G8oNMDnIc.gif?q=20"><img src="https://miro.medium.com/freeze/max/32/0*34KGxT2G8oNMDnIc.gif?q=20"/></a></figure><figure id="0505679a-5d63-4562-9c7d-c4f981ecb08e" class="image"><a href="https://miro.medium.com/max/648/0*34KGxT2G8oNMDnIc.gif"><img src="https://miro.medium.com/max/648/0*34KGxT2G8oNMDnIc.gif"/></a></figure><p id="431a856d-c79b-4eec-933e-a0cc22e7b442" class="">Can use <code>pwd</code> command to confirm your directory name.</p><p id="11811cbb-dc76-4c9f-bb7d-b084be556970" class="">Changed my directory to the cli-practice directory. And the rest of the tutorial I’m gonna work within this directory.</p><h2 id="00842ab8-baf3-4258-9883-e3051116da4e" class=""><strong>✔ Parent Directory ➡ </strong><code><strong>..</strong></code><strong>:</strong></h2><p id="8a25d491-2f85-4687-bc28-2a8cbdecf5ba" class="">We have seen <code>cd</code> command to change directory but if we want to move back or want to move to the parent directory we can use a special symbol <code>..</code> after <code>cd</code> command, like <code>cd ..</code></p><h2 id="28067e05-d6a4-4b16-8c7d-3ab008be9362" class=""><strong>✔ Create Files ➡ </strong><code><strong>touch</strong></code><strong>:</strong></h2><p id="6e21ee5d-cb2b-43ac-8f61-46bdbac115d6" class="">We can create an empty file by typing <code>touch file_name</code>. It&#x27;s going to create a new file in the current directory (the directory you are currently in) with your provided name.</p><figure id="fc754fda-7cb7-4e7c-8878-3fc5bec0060e" class="image"><a href="https://miro.medium.com/freeze/max/32/0*xu1wtv7gJ2NMvP60.gif?q=20"><img src="https://miro.medium.com/freeze/max/32/0*xu1wtv7gJ2NMvP60.gif?q=20"/></a></figure><figure id="539ecd94-fa8c-4438-a32f-672c5b0aed43" class="image"><a href="https://miro.medium.com/max/648/0*xu1wtv7gJ2NMvP60.gif"><img src="https://miro.medium.com/max/648/0*xu1wtv7gJ2NMvP60.gif"/></a></figure><p id="ce0d0aeb-dcee-4b7c-b7c4-eb81c0ce7ed2" class="">I created a hello.txt file in my current working directory. Again you can use <code>ls</code> command to see the file is created or not.</p><p id="cf0f5310-cabd-4f00-b14a-8d2319862d04" class="">Now open your hello.txt file in your text editor and write <em>Hello Everyone!</em> into your hello.txt file and save it.</p><h2 id="4def2650-a7ff-4519-9d16-805b0b75cd4d" class=""><strong>✔ Display the Content of a File ➡ </strong><code><strong>cat</strong></code><strong>:</strong></h2><p id="0d643b09-b1fb-405c-81a3-456aba1165cf" class="">We can display the content of a file using the <code>cat</code> command. To use it type <code>cat file_name</code>.</p><figure id="868d9d63-d42b-4702-86dd-96dba4728623" class="image"><a href="https://miro.medium.com/freeze/max/32/0*iKf5w9QFNCeLRv8a.gif?q=20"><img src="https://miro.medium.com/freeze/max/32/0*iKf5w9QFNCeLRv8a.gif?q=20"/></a></figure><figure id="5c6ce525-b12d-46c8-831c-cac908d62e31" class="image"><a href="https://miro.medium.com/max/648/0*iKf5w9QFNCeLRv8a.gif"><img src="https://miro.medium.com/max/648/0*iKf5w9QFNCeLRv8a.gif"/></a></figure><p id="a4c4c4a4-a8a0-44f9-a4e5-1c0b0e86ed71" class="">Shows the content of my hello.txt file.</p><h2 id="b6355241-f1b0-4dda-90b7-50c19ec3ac58" class=""><strong>✔ Move Files &amp; Directories ➡ </strong><code><strong>mv</strong></code><strong>:</strong></h2><p id="6b1d7286-4800-486a-8715-e3ef274a3173" class="">To move a file and directory, we use <code>mv</code> command.</p><p id="69a3eb0c-6b2a-4958-8b85-3e5d492882e1" class="">By typing <code>mv file_to_move destination_directory</code>, you can move a file to the specified directory.</p><p id="9f5fe489-8cd7-41d6-afcd-77508f0c2ac9" class="">By entering <code>mv directory_to_move destination_directory</code>, you can move all the files and directories under that directory.</p><p id="99f475a6-f4e9-4a58-bc56-b7a0089ce131" class="">Before using this command, we are going to create two more directories and another txt file in our cli-practice directory.</p><p id="b613fd91-8728-40a8-ab73-bbea44b7931a" class=""><code>mkdir html css touch bye.txt</code></p><figure id="2a7e4280-a5f7-424c-9f6c-1a935f35461c" class="image"><a href="https://miro.medium.com/freeze/max/32/0*piaAQz_MQpzo7DPH.gif?q=20"><img src="https://miro.medium.com/freeze/max/32/0*piaAQz_MQpzo7DPH.gif?q=20"/></a></figure><figure id="db44afa9-60a6-4b9b-af07-5ecd8320b818" class="image"><a href="https://miro.medium.com/max/648/0*piaAQz_MQpzo7DPH.gif"><img src="https://miro.medium.com/max/648/0*piaAQz_MQpzo7DPH.gif"/></a></figure><p id="fa7b0d52-b6c1-4608-b668-5afdf27730cf" class="">Yes, we can use multiple directories &amp; files names one after another to create multiple directories &amp; files in one command.</p><figure id="f1bdca1b-572c-47b7-832b-0e857edfd39a" class="image"><a href="https://miro.medium.com/freeze/max/32/0*5jmj_ZyNz46GuQKz.gif?q=20"><img src="https://miro.medium.com/freeze/max/32/0*5jmj_ZyNz46GuQKz.gif?q=20"/></a></figure><figure id="241b0149-317e-4da5-bc77-3c4406fbe4a5" class="image"><a href="https://miro.medium.com/max/648/0*5jmj_ZyNz46GuQKz.gif"><img src="https://miro.medium.com/max/648/0*5jmj_ZyNz46GuQKz.gif"/></a></figure><p id="6ad62738-27dd-46ce-aff5-40e2d7d8a3a3" class="">Moved my bye.txt file into my css directory and then moved my css directory into my html directory.</p><h2 id="6c83674e-992b-4bcf-977c-ef2a297e1858" class=""><strong>✔ Rename Files &amp; Directories ➡ </strong><code><strong>mv</strong></code><strong>:</strong></h2><p id="ed1bcae8-152b-4b5f-8d1a-fde15da887ea" class=""><code>mv</code> command can also be used to rename a file and a directory.</p><p id="d5ceb150-5f19-4a6b-80b1-0df1274cd401" class="">You can rename a file by typing <code>mv old_file_name new_file_name</code> &amp; also rename a directory by typing <code>mv old_directory_name new_directory_name</code>.</p><figure id="285ebb17-5ae5-4631-a589-e839f8729c6d" class="image"><a href="https://miro.medium.com/freeze/max/32/0*WTVu1dd6gr-nmWhD.gif?q=20"><img src="https://miro.medium.com/freeze/max/32/0*WTVu1dd6gr-nmWhD.gif?q=20"/></a></figure><figure id="af9eef15-9d1b-40cc-a4b9-8ee8aa173dfa" class="image"><a href="https://miro.medium.com/max/648/0*WTVu1dd6gr-nmWhD.gif"><img src="https://miro.medium.com/max/648/0*WTVu1dd6gr-nmWhD.gif"/></a></figure><p id="32d51ddc-5182-4c22-8959-9c7ee2d1073e" class="">Renamed my hello.txt file to the hi.txt file and html directory to the folder directory.</p><h2 id="c56f9df7-62a0-49d9-addf-acfd21af8ba3" class=""><strong>✔ Copy Files &amp; Directories ➡ </strong><code><strong>cp</strong></code><strong>:</strong></h2><p id="44af1426-5841-454a-896a-7e6b32947d2d" class="">To do this, we use the <code>cp</code> command.</p><ul id="2bea9af8-da8a-4fef-81bb-f394f2463078" class="bulleted-list"><li>You can copy a file by entering <code>cp file_to_copy new_file_name</code>.</li></ul><figure id="a78b5ffb-3ade-4bc4-8bb9-daed7543598a" class="image"><a href="https://miro.medium.com/freeze/max/32/0*kCLVtKN9oKPbHfRF.gif?q=20"><img src="https://miro.medium.com/freeze/max/32/0*kCLVtKN9oKPbHfRF.gif?q=20"/></a></figure><figure id="07ab4bcf-812b-4af2-9c97-e25c412ad71d" class="image"><a href="https://miro.medium.com/max/648/0*kCLVtKN9oKPbHfRF.gif"><img src="https://miro.medium.com/max/648/0*kCLVtKN9oKPbHfRF.gif"/></a></figure><p id="b116841d-46d2-471a-b8ef-347efed91db8" class="">Copied my hi.txt file content into hello.txt file. For confirmation open your hello.txt file in your text editor.</p><ul id="a3084779-2e98-48d2-be5a-fb77a41906dc" class="bulleted-list"><li>You can also copy a directory by adding the <code>r</code> option, like <code>cp -r directory_to_copy new_directory_name</code>.</li></ul><p id="7b462650-6fcf-4d55-9c28-4bc9d1f118bb" class=""><em>The </em><code><em>-r</em></code><em> option for &quot;recursive&quot; means that it will copy all of the files including the files inside of subfolders.</em></p><figure id="8ee468f4-3d73-40d0-b6c4-f7b2019483f4" class="image"><a href="https://miro.medium.com/freeze/max/32/0*MnmzMiioIYCuK92B.gif?q=20"><img src="https://miro.medium.com/freeze/max/32/0*MnmzMiioIYCuK92B.gif?q=20"/></a></figure><figure id="fd7eca1d-dba8-4751-9c3f-1d2ed42dd634" class="image"><a href="https://miro.medium.com/max/648/0*MnmzMiioIYCuK92B.gif"><img src="https://miro.medium.com/max/648/0*MnmzMiioIYCuK92B.gif"/></a></figure><p id="bb753176-e8c0-446b-80ba-25c2b5bee271" class="">Here I copied all of the files from the folder to folder-copy.</p><h2 id="a12bf107-fdb6-4f21-a6da-de56e3aec677" class=""><strong>✔ Remove Files &amp; Directories ➡ </strong><code><strong>rm</strong></code><strong>:</strong></h2><p id="635bde57-c66c-4279-845c-4c1056080b22" class="">To do this, we use the <code>rm</code> command.</p><ul id="59438888-120e-4a5d-92cd-90f63670a287" class="bulleted-list"><li>To remove a file, you can use the command like <code>rm file_to_remove</code>.</li></ul><figure id="fb067cc9-3836-402a-9226-3ea2e927a571" class="image"><a href="https://miro.medium.com/freeze/max/32/0*ohCmdthd92_HA6Ze.gif?q=20"><img src="https://miro.medium.com/freeze/max/32/0*ohCmdthd92_HA6Ze.gif?q=20"/></a></figure><figure id="a7f7344f-8787-4722-b257-d79a220635bc" class="image"><a href="https://miro.medium.com/max/648/0*ohCmdthd92_HA6Ze.gif"><img src="https://miro.medium.com/max/648/0*ohCmdthd92_HA6Ze.gif"/></a></figure><p id="834a7afd-1fc3-49a7-881d-29e9a60df187" class="">Here I removed my hi.txt file.</p><ul id="99639a14-c6b4-45e5-b1a0-5ea5a29f51bc" class="bulleted-list"><li>To remove a directory, use the command like <code>rm -r directory_to_remove</code>.</li></ul><figure id="b2f70c5b-3b16-466b-8040-b102a7accd7e" class="image"><a href="https://miro.medium.com/freeze/max/32/0*voDbzwSpw24A2RjQ.gif?q=20"><img src="https://miro.medium.com/freeze/max/32/0*voDbzwSpw24A2RjQ.gif?q=20"/></a></figure><figure id="12b51004-30bf-4116-88ec-25513c24fc07" class="image"><a href="https://miro.medium.com/max/648/0*voDbzwSpw24A2RjQ.gif"><img src="https://miro.medium.com/max/648/0*voDbzwSpw24A2RjQ.gif"/></a></figure><p id="6b1b6655-47f3-4011-8fc8-40b28ee8c8f0" class="">I removed my folder-copy directory from my cli-practice directory i.e. current working directory.</p><h2 id="d14e6300-1414-408d-8f56-3229069ec7e0" class=""><strong>✔ Clear Screen ➡ </strong><code><strong>clear</strong></code><strong>:</strong></h2><p id="aa275de6-50db-4836-80e9-8fd9076a302c" class="">Clear command is used to clear the terminal screen.</p><h2 id="86ef56ac-bff1-413d-81d4-7a6e4a36990a" class=""><strong>✔ Home Directory ➡ </strong><code><strong>~</strong></code><strong>:</strong></h2><p id="4adde6f0-8ae2-4ad2-8f82-a30c2d4603be" class="">The Home directory is represented by <code>~</code>. The Home directory refers to the base directory for the user. If we want to move to the Home directory we can use <code>cd ~</code> command. Or we can only use <code>cd</code> command.</p><h1 id="c53e6997-5543-4c60-ad71-e8c35c01dc09" class=""><strong>MY COMMANDS:</strong></h1><h1 id="89cfcf8c-a55a-42ef-a03e-6cbfbea45b6b" class=""><strong>1.) Recursively unzip zip files and then delete the archives when finished:</strong></h1><p id="b3cc8dd7-2e57-4377-998f-d2c2a6cc27b4" class=""><strong>here is a</strong><a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/1-recursive-unzip"><strong> folde</strong></a><strong>r containing the before and after… I had to change folder names slightly due to a limit on the length of file-paths in a github repo.</strong></p><pre id="b45730dc-21b7-492d-9bf1-4ded0ea3f46b" class="code code-wrap"><code>find . -name &quot;*.zip&quot; | while read filename; do unzip -o -d &quot;`dirname &quot;$filename&quot;`&quot; &quot;$filename&quot;; done;    find . -name &quot;*.zip&quot; -type f -print -delete</code></pre><p id="9a47c53e-a85b-47ae-80e2-e89ab1d3628b" class=""><strong><strong>2.) Install node modules recursively:</strong></strong>
+
+<code>npm i -g recursive-install  npm-recursive-install</code></p><h1 id="3fddaba1-12dc-424d-8447-524159e81988" class=""><strong>3.) Clean up unnecessary files/folders in git repo:</strong></h1><pre id="b9619945-2d0c-4bfa-ba56-8537a135446a" class="code code-wrap"><code>find . -empty -type f -print -delete #Remove empty files# -------------------------------------------------------
+find . -empty -type d -print -delete #Remove empty folders# -------------------------------------------------------# This will remove .git folders...    .gitmodule files as well as .gitattributes and .gitignore files.
+find . \( -name &quot;.git&quot; -o -name &quot;.gitignore&quot; -o -name &quot;.gitmodules&quot; -o -name &quot;.gitattributes&quot; \) -exec rm -rf -- {} + # -------------------------------------------------------# This will remove the filenames you see listed below that just take up space if a repo has been downloaded for use exclusively in your personal file system (in which case the following files just take up space)# Disclaimer... you should not use this command in a repo that you intend to use with your work as it removes files that attribute the work to their original creators!find . \( -name &quot;*SECURITY.txt&quot; -o -name &quot;*RELEASE.txt&quot; -o -name &quot;*CHANGELOG.txt&quot; -o -name &quot;*LICENSE.txt&quot; -o -name &quot;*CONTRIBUTING.txt&quot; -name &quot;*HISTORY.md&quot; -o -name &quot;*LICENSE&quot; -o -name &quot;*SECURITY.md&quot; -o -name &quot;*RELEASE.md&quot; -o -name &quot;*CHANGELOG.md&quot; -o -name &quot;*LICENSE.md&quot; -o -name &quot;*CODE_OF_CONDUCT.md&quot; -o -name &quot;\*CONTRIBUTING.md&quot; \) -exec rm -rf -- {} +</code></pre><h2 id="60a40500-972f-49bc-80c4-c0ee56bf94bb" class=""><strong>In Action:</strong></h2><p id="c210db2e-c858-4113-b17f-477798250ce5" class="">The following output from my bash shell corresponds to the directory:</p><p id="8bc3a520-3e9c-446d-b068-bee40d216308" class=""><a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master"><strong>bgoonz/bash-commands-walkthrough</strong></a><a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master"><strong>Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes…</strong></a><a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master">
+</a><a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master">github.com</a></p><h2 id="d3c5f9b3-8b26-4ec6-8052-dced81615497" class=""><strong>which was created by running the aforementioned commands in in a perfect copy of this directory:</strong></h2><p id="81ddf502-69cc-48b0-b027-b3053a6bac53" class=""><a href="https://github.com/bgoonz/DS-ALGO-OFFICIAL"><strong>bgoonz/DS-ALGO-OFFICIAL</strong></a><a href="https://github.com/bgoonz/DS-ALGO-OFFICIAL"><strong>Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes…</strong></a><a href="https://github.com/bgoonz/DS-ALGO-OFFICIAL">
+</a><a href="https://github.com/bgoonz/DS-ALGO-OFFICIAL">github.com</a></p><h1 id="dbe7ad60-6d69-4f24-975f-f70079e2c8f0" class=""><strong>…..below is the terminal output for the following commands:</strong></h1><pre id="4eab8e06-1d30-4c78-990f-5d7cd124e77a" class="code code-wrap"><code>pwd
+/mnt/c/Users/bryan/Downloads/bash-commands/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master</code></pre><h1 id="91cc24c8-c00c-46a7-b780-c8776a1c2026" class=""><strong>After printing the working directory for good measure:</strong></h1><pre id="b5d9e4e1-72ec-47af-b434-b46e58ff2479" class="code code-wrap"><code>find . -empty -type f -print -delete</code></pre><h1 id="da91c30d-e467-4ff3-8362-f892f113ec5d" class=""><strong>The above command deletes empty files recursively starting from the directory in which it was run:</strong></h1><pre id="1d9535da-a1b1-419f-b450-904852e5f6b3" class="code code-wrap"><code>./CONTENT/DS-n-Algos/File-System/file-utilities/node_modules/line-reader/test/data/empty_file.txt
+./CONTENT/DS-n-Algos/_Extra-Practice/free-code-camp/nodejs/http-collect.js
+./CONTENT/Resources/Comments/node_modules/mime/.npmignore
+./markdown/tree2.md
+./node_modules/loadashes6/lodash/README.md
+./node_modules/loadashes6/lodash/release.md
+./node_modules/web-dev-utils/Markdown-Templates/Markdown-Templates-master/filled-out-readme.md
+|01:33:16|bryan@LAPTOP-9LGJ3JGS:[DS-ALGO-OFFICIAL-master] DS-ALGO-OFFICIAL-master_exitstatus:0[╗___________o&gt;</code></pre><h1 id="45258e48-aa3b-4ec0-ac38-d35a8e1a14a0" class=""><strong>The command seen below deletes empty folders recursively starting from the directory in which it was run:</strong></h1><pre id="b3d45345-a725-4229-bc70-c9ca230111f7" class="code code-wrap"><code>find . -empty -type d -print -delete</code></pre><blockquote id="e200ad47-7c70-4f7c-963c-28855a43d1e6" class="">The resulting directories….</blockquote><pre id="5d56a95e-17f7-418b-ae13-84968127f03a" class="code code-wrap"><code>|01:33:16|bryan@LAPTOP-9LGJ3JGS:[DS-ALGO-OFFICIAL-master] DS-ALGO-OFFICIAL-master_exitstatus:0[╗___________o&gt;
+
+find . -empty -type d -print -delete
+./.git/branches
+./.git/objects/info
+./.git/refs/tags
+|01:33:31|bryan@LAPTOP-9LGJ3JGS:[DS-ALGO-OFFICIAL-master] DS-ALGO-OFFICIAL-master_exitstatus:0[╗___________o&gt;</code></pre><h1 id="e93baec3-00b6-4c1c-adc9-5526d301d3bc" class=""><strong>The command seen below deletes .git folders as well as .gitignore, .gitattributes, .gitmodule files</strong></h1><pre id="86cbc426-1a23-42f1-a0b7-73ae5cd689ed" class="code code-wrap"><code>find . \( -name &quot;.git&quot; -o -name &quot;.gitignore&quot; -o -name &quot;.gitmodules&quot; -o -name &quot;.gitattributes&quot; \) -exec rm -rf -- {} +
+</code></pre><p id="26283fc1-3d3b-4275-bfef-aa0e496ae686" class=""><strong>The command seen below deletes most SECURITY, RELEASE, CHANGELOG, LICENSE, CONTRIBUTING, &amp; HISTORY files that take up pointless space in repo’s you wish to keep exclusively for your own reference.</strong></p><h1 id="4358f5c9-9897-4071-9da2-a74dbb3236f4" class=""><strong>!!!Use with caution as this command removes the attribution of the work from it’s original authors!!!!!</strong></h1><figure id="0d157a9c-c386-458e-b228-a944cd0f2412" class="image"><a href="https://miro.medium.com/max/462/0*r5dGhtbeZ4VdO54U"><img src="https://miro.medium.com/max/462/0*r5dGhtbeZ4VdO54U"/></a></figure><p id="7da7abe8-ac3c-47c5-bc51-e735e40bfe5f" class="">!!!Use with caution as this command removes the attribution of the work from it’s original authors!!!!!</p><pre id="acd04f10-0643-46e2-9eef-1a33fc127f42" class="code code-wrap"><code>find . \( -name &quot;*SECURITY.txt&quot; -o -name &quot;*RELEASE.txt&quot; -o  -name &quot;*CHANGELOG.txt&quot; -o -name &quot;*LICENSE.txt&quot; -o -name &quot;*CONTRIBUTING.txt&quot; -name &quot;*HISTORY.md&quot; -o -name &quot;*LICENSE&quot; -o -name &quot;*SECURITY.md&quot; -o -name &quot;*RELEASE.md&quot; -o  -name &quot;*CHANGELOG.md&quot; -o -name &quot;*LICENSE.md&quot; -o -name &quot;*CODE_OF_CONDUCT.md&quot; -o -name &quot;*CONTRIBUTING.md&quot; \) -exec rm -rf -- {} +</code></pre><h1 id="d932b98f-be6e-4ef9-bed4-e2b8598a29e0" class=""><strong>4.) Generate index.html file that links to all other files in working directory:</strong></h1><pre id="f7f21e9e-f5c7-44ff-8b63-a13e774e9a52" class="code code-wrap"><code>#!/bin/sh
+# find ./ | grep -i &quot;\.*$&quot; &gt;files
+find ./ | sed -E -e &#x27;s/([^ ]+[ ]+){8}//&#x27; | grep -i &quot;\.*$&quot;&gt;files
+listing=&quot;files&quot;
+out=&quot;&quot;
+html=&quot;index.html&quot;
+out=&quot;basename $out.html&quot;
+html=&quot;index.html&quot;
+cmd() {
+  echo &#x27;  &lt;!DOCTYPE html&gt;&#x27;
+  echo &#x27;&lt;html&gt;&#x27;
+  echo &#x27;&lt;head&gt;&#x27;
+  echo &#x27;  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot;&gt;&#x27;
+  echo &#x27;  &lt;meta name=&quot;Author&quot; content=&quot;Bryan Guner&quot;&gt;&#x27;
+  echo &#x27;&lt;link rel=&quot;stylesheet&quot; href=&quot;./assets/prism.css&quot;&gt;&#x27;
+  echo &#x27; &lt;link rel=&quot;stylesheet&quot; href=&quot;./assets/style.css&quot;&gt;&#x27;
+  echo &#x27; &lt;script async defer src=&quot;./assets/prism.js&quot;&gt;&lt;/script&gt;&#x27;
+  echo &quot;  &lt;title&gt; directory &lt;/title&gt;&quot;
+  echo &quot;&quot;
+  echo &#x27;&lt;style&gt;&#x27;
+echo &#x27;    a {&#x27;
+echo &#x27;      color: black;&#x27;
+echo &#x27;    }&#x27;
+echo &#x27;&#x27;
+echo &#x27;    li {&#x27;
+echo &#x27;      border: 1px solid black !important;&#x27;
+echo &#x27;      font-size: 20px;&#x27;
+echo &#x27;      letter-spacing: 0px;&#x27;
+echo &#x27;      font-weight: 700;&#x27;
+echo &#x27;      line-height: 16px;&#x27;
+echo &#x27;      text-decoration: none !important;&#x27;
+echo &#x27;      text-transform: uppercase;&#x27;
+echo &#x27;      background: #194ccdaf !important;&#x27;
+echo &#x27;      color: black !important;&#x27;
+echo &#x27;      border: none;&#x27;
+echo &#x27;      cursor: pointer;&#x27;
+echo &#x27;      justify-content: center;&#x27;
+echo &#x27;      padding: 30px 60px;&#x27;
+echo &#x27;      height: 48px;&#x27;
+echo &#x27;      text-align: center;&#x27;
+echo &#x27;      white-space: normal;&#x27;
+echo &#x27;      border-radius: 10px;&#x27;
+echo &#x27;      min-width: 45em;&#x27;
+echo &#x27;      padding: 1.2em 1em 0;&#x27;
+echo &#x27;      box-shadow: 0 0 5px;&#x27;
+echo &#x27;      margin: 1em;&#x27;
+echo &#x27;      display: grid;&#x27;
+echo &#x27;      -webkit-border-radius: 10px;&#x27;
+echo &#x27;      -moz-border-radius: 10px;&#x27;
+echo &#x27;      -ms-border-radius: 10px;&#x27;
+echo &#x27;      -o-border-radius: 10px;&#x27;
+echo &#x27;    }&#x27;
+echo &#x27;  &lt;/style&gt;&#x27;
+  echo &#x27;&lt;/head&gt;&#x27;
+  echo &#x27;&lt;body&gt;&#x27;
+  echo &quot;&quot;
+  # continue with the HTML stuff
+  echo &quot;&quot;
+  echo &quot;&quot;
+  echo &quot;&lt;ul&gt;&quot;
+  awk &#x27;{print &quot;&lt;li&gt;&lt;a href=\&quot;&quot;$1&quot;\&quot;&gt;&quot;,$1,&quot;&amp;nbsp;&lt;/a&gt;&lt;/li&gt;&quot;}&#x27; $listing
+  # awk &#x27;{print &quot;&lt;li&gt;&quot;};
+  #  {print &quot; &lt;a href=\&quot;&quot;$1&quot;\&quot;&gt;&quot;,$1,&quot;&lt;/a&gt;&lt;/li&gt;&amp;nbsp;&quot;}&#x27; \ $listing
+  echo &quot;&quot;
+  echo &quot;&lt;/ul&gt;&quot;
+  echo &quot;&lt;/body&gt;&quot;
+  echo &quot;&lt;/html&gt;&quot;
+}
+cmd $listing --sort=extension &gt;&gt;$html</code></pre><h2 id="5ac99d6c-e2bb-48f9-b36e-7c55abc4aa4d" class=""><strong>In Action:</strong></h2><p id="56a70fc2-20bd-4cf0-8f7d-3cade6bd63fa" class=""><strong>I will use this copy of my Data Structures Practice Site to demonstrate the result:</strong></p><p id="a73a0bba-ca50-4449-9d18-337b84201a96" class=""><a href="https://github.com/side-projects-42/DS-Bash-Examples-Deploy"><strong>side-projects-42/DS-Bash-Examples-Deploy</strong></a><a href="https://github.com/side-projects-42/DS-Bash-Examples-Deploy"><strong>Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes…</strong></a><a href="https://github.com/side-projects-42/DS-Bash-Examples-Deploy">
+</a><a href="https://github.com/side-projects-42/DS-Bash-Examples-Deploy">github.com</a></p><figure id="ad22505a-45ce-415f-8f7c-44574563ff88" class="image"><a href="https://miro.medium.com/max/32/1*PuuDTUviX5G6mja-5eKUIw.png?q=20"><img src="https://miro.medium.com/max/32/1*PuuDTUviX5G6mja-5eKUIw.png?q=20"/></a></figure><figure id="fa16b085-020f-4ff1-a34b-3a1f0226f6a4" class="image"><a href="https://miro.medium.com/max/756/1*PuuDTUviX5G6mja-5eKUIw.png"><img src="https://miro.medium.com/max/756/1*PuuDTUviX5G6mja-5eKUIw.png"/></a></figure><h2 id="9f0668f1-68a6-45a0-9ff9-db3c9aa907a3" class=""><strong>The result is a index.html file that contains a list of links to each file in the directory:</strong></h2><blockquote id="f10f54f7-4fb6-447c-a921-7f6d325437fc" class="">here is a link to and photo of the resulting html file:</blockquote><p id="c971a49a-378f-425c-9e56-84b219520104" class=""><a href="https://quirky-meninsky-4181b5.netlify.app/"><strong>index.html</strong></a><a href="https://quirky-meninsky-4181b5.netlify.app/"><strong>CONTENT/DS-n-Algos/</strong></a><a href="https://quirky-meninsky-4181b5.netlify.app/">
+</a><a href="https://quirky-meninsky-4181b5.netlify.app/">quirky-meninsky-4181b5.netlify.app</a></p><figure id="cd14bf47-29aa-4a31-b067-0fca6713ceba" class="image"><a href="https://miro.medium.com/max/32/1*AOYbWvUGN9yJ4ceNzAGGsw.png?q=20"><img src="https://miro.medium.com/max/32/1*AOYbWvUGN9yJ4ceNzAGGsw.png?q=20"/></a></figure><figure id="29777708-1294-4760-8e0f-414009313899" class="image"><a href="https://miro.medium.com/max/756/1*AOYbWvUGN9yJ4ceNzAGGsw.png"><img src="https://miro.medium.com/max/756/1*AOYbWvUGN9yJ4ceNzAGGsw.png"/></a></figure><p id="34656b57-d5b6-4645-b442-08f6b59e9361" class=""><strong><strong>5.) Download all links to a files of a specified extension on a user provided (url) webpage:</strong></strong>
+
+<code>wget -r -A.pdf https://overapi.com/gitwget --wait=2 --level=inf --limit-rate=20K --recursive --page-requisites --user-agent=Mozilla --no-parent --convert-links --adjust-extension --no-clobber -e robots=off</code><em>The result is stored in </em><a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/5-download-all-pdf"><em>this directory:</em></a></p><figure id="7236210b-42ed-4108-819f-722d453b06b4" class="image"><a href="https://miro.medium.com/max/1080/1*8evVPO_z-_TATzkcDTp15Q.png"><img src="https://miro.medium.com/max/1080/1*8evVPO_z-_TATzkcDTp15Q.png"/></a></figure><h1 id="17c3a4f4-180b-492e-970d-a33a182b43a6" class=""><strong>6.)Recursively remove lines of text containing the string badFolder from files in the working directory.</strong></h1><pre id="480ee75f-6761-4de0-8019-af12fd3ec80d" class="code code-wrap"><code>find . -type f -exec sed -i &#x27;/badFolder/d&#x27; ./* {} \;# ORfind . -name &#x27;result.md&#x27;  -type f -exec sed -i &#x27;/badFolder/d&#x27; ./* {} \;</code></pre><p id="2a6223e4-dd21-47de-844f-03dad3f7026b" class=""><strong>As an example I will run this command on a file containing the text:</strong></p><pre id="c70d655a-5e39-489c-9ef2-ded267b912be" class="code code-wrap"><code>Hacks BlogRead more at hacks.mozilla.orgbadFolderbadFolder Implementing Private Fields for JavaScriptWhen implementing a language feature for JavaScript, an implementer must make decisions about how the language in the specification maps to the implementation. Private fields is an example of where the specification language and implementation reality diverge, at least in SpiderMonkey– the JavaScript engine which powers Firefox. To understand more, I’ll explain what private fields are, a couple of models for thinking about them, and explain why our implementation diverges from the specification language.The post Implementing Private Fields for JavaScript appeared first on Mozilla Hacks - the Web developer blog.Posted Tuesday, June 8, 2021 by Matthew GaudetLooking fine with Firefox 89Firefox 89 has smartened up and brings with it a slimmed-down, slightly more minimalist interface.badFolder Along with this new look, we get some great styling features including a force-colours feature for media queries and better control over how fonts are displayed. The long-awaited top-level await keyword for JavaScript modules is now enabled, as well as the PerformanceEventTiming interface, which is another addition to the performance suite of APIs: 89 really has been working out!The post Looking fine with Firefox 89 appeared first on Mozilla Hacks - the Web developer blog.badFolderPosted Tuesday, June 1, 2021 by Chris MillsbadFolderImproving Firefox stability on LinuxRoughly a year ago at Mozilla we started an effort to improve Firefox stability on Linux. This effort quickly became an example of good synergies between FOSS projects.The post Improving Firefox stability on Linux appeared first on Mozilla Hacks - the Web developer blog.Posted Wednesday, May 19, 2021 by Gabriele Svelto badFolderIntroducing Firefox’s new Site Isolation Security ArchitectureLike any web browser, Firefox loads code from untrusted and potentially hostile websites and runs it on your computer. To protect you against new types of attacks from malicious sites and to meet the security principles of Mozilla, we set out to redesign Firefox on desktop.The post Introducing Firefox’s new Site Isolation Security Architecture appeared first on Mozilla Hacks - the Web developer blog.Posted Tuesday, May 18, 2021 by Anny GakhokidzePyodide Spin Out and 0.17 ReleaseWe are happy to announce that Pyodide has become an independent and community-driven project. We are also pleased to announce the 0.17 release for Pyodide with many new features and improvements. Pyodide consists of the CPython 3.8 interpreter compiled to WebAssembly which allows Python to run in the browser.The post Pyodide Spin Out and 0.17 Release appeared first on Mozilla Hacks - the Web developer blog. badFolderPosted Thursday, April 22, 2021 by Teon Brooks</code></pre><p id="7571c2ff-b608-47a0-ac89-5b1c4cee838b" class=""><em><strong>I modified the command slightly to apply only to files called ‘result.md’:</strong></em></p><blockquote id="415fe643-70e2-41bd-9928-5ae70ed1ddad" class="">The result is :</blockquote><pre id="3b1f53ae-e3a8-485c-abbf-0bec334d03c9" class="code code-wrap"><code>Hacks BlogRead more at hacks.mozilla.orgWhen implementing a language feature for JavaScript, an implementer must make decisions about how the language in the specification maps to the implementation. Private fields is an example of where the specification language and implementation reality diverge, at least in SpiderMonkey– the JavaScript engine which powers Firefox. To understand more, I’ll explain what private fields are, a couple of models for thinking about them, and explain why our implementation diverges from the specification language.The post Implementing Private Fields for JavaScript appeared first on Mozilla Hacks - the Web developer blog.Posted Tuesday, June 8, 2021 by Matthew GaudetLooking fine with Firefox 89Posted Tuesday, June 1, 2021 by Chris MillsImproving Firefox stability on LinuxRoughly a year ago at Mozilla we started an effort to improve Firefox stability on Linux. This effort quickly became an example of good synergies between FOSS projects.The post Improving Firefox stability on Linux appeared first on Mozilla Hacks - the Web developer blog.Introducing Firefox’s new Site Isolation Security ArchitectureLike any web browser, Firefox loads code from untrusted and potentially hostile websites and runs it on your computer. To protect you against new types of attacks from malicious sites and to meet the security principles of Mozilla, we set out to redesign Firefox on desktop.The post Introducing Firefox’s new Site Isolation Security Architecture appeared first on Mozilla Hacks - the Web developer blog.Posted Tuesday, May 18, 2021 by Anny GakhokidzePyodide Spin Out and 0.17 ReleasePosted Thursday, April 22, 2021 by Teon Brooks</code></pre><figure id="60cede91-b425-43a5-b455-98022152e306" class="image"><a href="https://miro.medium.com/max/1080/1*Up5as-MkHcHbvI_qX1AqPw.png"><img src="https://miro.medium.com/max/1080/1*Up5as-MkHcHbvI_qX1AqPw.png"/></a></figure><p id="c8df1f0b-8672-4eca-95e1-1b79588bee6a" class=""><strong>the test.txt and result.md files can be found here:</strong></p><p id="8fb8b196-c5cb-4c03-8c79-d21a3eb6efed" class=""><a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text"><strong>bgoonz/bash-commands-walkthrough</strong></a><a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text"><strong>to accompany the medium article I am writing. Contribute to bgoonz/bash-commands-walkthrough development by creating an…</strong></a><a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text">
+</a><a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text">github.com</a></p><h1 id="fbeda8e7-e406-4820-b38b-eb3354bbda98" class=""><strong>7.) Execute command recursively:</strong></h1><p id="45aaf4c1-272c-4bae-b614-2ab4fbd53a76" class=""><strong>Here I have modified the command I wish to run recursively to account for the fact that the ‘find’ command already works recursively, by appending the -maxdepth 1 flag…</strong></p><h1 id="552403e8-fa30-4bce-be12-04db3bdc6604" class=""><strong>I am essentially removing the recursive action of the find command…</strong></h1><p id="a26e26c3-66df-481e-a50b-6285c78541f5" class=""><strong>That way, if the command affects the more deeply nested folders we know the outer RecurseDirs function we are using to run the </strong><em><strong>find/pandoc</strong></em><strong> line once in every subfolder of the working directory… is working properly!</strong></p><figure id="63779ebe-b1ad-4941-9127-c15ad14e394d" class="image"><a href="https://miro.medium.com/max/15/1*5C_uzLnuCSlTiioi2EtnUA.png?q=20"><img src="https://miro.medium.com/max/15/1*5C_uzLnuCSlTiioi2EtnUA.png?q=20"/></a></figure><figure id="307ca1ff-054b-465e-9662-38838ab57f2a" class="image"><a href="https://miro.medium.com/max/286/1*5C_uzLnuCSlTiioi2EtnUA.png"><img src="https://miro.medium.com/max/286/1*5C_uzLnuCSlTiioi2EtnUA.png"/></a></figure><p id="f18cec13-b7e6-4876-8c3a-fdabe3620fa9" class=""><strong>Run in the folder shown to the left… we would expect every .md file to be accompanied by a newly generated html file by the same name.</strong></p><p id="ef2fe2c1-b1e9-41bc-a712-dc1b1856e3a8" class=""><strong>The results of said operation can be found in the</strong><a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/7-recursive-run"><strong> following directory</strong></a></p><h2 id="89aa115e-efd0-425f-94c0-daa785c813dd" class=""><strong>In Action:</strong></h2><p id="3355ca25-8275-47f7-baf6-a7b1d98139a1" class="">🢃 Below 🢃</p><figure id="a2876560-efb0-4171-b159-333c162b1f0b" class="image"><a href="https://miro.medium.com/max/1080/1*k9c1QRKY07TLJnp9Se89lQ.gif"><img src="https://miro.medium.com/max/1080/1*k9c1QRKY07TLJnp9Se89lQ.gif"/></a></figure><h2 id="e2aabff1-ab8f-41e0-bce1-4e654cd562be" class=""><strong>The final result is:</strong></h2><figure id="46a5b035-5c11-4e2a-ae29-d1b749b99d41" class="image"><a href="https://miro.medium.com/max/1080/1*jqrjNeBuRmTrDt3vmQ50LQ.png"><img src="https://miro.medium.com/max/1080/1*jqrjNeBuRmTrDt3vmQ50LQ.png"/></a></figure><p id="0b46a662-ce1c-4776-801b-6d4c206626f2" class=""><em>If you want to run any bash script recursively all you have to do is substitue out line #9 with the command you want to run once in every sub-folder.</em></p><pre id="e63c1f05-bed3-46c3-95fb-f038d55ed876" class="code code-wrap"><code>function RecurseDirs ()
+{
+    oldIFS=$IFS
+    IFS=$&#x27;\n&#x27;
+    for f in &quot;$@&quot;
+    do
+#Replace the line below with your own command!#find ./ -iname &quot;*.md&quot; -maxdepth 1 -type f -exec sh -c &#x27;pandoc --standalone &quot;${0}&quot; -o &quot;${0%.md}.html&quot;&#x27; {} \;#####################################################
+# YOUR CODE BELOW!#####################################################if [[ -d &quot;${f}&quot; ]]; then
+            cd &quot;${f}&quot;
+            RecurseDirs $(ls -1 &quot;.&quot;)
+            cd ..
+        fi
+    done
+    IFS=$oldIFS
+}
+RecurseDirs &quot;./&quot;</code></pre><h1 id="c22ef5db-883c-4fe5-a1fc-c98c27119454" class=""><strong>TBC….</strong></h1><p id="95cb11f6-168a-4047-aaf4-05574020cb52" class=""><strong>Here are some of the other commands I will cover in greater detail… at a later time:</strong></p><h1 id="70cc7052-cbae-4ef4-a241-f4ab67a26e1e" class=""><strong>9. Copy any text between &lt;script&gt; tags in a file called example.html to be inserted into a new file: out.js</strong></h1><pre id="2ffd9b39-7749-4448-ae85-583a713ee542" class="code code-wrap"><code>sed -n -e &#x27;/&lt;script&gt;/,/&lt;\/script&gt;/p&#x27; example.html &gt;out.js</code></pre><p id="edafa0e9-0673-426b-9d76-c80bc13fc3ac" class=""><strong><strong>10. Recursively Delete node_modules folders</strong></strong>
+
+<code>find . -name &#x27;node_modules&#x27; -type d -print -prune -exec rm -rf &#x27;{}&#x27; +</code></p><p id="feb3c905-953b-4be0-ae49-9e8573a785b4" class=""><strong><strong>11. Sanatize file and folder names to remove illegal characters and reserved words.</strong></strong>
+
+<code>sanitize() {</code><code>  shopt -s extglob;  filename=$(basename &quot;$1&quot;)</code><code>  directory=$(dirname &quot;$1&quot;)  filename_clean=$(echo &quot;$filename&quot; | sed -e &#x27;s/[\\/:\*\?&quot;&lt;&gt;\|\x01-\x1F\x7F]//g&#x27; -e &#x27;s/^\(nul\|prn\|con\|lpt[0-9]\|com[0-9]\|aux\)\(\.\|$\)//i&#x27; -e &#x27;s/^\.*$//&#x27; -e &#x27;s/^$/NONAME/&#x27;)  if (test &quot;$filename&quot; != &quot;$filename_clean&quot;)</code><code>  then</code><code>    mv -v &quot;$1&quot; &quot;$directory/$filename_clean&quot;</code><code>  fi</code><code>}export -f sanitizesanitize_dir() {</code><code>  find &quot;$1&quot; -depth -exec bash -c &#x27;sanitize &quot;$0&quot;&#x27; {} \;}sanitize_dir &#x27;/path/to/somewhere&#x27;</code></p><p id="b1e03c12-27c9-475c-a087-a70d2fb43b0e" class=""><strong><strong>12. Start postgresql in terminal</strong></strong>
+
+<code>sudo -u postgres psql</code></p><p id="dd2b8321-a7f5-4b1c-b7d9-d43f26873041" class=""><strong><strong>13. Add closing body and script tags to each html file in working directory.</strong></strong>
+
+<code>for f in * ; do</code><code>  mv &quot;$f&quot; &quot;$f.html&quot;</code><code>doneecho &quot;&lt;form&gt;</code><code> &lt;input type=&quot;button&quot; value=&quot;Go back!&quot; onclick=&quot;history.back()&quot;&gt;</code><code>&lt;/form&gt;</code><code>  &lt;/body&gt;&lt;/html&gt;&quot; | tee -a *.html</code></p><p id="ae2eacae-a88e-4cb8-851c-62b8aed4be08" class=""><strong><strong>14. Batch Download Videos</strong></strong>
+
+<code>#!/bin/bash</code><code>link=&quot;#insert url here#&quot;</code><code>#links were a set of strings with just the index of the video as the variablenum=3</code><code>#first video was numbered 3 - weird.ext=&quot;.mp4&quot;while [ $num -le 66 ]</code><code>do</code><code>      wget $link$num$ext -P ~/Downloads/</code><code>      num=$(($num+1))</code><code>done</code></p><p id="b051062b-7dcd-4a92-b01e-d1a6e0cb48d0" class=""><strong><strong>15. Change File Extension from ‘.txt’ to .doc for all files in working directory.</strong></strong>
+
+<code>sudo apt install rename</code><code>rename &#x27;s/\.txt$/.doc/&#x27; *.txt</code><strong>
+</strong><strong><strong>16. Recursivley change any file with extension .js.download to .js</strong></strong>
+
+<code>find . -name &quot;*.\.js\.download&quot; -exec rename &#x27;s/\.js\.download$/.js/&#x27; &#x27;{}&#x27; +</code></p><p id="dffe76f4-843b-4838-a7ec-4b3aa841dc6e" class=""><strong><strong>17. Copy folder structure including only files of a specific extension into an ouput Folder</strong></strong>
+
+<code>find . -name &#x27;*.md&#x27; | cpio -pdm &#x27;./../outputFolder&#x27;</code></p><h1 id="e6af0a5b-abcb-4848-86f9-886cf05269c3" class=""><strong>Discover More:</strong></h1><p id="a22c98fe-4578-47a4-83ae-ca061f4cf164" class=""><a href="https://bgoonz-blog.netlify.app/"><strong>Web-Dev-Hub</strong></a><a href="https://bgoonz-blog.netlify.app/"><strong>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</strong></a><a href="https://bgoonz-blog.netlify.app/">
+</a><a href="https://bgoonz-blog.netlify.app/">bgoonz-blog.netlify.app</a></p><h1 id="abdc69d5-b1ec-49ee-b829-9a1c3c1f99ed" class=""><strong>Part 2 of this series:</strong></h1><p id="6afd1447-ee40-4488-af47-7f24eaf062d6" class=""><a href="https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682"><strong>Medium</strong></a><a href="https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682"><strong>Continued!!!medium.com</strong></a></p></div></article></body></html>

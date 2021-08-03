@@ -1,0 +1,686 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Copy of How to setup Github Organization for Build Weeks</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="98efa51c-f77e-4015-a262-291d1ce5e815" class="page sans"><header><img class="page-cover-image" src="https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixlib=rb-1.2.1&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb" style="object-position:center 50%"/><div class="page-header-icon page-header-icon-with-cover"><img class="icon" src="Copy%20of%20How%20to%20setup%20Github%20Organization%20for%20Build%2098efa51cf77e4015a262291d1ce5e815/git.png"/></div><h1 class="page-title">Copy of How to setup Github Organization for Build Weeks</h1></header><div class="page-body"><p id="a574c47d-aace-4885-9ce8-32b499bdd7ae" class="">
+In order to invite your team to your new Github organization, you will need their Github usernames. </p><p id="4a698f67-2d05-49e5-95a3-7ef155328ab4" class="">
+</p><h2 id="dda35964-af00-4762-bdde-ef3ad7205154" class="">1. Create the Github Organization</h2><div id="355958ca-7443-4bf0-aedf-67261f72dc19" class="column-list"><div id="32a61198-1972-4e3c-9cb9-ca47a9524a59" style="width:50%" class="column"><p id="1ba174fc-f7c4-4684-807f-9e7a830a52e9" class="">
+</p><p id="def97513-3724-4184-8f2d-607eca3f0946" class="">You will create the Github organization that the team will work with for their Build Week project. </p><p id="07e9d0db-305f-4be1-9495-aee0d088899c" class="">
+</p><p id="699a4555-d9db-4708-b63d-1b250baeb629" class="">Once you have logged into your Github account, click the <code>+</code> button and select <code>New Organization</code> in the top-right corner of the homepage. </p><p id="063b679b-0549-446f-865f-77982bb5e0a3" class="">
+</p><p id="6271fcfb-9e6c-46f4-bff2-f58c6acafd3c" class="">
+</p><p id="ea309b53-a230-41d3-8a76-0bb042ccbd7d" class="">
+</p><p id="382440cc-4467-4e88-b7c1-c6b2865b1114" class="">
+</p><p id="117a10b2-1d7d-49ec-be06-ba8cb5524f38" class="">
+</p><figure id="6161ee1d-2603-4a58-8037-08b829ad62dd" class="image"><a href="Copy%20of%20How%20to%20setup%20Github%20Organization%20for%20Build%2098efa51cf77e4015a262291d1ce5e815/github_free.png"><img style="width:2162px" src="Copy%20of%20How%20to%20setup%20Github%20Organization%20for%20Build%2098efa51cf77e4015a262291d1ce5e815/github_free.png"/></a><figcaption>Choose the &quot;free&quot; tier for you organization.</figcaption></figure></div><div id="cb0382df-fa31-46ec-9013-0ed79078dac3" style="width:50%" class="column"><figure id="9f30e625-ccf3-4edb-80d0-551e97e2face" class="image"><a href="Copy%20of%20How%20to%20setup%20Github%20Organization%20for%20Build%2098efa51cf77e4015a262291d1ce5e815/Screen_Shot_2020-04-22_at_12.09.13_PM.png"><img style="width:432px" src="Copy%20of%20How%20to%20setup%20Github%20Organization%20for%20Build%2098efa51cf77e4015a262291d1ce5e815/Screen_Shot_2020-04-22_at_12.09.13_PM.png"/></a><figcaption>Creating a new organization on your account.</figcaption></figure><p id="e09be9d1-fe4f-407b-82ab-795037a3ec28" class="">
+</p><p id="9e752efb-709f-4e50-a947-a732b30618d3" class="">
+</p><p id="5a62fbcd-22e9-4e66-8421-1d3adad9e23e" class="">
+</p><p id="1a54774a-f5cf-48f1-b58a-dca23f100731" class="">Select the <code>Free</code> plan. </p></div></div><p id="d7c119cb-609e-4eca-97a8-912daf5f4941" class="">
+</p><div id="767e11d4-b650-465c-a0c7-8af33c5537e2" class="column-list"><div id="94fe1072-fff8-46d8-8da3-da67a1294686" style="width:50%" class="column"><p id="5ae19ddd-ade9-458a-9549-6104cb0dd028" class="">
+</p><p id="893ecc98-1a4e-4287-adec-c48acaf932be" class="">You will now choose the name for your Github organization. Use the convention <code>Build Week &lt;Project Name&gt;</code> and specify the organization belongs to <code>My personal account</code>.</p><p id="c0dff9ad-a289-4940-8baf-6176348340ee" class="">
+</p></div><div id="151113ca-3cd7-4922-ae54-1c06d61198c1" style="width:50%" class="column"><figure id="7d01c81e-aa06-4346-95c4-f36b8842e589" class="image"><a href="Copy%20of%20How%20to%20setup%20Github%20Organization%20for%20Build%2098efa51cf77e4015a262291d1ce5e815/Screen_Shot_2020-04-22_at_12.11.11_PM.png"><img style="width:432px" src="Copy%20of%20How%20to%20setup%20Github%20Organization%20for%20Build%2098efa51cf77e4015a262291d1ce5e815/Screen_Shot_2020-04-22_at_12.11.11_PM.png"/></a></figure></div></div><p id="789e6a24-62a9-4bfc-a1b1-190cb98e3d26" class="">
+</p><div id="2c4ae8b0-84f3-47a9-8d44-a563fd8b049c" class="column-list"><div id="35ecfa55-8a3e-4f71-8c34-6135840a859b" style="width:50%" class="column"><figure id="10dbdd40-e37b-45f3-9cc3-e5933800cd38" class="image"><a href="Copy%20of%20How%20to%20setup%20Github%20Organization%20for%20Build%2098efa51cf77e4015a262291d1ce5e815/skip_this_step.png"><img style="width:1886px" src="Copy%20of%20How%20to%20setup%20Github%20Organization%20for%20Build%2098efa51cf77e4015a262291d1ce5e815/skip_this_step.png"/></a></figure></div><div id="f38de09d-bbd5-4487-98fd-35f9ec877821" style="width:50%" class="column"><p id="3f1d0a5a-22fd-404f-a57d-00bbb82254c6" class="">After you complete this step, you will be prompted to invite additional members. Skip this for now- you will be inviting people shortly and will be able to adjust their default permissions at the same time.
+</p><p id="d10440e2-29c8-4c6d-9b2c-7c4ff22cd70f" class="">
+</p></div></div><p id="cf5c7985-27e9-4a55-a5ec-75f4ad44838e" class="">
+</p><p id="86333ce2-aab7-496b-a313-f44eadd8c9d2" class="">
+</p><h2 id="793392ec-e7eb-43b9-9449-2d5816a8e0b0" class="">2. Create your first repository</h2><p id="c79f97d6-ae49-45fa-9642-18f632520008" class="">
+</p><div id="1769dc81-78b0-4556-95cd-efb8ce044b2e" class="column-list"><div id="adfe6ae1-9ab9-47d7-b2b8-f6e0e10e4bde" style="width:50%" class="column"><figure id="e273fe72-b97b-47ce-a436-a4577483fc4f" class="image"><a href="Copy%20of%20How%20to%20setup%20Github%20Organization%20for%20Build%2098efa51cf77e4015a262291d1ce5e815/create_new.png"><img style="width:1372px" src="Copy%20of%20How%20to%20setup%20Github%20Organization%20for%20Build%2098efa51cf77e4015a262291d1ce5e815/create_new.png"/></a><figcaption>Creating a new repository.</figcaption></figure></div><div id="e69c87d3-e0e5-443e-9952-f91287a5da2b" style="width:50%" class="column"><p id="e2bcca94-07dc-413e-8923-c33f79800119" class="">Now that you&#x27;ve established the organization, you will need to create individual repos. 
+
+Let&#x27;s create a new repository for the front end. Note that we will repeat this process for the back end.</p></div></div><p id="e6d99690-0645-470b-85fe-a52c149793be" class="">
+</p><p id="a2d0836b-049e-42e4-9033-c04d9211c300" class="">
+</p><div id="539fef84-1e81-4163-93be-0829f7d412ea" class="column-list"><div id="61942d1c-1dfa-4d8a-a437-cb9e05f74197" style="width:50%" class="column"><p id="6a66d783-2be5-4e74-a134-ffef6d9bd6aa" class="">Specify the repo name. In this case, we will choose <code>front-end</code>. By default, repositories will be set to <code>private</code> but we will switch this to <code>public</code>. Select <code>initialize this repository with a README</code> and make sure to select an <code>MIT License</code>.</p><p id="daeacc12-bd5e-4182-9a85-900ca94b30d1" class="">
+</p></div><div id="bf767cf6-6ecb-4657-9943-9186045b2cf5" style="width:50%" class="column"><figure id="f6a70849-2fc2-4d4b-a29f-7c89064db023" class="image"><a href="Copy%20of%20How%20to%20setup%20Github%20Organization%20for%20Build%2098efa51cf77e4015a262291d1ce5e815/create_new_repo.png"><img style="width:1548px" src="Copy%20of%20How%20to%20setup%20Github%20Organization%20for%20Build%2098efa51cf77e4015a262291d1ce5e815/create_new_repo.png"/></a><figcaption>Specifying the details of your new repository.</figcaption></figure><p id="a6a830e0-95d6-4fe8-851f-68e33020d46f" class="">
+</p></div></div><div id="2921e73d-33e1-4f55-afaf-82a16e8fea34" class="column-list"><div id="713df8af-d8f3-4030-be39-72b86f16b59e" style="width:50%" class="column"><figure id="f1caee1d-f1da-4581-921d-2ff97409f651" class="image"><a href="Copy%20of%20How%20to%20setup%20Github%20Organization%20for%20Build%2098efa51cf77e4015a262291d1ce5e815/settings.png"><img style="width:2034px" src="Copy%20of%20How%20to%20setup%20Github%20Organization%20for%20Build%2098efa51cf77e4015a262291d1ce5e815/settings.png"/></a><figcaption>The newly-created repository.</figcaption></figure></div><div id="16fca59e-e213-4ffe-9ff3-86dcf69e2adb" style="width:50%" class="column"><p id="4b5cd281-1fcc-43e4-90be-d87057e42715" class="">Once you have finished creating your repository, head over into the <code>settings</code>.</p><p id="be02a6cc-b847-4d97-ac99-0c130fc4cff2" class="">From there, we will select <code>Branches</code> and click on <code>Add rules</code>.</p><p id="3fd611a8-de6f-4baa-831a-a3f43aca9e70" class="">
+</p><p id="454664f4-d394-4374-989e-5c02c4b823fe" class="">
+</p><p id="be3a6790-6e3e-4a64-b94e-2cb7c82e2999" class="">
+</p><figure id="011fa2e1-4820-4a27-b3c6-605d8cdb1326" class="image"><a href="Copy%20of%20How%20to%20setup%20Github%20Organization%20for%20Build%2098efa51cf77e4015a262291d1ce5e815/branch.png"><img style="width:2018px" src="Copy%20of%20How%20to%20setup%20Github%20Organization%20for%20Build%2098efa51cf77e4015a262291d1ce5e815/branch.png"/></a><figcaption>Manage the branch settings.</figcaption></figure></div></div><p id="5bc73058-25b0-4c13-be6d-547ce298bac3" class="">
+</p><div id="4fb28f94-a402-4aa6-87b8-02080647e04f" class="column-list"><div id="de278ee0-0f07-4682-9b55-a86b8080e626" style="width:50%" class="column"><figure id="208cb550-e0cf-416d-b62d-424270677f4e" class="image"><a href="Copy%20of%20How%20to%20setup%20Github%20Organization%20for%20Build%2098efa51cf77e4015a262291d1ce5e815/branch_2.png"><img style="width:1058px" src="Copy%20of%20How%20to%20setup%20Github%20Organization%20for%20Build%2098efa51cf77e4015a262291d1ce5e815/branch_2.png"/></a><figcaption>Modifying the front end branch protections.</figcaption></figure></div><div id="85d667d2-a321-4e71-9e72-b9ab3809fd55" style="width:50%" class="column"><p id="78939f2f-1174-4877-bca1-a964c92a2781" class="">Now we will modify some details on the <code>front end</code> branch. 
+
+First, name the branch name pattern to <code>main</code>. 
+
+Next, enable <code>Require pull request reviews before merging</code> and specify the <code>Required approving reviews</code> to 1, so as to ensure a minimum of one team member will have to approve a pull request before it can be merged into <code>main</code>. 
+
+When these have been set, click on the <code>Create</code> button below.</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="d927c9dc-4aa1-4be1-8485-39929b692c09"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">You will have to repeat this process to establish all of your other repositories, i.e. <code>backend</code>, <code>DS</code>, etc.</div></figure></div></div><p id="190ae617-deb9-4d96-9537-dc3c9349f7f1" class="">
+</p><p id="19beb1b2-ff01-4828-85d9-c72222f3e765" class="">
+</p><p id="2f4a7dc4-ea00-4aed-982a-9bcc79e1ac4f" class="">
+</p><h2 id="1db05607-5ea0-4689-acec-cb06b45605af" class="">3. Invite the team to the repository</h2><div id="0d04d62b-e445-414a-aa95-1a228a12877a" class="column-list"><div id="1421781e-1a03-4a92-947f-e5f28f505a39" style="width:50%" class="column"><p id="5aebb362-cf17-461b-87df-28cf6ae6083c" class="">Now that we have created the repositories, you will begin to invite our team members. Make sure to invite your team to each repository, so as to ensure access across the organization.</p></div><div id="216524c9-baa2-4c6c-b4e9-7ae27445c3bf" style="width:50%" class="column"><figure id="e56d8b09-b233-4d20-806d-cffefa455012" class="image"><a href="Copy%20of%20How%20to%20setup%20Github%20Organization%20for%20Build%2098efa51cf77e4015a262291d1ce5e815/Screen_Shot_2020-04-22_at_12.21.37_PM.png"><img style="width:2010px" src="Copy%20of%20How%20to%20setup%20Github%20Organization%20for%20Build%2098efa51cf77e4015a262291d1ce5e815/Screen_Shot_2020-04-22_at_12.21.37_PM.png"/></a><figcaption>The Manage Access settings in the front end repo.</figcaption></figure><p id="cefad12a-ede7-40a1-966c-57418e5397d2" class="">
+</p></div></div><p id="748f6d31-3e6f-4940-93c4-5d40d772d5ac" class="">
+</p><p id="7aa16d8d-4353-4620-8e5b-20948a0b7ce9" class="">Back in the repository settings, select <code>Manage access</code> from the left-hand menu and click on <code>Invite teams or people</code>.</p><p id="1a12ec9c-41e4-4b1b-8bff-833534766fef" class="">
+</p><p id="147e82a4-11f9-4d90-bd88-a7952d6423db" class="">
+</p><p id="0a7842d6-6300-40dd-a341-adda02b51a3b" class="">Provide the names of your team members and give them each <code>Admin</code> access.</p><p id="54bee600-34dc-4d5f-a743-3d449d9a6acb" class="">
+</p><p id="18313f05-a7da-4a65-a96e-e5feab605243" class="">
+</p><p id="f130be4c-2d85-4274-a39c-f3d910275030" class="">
+</p><p id="3779b136-e53b-40c4-a173-bff69be66ea7" class="">
+</p><ul id="db62ab45-e33d-44f2-b886-7e824cf1a8e6" class="toggle"><li><details open=""><summary>Revision History</summary><p id="06d0bd2c-e2cd-40d3-ba56-03bb41b5813c" class="">Last updated 08/18/20 by <span class="user">@Christine Carpenter</span> </p><p id="cbb23e5c-aff4-4cd0-8137-c7a848cb5092" class="">Updated 04/22/20 by <span class="user">@Edd Burke</span> </p><p id="6398ef43-1e6d-414a-b38b-42fb8b39fc2e" class="">Updated for non-PL setup 10/16/20 by <span class="user">@Edd Burke</span> </p><p id="3e994694-0965-49d7-8e8d-c105b8d83a7d" class="">
+</p></details></li></ul><p id="857c16ae-5b7e-4509-a558-6414f0426d0e" class="">
+</p><p id="07034e3a-c953-4797-a763-e98c3375bbfb" class="">Copyright Lambda School 2020, All Rights Reserved</p></div></article></body></html>

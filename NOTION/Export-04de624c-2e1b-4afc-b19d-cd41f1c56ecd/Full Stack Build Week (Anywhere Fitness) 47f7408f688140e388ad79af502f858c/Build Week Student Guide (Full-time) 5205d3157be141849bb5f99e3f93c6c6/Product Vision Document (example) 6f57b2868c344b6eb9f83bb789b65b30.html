@@ -1,0 +1,653 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Product Vision Document (example)</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="6f57b286-8c34-4b6e-b9f8-3bb789b65b30" class="page sans"><header><img class="page-cover-image" src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-1.2.1&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb" style="object-position:center 40.89%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">🧭</span></div><h1 class="page-title">Product Vision Document (example)</h1></header><div class="page-body"><h1 id="e67f1ade-43c5-4fe0-977c-04e64cf6b3fe" class="">☝️ Proposal</h1><hr id="eb48f29f-b241-4b66-a1c4-3d37a7515775"/><p id="cf05092e-d732-4051-aebf-aa40286110f2" class=""><em><strong>What problem does your app solve?</strong></em><div class="indented"><p id="3126f896-c232-4a5d-9be4-0653692efcea" class="">Our song recommender will allow users to find new songs based on what they already like.</p></div></p><p id="31e6787a-9380-4946-9149-f9f79fa4de66" class=""><em><strong>Be as specific as possible; how does your app solve the problem?</strong></em><div class="indented"><p id="93193bab-9fca-4a3c-9310-58398711a5e9" class="">Creating a tensor flow neural network to predict nearest neighbors based on several different features (TBD) to recommend songs already enjoyed user. Recommendations will be new but similar to input songs and artists. (include features later; popularity, energy, tempo, loudness, release date and instrumentalness </p></div></p><p id="5326db00-9b7c-47b1-956e-7fa89152c21c" class="">
+</p><p id="6dbf5d86-c456-43fe-ace0-83a64a7c1619" class=""><em><strong>What is the mission statement?</strong></em><div class="indented"><p id="fbad75f5-9df9-491e-9ca7-77fa0f2d4cd0" class="">Finding your next favourite artist or song </p><p id="646f5fff-8d2d-41b4-bb96-ac41130ee881" class="">
+</p></div></p><h1 id="fad55ed5-5c70-4905-bd47-4c48c383eaab" class="">
+💡 Features</h1><hr id="a4f09e4f-2f08-4ef5-a6ca-782837802db7"/><p id="f3d929b6-0fe3-45df-a5b6-eb9f9ad2c2f0" class=""><em><strong>What features are required for your minimum viable product?</strong></em><div class="indented"><ol type="1" id="307b5ff4-cec6-42ea-a7f4-3716683abae5" class="numbered-list" start="1"><li>genre</li></ol><ol type="1" id="6e8f9a32-65b3-49e4-8d9d-fcf214395c77" class="numbered-list" start="2"><li>release date</li></ol><ol type="1" id="163e3f70-822b-48df-8553-c1c0d5a04dce" class="numbered-list" start="3"><li>popularity</li></ol><ol type="1" id="5176802a-bce1-40c2-ac20-287c2f58e1b2" class="numbered-list" start="4"><li>explicit</li></ol><ol type="1" id="ec11a520-7b89-47a7-9f3d-e681c1a8fd01" class="numbered-list" start="5"><li></li></ol></div></p><p id="e982e694-ad75-42ca-ae14-cb2872d22844" class=""><em><strong>What features may you wish to put in a future release?</strong></em><div class="indented"><p id="e95c020c-83ef-4fca-aa6f-a98c54f5b25f" class="">tempo</p><p id="22c7a563-c6c7-4b15-9ac5-7a9065f32bc0" class="">danceability</p><p id="5c1a8928-189e-4030-a381-47c58d39c75b" class="">loudness</p><p id="549a6e9f-865a-48c6-a4ae-beb8748296f2" class="">
+</p></div></p><p id="1e084b9d-d47d-42fa-b37b-03c9577e0fcd" class=""><em><strong>What do the top 3 similar apps do for their users?</strong></em><div class="indented"><ol type="1" id="045d6b3f-2755-4036-8f17-92d197ee8292" class="numbered-list" start="1"><li>Pandora</li></ol><ol type="1" id="3a74847f-26d2-4d47-9afd-300c8ccd9ffa" class="numbered-list" start="2"><li>Youtube Music</li></ol><ol type="1" id="8f5d1902-f986-46e3-bf9b-52d1bc4640c1" class="numbered-list" start="3"><li>itunes</li></ol><p id="b1fe775b-c0e8-42a9-971c-1339478d4516" class="">
+</p></div></p><h1 id="8c6a8609-88ca-4fd4-8243-4b09522d9e82" class="">
+🛠 Frameworks - Libraries</h1><hr id="a170eb94-36d3-425e-a9c1-f7ff95f541d8"/><p id="76218699-8fcd-414e-917c-52a03e66e0fb" class=""><em><strong>What third party frameworks / libraries are you considering using?</strong></em><div class="indented"><p id="f89bcb59-3611-4167-b04d-5bf88afb0629" class="">
+</p><ol type="1" id="ef2d6501-4f41-46ca-be86-d9acf165bca9" class="numbered-list" start="1"><li>S3(AWS)</li></ol><ol type="1" id="ce06911d-7c83-426a-9e66-35aa0bcffdcd" class="numbered-list" start="2"><li>Heroku<ol type="a" id="f27cec1f-2a4d-49a7-85b7-4a039c1be98d" class="numbered-list" start="1"><li>sklearn</li></ol><ol type="a" id="e25da76d-45c8-4af1-b3d5-a4d9ce5dccba" class="numbered-list" start="2"><li>Tensor flow</li></ol><ol type="a" id="a8aca7e6-27e0-4dca-b1d8-839a526f09f4" class="numbered-list" start="3"><li>Pandas</li></ol><ol type="a" id="f16c59e0-8092-431d-b431-d28c8dfc60d1" class="numbered-list" start="4"><li>Numpy</li></ol><ol type="a" id="5815ddcc-705b-4acb-8eef-2de08d84a2d7" class="numbered-list" start="5"><li>Boto3</li></ol></li></ol><p id="a3c90fd0-20e4-4372-8c64-f4dd93eea646" class="">
+</p></div></p><p id="ecaafadf-8c28-46de-b633-1417e3ac1c77" class="">
+</p><p id="210f4b8e-9f92-48c6-8e2b-a2e456b9eafe" class=""><em><strong>Do the APIs you need require you to contact them to gain access?</strong></em><div class="indented"><p id="11e3b67f-aa3d-4159-a27e-b78ceac48591" class="">S3/Heroku doesn&#x27;t require outside contact
+</p></div></p><p id="794bfe07-71ef-4331-a3e9-b05875860a5e" class=""><em><strong>Are you required to pay to use said API(s)?</strong></em><div class="indented"><p id="cec2f7a5-6e14-44a6-8550-51b27ac1f896" class="">No
+</p></div></p><h1 id="fcfa261f-cab1-4709-a87e-95a84b989d4c" class="">🧮  For Data Scientists</h1><hr id="5af92caf-592e-4925-8ff7-4137278ccbe3"/><p id="3b02beaf-8822-4ab6-941d-bbf0d0309b78" class=""><em><strong>Describe the established data source with at least rough data able to be provided on day one.</strong></em><div class="indented"><p id="a73653fa-5958-4991-9603-c79367f9a3f8" class=""><a href="https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks">https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks</a></p><p id="780370a0-4bd6-45df-bd86-f8dfec59cd92" class="">
+</p><p id="5ee591df-6941-48ae-9fdc-1eac03f0b575" class="">
+</p></div></p><p id="01ff8cde-dd9c-4f59-a8c9-6862a6fb8cf7" class=""><em><strong>Write a description for what the data science problem is. What uncertainty or prediction are you trying to discover? How could this data be used to find a solution to this problem?</strong></em><div class="indented"><p id="c35a6fbd-6162-45c8-b093-4a825a4b7248" class="">Trying to find song recommendations based on the features provided. We are uncertain about how many features to implement.</p><p id="b422529b-c868-4d31-8716-07981430acf1" class=""><em><strong>
+</strong></em></p></div></p><p id="d8ac5d37-d866-445f-8460-1ad24fcbd534" class=""><em><strong>What kind of target output can you deliver to future Web / mobile development teams to work with? Is it in JSON format or something else?</strong></em><div class="indented"><p id="ada96389-c10e-4199-9235-ab85e2f4a08c" class="">The data would be exported as JSON and could be interpreted by FastAPI </p></div></p><h1 id="3748090d-c041-4791-afde-119eb25be421" class="">🎯 Target Audience</h1><hr id="8e38a27b-8f2e-4510-891c-a10b9df1d0bb"/><p id="63d96854-9786-4cf9-a4fd-65f952b431ac" class=""><em><strong>Who is your target audience? Be specific.</strong></em><div class="indented"><p id="3ede4689-a890-47ec-a562-53b2d349e581" class="">Anybody who likes music from the past 90 years. 
+</p></div></p><p id="4fe447ee-e73f-4ddf-a76a-837e4baad5bc" class=""><em><strong>What feedback have you gotten from potential users?</strong></em><div class="indented"><p id="94f51744-f5e2-4d10-97ba-3abcdd4d61db" class="">From our team: many of these exercise platforms exists but are plagued with a lot of &quot;fluff&quot;: extraneous tools and flows that are a lot more complicated than we want. Many of these existing applications are free but are predicated deeply with subscription-based pricing  models. </p><p id="6e1a00a9-6a73-4120-8eae-029fc59af906" class="">Others we have spoken to are longing for a tool that is straight-forward and does not get in the way of an efficient way to track fitness goals, with the potential for revenue-generating features beyond the initial MVP. These features should not get in the way of a user being able to quickly open the application and get started with their workout- whether performing or planning.</p><p id="bd10a4d4-d754-4b8e-812d-4410016921b2" class="">These applications are primarily mobile-based, whether as mobile versions of the web app or native. The former is our primary focus: we wish to develop a desktop and mobile version of the same application that can be seamlessly interacted with via the mobile version in the browser. Later down the line of further versions we can explore the potential of a native application for either Android or iOS but for right now we are only focused on the MVP functionality.</p></div></p><p id="07842f69-80d0-4914-86a0-607d2cc9538f" class="">
+</p><p id="a4f7a58a-ed11-40dc-84a6-4cb5f17371a3" class=""><em><strong>Have you validated this problem and your solution with a target audience? Describe how.</strong></em><div class="indented"><p id="ad2e637e-d42b-426c-bcb1-8025d609620a" class="">Somewhat: our group has asked friends and family about their experiences with these types of apps and the feedback is mixed. Some swear by their preferred product and others wish something simpler existed. We hope that we can solve the latter and develop a product that focuses on developing something that is capable to keep track and store exercise routines and details but is simple enough to be functional with a few adjustments. The less, the better, though this does not imply that this product is any less capable. The details that lay within a design that is smooth and effective is what we are most interested in.</p></div></p><hr id="6626f6fa-6e14-4232-910a-ae1d90b02d9d"/><h1 id="1906df38-aa8b-45e0-8b7a-5d97e0639292" class="">🔑 Prototype Key Feature(s)</h1><hr id="4e3f2093-9974-431b-afda-e7d9f5277163"/><p id="c684cec1-a51f-49b3-8081-ada123fbfdce" class=""><em><strong>How long do you think it will take to implement these features? </strong></em><div class="indented"><p id="1283dd72-79cf-4ff1-92f5-ba6a18596749" class="">We believe we will be able to fulfill the core functionality stated in the above MVP by the end of this Build Week. We are aiming to have the application fully deployed and functional.
+</p></div></p><p id="ef01f486-69f2-4214-a6d2-9a8e3699e0bc" class=""><em><strong>Do you anticipate working on stretch functionality after completion of a Minimal Viable Product?</strong></em><div class="indented"><p id="b7c7f928-6f12-431b-b6b9-c17eca8f37a2" class="">Yes: we feel that the MVP is within scope and we hope to be able to implement the third stretch goal above (the high score board ability of other users in a fitness network.) This shouldn&#x27;t prove to be too difficult as we will already have said users in the same SQL database and should be able to interact with that data once multiple users are able to be registered.</p></div></p></div></article></body></html>

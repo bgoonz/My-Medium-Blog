@@ -1,0 +1,886 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Web4.3 Authentication</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="32c2841d-6bbf-4360-899f-170f1d3263cf" class="page serif"><header><img class="page-cover-image" src="Web4%203%20Authentication%2032c2841d6bbf4360899f170f1d3263cf/1_bUx5PXysc_UyBH91eRwMQA.gif" style="object-position:center 45.82000000000001%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">🔐</span></div><h1 class="page-title">Web4.3 Authentication</h1></header><div class="page-body"><div id="0f33ac4e-81eb-49a7-9a8c-e062cbd920af" class="collection-content"><h4 class="collection-title">Aux Info </h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesTitle"><path d="M7.73943662,8.6971831 C7.77640845,8.7834507 7.81338028,8.8943662 7.81338028,9.00528169 C7.81338028,9.49823944 7.40669014,9.89260563 6.91373239,9.89260563 C6.53169014,9.89260563 6.19894366,9.64612676 6.08802817,9.30105634 L5.75528169,8.33978873 L2.05809859,8.33978873 L1.72535211,9.30105634 C1.61443662,9.64612676 1.2693662,9.89260563 0.887323944,9.89260563 C0.394366197,9.89260563 0,9.49823944 0,9.00528169 C0,8.8943662 0.0246478873,8.7834507 0.0616197183,8.6971831 L2.46478873,2.48591549 C2.68661972,1.90669014 3.24119718,1.5 3.90669014,1.5 C4.55985915,1.5 5.12676056,1.90669014 5.34859155,2.48591549 L7.73943662,8.6971831 Z M2.60035211,6.82394366 L5.21302817,6.82394366 L3.90669014,3.10211268 L2.60035211,6.82394366 Z M11.3996479,3.70598592 C12.7552817,3.70598592 14,4.24823944 14,5.96126761 L14,9.07922535 C14,9.52288732 13.6549296,9.89260563 13.2112676,9.89260563 C12.8169014,9.89260563 12.471831,9.59683099 12.4225352,9.19014085 C12.028169,9.6584507 11.3257042,9.95422535 10.5492958,9.95422535 C9.60035211,9.95422535 8.47887324,9.31338028 8.47887324,7.98239437 C8.47887324,6.58978873 9.60035211,6.08450704 10.5492958,6.08450704 C11.3380282,6.08450704 12.040493,6.33098592 12.4348592,6.81161972 L12.4348592,5.98591549 C12.4348592,5.38204225 11.9172535,4.98767606 11.1285211,4.98767606 C10.6602113,4.98767606 10.2411972,5.11091549 9.80985915,5.38204225 C9.72359155,5.43133803 9.61267606,5.46830986 9.50176056,5.46830986 C9.18133803,5.46830986 8.91021127,5.1971831 8.91021127,4.86443662 C8.91021127,4.64260563 9.0334507,4.44542254 9.19366197,4.34683099 C9.87147887,3.90316901 10.6232394,3.70598592 11.3996479,3.70598592 Z M11.1778169,8.8943662 C11.6830986,8.8943662 12.1760563,8.72183099 12.4348592,8.37676056 L12.4348592,7.63732394 C12.1760563,7.29225352 11.6830986,7.11971831 11.1778169,7.11971831 C10.5616197,7.11971831 10.056338,7.45246479 10.056338,8.0193662 C10.056338,8.57394366 10.5616197,8.8943662 11.1778169,8.8943662 Z M0.65625,11.125 L13.34375,11.125 C13.7061869,11.125 14,11.4188131 14,11.78125 C14,12.1436869 13.7061869,12.4375 13.34375,12.4375 L0.65625,12.4375 C0.293813133,12.4375 4.43857149e-17,12.1436869 0,11.78125 C-4.43857149e-17,11.4188131 0.293813133,11.125 0.65625,11.125 Z"></path></svg></span>﻿Name</th><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesDate"><path d="M10.8889,5.5 L3.11111,5.5 L3.11111,7.05556 L10.8889,7.05556 L10.8889,5.5 Z M12.4444,1.05556 L11.6667,1.05556 L11.6667,0 L10.1111,0 L10.1111,1.05556 L3.88889,1.05556 L3.88889,0 L2.33333,0 L2.33333,1.05556 L1.55556,1.05556 C0.692222,1.05556 0.00777777,1.75556 0.00777777,2.61111 L0,12.5 C0,13.3556 0.692222,14 1.55556,14 L12.4444,14 C13.3,14 14,13.3556 14,12.5 L14,2.61111 C14,1.75556 13.3,1.05556 12.4444,1.05556 Z M12.4444,12.5 L1.55556,12.5 L1.55556,3.94444 L12.4444,3.94444 L12.4444,12.5 Z M8.55556,8.61111 L3.11111,8.61111 L3.11111,10.1667 L8.55556,10.1667 L8.55556,8.61111 Z"></path></svg></span>Created</th><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesPerson"><path d="M9.625,10.8465 C8.91187,10.2891 8.12088,9.926 7,9.26013 L7,8.71938 C7.21175,8.47612 7.392,8.176 7.53813,7.83213 C7.94587,7.7315 8.3125,7.33425 8.3125,7 C8.3125,6.51788 8.1095,6.32713 7.8715,6.17137 C7.8715,6.15562 7.875,6.14162 7.875,6.125 C7.875,5.41362 7.4375,3.5 5.25,3.5 C3.0625,3.5 2.625,5.4145 2.625,6.125 C2.625,6.14162 2.6285,6.15562 2.6285,6.17137 C2.3905,6.32713 2.1875,6.51788 2.1875,7 C2.1875,7.33425 2.55413,7.7315 2.96187,7.833 C3.108,8.176 3.28825,8.47612 3.5,8.71938 L3.5,9.26013 C2.37912,9.92513 1.58812,10.2882 0.875,10.8465 C0.041125,11.4984 0,12.4688 0,14 L10.5,14 C10.5,12.4688 10.4589,11.4984 9.625,10.8465 Z M13.125,7.3465 C12.4119,6.78912 11.6209,6.426 10.5,5.76013 L10.5,5.21938 C10.7118,4.97613 10.892,4.676 11.0381,4.33213 C11.4459,4.2315 11.8125,3.83425 11.8125,3.5 C11.8125,3.01787 11.6095,2.82713 11.3715,2.67138 C11.3715,2.65562 11.375,2.64162 11.375,2.625 C11.375,1.91363 10.9375,0 8.75,0 C6.5625,0 6.125,1.9145 6.125,2.625 C6.125,2.64162 6.1285,2.65562 6.1285,2.67138 C6.11188,2.68275 6.09787,2.69588 6.08125,2.70725 C7.83212,3.066 8.59688,4.54825 8.72813,5.74787 C8.97575,6.00863 9.1875,6.39625 9.1875,7 C9.1875,7.60288 8.771,8.20312 8.18388,8.51462 C8.127,8.624 8.06662,8.729 8.00275,8.82962 C8.155,8.91537 8.30025,8.99675 8.44025,9.07463 C9.08075,9.4325 9.63375,9.74137 10.164,10.1561 C10.3022,10.2638 10.4204,10.3801 10.5289,10.4991 L14,10.4991 C14,8.96875 13.9589,7.99837 13.125,7.3465 Z"></path></svg></span>Created by</th><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesSelect"><path d="M7,13 C10.31348,13 13,10.31371 13,7 C13,3.68629 10.31348,1 7,1 C3.68652,1 1,3.68629 1,7 C1,10.31371 3.68652,13 7,13 Z M3.75098,5.32278 C3.64893,5.19142 3.74268,5 3.90869,5 L10.09131,5 C10.25732,5 10.35107,5.19142 10.24902,5.32278 L7.15771,9.29703 C7.07764,9.39998 6.92236,9.39998 6.84229,9.29703 L3.75098,5.32278 Z"></path></svg></span>Tags</th></tr></thead><tbody><tr id="858c0e9c-7356-4fb0-9cd0-f4528562a7d8"><td class="cell-title"><a href="Aux%20Info%207829a82012d44be084950af3e487a6ad/JSON%20Web%20Token%20858c0e9c73564fb09cd0f4528562a7d8.html"><span class="icon">🚙</span>JSON Web Token</a></td><td class="cell-Zl-w"><time>@July 20, 2021 12:00 AM</time></td><td class="cell-uUIC"><span class="user"><img src="https://lh3.googleusercontent.com/a-/AOh14GhFhclieX_7cTnK6L371bcbb7cAlFuuh13S9ED7KA=s100" class="icon user-icon"/>Bryan Guner</span></td><td class="cell-,Tu%"><span class="selected-value select-value-color-yellow">Concepts</span></td></tr><tr id="12cf6457-6031-4062-9204-c0d726129a3a"><td class="cell-title"><a href="Aux%20Info%207829a82012d44be084950af3e487a6ad/Bcrypt%2012cf6457603140629204c0d726129a3a.html"><span class="icon">✨</span>Bcrypt</a></td><td class="cell-Zl-w"><time>@July 20, 2021 12:00 AM</time></td><td class="cell-uUIC"><span class="user"><img src="https://lh3.googleusercontent.com/a-/AOh14GhFhclieX_7cTnK6L371bcbb7cAlFuuh13S9ED7KA=s100" class="icon user-icon"/>Bryan Guner</span></td><td class="cell-,Tu%"><span class="selected-value select-value-color-green">packages</span></td></tr><tr id="dfc4eb1e-9d7b-4777-b577-a6b8e1039e79"><td class="cell-title"><a href="Aux%20Info%207829a82012d44be084950af3e487a6ad/Background%20dfc4eb1e9d7b4777b577a6b8e1039e79.html">Background</a></td><td class="cell-Zl-w"><time>@July 20, 2021 12:00 AM</time></td><td class="cell-uUIC"><span class="user"><img src="https://lh3.googleusercontent.com/a-/AOh14GhFhclieX_7cTnK6L371bcbb7cAlFuuh13S9ED7KA=s100" class="icon user-icon"/>Bryan Guner</span></td><td class="cell-,Tu%"><span class="selected-value select-value-color-yellow">Concepts</span></td></tr><tr id="f6dd2029-7505-4570-a515-6a3cf1b3ad94"><td class="cell-title"><a href="Aux%20Info%207829a82012d44be084950af3e487a6ad/Auth-Using-Bcrypt%20f6dd202975054570a5156a3cf1b3ad94.html">Auth-Using-Bcrypt</a></td><td class="cell-Zl-w"><time>@July 20, 2021 1:00 PM</time></td><td class="cell-uUIC"><span class="user"><img src="https://lh3.googleusercontent.com/a-/AOh14GhFhclieX_7cTnK6L371bcbb7cAlFuuh13S9ED7KA=s100" class="icon user-icon"/>Bryan Guner</span></td><td class="cell-,Tu%"><span class="selected-value select-value-color-purple">Tutorial</span></td></tr><tr id="92477896-0fc5-4896-aef4-0c4625502843"><td class="cell-title"><a href="Aux%20Info%207829a82012d44be084950af3e487a6ad/%F0%9F%8D%AACookies%20924778960fc54896aef40c4625502843.html">🍪Cookies</a></td><td class="cell-Zl-w"><time>@July 20, 2021 10:00 AM</time></td><td class="cell-uUIC"><span class="user"><img src="https://lh3.googleusercontent.com/a-/AOh14GhFhclieX_7cTnK6L371bcbb7cAlFuuh13S9ED7KA=s100" class="icon user-icon"/>Bryan Guner</span></td><td class="cell-,Tu%"><span class="selected-value select-value-color-yellow">Concepts</span></td></tr><tr id="da2a5a69-b02a-4859-9d1a-4a388e52229b"><td class="cell-title"><a href="Aux%20Info%207829a82012d44be084950af3e487a6ad/misc%20da2a5a69b02a48599d1a4a388e52229b.html">misc</a></td><td class="cell-Zl-w"><time>@July 20, 2021 12:00 AM</time></td><td class="cell-uUIC"><span class="user"><img src="https://lh3.googleusercontent.com/a-/AOh14GhFhclieX_7cTnK6L371bcbb7cAlFuuh13S9ED7KA=s100" class="icon user-icon"/>Bryan Guner</span></td><td class="cell-,Tu%"><span class="selected-value select-value-color-red">Announcments</span></td></tr><tr id="3dbc3bd0-0543-4832-8b4b-fbf41bcfd0fe"><td class="cell-title"><a href="Aux%20Info%207829a82012d44be084950af3e487a6ad/Future-Work%203dbc3bd0054348328b4bfbf41bcfd0fe.html">Future-Work</a></td><td class="cell-Zl-w"></td><td class="cell-uUIC"></td><td class="cell-,Tu%"></td></tr><tr id="d6e20e00-6f51-4652-9cc4-bcb7ecfe4a42"><td class="cell-title"><a href="Aux%20Info%207829a82012d44be084950af3e487a6ad/Projects%20d6e20e006f5146529cc4bcb7ecfe4a42.html">Projects</a></td><td class="cell-Zl-w"><time>@July 20, 2021 12:00 AM</time></td><td class="cell-uUIC"></td><td class="cell-,Tu%"></td></tr><tr id="721dd415-0d27-404d-bcff-7e48a0456fcf"><td class="cell-title"><a href="Aux%20Info%207829a82012d44be084950af3e487a6ad/Untitled%20721dd4150d27404dbcff7e48a0456fcf.html">Untitled</a></td><td class="cell-Zl-w"></td><td class="cell-uUIC"></td><td class="cell-,Tu%"></td></tr></tbody></table></div><figure id="8b7d1802-12a8-4545-86ae-2f49d867cac2"><a href="https://github.com/bgoonz/Authentication-Notes" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">bgoonz/Authentication-Notes</div><div class="bookmark-description">Contribute to bgoonz/Authentication-Notes development by creating an account on GitHub.</div></div><div class="bookmark-href"><img src="https://github.com/favicon.ico" class="icon bookmark-icon"/>https://github.com/bgoonz/Authentication-Notes</div></div><img src="https://opengraph.githubassets.com/4d9f6ed89f8519da8d891b0268c9760b257688112a236ba3428195bb9df4db4b/bgoonz/Authentication-Notes" class="bookmark-image"/></a></figure><p id="ef489c19-0a72-4f65-bda9-10eb044fc4c5" class="">
+</p><figure id="cb933b2c-b80e-4d1c-9e7a-8c0ca900bbe8"><div class="source"><a href="https://replit.com/@bgoonz/Authentication-Notes">https://replit.com/@bgoonz/Authentication-Notes</a></div></figure><h1 id="63d12d50-ff5b-431c-9c30-40fc144293fe" class=""><strong>Authentication</strong> </h1><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="22e23722-0188-4451-9cb3-d68652d287d4"><div style="font-size:1.5em"><span class="icon">📌</span></div><div style="width:100%">is the process by which our Web API verifies the identity of a client that is trying to access a resource. </div></figure><p id="1e756213-a24a-46ae-afde-ac1ba6166af9" class="block-color-blue">This is different from <strong>authorization</strong>, which comes after authentication and determines what type of access, if any, that a user should have.</p><p id="5f327260-b182-4894-bab3-7a0b69249768" class="">Adding authentication to a Web API requires that an API can:</p><ul id="cafb4105-7fa6-443d-a973-a55de8f16c8c" class="block-color-blue_background bulleted-list"><li>register user accounts.</li></ul><ul id="deb8e972-3e8f-419d-b53f-7057c53b9f42" class="block-color-blue_background bulleted-list"><li>login to prove identity.</li></ul><ul id="0fe7b07e-2b66-4a0a-9be3-afc34e496857" class="block-color-blue_background bulleted-list"><li>logout of the system to invalidate the user&#x27;s access until they login again.</li></ul><ul id="a9dadd91-0dd4-4a4e-b8fc-eeebebbaecee" class="block-color-blue_background bulleted-list"><li>add a way for users to reset their passwords.</li></ul><p id="ac054959-7a26-4c23-820d-9a648b25e12b" class="">
+</p><h3 id="b5741dca-1e88-462d-8250-4d5025186afc" class="">Some of the things we need to take into account when implementing authentication are:</h3><ul id="45ba84f7-ce88-45c8-a023-f535247d7950" class="block-color-blue_background bulleted-list"><li>Password storage.</li></ul><ul id="17164a4a-cf6c-426c-971a-46ce41e71914" class="block-color-blue_background bulleted-list"><li>Password strength.</li></ul><ul id="4d8c58e3-ed73-4e1e-b772-2396ea88eef0" class="block-color-blue_background bulleted-list"><li>Brute-force safeguards.</li></ul><h2 id="0f515766-f961-49cc-a68f-54c34c2c9156" class=""><strong>Follow Along</strong></h2><p id="0ae2af2c-a30e-4630-8024-8ed4d606861b" class="">Let&#x27;s tackle the first one, <strong>password storage</strong>. The rule of thumb is: <strong>NEVER, EVER, under no circumstances, store user passwords in plain text</strong>. Then what are the two main options:</p><ul id="9406e131-461b-4acf-80d9-4cf877400a19" class="bulleted-list"><li>encryption.</li></ul><ul id="731c7e5c-5877-447f-8685-2e37ff2884ab" class="bulleted-list"><li>hashing.</li></ul><p id="9de1d667-d313-47fe-9245-65e6a1565b10" class="">
+</p><h1 id="d55e6d0b-9e23-4bac-8450-8d02fe440033" class="">Password Hashing vs. Encryption for password storage</h1><p id="8e267ade-0043-4dc2-86be-620952e97b18" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="8fc28f7a-21eb-4ead-b770-a52b6caa44fa"><div style="font-size:1.5em"><span class="icon">📌</span></div><div style="width:100%">- Encryption goes two ways. </div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="fc841ef7-dbe2-4259-9fc9-3c3982b44e50"><div style="font-size:1.5em"><span class="icon">📌</span></div><div style="width:100%">First, it utilizes plain text and private keys to generate encrypted passwords and then reverses the process to match to an original password.</div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="467063f5-38cd-4eb4-9f6b-62dd8bf813cb"><div style="font-size:1.5em"><span class="icon">📌</span></div><div style="width:100%">- Cryptographic hashes only go one way: parameters + input = hash. It is pure; given the same parameters and input it generates the same hash.</div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="003546d4-9dc1-46b2-a84b-dd6b2665425b"><div style="font-size:1.5em"><span class="icon">📌</span></div><div style="width:100%">If the database of users and keys are compromised, it is possible to decrypt the passwords to their original values, and this is bad because users often share passwords across different sites. This is one reason why <strong>cryptographic hashing is the preferred method for storing user passwords</strong>.</div></figure><p id="c93f206c-05bf-450e-862a-057ffeb47634" class="">
+</p><p id="98062bb0-1422-4941-a5aa-4348258c6a21" class="">
+</p><h3 id="74175c7d-b27b-483b-9abe-0a0ebdc6848c" class=""><strong>Password Strength</strong></h3><p id="4a7aa2ee-5248-4a41-b839-e816c3570a18" class="">Password length alone is not enough to slow password guessing, but in general, long passwords are better than short, complicated passwords. It is a trade-off between convenience and security.</p><p id="5cb1728d-b76b-4c3f-8a72-468702ae20d4" class="">Visit <a href="https://www.grc.com/haystack.htm">this site (Links to an external site.)</a> </p><figure id="bdbdb0c3-3f76-4259-9402-5ec79e864745"><a href="https://www.grc.com/haystack.htm" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">GRC&#x27;s | Password Haystacks: How Well Hidden is Your Needle?</div><div class="bookmark-description">Every password you use can be thought of as a needle hiding in a haystack. After all searches of common passwords and dictionaries have failed, an attacker must resort to a &quot;brute force&quot; search - ultimately trying every possible combination of letters, numbers and then symbols until the combination you chose, is discovered.</div></div><div class="bookmark-href"><img src="https://www.grc.com/favicon.ico" class="icon bookmark-icon"/>https://www.grc.com/haystack.htm</div></div><img src="https://www.grc.com/image/KABC-TV-trans.png" class="bookmark-image"/></a></figure><p id="0b3eb8d4-42c2-4779-9461-6c86474938bd" class="">
+</p><p id="f2bbf4af-492c-480e-9050-5cb427337391" class="">to see how a combination of password length and complexity affects an attacker&#x27;s ability to pre-generate password hashes.</p><p id="903342e7-9da1-45ef-b737-813e3efada3d" class="">
+</p><h3 id="4fa157d5-5e99-48ac-bfdf-3c78d5507932" class=""><strong>Brute-Force Attack Mitigation</strong></h3><p id="af74c0c2-bae5-4346-98b7-90fef05cfca6" class="">A common way that attackers circumvent hashing algorithms is by pre-calculating hashes for all possible character combinations up to a particular length using common hashing techniques. </p><p id="75ae1b07-c577-4709-b0de-1f41307298b2" class="">
+</p><p id="4467fdb7-dbe8-4e7c-9a4b-cf0a964f763c" class="">The results of said calculations are stored into a database table known as a <strong>rainbow table</strong>. </p><p id="2d0c412f-be59-4aaa-b050-8a84ddeb8bd1" class="">
+</p><p id="295d400d-3991-4471-b89f-8404a07f2031" class="">Whenever there is a breach, the attacker checks every breached password against their table.</p><p id="a7da2a76-bd73-4349-a10f-e088e196688a" class="">
+</p><p id="182e9e07-2b4d-4252-99ee-600ea4b4ce8f" class="block-color-red_background">Which Cryptographic Hashing Algorithm should we use? MD5, SHA-1, SHA-2, SHA-3? </p><p id="231e341f-7ea9-43f9-b023-c4f4ced5c1e8" class="">
+</p><p id="e373ca85-b10e-461a-a6c2-363006925626" class="">None of these, because they are flawed, these algorithms are optimized for speed, not security.</p><p id="470209a5-d46a-4922-b8e7-7a5cb8530753" class="">We aim to slow down hackers&#x27; ability to get at a user&#x27;s password. To do so, we are going to add <strong>time</strong> to our security algorithm to produce what is known as a <strong>key derivation function</strong>.</p><p id="2d07880e-4740-4c5c-81d4-ea9b26f568eb" class="">[Hash] + [Time] = [Key Derivation Function].</p><hr id="00ee609c-744e-44ab-93e3-ca593e037813"/><hr id="b2da2a0c-6836-4021-8741-05d15d8e4626"/><p id="7697b28e-8280-41e0-b79c-96ae8a35c773" class="">
+</p><h1 id="a73bbc18-8810-4492-aa0f-31f9dc62ad8e" class="">Objective 2 - hash passwords before saving them to the database</h1><h2 id="8636c615-e2d9-47e4-bd69-62e33e67145c" class=""><strong>Overview</strong></h2><p id="caa1dd92-1743-46f7-99b0-fb11c92888ca" class="">Instead of writing our own <em>key derivation function</em> (fancy name for hashing function), we&#x27;ll use a well known and popular module called <a href="https://www.npmjs.com/package/bcryptjs">bcryptjs (Links to an external site.)</a>. This module is well supported and stable, but there are other options you can explore.</p><p id="7bba4131-b9af-492b-95d7-8e7d1b73aee8" class="">Bcryptjs features include:</p><ul id="25a47141-dd9d-41a5-b60a-bf655e9acd82" class="bulleted-list"><li>password hashing function.</li></ul><ul id="c6f255e0-980d-4d69-a16b-b0af51942ada" class="bulleted-list"><li>implements salting both manually and automatically.</li></ul><ul id="d3b77cd5-0094-4c86-a4c3-81f7a068a1ff" class="bulleted-list"><li>accumulative hashing rounds.</li></ul><p id="abf0b63e-d039-40a7-a285-e958c21051a0" class="">Having an algorithm that hashes the information multiple times (rounds) means an attacker needs to have the hash, know the algorithm used, and how many rounds were used to generate the hash in the first place.</p><h2 id="09a22391-6912-4f96-b063-8f82c83ece61" class=""><strong>Follow Along</strong></h2><figure id="d3403199-b0b1-4533-a51d-e3342f85446c"><div class="source"><a href="https://www.notion.so/d43564ab336dc777f17ced87953d17d5">https://gist.github.com/bgoonz/d43564ab336dc777f17ced87953d17d5</a></div></figure><p id="82a81f25-9247-4485-ad9f-47d5e3f3706c" class="">Follow these steps to use bcrypt in your project.</p><p id="43fdbbb4-f4dc-4dc5-92f7-f1dadc43af83" class="">Install <code>bcryptjs</code> using npm.</p><p id="e6e8aa76-623b-4a26-89e4-fae3b56ef807" class="">Import it into your server.</p><pre id="b034479c-f93d-4c57-976b-24b7a9b9869a" class="code code-wrap"><code>const bcrypt = require(&#x27;bcryptjs&#x27;);</code></pre><p id="4c240e73-9373-4aab-946c-f2ae8826ce68" class="">To hash a password:</p><pre id="e52a160c-3087-4254-a222-977fcf4307e9" class="code code-wrap"><code>const credentials = req.body;
+
+const hash = bcrypt.hashSync(credentials.password, 14);
+
+credentials.password = hash;
+
+// move on to save the user.</code></pre><p id="995fc0b3-ee10-4c76-8ace-502f945a3ee8" class="">To verify a password:</p><pre id="90996d1e-3502-4ef0-bd76-cad1fb87aecb" class="code code-wrap"><code>const credentials = req.body;
+
+// find the user in the database by it&#x27;s username then
+if (!user || !bcrypt.compareSync(credentials.password, user.password)) {
+  return res.status(401).json({ error: &#x27;Incorrect credentials&#x27; });
+}
+
+// the user is valid, continue on</code></pre><figure id="b9848c68-19ed-4305-8329-76d74db0bdd2" class="image"><a href="Web4%203%20Authentication%2032c2841d6bbf4360899f170f1d3263cf/bcrypt.jpg"><img style="width:567px" src="Web4%203%20Authentication%2032c2841d6bbf4360899f170f1d3263cf/bcrypt.jpg"/></a></figure><p id="f197f8a3-37fa-4a65-8e28-91e374bfac77" class="">
+</p><h1 id="9fdd84a2-6052-4400-912b-30682e06ad59" class="">Objective 3 - verify passwords using bcrypt</h1><p id="5539457b-8bfa-4ee5-ba4d-7266071ef0d0" class=""><strong>Understand BCrypt Hashes</strong></p><p id="b1baa985-5f94-43e4-9971-53b09713acbe" class="">For the following challenges, you will be working with a new starter project that is different from the previous one. You can find the new starter project on <a href="https://replit.com/github/freeCodeCamp/boilerplate-bcrypt">Replit</a>, or clone it from <a href="https://github.com/freeCodeCamp/boilerplate-bcrypt/">GitHub</a>.</p><p id="04000913-b83b-4211-a1d5-d775817ad4e0" class="">
+</p><figure id="636f6a7d-9148-4c18-bb08-062a1b3f66c2"><div class="source"><a href="https://replit.com/@bgoonz/boilerplate-bcrypt">https://replit.com/@bgoonz/boilerplate-bcrypt</a></div></figure><p id="52d7d354-0e06-4d00-bfb7-a62341178d14" class="">
+</p><p id="37268050-1b9d-48f5-9c42-5d51840041c2" class="">
+</p><p id="2199a20a-a898-4f4a-a423-d771c03d670b" class=""><strong>BCrypt hashes are very secure. A hash is basically a fingerprint of the original data- always unique.</strong></p><p id="09d9473d-f0c0-4506-acd7-e1cf664657b5" class="">
+</p><p id="6acb92a2-688d-48a4-a541-2dc2fd3ee173" class=""> This is accomplished by feeding the original data into an algorithm and returning a<strong> fixed length result. </strong></p><p id="66b36da3-604f-417d-b54b-e212490df350" class="">To further complicate this process and make it more secure, you can also <strong><em>salt</em></strong><strong> your hash</strong>. </p><ul id="cf73e1bf-6029-441b-89ad-51db00aa58ea" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><span style="border-bottom:0.05em solid"><em>Salting your hash involves adding random data to the original data before the hashing process which makes it even harder to crack the hash.</em></span></span></li></ul><p id="254e7c86-119a-43ba-a869-bd30833a0384" class="">BCrypt hashes will always looks like <code>$2a$13$ZyprE5MRw2Q3WpNOGZWGbeG7ADUre1Q8QO.uUUtcbqloU0yvzavOm</code> which does have a structure. </p><p id="f3a85b21-942b-4166-8eb6-13a1e3a4652a" class="">
+</p><p id="ce4f7b0a-54b8-44f3-ad29-edeb1b36be9e" class="block-color-teal">The first small bit of data <code>$2a</code> is defining what kind of hash algorithm was used. </p><p id="9a163f39-8c6a-42e7-9c39-91215153a860" class="block-color-purple">The next portion <code>$13</code> defines the <em>cost</em>. </p><p id="142175c0-16cb-4534-accf-ac9c359a9655" class="block-color-yellow">Cost is about how much power it takes to compute the hash.</p><p id="068eb622-bf03-40f6-b605-d3f658869a79" class="block-color-yellow"> It is on a logarithmic scale of 2^cost and determines how many times the data is put through the hashing algorithm.</p><p id="68e90016-e68c-464c-8adc-75705b1e0a8e" class="block-color-pink"> For example, at a cost of 10 you are able to hash 10 passwords a second on an average computer, however at a cost of 15 it takes 3 seconds per hash... and to take it further, at a cost of 31 it would takes multiple days to complete a hash.</p><p id="37e103f8-c41c-4b6c-8dc0-bf2de093f147" class=""><strong> A cost of 12 is considered very secure at this time. </strong></p><p id="c9d73a3c-c4c6-4365-86a5-a601c9db7392" class="block-color-gray">The last portion of your hash <code>$ZyprE5MRw2Q3WpNOGZWGbeG7ADUre1Q8QO.uUUtcbqloU0yvzavOm</code>,</p><p id="308dce0b-09ee-49da-9625-5738636762f7" class=""> looks like one large string of numbers, periods, and letters but it is actually two separate pieces of information. </p><p id="5653a2c8-fcb8-462e-a6fc-f7094f038506" class="block-color-teal_background">The first 22 characters is the salt in plain text, and the rest is the hashed password!</p><h2 id="27072e7b-cceb-4b2a-ab44-456ac5799edc" class=""><strong>Overview</strong></h2><p id="9ff721f9-f840-4ef0-850d-0c1979a66438" class="">Use <code>bcrypt.compareSync()</code>, passing the password guess in plain text and the password hash from the database to validate credentials.</p><p id="420fd891-15ea-480e-b76b-6927169453fb" class="">If the password guess is valid, the method returns true. Otherwise, it returns false. The library hashes the password guess first and then compare the hashes.</p><h2 id="e13d07b1-adc2-4999-8084-c22281b29d2d" class=""><strong>Follow Along</strong></h2><p id="5ab478e6-ee09-444f-bb6f-3004cfaa910a" class="">Let&#x27;s see an example.</p><pre id="dc61772a-8b98-42b3-931b-ec3734844510" class="code code-wrap"><code>server.post(&#x27;/api/login&#x27;, (req, res) =&gt; {
+  let { username, password } = req.body;
+
+  Users.findBy({ username })
+    .first()
+    .then(user =&gt; {
+      // check that passwords match
+      if (user &amp;&amp; bcrypt.compareSync(password, user.password)) {
+        res.status(200).json({ message: `Welcome ${user.username}!` });
+      } else {
+        // we will return 401 if the password or username are invalid
+        // we don&#x27;t want to let attackers know when they have a good username
+        res.status(401).json({ message: &#x27;Invalid Credentials&#x27; });
+      }
+    })
+    .catch(error =&gt; {
+      res.status(500).json(error);
+    });
+});</code></pre><hr id="b640f955-ccc9-4daa-9ac9-b1309dfdf628"/><hr id="e5236dff-ca09-4dcf-9109-ce295e7575b8"/><hr id="49707222-980d-4f1f-a4c9-d1204c3ef5b6"/><hr id="827d4533-b0b9-45c4-842a-50051cb1e48f"/><h1 id="71bd8e35-d115-4b0e-8453-b3394a952a42" class="">Objective 4 - use in-memory sessions to persist authentication information across requests</h1><p id="a9eedb49-bc08-4576-b68e-18ee3fcd57dd" class="">Sessions provide a way to persist data across requests. </p><p id="e863c730-36db-45c5-946a-0883e75d7ac9" class="">We&#x27;ll use them to save authentication information, so there is no need to re-enter credentials on every new request the client makes to the server.</p><p id="45141f39-8b86-430c-8ed9-30bc1c11c088" class="">When using sessions, <strong>each client will have a unique session</strong> stored on the server.</p><p id="df6b4d5a-8fd8-46d8-86c6-29c03f212d6e" class="">Now that we have a solution for keeping authentication information, we need a way to transmit that information between the client and server. </p><figure id="2f8ad0d5-2cd7-476c-b3b3-e82f983d4ede"><div class="source"><a href="https://hackernoon.com/your-node-js-authentication-tutorial-is-wrong-f1a3bf831a46">https://hackernoon.com/your-node-js-authentication-tutorial-is-wrong-f1a3bf831a46</a></div></figure><h2 id="06e9c21e-4aab-4c4a-ad2b-a2fdd7dbc664" class="block-color-red_background">🍪For that, we&#x27;ll use <em><span style="border-bottom:0.05em solid"><strong><a href="https://www.notion.so/f530c7d2b706f882536c426773dfa86a">cookies</a></strong></span></em><em><span style="border-bottom:0.05em solid"><strong>. 🍪</strong></span></em></h2><p id="6c7963bc-9cdb-458a-b542-86a56ad2e6fa" class="">
+</p><figure id="2a057ff7-c27f-4920-903c-1b30d5e65770"><div class="source"><a href="https://www.notion.so/4218f44589744f5d9fab79c38668bdac">https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4218f445-8974-4f5d-9fab-79c38668bdac/ASDC12-Access_Control_Designs_and_Pitfalls.pdf</a></div></figure><h2 id="3ec79a30-a5ad-4402-a9b5-e3736cfbc876" class=""><strong>Authentication Workflow for sessions</strong></h2><p id="10f29238-9c55-4ef0-8d5e-c2d295e8ed50" class="">The basic workflow when using a combination of <em>cookies</em> and <em>sessions</em> for authentication is:</p><ul id="ad37d664-2362-42db-adab-bf8455c5cf7e" class="bulleted-list"><li>Client sends credentials.</li></ul><ul id="4f3b7c23-b0b5-421e-89bc-d132e9aee91a" class="bulleted-list"><li>Server verify credentials.</li></ul><ul id="e9b71ac6-1bcb-4c0b-a986-e47cb9b849ac" class="bulleted-list"><li>Server creates a session for the client.</li></ul><ul id="984e11a2-01df-4f21-b597-4a962547fb44" class="bulleted-list"><li>Server produces and sends back cookie.</li></ul><ul id="7e9778c1-c335-4866-87c8-f425e98f52ae" class="bulleted-list"><li>Client stores the cookie.</li></ul><ul id="588616cd-f8f1-4750-86db-905b423a1136" class="bulleted-list"><li>Client sends cookie on every request.</li></ul><ul id="66b6d81a-fd17-40f7-a8be-c703213538f0" class="bulleted-list"><li>Server verifies that cookie is valid.</li></ul><ul id="40473c69-f00e-4fb0-b4e7-831ed1fc579e" class="bulleted-list"><li>Server provides access to resource.</li></ul><p id="7f2df221-5256-423d-a32f-50a8bd07f6d7" class="">To understand how cookies are transmitted and stored in the browser, we need to look at the basic structure of an HTTP message. Every HTTP message, be it a request or a response, has two main parts: the <em>headers</em> and the <em>body</em>.</p><p id="f9e47c99-a663-4eec-be01-cc6e63df5968" class="">The <em>headers</em> are a set of key/value stores that include information about the request. There are several standard headers, but we can add our own if needed.</p><p id="9fb7a289-10ce-41e9-a187-4ff1b8a1a1e8" class="">To send <em>cookies</em>, the server adds the <code>Set-Cookie</code> header to the response like so: <code>&quot;Set-Cookie&quot;: &quot;session=12345&quot;</code>. Notice how the value of a header is just a string. The browser will read the header and save a cookie called <code>session</code> with the value <code>12345</code> in this example. We will use a library that takes care of creating and sending the cookie.</p><p id="67cf44da-57a2-4a78-9a36-65483e2e6e87" class="">The <em>body</em> contains the data portion of the message.</p><p id="a78114d1-46d9-4646-a73d-02b8679308a6" class="">The browser will add the <code>&quot;Cookie&quot;: &quot;session=12345&quot;</code> header on every subsequent request and the server.</p><p id="3284e7d6-8b6e-4c35-a5bb-7a879bbbf46e" class="">Cookies are not accessible from JavaScript or anywhere because they are cryptographically signed and very secure.</p><p id="89e0bfc6-ee02-4e6b-8a85-0c222dc10162" class="">There are sever libraries for handling sessions in Node.js, below are two examples:</p><ul id="fbe648a1-12a6-47e8-a886-3ee8743e4cfb" class="bulleted-list"><li><a href="https://www.npmjs.com/package/client-sessions">client-sessions (Links to an external site.)</a></li></ul><ul id="0347c6a5-55c7-4e26-9778-073fab9eb7ba" class="bulleted-list"><li><a href="https://www.npmjs.com/package/express-session">express-session (Links to an external site.)</a></li></ul><p id="2dbfc67c-2a48-4ec0-aa23-01f7a5168be2" class="">We will use the latter.</p><h3 id="6f6439f3-d75c-4bbb-8595-d3d6d1b0644d" class=""><strong>Common ways to store session data on the server:</strong></h3><ul id="aaecffc1-db7c-4943-a42c-f3797e34e57a" class="bulleted-list"><li>Memory.</li></ul><ul id="f8dfcead-b9ba-403f-9c81-79a0ae0bb2e7" class="bulleted-list"><li>Memory cache (like Redis and Memcached).</li></ul><ul id="e9a775c1-b94e-4024-a9d7-65f00b1bc2d1" class="bulleted-list"><li>Database.</li></ul><h3 id="6a293175-269e-4453-8002-8444926978be" class=""><strong>Cookies</strong></h3><ul id="06c491e7-7bbf-435f-830c-8a708b7082bb" class="bulleted-list"><li>Automatically included on every request.</li></ul><ul id="91238173-a287-4a0f-b952-937352500dc1" class="bulleted-list"><li>Unique to each domain + device pair.</li></ul><ul id="34ac7a8b-b2bf-4f65-a026-6e03746a86bf" class="bulleted-list"><li>Cannot be sent to a different domain.</li></ul><ul id="5d2ea7d3-4cd7-4b26-b387-50a390b9c4f2" class="bulleted-list"><li>Sent in the cookie header.</li></ul><ul id="918d6264-ae63-4dff-825c-979d4843bf72" class="bulleted-list"><li>Has a body that can have extra identifying information.</li></ul><ul id="5a7fef0b-5504-4a06-8d97-82a8a9ee4f10" class="bulleted-list"><li>Max size around 4KB.</li></ul><h3 id="e7ba05d3-33c2-4ea2-b120-b557b57adc0d" class=""><strong>Storing session data in memory</strong></h3><ul id="30d07ad6-9cf9-499b-bf12-19fc566b1e95" class="bulleted-list"><li>Data stored in memory is wiped when the server restarts.</li></ul><ul id="c82d3ac5-eadc-42bd-b25a-ffb6ef03d59d" class="bulleted-list"><li>Causes memory leaks as more and more memory is used as the application continues to store data in session for different clients.</li></ul><ul id="155f48d5-52fc-432c-a122-e50843996759" class="bulleted-list"><li>Good for development due to its simplicity.</li></ul><h3 id="f69a39ab-8469-4247-9431-3efa998b955c" class=""><strong>Using cookies to transfer session data.</strong></h3><p id="cfe795b3-4490-4bca-b535-f80f27c4f1f8" class="">Advantages when using cookies:</p><ul id="b1d9f344-b46c-410d-8b8b-76ad2d25ab05" class="bulleted-list"><li>a cookie is a small key/value pair data structure that is passed back and forth between client and server and stored in the browser.</li></ul><ul id="4c0e83a7-e96f-4e4b-ae0e-dbb0f719cb72" class="bulleted-list"><li>the server uses it to store information about a particular client/user.</li></ul><ul id="f9589f72-3425-4888-914e-8d3f36fc5c04" class="bulleted-list"><li>workflow for using cookies as session storage:<ul id="0223255e-9e7a-4f86-bdcd-f42e64461e23" class="bulleted-list"><li>the server issues a cookie with an expiration time and sends it with the response.</li></ul><ul id="00521914-0f30-4524-96dc-a7f163d20bd4" class="bulleted-list"><li>browsers automatically store the cookie and send it on every request to the same domain.</li></ul><ul id="9a5c44ba-a6ba-40a2-90fb-294dd220b6ff" class="bulleted-list"><li>the server can read the information contained in the cookie (like the username).</li></ul><ul id="047f0440-dedc-4a60-b84c-9478e10cab1e" class="bulleted-list"><li>the server can make changes to the cookie before sending it back on the response.</li></ul><ul id="b9d1fdbc-9f87-47bc-81d0-05de4fb03571" class="bulleted-list"><li>rinse and repeat.</li></ul></li></ul><p id="c574fb91-5e9c-4145-9b97-59b3068e74a7" class=""><strong>Express-session uses cookies for session management</strong>.</p><p id="5fbf5467-12ca-4e4e-ad23-52135f079619" class="">Drawbacks when using cookies:</p><ul id="72cacb95-1706-47ba-af44-d058ab565c62" class="bulleted-list"><li>small size, around 4KB.</li></ul><ul id="4d6fb017-236a-49f2-8829-4a917726eb2e" class="bulleted-list"><li>sent in every request, increasing the size of the request if too much information is stored in them.</li></ul><ul id="bf3df607-8192-41c0-aad2-4610e20ecf8f" class="bulleted-list"><li>if an attacker gets a hold of the private key used to encrypt the cookie, they could read the cookie data.</li></ul><h3 id="bbee363f-e0ea-486f-bbde-ad52209db943" class=""><strong>Storing session data in Memory Cache (preferred way of storing sessions in production applications)</strong></h3><ul id="8454cff1-f62a-411f-803f-3bc25895e7ab" class="bulleted-list"><li>stored as key-value pair data in a separate server.</li></ul><ul id="df522b33-66a0-4964-ac36-9d684c202ddc" class="bulleted-list"><li>the server still uses a cookie, but it only contains the session id.</li></ul><ul id="10255e3b-0cb8-4508-b6bd-5c719fd96ad1" class="bulleted-list"><li>the memory cache server uses that session id to find the session data.</li></ul><p id="8cfefdcf-7861-49d2-ae5f-febd29b82a25" class="">Advantages:</p><ul id="455e9da5-c748-4e00-8cd4-54323f86aa39" class="bulleted-list"><li>Quick lookups.</li></ul><ul id="6e36605a-b141-4329-ac3a-e1718b8e3b26" class="bulleted-list"><li>Decoupled from the API server.</li></ul><ul id="4df49b2f-3930-4146-aa01-ced6fa64576b" class="bulleted-list"><li>A single memory cache server can serve many applications.</li></ul><ul id="87531519-f0eb-4a2a-9c59-f9d2a3ae247c" class="bulleted-list"><li>Automatically remove old session data.</li></ul><p id="4335e8b7-91a1-4b13-b89f-021aa585ba9f" class="">Drawbacks:</p><ul id="82860101-c62e-4912-a4e5-020432af535f" class="bulleted-list"><li>another server to set up and manage.</li></ul><ul id="ba852170-130e-48ab-990e-3bcdbddc9765" class="bulleted-list"><li>extra complexity for small applications.</li></ul><ul id="bf8261ec-a4fe-4878-89f0-8c03212ee59d" class="bulleted-list"><li>hard to reset the cache without losing all session data.</li></ul><h3 id="22d6d0c9-b5f8-4d7f-bcb5-5889ce8cd96f" class=""><strong>Storing session data in a database</strong></h3><ul id="c13d34e4-e714-4565-9c27-602520824eb8" class="bulleted-list"><li>Similar to storing data in a memory store.</li></ul><ul id="5505130a-b002-4805-b9f7-8bf0558fce34" class="bulleted-list"><li>The session cookie still holds the session id.</li></ul><ul id="09f2ab52-88f0-4564-97a5-2f2dd2ab3f12" class="bulleted-list"><li>The server uses the session id to find the session data in the database.</li></ul><ul id="54fb7890-43cc-463e-99d9-ae494e9c5c8f" class="bulleted-list"><li>Retrieving data from a database is slower than reading from a memory cache.</li></ul><ul id="b8d9808b-cb39-4563-95f3-56885fe1e81b" class="bulleted-list"><li>Causes chatter between the server and the database.</li></ul><ul id="b741b731-93c1-4714-a51f-47e93c7c909d" class="bulleted-list"><li><strong>Need to manage/remove old sessions manually</strong> or the database will be filled with unused session data. Most libraries now manage this for you.</li></ul><p id="5f181469-6129-42d9-8b3a-dfcee7a712b9" class="">Here is a list of <a href="https://github.com/expressjs/session#compatible-session-stores">express-session compatible stores. (Links to an external site.)</a></p><h2 id="ab7045e9-622c-4fb1-a618-581206e1f925" class=""><strong>Follow Along</strong></h2><p id="2f491970-0647-422a-85c8-2ed3ae805ed1" class="">Let&#x27;s add session support to our Web API:</p><pre id="214d1fd1-f2f2-4da4-9acc-d06135e07ab3" class="code code-wrap"><code>const session = require(&#x27;express-session&#x27;);
+
+// configure express-session middleware
+server.use(
+  session({
+    name: &#x27;notsession&#x27;, // default is connect.sid
+    secret: &#x27;nobody tosses a dwarf!&#x27;,
+    cookie: {
+      maxAge: 1 * 24 * 60 * 60 * 1000,
+      secure: true, // only set cookies over https. Server will not send back a cookie over http.
+    }, // 1 day in milliseconds
+    httpOnly: true, // don&#x27;t let JS code access cookies. Browser extensions run JS code on your browser!
+    resave: false,
+    saveUninitialized: false,
+  })
+);</code></pre><p id="74f206df-68e2-4b88-bc8b-fb01c17fd58a" class="">The <code>resave</code> option forces the session to be saved back to the session store, even if the session wasn&#x27;t modified during the request.</p><p id="30cb7cf6-0cf1-495f-9d93-81d6bc83508d" class="">The <code>saveUninitialized</code> flag, forces a session that is &quot;uninitialized&quot; to be saved to the store. A session is uninitialized when it is new but not modified. Choosing <code>false</code> is useful for implementing login sessions, reducing server storage usage, or <strong>complying with laws that require permission before setting a cookie</strong>.</p><p id="450dfef5-c9dc-4819-9d38-7adba480c05b" class="">Now we can store session data in one route handler and read it in another.</p><pre id="bcc04450-180a-4f8b-8651-3aba6c4dd432" class="code code-wrap"><code>app.get(&#x27;/&#x27;, (req, res) =&gt; {
+  req.session.name = &#x27;Frodo&#x27;;
+  res.send(&#x27;got it&#x27;);
+});
+
+app.get(&#x27;/greet&#x27;, (req, res) =&gt; {
+  const name = req.session.name;
+  res.send(`hello ${req.session.name}`);
+});</code></pre><p id="fe2d61ed-75ed-4b1e-863c-23e1a41bec42" class="">The server sends back a session id with every response, and the client then sends back that session id on every request.</p><p id="48d5ca9f-c13c-4604-9ec6-808a5d69156a" class=""><a href="https://www.npmjs.com/package/express-session"><code>express-session</code></a><a href="https://www.npmjs.com/package/express-session"> (Links to an external site.)</a> uses in-memory storage by default.</p><p id="95fc4cad-cf52-4ecf-bf78-c6311cbb23c7" class="">Note how we generalize the session cookie&#x27;s name, to make it harder for attackers to know which library we&#x27;re using to manage our sessions. This is akin to using a helmet to hide the <code>X-Powered-By=Express</code> header.</p><p id="c89bc2b7-5fde-40b4-a2fd-ef72cfd021d0" class="">
+</p><h1 id="55f9ee96-2600-4d5f-9b0b-9a1cf430b04c" class="">Objective 5 - implement logout using a sessions based API</h1><hr id="dd0883a1-e8b7-4725-b048-a26bf1ef907e"/><hr id="231e9ca5-e650-469b-b257-b887a76543f9"/><hr id="f8c0b73e-637b-44a8-a859-9dadf8d1695f"/><hr id="7aa0b012-73dd-4fba-a998-3c8c70a463ac"/><h2 id="593b7f5e-587c-4656-8305-513b431cc039" class=""><strong>Overview</strong></h2><p id="32475798-b124-4817-b760-24a6d4b00993" class="">Sessions remain active until they reach the expiration time configured when they were created, but when a user logs out, we need to invalidate the session immediately.</p><p id="e2177b1e-4598-4906-88c8-8be370d608de" class="">We can do this by removing the session from our session store. Each library does it differently.</p><h2 id="0646d71b-3e65-42f4-9cec-e16ae11baec8" class=""><strong>Follow Along</strong></h2><p id="0387eac8-ead9-4870-891b-366e7707ee47" class="">Add the following code for the logout endpoint:</p><pre id="316f6829-1d2f-4f16-89b9-b20ea9bcdaf2" class="code code-wrap"><code>server.get(&#x27;/api/logout&#x27;, (req, res) =&gt; {
+  if (req.session) {
+    req.session.destroy(err =&gt; {
+      if (err) {
+        res.send(&#x27;error logging out&#x27;);
+      } else {
+        res.send(&#x27;good bye&#x27;);
+      }
+    });
+  }
+});</code></pre><hr id="3e0e343c-8270-4491-891a-4f44a24ecd54"/><hr id="8b78f409-fc93-46fa-a15e-db1ee4edaabb"/><hr id="d6f231b0-c08c-4d6c-b7d1-3ee8332907fc"/><hr id="66f2a06e-9ef2-4542-904d-640af189d3c0"/><h1 id="5f4598e7-c8a1-4eb8-9ef3-c1ea8b0b0f45" class="">Objective 6 - restrict access to resources, allowing access only for authenticated users</h1><h2 id="075b5738-71e3-431c-a3c5-57ce56eda726" class=""><strong>Overview</strong></h2><p id="54edf922-55fa-4963-a8c1-b391ff180327" class="">Restricting access to endpoints is a two-step process:</p><ul id="0b9e8215-f6d8-4e9d-b4fe-5a88990ea446" class="bulleted-list"><li>We write middleware to check that there is a <em>session</em> for the client.</li></ul><ul id="6c646158-64d6-4785-9565-60159a0885a0" class="bulleted-list"><li>We place that middleware in front of the endpoints we want to restrict.</li></ul><h2 id="1aba1289-64a4-4cef-b88f-beefc00a1da4" class=""><strong>Follow Along</strong></h2><p id="aad1a3d2-7df8-4bc7-9f93-4db770702d70" class="">We&#x27;ll start by writing a piece of middleware we can use locally to restrict access to protected routes.</p><pre id="6ee90503-895b-4402-8733-850959c7729a" class="code code-wrap"><code>function protected(req, res, next) {
+  if (req.session &amp;&amp; req.session.userId) {
+    next();
+  } else {
+    res.status(401).json({ message: &#x27;you shall not pass!!&#x27; });
+  }
+}</code></pre><p id="a1e67669-de16-46e4-bf0c-bb60a55222b9" class="">This middleware verifies that we have a session and that the <code>userId</code> is set. We could use <code>username</code> or any other value to verify access to a resource.</p><p id="aaad7e05-6121-4782-87de-3a5f89099b85" class="">Then, we add that middleware to the endpoints we&#x27;d like to protect.</p><pre id="35db2f63-7412-4e62-8484-47c49a25b1ec" class="code code-wrap"><code>server.get(&#x27;/api/users&#x27;, protected, (req, res) =&gt; {
+  db(&#x27;users&#x27;)
+    .then(users =&gt; res.json(users))
+    .catch(err =&gt; res.json(err));
+});</code></pre><p id="1581c72b-5f0c-4f14-9d20-236a396e3695" class="">The <code>/api/users</code> endpoint is only accessible when the client is logged in.</p><p id="397f3938-8b7a-4433-b767-4e3d8c799757" class="">
+</p><p id="d0416d47-86ff-40bb-965e-6fa182132741" class="">
+</p><hr id="2bac4561-0d10-482b-ae06-55dd73c68dac"/><hr id="3104e9b2-65de-4a49-8937-f6ae2310f79e"/><hr id="89e89219-d275-4855-a4d9-abffdd34c9aa"/><hr id="5108f92b-dc96-42ee-a500-8641e4092bbf"/><h1 id="783f1758-177c-4732-baac-7eb946da73c9" class="">JSON web token</h1><p id="03c015e1-afbf-4d63-867a-0c455b3a4976" class="">
+</p><figure id="7d44d735-1fe8-41cd-9663-dc6b26126241"><div class="source"><a href="https://www.notion.so/768f2d9a5a9e4271bbe609b0558db7c8">https://s3-us-west-2.amazonaws.com/secure.notion-static.com/768f2d9a-5a9e-4271-bbe6-09b0558db7c8/jwt-handbook-v0_14_1.pdf</a></div></figure><figure id="2e6a508d-42a4-4a3f-b33c-72ea9ca8f2be"><div class="source"><a href="https://jwt.io/">https://jwt.io/</a></div></figure><figure id="ab99a21c-5534-45db-9385-2cc46cc4a282"><div class="source"><a href="https://www.notion.so/5340903fd3d6f25452b636a7d8b400a1">https://gist.github.com/bgoonz/5340903fd3d6f25452b636a7d8b400a1</a></div></figure><h2 id="3772a436-eadc-438b-a8e7-fd89096e17d3" class=""><strong>Overview</strong></h2><p id="183e783a-88ba-4167-a325-0d83341cf379" class="">JSON Web Tokens (JWT) are a way to transmit information between parties in the form of a JSON object. The JSON information is most commonly used for authentication and information exchange. In the former example, with authentication every JWT contains information. In the latter, JWTs contain the classic JSON data you&#x27;ve seen before.</p><p id="fd7a421a-4a20-41f2-9630-1c95775e009f" class="">Ultimately, a JWT is a string that has three parts separated by a period (<code>.</code>). Those are:</p><ul id="17f4171a-4eff-4d56-8ce9-ecf9f9dfe28d" class="bulleted-list"><li>The header.</li></ul><ul id="2cb0888b-b376-4476-8b04-17a7c55c8bc1" class="bulleted-list"><li>The payload.</li></ul><ul id="1780e07e-f90b-40e5-bb73-b70ea894e620" class="bulleted-list"><li>The signature.</li></ul><h3 id="862c2120-8606-46f0-b44a-8757f135d71e" class=""><strong>Header</strong></h3><p id="09f84502-921c-4e80-af66-d24d3f208e01" class="">The header contains the algorithm with the token type. Typically the header for a JWT looks like this.</p><pre id="d56c6b9a-e6d2-46ae-828d-dd4ec294fc35" class="code code-wrap"><code>{
+  &quot;alg&quot;: &quot;HS256&quot;,
+  &quot;typ&quot;: &quot;JWT&quot;
+}</code></pre><p id="712e86d4-c013-4a6d-ad52-4012e59aef5d" class="">the <code>alg</code> key specifies which algorithm was used to create the token, in this case, the algorithm is HMACSHA-256, and the <code>typ</code> property classifies this token as being of the type JWT.</p><h3 id="db92d590-c0aa-4b59-b289-23c3b76a3f5e" class=""><strong>Payload</strong></h3><p id="a190a938-7d88-4623-8109-7bdeafc1d739" class="">The payload includes <em>claims</em> (fancy name for things like permissions for the user) information or any other data we&#x27;d like to store in the token, which is most likely a user id. There are specific claims defined in the JWT standard, and you can also add custom properties to this object.</p><p id="8ab13945-3352-4487-abb7-b595e87eba90" class="">An example:</p><pre id="cad776c6-9cde-4016-b2d5-10e7cf14b79e" class="code code-wrap"><code>{
+  &quot;sub&quot;: &quot;1234567890&quot;, // standard - subject, normally the user id
+  &quot;name&quot;: &quot;John Doe&quot;, // custom property
+  &quot;iat&quot;: 1516239022 // standard - The Date the token was issued, expressed in seconds since epoch.
+}</code></pre><h3 id="35106ddb-0f60-4acf-98e1-ad5307f57ba5" class=""><strong>Signature</strong></h3><p id="f5c0a06e-6cae-4680-ba16-448e6b6a0869" class="">To create a signature, we must create a string by base64 encoding the header and payload together, and then signing it with a secret.</p><p id="1f382acc-6e98-4c57-b1f3-38a89b6c2961" class="">Combining all three parts, you will get a JWT that looks like this:</p><pre id="ef11da6a-a7cb-41f9-b7c6-d46d1cc6a8ab" class="code code-wrap"><code>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c</code></pre><h2 id="db6dd01d-00ba-40c7-9915-b9c4e0d8a5cb" class=""><strong>Follow Along</strong></h2><p id="eccc137a-1ad7-4f55-9f67-eac241e4b49f" class="">Visit <a href="https://jwt.io/">this site (Links to an external site.)</a> and click on the <code>Debugger</code> navigation link at the top to see an excellent representation of a JWT.</p><p id="eda93f6c-0e1c-4553-bd67-a66eed8a98cd" class="">On the left-hand side, there is a sample JWT, and on the right, we can see the different parts highlighted in a different color to match the parts of the JWT string that represent those.</p><hr id="ac871e49-fd94-4203-aeb9-c55bf8c0f1a6"/><hr id="deae8438-fd4a-40af-9913-01abef0da0c2"/><hr id="5e01a7b9-51c5-42a8-b983-f5000f7eb145"/><hr id="1f81091e-5203-4458-bae1-2956bb8e62c1"/><h1 id="48d02dde-89e0-4693-a16e-684155eb8d25" class="">Objective 2 - produce and send a JSON Web Token (JWT)</h1><h2 id="60b3bfaa-594b-438f-a16a-258128b6b58e" class=""><strong>Overview</strong></h2><p id="dc59f4a0-10ba-4e6d-b0e5-9af3b1bd76b9" class="">In this section, we&#x27;ll use JSON Web Tokens to handle authentication.</p><p id="38147778-49cc-47cc-a7e9-cef00c2d72f9" class="">To produce and verify the token, we&#x27;ll use the <code>jsonwebtoken</code> npm module.</p><h2 id="917fb219-063b-4926-82da-f150bfc7b382" class=""><strong>Follow Along</strong></h2><p id="d46f5052-25a8-4fb2-90cb-8a354cf5b974" class="">Let&#x27;s produce and send a token on a successful login.</p><ul id="f8e2623b-c299-4f6b-8f4b-c6454e58506f" class="bulleted-list"><li>add <code>jsonwebtoken</code> to the project and require it into <code>auth-router.js</code>.</li></ul><ul id="a3eedbf3-2167-40f5-a3c4-b1582027fd37" class="bulleted-list"><li>change the <code>/login</code> endpoint inside the <code>auth-router.js</code> to produce and send the token.</li></ul><pre id="0df14bf9-f1cc-4874-8450-e60300de369b" class="code code-wrap"><code>// ./auth/auth-router.js
+
+const jwt = require(&#x27;jsonwebtoken&#x27;); // installed this library
+
+router.post(&#x27;/login&#x27;, (req, res) =&gt; {
+  let { username, password } = req.body;
+
+  Users.findBy({ username })
+    .first()
+    .then(user =&gt; {
+      if (user &amp;&amp; bcrypt.compareSync(password, user.password)) {
+        const token = generateToken(user); // new line
+
+        // the server needs to return the token to the client
+        // this doesn&#x27;t happen automatically like it happens with cookies
+        res.status(200).json({
+          message: `Welcome ${user.username}!, have a token...`,
+          token, // attach the token as part of the response
+        });
+      } else {
+        res.status(401).json({ message: &#x27;Invalid Credentials&#x27; });
+      }
+    })
+    .catch(error =&gt; {
+      res.status(500).json(error);
+    });
+});
+
+function generateToken(user) {
+  const payload = {
+    subject: user.id, // sub in payload is what the token is about
+    username: user.username,
+    // ...otherData
+  };
+
+  const options = {
+    expiresIn: &#x27;1d&#x27;, // show other available options in the library&#x27;s documentation
+  };
+
+  // extract the secret away so it can be required and used where needed
+  return jwt.sign(payload, secrets.jwtSecret, options); // this method is synchronous
+}</code></pre><ul id="964f31df-222f-4786-80c8-3a1785f929c4" class="bulleted-list"><li>add the <code>./config/secrets.js</code> file to hold the <code>jwtSecret</code></li></ul><pre id="283a0838-09cf-4a6a-9400-bad4d1ccb4c4" class="code code-wrap"><code>// the secrets will be safely stored in an environment variable, these are placeholders for development.
+module.exports = {
+  jwtSecret: process.env.JWT_SECRET || &#x27;add a third table for many to many&#x27;,
+};</code></pre><p id="06ef0ec7-a502-4a4c-a667-11596787d4b7" class="">require <em>secrets.js</em> into <em>auth-router.js</em>: <code>const secrets = require(&#x27;../config/secrets.js&#x27;);</code></p><ul id="4a1d0397-ee3d-4bdd-b593-351a45b7bcb8" class="bulleted-list"><li>Login with the student/hired user and show the token.</li></ul><ul id="4be99637-c8af-4750-ade3-03232f7644ab" class="bulleted-list"><li>Review the steps taken one more time.</li></ul><p id="50051614-88c1-4b60-ae6a-39da9afb75e8" class="">We have a server that can produce and send JWTs on a successful login.</p><p id="95760993-80bd-4ad4-b90b-004afd0f58d8" class="">
+</p><h1 id="eae1a0ae-3abf-433f-b2bf-5055122b8848" class="">Objective 1 - configure tools for adding automated tests to a JS project</h1><p id="8cc9fde3-51e5-49b8-925c-1024e2708122" class="">• <a href="https://lambdaschool.instructure.com/courses/1340">Home</a>
+• <a href="https://lambdaschool.instructure.com/courses/1340/grades">Grades</a>
+• <a href="https://lambdaschool.instructure.com/courses/1340/modules">Modules</a></p><p id="fee1e584-9c8c-49a4-9624-40c63ed6e328" class="">Immersive Reader</p><h1 id="dabedcb6-3cdf-43b0-830b-2340a35863b9" class="">Objective 1 - configure tools for adding automated tests to a JS project</h1><h2 id="a6e98c1f-9680-48a6-af4e-03daa589acd0" class=""><strong>Overview</strong></h2><h3 id="bc938d17-b0e3-455c-adf1-531809ea20a1" class=""><strong>Why Do We Test?</strong></h3><p id="163a26ce-10b5-4e02-bd31-26ceadd61e94" class="">Testing is an important skill for a web developer to have. Its hard to anticipate <em>every</em> way that a user might interact with your site, not to mention it is incredibly time-consuming to manually test all of those options. That&#x27;s where automated testing comes in. Any major company will use automated testing on its websites as a safety net, to prevent regressions, and to get a better overall understanding of how an application works. As such, testing is a great thing to have on your resume!</p><p id="935c311b-043b-44fe-84dd-626b933fd8f3" class="">We&#x27;ll quickly review what testing is before jumping into tooling we can use for automated testing. Generally speaking, testing is code that checks if the application code is correct.</p><p id="a57aae89-9e67-41cd-b15c-22fc74fe84bb" class="">If we don&#x27;t have tests, it&#x27;s safe to assume the following:</p><ul id="f3e9e279-3792-412e-8929-aa1d7f1b5e9b" class="bulleted-list"><li>application code has to be tested manually</li></ul><ul id="72adf2a1-ce64-4aa8-ab8a-be858c2e13ad" class="bulleted-list"><li>there is no way to know if a change broke another piece of code</li></ul><ul id="2050e93b-8a04-4de8-ae0a-1989cb858fa2" class="bulleted-list"><li>you cannot be sure if the code is correct</li></ul><ul id="6fc13e1e-c960-4462-b817-a1806f39b2c8" class="bulleted-list"><li>manually testing takes a lot of unnecessary time</li></ul><ul id="a3f9ad5c-51cf-4d88-ace6-bbada0569da4" class="bulleted-list"><li>adding new features becomes slow</li></ul><h3 id="ae6ee603-7043-4789-ae41-44309ee4f561" class=""><strong>Advantages of Testing</strong></h3><ul id="9f5253fe-d4dc-4116-aab7-c60d0f3622d5" class="bulleted-list"><li>verifies edge cases</li></ul><ul id="138065e4-ebef-4e7a-8047-11567dd79067" class="bulleted-list"><li>developer can concentrate on current changes (safety net)</li></ul><h3 id="6c0de4c8-ce77-4028-8492-ffd7148ebad4" class=""><strong>Drawbacks of Testing</strong></h3><ul id="e56a60aa-0b86-4032-baad-5a37ffcbc5e5" class="bulleted-list"><li>more code to write and maintain</li></ul><ul id="69358575-663e-4d48-a9db-314bacc75462" class="bulleted-list"><li>more tooling</li></ul><ul id="f3390c9b-2b74-41db-80dc-12f8b24c04fb" class="bulleted-list"><li>additional dependencies</li></ul><ul id="39d816f9-d261-4aa0-ae4a-f8e62cdd76d6" class="bulleted-list"><li>may provide a false sense of security</li></ul><ul id="5b883296-dc47-495b-9597-353bd717dada" class="bulleted-list"><li>trivial test failures may break the build</li></ul><ul id="f3fbb3ae-05a0-4ec5-bd89-760d7a79795f" class="bulleted-list"><li>regressions (when a new feature breaks existing code)</li></ul><h3 id="d84c1907-e64e-43c5-bfec-c5b4fad54d73" class=""><strong>What tools do we use for testing?</strong></h3><p id="fe5dea89-388e-40f1-b25a-90f47a40ce9a" class="">Hopefully by now you&#x27;re convinced that testing is important and want to start using it in your projects. In this course you&#x27;ve already used react testing library to write tests for React components, but there are other tools available. Examples of those tools are: Jest, Mocha/chai, jasmine, qunit, enzyme, supertest, istambul, karma, and cypress.</p><p id="977eccd5-4925-4566-9d57-0ebcaf1a2fde" class="">With so many testing tools available, how do you even begin to set up custom testing for a project? It helps to know why you want to test, so that you can pick the tool most suited to your needs.</p><h3 id="ff9ab5ad-18cd-48b6-84b4-08a38e13e109" class=""><strong>Jest</strong></h3><p id="8d274a19-288c-4d02-acf7-692a6f3f3e98" class="">We&#x27;ll use the testing library Jest to start setting up our own tests. Jest runs under the hood in react testing library, so a lot of what we do moving forward should look somewhat familiar. With create-react-app and react testing library there was no need to install and set up Jest, but as you grow as a web developer you will likely run into a need to install and use Jest on its own.</p><p id="f62c488e-a052-4ba0-9358-ef17a6037daa" class="">Jest is a test runner and command line interface npm package. It was originally made by Facebook and is included out-of-the-box with create-react-app. Jest is a very general purpose testing tool, and it works best with React applications, though it works with other frameworks as well. In addition to the types of tests we&#x27;ve seen, Jest can run asynchronous tests, snapshot testing, and produce coverage reports.</p><h3 id="f11cc3fb-eccb-4bae-b523-a1d6fe08253c" class=""><strong>Watch Mode</strong></h3><p id="00c98ef8-4f73-4bde-9cd4-545749c8b95c" class="">You&#x27;ll learn how to install and configure Jest in the tutorial below, but first, lets talk briefly about <code>watch mode</code>. Instead of running tests manually, Jest has a built-in feature called watch mode that will run tests automatically as files change. Jest detects these changes automatically and only runs the tests pertaining to the changes. This is one of the reasons developers love Jest so much, and hopefully one that you&#x27;ll find equally compelling.</p><h2 id="6865f85e-3ea1-4c55-a3af-aedb762d6e78" class=""><strong>Follow Along</strong></h2><ol type="1" id="5fe5d635-7b40-49db-bdf0-0ddc86ffb8fb" class="numbered-list" start="1"><li><strong>Install </strong><code><strong>jest</strong></code><strong> with npm.</strong> We first need to install Jest as a developent dependency. As soon as we do, Jest dependencies will show up in our <code>package.json</code> file.</li></ol><pre id="bb22144d-c49c-4100-8e41-5509f0cd18cd" class="code code-wrap"><code>npm install -D jest</code></pre><ol type="1" id="37189098-a205-4048-8788-49ef71811dc9" class="numbered-list" start="1"><li><strong>Add test script</strong>. In <code>package.json</code> we&#x27;ll need to indicate that we&#x27;re using jest for testing. This can be done by simply adding <code>&quot;test&quot;: &quot;jest --watch&quot;,</code> to your &quot;scripts&quot; object.</li></ol><ol type="1" id="05e89944-8b11-41a9-a500-0daabc171233" class="numbered-list" start="2"><li><strong>Run Tests</strong>. We can start Jest by typing <code>npm test</code> in a terminal window at the root of the project. However, since there are no tests written, it will return an error &quot;No tests found&quot; because we haven&#x27;t actually written any tests yet, so let&#x27;s move on.</li></ol><ol type="1" id="c44c0d1f-5c37-4a89-9685-fbbe7fd17117" class="numbered-list" start="3"><li><strong>Create test files.</strong> By convention, Jest will find your tests in two ways: 1) by placing <code>.js</code> files inside a folder called <code>__tests__</code> or 2) by ending the name of a file in <code>.test.js</code> or <code>.spec.js</code>. Technically, you could give the <code>__tests__</code> folder a different name, but then you&#x27;d need to manually change where Jest looks for test files.</li></ol><p id="31ca85a9-97d1-4e0f-ac89-f1c3195dab8f" class="">Here we aren&#x27;t going to write tests, but at this point you are all set up to do so.</p><p id="a295ba21-cd88-4d47-a525-b2e895eb7fdd" class="">
+</p><h1 id="a645ff27-d896-4f63-9bf5-d92b3d5830d9" class="">Objective 2 - use Jest to write unit tests</h1><p id="d368d1f3-8acc-42d9-8505-a3f7ec39f9b1" class="">
+</p><h3 id="64c2dd1a-1e10-4b34-b366-f54837f9a9c3" class=""><strong>Unit Tests</strong></h3><p id="04ffbff4-6342-4f4a-83b7-de4f31d652b4" class="">You&#x27;ll recall from unit 3 that unit tests are where we isolate smaller units of software (often functions or methods). There are usually many unit tests in a codebase, and because these tests are meant to be run often, they need to run fast. Unit tests are fast, they&#x27;re simple to write and execute, and they&#x27;re the preferred tool for test driven development (TDD) and behavior driven development (BDD). They are regularly used by developers to test correctness in <code>units</code> of code (usually functions).</p><h3 id="d142dba2-10b4-4213-81c6-9945b00c1de4" class=""><strong>What makes a good test?</strong></h3><p id="8a0498b6-d255-4d85-b977-30a9327747af" class="">A good unit test is independent, focused, and, as you might assume, tests only one unit of code. This type of test focuses on one behavior or functionality (even if you have to make multiple assertions), therefore testing only what needs to be tested, and no more.</p><p id="f6ca478c-d532-4902-b9b2-5bb0d579f5f4" class="">Another important consideration with testing is that you should try to avoid unnecessary preconditions. If your test relies on outside dependencies or other tests running first, you should factor to isolate the test (much like a pure function).</p><h3 id="ec0b2885-0bf4-4031-99e3-4ef573a9ddf6" class=""><strong>Jest Globals</strong></h3><ul id="6bea32e4-f316-439c-bfd8-771230634b8a" class="bulleted-list"><li>the <code>it</code> global is a method you pass a function to; that function is executed as a block of tests by the test runner.</li></ul><ul id="beec8cb4-8456-410f-9a49-64de84cc1212" class="bulleted-list"><li>the <code>describe</code> is optional for grouping a number of related <code>it</code> statements; this is also known as a <code>test suite</code>.</li></ul><h3 id="b12efcd9-8466-49b3-8abe-dc051d0ebd45" class=""><strong>Hello World Test</strong></h3><p id="99b7ac5f-c560-4fb3-9cdc-a79449a0dafb" class="">Let&#x27;s consider a constant function. We&#x27;ll use the ever-so-simple <code>hello</code> function for testing purposes.</p><pre id="9f13a368-380e-4cb8-ba21-7e1bfab99cd7" class="code code-wrap"><code>export const hello = () =&gt; &quot;hello world!&quot;;</code></pre><p id="46cbe19d-5389-43c6-9e43-a1f7d81b8ecc" class="">Next we&#x27;d move into our tests folder and set up a test asserting that we <code>expect</code> the return value of this function to be hello world.</p><pre id="322528bf-4bd0-4e40-8279-18bd2b323609" class="code code-wrap"><code>import { hello } from &quot;./App&quot;;
+//arrange
+describe(&quot;hello&quot;, () =&gt; {
+  //act
+  it(&quot;should return hello world!&quot;, () =&gt; {
+    //assert
+    expect(hello()).toBe(&quot;hello world!&quot;);
+  });
+});</code></pre><p id="0a252b72-d7d5-43f6-9c9d-ddda5ae2f360" class="">The test should run automatically in the terminal, thanks to our <code>watcher</code>, and you&#x27;d see that the test passed. Hopefully this looks familiar to you from our work with react testing library.</p><p id="83017116-1436-46b6-a42a-003d81d42c3a" class="">Before we dive into writing our own tests with Jest, let&#x27;s look at a few more details.</p><h3 id="4c7b57da-8d5d-45a9-b019-ea0b964c8b5d" class=""><strong>Important Globals in Jest</strong></h3><p id="899c2086-8f71-461d-b6b5-872874b38fab" class="">A few objects exist in the global scope like <code>describe</code> and <code>it</code>. You are already familiar with their use cases. When writing custom tests you may find that some tests need to be run more than once, like a test to render without crashing, for example. Jest has built in globals for this use case:</p><div id="800743d4-712e-4e63-87ae-d035c8b777da" class="collection-content"><h4 class="collection-title"></h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesTitle"><path d="M7.73943662,8.6971831 C7.77640845,8.7834507 7.81338028,8.8943662 7.81338028,9.00528169 C7.81338028,9.49823944 7.40669014,9.89260563 6.91373239,9.89260563 C6.53169014,9.89260563 6.19894366,9.64612676 6.08802817,9.30105634 L5.75528169,8.33978873 L2.05809859,8.33978873 L1.72535211,9.30105634 C1.61443662,9.64612676 1.2693662,9.89260563 0.887323944,9.89260563 C0.394366197,9.89260563 0,9.49823944 0,9.00528169 C0,8.8943662 0.0246478873,8.7834507 0.0616197183,8.6971831 L2.46478873,2.48591549 C2.68661972,1.90669014 3.24119718,1.5 3.90669014,1.5 C4.55985915,1.5 5.12676056,1.90669014 5.34859155,2.48591549 L7.73943662,8.6971831 Z M2.60035211,6.82394366 L5.21302817,6.82394366 L3.90669014,3.10211268 L2.60035211,6.82394366 Z M11.3996479,3.70598592 C12.7552817,3.70598592 14,4.24823944 14,5.96126761 L14,9.07922535 C14,9.52288732 13.6549296,9.89260563 13.2112676,9.89260563 C12.8169014,9.89260563 12.471831,9.59683099 12.4225352,9.19014085 C12.028169,9.6584507 11.3257042,9.95422535 10.5492958,9.95422535 C9.60035211,9.95422535 8.47887324,9.31338028 8.47887324,7.98239437 C8.47887324,6.58978873 9.60035211,6.08450704 10.5492958,6.08450704 C11.3380282,6.08450704 12.040493,6.33098592 12.4348592,6.81161972 L12.4348592,5.98591549 C12.4348592,5.38204225 11.9172535,4.98767606 11.1285211,4.98767606 C10.6602113,4.98767606 10.2411972,5.11091549 9.80985915,5.38204225 C9.72359155,5.43133803 9.61267606,5.46830986 9.50176056,5.46830986 C9.18133803,5.46830986 8.91021127,5.1971831 8.91021127,4.86443662 C8.91021127,4.64260563 9.0334507,4.44542254 9.19366197,4.34683099 C9.87147887,3.90316901 10.6232394,3.70598592 11.3996479,3.70598592 Z M11.1778169,8.8943662 C11.6830986,8.8943662 12.1760563,8.72183099 12.4348592,8.37676056 L12.4348592,7.63732394 C12.1760563,7.29225352 11.6830986,7.11971831 11.1778169,7.11971831 C10.5616197,7.11971831 10.056338,7.45246479 10.056338,8.0193662 C10.056338,8.57394366 10.5616197,8.8943662 11.1778169,8.8943662 Z M0.65625,11.125 L13.34375,11.125 C13.7061869,11.125 14,11.4188131 14,11.78125 C14,12.1436869 13.7061869,12.4375 13.34375,12.4375 L0.65625,12.4375 C0.293813133,12.4375 4.43857149e-17,12.1436869 0,11.78125 C-4.43857149e-17,11.4188131 0.293813133,11.125 0.65625,11.125 Z"></path></svg></span>Global</th><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesText"><path d="M7,4.56818 C7,4.29204 6.77614,4.06818 6.5,4.06818 L0.5,4.06818 C0.223858,4.06818 0,4.29204 0,4.56818 L0,5.61364 C0,5.88978 0.223858,6.11364 0.5,6.11364 L6.5,6.11364 C6.77614,6.11364 7,5.88978 7,5.61364 L7,4.56818 Z M0.5,1 C0.223858,1 0,1.223858 0,1.5 L0,2.54545 C0,2.8216 0.223858,3.04545 0.5,3.04545 L12.5,3.04545 C12.7761,3.04545 13,2.8216 13,2.54545 L13,1.5 C13,1.223858 12.7761,1 12.5,1 L0.5,1 Z M0,8.68182 C0,8.95796 0.223858,9.18182 0.5,9.18182 L11.5,9.18182 C11.7761,9.18182 12,8.95796 12,8.68182 L12,7.63636 C12,7.36022 11.7761,7.13636 11.5,7.13636 L0.5,7.13636 C0.223858,7.13636 0,7.36022 0,7.63636 L0,8.68182 Z M0,11.75 C0,12.0261 0.223858,12.25 0.5,12.25 L9.5,12.25 C9.77614,12.25 10,12.0261 10,11.75 L10,10.70455 C10,10.4284 9.77614,10.20455 9.5,10.20455 L0.5,10.20455 C0.223858,10.20455 0,10.4284 0,10.70455 L0,11.75 Z"></path></svg></span>Description</th></tr></thead><tbody><tr id="7806b09f-22d0-4cfc-bde0-68f4c9bd6bb4"><td class="cell-title"><a href="Web4%203%20Authentication%2032c2841d6bbf4360899f170f1d3263cf/Untitled%20Database%20800743d4712e4e6387aed035c8b777da/beforeAll%207806b09f22d04cfcbde068f4c9bd6bb4.html">beforeAll</a></td><td class="cell-qOe}">runs once before the first test</td></tr><tr id="5b87a9e2-c00b-483a-a68c-bebf072e8a45"><td class="cell-title"><a href="Web4%203%20Authentication%2032c2841d6bbf4360899f170f1d3263cf/Untitled%20Database%20800743d4712e4e6387aed035c8b777da/beforeEach%205b87a9e2c00b483aa68cbebf072e8a45.html">beforeEach</a></td><td class="cell-qOe}">runs before the tests, good for setup code</td></tr><tr id="70627ece-1a54-4ec7-b363-f9f52274e0ed"><td class="cell-title"><a href="Web4%203%20Authentication%2032c2841d6bbf4360899f170f1d3263cf/Untitled%20Database%20800743d4712e4e6387aed035c8b777da/afterEach%2070627ece1a544ec7b363f9f52274e0ed.html">afterEach</a></td><td class="cell-qOe}">runs after the tests, good for clean up</td></tr><tr id="93cce6e2-fbc3-4b4d-90c1-2df65f0da8c4"><td class="cell-title"><a href="Web4%203%20Authentication%2032c2841d6bbf4360899f170f1d3263cf/Untitled%20Database%20800743d4712e4e6387aed035c8b777da/afterAll%2093cce6e2fbc34b4d90c12df65f0da8c4.html">afterAll</a></td><td class="cell-qOe}">runs once after the last test</td></tr></tbody></table></div><p id="6e3b5bc3-6940-451d-98b9-728bde454485" class="">If there&#x27;s ever a scenario in which you want to skip or isolate a test, use the following globals:</p><div id="7ceeab05-eb94-4b6d-aa79-a2695a375786" class="collection-content"><h4 class="collection-title"></h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesText"><path d="M7,4.56818 C7,4.29204 6.77614,4.06818 6.5,4.06818 L0.5,4.06818 C0.223858,4.06818 0,4.29204 0,4.56818 L0,5.61364 C0,5.88978 0.223858,6.11364 0.5,6.11364 L6.5,6.11364 C6.77614,6.11364 7,5.88978 7,5.61364 L7,4.56818 Z M0.5,1 C0.223858,1 0,1.223858 0,1.5 L0,2.54545 C0,2.8216 0.223858,3.04545 0.5,3.04545 L12.5,3.04545 C12.7761,3.04545 13,2.8216 13,2.54545 L13,1.5 C13,1.223858 12.7761,1 12.5,1 L0.5,1 Z M0,8.68182 C0,8.95796 0.223858,9.18182 0.5,9.18182 L11.5,9.18182 C11.7761,9.18182 12,8.95796 12,8.68182 L12,7.63636 C12,7.36022 11.7761,7.13636 11.5,7.13636 L0.5,7.13636 C0.223858,7.13636 0,7.36022 0,7.63636 L0,8.68182 Z M0,11.75 C0,12.0261 0.223858,12.25 0.5,12.25 L9.5,12.25 C9.77614,12.25 10,12.0261 10,11.75 L10,10.70455 C10,10.4284 9.77614,10.20455 9.5,10.20455 L0.5,10.20455 C0.223858,10.20455 0,10.4284 0,10.70455 L0,11.75 Z"></path></svg></span>Global</th><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesTitle"><path d="M7.73943662,8.6971831 C7.77640845,8.7834507 7.81338028,8.8943662 7.81338028,9.00528169 C7.81338028,9.49823944 7.40669014,9.89260563 6.91373239,9.89260563 C6.53169014,9.89260563 6.19894366,9.64612676 6.08802817,9.30105634 L5.75528169,8.33978873 L2.05809859,8.33978873 L1.72535211,9.30105634 C1.61443662,9.64612676 1.2693662,9.89260563 0.887323944,9.89260563 C0.394366197,9.89260563 0,9.49823944 0,9.00528169 C0,8.8943662 0.0246478873,8.7834507 0.0616197183,8.6971831 L2.46478873,2.48591549 C2.68661972,1.90669014 3.24119718,1.5 3.90669014,1.5 C4.55985915,1.5 5.12676056,1.90669014 5.34859155,2.48591549 L7.73943662,8.6971831 Z M2.60035211,6.82394366 L5.21302817,6.82394366 L3.90669014,3.10211268 L2.60035211,6.82394366 Z M11.3996479,3.70598592 C12.7552817,3.70598592 14,4.24823944 14,5.96126761 L14,9.07922535 C14,9.52288732 13.6549296,9.89260563 13.2112676,9.89260563 C12.8169014,9.89260563 12.471831,9.59683099 12.4225352,9.19014085 C12.028169,9.6584507 11.3257042,9.95422535 10.5492958,9.95422535 C9.60035211,9.95422535 8.47887324,9.31338028 8.47887324,7.98239437 C8.47887324,6.58978873 9.60035211,6.08450704 10.5492958,6.08450704 C11.3380282,6.08450704 12.040493,6.33098592 12.4348592,6.81161972 L12.4348592,5.98591549 C12.4348592,5.38204225 11.9172535,4.98767606 11.1285211,4.98767606 C10.6602113,4.98767606 10.2411972,5.11091549 9.80985915,5.38204225 C9.72359155,5.43133803 9.61267606,5.46830986 9.50176056,5.46830986 C9.18133803,5.46830986 8.91021127,5.1971831 8.91021127,4.86443662 C8.91021127,4.64260563 9.0334507,4.44542254 9.19366197,4.34683099 C9.87147887,3.90316901 10.6232394,3.70598592 11.3996479,3.70598592 Z M11.1778169,8.8943662 C11.6830986,8.8943662 12.1760563,8.72183099 12.4348592,8.37676056 L12.4348592,7.63732394 C12.1760563,7.29225352 11.6830986,7.11971831 11.1778169,7.11971831 C10.5616197,7.11971831 10.056338,7.45246479 10.056338,8.0193662 C10.056338,8.57394366 10.5616197,8.8943662 11.1778169,8.8943662 Z M0.65625,11.125 L13.34375,11.125 C13.7061869,11.125 14,11.4188131 14,11.78125 C14,12.1436869 13.7061869,12.4375 13.34375,12.4375 L0.65625,12.4375 C0.293813133,12.4375 4.43857149e-17,12.1436869 0,11.78125 C-4.43857149e-17,11.4188131 0.293813133,11.125 0.65625,11.125 Z"></path></svg></span>Description</th></tr></thead><tbody><tr id="33e63878-35ca-4ff8-b625-8698decbee1f"><td class="cell-oNAe"><code>it.skip()</code></td><td class="cell-title"><a href="Web4%203%20Authentication%2032c2841d6bbf4360899f170f1d3263cf/Untitled%20Database%207ceeab05eb944b6daa79a2695a375786/skips%20the%20test%2033e6387835ca4ff8b6258698decbee1f.html">skips the test</a></td></tr><tr id="b91a1d0f-b230-4ed0-968d-10dd762dcfbd"><td class="cell-oNAe"><code>it.only()</code></td><td class="cell-title"><a href="Web4%203%20Authentication%2032c2841d6bbf4360899f170f1d3263cf/Untitled%20Database%207ceeab05eb944b6daa79a2695a375786/isolates%20a%20test%20b91a1d0fb2304ed0968d10dd762dcfbd.html">isolates a test</a></td></tr></tbody></table></div><p id="2b5a7a52-1fd1-4291-a199-0dbbaf77939e" class="">The remaining globals can be found in the Jest <a href="https://jestjs.io/docs/en/api">documentation (Links to an external site.)</a></p><h2 id="b5ae32fe-a5f9-45fe-95f2-b157918ec7a1" class=""><strong>Follow Along</strong></h2><p id="f966f5be-4998-408c-8723-9518b9779e5c" class="">We&#x27;re going to write our very own unit test for a JavaScript function called <code>averageTestScore</code>. This function takes an array of scores (numbers) and returns the average score.</p><p id="0b2d824a-878d-4ae5-a549-47436cade284" class="">Copy the following function to a file called <code>mathHelpers.js</code>.</p><pre id="766af82a-d50f-4d22-8eb7-b2b7825fa308" class="code code-wrap"><code>const averageTestScore = testScores =&gt; {
+  let totalSumScores = 0;
+  let numberOfScore = 0;
+
+  for (let i = 0; i &lt; testScores.length; i++) {
+    totalSumScores += testScores[i];
+    numberOfScore++;
+  }
+
+  return totalSumScores / numberOfScore;
+};
+
+module.exports = averageTestScore;</code></pre><p id="d51b73d5-4a6e-4f56-83b5-ccc5a46aa38d" class="">In a <code>mathHelpers.test.js</code> file, we&#x27;ll start creating the tests we want to run on our function. Remember, the <code>it</code> statements describe what the tests will do. While we&#x27;re brainstorming we can use <code>it.todo()</code> to capture ideas for future tests and fill up the test details one test at a time later. This will indicate to indicate to our test runner that we don&#x27;t want to run that test yet, but to keep note of it instead.</p><pre id="ce64e1b7-683b-438d-a23a-f51eaf7d7a47" class="code code-wrap"><code>describe(&quot;mathHelpers&quot;, () =&gt; {
+  describe(&quot;averageTestScore&quot;, () =&gt; {
+    it.todo(&quot;should calculate the average for an array of numbers&quot;);
+
+    it.todo(&quot;should throw an error if the argument is not an array&quot;);
+  });
+});</code></pre><p id="dc172d82-21b2-46c4-b7de-e6d845f613dc" class="">After we&#x27;ve created the <code>it.todo()</code> statements its time to write the actual tests! We&#x27;ll start by changing the <code>it.todo()</code>s into <code>it()</code> globals. First, we&#x27;ll set up dummy data and, as usual, state the expected outcome in the form of a callback. For example, when we have a score array of <code>[2,4,6,6,2]</code>, we expect the average <code>toBe(4)</code>.</p><pre id="52060ace-bd14-497b-a293-a4b79543eb0c" class="code code-wrap"><code>const { averageTestScore } = require(&quot;./mathHelpers.js&quot;);
+
+describe(&quot;mathHelpers&quot;, () =&gt; {
+
+  describe(&quot;averageTestScore&quot;, () =&gt; {
+
+    it(&quot;should calculate the average for an array of numbers&quot;, () =&gt; {
+      const scores = [2, 4, 6, 6, 2];
+
+      const average = averageTestScore(scores);
+
+      expect(average).toBe(4);
+    })
+
+    it.todo(&quot;should throw an error if the argument is not an array&quot;, () =&gt; {
+      expect(() =&gt; { averageTestScore(5) }).toThrow();
+      expect(() =&gt; { averageTestScore(&quot;five and two&quot;) }).toThrow();
+      expect(() =&gt; { averageTestScore({ number: 5 }) }).toThrow();
+      expect(() =&gt; { averageTestScore(undefined).toThrow();
+      expect(() =&gt; { averageTestScore(null).toThrow();
+      expect(() =&gt; { averageTestScore(NaN).toThrow();
+    })
+
+  });
+
+});</code></pre><p id="2a12c8d6-f1a7-47f5-9585-7d6284b475c5" class="">
+</p><h1 id="f5911d3c-a0ce-4ccb-9a7e-5ac6bced0a4c" class="">Objective 3 - use Test Driven Development</h1><h2 id="bf88933c-39db-48b6-91d9-7ca34659aa1d" class=""><strong>Overview</strong></h2><p id="6f2ff7d4-c42b-42d0-98cd-6320a8df0f57" class="">Test driven development is the process of writing tests before code. In theory, when you start with the end (the tests) in mind, you can write much higher quality code. You might be familiar with similar philosophies in teaching (backwards planning) -- or from the famous book &quot;7 Habits of Highly Effective People&quot; (starting with the end in mind).</p><p id="1982eb1f-5a24-43f8-97c2-f508133fa5ec" class="">Let&#x27;s consider some unit of code. We want this function to take 2 numbers and return the first number to the power of the second number.</p><p id="d3e06a27-3bde-4186-943a-71cfc63946d9" class="">Some assertions we might want to check are:</p><ul id="1273e18a-3ccc-451d-8714-45534c870212" class="bulleted-list"><li>The function returns a number</li></ul><ul id="eb4c28e6-6ef1-4a99-9d8f-6987c39d6bc4" class="bulleted-list"><li>The function returns a to the power of b</li></ul><ul id="f4ea1cec-cc4f-4de8-95d2-0bb13c8d0681" class="bulleted-list"><li>The function does not return b to the power of a</li></ul><ul id="499a46d1-7d8d-488a-89ff-c6477c8576b2" class="bulleted-list"><li>The function returns undefined if one parameter is not a number</li></ul><p id="5f4ef767-6a4c-4407-9945-d07aa7d6e629" class="">There&#x27;s really an endless amount of assertions we could check, but for test driven development it helps to think of the most-likely scenarios where the unit could fail.</p><p id="d6a563ae-9478-4bab-8ff0-9e6cc910c939" class="">In this example we&#x27;d write all of these tests in Jest. After that we could start hacking away at the function. So as long as all the tests pass, you can be confident in what you&#x27;ve created.</p><h2 id="c6770c2b-bb81-4888-9f7c-4d9c09312e5f" class=""><strong>Follow Along</strong></h2><p id="d1dd6bc7-3daa-4e3e-9bc7-51f87ac90b91" class="">In this tutorial, let&#x27;s consider an example where we want to write a function to accept a list of salaries and remove all of the salaries that are less than <code>$50,000</code>.</p><ol type="1" id="f0877e45-7467-442c-9600-d876aba2d97e" class="numbered-list" start="1"><li>Spend 3-5 minutes brainstorming test ideas. What are all the possible ways you could design this function wrong? What are all the ways you could design it right? Jot those ideas down.</li></ol><p id="3ced3a34-68e2-4588-8393-488a28e1a88b" class="">Your list may contain some of the following ideas, more or less is fine:</p><ul id="923ca0a7-a18f-4575-9152-6d7ffd26a24f" class="bulleted-list"><li>The function should return an array shorter than the original array</li></ul><ul id="27fe4b11-bef7-41d6-abb8-8132930763c1" class="bulleted-list"><li>The array should contain numbers</li></ul><ul id="b53fd8d8-8b7f-4d96-aae9-999cadebacad" class="bulleted-list"><li>The function should remove all salaries less than 50,000</li></ul><ul id="faca08eb-5040-4b27-8d24-ea251461f4cf" class="bulleted-list"><li>The function should allow for type coercion (&quot;1&quot; = 1)</li></ul><ul id="cb2e921f-c46d-436f-b199-5b3337ef427c" class="bulleted-list"><li>The function should not remove 50,000</li></ul><ul id="ac995506-e544-4e5d-9d27-90b61fab1d2d" class="bulleted-list"><li>The function should not remove any salary above 50,000</li></ul><ol type="1" id="d145b835-ed65-4a4a-9751-788b6c7266a8" class="numbered-list" start="1"><li>From the list generated above, we&#x27;ll want to start by writing a single assertion. That might look something like this:</li></ol><pre id="2f48efc1-6634-4683-b5e8-4a79e7549724" class="code code-wrap"><code>describe(&quot;removeSalaries&quot;, () =&gt; {
+  it(&quot;should return an array of shorter length&quot;, () =&gt; {
+    // assertions and matchers here
+  });</code></pre><ol type="1" id="052f0aef-60d0-465a-ba5b-8425b7e2fcfc" class="numbered-list" start="1"><li>Next we want to write the test. This is good practice for test writing from logic you are already familiar with. The final result will look something like this:</li></ol><pre id="a84a6281-3a10-4099-a5df-54cd8988b8d4" class="code code-wrap"><code>describe(&#x27;removeSalaries&#x27;, () =&gt; {
+    it(&#x27;should return an array of shorter length&#x27;, () =&gt; {
+        const salaries = [50000, 45000, 60000];
+        expect(removeSalaries(salaries).toHaveLength(1);
+    });</code></pre><ol type="1" id="e86ff934-75ae-4e0b-bfd5-15d7fa0a177c" class="numbered-list" start="1"><li>Once we&#x27;ve written a test we can start writing code to make the test pass. Based on the test we&#x27;ve generated so far we have a rudimentary idea of what our function needs to contain. We&#x27;ll want to return an array of shorter length than our original array, and that return should filter based on salaries. One version of such a function is below, but there are plenty of options to make our test pass.</li></ol><pre id="e53564b5-d41b-4189-a8cd-84537fb2a0ea" class="code code-wrap"><code>// name function based on test
+const removeSalaries = salaries =&gt; {
+  //create an empty array
+  const higherSalaries = [];
+  //use conditional logic to add salaries to the new array
+  for (x in salaries) {
+    if (salaries[x] &lt; 50000) {
+      higherSalaries.append(salaries[x]);
+    }
+  }
+  // return new array
+  return higherSalaries;
+};</code></pre><p id="8a7b5cca-3620-4751-ad74-1a95d36778eb" class="">5Design a series of tests for a function that accepts an array of objects with the format <code>{name: &quot;string&quot;, age: number}</code> and returns the names of all people who are over the age of <code>18</code>.. Once our first test is passing, the process repeats over and over again! As we write tests and refactor code, we develop something thorough and complete. If you need any extra JavaScript practice, feel free to work on it here.</p><p id="83cd3570-65b3-485c-b981-22abc6ed5b48" class="">A final test file might look like this:</p><pre id="96abde7f-a99c-4ff4-8dd0-f968725a0938" class="code code-wrap"><code>describe(&#x27;removeSalaries&#x27;, () =&gt; {
+    it(&#x27;should return an array of shorter length&#x27;, () =&gt; {
+        const salaries = [50000, 45000, 60000];
+        expect(removeSalaries(salaries).toHaveLength(1);
+    });
+    it(&#x27;should return numbers&#x27;, () =&gt; {
+        expect(removeSalaries(salaries).toContainType)
+    });
+    it(&#x27;should remove all salaries less than 50,000&#x27;, () =&gt; {
+        const salaries = [50000, 45000, 60000];
+        const expected = [60000];
+        expect(removeSalaries(salaries).arrayContaining(expected);
+    });
+    it(&#x27;should allow for type coercion&#x27;, () =&gt; {
+        const salaries = [&quot;50000&quot;, &quot;45000&quot;, &quot;60000&quot;];
+        const expected = [60000];
+        expect(removeSalaries(salaries).arrayContaining(expected);
+    });
+    it(&#x27;should not remove 50,000&#x27;, () =&gt; {
+        const salaries = [50000, 60000]
+        expect(removeSalaries(salaries).toContain([50000]))
+    });
+})</code></pre><p id="4f753f9f-f987-45e3-9a04-b492dd4029c8" class="">
+</p><p id="c14d7a00-2f09-44d6-a39f-90a165943a3c" class="">
+</p><p id="3ddb1b16-a851-4a71-ab6a-ec3d441ef6e7" class="">
+</p></div></article></body></html>

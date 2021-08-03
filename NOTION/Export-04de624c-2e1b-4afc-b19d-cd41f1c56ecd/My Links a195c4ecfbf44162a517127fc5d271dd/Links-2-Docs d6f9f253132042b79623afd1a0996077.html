@@ -1,0 +1,668 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Links-2-Docs</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="d6f9f253-1320-42b7-9623-afd1a0996077" class="page sans"><header><h1 class="page-title">Links-2-Docs</h1><table class="properties"><tbody><tr class="property-row property-row-created_time"><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesCreatedAt"><path d="M6.98643729,14.0000972 C5.19579566,14.0000972 3.40419152,13.3106896 2.04245843,11.9323606 C-0.681017475,9.21200555 -0.680780251,4.76029539 2.04293482,2.04012507 C4.76664406,-0.68004331 9.22427509,-0.68004331 11.9480135,2.04013479 C13.272481,3.36277455 14,5.1330091 14,6.99552762 C14,8.87640182 13.2721894,10.6285043 11.9480135,11.9509302 C10.5679344,13.3105924 8.77756503,14.0000972 6.98643729,14.0000972 Z M10.2705296,7.00913883 L10.2705296,8.46099754 L10.2705296,8.65543362 L10.076181,8.65543362 L8.6543739,8.65543362 L5.72059514,8.65543362 L5.52619796,8.65543362 L5.52619796,8.46099754 L5.52619796,5.52541044 L5.52619796,3.37946773 L5.52619796,3.18502193 L5.72059514,3.18502193 L7.17253164,3.18502193 L7.36692883,3.18502193 L7.36692883,3.37946773 L7.36692883,6.81467358 L10.076181,6.81467358 L10.2705296,6.81467358 L10.2705296,7.00913883 Z M12.1601539,6.99552762 C12.1601539,5.61697497 11.6190112,4.32597154 10.6393933,3.34769528 C8.63253764,1.34336744 5.35197452,1.34061603 3.34153136,3.33944106 C3.33868273,3.34219247 3.33607716,3.34494388 3.33322852,3.34769528 C1.32397148,5.35459953 1.32372842,8.63641682 3.33322852,10.6433794 C5.34295224,12.6504489 8.62968901,12.6504489 10.6393933,10.6433794 C11.6190112,9.66506426 12.1601539,8.37408027 12.1601539,6.99552762 Z"></path></svg></span>Created</th><td><time>@July 20, 2021 3:13 PM</time></td></tr><tr class="property-row property-row-multi_select"><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesMultipleSelect"><path d="M4,3 C4,2.447715 4.447715,2 5,2 L12,2 C12.5523,2 13,2.447716 13,3 C13,3.55228 12.5523,4 12,4 L5,4 C4.447715,4 4,3.55228 4,3 Z M4,7 C4,6.447715 4.447715,6 5,6 L12,6 C12.5523,6 13,6.447716 13,7 C13,7.55228 12.5523,8 12,8 L5,8 C4.447715,8 4,7.55228 4,7 Z M4,11 C4,10.447715 4.447715,10 5,10 L12,10 C12.5523,10 13,10.447716 13,11 C13,11.55228 12.5523,12 12,12 L5,12 C4.447715,12 4,11.55228 4,11 Z M2,4 C1.44771525,4 1,3.55228475 1,3 C1,2.44771525 1.44771525,2 2,2 C2.55228475,2 3,2.44771525 3,3 C3,3.55228475 2.55228475,4 2,4 Z M2,8 C1.44771525,8 1,7.55228475 1,7 C1,6.44771525 1.44771525,6 2,6 C2.55228475,6 3,6.44771525 3,7 C3,7.55228475 2.55228475,8 2,8 Z M2,12 C1.44771525,12 1,11.5522847 1,11 C1,10.4477153 1.44771525,10 2,10 C2.55228475,10 3,10.4477153 3,11 C3,11.5522847 2.55228475,12 2,12 Z"></path></svg></span>Tags</th><td></td></tr><tr class="property-row property-row-url"><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesUrl"><path d="M3.73333,3.86667 L7.46667,3.86667 C8.49613,3.86667 9.33333,4.70387 9.33333,5.73333 C9.33333,6.7628 8.49613,7.6 7.46667,7.6 L6.53333,7.6 C6.01813,7.6 5.6,8.0186 5.6,8.53333 C5.6,9.04807 6.01813,9.46667 6.53333,9.46667 L7.46667,9.46667 C9.5284,9.46667 11.2,7.79507 11.2,5.73333 C11.2,3.6716 9.5284,2 7.46667,2 L3.73333,2 C1.6716,2 0,3.6716 0,5.73333 C0,7.124 0.762067,8.33453 1.88953,8.97713 C1.87553,8.83107 1.86667,8.6836 1.86667,8.53333 C1.86667,7.92013 1.98753,7.33447 2.2036,6.7978 C1.99267,6.4954 1.86667,6.12953 1.86667,5.73333 C1.86667,4.70387 2.70387,3.86667 3.73333,3.86667 Z M12.1095,5.28907 C12.1231,5.4356 12.1333,5.58307 12.1333,5.73333 C12.1333,6.34607 12.0101,6.9294 11.7931,7.46513 C12.0059,7.768 12.1333,8.13573 12.1333,8.53333 C12.1333,9.5628 11.2961,10.4 10.2667,10.4 L6.53333,10.4 C5.50387,10.4 4.66667,9.5628 4.66667,8.53333 C4.66667,7.50387 5.50387,6.66667 6.53333,6.66667 L7.46667,6.66667 C7.98187,6.66667 8.4,6.24807 8.4,5.73333 C8.4,5.2186 7.98187,4.8 7.46667,4.8 L6.53333,4.8 C4.4716,4.8 2.8,6.4716 2.8,8.53333 C2.8,10.59507 4.4716,12.2667 6.53333,12.2667 L10.2667,12.2667 C12.3284,12.2667 14,10.59507 14,8.53333 C14,7.14267 13.2375,5.93167 12.1095,5.28907 Z"></path></svg></span>URL</th><td><a href="https://docs.netlify.com/site-deploys/overview/#branches-and-deploys" class="url-value">https://docs.netlify.com/site-deploys/overview/#branches-and-deploys</a></td></tr></tbody></table></header><div class="page-body"><ul id="c53f8a73-cd2d-4e82-be1b-9a04f3e3f9cf" class="bulleted-list"><li><figure id="10c4f777-eda0-4d42-bab1-29907f19d1a8" class="image"><a href="Links-2-Docs%20d6f9f253132042b79623afd1a0996077/site-deploys-deploy-log-selected-lines.png"><img style="width:700px" src="Links-2-Docs%20d6f9f253132042b79623afd1a0996077/site-deploys-deploy-log-selected-lines.png"/></a></figure></li></ul><ul id="9ff508db-8931-4e25-b42d-36cc0b775d54" class="bulleted-list"><li>If needed, press esc to deselect log lines.</li></ul><p id="263251bf-e9c6-44a5-9176-27f46b7e326f" class="">Once you’ve selected a line or range, copy the resulting URL from the address bar of your web browser. The URL syntax should resemble this: <code>https://app.netlify.com/sites/SITE_NAME/deploys/DEPLOY_ID#L5-L10</code></p><h2 id="6a965715-1a58-4288-b30e-b24a7152f18e" class="">Branches and deploys</h2><p id="255adee4-6942-48d7-bfc3-c5b6a4e81390" class="">Netlify lets you control which branches in your Git repository you want to deploy.</p><h3 id="d28b1071-8786-4280-bf21-0b05170e0c8b" class="">Definitions</h3><ul id="8f6cf40a-0828-4ffe-9333-1711760d1605" class="bulleted-list"><li><strong>Production branch</strong>: the Git branch that Netlify uses to build and deploy changes to your site’s main URL. For example, <code>www.yourcustomdomain.com</code> and <code>yoursitename.netlify.app</code>.</li></ul><ul id="109588fb-ad49-483f-8c4a-f74f74d53ac3" class="bulleted-list"><li><strong>Production deploy</strong>: a deploy from the production branch. If auto publishing is enabled, each new production deploy will update what is published at your site’s main URL.</li></ul><ul id="fbc2fd61-1368-4fbf-bec0-d5edcfcbe036" class="bulleted-list"><li><strong>Branch deploy</strong>: a deploy generated from a branch that is not your production branch. Branch deploys are published to a URL which includes the branch name as a prefix. For example, if a branch is called <code>staging</code>, it will deploy to <code>staging--yoursitename.netlify.app</code>. If you use Netlify DNS, you can enable branch subdomains, so the <code>staging</code> branch example would deploy to <code>staging.yourcustomdomain.com</code>.</li></ul><ul id="d7418ece-3146-4a88-80f7-402e8327b5f6" class="bulleted-list"><li><strong>Deploy Preview</strong>: a deploy generated from a pull request or merge request, building the site as it would be if the proposed changes were merged. Deploy Previews are published to a URL which has the prefix <code>deploy-preview</code> followed by the identifier number of the pull request or merge request. For example, a Deploy Preview for pull/merge request #42 will deploy to <code>deploy-preview-42--yoursitename.netlify.app</code>. For more information, visit the docs on <a href="https://docs.netlify.com/site-deploys/deploy-previews/">Deploy Previews</a>.</li></ul><ul id="d26ad257-ce45-4bd7-bda1-d0a606f19264" class="bulleted-list"><li><strong>Permalink</strong>: every successful build of your site also creates a deploy permalink that starts with the deploy ID number. For example: <code>1234abcd12acde000111cdef--yoursitename.netlify.app</code>. The web content at this URL never changes. This is in contrast to production deploys, branch deploys, and Deploy Previews where the web content is updated when you merge or push new commits.</li></ul><h3 id="589799d7-0051-4fe0-a6c8-2a4d6a610d12" class="">Branch deploy controls</h3><p id="7ec77230-4d1a-4bc0-84a9-dbe5abfa372b" class="">By default, Netlify deploys the site’s production branch after every change.</p><p id="863a6801-fd93-4603-a1a0-de984cd3b23a" class="">To generate branch deploys for other branches in your repository, select your site on the <strong>Sites</strong> page. Then go to <strong>Site settings &gt; Build &amp; deploy &gt; Continuous Deployment &gt; Branches</strong>, and select <strong>Edit settings</strong>. You can choose to deploy all branches (including future branches), or select individual branches you would like to deploy.</p><figure id="2137bd09-4c58-4275-b573-504c354a10de" class="image"><a href="Links-2-Docs%20d6f9f253132042b79623afd1a0996077/site-deploys-allowed_branches.png"><img style="width:700px" src="Links-2-Docs%20d6f9f253132042b79623afd1a0996077/site-deploys-allowed_branches.png"/></a></figure><p id="1e3476df-498e-4aed-9f7a-9951a87a2923" class="">When selecting individual branches for deployment, type the name of each branch you want to deploy. You can also enter branch names you haven’t created yet.</p><p id="b0b615b8-ef51-40ee-8722-ed5fee9608ac" class="">Once you select some or all of your branches for branch deploys, Netlify will start watching those branches for new commits and pull/merge requests. As soon as you start pushing changes to those branches, you’ll find new deploys for those branches.</p><h3 id="94a7fe74-4a7c-4c64-8f62-501ca4d38fab" class="">Deploy Preview controls</h3><p id="4b36a9a5-c331-4343-9ab1-41ac0b68a6e9" class="">By default, Netlify automatically builds Deploy Previews for GitHub pull requests and GitLab merge requests when the base/target branch is your production branch. If you enable branch deploys for some or all of your other branches, we’ll also build Deploy Previews for pull/merge requests against those branches. The <a href="https://docs.netlify.com/site-deploys/deploy-previews/">Netlify Drawer</a> is enabled by default for Deploy Previews.</p><p id="9bd82cf4-01f9-4afb-8104-d90d114bd756" class="">You can control in the UI whether or not Deploy Previews are generated for pull/merge requests. You can also enable or disable the Netlify Drawer. To change these settings, select your site and go to <strong>Site settings &gt; Build &amp; deploy &gt; Continuous Deployment &gt; Deploy Previews</strong>, then select <strong>Edit settings</strong>.</p><h3 id="5b4b7b03-4731-4006-a114-11f60cbf592a" class="">Search engine indexing</h3><p id="f4e40c8b-8c0e-4590-8a2b-ac4cb0846084" class="">Netlify automatically ensures that only your currently published production deploy and most recent branch deploys can be indexed by search engines. Requests to Deploy Previews, unpublished production deploys, and old branch deploys will have an <code>X-Robots-Tag: noindex</code> header included in the response. Depending on how you use branch deploys, you may want to prevent even your most recent branch deploys from being indexed by search engines. You can do so by configuring <a href="https://docs.netlify.com/routing/headers/">custom headers</a> in your branch.</p><h2 id="a982d6e4-800c-4471-baba-7b4cd7eb74ed" class="">Deploy contexts</h2><p id="bb0e0518-727e-41e4-8d1e-89bdf8828934" class="">Deploy contexts give you the flexibility to <a href="https://docs.netlify.com/configure-builds/file-based-configuration">configure your site’s builds</a> depending on the context they are going to be deployed to.</p><p id="6710aa16-8be9-4c69-8365-4d7caa5844b9" class="">There are three predefined deploy contexts:</p><ul id="c5326316-dd63-4a37-bfe8-326fed65a599" class="bulleted-list"><li><code>production</code>: this context corresponds to the main site’s deployment, attached to the Git branch you set when the site is created.</li></ul><ul id="8a1208d1-c2c3-4f8c-82a1-c7140a32a7bf" class="bulleted-list"><li><code>deploy-preview</code>: this context corresponds to the previews we build for pull/merge requests.</li></ul><ul id="304d8a93-59f7-4da1-aed1-e615e7f06e60" class="bulleted-list"><li><code>branch-deploy</code>: this context corresponds to deploys from branches that are not the site’s main production branch.</li></ul><p id="0b5cba0b-2ead-48db-9a66-8d87436f3ed9" class="">Besides these three predefined contexts, sites can use also branch names as custom deploy contexts. For example, a branch called <code>staging</code> will match a deploy context called <code>staging</code>.</p><p id="0b0b66e1-f45b-47aa-b314-c8cc1c2cb09b" class="">Deploy contexts allow you to override options from your site’s settings including the build command, the environment variables added to the build, <a href="https://docs.netlify.com/configure-builds/build-plugins/">Build Plugin configuration</a>, and more.</p><p id="9a812596-a544-49f4-88a1-323e1e9aaa93" class="">Overrides are applied in a hierarchical order. The site’s global settings apply to each deploy, if we’re building the production site, and if you change options in your production context, they will be overridden. Only options that are set explicitly are overridden; if you leave one out, the build will use the value of the global settings or previous contexts. Environment variables are also overridden individually, for example, you can have access tokens as environment variables per context.</p><p id="6152607c-f615-4537-b11c-3b9c13e65377" class="">To configure deploy contexts, you must create a file called <code>netlify.toml</code> in the root of your Git repository. There, you can set as many contexts as you want to configure.</p><pre id="791e2fcd-2fd1-452b-b3a9-f0363e14e048" class="code code-wrap"><code># Production context:
+# All deploys from the main repository branch
+# will inherit these settings.
+[context.production]
+  command = &quot;make production&quot;
+  [context.production.environment]
+    ACCESS_TOKEN = &quot;super secret&quot;
+  # Deploys from main branch run this plugin in the build.
+  # Plugins context requires double brackets.
+  [[context.production.plugins]]
+    package = &quot;@netlify/plugin-sitemap&quot;
+
+# Deploy Preview context:
+# All deploys generated from a pull/merge request
+# will inherit these settings.
+[context.deploy-preview.environment]
+  ACCESS_TOKEN = &quot;not so secret&quot;
+
+# Branch deploy context:
+# All deploys that are not from a pull/merge request
+# or from the production branch will inherit these settings.
+[context.branch-deploy]
+  command = &quot;make staging&quot;
+
+# Specific branch context:
+# Deploys from this branch will take these settings
+# and override their current ones.
+[context.feature]
+  command = &quot;make feature&quot;
+
+[context.&quot;features/branch&quot;]
+  command = &quot;gulp&quot;
+</code></pre><p id="4084c682-bde9-4ce2-b5d4-ae0f5ed411c8" class="">File-based configuration settings will override those set in the UI. In the <code>netlify.toml</code> file, settings for more specific contexts will override more general ones. For example, settings for a specific branch will override those for branch-deploy.</p><p id="0fd3c69b-bb17-4b1d-8656-7128bf3318a2" class="">Visit our docs on <a href="https://docs.netlify.com/configure-builds/file-based-configuration">file-based configuration</a> to learn more about what you can do with deploy contexts.</p><h2 id="cbf26ad1-f551-47e2-ab3d-9a65a7ec4e20" class="">More site deploys resources</h2><ul id="273e3574-3317-43f4-a377-89971b536cf9" class="bulleted-list"><li><a href="https://docs.netlify.com/site-deploys/create-deploys/">Create deploys</a></li></ul><ul id="e24a406d-df89-4840-826c-73b9f524f9be" class="bulleted-list"><li><a href="https://docs.netlify.com/site-deploys/manage-deploys/">Manage deploys</a></li></ul><ul id="811cb65c-283b-4761-a181-77a6de18833c" class="bulleted-list"><li><a href="https://docs.netlify.com/site-deploys/deploy-previews/">Deploy Previews</a></li></ul><ul id="3afe7902-3877-4741-a503-0fab9d38cf21" class="bulleted-list"><li><a href="https://docs.netlify.com/site-deploys/split-testing/">Split Testing</a></li></ul><ul id="781f3054-da27-45c5-9e30-953bd50e35cb" class="bulleted-list"><li><a href="https://docs.netlify.com/site-deploys/notifications/">Deploy notifications</a></li></ul><ul id="c1dcca6b-c4e5-4afc-9ce4-c7e3c2fa5e13" class="bulleted-list"><li><a href="https://docs.netlify.com/site-deploys/post-processing/">Post processing</a></li></ul></div></article></body></html>

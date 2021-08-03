@@ -1,0 +1,659 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Git for Build Sprint</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="1c4e712d-8a63-4d56-bc33-233415a3bbca" class="page sans"><header><img class="page-cover-image" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;ixid=eyJhcHBfaWQiOjYzOTIxfQ" style="object-position:center 50%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">⌨️</span></div><h1 class="page-title">Git for Build Sprint</h1></header><div class="page-body"><p id="090f83c6-9297-4dab-aafa-d0e6f8fc6034" class="">
+</p><nav id="fb628a7e-45d3-4ba7-95cc-9df9abba6643" class="block-color-gray table_of_contents"><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#ea19a11d-dbfa-4f54-b41e-54085eb9cb8a">Git MVP</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#dd8ae3cb-72e1-4d60-922f-08260b413d18">1. Use <code>main</code> as your primary branch</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#3ab72276-b5e8-49b1-be36-7a496e5fd999">2. Feature Branch Naming</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#08216865-acc6-477a-9ffb-d9f8cef7bdda">3. Delete Merged Branches</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#924b659d-5091-4fa4-9a69-c848ce037f92">4. Build Sprint Git Workflow</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#4a398f73-95e5-4a17-addf-801844a1bab0">Getting Started</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#f0d0aef1-693c-414e-a6eb-a020da628b41">Sharing Is Good</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#d55b3388-85a2-4b33-b670-658d27462485">We have lift off!   🚀</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#532430fb-43a5-4dda-b163-2f7801832412">One small step  👨🏾‍🚀</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#1b2c994d-c7ca-47f1-bd08-2b49f08b1cdf">Merging to <code>main</code></a></div></nav><p id="8ccd90cc-4edf-4933-9d27-20a0c95b6551" class="">
+</p><h1 id="ea19a11d-dbfa-4f54-b41e-54085eb9cb8a" class="">Git MVP</h1><p id="b24496f8-db53-4dd6-b3ec-d99adb80256a" class="">Git MVP includes 4 main requirements:</p><h2 id="dd8ae3cb-72e1-4d60-922f-08260b413d18" class="">1. Use <code>main</code> as your primary branch</h2><p id="ce395e7a-0c9c-49c5-8e4e-c60922e86260" class="">You must use <code>main </code>as your primary branch, which is the default when creating a new repository. <div class="indented"><p id="cb058846-2c89-4b08-b81d-459f90f24793" class=""><strong>Why?</strong></p><ul id="b21b51e0-983f-4abb-af15-3efc614fe897" class="bulleted-list"><li>Branching from the branches other than the <code>main </code>branch can create opportunities for merge conflicts.</li></ul></div></p><h2 id="3ab72276-b5e8-49b1-be36-7a496e5fd999" class="">2. Feature Branch Naming</h2><p id="5771f17a-0344-4279-ae98-1993a4f9daa9" class="">Feature branches must be named: <code>feature/&lt;descriptive name&gt;</code></p><p id="76699cf9-4fd2-43ab-ae68-67af7c10b165" class="">For example, if you&#x27;re working on a feature that allows users to change the email address in their profile, the branch should be named <code>feature/change-email</code></p><p id="b2528d09-5255-461d-82d2-4c5401893429" class="">More info on branches and how to create a branch can be found <a href="https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging">here</a>.<div class="indented"><p id="00fff030-4762-4cc7-99dd-f56eda21c9c5" class="">
+<strong>Why</strong>?</p><ul id="84b966bf-2b40-4dae-a1b4-83a3a5a663a2" class="bulleted-list"><li>Without a good naming convention, it is very easy to lose track of the purpose of a branch.</li></ul></div></p><h2 id="08216865-acc6-477a-9ffb-d9f8cef7bdda" class="">3. Delete Merged Branches</h2><p id="bdf6d513-4e65-43e9-9f24-70aa0e274c08" class="">After a branch has been merged to the <code>main </code>branch, it must be immediately deleted.<div class="indented"><p id="9ea463de-f3e3-4385-bba3-6363b7debe4f" class=""><strong>Why?</strong></p><ul id="ad7ec788-0a91-4d73-b714-a0dda1bbb6f1" class="bulleted-list"><li>Short-lived branches are a best-practice for minimizing merge conflicts. Leaving many branches active in a repository makes it difficult for team members to navigate the on-going work. Once a branch has been reviewed, approved, and merged into the <code>main </code>branch, it should be immediately deleted.</li></ul><ul id="7034dcab-5c07-4431-97cc-caf918f15f06" class="bulleted-list"><li>A healthy Git repository has a minimum of active branches.</li></ul><ul id="0b49e4e0-9a4e-414e-bfd0-09a7d4ce853b" class="bulleted-list"><li>This is <a href="https://help.github.com/en/github/administering-a-repository/managing-the-automatic-deletion-of-branches">easy to comply with using GitHub</a>.</li></ul></div></p><h2 id="924b659d-5091-4fa4-9a69-c848ce037f92" class="">4. Build Sprint Git Workflow</h2><p id="8c6e2f78-6356-4e27-a057-aae7bfcacb99" class=""><em>Following this workflow make it easier to collaborate with your teammates. It will also help prepare you for Labs, since it is very similar to the Git workflow you will use in Labs! </em>
+
+<strong>The idea is that each Trello card should be on its own pull request as a feature!</strong></p><p id="4e02b175-14a0-4b91-b744-6523b120ea54" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="70108f1e-dedc-49ff-9289-51d544b5113b"><div style="font-size:1.5em"><span class="icon">👉</span></div><div style="width:100%">The Build Sprint Git Workflow is designed to prepare you for your Labs experience. You can learn more about Git &amp; GitHub in Labs, check out the <a href="https://labs.lambdaschool.com/">Engineering Standards</a> and <a href="https://docs.labs.lambdaschool.com/guides/coding/git-workflow">Labs Git Workflow.</a></div></figure><h2 id="4a398f73-95e5-4a17-addf-801844a1bab0" class="">Getting Started</h2><p id="08f83d07-3c59-42fb-a520-97d76f913c96" class="">You&#x27;re ready to work on a new Trello card - let&#x27;s get started!</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="87fec22d-f565-4819-a26a-72ff4c331773"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><strong>WITHOUT FORKING, </strong>clone your team&#x27;s repository. 
+After that always make sure you start with a recent copy of the repo.</div></figure><p id="4e707c65-c7be-4a85-81f7-0c208add7d72" class=""><div class="indented"><h3 id="97ab549c-1847-4294-a5e8-2422338a1e85" class=""><code>&gt; git checkout main</code></h3><h3 id="1b3b77c6-489d-4105-8a20-b45d30912b62" class=""><code>&gt; git pull origin main</code></h3></div></p><p id="39a0a24c-f2b7-45e7-8bae-f62fad26438d" class="">
+</p><ul id="75712d81-0304-45b3-a10a-b00c3e8fd157" class="bulleted-list"><li>To get started on your first task let’s make a branch. Making sure you are on the <code>main </code>branch, start a new branch with a name that matches or correlates to the task you are about to begin. </li></ul><ul id="1c53e63f-cb47-49cb-a2c8-e0708578a2bf" class="bulleted-list"><li>The trick here is to think beyond yourself when naming the branch, stay aligned with your Trello board so you <em><strong>and</strong></em> others can easily make sense of it.
+</li></ul><pre id="ea9844f6-4836-4c65-a577-dcbe8e7b3879" class="code"><code>git checkout -b [feature/&lt;descriptive name&gt;]</code></pre><h2 id="f0d0aef1-693c-414e-a6eb-a020da628b41" class="">Sharing Is Good</h2><p id="7f95ec17-9d56-43ba-81cb-dd345ce4f363" class="">Now you have a branch to make all your awesome commits to! </p><ul id="368aa716-e099-42a9-8a2d-691d3deecb68" class="bulleted-list"><li>Copying the description from the Trello card, which should summarize the actual work in the PR, create a <strong>Draft Pull Request</strong> using the <code>main</code>branch as the <strong>base </strong>after you have made your first commit.  </li></ul><p id="24b35d42-a346-476d-99ac-4a55a1518a6c" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="b0f63929-566e-40f2-a65f-7d8b0995c83c"><div style="font-size:1.5em"><span class="icon">☝️</span></div><div style="width:100%">Github created pull request drafts so that notifications will be turned off by default until you decide you are ready for review.  </div></figure><p id="9840462c-c0c0-407b-9b20-3881f929954c" class="">
+</p><p id="bc3db406-bd0c-46d7-bde0-27d39a81f265" class="">
+</p><p id="a5197f01-ffdc-476f-9c6c-267b6fabe1b5" class="">
+</p><figure id="2ce10299-fd5e-44a5-b75f-c199f84e1576" class="image"><a href="../Copy%20of%20Git%20for%20Build%20Sprint%20ceaeebd0c4fd434fb27bf47368faa23c/draftPR.gif"><img style="width:1024px" src="../Copy%20of%20Git%20for%20Build%20Sprint%20ceaeebd0c4fd434fb27bf47368faa23c/draftPR.gif"/></a></figure><p id="e3863f40-d8ad-4123-9708-3f0f2278a87f" class="">
+</p><h2 id="d55b3388-85a2-4b33-b670-658d27462485" class="">We have lift off!   🚀</h2><p id="0d526d1e-2d85-4ae9-a692-749197524423" class="">Now we’re ready to make some awesome software. Committing and pushing our code regularly are habits worth having. Before we know it, we’ll be ready to take the PR out of draft mode.</p><p id="6f5210fb-0a34-4fcf-9ced-1fced7ba6f77" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="206fca1e-04e4-43fc-adbd-16ad46e95bd6"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">Tip: do your best to be a great team member by making commit messages as clear as possible. They don’t have to be elaborate- keep it to the point.</div></figure><p id="0f6a320c-c4a5-42ac-bbdb-f7d6dcfecdfc" class="">
+</p><h3 id="532430fb-43a5-4dda-b163-2f7801832412" class="">One small step  👨🏾‍🚀</h3><p id="422e2006-297d-4d19-ab8f-83ba922d26e7" class="">When you feel you’ve completed the task you’ve been working on, it&#x27;s time to: <div class="indented"><ul id="1b8006f9-5f2e-4bd8-8a87-73c387060c6c" class="bulleted-list"><li>Update the description</li></ul><ul id="e0dd2593-f8d1-46f1-b7c8-aa4748cf3569" class="bulleted-list"><li>Take the PR out of Draft Mode</li></ul><ul id="8c29b849-5ad2-4e7b-b4c7-12eb75be5f82" class="bulleted-list"><li>Make it &quot;<strong>ready for review</strong>&quot;.</li></ul></div></p><p id="5fcb9753-738c-4a2a-a670-a55cd5f2c251" class="">Ask someone in your team&#x27;s channel to review your work. <div class="indented"><p id="4bda79ec-7992-4dff-b0b4-a0138620585a" class=""> </p></div></p><figure id="3afe8a99-e976-441e-bb5a-911befe9f32f" class="image"><a href="../Copy%20of%20Git%20for%20Build%20Sprint%20ceaeebd0c4fd434fb27bf47368faa23c/github-ready-pr.png"><img style="width:780px" src="../Copy%20of%20Git%20for%20Build%20Sprint%20ceaeebd0c4fd434fb27bf47368faa23c/github-ready-pr.png"/></a></figure><p id="95e4e4e4-dcc0-43be-b3ce-221e32a77453" class="">
+</p><p id="a4a9441d-da1e-445b-9c21-a0d9bef301b2" class="">The team will then be notified of the PR and they can begin a review before merging it to the <code>main </code>branch.</p><p id="e4f8a196-0b3f-4529-bf56-f47aba53cbbf" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="c333a292-8105-4b73-8cea-36b2b476612f"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">Tip: Follow the team policy regarding the number of reviewers required before merging. It’s great practice to take the time and make comments in the code, even if just positive notes on good work your teammate did.</div></figure><p id="c09c560f-568d-4aac-a15a-94495cd444e5" class="">
+</p><h2 id="1b2c994d-c7ca-47f1-bd08-2b49f08b1cdf" class="">Merging to <code>main</code></h2><p id="25545b90-e8b9-4c85-8e34-dd077fe9691c" class="">If there are no conflicts to be resolved in the code choose <code>Rebase and merge</code> or <code>Squash and merge</code> from the <code>Merge</code> button.</p><figure id="10e9c13f-4192-456a-8255-0bf3601acdb2" class="image"><a href="../Copy%20of%20Git%20for%20Build%20Sprint%20ceaeebd0c4fd434fb27bf47368faa23c/github-merge.png"><img style="width:881px" src="../Copy%20of%20Git%20for%20Build%20Sprint%20ceaeebd0c4fd434fb27bf47368faa23c/github-merge.png"/></a></figure><p id="01867ecf-d540-4cdb-9bdb-79effcab806a" class="">
+</p><p id="80684540-a95d-4057-80e7-e9b17ea5151b" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="10558b10-d6e7-4d6d-86d2-7567c77e6d18"><div style="font-size:1.5em"><span class="icon">✅</span></div><div style="width:100%">If you find yourself with a merge conflict, there are a number of ways to solve it. The Github tools are very handy. You can also do it locally. When going down the local path, there is a good set of instructions <a href="https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-request-merges">here</a>.</div></figure><p id="8e26ddea-5480-47fa-9d39-4ee1eb018d43" class="">
+</p><p id="55920c35-2693-4566-8e46-fe401bc242ed" class="">Your code changes are now on the <code>main </code>branch, ready to <em>wow!</em> users with your updates. </p><p id="0ab9ccdc-d4dc-44ec-93b2-884156e51b5f" class="">Deploy your code (if not otherwise handled by Github Events) and be ready to support and address any issues that arise.</p><figure id="cbff1c88-fdc2-4796-ae50-61689a1952a7" class="image"><a href="../Copy%20of%20Git%20for%20Build%20Sprint%20ceaeebd0c4fd434fb27bf47368faa23c/git_comic.png"><img style="width:240px" src="../Copy%20of%20Git%20for%20Build%20Sprint%20ceaeebd0c4fd434fb27bf47368faa23c/git_comic.png"/></a><figcaption>Humor Break! </figcaption></figure><p id="81f1b507-daad-4e8e-b379-215277bcd3dc" class="">
+</p><ul id="08950960-11b8-48fe-9fcd-e1e2ef173ba2" class="toggle"><li><details open=""><summary>Revision History</summary><p id="82b920fb-c807-4108-9e18-3d5d6c5563c4" class="">July 30, 2020: Created by <span class="user">@Christine Carpenter</span> </p><p id="dd188d55-392a-4b0c-98e0-e9778044a95d" class="">August 8, 2020: Edited by: <span class="user">@Christine Carpenter</span> (update branch to main)</p></details></li></ul></div></article></body></html>

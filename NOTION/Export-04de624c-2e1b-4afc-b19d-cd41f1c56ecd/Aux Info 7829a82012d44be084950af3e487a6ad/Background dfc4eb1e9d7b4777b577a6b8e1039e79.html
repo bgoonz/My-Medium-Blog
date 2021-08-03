@@ -1,0 +1,1123 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Background</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="dfc4eb1e-9d7b-4777-b577-a6b8e1039e79" class="page sans"><header><h1 class="page-title">Background</h1><table class="properties"><tbody><tr class="property-row property-row-date"><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesDate"><path d="M10.8889,5.5 L3.11111,5.5 L3.11111,7.05556 L10.8889,7.05556 L10.8889,5.5 Z M12.4444,1.05556 L11.6667,1.05556 L11.6667,0 L10.1111,0 L10.1111,1.05556 L3.88889,1.05556 L3.88889,0 L2.33333,0 L2.33333,1.05556 L1.55556,1.05556 C0.692222,1.05556 0.00777777,1.75556 0.00777777,2.61111 L0,12.5 C0,13.3556 0.692222,14 1.55556,14 L12.4444,14 C13.3,14 14,13.3556 14,12.5 L14,2.61111 C14,1.75556 13.3,1.05556 12.4444,1.05556 Z M12.4444,12.5 L1.55556,12.5 L1.55556,3.94444 L12.4444,3.94444 L12.4444,12.5 Z M8.55556,8.61111 L3.11111,8.61111 L3.11111,10.1667 L8.55556,10.1667 L8.55556,8.61111 Z"></path></svg></span>Created</th><td><time>@July 20, 2021 12:00 AM</time></td></tr><tr class="property-row property-row-person"><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesPerson"><path d="M9.625,10.8465 C8.91187,10.2891 8.12088,9.926 7,9.26013 L7,8.71938 C7.21175,8.47612 7.392,8.176 7.53813,7.83213 C7.94587,7.7315 8.3125,7.33425 8.3125,7 C8.3125,6.51788 8.1095,6.32713 7.8715,6.17137 C7.8715,6.15562 7.875,6.14162 7.875,6.125 C7.875,5.41362 7.4375,3.5 5.25,3.5 C3.0625,3.5 2.625,5.4145 2.625,6.125 C2.625,6.14162 2.6285,6.15562 2.6285,6.17137 C2.3905,6.32713 2.1875,6.51788 2.1875,7 C2.1875,7.33425 2.55413,7.7315 2.96187,7.833 C3.108,8.176 3.28825,8.47612 3.5,8.71938 L3.5,9.26013 C2.37912,9.92513 1.58812,10.2882 0.875,10.8465 C0.041125,11.4984 0,12.4688 0,14 L10.5,14 C10.5,12.4688 10.4589,11.4984 9.625,10.8465 Z M13.125,7.3465 C12.4119,6.78912 11.6209,6.426 10.5,5.76013 L10.5,5.21938 C10.7118,4.97613 10.892,4.676 11.0381,4.33213 C11.4459,4.2315 11.8125,3.83425 11.8125,3.5 C11.8125,3.01787 11.6095,2.82713 11.3715,2.67138 C11.3715,2.65562 11.375,2.64162 11.375,2.625 C11.375,1.91363 10.9375,0 8.75,0 C6.5625,0 6.125,1.9145 6.125,2.625 C6.125,2.64162 6.1285,2.65562 6.1285,2.67138 C6.11188,2.68275 6.09787,2.69588 6.08125,2.70725 C7.83212,3.066 8.59688,4.54825 8.72813,5.74787 C8.97575,6.00863 9.1875,6.39625 9.1875,7 C9.1875,7.60288 8.771,8.20312 8.18388,8.51462 C8.127,8.624 8.06662,8.729 8.00275,8.82962 C8.155,8.91537 8.30025,8.99675 8.44025,9.07463 C9.08075,9.4325 9.63375,9.74137 10.164,10.1561 C10.3022,10.2638 10.4204,10.3801 10.5289,10.4991 L14,10.4991 C14,8.96875 13.9589,7.99837 13.125,7.3465 Z"></path></svg></span>Created by</th><td><span class="user"><img src="https://lh3.googleusercontent.com/a-/AOh14GhFhclieX_7cTnK6L371bcbb7cAlFuuh13S9ED7KA=s100" class="icon user-icon"/>Bryan Guner</span></td></tr><tr class="property-row property-row-select"><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesSelect"><path d="M7,13 C10.31348,13 13,10.31371 13,7 C13,3.68629 10.31348,1 7,1 C3.68652,1 1,3.68629 1,7 C1,10.31371 3.68652,13 7,13 Z M3.75098,5.32278 C3.64893,5.19142 3.74268,5 3.90869,5 L10.09131,5 C10.25732,5 10.35107,5.19142 10.24902,5.32278 L7.15771,9.29703 C7.07764,9.39998 6.92236,9.39998 6.84229,9.29703 L3.75098,5.32278 Z"></path></svg></span>Tags</th><td><span class="selected-value select-value-color-yellow">Concepts</span></td></tr></tbody></table></header><div class="page-body"><h3 id="76460eb7-4646-477f-9896-dda2cf2ae253" class="">For starters, what is express JS¿</h3><p id="695a1b00-135e-499e-b451-4d34e83ac2f1" class="">When introduced, node.js gave developers the chance to use JavaScript to write software that, up to that point, could only be written using lower level languages like C, C++, Java, Python…</p><p id="1a134374-100b-40ee-a508-64bc5061e81c" class="">In this tutorial we will cover how to write <strong>web services</strong> that can communicate with clients (the front end application) using <strong>J</strong>ava<strong>S</strong>cript <strong>O</strong>bject <strong>N</strong>otation (JSON).</p><ul id="c0b2bed4-16f8-4821-a819-3eedfbf22108" class="bulleted-list"><li>JavaScript is asynchronous, which allows us to take full advantage of the processor it’s running on. Taking full advantage of the processor is crucial because the node process will be running on a single CPU.</li></ul><ul id="030278f3-b2d3-4114-a0c5-8e949b8a71be" class="bulleted-list"><li>Using JavaScript gives us access to the npm repository. This repository is the largest ecosystem of useful libraries (most of them free to use) in <strong>npm modules</strong>.</li></ul><figure id="10ce14b5-e9b9-4eb6-b5c2-d1f40b47bf19" class="image"><a href="https://cdn-images-1.medium.com/max/864/0*PTKhCN2p9S8EDZ4r.gif"><img src="https://cdn-images-1.medium.com/max/864/0*PTKhCN2p9S8EDZ4r.gif"/></a></figure><figure id="9510ca4f-2721-45b5-9a05-effe54f1765f" class="image"><a href="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"><img src="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"/></a></figure><h3 id="45f2a774-80e0-4cb0-8030-f22bedc28be0" class="">Objective 1 — explain what Node.js is and its core features</h3><h3 id="e4a6eb20-8e89-446e-b9a2-af4457bc1018" class="">Overview</h3><p id="c50e35e6-306e-44df-af1c-6e0f9dbdcd2f" class="">Traditionally, developers only used the JavaScript language in web browsers. But, in 2009, <strong>Node.js</strong> was unveiled, and with it, the developer tool kit expanded greatly. Node.js gave developers the chance to use JavaScript to write software that, up to that point, could only be written using C, C++, Java, Python, Ruby, C#, and the like.</p><p id="237e7d2e-e3a0-49e2-863e-da7f50e80dd7" class="">We will use Node to write server code. Specifically, <strong>web services</strong> that can communicate with clients using the <strong>J</strong>ava<strong>S</strong>cript <strong>O</strong>bject <strong>N</strong>otation (JSON) format for data interchange.</p><p id="04fe7ed9-ad51-4429-bc88-df4b7ddd9641" class="">Some of the advantages of using Node.js for writing server-side code are:</p><ul id="56d78a26-d4e7-4682-93de-dc3e66d0a2ec" class="bulleted-list"><li>Uses the same programming language (JavaScript) and paradigm for both client and server. Using the same language, we minimize context switching and make it easy to share code between the client and the server.</li></ul><ul id="f5de4569-620a-4db1-8afd-edc6f0bdbb98" class="bulleted-list"><li>JavaScript is single-threaded, which removes the complexity involved in handling multiple threads.</li></ul><ul id="ba98cc27-bddb-493c-83a4-ebf40ac471af" class="bulleted-list"><li>JavaScript is asynchronous, which allows us to take full advantage of the processor it’s running on. Taking full advantage of the processor is crucial because the node process will be running on a single CPU.</li></ul><ul id="f7aa0e94-dd04-49f0-94af-909fcf9f9282" class="bulleted-list"><li>Using JavaScript gives us access to the npm repository. This repository is the largest ecosystem of useful libraries (most of them free to use) in <strong>npm modules</strong>.</li></ul><p id="58ac63f4-8eb6-4a96-9969-2dde3dc2e2a5" class="">Some of the disadvantages of using Node.js for writing server-side code are:</p><ul id="aa4d5530-84f0-47fe-800b-a6a0d78c542d" class="bulleted-list"><li>By strictly using JavaScript on the server, we lose the ability to use the right tool (a particular language) for the job.</li></ul><ul id="15260323-4f95-4b85-8d68-774401e37ebc" class="bulleted-list"><li>Because JavaScript is single-threaded, we can’t take advantage of servers with multiple cores/processors.</li></ul><ul id="d32bbba3-2922-4172-a1c9-08dcca9f06ba" class="bulleted-list"><li>Because JavaScript is asynchronous, it is harder to learn for developers that have only worked with languages that default to synchronous operations that block the execution thread.</li></ul><ul id="a0054d0b-b4f4-434a-a499-b2ea998b2f25" class="bulleted-list"><li>In the npm repository, there are often too many packages that do the same thing. This excess of packages makes it harder to choose one and, in some cases, may introduce vulnerabilities into our code.</li></ul><p id="b4e2316f-904a-4926-894e-ab030c3c9b33" class="">To write a simple web server with <code>Node.js</code>:</p><ol type="1" id="ca915c91-3c92-45ec-901d-9bbdc92de26d" class="numbered-list" start="1"><li>Use Node’s <code>HTTP</code> module to abstract away complex network-related operations.</li></ol><ol type="1" id="5e4e3648-19ed-4b5c-8477-cb871005d117" class="numbered-list" start="2"><li>Write the single <em><strong>request handler</strong></em> function to handle all requests to the server.</li></ol><p id="f5641ea3-6629-461d-9b3d-d68eeb705d47" class="">The request handler is a function that takes the <code>request</code> coming from the client and produces the <code>response</code>. The function takes two arguments: 1) an object representing the <code>request</code> and 2) an object representing the <code>response</code>.</p><p id="0f35c35d-782b-49f1-929a-65419ae3f8b6" class="">This process works, but the resulting code is verbose, even for the simplest of servers. Also, note that when using only Node.js to build a server, we use a single request handler function for all requests.</p><h3 id="4d4eb3ac-d440-4a11-b0cf-7508e1278590" class="">Follow Along</h3><p id="406a61c3-e2f8-4db5-9fe3-e8be1c128ab2" class="">Using only Node.js, let’s write a simple web server that returns a message. Create a folder for the server and add an <code>index.js</code> file inside.</p><p id="50ac62e1-390b-4d31-a287-8e5a540079b9" class="">Next, add the following code to the <code>index.js</code> file:</p><pre id="1777c95c-67f3-4f88-8d52-56ff21a95b37" class="code code-wrap"><code>const http = require(&quot;http&quot;); // built in node.js module to handle http traffic</code></pre><pre id="99ded223-85ae-45f7-b427-cfbe65fb5a6e" class="code code-wrap"><code>const hostname = &quot;127.0.0.1&quot;; // the local computer where the server is running
+const port = 3000; // a port we&#x27;ll use to watch for traffic</code></pre><pre id="a574049d-faae-424f-a3f6-73937249587f" class="code code-wrap"><code>const server = http.createServer((req, res) =&gt; {
+    // creates our server
+    res.statusCode = 200; // http status code returned to the client
+    res.setHeader(&quot;Content-Type&quot;, &quot;text/plain&quot;); // inform the client that we&#x27;ll be returning text
+    res.end(&quot;Hello World from Node\\n&quot;); // end the request and send a response with the specified message
+});</code></pre><pre id="a92bf391-facb-409f-b69d-1de1ed6fd455" class="code code-wrap"><code>server.listen(port, hostname, () =&gt; {
+    // start watching for connections on the port specified
+    console.log(`Server running at &lt;http://$&gt;{hostname}:${port}/`);
+});</code></pre><p id="eaa1e3a3-3bbb-411c-aeb7-d2657b73a85b" class="">Now navigate to the folder in a terminal/console window and type: <code>node index.js</code> to execute your file. A message that reads &quot;<em>Server running at </em><a href="http://127.0.0.1:3000/"><em>http://127.0.0.1:3000</em></a>&quot; should be displayed, and the server is now waiting for connections.</p><p id="724993a5-29b7-48b8-bcb6-8caa564c963e" class="">Open a browser and visit: <code>http://localhost:3000</code>. <code>localhost</code> and the IP address <code>127.0.0.1</code> point to the same thing: your local computer. The browser should show the message: &quot;<em>Hello World from Node</em>&quot;. There you have it, your first web server, built from scratch using nothing but <code>Node.js</code>.</p><h3 id="6c757eda-0dbf-44ff-8e33-9b6b25bc8f72" class="">Challenge</h3><p id="b3cdbbad-afc0-4278-9154-5b0368b9f1d7" class="">Write a paragraph about what <code>Node.js</code> is and explain at least 3 of its core features.</p><h3 id="0785575c-0b7c-4361-b72a-ce1aa95f82d1" class="">Objective 2 — explain what Express is and its core features</h3><h3 id="80158af5-ef49-4c28-86f4-0a4bb2fd20f9" class="">Overview</h3><p id="68074692-07ea-4d94-bc8e-0a1500242a82" class="">Node’s built-in <code>HTTP</code> module provides a powerful way to build web applications and services. However, it requires a lot of code for everyday tasks like sending an HTML page to the browser.</p><p id="586ccdd4-cc98-483e-b47e-502a5c666b69" class="">Introducing Express, a light and unopinionated framework that <strong>sits on top of Node.js</strong>, making it easier to create web applications and services. Sending an HTML file or image is now a one-line task with the <code>sendFile</code> helper method in <code>Express</code>.</p><p id="c69ec72c-761f-4fcc-a6a1-0f0fdfa20885" class="">Ultimately, Express is <strong>just a Node.js module</strong> like any other module.</p><p id="92b2aed4-b41e-474f-8cc4-7dd5fcd197f0" class="">What can we do with Express? So many things! For example:</p><ul id="9abd8e64-585c-48f4-8d00-980283b36c43" class="bulleted-list"><li>Build web applications.</li></ul><ul id="b8752bc9-8dfd-4e09-a9ff-c1c925a3d1bb" class="bulleted-list"><li>Serve <em>Single Page Applications</em> (SPAs).</li></ul><ul id="9e382046-c641-4ab3-b686-5eb7c4c83831" class="bulleted-list"><li>Build RESTful web services that work with JSON.</li></ul><ul id="32b7e40b-9b2a-495d-b432-e9b720a97b29" class="bulleted-list"><li>Serve static content, like HTML files, images, audio files, PDFs, and more.</li></ul><ul id="d590a837-2b50-4231-8404-308e07a8cb7d" class="bulleted-list"><li>Power real-time applications using technologies like <strong>Web Sockets</strong> or <strong>WebRTC</strong>.</li></ul><p id="a13ee2fe-40cb-4d62-80b0-fe4cc8d406aa" class="">Some of the benefits of using Express are that it is:</p><ul id="583a295f-36a3-42ec-a18b-b2804fdc271e" class="bulleted-list"><li>Simple</li></ul><ul id="36885f01-2eb9-4fb9-a539-9cdf761945a9" class="bulleted-list"><li>Unopinionated</li></ul><ul id="a01a46ac-ec8d-4758-addf-dca3894d6124" class="bulleted-list"><li>Extensible</li></ul><ul id="20ab6f6f-ee81-43e4-85ad-016e88726344" class="bulleted-list"><li>Light-weight</li></ul><ul id="bcba3744-52f1-4d29-80ff-8e315af6fd8f" class="bulleted-list"><li>Compatible with <a href="https://www.npmjs.com/package/connect">connect middleware (Links to an external site.)</a>. This compatibility means we can tap into an extensive collection of modules written for <code>connect</code>.</li></ul><ul id="7b1b84fe-84d6-4ca5-8f4f-6bc9db53fbe4" class="bulleted-list"><li>All packaged into a clean, intuitive, and easy-to-use API.</li></ul><ul id="7417d2f6-62b9-4fc0-8749-468d6f576f08" class="bulleted-list"><li>Abstracts away common tasks (writing web applications can be verbose, hence the need for a library like this).</li></ul><p id="e3cd5a50-54d6-4f0f-a38a-d395b2990c38" class="">Some of the drawbacks of Express are:</p><ul id="765c6b19-843a-4c76-a780-04b3092cd454" class="bulleted-list"><li>It’s not a one-stop solution. Because of its simplicity, it does very little out of the box. Especially when compared to frameworks like <strong>Ruby on Rails</strong> and <strong>Django</strong>.</li></ul><ul id="64923db7-e855-49d7-a54b-e11d4d393197" class="bulleted-list"><li>We are forced to make more decisions due to the flexibility and control it provides.</li></ul><h3 id="5ac74e0a-fccf-4f46-adee-2ab09da27899" class="">Main Features of Express</h3><p id="6c71daeb-08d7-4847-8b4d-bdbd64b44cf9" class=""><a href="https://expressjs.com/en/guide/writing-middleware.html"><strong>Writing middleware for use in Express apps</strong></a><a href="https://expressjs.com/en/guide/writing-middleware.html"><em>Middleware functions are functions that have access to the request object ( req), the response object ( res), and the…</em></a><a href="https://expressjs.com/en/guide/writing-middleware.html">expressjs.com</a></p><figure id="aa63286c-6c71-4738-8cf5-7e000f2f08cd" class="image"><a href="https://cdn-images-1.medium.com/max/864/0*rdSEy1R5exC2Rpul.png"><img src="https://cdn-images-1.medium.com/max/864/0*rdSEy1R5exC2Rpul.png"/></a></figure><h3 id="b5f0e899-aae8-4844-95ce-106bb8c5da10" class="">Middleware</h3><p id="2ab6b413-6ace-4558-9d13-c8c620dcc4cb" class="">Middleware functions can get the request and response objects, operate on them, and (when specified) trigger some action. Examples are logging or security.</p><p id="bd21ee1e-2f50-4579-a02e-07eed8b4a9fc" class="">Express’s middleware stack is an array of functions.</p><p id="a0e992cd-fbf7-4b7d-9a63-055daf0edafd" class="">Middleware <em>can</em> change the request or response, but it doesn’t have to.</p><h3 id="0bc32eda-d8b2-4eff-91cf-7e46cbe813b2" class="">Routing</h3><p id="886b5897-7f7e-46c8-8ab7-c127d8987b87" class="">Routing is a way to select which request handler function is executed. It does so based on the URL visited and the HTTP method used. Routing provides a way to break an application into smaller parts.</p><h3 id="b538b804-de7f-4460-b526-679cbfe5e43a" class="">Routers for Application Modularity</h3><p id="209fd3d6-7e91-400e-a3e7-ff5d1ea45800" class="">We can break up applications into <strong>routers</strong>. We could have a router to serve our SPA and another router for our API. Each router can have its own middleware and routing. This combination provides improved functionality.</p><h3 id="96078e9e-648d-43fb-ab1e-ababbe68c921" class="">Convenience Helpers</h3><p id="b72420cc-aa9b-4de2-98c1-9316a18769ca" class="">Express has many helpers that provide out of the box functionality to make writing web applications and API servers easier.</p><p id="2b1d3a20-ec7e-41cd-b458-318b8b0bb8a2" class="">A lot of those helpers are extension methods added to the request and response objects.</p><p id="fb539ea5-b421-45db-b8f5-323a5181393c" class="">Examples <a href="https://expressjs.com/en/4x/api.html">from the Api Reference (Links to an external site.)</a> include: <code>response.redirect()</code>, <code>response.status()</code>, <code>response.send()</code>, and <code>request.ip</code>.</p><h3 id="afdf71e0-1284-479a-8aad-268901d14091" class="">Views</h3><p id="b9ea4a8e-e474-4735-80b2-6d66dcde310e" class="">Views provide a way to dynamically render HTML on the server and even generate it using other languages.</p><h3 id="b02dd005-5b24-4462-8686-605976fa3eba" class="">Follow Along</h3><p id="bd321999-e5ef-44a1-9055-122086d9b936" class="">Let’s write our first server using Express:</p><ul id="1c756f83-6cb2-4683-a7b3-dd069ec359a2" class="bulleted-list"><li>Create a new file called <code>server.js</code> to host our server code.</li></ul><ul id="cc89a51c-fbbc-404e-be83-8deac27760c1" class="bulleted-list"><li>Type <code>npm init -y</code> to generate a <code>package.json</code>.</li></ul><ul id="45c21e36-a7ff-4e48-b5e0-49d6c537d008" class="bulleted-list"><li>Install the <code>express</code> npm module using: <code>npm install express</code>.</li></ul><p id="2d5f78fc-5d75-4753-992a-50af289eb0a4" class="">Inside <code>server.js</code> add the following code:</p><pre id="e0ea89d5-51fe-4bac-a36a-b45484b5af89" class="code code-wrap"><code>const express = require(&#x27;express&#x27;); // import the express package</code></pre><pre id="05d4b22e-b3b0-4249-b4ba-8e064ab1d299" class="code code-wrap"><code>const server = express(); // creates the server</code></pre><pre id="aebbe5f4-d3ac-4015-a2d6-6293db3fde91" class="code code-wrap"><code>// handle requests to the root of the api, the / route
+server.get(&#x27;/&#x27;, (req, res) =&gt; {
+  res.send(&#x27;Hello from Express&#x27;);
+});</code></pre><pre id="702fa599-3bed-4099-89e6-5c77282820e5" class="code code-wrap"><code>// watch for connections on port 5000
+server.listen(5000, () =&gt;
+  console.log(&#x27;Server running on &lt;http://localhost:5000&gt;&#x27;)
+);</code></pre><p id="b0e94a46-c461-43d0-a86d-0b0609c9334f" class="">Run the server by typing: <code>node server.js</code> and visit <code>http://localhost:5000</code> in the browser.</p><p id="2155d048-4e38-4a8d-9c50-73511e5d2629" class="">To stop the server, type <code>Ctrl + c</code> at the terminal window.</p><h3 id="07c5aec8-a2a1-4db4-a5ba-92a8d6d4d3f7" class="">Challenge</h3><p id="f0fb3b85-1fc9-4ce9-9d75-18bc42379f74" class="">On your own: Write a paragraph about what Express is and explain how it is used in modern web application development.</p><h3 id="314f2790-a25a-41dc-a626-90371b2a00ff" class="">Objective 3 — create an API that can respond to GET requests</h3><h3 id="5fd74afc-59a4-4529-ba73-69c4fb65513c" class="">Overview</h3><p id="3716b41b-3067-4919-adb5-ab0602455f9f" class="">In this overview, we’re walking through the steps necessary to build a simple Web API that returns the string “Hello World” on every incoming <code>GET</code> request. The program should return the string every time a request comes into the root route (&quot;/&quot;). For now, you don&#x27;t need to code along, just read through the steps.</p><p id="c62fa40d-2cbd-43bb-9798-08e6cfc197b6" class="">To make things easier, we’ll use an existing repository as the base for our API. Later in the week, as we learn more about Node.js and Express, we’ll create an API from scratch.</p><p id="0a0eb79a-1552-4792-9d9d-ee575c7c0a8a" class="">To build our first API, we will:</p><ol type="1" id="b4efa81b-0fc7-4d05-a0dd-410067428b42" class="numbered-list" start="1"><li>clone the <a href="https://github.com/LambdaSchool/node-express-mini">node-express-mini repository (Links to an external site.)</a> to a folder on our computer.</li></ol><ol type="1" id="64e8f8f6-ab52-4170-aa1b-1a5518bae366" class="numbered-list" start="2"><li>Navigate into the folder using <code>cd</code>.</li></ol><ol type="1" id="e74959be-2191-4dbc-8429-29c26dc64bcb" class="numbered-list" start="3"><li>Use <code>npm install</code> to download all dependencies.</li></ol><ol type="1" id="2252086e-9a5a-40c9-9d04-b6dc1f2cf7bc" class="numbered-list" start="4"><li>Add a file called <code>index.js</code> at the folder&#x27;s root, next to the <code>package.json</code> file.</li></ol><ol type="1" id="42f8efaa-ab82-4261-b74d-3807e90cd659" class="numbered-list" start="5"><li>Open the <code>index.js</code> file using our favorite code editor.</li></ol><ol type="1" id="593cf2d6-5e1a-495f-aa62-c4cfd7460f66" class="numbered-list" start="6"><li>Add the following code:</li></ol><pre id="c86b875f-ad50-4d4f-8f6d-01db8acf25b6" class="code code-wrap"><code>// require the express npm module, needs to be added to the project using &quot;npm install express&quot;
+const express = require(&#x27;express&#x27;);</code></pre><pre id="ffb52856-f281-45a3-ba43-7e8256c5fd92" class="code code-wrap"><code>// creates an express application using the express module
+const server = express();</code></pre><pre id="989048a2-d55a-4034-a70a-5cb10cfb4933" class="code code-wrap"><code>// configures our server to execute a function for every GET request to &quot;/&quot;
+// the second argument passed to the .get() method is the &quot;Route Handler Function&quot;
+// the route handler function will run on every GET request to &quot;/&quot;
+server.get(&#x27;/&#x27;, (req, res) =&gt; {
+  // express will pass the request and response objects to this function
+  // the .send() on the response object can be used to send a response to the client
+  res.send(&#x27;Hello World&#x27;);
+});</code></pre><pre id="a46f6c3a-3ce4-470d-b440-8f92290bcdf1" class="code code-wrap"><code>// once the server is fully configured we can have it &quot;listen&quot; for connections on a particular &quot;port&quot;
+// the callback function passed as the second argument will run once when the server starts
+server.listen(8000, () =&gt; console.log(&#x27;API running on port 8000&#x27;));</code></pre><p id="88595927-67b0-49d9-9925-2ae111a80ef9" class=""><strong>make sure to save your changes to </strong><code><strong>index.js</strong></code><strong>.</strong></p><p id="c9065e12-86dd-4345-8655-38f92f75cb77" class="">We are using the <code>express</code> npm module in our code, so we need to add it as a dependency to our project. To do this:</p><ul id="2ae6742b-b554-47b2-9b53-194789b95660" class="bulleted-list"><li>Open a terminal/console/command prompt window and navigate to the root of our project.</li></ul><ul id="e56529a5-28ff-4a1e-9a8c-cb4ec5326ec9" class="bulleted-list"><li>Add express to our <code>package.json</code> file by typing <code>npm install express</code>.</li></ul><p id="e0f19a08-54f8-438f-bd09-682a6b74a017" class="">Now we’re ready to test our API!</p><p id="49e08e16-d78a-4200-8e80-fce87aa6b91d" class="">In the terminal, still at the root of our project:</p><ul id="6423302b-c168-4933-b62b-04a297f1d31f" class="bulleted-list"><li>Type: <code>npm run server</code> to run our API. The message <em>&quot;Api running on port 8000&quot;</em> should appear on the terminal.</li></ul><ul id="879dcb54-cefc-4652-add3-3e032863d741" class="bulleted-list"><li>Open a web browser and navigate to “<a href="http://localhost:8000/">http://localhost:8000</a>&quot;.</li></ul><p id="710c1032-415d-4115-844d-a55695e419bc" class="">There we have it, our first API!</p><p id="7f54af5e-c47c-4e92-906e-12ad32697577" class="">A lot is going on in those few lines of code (only six lines if we remove the comments and white space). We will cover every piece of it in detail over the following modules, but here is a quick rundown of the most important concepts.</p><p id="7681fb21-4af9-42ae-90f5-d5e29cedb99a" class="">First, we used <code>require()</code> to <strong>import</strong> the <code>express module</code> and make it available to our application. <code>require()</code> is similar to the <code>import</code> keyword we have used before. The line <code>const express = require(&#x27;express&#x27;);</code> is equivalent to <code>import express from &#x27;express&#x27;;</code> if we were using ES2015 syntax.</p><p id="5228ff21-222b-456b-82e2-43b362acefe5" class="">The following line creates our Express application. The return of calling <code>express()</code> is an instance of an Express application that we can use to configure our <strong>server</strong> and, eventually, start listening for and responding to requests. Notice we use the word server, not API. An Express application is generic, which means we can use it to serve static content (HTML, CSS, audio, video, PDFs, and more). We can also use an Express application to serve dynamically generated web pages, build real-time communications servers, and more. We will use it statically to accept requests from clients and respond with data in JSON format.</p><p id="089d024e-358c-4acb-8e3e-15b86f465093" class="">An Express application publishes a set of methods we can use to configure functions. We are using the <code>.get()</code> method to set up a <strong>route handler</strong> function that will run on every <code>GET</code> request. As a part of this handler function, we specify the URL which will trigger the request. In this case, the URL is the site&#x27;s root (represented by a <code>/</code>). There are also methods to handle the <code>POST</code>, <code>PUT</code>, and <code>DELETE</code> HTTP verbs.</p><p id="58f1aec8-afa6-4b6e-b1de-b8fe94cb6eb6" class="">The first two arguments passed by <code>express</code> to a route handler function are 1) an object representing the <code>request</code> and 2) an object representing the <code>response</code>. Express expands those objects with a set of useful properties and methods. Our example uses the <code>.send()</code> method of the response object to specify the data we will send to the client as the response body. You can call the first two arguments anything you want, but it is prevalent to see them dubbed <code>req</code> and <code>res</code>. We at Lambda call them <strong>the homies</strong> as they always hang out together.</p><p id="7e62a567-e8f7-41df-a0c4-cf2ea9710948" class="">That’s all the configuring we need to do for this first example. We’ll see other ways of configuring our server as we go forward.</p><p id="40047c79-6909-4e2b-b111-dfc67b3922b3" class="">After configuring the server, it’s time to turn it on. We use the <code>.listen()</code> method to monitor a port on the computer for any incoming connections and respond to those we have configured. Our server will only respond to <code>GET</code> requests made to the <code>/</code> route on port <code>8000</code>.</p><p id="2f46f484-e6c6-4b2c-9ac0-8e170eeb4101" class="">That’s it for our first Web API, and now it’s time for you to follow along as we add a new <strong>endpoint</strong> to our server that returns JSON data!</p><h3 id="74bf1c49-0f59-44cd-924a-98f07e37ce53" class="">Follow Along</h3><p id="41c1f8db-e4a2-43cd-b121-8c1ba69066a5" class="">Let’s try returning JSON instead of just a simple string.</p><p id="d66172cf-32b2-48e3-9d45-8d1b6d8e69a3" class="">Please follow the steps outlined on the overview, but, to save time, copy and paste the content of <code>index.js</code> instead of typing it. Then run your API through a browser to make sure it works.</p><p id="a7139ed3-0557-415e-8d30-ad757b915fe4" class="">Now follow along as we code a new <em>endpoint</em> that returns an array of movie characters in JSON format.</p><p id="16451729-9978-4eae-a6ed-18ea81b95e5b" class="">The first step is to define a new <em>route handler</em> to respond to <code>GET</code> requests at the <code>/hobbits</code> endpoint.</p><pre id="8e157612-b70b-4ffa-949d-ae44544ce48e" class="code code-wrap"><code>server.get(&#x27;/hobbits&#x27;, (req, res) =&gt; {
+  // route handler code here
+});</code></pre><p id="6cabb048-ac4a-4102-a8d5-cc64fe59e3a4" class="">Next, we define the return data that our endpoint will send back to the client. We do this inside the newly defined route handler function.</p><pre id="64479ef8-1f1e-4fdc-8738-bf8f57076efa" class="code code-wrap"><code>const hobbits = [
+  {
+    id: 1,
+    name: &#x27;Samwise Gamgee&#x27;,
+  },
+  {
+    id: 2,
+    name: &#x27;Frodo Baggins&#x27;,
+  },
+];</code></pre><p id="c5c4c625-1480-4b5c-b262-7a7fbb9df319" class="">Now we can return the <code>hobbits</code> array. We could use <code>.send(hobbits)</code> as we did for the string on the <code>/</code> endpoint, but this time we&#x27;ll learn about two other useful methods we find in the response object.</p><pre id="5a208002-7cce-4707-a14c-27bd76c3d152" class="code code-wrap"><code>res.status(200).json(hobbits);</code></pre><p id="64cb3b42-290d-40ba-996c-3cc9c3468b74" class="">We should provide as much useful information as possible to the clients using our API. One such piece of data is the <code>HTTP status code</code> that reflects the client&#x27;s operation outcome. In this case, the client is trying to get a list of a particular <code>resource</code>, a <code>hobbits</code> list. Sending back a <code>200 OK</code> status code communicates to the client that the operation was successful.</p><p id="f3d152bd-89d6-44ae-9f29-0450088d0c7a" class="">We will see other status codes as we continue to build new endpoints during this week. You can see a list by following <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status">this link to the documentation about HTTP Response Codes on the Mozilla Developer Network site (Links to an external site.)</a>.</p><p id="b21e61e6-6f35-4fa5-be01-1ece5ccac8f8" class="">We can use the <code>.status()</code> method of the response object to send any valid <code>HTTP status code</code>.</p><p id="fda6dcf4-26c8-4298-9e89-2b55c5cc03a0" class="">We are also chaining the <code>.json()</code> method of the response object. We do this to communicate to both the client making the request and the next developer working with this code that we intend to send the data in <code>JSON format</code>.</p><p id="d10befff-2e88-4131-9088-48d9af6bdc48" class="">The complete code for <code>index.js</code> should now look like so:</p><pre id="49711239-00d1-433d-bad4-0b5d3afd7c3b" class="code code-wrap"><code>const express = require(&#x27;express&#x27;);</code></pre><pre id="1339c09f-4d48-492f-a685-d548501acaef" class="code code-wrap"><code>const server = express();</code></pre><pre id="2ec10bde-bd5f-43d3-bcf7-f270395c7329" class="code code-wrap"><code>server.get(&#x27;/&#x27;, (req, res) =&gt; {
+  res.send(&#x27;Hello World&#x27;);
+});</code></pre><pre id="ed4e8dd5-e4cf-4b9d-a6cc-0a99c34466e0" class="code code-wrap"><code>server.get(&#x27;/hobbits&#x27;, (req, res) =&gt; {
+  const hobbits = [
+    {
+      id: 1,
+      name: &#x27;Samwise Gamgee&#x27;,
+    },
+    {
+      id: 2,
+      name: &#x27;Frodo Baggins&#x27;,
+    },
+  ];</code></pre><pre id="9fa6e49c-f122-400d-bbbb-0ce868f790b8" class="code code-wrap"><code>  res.status(200).json(hobbits);
+});</code></pre><pre id="a5d0a358-f2c6-4fc4-b0db-a6246331e6c4" class="code code-wrap"><code>server.listen(8000, () =&gt; console.log(&#x27;API running on port 8000&#x27;));</code></pre><p id="0fa53fe3-b505-490c-97ca-33617aebf400" class="">Now we can visit <code>http://localhost:8000/hobbits</code> in our browser, and we should get back our JSON array.</p><p id="4a5a6795-0469-41fb-8660-13662d1d6992" class="">If you are using the Google Chrome browser, <a href="https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc">this extension (Links to an external site.)</a> can format the JSON data in a more readable fashion.</p><p id="15cb96da-c3ec-44c0-8a41-b487c14784fd" class="">Congratulations! You just built an API that can return data in JSON format.</p><h3 id="8b1facd5-59da-409d-8da0-3a52b93c5f64" class=""></h3><figure id="282f5c27-934a-476d-bc64-68bc0771e71a" class="image"><a href="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"><img src="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"/></a></figure><h3 id="d171135f-89b2-432d-b87b-2e7c1d31aa4a" class="">Overview</h3><p id="e145f515-5dc7-4336-b385-abf933dd6ce3" class="">Let’s look at a basic example of routing in action.</p><p id="68822e6b-50b9-4f84-ba3b-db2542ed35f5" class="">First, to make our Express application respond to <code>GET</code> requests on different URLs, add the following endpoints:</p><pre id="124a497c-51be-40c4-90f3-7fe2eafdc1bc" class="code code-wrap"><code>// this request handler executes when making a GET request to /about
+server.get(&#x27;/about&#x27;, (req, res) =&gt; {
+  res.status(200).send(&#x27;&lt;h1&gt;About Us&lt;/h1&gt;&#x27;);
+});</code></pre><pre id="47e08256-83eb-4fae-a25b-2b4efaa94045" class="code code-wrap"><code>// this request handler executes when making a GET request to /contact
+server.get(&#x27;/contact&#x27;, (req, res) =&gt; {
+  res.status(200).send(&#x27;&lt;h1&gt;Contact Form&lt;/h1&gt;&#x27;);
+});</code></pre><p id="74c9bbf6-c725-420f-8424-ad3e7fff2eaf" class="">Two things to note:</p><ul id="3320e3b7-95f7-4c4d-a3a6-48d0608dd743" class="bulleted-list"><li>we are using the same HTTP Method on both endpoints, but express looks at the URL and executes the corresponding request handler.</li></ul><ul id="d7cfe101-4beb-434f-8b21-d9583a914c7c" class="bulleted-list"><li>we can return a string with valid HTML!</li></ul><p id="e455bf17-c34c-4a36-9e27-a8bb09f897f3" class="">Open a browser and navigate to the <code>/about</code> and <code>/contact</code> routes. The appropriate route handler will execute.</p><h3 id="5fcbe696-539b-4d85-9fb4-ed27d1073a2a" class="">Follow Along</h3><p id="a5c1c8a3-51b7-444e-babf-45e4eeed131a" class="">Please follow along as we write endpoints that execute different request handlers on the same URL by changing the HTTP method.</p><p id="c0266c57-d2cf-457f-a035-740ff7d05337" class="">Let’s start by adding the following code after the <code>GET</code> endpoint to <code>/hobbits</code>:</p><pre id="8011f83a-88a8-458e-be41-883e9232b5ae" class="code code-wrap"><code>// this request handler executes when making a POST request to /hobbits
+server.post(&#x27;/hobbits&#x27;, (req, res) =&gt; {
+  res.status(201).json({ url: &#x27;/hobbits&#x27;, operation: &#x27;POST&#x27; });
+});</code></pre><p id="47eea100-138c-4a62-83b0-5aadd6630f18" class="">Note that we return HTTP status code 201 (created) for successful <code>POST</code> operations.</p><p id="8cdbc347-99c4-4b5a-9886-58a618af22ed" class="">Next, we need to add an endpoint for <code>PUT</code> requests to the same URL.</p><pre id="e9f631c6-6e4a-4c61-ad73-490afefdf780" class="code code-wrap"><code>// this request handler executes when making a PUT request to /hobbits
+server.put(&#x27;/hobbits&#x27;, (req, res) =&gt; {
+  res.status(200).json({ url: &#x27;/hobbits&#x27;, operation: &#x27;PUT&#x27; });
+});</code></pre><p id="94e710c9-4a6f-41b3-a12f-bec5ae5b84dd" class="">For successful <code>PUT</code> operations, we use HTTP Status Code 200 (OK).</p><p id="d3f6e575-ad42-4273-bf4d-882635b64d9f" class="">Finally, let’s write an endpoint to handle <code>DELETE</code> requests.</p><pre id="f1ee8c5e-d3c5-4ca4-ae9a-b86bf7f706d6" class="code code-wrap"><code>// this request handler executes when making a DELETE request to /hobbits
+server.delete(&#x27;/hobbits&#x27;, (req, res) =&gt; {
+  res.status(204);
+});</code></pre><p id="008bf028-f201-4cf6-b63c-6f521c685ae6" class="">We are returning HTTP Status Code 204 (No Content). Suppose you are returning any data to the client, perhaps the removed resource, on successful deletes. In that case, you’d change that to be 200 instead.</p><p id="094290ba-4671-4dc6-8433-0a0009a8682f" class="">You may have noticed that we are not reading any data from the request, as that is something we’ll learn later in the module. We are about to learn how to use a tool called <code>Postman</code> to test our <code>POST</code>, <code>PUT</code>, and <code>DELETE</code> endpoints.</p><h3 id="037f6439-04b6-4d39-bc72-fb32ff738719" class="">Overview</h3><h3 id="06920f73-68a1-45a8-8f6d-7cd753d8ac78" class="">Reading and Using Route Parameters</h3><p id="21b75fb3-e278-47a0-a5e8-1ff4d9ea4bfa" class="">Let’s revisit our <code>DELETE</code> endpoint.</p><pre id="d38021ca-0b06-41ca-af33-c9142b48c1e8" class="code code-wrap"><code>server.delete(&#x27;/hobbits&#x27;, (req, res) =&gt; {
+  res.status(204);
+});</code></pre><p id="97dd76a7-5031-4c0e-a0bb-17b1eadf5c8d" class="">How does the client let the API know which hobbit should be deleted or updated? One way, the one we’ll use, is through <code>route parameters</code>. Let&#x27;s add support for route parameters to our <code>DELETE</code> endpoint.</p><p id="6cdc7a4b-648d-4eec-b2d0-f8a968317091" class="">We define route parameters by adding it to the URL with a colon (<code>:</code>) in front of it. Express adds it to the <code>.params</code> property part of the request object. Let&#x27;s see it in action:</p><pre id="1c3103e6-295c-43cc-a8d4-fc00ed8e12c0" class="code code-wrap"><code>server.delete(&#x27;/hobbits/:id&#x27;, (req, res) =&gt; {
+  const id = req.params.id;
+  // or we could destructure it like so: const { id } = req.params;
+  res.status(200).json({
+    url: `/hobbits/${id}`,
+    operation: `DELETE for hobbit with id ${id}`,
+  });
+});</code></pre><p id="f3105b6a-07c0-4702-94a8-a7b6ec2b1909" class="">This route handler will execute every <code>DELETE</code> for a URL that begins with <code>/hobbits/</code> followed by any value. So, <code>DELETE</code> requests to <code>/hobbits/123</code> and <code>/hobbits/frodo</code> will both trigger this request handler. The value passed after <code>/hobbits/</code> will end up as the <code>id</code> property on <code>req.params</code>.</p><p id="ddd5b1b5-cc4e-423d-86c1-06b3bee42150" class="">The value for a route parameter will always be <code>string</code>, even if the value passed is numeric. When hitting <code>/hobbits/123</code> in our example, the type of <code>req.params.id</code> will be <code>string</code>.</p><p id="d0b6df05-ffb7-437a-b667-8d2bde13cad2" class="">Express routing has support for multiple route parameters. For example, defining a route URL that reads <code>/hobbits/:id/friends/:friendId</code>, will add properties for <code>id</code> and <code>friendId</code> to <code>req.params</code>.</p><h3 id="6f67e4f7-6d2b-4b7a-b28b-e02ddf3b3670" class="">Using the Query String</h3><p id="93daffa2-8690-4bd1-8cef-823e92efb5fd" class="">The query string is another strategy using the URL to pass information from clients to the server. The query string is structured as a set of key/value pairs. Each pair takes the form of <code>key=value</code>, and pairs are separated by an <code>&amp;</code>. To mark the beginning of the query string, we add <code>?</code> and the end of the URL, followed by the set of key/value pairs.</p><p id="cb8648c5-15ed-499d-886f-381ddc2807dd" class="">An example of a query string would be: <code>https://www.google.com/search?q=lambda&amp;tbo=1</code>. The query string portion is <code>?q=lambda&amp;tbo=1</code> and the key/value pairs are <code>q=lambda</code> and <code>tbo=1</code>.</p><p id="d38ec49b-b62d-4a1b-9da2-8fea59292a82" class="">Let’s add sorting capabilities to our API. We’ll provide a way for clients to hit our <code>/hobbits</code> and pass the field they want to use to sort the responses, and our API will sort the data by that field in ascending order.</p><p id="d597a0b6-f7b9-4edd-b741-8a8dadd4e6ed" class="">Here’s the new code for the <code>GET /hobbits</code> endpoint:</p><pre id="514fd957-7f63-48aa-b4c7-2a545f471367" class="code code-wrap"><code>server.get(&#x27;/hobbits&#x27;, (req, res) =&gt; {
+  // query string parameters get added to req.query
+  const sortField = req.query.sortby || &#x27;id&#x27;;
+  const hobbits = [
+    {
+      id: 1,
+      name: &#x27;Samwise Gamgee&#x27;,
+    },
+    {
+      id: 2,
+      name: &#x27;Frodo Baggins&#x27;,
+    },
+  ];</code></pre><pre id="3c0ff43d-daa7-46e2-8ee6-dc59455d25cb" class="code code-wrap"><code>  // apply the sorting
+  const response = hobbits.sort(
+    (a, b) =&gt; (a[sortField] &lt; b[sortField] ? -1 : 1)
+  );</code></pre><pre id="0bfb9c09-cca2-4af5-ab17-c7b31869905b" class="code code-wrap"><code>  res.status(200).json(response);
+});</code></pre><p id="fd7456c1-9919-4a7f-a56a-82b6a9c7a0a2" class="">Visit <code>localhost:8000/hobbits?sortby=name</code>, and the list should be sorted by <code>name</code>. Visit <code>localhost:8000/hobbits?sortby=id</code>, and the list should now be sorted by <code>id</code>. If no <code>sortby</code> parameter is provided, it should default to sorting by <code>id</code>.</p><p id="5755015d-1608-43b7-b18a-52b3d2130c71" class="">To read values from the query string, we use the <code>req.query</code> object added by Express. There will be a key and a value in the <code>req.query</code> object for each key/value pair found in the query string.</p><p id="45c7a268-5955-49b3-868f-54581856ac39" class="">The parameter’s value will be of type <code>array</code> if more than one value is passed for the same key and <code>string</code> when only one value is passed. For example, in the query string <code>?id=123</code>, <code>req.query.id</code> will be a string, but for <code>?id=123&amp;id=234</code>, it will be an array.</p><p id="189e8f55-21ba-4838-bfd8-bc3522ddb7b0" class="">Another gotcha is that the names of query string parameters are case sensitive, <code>sortby</code> and <code>sortBy</code> are two different parameters.</p><p id="40a72b63-46c4-42be-8761-ae12a555c35d" class="">The rest of the code sorts the array before sending it back to the client.</p><h3 id="e422c649-b5b3-41ad-97c5-b68d7c79d0a9" class="">Reading Data from the Request Body</h3><p id="6b2560ac-4fc4-4c80-8783-d2162bdc1fd4" class="">We begin by taking another look at the <code>POST /hobbits</code> endpoint. We need to read the hobbit&#x27;s information to add it to the <code>hobbits</code> array. Let&#x27;s do that next:</p><pre id="59a46a90-8a32-4967-baed-f3266e91464f" class="code code-wrap"><code>// add this code right after const server = express();
+server.use(express.json());</code></pre><pre id="55dd5132-2689-40bf-a8d2-39efc585d917" class="code code-wrap"><code>let hobbits = [
+  {
+    id: 1,
+    name: &#x27;Bilbo Baggins&#x27;,
+    age: 111,
+  },
+  {
+    id: 2,
+    name: &#x27;Frodo Baggins&#x27;,
+    age: 33,
+  },
+];
+let nextId = 3;</code></pre><pre id="fdd6753b-3780-411d-b137-2776b9cbf340" class="code code-wrap"><code>// and modify the post endpoint like so:
+server.post(&#x27;/hobbits&#x27;, (req, res) =&gt; {
+  const hobbit = req.body;
+  hobbit.id = nextId++;</code></pre><pre id="cb9a9cbd-a369-43f9-a2d4-03b1ee23262c" class="code code-wrap"><code>  hobbits.push(hobbit);</code></pre><pre id="35d80db0-3f61-4df3-b9b8-60ce30196ecf" class="code code-wrap"><code>  res.status(201).json(hobbits);
+});</code></pre><p id="57f89853-724f-4a16-beae-07055ee38211" class="">To make this work with the hobbits array, we first move it out of the get endpoint into the outer scope. Now we have access to it from all route handlers.</p><p id="f1208ae9-9a23-4149-89ec-16d70ca80331" class="">Then we define a variable for manual id generation. When using a database, this is not necessary as the database management system generates ids automatically.</p><p id="055d282f-99e5-4778-976b-96e2d306fc96" class="">To read data from the request body, we need to do two things:</p><ul id="e58a4c35-b401-42fe-8885-09f4d189c54f" class="bulleted-list"><li>Add the line: <code>server.use(express.json());</code> after the express application has been created.</li></ul><ul id="0760b402-fd23-4aaa-8438-b55560c3f6c9" class="bulleted-list"><li>Read the data from the body property that Express adds to the request object. Express takes all the client’s information from the body and makes it available as a nice JavaScript object.</li></ul><p id="cf4724fc-e95a-423c-98d2-cf20b99360ed" class=""><strong>Note that we are skipping data validation to keep this demo simple, but in a production application, you would validate before attempting to save to the database.</strong></p><p id="9ffbf878-514b-44b3-ba55-0a1243d0b316" class="">Let’s test it using Postman:</p><ul id="703b74b3-9ad7-4673-8544-5e65ae93778d" class="bulleted-list"><li>Change the method to POST.</li></ul><ul id="48ffc61e-23c2-41ce-bb3a-8281b3d2b0b3" class="bulleted-list"><li>Select the <code>Body</code> tab underneath the address bar.</li></ul><ul id="2c174cb4-8a33-4e79-9035-da962c68d633" class="bulleted-list"><li>Click on the <code>raw</code> radio button.</li></ul><ul id="1171b5a1-b207-485a-be3e-2aeeaca730d0" class="bulleted-list"><li>From the dropdown menu to the right of the <code>binary</code> radio button, select `JSON (application/json).</li></ul><ul id="75f90b40-e8e7-4ba1-b363-df57abf27f84" class="bulleted-list"><li>Add the following JSON object as the body:</li></ul><pre id="485f41bd-40ce-4b57-b925-f1e9290ea78a" class="code code-wrap"><code>{
+  &quot;name&quot;: &quot;Samwise Gamgee&quot;,
+  &quot;age&quot;: 30
+}</code></pre><p id="13d5d3f1-29db-4c02-b056-d635312f02ff" class="">Click on <code>Send</code>, and the API should return the list of hobbits, including Sam!</p><p id="bda81205-33c7-4cd5-8620-c7d2f1845ef5" class="">
+</p><h3 id="b5ecc7be-da6b-4595-bf9b-b60997756f66" class="">Follow Along</h3><p id="00199cd7-0d1f-4693-b6f6-909207f638e2" class="">Please code along as we implement the <code>PUT</code> endpoint and a way for the client to specify the sort direction.</p><h3 id="cea340ab-fc84-4a60-b9d9-71b96fb75362" class="">Implement Update Functionality</h3><p id="41d696f4-bfbc-477e-881e-e06e7e0711f2" class="">Let’s continue practicing reading route parameters and information from the request body. Let’s take a look at our existing PUT endpoint:</p><pre id="8941a446-3a4c-4c97-83b4-f612bdfbc4f0" class="code code-wrap"><code>server.put(&#x27;/hobbits&#x27;, (req, res) =&gt; {
+  res.status(200).json({ url: &#x27;/hobbits&#x27;, operation: &#x27;PUT&#x27; });
+});</code></pre><p id="62ba29a1-fe90-41ab-b9fd-f07c4684d1e9" class="">We start by adding support for a route parameter the clients can use to specify the id of the hobbit they intend to update:</p><pre id="ca693464-62d6-4067-9bb6-e12accfdb530" class="code code-wrap"><code>server.put(&#x27;/hobbits/:id&#x27;, (req, res) =&gt; {
+  res.status(200).json({ url: &#x27;/hobbits&#x27;, operation: &#x27;PUT&#x27; });
+});</code></pre><p id="5b054ba6-977f-4c34-a230-468f5201c733" class="">Next, we read the hobbit information from the request body using <code>req.body</code> and use it to update the existing hobbit.</p><pre id="0fc265eb-db79-4a9b-aa65-ce5f5e2da125" class="code code-wrap"><code>server.put(&#x27;/hobbits/:id&#x27;, (req, res) =&gt; {
+  const hobbit = hobbits.find(h =&gt; h.id == req.params.id);</code></pre><pre id="dc41004e-cc50-4d8a-9608-235cf31ba6ba" class="code code-wrap"><code>  if (!hobbit) {
+    res.status(404).json({ message: &#x27;Hobbit does not exist&#x27; });
+  } else {
+    // modify the existing hobbit
+    Object.assign(hobbit, req.body);</code></pre><pre id="8b376f4d-8f03-4f68-9550-ffe1fecf1a8f" class="code code-wrap"><code>    res.status(200).json(hobbit);
+  }
+});</code></pre><p id="a5864519-8b5f-4e91-96b3-9c1e521e4e8d" class="">Concentrate on the code related to reading the <code>id</code> from the <code>req.params</code> object and reading the hobbit information from <code>req.body</code>. The rest of the code will change as this is a simple example using an in-memory array. Most production APIs will use a database.</p><h3 id="2fab8408-4f65-4986-b2c5-731a60916cf9" class="">Challenge</h3><p id="61e44be6-9d2f-46e0-a507-1f140bde7997" class="">For the following exercises, use the provided database helper functions inside <code>/data/db.js</code> to work with the database users.</p><p id="84fdb9a8-be2d-4b4a-adb4-407e594fb3c8" class="">Implement a <code>GET</code> endpoint that will accept an <code>id</code> as a route parameter and return the user corresponding to that <code>id</code>. If the user is not found, return the correct HTTP Status Code.</p><p id="2d20ef60-93be-4382-89ff-9e00ecbb3680" class="">Implement all CRUD operations on users, including getting by ID.</p><p id="19bfc2e2-e257-471d-99e9-ca178a421185" class="">Add sorting and pagination support to the GET all endpoint. For pagination, the client should supply the API with sorting information, the number of users per page, and the page number.</p><h3 id="12283de3-89a2-4d3f-9a4d-6234379107ef" class="">Overview</h3><p id="4bc01d88-8135-4e65-a1fb-6bd09b60961b" class=""><code>REST</code> is a generally agreed-upon set of principles and constraints. They are <strong>recommendations</strong>, not a standard.</p><pre id="01de9ef8-ff80-4114-ab2e-e8d781e84562" class="code code-wrap"><code>// inside /api/apiRoutes.js &lt;- this can be place anywhere and called anything
+const express = require(&#x27;express&#x27;);
+
+// if the other routers are not nested inside /api then the paths would change
+const userRoutes = require(&#x27;./users/userRoutes&#x27;);
+const productRoutes = require(&#x27;./products/productRoutes&#x27;);
+const clientRoutes = require(&#x27;./clients/clientRoutes&#x27;);
+
+const router = express.Router(); // notice the Uppercase R
+
+// this file will only be used when the route begins with &quot;/api&quot;
+// so we can remove that from the URLs, so &quot;/api/users&quot; becomes simply &quot;/users&quot;
+router.use(&#x27;/users&#x27;, userRoutes);
+router.use(&#x27;/products&#x27;, productRoutes);
+router.use(&#x27;/clients&#x27;, clientRoutes);
+
+// .. and any other endpoint related to the user&#x27;s resource
+
+// after the route has been fully configured, we then export it so it can be required where needed
+module.exports = router; // standard convention dictates that this is the last line on the file</code></pre><figure id="235e8a5b-1d83-4128-9de9-7117e976c90c" class="image"><a href="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"><img src="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"/></a></figure><h3 id="9b72c793-8ff0-4a52-a8d4-bbe4655935a5" class="">Objective 1 — explain the role of a foreign key</h3><h3 id="758ba025-fa73-4eb0-b56f-081826ebade8" class="">Overview</h3><p id="d330299f-f4e6-44e7-98b8-849b86b7b89c" class=""><strong>Foreign keys</strong> are a type of table field used for creating links between tables. Like <strong>primary keys</strong>, they are most often integers that identify (rather than store) data. However, whereas a primary key is used to id rows in a table, foreign keys are used to connect a record in one table to a record in a second table.</p><h3 id="16af2bdc-77c9-44a3-8e59-39fc959dfb3e" class="">Follow Along</h3><p id="c4eccbdd-7cbc-4793-98d5-1db181db2e41" class="">Consider the following <code>farms</code> and <code>ranchers</code> tables.</p><p id="4854a928-e073-4917-b59d-221f35da0dda" class=""><a href="../Building%20RESTful%20APIs%20with%20Express%20160a3b97dd0a48bbbbdd9efe8662ea6e/d3%2073e5c8f3e3144c5db6a9002582d8338f/Untitled%20Database%20b88ebcd8fa3a4fa3a36cf99c939f6067.html">Untitled</a></p><p id="9653e3a7-679d-4c8c-bf6d-10c8194e18b8" class=""><a href="../Building%20RESTful%20APIs%20with%20Express%20160a3b97dd0a48bbbbdd9efe8662ea6e/d3%2073e5c8f3e3144c5db6a9002582d8338f/Untitled%20Database%20a4ccaec69c484ce0bcd03d2e8a83e489.html">Untitled</a></p><p id="0a607a7c-ac37-48bb-b3e7-5937ab0cdd4c" class="">The <code>farm_id</code> in the <code>ranchers</code> table is an example of a <code>foreign key</code>. Each entry in the <code>farm_id</code> (foreign key) column corresponds to an <code>id</code> (primary key) in the <code>farms</code> table. This allows us to track which farm each rancher belongs to while keeping the tables normalized.</p><p id="f85bde1a-34d3-44b0-8335-e73a35b4c357" class="">If we could only see the <code>ranchers</code> table, we would know that John, Jane, and Jen all work together and that Jim and Jay also work together. However, to know where any of them work, we would need to look at the <code>farms</code> table.</p><h3 id="67c69382-e7c2-4112-8b6d-1073c1e09bdc" class="">Challenge</h3><p id="9a65f4fc-66ed-4b32-89b7-e139cf479edb" class="">Open <a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_in">SQLTryIT (Links to an external site.)</a>.</p><p id="ccdf52a0-894e-4028-8369-9e7011a12874" class="">How many records in the products table belong to the category “confections”?</p><h3 id="b565386c-f78a-4210-a725-116355faab00" class="">Objective 2 — query data from multiple tables</h3><p id="1e0cd967-07e0-437b-b93e-7d4a4e18cff4" class="">Now that we understand the basics of querying data from a single table, let’s move on to selecting data from multiple tables using JOIN operations.</p><h3 id="adedcd3f-9926-40e9-bf5f-a415a2ec7b63" class="">Overview</h3><p id="8f204cb2-8e2e-4383-b104-bee8adf6598b" class="">We can use a <code>JOIN</code> to combine query data from multiple tables using a single <code>SELECT</code> statement.</p><p id="93abe89a-fd64-41f6-a986-1ab751941a04" class="">There are different types of joins; some are listed below:</p><ul id="adbc0280-d32f-488d-a73e-afa038ca7e4b" class="bulleted-list"><li>inner joins.</li></ul><ul id="653fda32-0b42-4d57-af0a-984d89aca6a6" class="bulleted-list"><li>outer joins.</li></ul><ul id="840b0a60-7939-4487-ad44-e9e8a06b91fc" class="bulleted-list"><li>left joins.</li></ul><ul id="5db5499e-472b-4bc7-8f8c-035e61c039a6" class="bulleted-list"><li>right joins.</li></ul><ul id="b8a5efc4-432d-4d19-958a-f75aa70dc76b" class="bulleted-list"><li>cross joins.</li></ul><ul id="545448be-170b-4cef-9888-25fa2eb85cad" class="bulleted-list"><li>non-equality joins.</li></ul><ul id="60a407c3-8d89-4742-aaa1-0ea5a5757341" class="bulleted-list"><li>self joins.</li></ul><p id="89ed4ece-6c40-4a3d-9702-06758027ab5b" class="">Using <code>joins</code> requires that the two tables of interest contain at least one field with shared information. For example, if a <em>departments</em> table has an <em>id</em> field, and an employee table has a <em>department_id</em> field, and the values that exist in the <em>id</em> column of the <em>departments</em> table live in the <em>department_id</em> field of the employee table, we can use those fields to join both tables like so:</p><pre id="9256636d-772a-40fc-b331-135bde74f4d6" class="code code-wrap"><code>select * from employees
+join departments on employees.department_id = departments.id</code></pre><p id="d50cb4b9-043a-4b6e-ac20-05a67ef93851" class="">This query will return the data from both tables for every instance where the <code>ON</code> condition is true. If there are employees with no value for department<em>id or where the value stored in the field does not correspond to an existing id in the</em> departments <em>table, then that record will NOT be returned. In a similar fashion, any records from the</em> departments <em>table that don&#x27;t have an employee associated with them will also be omitted from the results. Basically, if the</em> id* does not show as the value of department_id for an employee, it won&#x27;t be able to join.</p><p id="0e02c680-9225-449b-a85e-c446c4646a82" class="">We can shorten the condition by giving the table names an alias. This is a common practice. Below is the same example using aliases, picking which fields to return and sorting the results:</p><pre id="b16ce090-4730-4d40-bb97-94e35242ef8d" class="code code-wrap"><code>select d.id, d.name, e.id, e.first_name, e.last_name, e.salary
+from employees as e
+join departments as d
+  on e.department_id = d.id
+order by d.name, e.last_name</code></pre><p id="1367e326-035b-4224-abf2-c3e62fdc418f" class="">Notice that we can take advantage of white space and indentation to make queries more readable.</p><p id="d4f255a6-3eab-4a80-915e-2ae5ad3bfc75" class="">There are several ways of writing joins, but the one shown here should work on all database management systems and avoid some pitfalls, so we recommend it.</p><p id="d7091ddb-b2b3-4876-a9a5-c046ad4fe9e2" class="">The syntax for performing a similar join using Knex is as follows:</p><pre id="4d22f884-9af0-4afb-88c1-749e7545b8bd" class="code code-wrap"><code>db(&#x27;employees as e&#x27;)
+  .join(&#x27;departments as d&#x27;, &#x27;e.department_id&#x27;, &#x27;d.id&#x27;)
+  .select(&#x27;d.id&#x27;, &#x27;d.name&#x27;, &#x27;e.first_name&#x27;, &#x27;e.last_name&#x27;, &#x27;e.salary&#x27;)</code></pre><h3 id="5aaf6ea5-f8f9-4f45-92da-b26509333e5b" class="">Follow Along</h3><p id="cafd2b51-53aa-4d9e-83bb-58107df7eb62" class="">A good explanation of how the different types of joins can be seen <a href="https://www.w3resource.com/sql/joins/sql-joins.php">in this article from w3resource.com (Links to an external site.)</a>.</p><h3 id="045e6372-39cb-46d9-a764-5ee4298a38fb" class="">Challenge</h3><p id="33bb83bc-f1f6-452e-8c99-4e0b9c131cd6" class="">Use <a href="https://www.w3schools.com/Sql/tryit.asp?filename=trysql_select_top">this online tool (Links to an external site.)</a> to write the following queries:</p><ul id="0bb9900d-82cd-45fd-a71d-989f6f6fb9ca" class="bulleted-list"><li>list the products, including their category name.</li></ul><ul id="4b76de9c-02eb-4468-a059-d864a037105b" class="bulleted-list"><li>list the products, including the supplier name.</li></ul><ul id="5fe5ca65-2ade-4fd0-8d76-60576389fe5d" class="bulleted-list"><li>list the products, including both the category name and supplier name.</li></ul><h3 id="e0800fbf-2ab6-4d92-9d41-9a435f82d7d1" class="">What is SQL Joins?</h3><p id="1b050d3c-4969-43d7-87fb-92998588d6b4" class="">An SQL JOIN clause combines rows from two or more tables. It creates a set of rows in a temporary table.</p><h3 id="a7c19c79-cab3-41bb-8827-f2dd6a64dd10" class="">How to Join two tables in SQL?</h3><p id="14300d47-0277-435d-8ef9-405b68bbbeef" class="">A JOIN works on two or more tables if they have at least one common field and have a relationship between them.</p><p id="2cac73bb-fed3-4e66-8068-9a8a593c2dc3" class="">JOIN keeps the base tables (structure and data) unchanged.</p><h3 id="c0473d8a-b8cc-4375-94a1-26b29d7acb91" class="">Join vs. Subquery</h3><ul id="cb1b0f27-a812-4701-99bd-5eef0157881d" class="bulleted-list"><li>JOINs are faster than a subquery and it is very rare that the opposite.</li></ul><ul id="6fc518bb-8c8b-4946-bdf8-85828bbea284" class="bulleted-list"><li>In JOINs the RDBMS calculates an execution plan, that can predict, what data should be loaded and how much it will take to processed and as a result this process save some times, unlike the subquery there is no pre-process calculation and run all the queries and load all their data to do the processing.</li></ul><ul id="c4a5e100-13f6-4599-b42e-06e30a2f6d9f" class="bulleted-list"><li>A JOIN is checked conditions first and then put it into table and displays; where as a subquery take separate temp table internally and checking condition.</li></ul><ul id="da9f092e-92e1-432a-b043-cbda6d24b5f9" class="bulleted-list"><li>When joins are using, there should be connection between two or more than two tables and each table has a relation with other while subquery means query inside another query, has no need to relation, it works on columns and conditions.</li></ul><h3 id="9b093963-3717-46be-8648-f08ffc70b36b" class="">SQL JOINS: EQUI JOIN and NON EQUI JOIN</h3><p id="9b599a82-94d7-4f33-b885-6ebd65b85413" class="">The are two types of SQL JOINS — EQUI JOIN and NON EQUI JOIN</p><ol type="1" id="6b67ca76-fb76-4c42-b921-72f5f91939c8" class="numbered-list" start="1"><li>SQL EQUI JOIN :</li></ol><p id="636b9c83-dbcd-49f1-a1f1-b53219791078" class="">The SQL EQUI JOIN is a simple SQL join uses the equal sign(=) as the comparison operator for the condition. It has two types — SQL Outer join and SQL Inner join.</p><ol type="1" id="3f7dd8dc-ad44-4689-9436-dd60d2ddeb06" class="numbered-list" start="1"><li>SQL NON EQUI JOIN :</li></ol><p id="e25ac3c9-3ede-4cc3-afd7-7676c11c32a8" class="">The <strong>SQL NON EQUI JOIN</strong> is a join uses comparison operator other than the equal sign like &gt;, &lt;, &gt;=, &lt;= with the condition.</p><p id="d732b180-d0b2-4cb6-9fad-56d8a6d17314" class=""><strong>SQL EQUI JOIN : INNER JOIN and OUTER JOIN</strong></p><p id="d34d06fa-7af9-425c-a059-ce7f556d87d2" class="">The SQL EQUI JOIN can be classified into two types — INNER JOIN and OUTER JOIN</p><ol type="1" id="4a4b3604-6cad-4abb-a4f7-bc3b9073e2cf" class="numbered-list" start="1"><li>SQL INNER JOIN</li></ol><p id="3a7dcca2-b781-451e-923f-b66139f233c1" class="">This type of EQUI JOIN returns all rows from tables where the key record of one table is equal to the key records of another table.</p><ol type="1" id="1723bcd0-9723-46a5-84a3-9cf2c52c1d54" class="numbered-list" start="1"><li>SQL OUTER JOIN</li></ol><p id="f114ec51-1955-4e59-8112-f9cc0b9d692d" class="">This type of EQUI JOIN returns all rows from one table and only those rows from the secondary table where the joined condition is satisfying i.e. the columns are equal in both tables.</p><p id="46632801-787e-4cbf-8034-726f1f095e7a" class="">In order to perform a JOIN query, the required information we need are:</p><p id="94a28745-8956-4546-9d5c-f6ac7be9681c" class=""><strong>a)</strong> The name of the tables<strong>b)</strong> Name of the columns of two or more tables, based on which a condition will perform.</p><p id="408282a2-ba6e-4e1a-b566-91f07036b1eb" class=""><strong>Syntax:</strong></p><pre id="1e90e644-c1db-4c6a-bf39-da2fd6d94802" class="code code-wrap"><code>FROM table1
+join_type table2
+[ON (join_condition)]</code></pre><p id="6c1ab579-a525-4dd2-a8a0-a0478b5f0ec2" class=""><strong>Parameters:</strong></p><p id="ff96ba47-18bf-4ad4-ba82-2f309b7b50b9" class=""><a href="../Building%20RESTful%20APIs%20with%20Express%20160a3b97dd0a48bbbbdd9efe8662ea6e/d3%2073e5c8f3e3144c5db6a9002582d8338f/Untitled%20Database%203e2d9e2f028e4b7abf2da81156a54364.html">Untitled</a></p><p id="46e4c440-5668-4f16-a3f9-f177cab0192a" class=""><strong>Pictorial Presentation of SQL Joins:</strong></p><figure id="ae822d18-faaa-4656-8303-e0d405770b13" class="image"><a href="https://cdn-images-1.medium.com/max/864/0*bbwqJEpV2a9WZG-t.gif"><img src="https://cdn-images-1.medium.com/max/864/0*bbwqJEpV2a9WZG-t.gif"/></a></figure><p id="e835d145-8c4e-4c77-a973-a32fccf62700" class=""><strong>Example:</strong></p><p id="5a655a51-3f68-4475-b2fa-2f7e52ad1e75" class=""><strong>Sample table: company</strong></p><p id="3e438e9f-b594-466f-9d92-4fe9c63198ed" class=""><strong>Sample table: foods</strong></p><p id="5369905d-000f-4a46-8e4c-33dddf16f434" class="">To join two tables ‘company’ and ‘foods’, the following SQL statement can be used :</p><p id="d0fa878d-f5ef-446b-8412-bac80c70aff0" class=""><strong>SQL Code:</strong></p><pre id="770f1ddf-0bbd-4b15-8f89-8197f80c7c48" class="code code-wrap"><code>SELECT  company.company_id,company.company_name,
+foods.item_id,foods.item_name
+FROM company,foods;</code></pre><p id="f6988ad6-9484-4825-b686-e240ca8ff802" class="">Copy</p><p id="43af1561-66b1-4483-8f9d-a907addbf013" class="">Output:</p><pre id="7c411a2c-c923-49b5-ab7b-1c23c59d3d25" class="code code-wrap"><code>COMPAN COMPANY_NAME              ITEM_ID  ITEM_NAME
+------ ------------------------- -------- ---------------
+18     Order All                 1        Chex Mix
+18     Order All                 6        Cheez-It
+18     Order All                 2        BN Biscuit
+18     Order All                 3        Mighty Munch
+18     Order All                 4        Pot Rice
+18     Order All                 5        Jaffa Cakes
+18     Order All                 7        Salt n Shake
+15     Jack Hill Ltd             1        Chex Mix
+15     Jack Hill Ltd             6        Cheez-It
+15     Jack Hill Ltd             2        BN Biscuit
+15     Jack Hill Ltd             3        Mighty Munch
+15     Jack Hill Ltd             4        Pot Rice
+15     Jack Hill Ltd             5        Jaffa Cakes
+15     Jack Hill Ltd             7        Salt n Shake
+16     Akas Foods                1        Chex Mix
+16     Akas Foods                6        Cheez-It
+16     Akas Foods                2        BN Biscuit
+16     Akas Foods                3        Mighty Munch
+16     Akas Foods                4        Pot Rice
+16     Akas Foods                5        Jaffa Cakes
+16     Akas Foods                7        Salt n Shake
+.........
+.........
+.........</code></pre><p id="652e64bc-974f-4eeb-a7e6-1e0ec646c6a5" class=""><strong>JOINS: Relational Databases</strong></p><ul id="e20066d5-09bb-4c22-b080-bf4f3bb69762" class="bulleted-list"><li><a href="https://www.w3resource.com/oracle/joins/index.php"><strong>Oracle JOINS</strong></a></li></ul><ul id="534c57cd-93a2-4eba-97c9-9505f358b16f" class="bulleted-list"><li><a href="https://www.w3resource.com/mysql/advance-query-in-mysql/mysql-joins.php"><strong>MySQL JOINS</strong></a></li></ul><ul id="a7462c11-9f15-425e-b325-28fc62937a21" class="bulleted-list"><li><a href="https://www.w3resource.com/PostgreSQL/postgresql-join.php"><strong>PostgreSQL JOINS</strong></a></li></ul><ul id="f5a42091-49be-43f4-a414-b107ce45f854" class="bulleted-list"><li><a href="https://www.w3resource.com/sqlite/sqlite-inner-join.php"><strong>SQLite JOINS</strong></a></li></ul><p id="455f9731-db38-41a4-9eb3-70b9fa67106d" class=""><strong>Key points to remember:</strong></p><p id="715bcdb7-6cd8-4a6e-a8dc-fd1f38c9e5ef" class=""><em>Click on the following to get the slides presentation -</em></p><figure id="fb964145-aaf3-48cd-af7d-ab844395284f" class="image"><a href="https://cdn-images-1.medium.com/max/864/0*lP_nQo6VtVu_68nx.png"><img src="https://cdn-images-1.medium.com/max/864/0*lP_nQo6VtVu_68nx.png"/></a></figure><h3 id="5d85b07e-fef6-48c0-ba86-a6e430064494" class=""></h3><p id="d3f9f27c-0828-44fa-855f-602fd238d4e7" class=""><strong>Practice SQL Exercises</strong></p><ul id="5e611a7d-5ccf-4cdb-bc69-14ffd3ebf4be" class="bulleted-list"><li><a href="https://www.w3resource.com/sql-exercises/index.php"><strong>SQL Exercises, Practice, Solution</strong></a></li></ul><ul id="63ffc492-3b38-4289-9437-5f8e5fd723de" class="bulleted-list"><li><a href="https://www.w3resource.com/sql-exercises/sql-retrieve-from-table.php"><strong>SQL Retrieve data from tables [33 Exercises]</strong></a></li></ul><ul id="95f9ad64-289b-4e2e-b550-cf8cf6ceba8a" class="bulleted-list"><li><a href="https://www.w3resource.com/sql-exercises/sql-boolean-operators.php"><strong>SQL Boolean and Relational operators [12 Exercises]</strong></a></li></ul><ul id="11b6ee81-121b-4068-b4e0-ade71cab2070" class="bulleted-list"><li><a href="https://www.w3resource.com/sql-exercises/sql-wildcard-special-operators.php"><strong>SQL Wildcard and Special operators [22 Exercises]</strong></a></li></ul><ul id="4e3f1856-7c24-4c63-9baa-2ec06391e77f" class="bulleted-list"><li><a href="https://www.w3resource.com/sql-exercises/sql-aggregate-functions.php"><strong>SQL Aggregate Functions [25 Exercises]</strong></a></li></ul><ul id="957a6097-069f-4e09-9d93-0c0a6dd5b5bf" class="bulleted-list"><li><a href="https://www.w3resource.com/sql-exercises/sql-fromatting-output-exercises.php"><strong>SQL Formatting query output [10 Exercises]</strong></a></li></ul><ul id="b25747a7-3209-43e0-9b66-9496c4f905d5" class="bulleted-list"><li><a href="https://www.w3resource.com/sql/joins/s/sql-exercises/ql-exercises-quering-on-multiple-table.php"><strong>SQL Quering on Multiple Tables [7 Exercises]</strong></a></li></ul><ul id="80bcf3a6-78c3-4b34-b49d-a84b64e3756a" class="bulleted-list"><li><a href="https://www.w3resource.com/sql-exercises/sorting-and-filtering-hr/index.php"><strong>FILTERING and SORTING on HR Database [38 Exercises]</strong></a></li></ul><ul id="a1d2da50-fc86-40d2-853d-b819228f243d" class="bulleted-list"><li>SQL JOINS</li></ul><ul id="f8441f1e-24aa-43a3-9131-319f8d533eaf" class="bulleted-list"><li><a href="https://www.w3resource.com/sql-exercises/sql-joins-exercises.php"><strong>SQL JOINS [29 Exercises]</strong></a></li></ul><ul id="234b0e79-8df2-41a5-8570-d8dd49c1e397" class="bulleted-list"><li><a href="https://www.w3resource.com/sql-exercises/joins-hr/index.php"><strong>SQL JOINS on HR Database [27 Exercises]</strong></a></li></ul><ul id="cd1930ce-d64d-43e5-a3be-f187b4898f05" class="bulleted-list"><li></li></ul><ul id="c8ef25e3-1ef0-43b8-af10-700791ca9389" class="bulleted-list"><li>SQL SUBQUERIES</li></ul><ul id="3cf69c22-1a6a-4200-9d45-c2ce97979a18" class="bulleted-list"><li><a href="https://www.w3resource.com/sql-exercises/subqueries/index.php"><strong>SQL SUBQUERIES [39 Exercises]</strong></a></li></ul><ul id="10c13950-0fa1-4db7-81ce-f3027de1e6c6" class="bulleted-list"><li><a href="https://www.w3resource.com/sql-exercises/sql-subqueries-exercises.php"><strong>SQL SUBQUERIES on HR Database [55 Exercises]</strong></a></li></ul><ul id="b66d516c-bd34-432e-9ecf-ee8659fc592b" class="bulleted-list"><li></li></ul><ul id="dd88c164-ebbf-4505-b88f-a07c0031b70e" class="bulleted-list"><li><a href="https://www.w3resource.com/sql-exercises/union/sql-union.php"><strong>SQL Union[9 Exercises]</strong></a></li></ul><ul id="86f64b5c-7831-4ca2-bcbd-bb72ebc18bc9" class="bulleted-list"><li><a href="https://www.w3resource.com/sql-exercises/view/sql-view.php"><strong>SQL View[16 Exercises]</strong></a></li></ul><ul id="668d6ca6-8c4c-4fc0-9da0-2b6101414933" class="bulleted-list"><li><a href="https://www.w3resource.com/sql-exercises/sql-user-management.php"><strong>SQL User Account Management [16 Exercise]</strong></a></li></ul><ul id="9a0f06c5-6863-4d7e-91ac-f05589855a2e" class="bulleted-list"><li>Movie Database</li></ul><ul id="924ac719-f8bd-4df4-81c3-57a43d6e4de0" class="bulleted-list"><li><a href="https://www.w3resource.com/sql-exercises/movie-database-exercise/basic-exercises-on-movie-database.php"><strong>BASIC queries on movie Database [10 Exercises]</strong></a></li></ul><ul id="c7690c04-8198-4120-9bbb-bb093f208763" class="bulleted-list"><li><a href="https://www.w3resource.com/sql-exercises/movie-database-exercise/subqueries-exercises-on-movie-database.php"><strong>SUBQUERIES on movie Database [16 Exercises]</strong></a></li></ul><ul id="e8bf6f3e-99fb-4c83-8f25-938b5ce187d5" class="bulleted-list"><li><a href="https://www.w3resource.com/sql-exercises/movie-database-exercise/joins-exercises-on-movie-database.php"><strong>JOINS on movie Database [24 Exercises]</strong></a></li></ul><ul id="88f55975-20d1-4b4f-bfcc-c2920647f0e5" class="bulleted-list"><li></li></ul><ul id="8ae9d33d-d1f2-45b5-a8e7-8e1b80da0912" class="bulleted-list"><li>Soccer Database</li></ul><ul id="ad9d8603-74e8-4656-a1f2-a2855af8afcf" class="bulleted-list"><li><a href="https://www.w3resource.com/sql-exercises/soccer-database-exercise/index.php"><strong>Introduction</strong></a></li></ul><ul id="fb834427-4f29-4b6a-8854-57bc4a8629f0" class="bulleted-list"><li><a href="https://www.w3resource.com/sql-exercises/soccer-database-exercise/basic-exercises-on-soccer-database.php"><strong>BASIC queries on soccer Database [29 Exercises]</strong></a></li></ul><ul id="4b0d2c03-6a16-424c-bab7-9907f2792121" class="bulleted-list"><li><a href="https://www.w3resource.com/sql-exercises/soccer-database-exercise/subqueries-exercises-on-soccer-database.php"><strong>SUBQUERIES on soccer Database [33 Exercises]</strong></a></li></ul><ul id="d98c6170-1cc3-4bff-8607-e6605b634660" class="bulleted-list"><li><a href="https://www.w3resource.com/sql-exercises/soccer-database-exercise/joins-exercises-on-soccer-database.php"><strong>JOINS queries on soccer Database [61 Exercises]</strong></a></li></ul><ul id="6eae4ebb-7750-47b6-a02c-d49c7127e2e2" class="bulleted-list"><li></li></ul><ul id="97c4c148-46e2-4c9e-9df5-e9f261f08b7d" class="bulleted-list"><li>Hospital Database</li></ul><ul id="56cb3ad5-7e09-4a54-90a3-0578c97db2fe" class="bulleted-list"><li><a href="https://www.w3resource.com/sql-exercises/hospital-database-exercise/index.php"><strong>Introduction</strong></a></li></ul><ul id="47be68e4-1eca-4e16-9116-3e0662777694" class="bulleted-list"><li><a href="https://www.w3resource.com/sql-exercises/hospital-database-exercise/sql-exercise-on-hospital-database.php"><strong>BASIC, SUBQUERIES, and JOINS [39 Exercises]</strong></a></li></ul><ul id="e3395e9b-96be-4183-a38f-b4e89db81853" class="bulleted-list"><li></li></ul><ul id="eb9b8579-1d04-4c57-b31e-79cc93e03d33" class="bulleted-list"><li>Employee Database</li></ul><ul id="490b5e6a-b302-481e-8eb5-b1f94af0e69a" class="bulleted-list"><li><a href="https://www.w3resource.com/sql-exercises/employee-database-exercise/index.php"><strong>BASIC queries on employee Database [115 Exercises]</strong></a></li></ul><ul id="2574baf2-26c5-4cc7-b789-7dddfbb707f6" class="bulleted-list"><li><a href="https://www.w3resource.com/sql-exercises/employee-database-exercise/subqueries-exercises-on-employee-database.php"><strong>SUBQUERIES on employee Database [77 Exercises]</strong></a></li></ul><ul id="678f0faf-4dcf-4bcc-9a3a-4d664303212c" class="bulleted-list"><li></li></ul><ul id="f496e3cc-35da-461b-919c-c2d03a33a4b5" class="bulleted-list"><li>More to come!</li></ul><h3 id="35fdb141-e9c4-4cfb-823f-10aae3c69a65" class="">Objective 3 — write database access methods</h3><h3 id="81ea3f6a-f572-4d87-9893-55205c575344" class="">Overview</h3><p id="62ca94b3-f4c6-4e67-9635-9ae6bf2629b0" class="">While we can write database code directly into our endpoints, best practices dictate that all database logic exists in separate, modular methods. These files containing database access helpers are often called <strong>models</strong></p><h3 id="133d90df-a7df-432d-a5e4-4ae85a0575f0" class="">Follow Along</h3><p id="32427ff0-bc0a-47df-8c03-55c85264974b" class="">To handle CRUD operations for a single resource, we would want to create a <strong>model</strong> (or database access file) containing the following methods:</p><pre id="3e2068a5-a713-429f-a015-65cbffbef88e" class="code code-wrap"><code>function find() {
+}</code></pre><pre id="f7528721-bcfb-4da0-a930-80115854d031" class="code code-wrap"><code>function findById(id) {
+}</code></pre><pre id="8d266d0e-201a-48e3-a6cb-4dae12478248" class="code code-wrap"><code>function add(user) {
+}</code></pre><pre id="40cc547b-5cf6-4eaa-8c3f-1c5a9573a1b6" class="code code-wrap"><code>function update(changes, id) {
+}</code></pre><pre id="579d5a3b-da22-451d-bad7-ae881f30d9c6" class="code code-wrap"><code>function remove(id) {
+}</code></pre><p id="4760a385-5ba5-4e09-8fff-b51c51a2d698" class="">Each of these functions would use Knex logic to perform the necessary database operation.</p><pre id="cc6bfb29-e4d5-42c8-84ba-15205dd8423e" class="code code-wrap"><code>function find() {
+  return db(&#x27;users&#x27;);
+}</code></pre><p id="9e8d5826-ec6b-407b-a285-1e4df575e06a" class="">For each method, we can choose what value to return. For example, we may prefer <code>findById()</code> to return a single <code>user</code> object rather than an array.</p><pre id="4f22bba0-ae14-44d7-be7a-e617b7f2b99c" class="code code-wrap"><code>function findById(id) {
+// first() returns the first entry in the db matching the query
+  return db(&#x27;users&#x27;).where({ id }).first();
+}</code></pre><p id="c50731a8-8a32-4cde-a44f-0633b1b08c9d" class="">We can also use existing methods like <code>findById()</code> to help <code>add()</code> return the new user (instead of just the id).</p><pre id="38e1bd99-f8e2-4372-84e1-1bfdc6f5cc54" class="code code-wrap"><code>function add(user) {
+  db(&#x27;users&#x27;).insert(user)
+    .then(ids =&gt; {
+      return findById(ids[0]);
+    });
+}</code></pre><p id="1f0c539f-c094-4fa5-8e47-101a9516b0aa" class="">Once all methods are written as desired, we can export them like so:</p><pre id="ebc4d304-02af-4b20-a61b-8ff3695e26d2" class="code code-wrap"><code>module.exports = {
+  find,
+  findById,
+  add,
+  update,
+  delete,
+}</code></pre><p id="b2dd616d-27d1-4401-be4b-b7ad66b69652" class="">…and use the helpers in our endpoints</p><pre id="e5ea7780-a05c-4968-bbfa-3c11020e5f70" class="code code-wrap"><code>const User = require(&#x27;./user-model.js&#x27;);</code></pre><pre id="77ff28f3-6ab1-4fc9-bdd4-87538b3485d2" class="code code-wrap"><code>router.get(&#x27;/&#x27;, (req, res) =&gt; {
+  User.find()
+    .then(users =&gt; {
+      res.json(users);
+    })
+    .catch(&amp;nbsp;err =&gt; {});
+});</code></pre><p id="a932f977-b5e4-4b21-9f5e-abffb0995e5a" class="">There should no be <code>knex</code> code in the endpoints themselves.</p><figure id="cb7c85fe-2906-4312-9a64-cb06b28c9858" class="image"><a href="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"><img src="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"/></a></figure><figure id="b09f73e4-0c11-4c64-af26-340a5523a2c7" class="image"><a href="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"><img src="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"/></a></figure><h3 id="e5a13f52-7cc2-4dbe-b14c-31f3ccdc5c76" class="">A database is a collection of data organized for easy retrieval and manipulation.</h3><p id="b6c21a94-1293-4e68-8b0c-0c0db4baa66c" class="">We’re concerned only with digital databases, those that run on computers or other electronic devices. Digital databases have been around since the 1960s. Relational databases, those which store “related” data, are the oldest and most common type of database in use today.</p><h3 id="4ec877ab-9356-4fd5-9581-a60d6c813d0d" class="">Data Persistence</h3><p id="bd1a90b2-4140-4abd-8c19-b534f8c4c0db" class="">A database is often necessary because our application or code requires data persistence. This term refers to data that is infrequently accessed and not likely to be modified. In less technical terms, the information will be safely stored and remain untouched unless intentionally modified.</p><p id="402f36c6-68d2-44ce-af54-1bd153fdd246" class="">A familiar example of non-persistent data would be JavaScript objects and arrays, which reset each time the code runs.</p><h3 id="0390741a-54e2-4c0a-8fba-6cb18a91d418" class="">Relational Databases</h3><p id="5cd55849-30e9-4089-a53c-07753e62c0bd" class="">In relational databases, <strong>the data is stored in tabular format grouped into rows and columns</strong> (similar to spreadsheets). A collection of rows is called a table. Each row represents a single record in the table and is made up of one or more columns.</p><p id="dc862b77-bc0a-4daa-a284-c665e2397e63" class="">These kinds of databases are relational because a <em>relation</em> is a mathematical idea equivalent to a table. So relational databases are databases that store their data in tables.</p><h3 id="9c2567a1-9c7b-4619-a404-010b9d05d539" class="">Tables</h3><p id="62c67281-8b73-42b9-a665-ce32e8c3d877" class=""><strong>Below are some basic facts about tables:</strong></p><blockquote id="13e8b538-e807-4def-9175-5e85ce72d8cc" class="">Tables organize data in rows and columns.</blockquote><blockquote id="1ef9dbd0-ad35-40cc-8b39-5cf0100f653f" class="">Each row in a table represents one distinct record.</blockquote><blockquote id="eff546d0-6708-4014-ac27-74ac0989b21e" class="">Each column represents a field or attribute that is common to all the records.</blockquote><blockquote id="ba5fab2e-e3a7-40b8-a55b-f1e800e48d9c" class="">Fields should have a descriptive name and a data type appropriate for the attribute it represents.</blockquote><blockquote id="38de7c2a-83cb-4bc2-9e3a-f7d1ae156bce" class="">Tables usually have more rows than columns.</blockquote><blockquote id="b71b0dcb-a97b-4277-b015-4db4e85ba4a9" class="">Tables have primary keys that uniquely identify each row.</blockquote><blockquote id="cbfee1a0-5a32-4439-8d6d-2722335584da" class="">Foreign keys represent the relationships with other tables.</blockquote><figure id="29873107-0d75-4489-b4ce-fd0562b787ae" class="image"><a href="https://cdn-images-1.medium.com/max/864/0*7ZPYzWNRcs2PBL6p.jpg"><img src="https://cdn-images-1.medium.com/max/864/0*7ZPYzWNRcs2PBL6p.jpg"/></a></figure><figure id="89fc54fc-b950-41f2-b9f8-a47c78662f47" class="image"><a href="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"><img src="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"/></a></figure><h3 id="f3ee334e-302b-47ad-93ff-6d0d55f589e7" class="">SQL:</h3><p id="78b6f924-8ce9-4cc9-92c6-f250ec705ab3" class="">SQL is a standard language, which means that it almost certainly will be supported, no matter how your database is managed. That said, be aware that the SQL language can vary depending on database management tools. This lesson focuses on a set of core commands that never change. Learning the standard commands is an excellent introduction since the knowledge transfers between database products.</p><p id="e00060e1-40cf-4e33-aecc-b8ab4ac25752" class="">The syntax for SQL is English-like and requires fewer symbols than programming languages like C, Java, and JavaScript.</p><p id="00135884-110c-465a-b1bd-f70586d4aa9b" class="">It is declarative and concise, which means there is a lot less to learn to use it effectively.</p><p id="4203e028-2934-4fb8-abc4-0514f5816058" class="">When learning SQL, it is helpful to understand that each command is designed for a different purpose. If we classify the commands by purpose, we’ll end up with the following sub-categories of SQL:</p><ul id="820368f6-818b-45b9-8e18-f4cee176cb16" class="bulleted-list"><li><strong>Data Definition Language (DDL)</strong>: used to modify database objects. Some examples are: <code>CREATE TABLE</code>, <code>ALTER TABLE</code>, and <code>DROP TABLE</code>.</li></ul><ul id="1d0aa1d2-766b-4c43-8194-d6812dbf5c69" class="bulleted-list"><li><strong>Data Manipulation Language (DML)</strong>: used to manipulate the data stored in the database. Some examples are: <code>INSERT</code>, <code>UPDATE</code>, and <code>DELETE</code>.</li></ul><ul id="83ccf657-8a1e-4321-99af-35ef88b3865f" class="bulleted-list"><li><strong>Data Query Language (DQL)</strong>: used to ask questions about the data stored in the database. The most commonly used SQL command is <code>SELECT</code>, and it falls in this category.</li></ul><ul id="af6a5466-d26d-4a73-8ef6-43025d5b6adf" class="bulleted-list"><li><strong>Data Control Language (DCL)</strong>: used to manage database security and user’s access to data. These commands fall into the realm of Database Administrators. Some examples are <code>GRANT</code> and <code>REVOKE</code>.</li></ul><ul id="3903ff37-77ce-4845-8d39-e69fde3c3df7" class="bulleted-list"><li><strong>Transaction Control Commands</strong>: used for managing groups of statements that must execute as a unit or not execute at all. Examples are <code>COMMIT</code> and <code>ROLLBACK</code>.</li></ul><p id="4ced2dba-c1ad-4acb-8c19-533818d6bf6a" class="">As a developer, you’ll need to get familiar with DDL and become proficient using DML and DQL. This lesson will cover only DML and DQL commands.</p><h3 id="f3bda65a-dcf3-46c7-a885-5bb1354c194a" class=""></h3><figure id="b70de6f6-0f84-42a8-8122-00dfe23665ae" class="image"><a href="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"><img src="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"/></a></figure><p id="7d862e37-f604-4c69-8eff-f7eb2a594592" class="">The four SQL operations covered in this section will allow a user to <strong>query</strong>, <strong>insert</strong>, and <strong>modify</strong> a database table.</p><h3 id="478f8ddb-a0f1-43d4-8bf6-86f852cd8ed1" class="">Query</h3><p id="84e3f5c6-f254-4867-9eca-a82218b96f7d" class="">A <strong>query</strong> is a SQL statement used to retrieve data from a database. The command used to write queries is <code>SELECT</code>, and it is one of the most commonly used SQL commands.</p><p id="30a7794d-fa68-428f-8d53-e763902c97d9" class="">The basic syntax for a <code>SELECT</code> statement is this:</p><pre id="c3e2cab9-b803-45e9-8253-5644f0513b2d" class="code code-wrap"><code>select &lt;selection&gt; from &lt;table name&gt;;</code></pre><p id="cc696af1-79ff-4779-8f92-0f0f692302f0" class="">To see all the fields on a table, we can use a <code>*</code> as the <code>selection</code>.</p><pre id="c19961d6-84c4-4c35-9762-a7e1fb9a2b63" class="code code-wrap"><code>select * from employees;</code></pre><p id="76a4f6ab-3f37-412c-b87b-b19e2361df4d" class="">The preceding statement would show all the records and all the columns for each record in the <code>employees</code> table.</p><p id="f7030e84-1539-4daf-a5d7-ed950ba1f459" class="">To pick the fields we want to see, we use a comma-separated list:</p><pre id="519306ec-a802-43bf-a1eb-ef568f52dbe8" class="code code-wrap"><code>select first_name, last_name, salary from employees;</code></pre><p id="6282c39c-6ccd-41e2-b106-d5e2744e73d5" class="">The return of that statement would hold all records from the listed fields.</p><p id="6e58a990-8475-4ac4-8013-f8d5fc15bf35" class="">We can extend the <code>SELECT</code> command&#x27;s capabilities using <code>clauses</code> for things like filtering, sorting, pagination, and more.</p><p id="90162c11-6d5e-4336-960f-e27e2a7f1713" class="">It is possible to query multiple tables in a single query. But, in this section, we only perform queries on a single table. We will cover performing queries on multiple tables in another section.</p><h3 id="7c291735-4190-48c8-8e71-b7d6abff76a5" class="">Insert</h3><p id="4cb89ee3-3462-4fcc-b0f4-7b11e92bbfce" class="">To <strong>insert</strong> new data into a table, we’ll use the <code>INSERT</code> command. The basic syntax for an <code>INSERT</code> statement is this:</p><pre id="54a18d33-bb69-42aa-849e-36a4add0055b" class="code code-wrap"><code>insert into &lt;table name&gt; (&lt;selection&gt;) values (&lt;values&gt;)</code></pre><p id="95231ba0-9efb-4fd1-98ec-9e4545e3b20f" class="">Using this formula, we can specify which values will be inserted into which fields like so:</p><pre id="cf3f902e-f572-4a1f-9c6c-683c7bd19bbc" class="code code-wrap"><code>insert into Customers (Country, CustomerName, ContactName, Address, City, PostalCode)
+values (&#x27;USA&#x27;, &#x27;WebDev School&#x27;, &#x27;Austen Allred&#x27;, &#x27;1 WebDev Court&#x27;, &#x27;Provo&#x27;, &#x27;84601&#x27;);</code></pre><h3 id="2e4b4257-19f8-4bb2-86cd-616e44ffe113" class="">Modify</h3><p id="eec3d8cd-cd52-4709-b62d-be33c4549a95" class=""><strong>Modifying</strong> a database consists of updating and removing records. For these operations, we’ll use <code>UPDATE</code> and <code>DELETE</code> commands, respectively.</p><p id="2b2b3925-3a9d-42d4-9cac-d805812890f3" class="">The basic syntax for an <code>UPDATE</code> statement is:</p><pre id="3d8ba32c-557a-4ae3-9559-1d8f2e39e6f4" class="code code-wrap"><code>update &lt;table name&gt; set &lt;field&gt; = &lt;value&gt; where &lt;condition&gt;;</code></pre><p id="b2b2eafb-b54d-4837-880f-bd5b5bd960b9" class="">The basic syntax for a <code>DELETE</code> statement is:</p><pre id="835ee160-ff07-4ca6-843d-ce535502aa4c" class="code code-wrap"><code>delete from &lt;table name&gt; where &lt;condition&gt;;</code></pre><h3 id="754d0801-8304-4094-8769-2ad1ce2f0c0b" class=""></h3><figure id="ba94207c-d8f9-40ea-aa06-66ada662edb1" class="image"><a href="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"><img src="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"/></a></figure><h3 id="9d95b18b-759b-43a2-8954-d3862e46e081" class="">Filtering results using WHERE clause</h3><p id="40eee98a-9b61-4e7d-b3c3-9167105e22c6" class="">When querying a database, the default result will be every entry in the given table. However, often, we are looking for a specific record or a set of records that meets certain criteria.</p><p id="1111368a-69e7-4918-8285-0f31dcb9709e" class="">A <code>WHERE</code> clause can help in both cases.</p><p id="9093b0ad-c140-416b-bb8e-85d761bb849e" class="">Here’s an example where we might only want to find customers living in Berlin.</p><pre id="ef1efbf2-13d8-4bec-ae5e-756042324233" class="code code-wrap"><code>select City, CustomerName, ContactName
+from Customers
+where City = &#x27;Berlin&#x27;</code></pre><p id="91f74d5e-eae6-418f-8ce1-d53f59fe94a1" class="">We can also chain together <code>WHERE</code> clauses using <code>OR</code> and <code>AND</code> to limit our results further.</p><p id="e68a5476-9894-4ad9-9053-baa7565c9ddd" class="">The following query includes only records that match both criteria.</p><pre id="eff2ebaa-312d-487d-ba5f-c356e7416ff3" class="code code-wrap"><code>select City, CustomerName, ContactName
+from Customers
+where Country = &#x27;France&#x27; and City = &#x27;Paris&#x27;</code></pre><p id="0ed8d601-21f1-40c7-a45c-05ba0dff0f3a" class="">And this query includes records that match either criteria.</p><pre id="506f24b4-e6c9-4699-b36f-adeac01cb8a0" class="code code-wrap"><code>select City, CustomerName, ContactName
+from Customers
+where Country = &#x27;France&#x27; or City = &#x27;Paris&#x27;</code></pre><p id="a2c563e5-8c83-4eed-bdf7-e3b7899d5691" class="">These operators can be combined and grouped with parentheses to add complex selection logic. They behave similarly to what you’re used to in programming languages.</p><p id="8a43eb87-8e77-4ce6-8b9c-f4f72ca6cbe0" class="">You can read more about SQLite operators from <a href="https://www.w3resource.com/sqlite/operators.php">w3resource (Links to an external site.)</a>.</p><p id="4802ba25-7200-4b41-8482-d84abe898930" class="">To select a single record, we can use a <code>WHERE</code> statement with a uniquely identifying field, like an id:</p><pre id="4639a322-9317-4d29-a378-e16c5a4065c5" class="code code-wrap"><code>select * from Customers
+where CustomerId=3;</code></pre><p id="83a64c19-2699-4b9a-91e4-cd6fe2f8f265" class="">Other comparison operators also work in <code>WHERE</code> conditions, such as <code>&gt;</code>, <code>&lt;</code>, <code>&lt;=</code>, and <code>&gt;=</code>.</p><pre id="b9f117e9-cb5d-4ce8-91ba-d863db4167a3" class="code code-wrap"><code>select * from employees where salary &gt;= 50000</code></pre><p id="75d64706-620c-430d-8304-af6bc570317c" class="">
+</p><hr id="ef819fe2-ccf1-4671-a644-188b540dd94e"/><h3 id="73f3c164-a4ca-4b42-ae6d-5b79e50d4c0c" class="">Ordering results using the ORDER BY clause</h3><p id="1a669aa4-b071-43f2-800b-14ae9e0b0bb9" class="">Query results are shown in the same order the data was inserted. To control how the data is sorted, we can use the <code>ORDER BY</code> clause. Let&#x27;s see an example.</p><pre id="1549d90b-d8b2-4079-8fdd-34a484b1e244" class="code code-wrap"><code>-- sorts the results first by salary in descending order, then by the last name in ascending order
+select * from employees order by salary desc, last_name;</code></pre><p id="90e251ba-3a4e-4b15-925c-5dbdbde2eb91" class="">We can pass a list of field names to <code>order by</code> and optionally choose <code>asc</code> or <code>desc</code> for the sort direction. The default is <code>asc</code>, so it doesn&#x27;t need to be specified.</p><p id="a9cd2db3-0468-45d5-bca3-b8a626d464ac" class="">Some SQL engines also support using field abbreviations when sorting.</p><pre id="48075b54-ef16-4efe-994a-a75716f6e93a" class="code code-wrap"><code>select name, salary, department from employees order by 3, 2 desc;</code></pre><p id="79612709-2564-4756-ad37-7bc822edaf53" class="">In this case, the results are sorted by the department in ascending order first and then by salary in descending order. The numbers refer to the fields’ position in the <em>selection</em> portion of the query, so <code>1</code> would be <em>name</em>, <code>2</code> would be <em>salary</em>, and so on.</p><p id="56316d80-e554-4f9e-95bb-90130336ce05" class="">Note that the <code>WHERE</code> clause should come after the <code>FROM</code> clause. The <code>ORDER BY</code> clause always goes last.</p><pre id="ebc5d660-4cf2-4d83-a897-7a857ffdf19b" class="code code-wrap"><code>select * from employees where salary &gt; 50000 order by last_name;</code></pre><h3 id="fa5535b0-6de2-4365-a383-7ecb080e01ee" class="">Limiting results using the LIMIT clause</h3><p id="a034c929-3fc9-4041-afd2-49a86b6a3e69" class="">When we wish to see only a limited number of records, we can use a <code>LIMIT</code> clause.</p><p id="4068c997-564f-44f2-ae6b-961beceac084" class="">The following returns the first ten records in the products table:</p><pre id="46b163be-6a59-46ce-b4a1-a038efad4754" class="code code-wrap"><code>select * from products
+limit 10</code></pre><p id="4dc478a2-7250-407f-bab6-7591cacbe93b" class=""><code>LIMIT</code> clauses are often used in conjunction with <code>ORDER BY</code>. The following shows us the five cheapest products:</p><pre id="4822a2b0-c2b3-4f7d-818b-98f781dd25b5" class="code code-wrap"><code>select * from products
+order by price desc
+limit 5</code></pre><h3 id="1197bba6-b36e-4f3e-a8f1-580fcff4316c" class="">Inserting data using INSERT</h3><p id="dd116825-c720-4790-9595-f3263f760b28" class="">An insert statement adds a new record to the database. All non-null fields must be listed out in the same order as their values. Some fields, like ids and timestamps, may be auto-generated and do not need to be included in an <code>INSERT</code> statement.</p><pre id="0bed31e8-b5ed-43a9-85fb-5d556aa24dd5" class="code code-wrap"><code>-- we can add fields in any order; the values need to be in the same ordinal position
+-- the id will be assigned automatically
+  insert into Customers (Country, CustomerName, ContactName, Address, City, PostalCode)
+  values (&#x27;USA&#x27;, &#x27;WebDev School&#x27;, &#x27;Austen Allred&#x27;, &#x27;1 WebDev Court&#x27;, &#x27;Provo&#x27;, &#x27;84601&#x27;);</code></pre><p id="8148937a-90df-46e2-a640-97d6817601e5" class="">The values in an insert statement must not violate any restrictions and constraints that the database has in place, such as expected datatypes. We will learn more about constraints and schema design in a later section.</p><h3 id="50b4eb81-0fe3-46a8-bfe4-8371365a7982" class="">Modifying recording using UPDATE</h3><p id="45d994c4-47f9-4f77-87e7-1cc62e4c69bf" class="">When modifying a record, we identify a single record or a set of records to update using a <code>WHERE</code> clause. Then we can set the new value(s) in place.</p><pre id="c0967697-c0cb-465e-a901-8898ab1e6d1a" class="code code-wrap"><code>update Customers
+set City = &#x27;Silicon Valley&#x27;, Country = &#x27;USA&#x27;
+where CustomerName = &#x27;WebDev School&#x27;</code></pre><p id="be995d66-7065-4fef-be1b-6afb87374867" class="">Technically the <code>WHERE</code> clause is not required, but leaving it off would result in every record within the table receiving the update.</p><h3 id="f8aa2dbe-6fca-4e6b-a6c7-22e390ff2d31" class="">Removing records using DELETE</h3><p id="53db3c45-8615-4f6e-b394-7c89bfc7981d" class="">When removing a record or set of records, we need only identify which record(s) to remove using a <code>WHERE</code> clause:</p><pre id="e47c9032-c937-4351-bbea-22a4f8e0503c" class="code code-wrap"><code>delete from Customers
+where CustomerName = &#x27;WebDev School`;</code></pre><p id="e2041d38-75a2-4956-a18e-17e90451b019" class="">Once again, the <code>WHERE</code> clause is not required, but leaving it off would remove every record in the table, so it&#x27;s essential.</p><h3 id="543ffb1b-fc79-411c-99af-756b8eb66c97" class=""></h3><figure id="10904608-a7b9-4dd4-8c5e-2eca97064cd5" class="image"><a href="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"><img src="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"/></a></figure><p id="99cd6b5e-e083-4966-b41a-c1c2ccbc80ca" class="">Raw SQL is a critical baseline skill. However, Node developers generally use an <strong>Object Relational Mapper (ORM)</strong> or <strong>query builder</strong> to write database commands in a backend codebase. Both <strong>ORMs</strong> and <strong>query builders</strong> are JavaScript libraries that allow us to interface with the database using a JavaScript version of the SQL language.</p><p id="967f2b86-9327-4797-87d1-17cf4042370f" class="">For example, instead of a raw SQL <code>SELECT</code>:</p><pre id="64aeedec-917b-4b31-a494-711fa6bd73ff" class="code code-wrap"><code>SELECT * FROM users;</code></pre><p id="9f9a6a1a-e62c-4653-ac71-a88c68691d73" class="">We could use a query builder to write the same logic in JavaScript:</p><pre id="2e7d28d4-64c1-459b-8e2e-a6989e48a8d9" class="code code-wrap"><code>db.select(&#x27;*&#x27;).from(&#x27;users&#x27;);</code></pre><p id="e3631cb3-c1de-493d-9890-92f5e7684845" class=""><strong>Query builders</strong> are lightweight and easy to get off the ground, whereas <strong>ORMs</strong> use an object-oriented model and provide more heavy lifting within their rigid structure.</p><p id="77ae4712-8765-4b83-afad-31d8b9cb240d" class="">We will use a <strong>query builder</strong> called <a href="https://knexjs.org/">knex.js (Links to an external site.)</a>.</p><h3 id="3528a2e7-edc5-4091-8444-fbb6cfced9cd" class=""></h3><figure id="c47e02c4-40fc-4381-9c8d-50b21617165d" class="image"><a href="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"><img src="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"/></a></figure><h3 id="18223ec6-ebd0-4781-a339-3fe3f1e83dde" class="">Knex Setup</h3><p id="087ec892-db66-493e-bf7c-f720d0218aef" class="">To use Knex in a repository, we’ll need to add two libraries:</p><pre id="f18e260e-45e5-41fd-a990-875b5066fc4a" class="code code-wrap"><code>npm install knex sqlite3</code></pre><p id="b2eddb35-dbca-4414-a710-8e3f629a41ae" class=""><code>knex</code> is our query builder library, and <code>sqlite3</code> allows us to interface with a <code>sqlite</code> database. We&#x27;ll learn more about <code>sqlite</code> and other <strong>database management systems</strong> in the following module. For now, know that you need both libraries.</p><p id="b7c0bb14-d0d9-44a1-a905-c91b6161b8cb" class="">Next, we use Knex to set up a config file:</p><pre id="5b4012fc-40c0-42ca-aa90-3302bd9d26df" class="code code-wrap"><code>const knex = require(&#x27;knex&#x27;);</code></pre><pre id="3e98a14c-c4db-42f6-9419-dcabb62e1bd9" class="code code-wrap"><code>const config = {
+  client: &#x27;sqlite3&#x27;,
+  connection: {
+    filename: &#x27;./data/posts.db3&#x27;,
+  },
+  useNullAsDefault: true,
+};</code></pre><pre id="be893af2-8c3e-45b3-9596-7a4240de12cc" class="code code-wrap"><code>module.exports = knex(config);</code></pre><p id="7798d24b-17ef-4357-8219-22fec9f321a5" class="">To use the query builder elsewhere in our code, we need to call <code>knex</code> and pass in a <code>config</code> object. We&#x27;ll be discussing Knex configuration more in a future module. Still, we only need the <code>client</code>, <code>connection</code>, and <code>useNullAsDefault</code> keys as shown above. The <code>filename</code> should point towards the pre-existing database file, which can be recognized by the <code>.db3</code> extension.</p><p id="2e10bf5e-8bad-4867-b5fe-ace8c42b499d" class=""><strong>GOTCHA</strong>: The file path to the database should be with respect to the <strong>root</strong> of the repo, not the configuration file itself.</p><p id="da1a2a53-eb17-45fe-ac47-6a7f494d31ba" class="">Once Knex is configured, we can import the above config file anywhere in our codebase to access the database.</p><pre id="d81df597-6ae9-417a-bc4a-9fb3ce4c2ac2" class="code code-wrap"><code>const db = require(&#x27;../data/db-config.js);</code></pre><p id="84d7395f-4673-4b7b-b088-d0e02b8198fa" class="">The <code>db</code> object provides methods that allow us to begin building queries.</p><h3 id="7b8959ad-0ed5-4866-a2d9-e8328257c225" class="">SELECT using Knex</h3><p id="c06db7ea-9f71-4852-b53a-90c19da3169b" class="">In Knex, the equivalent of <code>SELECT * FROM users</code> is:</p><pre id="34a08ec5-1c99-44fb-89a6-4658a85036f3" class="code code-wrap"><code>db.select(&#x27;*&#x27;).from(&#x27;users&#x27;);</code></pre><p id="889525b2-5ec4-4bc9-859a-b8a1243b7394" class="">There’s a simpler way to write the same command:</p><pre id="eb705cc5-85e4-406a-bd5d-a6c3fabecfaf" class="code code-wrap"><code>db(&#x27;users&#x27;);</code></pre><p id="24b660c4-c3d5-4591-8af5-8f8dc7069b64" class="">Using this, we could write a <code>GET</code> endpoint.</p><pre id="46ec7407-a783-4584-8820-328c9c899d2e" class="code code-wrap"><code>router.get(&#x27;/api/users&#x27;, (req, res) =&gt; {
+  db(&#x27;users&#x27;)
+  .then(users =&gt; {
+    res.json(users);
+  })
+  .catch (err =&gt; {
+    res.status(500).json({ message: &#x27;Failed to get users&#x27; });
+  });
+});</code></pre><p id="959b8bcf-0040-4980-95fc-f640bc470f3d" class=""><strong>NOTE</strong>: All Knex queries return promises.</p><p id="0299e25b-1dc2-445d-898c-9f5fd2e890dd" class="">Knex also allows for a where clause. In Knex, we could write <code>SELECT * FROM users WHERE id=1</code> as</p><pre id="2fce199b-634c-40c2-ba80-4cb19fdcc9e6" class="code code-wrap"><code>db(&#x27;users&#x27;).where({ id: 1 });</code></pre><p id="57ce4cb6-ad11-4a15-b1b0-b7abd7d0a837" class="">This method will resolve to an array containing a single entry like so: <code>[{ id: 1, name: &#x27;bill&#x27; }]</code>.</p><p id="37aa10e1-ffe1-41f9-b2f4-bb5dcf055876" class="">Using this, we might add a <code>GET</code> endpoint where a specific user:</p><pre id="76f87cdb-774a-4b06-b57e-4425cefc5cb8" class="code code-wrap"><code>server.get(&#x27;api/users/:id&#x27;, (req, res) =&gt; {
+  const { id } = req.params;</code></pre><pre id="4eff9759-538a-472e-87c1-8eecbea4c12b" class="code code-wrap"><code>  db(&#x27;users&#x27;).where({ id })
+  .then(users =&gt; {
+    // we must check the length to find our if our user exists
+    if (users.length) {
+      res.json(users);
+    } else {
+      res.status(404).json({ message: &#x27;Could not find user with given id.&#x27; })
+   })
+  .catch (err =&gt; {
+    res.status(500).json({ message: &#x27;Failed to get user&#x27; });
+  });
+});</code></pre><h3 id="51feff3f-316c-4c06-8370-3da7b93a5a4b" class="">INSERT using Knex</h3><p id="d8744d76-9e93-4cf4-91e5-d662c24ff9b4" class="">In Knex, the equivalent of <code>INSERT INTO users (name, age) VALUES (&#x27;Eva&#x27;, 32)</code> is:</p><pre id="1f2ca0b8-a330-4de4-9ef4-589587f5530e" class="code code-wrap"><code>db(&#x27;users&#x27;).insert({ name: &#x27;Eva&#x27;, age: 32 });</code></pre><p id="e635e1a2-10b6-4b72-a210-1f30d1b98a4e" class="">The insert method in Knex will resolve to an array containing the newly created id for that user like so: <code>[3]</code>.</p><h3 id="96a1026e-616e-405d-9e4d-139d2664c608" class="">UPDATE using Knex</h3><p id="d913d72b-7693-4ca2-8254-721e3caad12a" class="">In knex, the equivalent of <code>UPDATE users SET name=&#x27;Ava&#x27;, age=33 WHERE id=3;</code> is:</p><pre id="f2b7eddc-38ea-4681-b15b-2b24994651bb" class="code code-wrap"><code>db(&#x27;users&#x27;).where({ id: 3 })
+.update({name: &#x27;Ava&#x27;, age: 33 });</code></pre><p id="35a7cafc-32ba-4eb6-ba1c-04b37fa1092a" class="">Note that the <code>where</code> method comes before <code>update</code>, unlike in SQL.</p><p id="c859b117-343d-4669-8878-9ab9f84438ee" class="">Update will resolve to a count of rows updated.</p><h3 id="c14b6652-a4b0-4ace-bc2c-2e4aa0561f60" class="">DELETE using Knex</h3><p id="0a55512d-3cf2-4a89-893a-475f7849097e" class="">In Knex, the equivalent of <code>DELETE FROM users WHERE age=33;</code> is:</p><pre id="6b3d759b-6550-4cc6-b0e5-7246879f732a" class="code code-wrap"><code>db(&#x27;users&#x27;).where({ age: 33}).del();</code></pre><p id="f26c203f-0662-4010-b210-0da6f6c375f4" class="">Once again, the <code>where</code> must come before the <code>del</code>. This method will resolve to a count of records removed.</p><hr id="3ff327ca-ffb4-406b-873c-456bce8eac53"/><h3 id="bae19ae1-1d85-4311-9cf2-b3e23c833898" class=""></h3><figure id="85920cde-d885-4f3b-b632-689476fc4606" class="image"><a href="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"><img src="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"/></a></figure><h3 id="c79f6741-7ec1-4a19-b8af-433a2e34f398" class=""></h3><h3 id="3af1ad4e-4a1c-43f0-85bc-6ba5112bd75e" class="">Here’s a small project you can practice with.</h3><p id="7cba6af6-cf3d-404e-acd8-17804936e230" class="">SQLlite Studio is an application that allows us to create, open, view, and modify SQLite databases. To fully understand what SQLite Studio is and how it works, we must also understand the concept of the Database Management Systems (DBMS).</p><h3 id="0e0cc3d1-92d3-4d9d-806f-cbd350f6037e" class="">What is a DBMS?</h3><p id="0d25f79e-ffa9-4848-972c-72928eb1fad3" class="">To manage digital databases we use specialized software called <strong>D</strong>ata<strong>B</strong>ase <strong>M</strong>anagement <strong>S</strong>ystems (DBMS). These systems typically run on servers and are managed by <strong>D</strong>ata<strong>B</strong>ase <strong>A</strong>dministrators (DBAs).</p><p id="d4262d2c-5fba-4448-8faf-cbd9dbfd0f68" class="">In less technical terms, we need a type of software that will allow us to create, access, and generally manage our databases. In the world of relational databases, we specifically use Relational Database Mangement Systems (RDBMs). Some examples are Postgres, SQLite, MySQL, and Oracle.</p><p id="6a879681-da17-4c66-951f-4e38a57dfdfe" class="">Choosing a DBMS determines everything from how you set up your database, to where and how the data is stored, to what SQL commands you can use. Most systems share the core of the SQL language that you’ve already learned.</p><p id="33a62f3e-402a-4aa0-8285-ab78a8992c2c" class="">In other words, you can expect <code>SELECT</code>, <code>UPDATE</code>, <code>INSERT</code>, <code>WHERE</code> , and the like to be the same across all DBMSs, but the subtleties of the language may vary.</p><h3 id="0e207ac5-753b-45cb-b905-b2df1dd7de48" class="">What is SQLite?</h3><p id="62db9a07-640a-4d33-b524-aaecb7ab18e0" class=""><strong>SQLite</strong> is the DBMS, as the name suggests, it is a more lightweight system and thus easier to get set up than some others.</p><p id="48de5352-e2a4-4587-ab30-25c7ac25054f" class="">SQLite allows us to store databases as single files. SQLite projects have a <code>.db3</code> extension. That is the database.</p><p id="27a462fa-9236-4691-9245-6d1d92d81544" class="">SQLite is <em>not a database</em> (like relational, graph, or document are databases) but rather <em>a database management system</em>.</p><h3 id="b525e2f8-f6b3-4c87-bf48-6ed7812e50e1" class="">Opening an existing database in SQLite Studio</h3><p id="e6cef0de-d522-40a2-b826-ca1dbf28ad8d" class="">One useful visual interface we might use with a SQLite database is called <strong>SQLite Studio</strong>. <a href="https://sqlitestudio.pl/">Install SQLITE Studio here. (Links to an external site.)</a></p><p id="b1464cfe-deb9-4d12-89f1-dacb73fc44ee" class="">Once installed, we can use SQLite Studio to open any <code>.db3</code> file from a previous lesson. We may view the tables, view the data, and even make changes to the database.</p><p id="1191d608-5975-442d-a429-fac0ed81db00" class="">For a more detailed look at SQLite Studio, follow along in the video above.</p><h3 id="29baab2b-a33f-4516-83fb-7341d24c1f27" class=""></h3><figure id="46e32185-e431-4eaf-93a7-986016ca47d8" class="image"><a href="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"><img src="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"/></a></figure><p id="e7f61be4-9d47-4a3b-82b7-c14403418160" class="">A <strong>database schema</strong> is the shape of our database. It defines what tables we’ll have, which columns should exist within the tables and any restrictions on each column.</p><p id="e08e13dc-31f1-4e55-b0bb-3f99fc0d1cab" class="">A well-designed database schema keeps the data well organized and can help ensure high-quality data.</p><p id="f3106974-66d4-482c-8b8f-d15d6fffaf29" class="">Note that while schema design is usually left to Database Administrators (DBAs), understanding schema helps when designing APIs and database logic. And in a smaller team, this step may fall on the developer.</p><h3 id="a841cd6f-04db-4f3e-8172-3d24e5a4df74" class=""></h3><figure id="30b1ac8b-cb8f-4266-8118-32091fa77596" class="image"><a href="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"><img src="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"/></a></figure><p id="2104d6ad-2127-44d6-83e7-54bd64a0035d" class="">For a look at schema design in SQLite Studio, follow along in the video above.</p><p id="c6416c1f-7376-474c-a197-38e7b19858a5" class="">When designing a single table, we need to ask three things:</p><ul id="01f67ef0-b9ef-4b97-81f4-e10417482fcb" class="bulleted-list"><li>What fields (or columns) are present?</li></ul><ul id="d6a20adf-65ef-4faf-abd0-b1284b935959" class="bulleted-list"><li>What type of data do we expect for each field?</li></ul><ul id="73e72fb9-a45a-4de4-9952-ba8a1cd4e16a" class="bulleted-list"><li>Are there other restrictions needed for each column?</li></ul><p id="8824f2f1-a217-43ff-82e2-5928bc5955f8" class="">Looking at the following schema diagram for an <code>accounts</code> table, we can the answer to each other those questions:</p><p id="2c0e0bc2-7481-4377-b35e-6fcb029840ae" class=""><a href="../WEB43%20-%204%202%20-%20Adding%20Data%20Persistence%203b79c56d990e422db194079219690772/Untitled%20Database%209790405dda624818822293a383eec2d2.html">Untitled</a></p><h3 id="df4d377f-82ef-48c9-9fe6-4b5b282fb9b5" class="">Table Fields</h3><p id="cfaa7e35-916d-4b81-b619-403f232a470e" class="">Choosing which fields to include in a table is relatively straight forward. What information needs to be tracked regarding this resource? In the real world, this is determined by the intended use of the product or app.</p><p id="fafdbb3d-5e6d-4250-8dd8-2d3df3d58e56" class="">However, this is one requirement every table should satisfy: a <strong>primary key</strong>. A primary key is a way to identify each entry in the database uniquely. It is most often represented as a auto-incrementing integer called <code>id</code> or <code>[tablename]Id</code>.</p><h3 id="c2000c16-65aa-4794-b2ad-461e9e90db2b" class="">Datatypes</h3><p id="73ca24c5-3a1e-4d9f-862b-a300d0d79b40" class="">Each field must also have a specified datatype. The datatype available depends on our DBMS. Some supported datatype in SQLite include:</p><ul id="b459a6a3-43a6-4af6-abfe-b15003e9211b" class="bulleted-list"><li><strong>Null:</strong> Missing or unknown information.</li></ul><ul id="f558f4b6-be09-43cc-9eec-77ccaa4e4b2d" class="bulleted-list"><li><strong>Integer:</strong> Whole numbers.</li></ul><ul id="2804f8d0-e8b1-47d2-b544-4dabbe4a9510" class="bulleted-list"><li><strong>Real:</strong> Any number, including decimals.</li></ul><ul id="8d636378-6707-4b8b-8d3d-ac50e3dec9ac" class="bulleted-list"><li><strong>Text:</strong> Character data.</li></ul><ul id="99e4b46c-4027-4fbc-888d-7e13726e7630" class="bulleted-list"><li><strong>Blob:</strong> a large binary object that can be used to store miscellaneous data.</li></ul><p id="a603c8da-1091-4ef6-8e6b-1c307d240a28" class="">Any data inserted into the table must match the datatypes determined in schema design.</p><h3 id="dd27a42c-d906-49fc-b549-e10939b3b666" class="">Constraints</h3><p id="62bdfe09-a2d0-485b-a03e-7b305d1e2570" class="">Beyond datatypes, we may add additional <strong>constraints</strong> on each field. Some examples include:</p><ul id="cea4d009-b426-479a-a0f7-f47e2fd3b647" class="bulleted-list"><li><strong>Not Null:</strong> The field cannot be left empty</li></ul><ul id="afdf338a-0f27-45c2-a7af-0b24396afdba" class="bulleted-list"><li><strong>Unique:</strong> No two records can have the same value in this field</li></ul><ul id="9ab0dd85-cb29-485a-9973-dc80504e64d6" class="bulleted-list"><li><strong>Primary key:</strong> — Indicates this field is the primary key. Both the not null and unique constraints will be enforced.</li></ul><ul id="838712ff-12fd-4802-ad0d-12da472fdf33" class="bulleted-list"><li><strong>Default:</strong> — Sets a default value if none is provided.</li></ul><p id="476c3967-44b0-40a7-9507-86916a8aa9ff" class="">As with data types, any data that does not satisfy the schema constraints will be rejected from the database.</p><h3 id="f5174831-09c3-413b-abcd-ad89a566d573" class=""></h3><h3 id="9c9dd4e1-3d09-450c-a252-b6d6a4293f37" class=""></h3><figure id="8112f672-5ddd-4f2b-a10b-2d73541e7d51" class="image"><a href="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"><img src="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"/></a></figure><h3 id="e16b9c2a-ec3e-4d8a-9e2f-1876f2f13753" class="">Multi-Table Design</h3><p id="baba1ab0-38a2-43cb-b545-53d477ddb774" class="">Another critical component of schema design is to understand how different tables relate to each other. This will be covered in later lesson.</p><p id="3db25144-1b4d-401a-a277-aa13c5a0e556" class="">Knex provides a <strong>schema builder</strong>, which allows us to write code to design our database schema. However, beyond thinking about columns and constraints, we must also consider updates.</p><p id="ca0698fa-2f06-4022-88d1-64ea9b62477a" class="">When a schema needs to be updated, a developer must feel confident that the changes go into effect everywhere. This means schema updates on the developer’s local machine, on any testing or staging versions, on the production database, and then on any other developer’s local machines. This is where <strong>migrations</strong> come into play.</p><p id="323fe700-e8d6-427e-bfc7-441f4ac47924" class="">A <code>database migration</code> describes changes made to the structure of a database. Migrations include things like adding new objects, adding new tables, and modifying existing objects or tables.</p><h3 id="282823bf-b27f-4c1e-b5f4-27987ce753a7" class=""></h3><figure id="6a959f28-a9b6-4c2d-8bb2-de2796e7be15" class="image"><a href="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"><img src="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"/></a></figure><h3 id="991ba6c2-079a-4f81-bb0c-730de559e5a9" class="">Knex Cli</h3><p id="1b94eb29-6ff6-4557-887b-a7e17a1f4855" class="">To use migrations (and to make Knex setup easier), we need to use <strong>knex cli</strong>. Install knex globally with <code>npm install -g knex</code>.</p><p id="3b472146-b6f9-4554-8496-0df221675560" class="">This allows you to use Knex commands within any repo that has <code>knex</code> as a local dependency. If you have any issues with this global install, you can use the <code>npx knex</code> command instead.</p><h3 id="6f7d9c5a-ab0e-47e6-a7dd-685bb7a3d2ae" class="">Initializing Knex</h3><p id="a64b3b4f-55d0-4f90-a665-4c5602ad9746" class="">To start, add the <code>knex</code> and <code>sqlite3</code> libraries to your repository.</p><p id="007defe9-06f7-44f0-8015-e75a3af204a2" class=""><code>npm install knex sqlite3</code></p><p id="bebf61c2-b5d9-44e9-83e5-bc83e5aee56c" class="">We’ve seen how to use manually create a config object to get started with Knex, but the best practice is to use the following command:</p><pre id="67348283-e975-497e-8633-a15f599b7a68" class="code code-wrap"><code>knex init</code></pre><p id="020a95e5-3f6d-46d2-b3e5-7ec395742bdf" class="">Or, if Knex isn’t globally installed:</p><pre id="389057d8-ec4b-4dd9-9663-47cf5c71549e" class="code code-wrap"><code>npx knex init</code></pre><p id="e13e2473-aaf3-4b44-a36c-ce0da2d6a67b" class="">This command will generate a file in your root folder called <code>knexfile.js</code>. It will be auto populated with three config objects, based on different environments. We can delete all except for the development object.</p><pre id="0c1c89f6-66a4-44ea-9c0e-f7556111af44" class="code code-wrap"><code>module.exports = {</code></pre><pre id="56371634-6687-4b23-8c67-940662bf1344" class="code code-wrap"><code>  development: {
+    client: &#x27;sqlite3&#x27;,
+    connection: {
+      filename: &#x27;./dev.sqlite3&#x27;
+    }
+  }</code></pre><pre id="c3f2bd77-eb29-4fb0-a79d-caeaa6ee9fb1" class="code code-wrap"><code>};</code></pre><p id="c6e2e847-4a70-4849-9d12-7e59a51da961" class="">We’ll need to update the location (or desired location) of the database as well as add the <code>useNullAsDefault</code> option. The latter option prevents crashes when working with <code>sqlite3</code>.</p><pre id="b4e2bd20-d2ac-453f-bb0b-96eb1ad75cb6" class="code code-wrap"><code>module.exports = {</code></pre><pre id="3bef1cdd-4c86-4357-b89b-9b9deb441000" class="code code-wrap"><code>  development: {
+    // our DBMS driver
+    client: &#x27;sqlite3&#x27;,
+    // the location of our db
+    connection: {
+      filename: &#x27;./data/database_file.db3&#x27;,
+    },
+    // necessary when using sqlite3
+    useNullAsDefault: true
+  }</code></pre><pre id="8838be0f-e148-4086-b2e3-57363c2e16c6" class="code code-wrap"><code>};</code></pre><p id="66b81570-7bc2-460e-a0e0-82a8e35cc28b" class="">Now, wherever we configure our database, we may use the following syntax instead of hardcoding in a config object.</p><pre id="dcc1ac13-cfff-4546-96e7-4a24a2d57444" class="code code-wrap"><code>const knex = require(&#x27;knex&#x27;);</code></pre><pre id="42eee655-6565-430d-837b-150856324729" class="code code-wrap"><code>const config = require(&#x27;../knexfile.js&#x27;);</code></pre><pre id="a46d466e-c1dd-4ca5-b383-609447ce79b7" class="code code-wrap"><code>// we must select the development object from our knexfile
+const db = knex(config.development);</code></pre><pre id="dd03660b-9709-42a6-85cc-3b5982f380a0" class="code code-wrap"><code>// export for use in codebase
+module.exports = db;</code></pre><h3 id="2be4c8aa-1416-4b0d-82a9-401461c9a99d" class="">Knex Migrations</h3><p id="cd67a6e5-2e0d-4ace-9074-883ca5ce0c8e" class="">Once our <code>knexfile</code> is set up, we can begin creating <strong>migrations</strong>. Though it&#x27;s not required, we are going to add an <code>addition</code> option to the config object to specify a directory for the migration files.</p><pre id="b2c3e90d-ca34-4645-bc95-e8abd8e7d52c" class="code code-wrap"><code>development: {
+    client: &#x27;sqlite3&#x27;,
+    connection: {
+      filename: &#x27;./data/produce.db3&#x27;,
+    },
+    useNullAsDefault: true,
+    // generates migration files in a data/migrations/ folder
+    migrations: {
+      directory: &#x27;./data/migrations&#x27;
+    }
+  }</code></pre><p id="62c7fc36-eaca-40ea-9b44-346d1480af19" class="">We can generate a new migration with the following command:</p><p id="ccddba1e-3ded-4512-8ed4-2d265d388126" class=""><code>knex migrate:make [migration-name]</code></p><p id="6680b438-3579-4344-86d4-3125b2d20243" class="">If we needed to create an accounts table, we might run:</p><p id="cf9dc416-8dd7-44b1-8a51-bf8dd4655bb2" class=""><code>knex migrate:make create-accounts</code></p><p id="a1294531-6f00-44e6-9cd0-447113b1fde2" class="">Note that inside <code>data/migrations/</code> a new file has appeared. Migrations have a timestamp in their filenames automatically. Wither you like this or not, <strong>do not edit migration names.</strong></p><p id="51ad6df3-fe7b-45d4-a141-8df6245b29ab" class="">The migration file should have both an <code>up</code> and a <code>down</code> function. Within the <code>up</code> function, we write the ended database changes. Within the <code>down</code> function, we write the code to undo the <code>up</code> functions. This allows us to undo any changes made to the schema if necessary.</p><pre id="4a486963-4130-4c76-8943-3a82242ac4dc" class="code code-wrap"><code>exports.up = function(knex, Promise) {
+  // don&#x27;t forget the return statement
+  return knex.schema.createTable(&#x27;accounts&#x27;, tbl =&gt; {
+    // creates a primary key called id
+    tbl.increments();
+    // creates a text field called name which is both required and unique
+    tbl.text(&#x27;name&#x27;, 128).unique().notNullable();
+    // creates a numeric field called budget which is required
+    tbl.decimal(&#x27;budget&#x27;).notNullable();
+  });
+};</code></pre><pre id="b8d43714-0fc2-4d6e-bda8-f00ffb354230" class="code code-wrap"><code>exports.down = function(knex, Promise) {
+  // drops the entire table
+  return knex.schema.dropTableIfExists(&#x27;accounts&#x27;);
+};</code></pre><p id="715b0f5f-52a7-427b-ab76-44eb2f6163c9" class="">References for these methods are found in the <strong>schema builder</strong> section of the <a href="https://knexjs.org/">Knex docs (Links to an external site.)</a>.</p><p id="f8f1c676-3289-4d31-a7da-ad842e3a2417" class="">At this point, the table is <strong>not</strong> yet created. To run this (and any other) migrations, use the command:</p><p id="075ee1f6-1142-481e-8219-0fe64e0d6c56" class=""><code>knex migrate:latest</code></p><p id="15150f92-5951-4bd9-8190-a4b352565c8b" class="">Note if the database does not exist, this command will auto-generate one. We can use SQLite Studio to confirm that the accounts table has been created.</p><h3 id="01513c30-adc2-4ed9-a21c-ad18dd0440c2" class="">Changes and Rollbacks</h3><p id="feb8c3f8-6b49-4060-8248-d237bb037660" class="">If later down the road, we realize you need to update your schema, you shouldn’t edit the migration file. Instead, you will want to create a new migration with the command:</p><p id="0bf8cdaa-4c16-454d-8654-69f4f1d1a27c" class=""><code>knex migrate:make accounts-schema-update</code></p><p id="1fa30ff9-47ce-4222-9074-47e81d72bb18" class="">Once we’ve written our updates into this file we save and close with:</p><p id="ef77755a-23a9-4a54-b81b-26fc1c6116c9" class=""><code>knex migrate:latest</code></p><p id="aae39229-73e9-4f92-b844-ce043a47da1a" class="">If we migrate our database and then quickly realize something isn’t right, we can edit the migration file. However, first, we need to <strong>rolllback</strong> (or undo) our last migration with:</p><p id="85793b2e-0f95-43a3-a8fa-39c58724fb24" class=""><code>knex migrate:rollback</code></p><p id="33288cde-e127-4124-90b2-d3a1f5dd4096" class="">Finally, we are free to rerun that file with <code>knex migrate</code> latest.</p><p id="9119e255-a897-4134-adc9-f52dea1241c8" class=""><strong>NOTE</strong>: A rollback should not be used to edit an old migration file once that file has accepted into a main branch. However, an entire team may use a rollback to return to a previous version of a database.</p><h3 id="83dccaf4-6445-4d0a-80a2-9b3fbda50103" class="">Overview</h3><p id="1be87164-2213-4f3b-bde1-10335252a388" class="">Knex provides a <strong>schema builder</strong>, which allows us to write code to design our database schema. However, beyond thinking about columns and constraints, we must also consider updates.</p><p id="536fede0-37a1-4cbd-a961-a6ce6227ea7f" class="">When a schema needs to be updated, a developer must feel confident that the changes go into effect everywhere. This means schema updates on the developer’s local machine, on any testing or staging versions, on the production database, and then on any other developer’s local machines. This is where <strong>migrations</strong> come into play.</p><p id="7481930a-73ff-4f01-a910-fc25d2ecf4db" class="">A <code>database migration</code> describes changes made to the structure of a database. Migrations include things like adding new objects, adding new tables, and modifying existing objects or tables.</p><h3 id="6cb873b5-1f39-4f9c-9f67-a21643e843bc" class=""></h3><figure id="147a4612-0886-4121-8de4-8dcba2392f29" class="image"><a href="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"><img src="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"/></a></figure><h3 id="5e0ed2cb-2064-4708-a6b6-e9c9f5ff83b2" class="">Knex Cli</h3><p id="b4c9b616-9ba2-43be-b045-e3b20d0127f7" class="">To use migrations (and to make Knex setup easier), we need to use <strong>knex cli</strong>. Install knex globally with <code>npm install -g knex</code>.</p><p id="4359e8bf-ed7d-4b96-a5a8-10e5bb45c780" class="">This allows you to use Knex commands within any repo that has <code>knex</code> as a local dependency. If you have any issues with this global install, you can use the <code>npx knex</code> command instead.</p><p id="b148c5dd-2560-4f78-a058-490c77415c6d" class="">
+</p><p id="8c8878c1-0adf-4a9c-84d0-e64ebc4b3fb0" class="">
+</p><p id="1909b399-964e-47af-8a1d-534db96ff67d" class="">
+</p><p id="cd91ff47-913b-437d-9f6b-d2634a2f298c" class="">
+</p><hr id="0fa7abd3-00eb-4b4e-b761-3e9a2b530d23"/><h3 id="38e9e83d-ef37-4ca2-b198-796f147b2aa4" class="">Initializing Knex</h3><p id="b0019985-a889-4b66-8442-e7291740f0ff" class="">To start, add the <code>knex</code> and <code>sqlite3</code> libraries to your repository.</p><p id="fbd9b64b-9aea-44f1-8080-fed212126d94" class=""><code>npm install knex sqlite3</code></p><p id="7f01c5b7-d75d-4216-bc21-d2f3ec4a749a" class="">We’ve seen how to use manually create a config object to get started with Knex, but the best practice is to use the following command:</p><pre id="465f5740-eb83-4646-aa8b-1a5b31bfb587" class="code code-wrap"><code>knex init</code></pre><p id="e831daa2-4c06-4b23-9ab3-32b7a1f5f1ae" class="">Or, if Knex isn’t globally installed:</p><pre id="f7a19709-32d3-479d-9afb-044010d95eff" class="code code-wrap"><code>npx knex init</code></pre><p id="1c7a49bd-04bb-4d18-bea9-9bfcd1cc175c" class="">This command will generate a file in your root folder called <code>knexfile.js</code>. It will be auto populated with three config objects, based on different environments. We can delete all except for the development object.</p><pre id="38596fea-1c08-49b0-8922-2375a66af2c2" class="code code-wrap"><code>module.exports = {</code></pre><pre id="8cbe1dce-b15a-42f7-b89e-717a89675df6" class="code code-wrap"><code>  development: {
+    client: &#x27;sqlite3&#x27;,
+    connection: {
+      filename: &#x27;./dev.sqlite3&#x27;
+    }
+  }</code></pre><pre id="df2a515f-a50c-490a-8f4e-7d9b85eba0d0" class="code code-wrap"><code>};</code></pre><p id="26e29085-fcb6-4961-942d-421beb718941" class="">We’ll need to update the location (or desired location) of the database as well as add the <code>useNullAsDefault</code> option. The latter option prevents crashes when working with <code>sqlite3</code>.</p><pre id="317bc6a0-c70a-4fbe-b065-37d9ee53d7e5" class="code code-wrap"><code>module.exports = {</code></pre><pre id="d65ddc48-95a0-4a75-adc1-76fe2cfaad2b" class="code code-wrap"><code>  development: {
+    // our DBMS driver
+    client: &#x27;sqlite3&#x27;,
+    // the location of our db
+    connection: {
+      filename: &#x27;./data/database_file.db3&#x27;,
+    },
+    // necessary when using sqlite3
+    useNullAsDefault: true
+  }</code></pre><pre id="07cc1afa-e635-4871-8378-8bb21f537001" class="code code-wrap"><code>};</code></pre><p id="3e9a238e-55f4-4302-b5e4-371b494f4cae" class="">Now, wherever we configure our database, we may use the following syntax instead of hardcoding in a config object.</p><pre id="bbe4ac68-8e4d-46fb-9d3d-e92608de4437" class="code code-wrap"><code>const knex = require(&#x27;knex&#x27;);</code></pre><pre id="5e51cd0c-65b0-4b6d-92a1-f7040b102974" class="code code-wrap"><code>const config = require(&#x27;../knexfile.js&#x27;);</code></pre><pre id="d17d71ac-de26-4eb5-8e56-6ce50d65faec" class="code code-wrap"><code>// we must select the development object from our knexfile
+const db = knex(config.development);</code></pre><pre id="cb28490d-7764-47c8-bf14-1ab69704e40e" class="code code-wrap"><code>// export for use in codebase
+module.exports = db;</code></pre><h3 id="f8529da2-f16b-46c3-af8b-84e866dd38f7" class="">Knex Migrations</h3><p id="fcd5e0a1-24c1-4402-ba65-806e917488b4" class="">Once our <code>knexfile</code> is set up, we can begin creating <strong>migrations</strong>. Though it&#x27;s not required, we are going to add an <code>addition</code> option to the config object to specify a directory for the migration files.</p><pre id="f297f42c-8069-40bf-9fc0-a84ce08454a7" class="code code-wrap"><code>development: {
+    client: &#x27;sqlite3&#x27;,
+    connection: {
+      filename: &#x27;./data/produce.db3&#x27;,
+    },
+    useNullAsDefault: true,
+    // generates migration files in a data/migrations/ folder
+    migrations: {
+      directory: &#x27;./data/migrations&#x27;
+    }
+  }</code></pre><p id="008f74a0-5597-4b12-953f-886927590833" class="">We can generate a new migration with the following command:</p><p id="a7575348-45dd-4476-97a9-c32f597afdce" class=""><code>knex migrate:make [migration-name]</code></p><p id="b9473a10-8324-430b-ae82-461ad866a70d" class="">If we needed to create an accounts table, we might run:</p><p id="cfa52194-d0c6-475e-a05f-8c3601375429" class=""><code>knex migrate:make create-accounts</code></p><p id="5d29e634-7885-429b-b39b-1405916895ae" class="">Note that inside <code>data/migrations/</code> a new file has appeared. Migrations have a timestamp in their filenames automatically. Wither you like this or not, <strong>do not edit migration names.</strong></p><p id="c3d1560c-e25c-4875-831e-997a5e5eb51c" class="">The migration file should have both an <code>up</code> and a <code>down</code> function. Within the <code>up</code> function, we write the ended database changes. Within the <code>down</code> function, we write the code to undo the <code>up</code> functions. This allows us to undo any changes made to the schema if necessary.</p><pre id="ad1a48c6-20a8-44d7-8599-9b4ed4b275e1" class="code code-wrap"><code>exports.up = function(knex, Promise) {
+  // don&#x27;t forget the return statement
+  return knex.schema.createTable(&#x27;accounts&#x27;, tbl =&gt; {
+    // creates a primary key called id
+    tbl.increments();
+    // creates a text field called name which is both required and unique
+    tbl.text(&#x27;name&#x27;, 128).unique().notNullable();
+    // creates a numeric field called budget which is required
+    tbl.decimal(&#x27;budget&#x27;).notNullable();
+  });
+};</code></pre><pre id="0bd7cc78-ac72-4d1c-b226-679aa79772d7" class="code code-wrap"><code>exports.down = function(knex, Promise) {
+  // drops the entire table
+  return knex.schema.dropTableIfExists(&#x27;accounts&#x27;);
+};</code></pre><p id="4a249fc5-601c-45c2-8cab-bf8bcab71c3d" class="">References for these methods are found in the <strong>schema builder</strong> section of the <a href="https://knexjs.org/">Knex docs (Links to an external site.)</a>.</p><p id="faf010ee-4b3f-4d95-88f7-5c538192310d" class="">At this point, the table is <strong>not</strong> yet created. To run this (and any other) migrations, use the command:</p><p id="ea30bb63-d33c-4de9-900c-47025de40e68" class=""><code>knex migrate:latest</code></p><p id="5f81c745-2da4-42e0-9bb7-11ec6083fe6e" class="">Note if the database does not exist, this command will auto-generate one. We can use SQLite Studio to confirm that the accounts table has been created.</p><h3 id="c4a941db-b0ae-4fb8-8f4e-7b6ebed81e64" class="">Changes and Rollbacks</h3><p id="2b5db817-7b76-4714-bc04-ff75b569898c" class="">If later down the road, we realize you need to update your schema, you shouldn’t edit the migration file. Instead, you will want to create a new migration with the command:</p><p id="fa593e48-a6fc-4693-945b-7299d05e5316" class=""><code>knex migrate:make accounts-schema-update</code></p><p id="1253979d-1331-4200-80c0-cb6c58986aeb" class="">Once we’ve written our updates into this file we save and close with:</p><p id="c433aae7-02ff-4fdf-85ca-361b41445406" class=""><code>knex migrate:latest</code></p><p id="57ed52cf-064e-4836-b852-75b66953e32e" class="">If we migrate our database and then quickly realize something isn’t right, we can edit the migration file. However, first, we need to <strong>rolllback</strong> (or undo) our last migration with:</p><p id="976aca8e-d032-47fa-9326-4eaacbfd82c5" class=""><code>knex migrate:rollback</code></p><p id="edbe7c95-67c0-4ed7-8eeb-29c3ebc51f45" class="">Finally, we are free to rerun that file with <code>knex migrate</code> latest.</p><p id="3647e704-9fa0-4cbd-9db0-c95312046e49" class=""><strong>NOTE</strong>: A rollback should not be used to edit an old migration file once that file has accepted into a main branch. However, an entire team may use a rollback to return to a previous version of a database.</p><h3 id="1330a5c5-d8cb-4fde-8ee1-bbbe1e1f2bbf" class="">Overview</h3><p id="2ddc4fe5-491c-427c-8dbb-aabfe78e5485" class="">Often we want to pre-populate our database with sample data for testing. <strong>Seeds</strong> allow us to add and reset sample data easily.</p><h3 id="616a4856-2bc5-4155-ae65-d0ffc3046724" class="">Follow Along</h3><p id="8d021c40-9647-40ea-9d75-cb015c318bdc" class="">The Knex command-line tool offers a way to <strong>seed</strong> our database; in other words, pre-populate our tables.</p><p id="fac02977-cd74-4938-a711-4052e90ce289" class="">Similarly to migrations, we want to customize where our seed files are generated using our <code>knexfile</code></p><pre id="62bed480-4865-4dea-b1df-267dc4e06dd4" class="code code-wrap"><code>development: {
+    client: &#x27;sqlite3&#x27;,
+    connection: {
+      filename: &#x27;./data/produce.db3&#x27;,
+    },
+    useNullAsDefault: true,
+    // generates migration files in a data/migrations/ folder
+    migrations: {
+      directory: &#x27;./data/migrations&#x27;
+    },
+    seeds: {
+      directory: &#x27;./data/seeds&#x27;
+    }
+  }</code></pre><p id="8177153a-a6dd-4972-b6a4-3692476088d9" class="">To create a seed run: <code>knex seed:make 001-seedName</code></p><p id="88d53028-0157-4ce3-ae82-8dea34e95e96" class="">Numbering is a good idea because Knex doesn’t attach a timestamp to the name like migrate does. Adding numbers to the file name, we can control the order in which they run.</p><p id="4e75ef28-9bd1-4c84-afd3-f18e7e19dfba" class="">We want to create seeds for our accounts table:</p><p id="9e174f64-53a2-482a-a534-67508cb24a0f" class=""><code>knex seed:make 001-accounts</code></p><p id="dbb69190-6abc-4aed-9d0c-524f1029074b" class="">A file will appear in the designated seed folder.</p><pre id="93e8ccf7-effc-405b-adfd-e6ef4aaefee1" class="code code-wrap"><code>exports.seed = function(knex, Promise) {
+  // we want to remove all data before seeding
+  // truncate will reset the primary key each time
+  return knex(&#x27;accounts&#x27;).truncate()
+    .then(function () {
+      // add data into insert
+      return knex(&#x27;accounts&#x27;).insert([
+        { name: &#x27;Stephenson&#x27;, budget: 10000 },
+        { name: &#x27;Gordon &amp; Gale&#x27;, budget: 40400 },
+      ]);
+    });
+};</code></pre><p id="0f3d0495-2e6b-4e8f-b0ea-0622b0c3f193" class="">Run the seed files by typing:</p><p id="52da1a5c-3854-4ce2-b44b-f1bd49d94298" class=""><code>knex seed:run</code></p><p id="d4cbec32-398b-4557-9ee8-df4204472d35" class="">You can now use SQLite Studio to confirm that the accounts table has two entries.</p><hr id="19efbb5d-45f8-470d-99e9-33c0f0146455"/><h3 id="7a1bdac3-0d8a-413e-8fcb-d9ffad268ba0" class=""></h3><figure id="90bad127-ddb7-429e-ab7d-a5c47f0b5850" class="image"><a href="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"><img src="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"/></a></figure><h3 id="873209cc-1add-4ac8-bd36-fea1190e3116" class="">SQL &amp; PostgreSQL</h3><p id="712444ce-7c01-493c-8c06-d2f6fa878743" class=""><strong>Foreign keys</strong> are a type of table field used for creating links between tables. Like <strong>primary keys</strong>, they are most often integers that identify (rather than store) data. However, whereas a primary key is used to id rows in a table, foreign keys are used to connect a record in one table to a record in a second table.</p><h3 id="a93d44cf-3869-48c4-8056-946bf20e070e" class=""></h3><p id="f9d80ddd-5dc8-4cbb-b0fe-0738855be255" class="">Consider the following <code>farms</code> and <code>ranchers</code> tables.</p><p id="f0555d94-4c19-4c51-b688-0b96fe42e14a" class=""><a href="../WEB43%20-%204%202%20-%20Adding%20Data%20Persistence%203b79c56d990e422db194079219690772/Untitled%20Database%205b20c5e233dd4a70a33d6ab2c2e1c8bb.html">Untitled</a></p><p id="78477228-605f-4bd7-99be-391bf1fa1b8e" class=""><a href="../WEB43%20-%204%202%20-%20Adding%20Data%20Persistence%203b79c56d990e422db194079219690772/Untitled%20Database%200b0a909c24a9474fb9df80938546f12a.html">Untitled</a></p><p id="623bddf9-5d92-4115-a225-6780e2d2b49b" class="">The <code>farm_id</code> in the <code>ranchers</code> table is an example of a <code>foreign key</code>. Each entry in the <code>farm_id</code> (foreign key) column corresponds to an <code>id</code> (primary key) in the <code>farms</code> table. This allows us to track which farm each rancher belongs to while keeping the tables normalized.</p><p id="10837956-4afc-4ef0-b061-ea344965ac97" class="">If we could only see the <code>ranchers</code> table, we would know that John, Jane, and Jen all work together and that Jim and Jay also work together. However, to know where any of them work, we would need to look at the <code>farms</code> table.</p><p id="428c95f8-1bfb-423b-8f30-f82cc6469a74" class="">Now that we understand the basics of querying data from a single table, let’s move on to selecting data from multiple tables using JOIN operations.</p><h3 id="febea075-d661-4163-92f0-a498948a743c" class="">Overview</h3><p id="20988899-aa4b-4916-8ff9-00cf2a75f36f" class="">We can use a <code>JOIN</code> to combine query data from multiple tables using a single <code>SELECT</code> statement.</p><p id="62f60d05-5f96-4c00-89c0-8c20c38baa6c" class="">There are different types of joins; some are listed below:</p><ul id="250e19fd-5d68-4b6d-990c-96dca568dc4c" class="bulleted-list"><li>inner joins.</li></ul><ul id="d85197cf-4292-40ad-bacf-d84fa9d929b1" class="bulleted-list"><li>outer joins.</li></ul><ul id="c0ce324c-c2d1-48dc-bcf8-702b6fe0aed3" class="bulleted-list"><li>left joins.</li></ul><ul id="8121affe-395e-4f3a-a291-0a799290d4d2" class="bulleted-list"><li>right joins.</li></ul><ul id="0ddd3f5e-9912-45b9-8d5b-1963b2c6ecad" class="bulleted-list"><li>cross joins.</li></ul><ul id="8c606433-a5a4-41fa-b310-f97b4c6dece1" class="bulleted-list"><li>non-equality joins.</li></ul><ul id="86bcf1ec-c05b-428d-b2a0-e8e0847fd7da" class="bulleted-list"><li>self joins.</li></ul><p id="fb5f1326-d188-465c-9496-02bfb80c2966" class="">Using <code>joins</code> requires that the two tables of interest contain at least one field with shared information. For example, if a <em>departments</em> table has an <em>id</em> field, and an employee table has a <em>department_id</em> field, and the values that exist in the <em>id</em> column of the <em>departments</em> table live in the <em>department_id</em> field of the employee table, we can use those fields to join both tables like so:</p><pre id="1fddf22e-9015-4e78-bc62-b37b300abb90" class="code code-wrap"><code>select * from employees
+join departments on employees.department_id = departments.id</code></pre><p id="f4afbb8e-68da-4640-99db-ba449356e099" class="">This query will return the data from both tables for every instance where the <code>ON</code> condition is true. If there are employees with no value for department<em>id or where the value stored in the field does not correspond to an existing id in the</em> departments <em>table, then that record will NOT be returned. In a similar fashion, any records from the</em> departments <em>table that don&#x27;t have an employee associated with them will also be omitted from the results. Basically, if the</em> id* does not show as the value of department_id for an employee, it won&#x27;t be able to join.</p><p id="fd974a62-4983-4a56-b258-cc3408421a2e" class="">We can shorten the condition by giving the table names an alias. This is a common practice. Below is the same example using aliases, picking which fields to return and sorting the results:</p><pre id="88473fbb-41ef-4ec3-a779-b43e9e1f036d" class="code code-wrap"><code>select d.id, d.name, e.id, e.first_name, e.last_name, e.salary
+from employees as e
+join departments as d
+  on e.department_id = d.id
+order by d.name, e.last_name</code></pre><p id="307d732d-6c93-433d-ad36-537430203f46" class="">Notice that we can take advantage of white space and indentation to make queries more readable.</p><p id="7c63a95f-6074-4126-9053-539906986011" class="">There are several ways of writing joins, but the one shown here should work on all database management systems and avoid some pitfalls, so we recommend it.</p><p id="3158ddb8-1f23-4b8c-a1af-774707a76d62" class="">The syntax for performing a similar join using Knex is as follows:</p><pre id="46203a3f-c87a-4110-9e6c-5c6638324265" class="code code-wrap"><code>db(&#x27;employees as e&#x27;)
+  .join(&#x27;departments as d&#x27;, &#x27;e.department_id&#x27;, &#x27;d.id&#x27;)
+  .select(&#x27;d.id&#x27;, &#x27;d.name&#x27;, &#x27;e.first_name&#x27;, &#x27;e.last_name&#x27;, &#x27;e.salary&#x27;)</code></pre><h3 id="f3417d44-bd68-4565-8b6a-4f250ef32d91" class="">Follow Along</h3><p id="cdb6f4c7-9bdf-41fe-a1dd-f558a377c44f" class="">A good explanation of how the different types of joins can be seen <a href="https://www.w3resource.com/sql/joins/sql-joins.php">in this article from w3resource.com (Links to an external site.)</a>.</p><h3 id="6ecf8a45-f4f2-4a1f-b295-61e05f9648d0" class="">What is SQL Joins?</h3><p id="b6ea3e0d-51c1-4b11-b288-f6c2b590f6d8" class="">An SQL JOIN clause combines rows from two or more tables. It creates a set of rows in a temporary table.</p><h3 id="26fa4e2f-9a85-4a8a-98f5-72497ce4ebb2" class="">How to Join two tables in SQL?</h3><p id="7cbfda2d-c4a5-41a4-add0-7010c13afbcd" class="">A JOIN works on two or more tables if they have at least one common field and have a relationship between them.</p><p id="493275d1-a95d-4fea-968f-1ed0be9c4378" class="">JOIN keeps the base tables (structure and data) unchanged.</p><h3 id="bbb49424-379b-4912-8f6f-e4d57b46b1ba" class="">Join vs. Subquery</h3><ul id="a906690a-5da7-4a3d-beb9-16c104853eb0" class="bulleted-list"><li>JOINs are faster than a subquery and it is very rare that the opposite.</li></ul><ul id="fbc5e3b2-7019-4964-a44e-d5b75c10322a" class="bulleted-list"><li>In JOINs the RDBMS calculates an execution plan, that can predict, what data should be loaded and how much it will take to processed and as a result this process save some times, unlike the subquery there is no pre-process calculation and run all the queries and load all their data to do the processing.</li></ul><ul id="15f6a36e-591a-4d3f-8047-303c424d6690" class="bulleted-list"><li>A JOIN is checked conditions first and then put it into table and displays; where as a subquery take separate temp table internally and checking condition.</li></ul><ul id="ead1e795-ae32-4d42-99ef-f08a19e9b38f" class="bulleted-list"><li>When joins are using, there should be connection between two or more than two tables and each table has a relation with other while subquery means query inside another query, has no need to relation, it works on columns and conditions.</li></ul><h3 id="2cf1fed8-2b6e-4cb7-a1fa-6ad97616a572" class="">SQL JOINS: EQUI JOIN and NON EQUI JOIN</h3><p id="5697ebd7-73a4-4ae6-8a23-204ef9bc4115" class="">The are two types of SQL JOINS — EQUI JOIN and NON EQUI JOIN</p><ol type="1" id="b75209f4-11a9-4911-a4ff-96d575c4c116" class="numbered-list" start="1"><li>SQL EQUI JOIN :</li></ol><p id="54e302d7-7315-4e10-9489-8f2a2a19c78c" class="">The SQL EQUI JOIN is a simple SQL join uses the equal sign(=) as the comparison operator for the condition. It has two types — SQL Outer join and SQL Inner join.</p><ol type="1" id="afe00630-fe53-44c0-bb07-ea9f6f75cb6f" class="numbered-list" start="1"><li>SQL NON EQUI JOIN :</li></ol><p id="43e027c1-1424-4a25-8190-d444bc024101" class="">The <strong>SQL NON EQUI JOIN</strong> is a join uses comparison operator other than the equal sign like &gt;, &lt;, &gt;=, &lt;= with the condition.</p><p id="2a73435b-bf7e-420e-9bdf-2ef6a358b218" class=""><strong>SQL EQUI JOIN : INNER JOIN and OUTER JOIN</strong></p><p id="976cbb99-5b3f-4e5b-8eb3-3d6959469d26" class="">The SQL EQUI JOIN can be classified into two types — INNER JOIN and OUTER JOIN</p><ol type="1" id="ae85082e-2056-4dce-bc27-96c4b01cc7b3" class="numbered-list" start="1"><li>SQL INNER JOIN</li></ol><p id="881fc53f-8152-4e2e-a8fa-843481be76cd" class="">This type of EQUI JOIN returns all rows from tables where the key record of one table is equal to the key records of another table.</p><ol type="1" id="501b871c-7ad3-413d-a69a-9d0f72d4f64e" class="numbered-list" start="1"><li>SQL OUTER JOIN</li></ol><p id="a5fcf764-3ac4-4256-ab26-c542f99838bd" class="">This type of EQUI JOIN returns all rows from one table and only those rows from the secondary table where the joined condition is satisfying i.e. the columns are equal in both tables.</p><p id="c8be14d1-8191-45e1-8cb0-d43b2e552578" class="">In order to perform a JOIN query, the required information we need are:</p><p id="d8e0e530-f46c-4c31-876d-b548adb58057" class=""><strong>a)</strong> The name of the tables<strong>b)</strong> Name of the columns of two or more tables, based on which a condition will perform.</p><p id="af653117-f52e-47c3-92a1-8be11ee4a8c2" class=""><strong>Syntax:</strong></p><pre id="bbfd8e4d-5fdc-421c-bad5-2c08add19eb0" class="code code-wrap"><code>FROM table1
+join_type table2
+[ON (join_condition)]</code></pre><p id="be048741-291a-4c64-b114-c73e5ffc42db" class=""><strong>Parameters:</strong></p><p id="69e8031f-fbca-486a-97bb-df9e8f729d80" class=""><a href="../WEB43%20-%204%202%20-%20Adding%20Data%20Persistence%203b79c56d990e422db194079219690772/Untitled%20Database%205522c3e6d5d0443eb870f7a34f60c7ff.html">Untitled</a></p><p id="a991579a-6b09-4a8f-9415-42e864850805" class=""><strong>Pictorial Presentation of SQL Joins:</strong></p><figure id="2a97abf7-4b4d-4064-b69b-180452cdcadb" class="image"><a href="https://cdn-images-1.medium.com/max/864/0*2DcsnJXF_FOGhUtL.gif"><img src="https://cdn-images-1.medium.com/max/864/0*2DcsnJXF_FOGhUtL.gif"/></a></figure><p id="313add2d-aae7-4ba9-b401-e85dd57381b1" class=""><strong>Example:</strong></p><p id="e9fbab8d-6945-4040-ac91-61a707c46505" class=""><strong>Sample table: company</strong></p><p id="882f1e13-57c2-4611-ba19-d5fd41563860" class=""><strong>Sample table: foods</strong></p><p id="39f4bf76-3f6f-4bae-8481-b018e583199d" class="">To join two tables ‘company’ and ‘foods’, the following SQL statement can be used :</p><p id="34db2b82-d68f-40d6-89e8-6a901bf61e44" class=""><strong>SQL Code:</strong></p><pre id="8998d3b6-9a9d-4c70-85fc-874ec6a3349d" class="code code-wrap"><code>SELECT  company.company_id,company.company_name,
+foods.item_id,foods.item_name
+FROM company,foods;</code></pre><p id="1be07821-19c6-41bf-bcb5-226c708694b3" class="">Copy</p><p id="3b15db6f-2779-4762-a6cf-8109819eaa72" class="">Output:</p><pre id="d3d41dd5-9c18-4969-94bb-4e28a49afb72" class="code code-wrap"><code>COMPAN COMPANY_NAME              ITEM_ID  ITEM_NAME
+------ ------------------------- -------- ---------------
+18     Order All                 1        Chex Mix
+18     Order All                 6        Cheez-It
+18     Order All                 2        BN Biscuit
+18     Order All                 3        Mighty Munch
+18     Order All                 4        Pot Rice
+18     Order All                 5        Jaffa Cakes
+18     Order All                 7        Salt n Shake
+15     Jack Hill Ltd             1        Chex Mix
+15     Jack Hill Ltd             6        Cheez-It
+15     Jack Hill Ltd             2        BN Biscuit
+15     Jack Hill Ltd             3        Mighty Munch
+15     Jack Hill Ltd             4        Pot Rice
+15     Jack Hill Ltd             5        Jaffa Cakes
+15     Jack Hill Ltd             7        Salt n Shake
+16     Akas Foods                1        Chex Mix
+16     Akas Foods                6        Cheez-It
+16     Akas Foods                2        BN Biscuit
+16     Akas Foods                3        Mighty Munch
+16     Akas Foods                4        Pot Rice
+16     Akas Foods                5        Jaffa Cakes
+16     Akas Foods                7        Salt n Shake
+.........
+.........
+.........</code></pre><h3 id="a927c734-a029-48a7-a0f1-196eb677f91c" class="">Overview</h3><p id="0b1f842b-0581-4ba2-8a61-84d5b3e7b7cc" class="">While we can write database code directly into our endpoints, best practices dictate that all database logic exists in separate, modular methods. These files containing database access helpers are often called <strong>models</strong></p><h3 id="106c54fc-d87d-4394-9e6b-59fbc1c6527a" class="">Follow Along</h3><p id="f1ff4bab-84de-4bfc-804c-77ac023f380d" class="">To handle CRUD operations for a single resource, we would want to create a <strong>model</strong> (or database access file) containing the following methods:</p><pre id="609842a1-d49c-475b-ad5b-f14e9c40d3b3" class="code code-wrap"><code>function find() {
+}</code></pre><pre id="b5f7c336-7992-46a9-859d-a9e0ecdc5da0" class="code code-wrap"><code>function findById(id) {
+}</code></pre><pre id="8d6e5cf8-bc92-43c0-89e3-b64315ff5376" class="code code-wrap"><code>function add(user) {
+}</code></pre><pre id="bb31ba4a-5a7e-4b02-abca-028caa50ee62" class="code code-wrap"><code>function update(changes, id) {
+}</code></pre><pre id="23deba81-bba0-473c-ad92-98ea8ffefb71" class="code code-wrap"><code>function remove(id) {
+}</code></pre><p id="05d1286a-053d-4e31-8bed-8eed2bd7a2ec" class="">Each of these functions would use Knex logic to perform the necessary database operation.</p><pre id="9d742a5e-5df2-47e1-8ba2-f503061c9387" class="code code-wrap"><code>function find() {
+  return db(&#x27;users&#x27;);
+}</code></pre><p id="f03f0bdb-6e39-4b3a-b0d9-28fa81aab5e9" class="">For each method, we can choose what value to return. For example, we may prefer <code>findById()</code> to return a single <code>user</code> object rather than an array.</p><pre id="7e760231-1322-4e94-82e0-220404208444" class="code code-wrap"><code>function findById(id) {
+// first() returns the first entry in the db matching the query
+  return db(&#x27;users&#x27;).where({ id }).first();
+}</code></pre><p id="b3702c92-519d-413f-9898-124e831cf71c" class="">We can also use existing methods like <code>findById()</code> to help <code>add()</code> return the new user (instead of just the id).</p><pre id="3efdc260-a8c1-40dc-a16d-feabf225eb0a" class="code code-wrap"><code>function add(user) {
+  db(&#x27;users&#x27;).insert(user)
+    .then(ids =&gt; {
+      return findById(ids[0]);
+    });
+}</code></pre><p id="71e67484-2dfd-4e12-b2f0-9cea5acd4791" class="">Once all methods are written as desired, we can export them like so:</p><pre id="ea352860-108f-4af2-86f4-3e10e31ca234" class="code code-wrap"><code>module.exports = {
+  find,
+  findById,
+  add,
+  update,
+  delete,
+}</code></pre><p id="eca50e9e-6434-4fa5-ae40-752cf91e4a54" class="">…and use the helpers in our endpoints</p><pre id="777e21b7-a1a9-4315-a4cc-b6f45eabe133" class="code code-wrap"><code>const User = require(&#x27;./user-model.js&#x27;);</code></pre><pre id="ed69a542-2edb-461e-bcad-98822fea4f9d" class="code code-wrap"><code>router.get(&#x27;/&#x27;, (req, res) =&gt; {
+  User.find()
+    .then(users =&gt; {
+      res.json(users);
+    })
+    .catch(&amp;nbsp;err =&gt; {});
+});</code></pre><p id="8f1e4a8b-ff07-4236-9598-c0c0d2856442" class="">There should no be <code>knex</code> code in the endpoints themselves.</p><hr id="63fba34c-540d-41c6-a741-5a2762225972"/><h3 id="59a3ed1b-c046-47ff-8b75-a4aeca3d5362" class=""></h3><figure id="cee6cbf4-3189-409c-a4bb-4724b9115aea" class="image"><a href="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"><img src="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"/></a></figure><h3 id="4feb6158-5431-4432-ba36-56ddabcae2b3" class=""></h3><p id="92026f38-dd5f-4d39-81c0-4e360b34bb09" class=""><code>Normalization</code> is the process of designing or refactoring database tables for maximum consistency and minimum redundancy.</p><p id="534ee5e2-7b76-447c-bb14-44e4ebc7380e" class="">With objects, we’re used to <em>denormalized</em> data, stored with ease of use and speed in mind. Non-normalized tables are considered ineffective in relational databases.</p><h3 id="18240a72-9f31-4c33-901b-da3a3095323a" class=""></h3><p id="cb4de3b5-96a8-4aa5-827a-3b8020d3477c" class=""><strong>Data normalization</strong> is a deep topic in database design. To begin thinking about it, we’ll explore a few basic guidelines and some data examples that violate these rules.</p><h3 id="ee241589-00a3-4cad-9530-ce9bb102f6d2" class="">Normalization Guidelines</h3><blockquote id="23334713-f5ee-48d4-9c94-66d93efc0dd9" class="">Each record has a primary key.</blockquote><blockquote id="6f54f10c-b23c-4cee-b3b0-df6531a19467" class="">No fields are repeated.</blockquote><blockquote id="0e4e5127-c5af-4cde-a988-b4c0ac436d2d" class="">All fields relate directly to the key data.</blockquote><blockquote id="1d2c4ed1-f6d4-45d6-b23b-afd192360c9a" class="">Each field entry contains a single data point.</blockquote><blockquote id="cd3f369f-958f-43a3-a65a-ac3d5bd67bda" class="">There are no redundant entries.</blockquote><h3 id="65d3e06c-aa41-40e6-8dd8-a56a4724dc1d" class="">Denormalized Data</h3><p id="64a19eb7-2258-471f-8d6c-69e4af2fb577" class=""><a href="../WEB43%20-%204%202%20-%20Adding%20Data%20Persistence%203b79c56d990e422db194079219690772/Untitled%20Database%2019a01f68a659470fb85bbe6906fb4bad.html">Untitled</a></p><p id="0fb868fd-a5f1-4bc9-8339-7f1a8c4c40e4" class="">This table has two issues. There is no proper id field (as multiple farms may have the same name), and multiple fields are representing the same type of data: animals.</p><p id="82905dfd-375d-4f81-9b7e-5ff2625cafa6" class=""><a href="../WEB43%20-%204%202%20-%20Adding%20Data%20Persistence%203b79c56d990e422db194079219690772/Untitled%20Database%20075ad6dd99ac48698625d7b56ca67bef.html">Untitled</a></p><p id="b30b9ec2-b16d-4821-954d-1a9aafd4a6fc" class="">While we have now eliminated the first two issues, we now have multiple entries in one field, separated by commas. This isn’t good either, as its another example of denormalization. There is no “array” data type in a relational database, so each field must contain only one data point.</p><p id="ec0de03f-7f59-4d5c-ad31-49088df1aa04" class=""><a href="../WEB43%20-%204%202%20-%20Adding%20Data%20Persistence%203b79c56d990e422db194079219690772/Untitled%20Database%20375a15b0cb3f444a8698cd6cb3a08fe0.html">Untitled</a></p><p id="2c78a0bd-4ec8-437e-83b4-5850b9a9a481" class="">Now we’ve solved the multiple fields issue, but we created repeating data (the farm field), which is also an example of denormalization. As well, we can see that if we were tracking additional ranch information (such as annual revenue), that field is only vaguely related to the animal information.</p><p id="354c4c95-ac38-46c9-a677-10cce9374515" class=""><strong>When these issues begin arising in your schema design, it means that you should separate information into two or more tables.</strong></p><h3 id="a9573d8d-c046-4a88-8750-9e56e82ae92a" class="">Anomalies</h3><p id="5ffc9dc6-98aa-4ba8-b8d4-e1e26c6501f3" class="">Obeying the above guidelines prevent <strong>anomalies</strong> in your database when inserting, updating, or deleting. For example, imagine if the revenue of Beech Ranch changed. With our denormalized schema, it may get updated in some records but not others:</p><p id="3104fa03-59a2-46a9-9037-ed59a54d71b2" class=""><a href="../WEB43%20-%204%202%20-%20Adding%20Data%20Persistence%203b79c56d990e422db194079219690772/Untitled%20Database%20e05f5b2e8ff141798adc6f188f56f31e.html">Untitled</a></p><p id="841e4c5e-1d88-4877-84db-fd78000d8984" class="">Similarly, if Beech Ranch shut down, there would be three (if not more) records that needed to be deleted to remove a single farm.</p><p id="1d9235a8-683f-4ab5-8ee6-45d3990f45e3" class="">Thus a denormalized table opens the door for contradictory, confusing, and unusable data.</p><h3 id="15063100-5c65-484c-80f9-c412a35cb48b" class=""></h3><p id="a32d68ad-bad6-40d0-8f7d-5e321581560d" class="">What issues does the following table have?</p><p id="4100556d-c13a-48e5-b08e-f7524c587510" class=""><a href="../WEB43%20-%204%202%20-%20Adding%20Data%20Persistence%203b79c56d990e422db194079219690772/Untitled%20Database%202793e8f6b70a47f48f9208779366e69e.html">Untitled</a></p><h3 id="877ca307-974d-498f-b381-8e1ed97b2f43" class=""></h3><p id="b22846f9-07dd-4a89-a791-1a16a00e3fda" class="">There are three types of relationships:</p><blockquote id="37cc103a-f2fc-41b0-987f-01ecf0446f6e" class="">One to one.</blockquote><blockquote id="cd9174f1-4382-4c40-a6ca-80322d0899c5" class="">One to many.</blockquote><blockquote id="f37f5852-5a99-4e27-a92f-43a9eeb4e2dc" class="">Many to many.</blockquote><p id="9bb0d4df-5bd9-4083-a107-174735c0a2db" class="">Determining how data is related can provide a set of guidelines for table representation and guides the use of foreign keys to connect said tables.</p><h3 id="a5c27222-ba8e-474e-92db-af90984917e5" class=""></h3><h3 id="8fe840c3-5d0b-4c69-bda8-4dfc345029d0" class="">One to One Relationships</h3><p id="c81496e3-9011-404e-b313-2d8a52d559ae" class="">Imagine we are storing the financial projections for a series of farms.</p><p id="18d0ef7a-654b-43fa-9995-ccf8b7525d30" class="">We may wish to attach fields like farm name, address, description, projected revenue, and projected expenses. We could divide these fields into two categories: information related to the farm directly (name, address, description) and information related to the financial projections (revenue, expenses).</p><p id="3881788c-bc40-45c1-a235-c5c642f2fe55" class="">We would say that <code>farms</code> and <code>projections</code> have a <strong>one-to-one</strong> relationship. This is to say that every farm has exactly one projection, and every project corresponds to exactly one farm.</p><p id="4b9e51dd-a160-472f-bc94-48180dee6149" class="">This data can be represented in two tables: <code>farms</code> and <code>projections</code></p><p id="d562e222-e4a8-46c6-936e-423b79cd356a" class=""><a href="../WEB43%20-%204%202%20-%20Adding%20Data%20Persistence%203b79c56d990e422db194079219690772/Untitled%20Database%20944e594f3464473ea06383bfdea13265.html">Untitled</a></p><p id="f38f78ee-1762-4ec2-86e8-8a8577788733" class=""><a href="../WEB43%20-%204%202%20-%20Adding%20Data%20Persistence%203b79c56d990e422db194079219690772/Untitled%20Database%20de32fcf6760e45f284707274433fee92.html">Untitled</a></p><p id="84763e62-0344-4e30-bcce-d9ad960938ac" class="">The <code>farm_id</code> is the foreign key that links <code>farms</code> and <code>projections</code> together.</p><p id="ec4a049b-ef4a-4e39-8deb-908031b0f8d1" class="">Notes about one-to-one relationships:</p><ul id="76bab8c0-ba4d-4875-ab10-0a0990616ea4" class="bulleted-list"><li>The foreign key should always have a <code>unique</code> constraint to prevent duplicate entries. In the example above, we wouldn&#x27;t want to allow multiple projections records for one farm.</li></ul><ul id="4c55e9b6-9dbf-4bf6-b9a2-5b5fbd7718ca" class="bulleted-list"><li>The foreign key can be in either table. For example, we may have had a <code>projection_id</code> in the <code>farms</code> table instead. A good rule of thumb is to put the foreign key in whichever table is more auxiliary to the other.</li></ul><ul id="012f3386-3e96-400b-97d8-57cad148cdfe" class="bulleted-list"><li>You can represent one-to-one data in a single table <em>without</em> creating anomalies. However, it is sometimes prudent to use two tables as shown above to keep separate concerns in separate tables.</li></ul><h3 id="1e9883af-25ad-4edb-8e6a-dc5d667c75c0" class="">One to Many Relationships</h3><p id="e3896e83-cfdc-4f00-904f-c217d7cf453e" class="">Now imagine, we are storing the full-time ranchers employed at each farm. In this case, each rancher would only work at one farm however, each farm may have multiple ranchers.</p><p id="bfac9dd8-cdab-46b7-b088-f3224dcdc4d7" class="">This is called a <strong>one-to-many</strong> relationship.</p><p id="5c77b210-994f-4017-a327-3e41c871ac2f" class="">This is the most common type of relationship between entities. Some other examples:</p><ul id="a3c6bb3f-4799-4dce-9392-06d6efaedc1f" class="bulleted-list"><li>One <code>customer</code> can have many <code>orders</code>.</li></ul><ul id="3266aa53-35d2-4591-aa57-acaf268aa340" class="bulleted-list"><li>One <code>user</code> can have many <code>posts</code>.</li></ul><ul id="be85a7c6-fa0f-4e76-ad72-b50ecdba2b97" class="bulleted-list"><li>One <code>post</code> can have many <code>comments</code>.</li></ul><p id="09b62049-545d-4c28-8d78-881078a18e1c" class="">Manage this type of relationship by adding a foreign key on the “many” table of the relationship that points to the primary key on the “one” table. Consider the <code>farms</code> and <code>ranchers</code> tables.</p><p id="66406bd6-b5a9-4a9d-b898-7ae4276e0138" class=""><a href="../WEB43%20-%204%202%20-%20Adding%20Data%20Persistence%203b79c56d990e422db194079219690772/Untitled%20Database%207dfd2e69c9804a01845f2e9b716a5ac2.html">Untitled</a></p><p id="bc2bcedd-914d-4c50-b757-c489e8be4ffb" class=""><a href="../WEB43%20-%204%202%20-%20Adding%20Data%20Persistence%203b79c56d990e422db194079219690772/Untitled%20Database%20c95f3d418db94ab4b4532eeba0e4f918.html">Untitled</a></p><p id="9b961ea2-f29a-4f4f-a427-5a47a863460f" class="">In a many-to-many relationship, the foreign key (in this case <code>farm_id</code>) should <em>not</em> be unique.</p><h3 id="f598511b-ade3-4921-ae5e-35fa1873835b" class="">Many to Many Relationships</h3><p id="14b0e122-cc43-4939-bf41-2b31d0a1730c" class="">If we want to track animals on a farm as well, we must explore the <strong>many-to-many</strong> relationship. A farm has multiple animals, and multiple of each type of animal is present at multiple different farms.</p><p id="0353af09-f3e8-4046-b45d-20fcf4e63688" class="">Some other examples:</p><ul id="4535fef5-e760-48ee-87d7-fae2460766d1" class="bulleted-list"><li>an <code>order</code> can have many <code>products</code> and the same <code>product</code> will appear in many <code>orders</code>.</li></ul><ul id="d8dc4138-f432-406e-aadd-5212206deb1c" class="bulleted-list"><li>a <code>book</code> can have more than one <code>author</code>, and an <code>author</code> can write more than one <code>book</code>.</li></ul><p id="acd2f95a-2109-4e9f-95c6-ecf1cc40b5ce" class="">To model this relationship, we need to introduce an <strong>intermediary table</strong> that holds foreign keys that reference the primary key on the related tables. We now have a <code>farms</code>, <code>animals</code>, and <code>farm_animals</code> table.</p><p id="f809869b-b834-4b5a-bc4c-87a216ac256f" class=""><a href="../WEB43%20-%204%202%20-%20Adding%20Data%20Persistence%203b79c56d990e422db194079219690772/Untitled%20Database%203269812d7c2a4578b1a9f6bc27e485b1.html">Untitled</a></p><p id="eac8ff18-675a-4102-bb33-d7853320899d" class=""><a href="../WEB43%20-%204%202%20-%20Adding%20Data%20Persistence%203b79c56d990e422db194079219690772/Untitled%20Database%20c2642c7f632f489cb1b9639c80b8400d.html">Untitled</a></p><p id="7b257b69-df89-4d0b-a4b9-36760c539662" class=""><a href="../WEB43%20-%204%202%20-%20Adding%20Data%20Persistence%203b79c56d990e422db194079219690772/Untitled%20Database%20d0b0042c5e104edd9ed55e122af89084.html">Untitled</a></p><p id="45146d15-c96e-438e-ad48-58987557b088" class="">While each foreign key on the intermediary table is not unique, the combinations of keys should be unique.</p><h3 id="e697a592-71de-4a25-8695-b9506a5d2ebc" class=""></h3><figure id="1276454a-8b24-404f-b5d8-7d0061e198fc" class="image"><a href="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"><img src="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"/></a></figure><p id="cc60a479-bc69-455b-a885-09c1cb14007f" class="">The Knex query builder library also allows us to create multi-table schemas include foreign keys. However, there are a few extra things to keep in mind when designing a multi-table schema, such as using the correct order when creating tables, dropping tables, seeding data, and removing data.</p><p id="9bf73e85-657e-4cb4-bad3-ccaa52c39b41" class="">We have to consider the way that <code>delete</code> and <code>updates</code> through our API will impact related data.</p><h3 id="d8c94594-1a05-4c0a-92ea-a4d779e45f95" class=""></h3><h3 id="dba27ac2-a02e-4de3-96e7-554bc36e0a15" class="">Foreign Key Setup</h3><p id="43adbe41-6cea-4770-90f3-c8bc5edf4a48" class="">In Knex, foreign key restrictions don’t automatically work. Whenever using foreign keys in your schema, add the following code to your <code>knexfile</code>. This will prevent users from entering bad data into a foreign key column.</p><pre id="7225c8a1-f85e-4053-8aa7-c27b437b0d4f" class="code code-wrap"><code>development: {
+  client: &#x27;sqlite3&#x27;,
+  useNullAsDefault: true,
+  connection: {
+    filename: &#x27;./data/database.db3&#x27;,
+  },
+  // needed when using foreign keys
+  pool: {
+    afterCreate: (conn, done) =&gt; {
+      // runs after a connection is made to the sqlite engine
+      conn.run(&#x27;PRAGMA foreign_keys = ON&#x27;, done); // turn on FK enforcement
+    },
+  },
+},</code></pre><h3 id="88127746-999e-4a0a-bc18-ea2717d269ab" class="">Migrations</h3><p id="8ab05586-9a16-4b6e-8920-a4ea18d0e7af" class="">Let’s look at how we might track our <code>farms</code> and <code>ranchers</code> using Knex. In our migration file&#x27;s <code>up</code> function, we would want to create two tables:</p><pre id="5eff716c-7738-46a8-a11d-4db2d06d59f6" class="code code-wrap"><code>exports.up = function(knex, Promise) {
+  return knex.schema
+    .createTable(&#x27;farms&#x27;, tbl =&gt; {
+      tbl.increments();
+      tbl.string(&#x27;farm_name&#x27;, 128)
+        .notNullable();
+    })
+    // we can chain together createTable
+    .createTable(&#x27;ranchers&#x27;, tbl =&gt; {
+      tbl.increments();
+      tbl.string(&#x27;rancher_name&#x27;, 128);
+      tbl.integer(&#x27;farm_id&#x27;)
+        // forces integer to be positive
+        .unsigned()
+        .notNullable()
+        .references(&#x27;id&#x27;)
+        // this table must exist already
+        .inTable(&#x27;farms&#x27;)
+    })
+};</code></pre><p id="71eb5e72-03ac-4a74-9502-84eb29a14dbc" class="">Note that the foreign key can only be created <em>after</em> the reference table.</p><p id="d582c71d-057f-4dc6-96fa-9703056373a8" class="">In the down function, the opposite is true. We always want to drop a table with a foreign key <em>before</em> dropping the table it references.</p><pre id="e149725c-f64e-4046-9abe-48f0173c8050" class="code code-wrap"><code>exports.down = function(knex, Promise) {
+  // drop in the opposite order
+  return knex.schema
+    .dropTableIfExists(&#x27;ranchers&#x27;)
+    .dropTableIfExists(&#x27;farms&#x27;)
+};</code></pre><p id="4b7e71cf-8306-4c02-b651-515ecafb1159" class="">In the case of a many-to-many relationship, the syntax for creating an intermediary table is identical, except for one additional piece. We need a way to make sure our combination of foreign keys is unique.</p><pre id="338b5a98-eae5-494a-b6e5-d1fab7e8e269" class="code code-wrap"><code>.createTable(&#x27;farm_animals&#x27;, tbl =&gt; {
+  tbl.integer(&#x27;farm_id&#x27;)
+    .unsigned()
+    .notNullable()
+    .references(&#x27;id&#x27;)
+    // this table must exist already
+    .inTable(&#x27;farms&#x27;)
+  tbl.integer(&#x27;animal_id&#x27;)
+    .unsigned()
+    .notNullable()
+    .references(&#x27;id&#x27;)
+    // this table must exist already
+    .inTable(&#x27;animals&#x27;)</code></pre><pre id="5791d87e-0de1-4bc2-90ba-65accc94eb37" class="code code-wrap"><code>  // the combination of the two keys becomes our primary key
+  // will enforce unique combinations of ids
+  tbl.primary([&#x27;farm_id&#x27;, &#x27;animal_id&#x27;]);
+});</code></pre><h3 id="42eb2dd7-5825-4daa-afeb-50aa238f8fc9" class="">Seeds</h3><p id="028df9ac-5f51-4d93-91af-ba12fcf2fc5a" class="">Order is also a concern when seeding. We want to create seeds in the <strong>same</strong> order we created our tables. In other words, don’t create a seed with a foreign key, until that reference record exists.</p><p id="80a7dd63-d37d-4193-8855-d84ea455f2be" class="">In our example, make sure to write the <code>01-farms</code> seed file and then the <code>02-ranchers</code> seed file.</p><p id="2b545b59-32df-4fdd-907f-096d1a8763a2" class="">However, we run into a problem with truncating our seeds, because we want to truncate <code>02-ranchers</code> <em>before</em> <code>01-farms</code>. A library called <code>knex-cleaner</code> provides an easy solution for us.</p><p id="fa33e4ca-69ab-4b3e-b4d2-bb06a870a54f" class="">Run <code>knex seed:make 00-cleanup</code> and <code>npm install knex-cleaner</code>. Inside the cleanup seed, use the following code.</p><pre id="f746556d-37ff-429a-8576-f1d2218f6fbb" class="code code-wrap"><code>const cleaner = require(&#x27;knex-cleaner&#x27;);</code></pre><pre id="8cd09152-ddaa-4fc8-85a4-9c0b28d62f0b" class="code code-wrap"><code>exports.seed = function(knex) {
+  return cleaner.clean(knex, {
+    mode: &#x27;truncate&#x27;, // resets ids
+    ignoreTables: [&#x27;knex_migrations&#x27;, &#x27;knex_migrations_lock&#x27;], // don&#x27;t empty migration tables
+  });
+};</code></pre><p id="cb7bced1-dbc1-474a-be99-5d5bf536d801" class="">This removes all tables (excluding the two tables that track migrations) in the correct order before any seed files run.</p><h3 id="fe488932-c287-4115-9c98-ddab72e36a7d" class="">Cascading</h3><p id="b674f797-4189-433e-80de-542c9b54a845" class="">If a user attempt to delete a record that is referenced by another record (such as attempting to delete <code>Morton Ranch</code> when entries in our <code>ranchers</code> table reference that record), by default, the database will block the action. The same thing can happen when updating a record when a foreign key reference.</p><p id="6f9e886e-6bd3-429c-b837-d04e313bf62d" class="">If we want that to override this default, we can delete or update with <strong>cascade</strong>. With cascade, deleting a record also deletes all referencing records, we can set that up in our schema.</p><pre id="aa73ae15-1434-4ac5-a34f-36058973b323" class="code code-wrap"><code>.createTable(&#x27;ranchers&#x27;, tbl =&gt; {
+    tbl.increments();
+    tbl.string(&#x27;rancher_name&#x27;, 128);
+    tbl.integer(&#x27;farm_id&#x27;)
+    .unsigned()
+    .notNullable()
+    .references(&#x27;id&#x27;)
+    .inTable(&#x27;farms&#x27;)
+    .onUpdate(&#x27;CASCADE&#x27;);
+    .onDelete(&#x27;CASCADE&#x27;)
+})</code></pre><figure id="5ed7842c-fbe1-425f-ab6e-50bd1eaca4fc" class="image"><a href="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"><img src="https://cdn-images-1.medium.com/max/864/1*9xpwm_56lgvHkFTKsmoMqg.gif"/></a></figure><p id="72bc87f0-c9a3-4566-ab9a-e4c0de45251c" class="">
+</p></div></article></body></html>

@@ -1,0 +1,650 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Copy of CodeSignal Sign Up Process &amp; Troubleshooting</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="fa21091e-cb72-42d0-926b-52b50095f380" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">⏰</span></div><h1 class="page-title">Copy of CodeSignal Sign Up Process &amp; Troubleshooting</h1></header><div class="page-body"><nav id="b3e3355e-4729-450d-90b0-ba83ee1ce8b6" class="block-color-gray table_of_contents"><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#000e5fbb-1512-47fd-938f-4bb2e91298a2">Use your <a href="http://lambdastudents.com">lambdastudents.com</a> email, even if you have an existing account with another email.  </a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#bb2f4cbc-e723-40eb-838b-fa7c2d9a48ad">After taking your first test:</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#d1bd8975-1623-4178-a302-b5bcd431051a">If you&#x27;ve used CodeSignal with your <a href="http://lambdastudents.com">lambdastudents.com</a> email before:</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#6489f5d7-be01-4b50-ac54-101a8750c75f">Troubleshooting</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#45b29c30-8e4a-43b0-aa72-91f9d854bafa">I didn&#x27;t get an email with my results:</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#eb788e5f-f1e1-4110-b56a-820dca57fa61">Trouble with Okta/Zoho @<a href="http://lambdastudents.com">lambdastudents.com</a> email? </a></div></nav><p id="283a1923-7e9d-4ae1-8080-b5c2f6908d31" class="">
+</p><h2 id="000e5fbb-1512-47fd-938f-4bb2e91298a2" class="block-color-blue_background">Use your <a href="http://lambdastudents.com">lambdastudents.com</a> email, even if you have an existing account with another email.  </h2><p id="57a89fbd-9d03-4931-a0fa-aa065a61d25f" class="">If it&#x27;s your first time using CodeSignal with your lambdastudents.com email:</p><ul id="e689deec-d139-4417-9d90-7c908eff4ead" class="bulleted-list"><li>Follow the link you receive in your @lambdastudents.com email. <mark class="highlight-blue_background"><strong>Note:</strong></mark><mark class="highlight-blue_background"> Be sure to check the Notifications tab in Zoho mail.</mark></li></ul><ul id="b7efd718-f640-471f-8cf3-624e76be7054" class="bulleted-list"><li>Complete the fields &amp; click &quot;Quick Sign Up.&quot; Be sure to use your<strong> @lambdastudents email address! DO NOT USE ANY OF THE &quot;SIGN UP WITH...&quot; BUTTONS.</strong></li></ul><ul id="fc042266-2f6f-4375-a08d-0097639800ac" class="bulleted-list"><li>Please be careful to enter your @lambdastudents.com email correctly - typos or an incorrect domain here is one of the most common reasons for not receiving results.</li></ul><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="f2eb233e-e1e0-4b39-b8f1-dd84f65cee49"><div style="font-size:1.5em"><span class="icon">🚨</span></div><div style="width:100%"><strong>If you don’t use your </strong><span style="border-bottom:0.05em solid"><strong>@lambdastudents.com</strong></span><strong> email, you won&#x27;t receive your results. Lambda will have a record of your score, but we will not be able to DM you your results.</strong></div></figure><figure id="e1ae5f23-e177-45a6-89e2-5c81ab194f54" class="image"><a href="Copy%20of%20CodeSignal%20Sign%20Up%20Process%20&amp;%20Troubleshooti%20fa21091ecb7242d0926b52b50095f380/CleanShot_2020-08-14_at_15.32.522x.png"><img style="width:432px" src="Copy%20of%20CodeSignal%20Sign%20Up%20Process%20&amp;%20Troubleshooti%20fa21091ecb7242d0926b52b50095f380/CleanShot_2020-08-14_at_15.32.522x.png"/></a></figure><ul id="f6116413-e9fe-4ce4-bef8-01cf54d8e513" class="bulleted-list"><li>You can continue forward and take the test without activating your account or verifying your e-mail address, but make sure you signed up with your @lambdastudents.com email address.</li></ul><ul id="9b32b8fd-a97c-49db-8d0b-231478030115" class="bulleted-list"><li>If you click the link in your email and it takes you directly to this page <strong>but you are not sure if you are logged in with your @lambdastudents.com email,</strong> click the &quot;View Sample Test&quot; button.</li></ul><figure id="ed559f79-a4fc-4e13-8f92-582eeeae59d5" class="image"><a href="Copy%20of%20CodeSignal%20Sign%20Up%20Process%20&amp;%20Troubleshooti%20fa21091ecb7242d0926b52b50095f380/CleanShot_2020-08-14_at_16.44.192x.png"><img style="width:480px" src="Copy%20of%20CodeSignal%20Sign%20Up%20Process%20&amp;%20Troubleshooti%20fa21091ecb7242d0926b52b50095f380/CleanShot_2020-08-14_at_16.44.192x.png"/></a></figure><p id="c4f308d9-605c-4f36-afc7-d4d885671088" class="">
+</p><ul id="9904e8ac-46c8-4deb-b024-8839763ad68b" class="bulleted-list"><li>Check your profile to see what email is associated with the account. If it&#x27;s not your @lambdastudents.com email, either edit your profile to make your @lambdastudents.com email your primary in CodeSignal or sign out. <ul id="575d4930-cc38-4cf8-9aa6-ad8f3406b0bf" class="bulleted-list"><li>If you sign out, click the assessment link in your email again, and either sign-up with your @lambdastudents.com email (instructions above) or sign-in with your @lambdastudents.com email (instructions below).</li></ul><figure id="f47335f6-6e5a-4a55-b699-0b51052bd944" class="image"><a href="Copy%20of%20CodeSignal%20Sign%20Up%20Process%20&amp;%20Troubleshooti%20fa21091ecb7242d0926b52b50095f380/CleanShot_2020-08-14_at_16.44.472x.png"><img style="width:576px" src="Copy%20of%20CodeSignal%20Sign%20Up%20Process%20&amp;%20Troubleshooti%20fa21091ecb7242d0926b52b50095f380/CleanShot_2020-08-14_at_16.44.472x.png"/></a></figure><p id="6ba36652-4958-41d0-9718-25b6f008f7e7" class="">
+</p></li></ul><ul id="c8784848-596c-40ee-962c-5c80a524329b" class="bulleted-list"><li>If you are signed in with your @lambdastudents.com email, click &quot;Back To Test&quot; and then start the test. </li></ul><p id="7f13d865-a446-4498-92e4-5efb0aa0b895" class="">
+</p><h2 id="bb2f4cbc-e723-40eb-838b-fa7c2d9a48ad" class="block-color-blue_background">After taking your first test:</h2><ul id="5896efbe-446a-4ffa-b86e-bbc93333946c" class="bulleted-list"><li>After taking the test, check your email to verify your account for future use.  You will have received an email with your temporary username and password. Follow the link to CodeSignal and log in.</li></ul><figure id="856f52c4-f481-4895-ac9f-d8bfb485ed7b" class="image"><a href="Copy%20of%20CodeSignal%20Sign%20Up%20Process%20&amp;%20Troubleshooti%20fa21091ecb7242d0926b52b50095f380/Untitled.png"><img style="width:432px" src="Copy%20of%20CodeSignal%20Sign%20Up%20Process%20&amp;%20Troubleshooti%20fa21091ecb7242d0926b52b50095f380/Untitled.png"/></a></figure><p id="e41b2db4-b772-475f-99db-08a6a93ab6a4" class="">
+</p><ul id="195f348c-f526-49d4-b997-c4efd80ae9aa" class="bulleted-list"><li>When you log in, you can edit your user name and password. Be sure to click &quot;Save Changes.&quot; You are strongly encouraged to save your username and password in your password manager. </li></ul><figure id="2667779e-b1c4-42a4-bd13-3acccda481ba" class="image"><a href="Copy%20of%20CodeSignal%20Sign%20Up%20Process%20&amp;%20Troubleshooti%20fa21091ecb7242d0926b52b50095f380/CleanShot_2020-08-14_at_16.47.182x.png"><img style="width:336px" src="Copy%20of%20CodeSignal%20Sign%20Up%20Process%20&amp;%20Troubleshooti%20fa21091ecb7242d0926b52b50095f380/CleanShot_2020-08-14_at_16.47.182x.png"/></a></figure><figure id="84f102a5-0899-46cc-95de-ee7e42e74986" class="image"><a href="Copy%20of%20CodeSignal%20Sign%20Up%20Process%20&amp;%20Troubleshooti%20fa21091ecb7242d0926b52b50095f380/CleanShot_2020-08-14_at_16.47.452x.png"><img style="width:480px" src="Copy%20of%20CodeSignal%20Sign%20Up%20Process%20&amp;%20Troubleshooti%20fa21091ecb7242d0926b52b50095f380/CleanShot_2020-08-14_at_16.47.452x.png"/></a></figure><p id="307fc2bf-ca70-4e0f-8880-5bd9613e88c3" class="">
+</p><p id="efe0ca9c-5c9a-40ca-aa1f-81352c28f8cb" class="">
+</p><p id="6e8c1846-86c3-4a6a-b561-c1e7223d2c69" class="">
+</p><h2 id="d1bd8975-1623-4178-a302-b5bcd431051a" class="block-color-blue_background">If you&#x27;ve used CodeSignal with your <a href="http://lambdastudents.com">lambdastudents.com</a> email before:</h2><ul id="2356a0c2-453d-4a6d-bb32-ddc460e3f072" class="bulleted-list"><li>Follow the link you receive in your @lambdastudents.com email. <mark class="highlight-blue_background"><strong>Note:</strong></mark><mark class="highlight-blue_background"> Be sure to check the Notifications tab in Zoho mail.</mark><ul id="7529ca15-cd70-4618-90f4-44954b421e6d" class="bulleted-list"><li>Click &quot;Sign In&quot; on the bottom of this screen and sign in using the @lambdastudents.com credentials you previously created.</li></ul><p id="33156520-a308-4d33-8b9c-2309f74c7884" class="">
+</p><figure id="4689e342-a217-449d-b4b1-ab739fe1b76b" class="image"><a href="Copy%20of%20CodeSignal%20Sign%20Up%20Process%20&amp;%20Troubleshooti%20fa21091ecb7242d0926b52b50095f380/CleanShot_2020-08-14_at_15.33.342x.png"><img style="width:384px" src="Copy%20of%20CodeSignal%20Sign%20Up%20Process%20&amp;%20Troubleshooti%20fa21091ecb7242d0926b52b50095f380/CleanShot_2020-08-14_at_15.33.342x.png"/></a></figure><p id="bff8b54c-26a7-4840-9648-5c450395a5e6" class="">
+</p></li></ul><ul id="65a94a33-5617-4ddf-a81c-465007626dcc" class="bulleted-list"><li>If you click the link in your email and it takes you directly to this page <strong>but you are not sure if you are logged in with your @lambdastudents.com email,</strong> click the &quot;View Sample Test&quot; button.</li></ul><figure id="8163e36d-a8c3-4296-ba4b-2611390d99a6" class="image"><a href="Copy%20of%20CodeSignal%20Sign%20Up%20Process%20&amp;%20Troubleshooti%20fa21091ecb7242d0926b52b50095f380/CleanShot_2020-08-14_at_16.44.192x.png"><img style="width:528px" src="Copy%20of%20CodeSignal%20Sign%20Up%20Process%20&amp;%20Troubleshooti%20fa21091ecb7242d0926b52b50095f380/CleanShot_2020-08-14_at_16.44.192x.png"/></a></figure><ul id="a6aef768-402d-4caa-b408-eef4c6b5a052" class="bulleted-list"><li>Check your profile to see what email is associated with the account. If it&#x27;s not your @lambdastudents.com email, either edit your profile to make your @lambdastudents.com email your primary in CodeSignal or sign out. <ul id="f8bafc87-fbf9-4a92-ab21-11ed72d7a37a" class="bulleted-list"><li>If you sign out, click the assessment link in your email again, s</li></ul><figure id="9a6ce9e8-2600-461e-8c1b-ac0b798c1200" class="image"><a href="Copy%20of%20CodeSignal%20Sign%20Up%20Process%20&amp;%20Troubleshooti%20fa21091ecb7242d0926b52b50095f380/CleanShot_2020-08-14_at_16.44.472x.png"><img style="width:528px" src="Copy%20of%20CodeSignal%20Sign%20Up%20Process%20&amp;%20Troubleshooti%20fa21091ecb7242d0926b52b50095f380/CleanShot_2020-08-14_at_16.44.472x.png"/></a></figure></li></ul><p id="025fd93e-0423-4188-9f80-d973d3f037f2" class="">
+</p><ul id="37e04877-2394-4b2f-b926-08c2fe4f3268" class="bulleted-list"><li>If you are signed in with your @lambdastudents.com email, click &quot;Back To Test&quot; and then start the test. </li></ul><p id="3247dff7-4e7a-4ade-8ace-d7cfc27910cc" class="">
+</p><h2 id="6489f5d7-be01-4b50-ac54-101a8750c75f" class="">Troubleshooting</h2><h3 id="45b29c30-8e4a-43b0-aa72-91f9d854bafa" class="block-color-blue_background">I didn&#x27;t get an email with my results:</h3><p id="8cf0221f-38dc-4214-b3dc-0d9e5e525de4" class="">It can take a couple hours to receive score reports at times, so if you just completed the test and don&#x27;t have your score report yet, don&#x27;t worry. If it&#x27;s been some time and you still don&#x27;t have it:</p><ul id="195b3b7e-8f98-4cb3-a33e-425daf9f06e0" class="bulleted-list"><li>Email score reports will ONLY be sent to @lambdastudents.com email addresses. <ul id="92790f03-ee75-401e-898d-1515ae37a8c7" class="bulleted-list"><li>If you are sure you signed in with that address, check the Notifications tab in Zoho email. Most email from CodeSignal gets delivered there rather than your inbox. </li></ul><ul id="3d3d947a-5f09-42d3-8e42-5b9827fed895" class="bulleted-list"><li>If you&#x27;re having trouble accessing your @lambdastudents.com email, please see the next section.</li></ul></li></ul><p id="14ad17b7-ac83-48e9-88b9-6172ae99754d" class="">
+</p><h3 id="eb788e5f-f1e1-4110-b56a-820dca57fa61" class="block-color-blue_background">Trouble with Okta/Zoho @<a href="http://lambdastudents.com">lambdastudents.com</a> email? </h3><p id="d0a6ab7e-d937-4033-b772-f23a4c04e35a" class="">Follow these escalation steps: </p><ol type="1" id="e58d762d-d9de-45c2-bda6-b3a2ad56a5f6" class="numbered-list" start="1"><li>Start with this document. It will help you solve many common issues.</li></ol><figure id="aea13ba4-eb28-46ef-8287-e441ae27327d" class="link-to-page"><a href="Copy%20of%20CodeSignal%20Sign%20Up%20Process%20&amp;%20Troubleshooti%20fa21091ecb7242d0926b52b50095f380/Copy%20of%20How%20to%20Okta%20and%20Zoho%20aea13ba4eb2846ef8287e441ae27327d.html">Copy of How to Okta and Zoho</a></figure><p id="83809662-2558-4636-8b8a-de25924ef27b" class="">2. If you&#x27;re still having trouble, open a /frontdesk ticket. </p><p id="8df77e05-8b4f-47f8-ab58-91f52fcac1f4" class="">3. If you&#x27;re <em>still</em> having trouble, contact <span class="user">@Julia Richert</span> on Slack. </p><p id="60f35e4a-4904-401c-aa75-78e326cb558c" class="">
+</p></div></article></body></html>

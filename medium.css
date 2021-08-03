@@ -1,11 +1,32 @@
 * {
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
 }
-
+::-webkit-resizer {
+  border: 2px solid black;
+  background: red;
+  box-shadow: 0 0 5px 5px blue;
+  outline: 2px solid yellow;
+}
+#resizable {
+  display: block;
+  font-size: 9pt;
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+  padding: 10px;
+  min-height: 0;
+  min-width: 0;
+  border: solid 1px black;
+  width: 400px;
+  height: 400px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
 html,
 body {
   margin: 0;
   padding: 0;
+
 }
 
 h1 {
@@ -30,13 +51,15 @@ h3 {
 }
 
 header {
-  width: 640px;
-  margin: auto;
+  width:840px;
+    zoom:0.8
+
 }
 
 section {
-  width: 640px;
-  margin: auto;
+  width: 840px;
+  margin-left:250px;
+    zoom:0.8
 }
 
 section p {
@@ -47,7 +70,7 @@ section p {
 }
 
 section img {
-  max-width: 640px;
+  max-width: 440px;
 }
 
 footer {
