@@ -26,7 +26,6 @@ html,
 body {
   margin: 0;
   padding: 0;
-
 }
 
 h1 {
@@ -51,15 +50,14 @@ h3 {
 }
 
 header {
-  width:840px;
-    zoom:0.8
-
+  width: 840px;
+  zoom: 0.8;
 }
 
 section {
   width: 840px;
-  margin-left:250px;
-    zoom:0.8
+  margin-left: 250px;
+  zoom: 0.8;
 }
 
 section p {

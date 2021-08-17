@@ -57,7 +57,7 @@ header {
 section {
   width: 840px;
   margin-left: 25px;
-  zoom: 0.;
+  zoom: 0;
 }
 
 section p {

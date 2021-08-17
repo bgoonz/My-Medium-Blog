@@ -10,7 +10,7 @@ toc.appendChild(tocHeader);
 tocList = document.createElement("ul");
 
 // Get the h3 tags - ToC entries
-headers = document.getElementsByTagName("h3"||"h4");
+headers = document.getElementsByTagName("h3" || "h4");
 
 // For each h3
 for (i = 0; i < headers.length; i++) {

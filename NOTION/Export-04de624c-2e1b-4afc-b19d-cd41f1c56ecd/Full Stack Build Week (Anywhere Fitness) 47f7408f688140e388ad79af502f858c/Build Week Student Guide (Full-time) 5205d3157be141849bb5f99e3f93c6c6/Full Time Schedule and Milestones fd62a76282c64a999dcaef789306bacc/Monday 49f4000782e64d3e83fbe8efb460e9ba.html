@@ -1,646 +1,1215 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Monday</title><style>
-/* cspell:disable-file */
-/* webkit printing magic: print all background colors */
-html {
-	-webkit-print-color-adjust: exact;
-}
-* {
-	box-sizing: border-box;
-	-webkit-print-color-adjust: exact;
-}
-
-html,
-body {
-	margin: 0;
-	padding: 0;
-}
-@media only screen {
-	body {
-		margin: 2em auto;
-		max-width: 900px;
-		color: rgb(55, 53, 47);
-	}
-}
-
-body {
-	line-height: 1.5;
-	white-space: pre-wrap;
-}
-
-a,
-a.visited {
-	color: inherit;
-	text-decoration: underline;
-}
-
-.pdf-relative-link-path {
-	font-size: 80%;
-	color: #444;
-}
-
-h1,
-h2,
-h3 {
-	letter-spacing: -0.01em;
-	line-height: 1.2;
-	font-weight: 600;
-	margin-bottom: 0;
-}
-
-.page-title {
-	font-size: 2.5rem;
-	font-weight: 700;
-	margin-top: 0;
-	margin-bottom: 0.75em;
-}
-
-h1 {
-	font-size: 1.875rem;
-	margin-top: 1.875rem;
-}
-
-h2 {
-	font-size: 1.5rem;
-	margin-top: 1.5rem;
-}
-
-h3 {
-	font-size: 1.25rem;
-	margin-top: 1.25rem;
-}
-
-.source {
-	border: 1px solid #ddd;
-	border-radius: 3px;
-	padding: 1.5em;
-	word-break: break-all;
-}
-
-.callout {
-	border-radius: 3px;
-	padding: 1rem;
-}
-
-figure {
-	margin: 1.25em 0;
-	page-break-inside: avoid;
-}
-
-figcaption {
-	opacity: 0.5;
-	font-size: 85%;
-	margin-top: 0.5em;
-}
-
-mark {
-	background-color: transparent;
-}
-
-.indented {
-	padding-left: 1.5em;
-}
-
-hr {
-	background: transparent;
-	display: block;
-	width: 100%;
-	height: 1px;
-	visibility: visible;
-	border: none;
-	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
-}
-
-img {
-	max-width: 100%;
-}
-
-@media only print {
-	img {
-		max-height: 100vh;
-		object-fit: contain;
-	}
-}
-
-@page {
-	margin: 1in;
-}
-
-.collection-content {
-	font-size: 0.875rem;
-}
-
-.column-list {
-	display: flex;
-	justify-content: space-between;
-}
-
-.column {
-	padding: 0 1em;
-}
-
-.column:first-child {
-	padding-left: 0;
-}
-
-.column:last-child {
-	padding-right: 0;
-}
-
-.table_of_contents-item {
-	display: block;
-	font-size: 0.875rem;
-	line-height: 1.3;
-	padding: 0.125rem;
-}
-
-.table_of_contents-indent-1 {
-	margin-left: 1.5rem;
-}
-
-.table_of_contents-indent-2 {
-	margin-left: 3rem;
-}
-
-.table_of_contents-indent-3 {
-	margin-left: 4.5rem;
-}
-
-.table_of_contents-link {
-	text-decoration: none;
-	opacity: 0.7;
-	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
-}
-
-table,
-th,
-td {
-	border: 1px solid rgba(55, 53, 47, 0.09);
-	border-collapse: collapse;
-}
-
-table {
-	border-left: none;
-	border-right: none;
-}
-
-th,
-td {
-	font-weight: normal;
-	padding: 0.25em 0.5em;
-	line-height: 1.5;
-	min-height: 1.5em;
-	text-align: left;
-}
-
-th {
-	color: rgba(55, 53, 47, 0.6);
-}
-
-ol,
-ul {
-	margin: 0;
-	margin-block-start: 0.6em;
-	margin-block-end: 0.6em;
-}
-
-li > ol:first-child,
-li > ul:first-child {
-	margin-block-start: 0.6em;
-}
-
-ul > li {
-	list-style: disc;
-}
-
-ul.to-do-list {
-	text-indent: -1.7em;
-}
-
-ul.to-do-list > li {
-	list-style: none;
-}
-
-.to-do-children-checked {
-	text-decoration: line-through;
-	opacity: 0.375;
-}
-
-ul.toggle > li {
-	list-style: none;
-}
-
-ul {
-	padding-inline-start: 1.7em;
-}
-
-ul > li {
-	padding-left: 0.1em;
-}
-
-ol {
-	padding-inline-start: 1.6em;
-}
-
-ol > li {
-	padding-left: 0.2em;
-}
-
-.mono ol {
-	padding-inline-start: 2em;
-}
-
-.mono ol > li {
-	text-indent: -0.4em;
-}
-
-.toggle {
-	padding-inline-start: 0em;
-	list-style-type: none;
-}
-
-/* Indent toggle children */
-.toggle > li > details {
-	padding-left: 1.7em;
-}
-
-.toggle > li > details > summary {
-	margin-left: -1.1em;
-}
-
-.selected-value {
-	display: inline-block;
-	padding: 0 0.5em;
-	background: rgba(206, 205, 202, 0.5);
-	border-radius: 3px;
-	margin-right: 0.5em;
-	margin-top: 0.3em;
-	margin-bottom: 0.3em;
-	white-space: nowrap;
-}
-
-.collection-title {
-	display: inline-block;
-	margin-right: 1em;
-}
-
-time {
-	opacity: 0.5;
-}
-
-.icon {
-	display: inline-block;
-	max-width: 1.2em;
-	max-height: 1.2em;
-	text-decoration: none;
-	vertical-align: text-bottom;
-	margin-right: 0.5em;
-}
-
-img.icon {
-	border-radius: 3px;
-}
-
-.user-icon {
-	width: 1.5em;
-	height: 1.5em;
-	border-radius: 100%;
-	margin-right: 0.5rem;
-}
-
-.user-icon-inner {
-	font-size: 0.8em;
-}
-
-.text-icon {
-	border: 1px solid #000;
-	text-align: center;
-}
-
-.page-cover-image {
-	display: block;
-	object-fit: cover;
-	width: 100%;
-	height: 30vh;
-}
-
-.page-header-icon {
-	font-size: 3rem;
-	margin-bottom: 1rem;
-}
-
-.page-header-icon-with-cover {
-	margin-top: -0.72em;
-	margin-left: 0.07em;
-}
-
-.page-header-icon img {
-	border-radius: 3px;
-}
-
-.link-to-page {
-	margin: 1em 0;
-	padding: 0;
-	border: none;
-	font-weight: 500;
-}
-
-p > .user {
-	opacity: 0.5;
-}
-
-td > .user,
-td > time {
-	white-space: nowrap;
-}
-
-input[type="checkbox"] {
-	transform: scale(1.5);
-	margin-right: 0.6em;
-	vertical-align: middle;
-}
-
-p {
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-}
-
-.image {
-	border: none;
-	margin: 1.5em 0;
-	padding: 0;
-	border-radius: 0;
-	text-align: center;
-}
-
-.code,
-code {
-	background: rgba(135, 131, 120, 0.15);
-	border-radius: 3px;
-	padding: 0.2em 0.4em;
-	border-radius: 3px;
-	font-size: 85%;
-	tab-size: 2;
-}
-
-code {
-	color: #eb5757;
-}
-
-.code {
-	padding: 1.5em 1em;
-}
-
-.code-wrap {
-	white-space: pre-wrap;
-	word-break: break-all;
-}
-
-.code > code {
-	background: none;
-	padding: 0;
-	font-size: 100%;
-	color: inherit;
-}
-
-blockquote {
-	font-size: 1.25em;
-	margin: 1em 0;
-	padding-left: 1em;
-	border-left: 3px solid rgb(55, 53, 47);
-}
-
-.bookmark {
-	text-decoration: none;
-	max-height: 8em;
-	padding: 0;
-	display: flex;
-	width: 100%;
-	align-items: stretch;
-}
-
-.bookmark-title {
-	font-size: 0.85em;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	height: 1.75em;
-	white-space: nowrap;
-}
-
-.bookmark-text {
-	display: flex;
-	flex-direction: column;
-}
-
-.bookmark-info {
-	flex: 4 1 180px;
-	padding: 12px 14px 14px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.bookmark-image {
-	width: 33%;
-	flex: 1 1 180px;
-	display: block;
-	position: relative;
-	object-fit: cover;
-	border-radius: 1px;
-}
-
-.bookmark-description {
-	color: rgba(55, 53, 47, 0.6);
-	font-size: 0.75em;
-	overflow: hidden;
-	max-height: 4.5em;
-	word-break: break-word;
-}
-
-.bookmark-href {
-	font-size: 0.75em;
-	margin-top: 0.25em;
-}
-
-.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
-.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
-.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
-.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
-.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
-.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
-.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
-.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
-.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
-.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
-.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
-.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
-.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
-.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
-.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
-.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
-.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
-.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
-.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
-.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
-.highlight-default {
-}
-.highlight-gray {
-	color: rgb(155,154,151);
-}
-.highlight-brown {
-	color: rgb(100,71,58);
-}
-.highlight-orange {
-	color: rgb(217,115,13);
-}
-.highlight-yellow {
-	color: rgb(223,171,1);
-}
-.highlight-teal {
-	color: rgb(15,123,108);
-}
-.highlight-blue {
-	color: rgb(11,110,153);
-}
-.highlight-purple {
-	color: rgb(105,64,165);
-}
-.highlight-pink {
-	color: rgb(173,26,114);
-}
-.highlight-red {
-	color: rgb(224,62,62);
-}
-.highlight-gray_background {
-	background: rgb(235,236,237);
-}
-.highlight-brown_background {
-	background: rgb(233,229,227);
-}
-.highlight-orange_background {
-	background: rgb(250,235,221);
-}
-.highlight-yellow_background {
-	background: rgb(251,243,219);
-}
-.highlight-teal_background {
-	background: rgb(221,237,234);
-}
-.highlight-blue_background {
-	background: rgb(221,235,241);
-}
-.highlight-purple_background {
-	background: rgb(234,228,242);
-}
-.highlight-pink_background {
-	background: rgb(244,223,235);
-}
-.highlight-red_background {
-	background: rgb(251,228,228);
-}
-.block-color-default {
-	color: inherit;
-	fill: inherit;
-}
-.block-color-gray {
-	color: rgba(55, 53, 47, 0.6);
-	fill: rgba(55, 53, 47, 0.6);
-}
-.block-color-brown {
-	color: rgb(100,71,58);
-	fill: rgb(100,71,58);
-}
-.block-color-orange {
-	color: rgb(217,115,13);
-	fill: rgb(217,115,13);
-}
-.block-color-yellow {
-	color: rgb(223,171,1);
-	fill: rgb(223,171,1);
-}
-.block-color-teal {
-	color: rgb(15,123,108);
-	fill: rgb(15,123,108);
-}
-.block-color-blue {
-	color: rgb(11,110,153);
-	fill: rgb(11,110,153);
-}
-.block-color-purple {
-	color: rgb(105,64,165);
-	fill: rgb(105,64,165);
-}
-.block-color-pink {
-	color: rgb(173,26,114);
-	fill: rgb(173,26,114);
-}
-.block-color-red {
-	color: rgb(224,62,62);
-	fill: rgb(224,62,62);
-}
-.block-color-gray_background {
-	background: rgb(235,236,237);
-}
-.block-color-brown_background {
-	background: rgb(233,229,227);
-}
-.block-color-orange_background {
-	background: rgb(250,235,221);
-}
-.block-color-yellow_background {
-	background: rgb(251,243,219);
-}
-.block-color-teal_background {
-	background: rgb(221,237,234);
-}
-.block-color-blue_background {
-	background: rgb(221,235,241);
-}
-.block-color-purple_background {
-	background: rgb(234,228,242);
-}
-.block-color-pink_background {
-	background: rgb(244,223,235);
-}
-.block-color-red_background {
-	background: rgb(251,228,228);
-}
-.select-value-color-default { background-color: rgba(206,205,202,0.5); }
-.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
-.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
-.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
-.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
-.select-value-color-green { background-color: rgba(0,135,107,0.2); }
-.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
-.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
-.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
-.select-value-color-red { background-color: rgba(255,0,26,0.2); }
-
-.checkbox {
-	display: inline-flex;
-	vertical-align: text-bottom;
-	width: 16;
-	height: 16;
-	background-size: 16px;
-	margin-left: 2px;
-	margin-right: 5px;
-}
-
-.checkbox-on {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
-}
-
-.checkbox-off {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
-}
-	
-</style></head><body><article id="49f40007-82e6-4d3e-83fb-e8efb460e9ba" class="page sans"><header><img class="page-cover-image" src="https://images.unsplash.com/photo-1509695507497-903c140c43b0?ixlib=rb-1.2.1&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb" style="object-position:center 50%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">🎧</span></div><h1 class="page-title">Monday</h1><table class="properties"><tbody><tr class="property-row property-row-text"><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesText"><path d="M7,4.56818 C7,4.29204 6.77614,4.06818 6.5,4.06818 L0.5,4.06818 C0.223858,4.06818 0,4.29204 0,4.56818 L0,5.61364 C0,5.88978 0.223858,6.11364 0.5,6.11364 L6.5,6.11364 C6.77614,6.11364 7,5.88978 7,5.61364 L7,4.56818 Z M0.5,1 C0.223858,1 0,1.223858 0,1.5 L0,2.54545 C0,2.8216 0.223858,3.04545 0.5,3.04545 L12.5,3.04545 C12.7761,3.04545 13,2.8216 13,2.54545 L13,1.5 C13,1.223858 12.7761,1 12.5,1 L0.5,1 Z M0,8.68182 C0,8.95796 0.223858,9.18182 0.5,9.18182 L11.5,9.18182 C11.7761,9.18182 12,8.95796 12,8.68182 L12,7.63636 C12,7.36022 11.7761,7.13636 11.5,7.13636 L0.5,7.13636 C0.223858,7.13636 0,7.36022 0,7.63636 L0,8.68182 Z M0,11.75 C0,12.0261 0.223858,12.25 0.5,12.25 L9.5,12.25 C9.77614,12.25 10,12.0261 10,11.75 L10,10.70455 C10,10.4284 9.77614,10.20455 9.5,10.20455 L0.5,10.20455 C0.223858,10.20455 0,10.4284 0,10.70455 L0,11.75 Z"></path></svg></span>Property</th><td></td></tr></tbody></table></header><div class="page-body"><p id="356babff-adf8-418a-a82f-990446dfe546" class="">
-</p><ul id="975da87c-4009-40ce-b483-7fdc979169e2" class="bulleted-list"><li><strong>Web Unit 2</strong><p id="30aa22ab-db7f-4cb6-b66a-1dcee715e5e3" class="">Individual work:</p><ul id="44d22fd8-3a5e-4c6b-a6e5-1ba9cc85be87" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Use React and front end styling platforms such as Material UI, Reactstrap, or something like Styled-Components chosen and implemented as your technology choice (to be done and listed during your additions to the PVD)</span></li></ul><ul id="eb660c70-f5de-4b03-af04-ce2bf544b78b" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Front end is pulling in some data from backend</span></li></ul><ul id="1364b8e4-76b9-45f6-b794-e743f79edb52" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">User Login/Signup Pages built and ready to handle the token being sent between backend and front end</span></li></ul><ul id="653e342d-ee21-4a30-a65b-b3e04d85c589" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">React app and Backend App talking to one another, focus on CORS issues</span></li></ul><ul id="700ab917-a09f-42b4-a9d8-34047a1334ab" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Complete your module checklist in Canvas</span></li></ul><p id="2d241392-4003-4d42-a16d-95327f982029" class="">Group work: </p><ul id="c01ef351-3125-4df6-b36c-ce13c37da0d2" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Together with your team, populate backlog on Trello with user stories</span></li></ul><ul id="6e2587f6-9f96-469b-8854-e5c85f4759bb" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Together with your team, finish up Product Vision Document (don&#x27;t skimp on planning)</span></li></ul><ul id="083b8539-c0a3-43a8-b894-0371b3cd7e86" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">The team project was deployed to Netlify or Heroku by the end of the day</span></li></ul><ul id="6f810d36-5fb3-433a-9506-fb1833906e5d" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">All Project&#x27;s file structures scaffolded and project architecture decided</span></li></ul><p id="fbe2c77a-df7b-4696-b23d-eda66eda6def" class="">
-</p></li></ul><ul id="e3dbf250-eb8c-4236-aac2-2a7cad4e03f6" class="bulleted-list"><li><strong>Web Unit 3</strong><p id="bd3a6abd-bc5f-4fc3-87e3-c16238feb4d4" class="">Individual work:</p><ul id="9b05abb8-8181-422e-9b3a-da8be2124887" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Use React and front end styling platforms such as Material UI, Reactstrap, or something like Styled-Components chosen and implemented as your technology choice (to be done and listed during your additions to the Product Canvas)</span></li></ul><ul id="605dfdd5-c552-4caa-996f-d39319064ea4" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Front end is pulling in some data from backend</span></li></ul><ul id="5eb44e08-f299-4be5-9c1d-84d72a915219" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">User Login/Signup Pages built and ready to handle the token being sent between backend and front end</span></li></ul><ul id="c37f2282-2d59-41f8-a946-723161844e65" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">React app and Backend App talking to one another, focus on CORS issues</span></li></ul><ul id="99bd2624-2541-413f-8dd3-cdda9087f5ee" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Complete your module checklist in Canvas</span></li></ul><p id="82c8d1a3-481b-4153-9aef-f515d7c8ee5b" class="">Grop work: </p><ul id="6b6a4ef2-aec6-4d1b-b0b5-63035b952d91" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Together with your team, populate backlog on Trello with user stories</span></li></ul><ul id="6a5306b5-3824-4d8b-8e79-b1cf6655c415" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Together with your team, finish up Product Vision Document (don&#x27;t skimp on planning)</span></li></ul><ul id="e65c17f0-3113-469a-9183-7c1181206932" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">The team project was deployed to Netlify or Heroku by the end of the day</span></li></ul><ul id="c9e5974c-cb7e-414d-8cb4-fe2a78893082" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">All Project&#x27;s file structures scaffolded and project architecture decided</span></li></ul><p id="77ebaf7b-bad7-47e5-bdf4-813836ad9cb5" class="">
-</p><p id="e2137a87-7243-4af7-9485-01d828d6b032" class="">
-</p></li></ul><ul id="c48cc428-c75f-4b15-b646-f72b99e3ce94" class="bulleted-list"><li><strong>Web Unit 4 </strong><p id="769d4107-ffec-4d14-9eb5-5329ab667a35" class="">Individual work:</p><ul id="7fce6182-cb9d-4415-8794-525fce0852f3" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Node/Express and all required packages for things like CORS, Body-Parser, JWT installed</span></li></ul><ul id="03c7e2ae-658b-4979-8702-7e8a68580b84" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">User Login/Signup endpoints built out including the User Models Use JWT/Sessions strategies learned in Authentication</span></li></ul><ul id="ca5b9972-e6ce-4231-808d-ee35471f8881" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">React app and Backend App talking to one another, focus on CORS issues</span></li></ul><ul id="eb6d1890-9745-4c1c-858d-1a20503f2b98" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Data Migrations and Seeds set up for mock data</span></li></ul><ul id="a668101f-ffe7-4663-8d7d-75170b7486ad" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Complete your module checklist in Canvas</span></li></ul><p id="0e17e010-3b06-42dd-bf1b-5309fcfb1b6e" class="">Group work: </p><ul id="ec144444-1982-4fdc-a947-e04bc6d6c174" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Together with your team, populate backlog on Trello with user stories</span></li></ul><ul id="4c26e69c-893c-4e35-b1de-90a40c3d40f8" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Together with your team, finish up Product Vision Document (don&#x27;t skimp on planning)</span></li></ul><ul id="1290bbdc-5960-4160-a5f9-65e148bf1104" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">The team project was deployed to Netlify or Heroku by the end of the day</span></li></ul><ul id="9243c051-4a0b-4e69-ae26-06d799070f5d" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">All Project&#x27;s file structures scaffolded and project architecture decided</span></li></ul></li></ul><p id="1bdb9564-66dc-418f-aa1e-9cbaccdbc674" class="">
-</p><ul id="c6f7e7c1-3f90-4bb3-989b-634d101d419b" class="bulleted-list"><li><strong>DS Unit 3</strong><p id="edadf847-4679-4c83-803a-8d157886b560" class="">Individual work:</p><ul id="422096ec-bc71-4a9e-8354-e09651150ca3" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Load initial (possibly sampled/manual) data</span></li></ul><ul id="e8155abb-0ebf-40aa-bbb9-df44d296b951" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Create exploratory notebook considering appropriate methods to address business problem</span></li></ul><ul id="613bceed-786b-4a15-ac63-c35d4c7c7187" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Complete your module checklist in Canvas</span></li></ul><p id="b6a6acb9-5234-4730-9a2b-fa2e0ee665ba" class="">Group work: </p><ul id="2a3e2227-1702-4d4c-9b7d-b5b1217b4aee" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Together with your team, populate backlog on Trello with user stories</span></li></ul><ul id="ba196b20-17eb-451c-90c5-ba8b5ff66b69" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Together with your team, finish up Product Vision Document (don&#x27;t skimp on planning)</span></li></ul><ul id="47783003-8991-4869-bb81-06ea252dbe94" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">The team project was deployed to Netlify or Heroku by the end of the day</span></li></ul><ul id="bec9a41e-c11f-42bd-b953-b4b1550f073f" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">All Project&#x27;s file structures scaffolded and project architecture decided</span></li></ul></li></ul><p id="58dcf364-b671-4864-ba54-60f799f617cd" class="">
-</p><ul id="151800dd-6fb4-47f2-9dfa-6e161b39e2b1" class="bulleted-list"><li><strong>DS Unit 4</strong><p id="82c8312e-d95c-4f15-ae14-50aac4644666" class="">Individual work:</p><ul id="64f9f1f6-10e1-4ad8-b8c3-cd7579ca7d62" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Load initial (possibly sampled/manual) data</span></li></ul><ul id="e02c8fa3-20ec-476e-9f1c-45b77d051d58" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Create exploratory notebook considering appropriate methods to address business problem</span></li></ul><ul id="7655bdfd-17e7-4ee9-8763-998b1adb952d" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Complete your module checklist in Canvas</span></li></ul><p id="4924685c-02f7-49e8-af37-d18381002f90" class="">Group work: </p><ul id="1bd1c172-e774-4308-8400-279f5021e62d" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Together with your team, populate backlog on Trello with user stories</span></li></ul><ul id="4aefe74b-6151-4e7d-a562-3cb5c722acee" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Together with your team, finish up Product Vision Document (don&#x27;t skimp on planning)</span></li></ul><ul id="77736932-37bd-42fb-8aa2-332df5388a7b" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">The team project was deployed to Netlify or Heroku by the end of the day</span></li></ul><ul id="86211b06-d958-4d62-9e80-1a3b52fe1690" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">All Project&#x27;s file structures scaffolded and project architecture decided</span></li></ul></li></ul><p id="57a02ee1-d714-416d-99d0-31e1b691d8ae" class="">
-</p><p id="8beb50b1-cf57-420b-985c-482d7046927a" class="">
-</p><ul id="e577eff6-7b57-4c37-9f18-693ea0827584" class="toggle"><li><details open=""><summary>Revision History</summary><p id="4db6aeb1-55ea-4db9-8a8d-950c6db1f87d" class="">October 24, 2019, shared with students October 25, 2019</p><p id="7ffcc171-8280-4363-a724-f23b5b739cfd" class="">
-</p></details></li></ul><p id="c9d91393-b43a-49bf-9d3b-716fb9d02a18" class="">
-</p><p id="4235b6e0-8854-4945-9933-37d8c2920fbc" class="">Copyright Lambda School 2020, All Rights Reserved</p></div></article></body></html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Monday</title>
+    <style>
+      /* cspell:disable-file */
+      /* webkit printing magic: print all background colors */
+      html {
+        -webkit-print-color-adjust: exact;
+      }
+      * {
+        box-sizing: border-box;
+        -webkit-print-color-adjust: exact;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      @media only screen {
+        body {
+          margin: 2em auto;
+          max-width: 900px;
+          color: rgb(55, 53, 47);
+        }
+      }
+
+      body {
+        line-height: 1.5;
+        white-space: pre-wrap;
+      }
+
+      a,
+      a.visited {
+        color: inherit;
+        text-decoration: underline;
+      }
+
+      .pdf-relative-link-path {
+        font-size: 80%;
+        color: #444;
+      }
+
+      h1,
+      h2,
+      h3 {
+        letter-spacing: -0.01em;
+        line-height: 1.2;
+        font-weight: 600;
+        margin-bottom: 0;
+      }
+
+      .page-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 0.75em;
+      }
+
+      h1 {
+        font-size: 1.875rem;
+        margin-top: 1.875rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+      }
+
+      h3 {
+        font-size: 1.25rem;
+        margin-top: 1.25rem;
+      }
+
+      .source {
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        padding: 1.5em;
+        word-break: break-all;
+      }
+
+      .callout {
+        border-radius: 3px;
+        padding: 1rem;
+      }
+
+      figure {
+        margin: 1.25em 0;
+        page-break-inside: avoid;
+      }
+
+      figcaption {
+        opacity: 0.5;
+        font-size: 85%;
+        margin-top: 0.5em;
+      }
+
+      mark {
+        background-color: transparent;
+      }
+
+      .indented {
+        padding-left: 1.5em;
+      }
+
+      hr {
+        background: transparent;
+        display: block;
+        width: 100%;
+        height: 1px;
+        visibility: visible;
+        border: none;
+        border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      @media only print {
+        img {
+          max-height: 100vh;
+          object-fit: contain;
+        }
+      }
+
+      @page {
+        margin: 1in;
+      }
+
+      .collection-content {
+        font-size: 0.875rem;
+      }
+
+      .column-list {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .column {
+        padding: 0 1em;
+      }
+
+      .column:first-child {
+        padding-left: 0;
+      }
+
+      .column:last-child {
+        padding-right: 0;
+      }
+
+      .table_of_contents-item {
+        display: block;
+        font-size: 0.875rem;
+        line-height: 1.3;
+        padding: 0.125rem;
+      }
+
+      .table_of_contents-indent-1 {
+        margin-left: 1.5rem;
+      }
+
+      .table_of_contents-indent-2 {
+        margin-left: 3rem;
+      }
+
+      .table_of_contents-indent-3 {
+        margin-left: 4.5rem;
+      }
+
+      .table_of_contents-link {
+        text-decoration: none;
+        opacity: 0.7;
+        border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid rgba(55, 53, 47, 0.09);
+        border-collapse: collapse;
+      }
+
+      table {
+        border-left: none;
+        border-right: none;
+      }
+
+      th,
+      td {
+        font-weight: normal;
+        padding: 0.25em 0.5em;
+        line-height: 1.5;
+        min-height: 1.5em;
+        text-align: left;
+      }
+
+      th {
+        color: rgba(55, 53, 47, 0.6);
+      }
+
+      ol,
+      ul {
+        margin: 0;
+        margin-block-start: 0.6em;
+        margin-block-end: 0.6em;
+      }
+
+      li > ol:first-child,
+      li > ul:first-child {
+        margin-block-start: 0.6em;
+      }
+
+      ul > li {
+        list-style: disc;
+      }
+
+      ul.to-do-list {
+        text-indent: -1.7em;
+      }
+
+      ul.to-do-list > li {
+        list-style: none;
+      }
+
+      .to-do-children-checked {
+        text-decoration: line-through;
+        opacity: 0.375;
+      }
+
+      ul.toggle > li {
+        list-style: none;
+      }
+
+      ul {
+        padding-inline-start: 1.7em;
+      }
+
+      ul > li {
+        padding-left: 0.1em;
+      }
+
+      ol {
+        padding-inline-start: 1.6em;
+      }
+
+      ol > li {
+        padding-left: 0.2em;
+      }
+
+      .mono ol {
+        padding-inline-start: 2em;
+      }
+
+      .mono ol > li {
+        text-indent: -0.4em;
+      }
+
+      .toggle {
+        padding-inline-start: 0em;
+        list-style-type: none;
+      }
+
+      /* Indent toggle children */
+      .toggle > li > details {
+        padding-left: 1.7em;
+      }
+
+      .toggle > li > details > summary {
+        margin-left: -1.1em;
+      }
+
+      .selected-value {
+        display: inline-block;
+        padding: 0 0.5em;
+        background: rgba(206, 205, 202, 0.5);
+        border-radius: 3px;
+        margin-right: 0.5em;
+        margin-top: 0.3em;
+        margin-bottom: 0.3em;
+        white-space: nowrap;
+      }
+
+      .collection-title {
+        display: inline-block;
+        margin-right: 1em;
+      }
+
+      time {
+        opacity: 0.5;
+      }
+
+      .icon {
+        display: inline-block;
+        max-width: 1.2em;
+        max-height: 1.2em;
+        text-decoration: none;
+        vertical-align: text-bottom;
+        margin-right: 0.5em;
+      }
+
+      img.icon {
+        border-radius: 3px;
+      }
+
+      .user-icon {
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 100%;
+        margin-right: 0.5rem;
+      }
+
+      .user-icon-inner {
+        font-size: 0.8em;
+      }
+
+      .text-icon {
+        border: 1px solid #000;
+        text-align: center;
+      }
+
+      .page-cover-image {
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        height: 30vh;
+      }
+
+      .page-header-icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+
+      .page-header-icon-with-cover {
+        margin-top: -0.72em;
+        margin-left: 0.07em;
+      }
+
+      .page-header-icon img {
+        border-radius: 3px;
+      }
+
+      .link-to-page {
+        margin: 1em 0;
+        padding: 0;
+        border: none;
+        font-weight: 500;
+      }
+
+      p > .user {
+        opacity: 0.5;
+      }
+
+      td > .user,
+      td > time {
+        white-space: nowrap;
+      }
+
+      input[type="checkbox"] {
+        transform: scale(1.5);
+        margin-right: 0.6em;
+        vertical-align: middle;
+      }
+
+      p {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+      }
+
+      .image {
+        border: none;
+        margin: 1.5em 0;
+        padding: 0;
+        border-radius: 0;
+        text-align: center;
+      }
+
+      .code,
+      code {
+        background: rgba(135, 131, 120, 0.15);
+        border-radius: 3px;
+        padding: 0.2em 0.4em;
+        border-radius: 3px;
+        font-size: 85%;
+        tab-size: 2;
+      }
+
+      code {
+        color: #eb5757;
+      }
+
+      .code {
+        padding: 1.5em 1em;
+      }
+
+      .code-wrap {
+        white-space: pre-wrap;
+        word-break: break-all;
+      }
+
+      .code > code {
+        background: none;
+        padding: 0;
+        font-size: 100%;
+        color: inherit;
+      }
+
+      blockquote {
+        font-size: 1.25em;
+        margin: 1em 0;
+        padding-left: 1em;
+        border-left: 3px solid rgb(55, 53, 47);
+      }
+
+      .bookmark {
+        text-decoration: none;
+        max-height: 8em;
+        padding: 0;
+        display: flex;
+        width: 100%;
+        align-items: stretch;
+      }
+
+      .bookmark-title {
+        font-size: 0.85em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 1.75em;
+        white-space: nowrap;
+      }
+
+      .bookmark-text {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .bookmark-info {
+        flex: 4 1 180px;
+        padding: 12px 14px 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .bookmark-image {
+        width: 33%;
+        flex: 1 1 180px;
+        display: block;
+        position: relative;
+        object-fit: cover;
+        border-radius: 1px;
+      }
+
+      .bookmark-description {
+        color: rgba(55, 53, 47, 0.6);
+        font-size: 0.75em;
+        overflow: hidden;
+        max-height: 4.5em;
+        word-break: break-word;
+      }
+
+      .bookmark-href {
+        font-size: 0.75em;
+        margin-top: 0.25em;
+      }
+
+      .sans {
+        font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif,
+          "Segoe UI Emoji", "Segoe UI Symbol";
+      }
+      .code {
+        font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono",
+          "Liberation Mono", Courier, monospace;
+      }
+      .serif {
+        font-family: Lyon-Text, Georgia, ui-serif, serif;
+      }
+      .mono {
+        font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;
+      }
+      .pdf .sans {
+        font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif,
+          "Segoe UI Emoji", "Segoe UI Symbol", "Twemoji", "Noto Color Emoji",
+          "Noto Sans CJK JP";
+      }
+      .pdf:lang(zh-CN) .sans {
+        font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif,
+          "Segoe UI Emoji", "Segoe UI Symbol", "Twemoji", "Noto Color Emoji",
+          "Noto Sans CJK SC";
+      }
+      .pdf:lang(zh-TW) .sans {
+        font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif,
+          "Segoe UI Emoji", "Segoe UI Symbol", "Twemoji", "Noto Color Emoji",
+          "Noto Sans CJK TC";
+      }
+      .pdf:lang(ko-KR) .sans {
+        font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif,
+          "Segoe UI Emoji", "Segoe UI Symbol", "Twemoji", "Noto Color Emoji",
+          "Noto Sans CJK KR";
+      }
+      .pdf .code {
+        font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas,
+          "PT Mono", "Liberation Mono", Courier, monospace, "Twemoji",
+          "Noto Color Emoji", "Noto Sans Mono CJK JP";
+      }
+      .pdf:lang(zh-CN) .code {
+        font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas,
+          "PT Mono", "Liberation Mono", Courier, monospace, "Twemoji",
+          "Noto Color Emoji", "Noto Sans Mono CJK SC";
+      }
+      .pdf:lang(zh-TW) .code {
+        font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas,
+          "PT Mono", "Liberation Mono", Courier, monospace, "Twemoji",
+          "Noto Color Emoji", "Noto Sans Mono CJK TC";
+      }
+      .pdf:lang(ko-KR) .code {
+        font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas,
+          "PT Mono", "Liberation Mono", Courier, monospace, "Twemoji",
+          "Noto Color Emoji", "Noto Sans Mono CJK KR";
+      }
+      .pdf .serif {
+        font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, "Twemoji",
+          "Noto Color Emoji", "Noto Serif CJK JP";
+      }
+      .pdf:lang(zh-CN) .serif {
+        font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, "Twemoji",
+          "Noto Color Emoji", "Noto Serif CJK SC";
+      }
+      .pdf:lang(zh-TW) .serif {
+        font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, "Twemoji",
+          "Noto Color Emoji", "Noto Serif CJK TC";
+      }
+      .pdf:lang(ko-KR) .serif {
+        font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, "Twemoji",
+          "Noto Color Emoji", "Noto Serif CJK KR";
+      }
+      .pdf .mono {
+        font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace,
+          "Twemoji", "Noto Color Emoji", "Noto Sans Mono CJK JP";
+      }
+      .pdf:lang(zh-CN) .mono {
+        font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace,
+          "Twemoji", "Noto Color Emoji", "Noto Sans Mono CJK SC";
+      }
+      .pdf:lang(zh-TW) .mono {
+        font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace,
+          "Twemoji", "Noto Color Emoji", "Noto Sans Mono CJK TC";
+      }
+      .pdf:lang(ko-KR) .mono {
+        font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace,
+          "Twemoji", "Noto Color Emoji", "Noto Sans Mono CJK KR";
+      }
+      .highlight-default {
+      }
+      .highlight-gray {
+        color: rgb(155, 154, 151);
+      }
+      .highlight-brown {
+        color: rgb(100, 71, 58);
+      }
+      .highlight-orange {
+        color: rgb(217, 115, 13);
+      }
+      .highlight-yellow {
+        color: rgb(223, 171, 1);
+      }
+      .highlight-teal {
+        color: rgb(15, 123, 108);
+      }
+      .highlight-blue {
+        color: rgb(11, 110, 153);
+      }
+      .highlight-purple {
+        color: rgb(105, 64, 165);
+      }
+      .highlight-pink {
+        color: rgb(173, 26, 114);
+      }
+      .highlight-red {
+        color: rgb(224, 62, 62);
+      }
+      .highlight-gray_background {
+        background: rgb(235, 236, 237);
+      }
+      .highlight-brown_background {
+        background: rgb(233, 229, 227);
+      }
+      .highlight-orange_background {
+        background: rgb(250, 235, 221);
+      }
+      .highlight-yellow_background {
+        background: rgb(251, 243, 219);
+      }
+      .highlight-teal_background {
+        background: rgb(221, 237, 234);
+      }
+      .highlight-blue_background {
+        background: rgb(221, 235, 241);
+      }
+      .highlight-purple_background {
+        background: rgb(234, 228, 242);
+      }
+      .highlight-pink_background {
+        background: rgb(244, 223, 235);
+      }
+      .highlight-red_background {
+        background: rgb(251, 228, 228);
+      }
+      .block-color-default {
+        color: inherit;
+        fill: inherit;
+      }
+      .block-color-gray {
+        color: rgba(55, 53, 47, 0.6);
+        fill: rgba(55, 53, 47, 0.6);
+      }
+      .block-color-brown {
+        color: rgb(100, 71, 58);
+        fill: rgb(100, 71, 58);
+      }
+      .block-color-orange {
+        color: rgb(217, 115, 13);
+        fill: rgb(217, 115, 13);
+      }
+      .block-color-yellow {
+        color: rgb(223, 171, 1);
+        fill: rgb(223, 171, 1);
+      }
+      .block-color-teal {
+        color: rgb(15, 123, 108);
+        fill: rgb(15, 123, 108);
+      }
+      .block-color-blue {
+        color: rgb(11, 110, 153);
+        fill: rgb(11, 110, 153);
+      }
+      .block-color-purple {
+        color: rgb(105, 64, 165);
+        fill: rgb(105, 64, 165);
+      }
+      .block-color-pink {
+        color: rgb(173, 26, 114);
+        fill: rgb(173, 26, 114);
+      }
+      .block-color-red {
+        color: rgb(224, 62, 62);
+        fill: rgb(224, 62, 62);
+      }
+      .block-color-gray_background {
+        background: rgb(235, 236, 237);
+      }
+      .block-color-brown_background {
+        background: rgb(233, 229, 227);
+      }
+      .block-color-orange_background {
+        background: rgb(250, 235, 221);
+      }
+      .block-color-yellow_background {
+        background: rgb(251, 243, 219);
+      }
+      .block-color-teal_background {
+        background: rgb(221, 237, 234);
+      }
+      .block-color-blue_background {
+        background: rgb(221, 235, 241);
+      }
+      .block-color-purple_background {
+        background: rgb(234, 228, 242);
+      }
+      .block-color-pink_background {
+        background: rgb(244, 223, 235);
+      }
+      .block-color-red_background {
+        background: rgb(251, 228, 228);
+      }
+      .select-value-color-default {
+        background-color: rgba(206, 205, 202, 0.5);
+      }
+      .select-value-color-gray {
+        background-color: rgba(155, 154, 151, 0.4);
+      }
+      .select-value-color-brown {
+        background-color: rgba(140, 46, 0, 0.2);
+      }
+      .select-value-color-orange {
+        background-color: rgba(245, 93, 0, 0.2);
+      }
+      .select-value-color-yellow {
+        background-color: rgba(233, 168, 0, 0.2);
+      }
+      .select-value-color-green {
+        background-color: rgba(0, 135, 107, 0.2);
+      }
+      .select-value-color-blue {
+        background-color: rgba(0, 120, 223, 0.2);
+      }
+      .select-value-color-purple {
+        background-color: rgba(103, 36, 222, 0.2);
+      }
+      .select-value-color-pink {
+        background-color: rgba(221, 0, 129, 0.2);
+      }
+      .select-value-color-red {
+        background-color: rgba(255, 0, 26, 0.2);
+      }
+
+      .checkbox {
+        display: inline-flex;
+        vertical-align: text-bottom;
+        width: 16;
+        height: 16;
+        background-size: 16px;
+        margin-left: 2px;
+        margin-right: 5px;
+      }
+
+      .checkbox-on {
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+      }
+
+      .checkbox-off {
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+      }
+    </style>
+  </head>
+  <body>
+    <article id="49f40007-82e6-4d3e-83fb-e8efb460e9ba" class="page sans">
+      <header>
+        <img
+          class="page-cover-image"
+          src="https://images.unsplash.com/photo-1509695507497-903c140c43b0?ixlib=rb-1.2.1&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb"
+          style="object-position: center 50%"
+        />
+        <div class="page-header-icon page-header-icon-with-cover">
+          <span class="icon">🎧</span>
+        </div>
+        <h1 class="page-title">Monday</h1>
+        <table class="properties">
+          <tbody>
+            <tr class="property-row property-row-text">
+              <th>
+                <span class="icon property-icon"
+                  ><svg
+                    viewBox="0 0 14 14"
+                    style="
+                      width: 14px;
+                      height: 14px;
+                      display: block;
+                      fill: rgba(55, 53, 47, 0.4);
+                      flex-shrink: 0;
+                      -webkit-backface-visibility: hidden;
+                    "
+                    class="typesText"
+                  >
+                    <path
+                      d="M7,4.56818 C7,4.29204 6.77614,4.06818 6.5,4.06818 L0.5,4.06818 C0.223858,4.06818 0,4.29204 0,4.56818 L0,5.61364 C0,5.88978 0.223858,6.11364 0.5,6.11364 L6.5,6.11364 C6.77614,6.11364 7,5.88978 7,5.61364 L7,4.56818 Z M0.5,1 C0.223858,1 0,1.223858 0,1.5 L0,2.54545 C0,2.8216 0.223858,3.04545 0.5,3.04545 L12.5,3.04545 C12.7761,3.04545 13,2.8216 13,2.54545 L13,1.5 C13,1.223858 12.7761,1 12.5,1 L0.5,1 Z M0,8.68182 C0,8.95796 0.223858,9.18182 0.5,9.18182 L11.5,9.18182 C11.7761,9.18182 12,8.95796 12,8.68182 L12,7.63636 C12,7.36022 11.7761,7.13636 11.5,7.13636 L0.5,7.13636 C0.223858,7.13636 0,7.36022 0,7.63636 L0,8.68182 Z M0,11.75 C0,12.0261 0.223858,12.25 0.5,12.25 L9.5,12.25 C9.77614,12.25 10,12.0261 10,11.75 L10,10.70455 C10,10.4284 9.77614,10.20455 9.5,10.20455 L0.5,10.20455 C0.223858,10.20455 0,10.4284 0,10.70455 L0,11.75 Z"
+                    ></path></svg></span
+                >Property
+              </th>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </header>
+      <div class="page-body">
+        <p id="356babff-adf8-418a-a82f-990446dfe546" class=""></p>
+        <ul id="975da87c-4009-40ce-b483-7fdc979169e2" class="bulleted-list">
+          <li>
+            <strong>Web Unit 2</strong>
+            <p id="30aa22ab-db7f-4cb6-b66a-1dcee715e5e3" class="">
+              Individual work:
+            </p>
+            <ul id="44d22fd8-3a5e-4c6b-a6e5-1ba9cc85be87" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >Use React and front end styling platforms such as Material
+                  UI, Reactstrap, or something like Styled-Components chosen and
+                  implemented as your technology choice (to be done and listed
+                  during your additions to the PVD)</span
+                >
+              </li>
+            </ul>
+            <ul id="eb660c70-f5de-4b03-af04-ce2bf544b78b" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >Front end is pulling in some data from backend</span
+                >
+              </li>
+            </ul>
+            <ul id="1364b8e4-76b9-45f6-b794-e743f79edb52" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >User Login/Signup Pages built and ready to handle the token
+                  being sent between backend and front end</span
+                >
+              </li>
+            </ul>
+            <ul id="653e342d-ee21-4a30-a65b-b3e04d85c589" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >React app and Backend App talking to one another, focus on
+                  CORS issues</span
+                >
+              </li>
+            </ul>
+            <ul id="700ab917-a09f-42b4-a9d8-34047a1334ab" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >Complete your module checklist in Canvas</span
+                >
+              </li>
+            </ul>
+            <p id="2d241392-4003-4d42-a16d-95327f982029" class="">
+              Group work:
+            </p>
+            <ul id="c01ef351-3125-4df6-b36c-ce13c37da0d2" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >Together with your team, populate backlog on Trello with user
+                  stories</span
+                >
+              </li>
+            </ul>
+            <ul id="6e2587f6-9f96-469b-8854-e5c85f4759bb" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >Together with your team, finish up Product Vision Document
+                  (don&#x27;t skimp on planning)</span
+                >
+              </li>
+            </ul>
+            <ul id="083b8539-c0a3-43a8-b894-0371b3cd7e86" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >The team project was deployed to Netlify or Heroku by the end
+                  of the day</span
+                >
+              </li>
+            </ul>
+            <ul id="6f810d36-5fb3-433a-9506-fb1833906e5d" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >All Project&#x27;s file structures scaffolded and project
+                  architecture decided</span
+                >
+              </li>
+            </ul>
+            <p id="fbe2c77a-df7b-4696-b23d-eda66eda6def" class=""></p>
+          </li>
+        </ul>
+        <ul id="e3dbf250-eb8c-4236-aac2-2a7cad4e03f6" class="bulleted-list">
+          <li>
+            <strong>Web Unit 3</strong>
+            <p id="bd3a6abd-bc5f-4fc3-87e3-c16238feb4d4" class="">
+              Individual work:
+            </p>
+            <ul id="9b05abb8-8181-422e-9b3a-da8be2124887" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >Use React and front end styling platforms such as Material
+                  UI, Reactstrap, or something like Styled-Components chosen and
+                  implemented as your technology choice (to be done and listed
+                  during your additions to the Product Canvas)</span
+                >
+              </li>
+            </ul>
+            <ul id="605dfdd5-c552-4caa-996f-d39319064ea4" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >Front end is pulling in some data from backend</span
+                >
+              </li>
+            </ul>
+            <ul id="5eb44e08-f299-4be5-9c1d-84d72a915219" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >User Login/Signup Pages built and ready to handle the token
+                  being sent between backend and front end</span
+                >
+              </li>
+            </ul>
+            <ul id="c37f2282-2d59-41f8-a946-723161844e65" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >React app and Backend App talking to one another, focus on
+                  CORS issues</span
+                >
+              </li>
+            </ul>
+            <ul id="99bd2624-2541-413f-8dd3-cdda9087f5ee" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >Complete your module checklist in Canvas</span
+                >
+              </li>
+            </ul>
+            <p id="82c8d1a3-481b-4153-9aef-f515d7c8ee5b" class="">Grop work:</p>
+            <ul id="6b6a4ef2-aec6-4d1b-b0b5-63035b952d91" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >Together with your team, populate backlog on Trello with user
+                  stories</span
+                >
+              </li>
+            </ul>
+            <ul id="6a5306b5-3824-4d8b-8e79-b1cf6655c415" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >Together with your team, finish up Product Vision Document
+                  (don&#x27;t skimp on planning)</span
+                >
+              </li>
+            </ul>
+            <ul id="e65c17f0-3113-469a-9183-7c1181206932" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >The team project was deployed to Netlify or Heroku by the end
+                  of the day</span
+                >
+              </li>
+            </ul>
+            <ul id="c9e5974c-cb7e-414d-8cb4-fe2a78893082" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >All Project&#x27;s file structures scaffolded and project
+                  architecture decided</span
+                >
+              </li>
+            </ul>
+            <p id="77ebaf7b-bad7-47e5-bdf4-813836ad9cb5" class=""></p>
+            <p id="e2137a87-7243-4af7-9485-01d828d6b032" class=""></p>
+          </li>
+        </ul>
+        <ul id="c48cc428-c75f-4b15-b646-f72b99e3ce94" class="bulleted-list">
+          <li>
+            <strong>Web Unit 4 </strong>
+            <p id="769d4107-ffec-4d14-9eb5-5329ab667a35" class="">
+              Individual work:
+            </p>
+            <ul id="7fce6182-cb9d-4415-8794-525fce0852f3" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >Node/Express and all required packages for things like CORS,
+                  Body-Parser, JWT installed</span
+                >
+              </li>
+            </ul>
+            <ul id="03c7e2ae-658b-4979-8702-7e8a68580b84" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >User Login/Signup endpoints built out including the User
+                  Models Use JWT/Sessions strategies learned in
+                  Authentication</span
+                >
+              </li>
+            </ul>
+            <ul id="ca5b9972-e6ce-4231-808d-ee35471f8881" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >React app and Backend App talking to one another, focus on
+                  CORS issues</span
+                >
+              </li>
+            </ul>
+            <ul id="eb6d1890-9745-4c1c-858d-1a20503f2b98" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >Data Migrations and Seeds set up for mock data</span
+                >
+              </li>
+            </ul>
+            <ul id="a668101f-ffe7-4663-8d7d-75170b7486ad" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >Complete your module checklist in Canvas</span
+                >
+              </li>
+            </ul>
+            <p id="0e17e010-3b06-42dd-bf1b-5309fcfb1b6e" class="">
+              Group work:
+            </p>
+            <ul id="ec144444-1982-4fdc-a947-e04bc6d6c174" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >Together with your team, populate backlog on Trello with user
+                  stories</span
+                >
+              </li>
+            </ul>
+            <ul id="4c26e69c-893c-4e35-b1de-90a40c3d40f8" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >Together with your team, finish up Product Vision Document
+                  (don&#x27;t skimp on planning)</span
+                >
+              </li>
+            </ul>
+            <ul id="1290bbdc-5960-4160-a5f9-65e148bf1104" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >The team project was deployed to Netlify or Heroku by the end
+                  of the day</span
+                >
+              </li>
+            </ul>
+            <ul id="9243c051-4a0b-4e69-ae26-06d799070f5d" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >All Project&#x27;s file structures scaffolded and project
+                  architecture decided</span
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <p id="1bdb9564-66dc-418f-aa1e-9cbaccdbc674" class=""></p>
+        <ul id="c6f7e7c1-3f90-4bb3-989b-634d101d419b" class="bulleted-list">
+          <li>
+            <strong>DS Unit 3</strong>
+            <p id="edadf847-4679-4c83-803a-8d157886b560" class="">
+              Individual work:
+            </p>
+            <ul id="422096ec-bc71-4a9e-8354-e09651150ca3" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >Load initial (possibly sampled/manual) data</span
+                >
+              </li>
+            </ul>
+            <ul id="e8155abb-0ebf-40aa-bbb9-df44d296b951" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >Create exploratory notebook considering appropriate methods
+                  to address business problem</span
+                >
+              </li>
+            </ul>
+            <ul id="613bceed-786b-4a15-ac63-c35d4c7c7187" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >Complete your module checklist in Canvas</span
+                >
+              </li>
+            </ul>
+            <p id="b6a6acb9-5234-4730-9a2b-fa2e0ee665ba" class="">
+              Group work:
+            </p>
+            <ul id="2a3e2227-1702-4d4c-9b7d-b5b1217b4aee" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >Together with your team, populate backlog on Trello with user
+                  stories</span
+                >
+              </li>
+            </ul>
+            <ul id="ba196b20-17eb-451c-90c5-ba8b5ff66b69" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >Together with your team, finish up Product Vision Document
+                  (don&#x27;t skimp on planning)</span
+                >
+              </li>
+            </ul>
+            <ul id="47783003-8991-4869-bb81-06ea252dbe94" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >The team project was deployed to Netlify or Heroku by the end
+                  of the day</span
+                >
+              </li>
+            </ul>
+            <ul id="bec9a41e-c11f-42bd-b953-b4b1550f073f" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >All Project&#x27;s file structures scaffolded and project
+                  architecture decided</span
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <p id="58dcf364-b671-4864-ba54-60f799f617cd" class=""></p>
+        <ul id="151800dd-6fb4-47f2-9dfa-6e161b39e2b1" class="bulleted-list">
+          <li>
+            <strong>DS Unit 4</strong>
+            <p id="82c8312e-d95c-4f15-ae14-50aac4644666" class="">
+              Individual work:
+            </p>
+            <ul id="64f9f1f6-10e1-4ad8-b8c3-cd7579ca7d62" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >Load initial (possibly sampled/manual) data</span
+                >
+              </li>
+            </ul>
+            <ul id="e02c8fa3-20ec-476e-9f1c-45b77d051d58" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >Create exploratory notebook considering appropriate methods
+                  to address business problem</span
+                >
+              </li>
+            </ul>
+            <ul id="7655bdfd-17e7-4ee9-8763-998b1adb952d" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >Complete your module checklist in Canvas</span
+                >
+              </li>
+            </ul>
+            <p id="4924685c-02f7-49e8-af37-d18381002f90" class="">
+              Group work:
+            </p>
+            <ul id="1bd1c172-e774-4308-8400-279f5021e62d" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >Together with your team, populate backlog on Trello with user
+                  stories</span
+                >
+              </li>
+            </ul>
+            <ul id="4aefe74b-6151-4e7d-a562-3cb5c722acee" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >Together with your team, finish up Product Vision Document
+                  (don&#x27;t skimp on planning)</span
+                >
+              </li>
+            </ul>
+            <ul id="77736932-37bd-42fb-8aa2-332df5388a7b" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >The team project was deployed to Netlify or Heroku by the end
+                  of the day</span
+                >
+              </li>
+            </ul>
+            <ul id="86211b06-d958-4d62-9e80-1a3b52fe1690" class="to-do-list">
+              <li>
+                <div class="checkbox checkbox-off"></div>
+                <span class="to-do-children-unchecked"
+                  >All Project&#x27;s file structures scaffolded and project
+                  architecture decided</span
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <p id="57a02ee1-d714-416d-99d0-31e1b691d8ae" class=""></p>
+        <p id="8beb50b1-cf57-420b-985c-482d7046927a" class=""></p>
+        <ul id="e577eff6-7b57-4c37-9f18-693ea0827584" class="toggle">
+          <li>
+            <details open="">
+              <summary>Revision History</summary>
+              <p id="4db6aeb1-55ea-4db9-8a8d-950c6db1f87d" class="">
+                October 24, 2019, shared with students October 25, 2019
+              </p>
+              <p id="7ffcc171-8280-4363-a724-f23b5b739cfd" class=""></p>
+            </details>
+          </li>
+        </ul>
+        <p id="c9d91393-b43a-49bf-9d3b-716fb9d02a18" class=""></p>
+        <p id="4235b6e0-8854-4945-9933-37d8c2920fbc" class="">
+          Copyright Lambda School 2020, All Rights Reserved
+        </p>
+      </div>
+    </article>
+  </body>
+</html>
