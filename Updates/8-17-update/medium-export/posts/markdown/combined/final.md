@@ -89,24 +89,25 @@ Photo by <a href="https://unsplash.com/@flowforfrank?utm_source=medium&amp;utm_m
   });
 
 function PeopleList(props) {
-  return (
-    &lt;ul&gt;
-      $
-      {props.people.map((person) =&gt; (
-        &lt;li&gt;
-          {person.lastName}, {person.firstName}
-        &lt;/li&gt;
-      ))}
-    &lt;/ul&gt;
-  );
+return (
+&lt;ul&gt;
+$
+{props.people.map((person) =&gt; (
+&lt;li&gt;
+{person.lastName}, {person.firstName}
+&lt;/li&gt;
+))}
+&lt;/ul&gt;
+);
 }
 const peopleListElement = document.querySelector(&quot;#people-list&quot;);
 fetch(&quot;https://example.com/api/people&quot;)
-  .then((response) =&gt; response.json())
-  .then((people) =&gt; {
-    const props = { people };
-    ReactDOM.render(&lt;PeopleList props={props} /&gt;, peopleListElement);
-  });</code></pre>
+.then((response) =&gt; response.json())
+.then((people) =&gt; {
+const props = { people };
+ReactDOM.render(&lt;PeopleList props={props} /&gt;, peopleListElement);
+});</code></pre>
+
 <ul>
 <li><span id="7ea4">This may seem like a lot of code but when you end up building many components, it becomes nice to put each of those functions/classes into their own files to organize your code. Using tools with React</span></li>
 <li><span id="e220"><code>React DevTools</code> : New tool in your browser to see ow React is working in the browser</span></li>
@@ -402,6 +403,7 @@ function ListOfTenThings() {
 <pre><code>&lt;div className=”before” title=”stuff” /&gt; &lt;div className=”after” title=”stuff” /&gt;
 
 &lt;div style={{ color: “red”, fontWeight: “bold” }} /&gt; &lt;div style={{color: ‘green’, fontWeight: ‘bold’}} /&gt;</code></pre>
+
 <ul>
 <li><span id="0a0c">Component Elements Of The Same Type</span></li>
 <li><span id="cf3a">When components update, instances will remain the same, so that state maintains across renders.</span></li>
@@ -465,14 +467,15 @@ Greeting.defaultProps = {
 ReactDOM.render(&lt;Greeting /&gt;, document.getElementById(&quot;example&quot;));
 
 class Greeting extends React.Component {
-  static defaultProps = {
-    name: &#39;stranger&#39;
-  }
-  render() {
-    return (
-      &lt;div&gt;Hello, {this.props.name}&lt;/div&gt;
-    )
-  }</code></pre>
+static defaultProps = {
+name: &#39;stranger&#39;
+}
+render() {
+return (
+&lt;div&gt;Hello, {this.props.name}&lt;/div&gt;
+)
+}</code></pre>
+
 <hr />
 <h3 id="notes-1">Notes</h3>
 <h3 id="react-router-introduction">React Router Introduction</h3>
@@ -681,6 +684,7 @@ REACT_APP_BAR: another value
 console.log(process.env.REACT_APP_FOO);
 
 Can be referenced in your index.html like so: &lt;title&gt;%REACT_APP_BAR%&lt;/title&gt;</code></pre>
+
 <p>Configuring the supported browsers</p>
 <pre><code>{
   &quot;browserslist&quot;: {
@@ -1004,17 +1008,18 @@ function App() {
 &lt;/a&gt;;
 
 React.createElement(
-  OwnerDetails,
-  {
-    owner: props.data.owner,
-    number: props.index + 1,
-  },
-  props.name
+OwnerDetails,
+{
+owner: props.data.owner,
+number: props.index + 1,
+},
+props.name
 );
 // JSX Version
 &lt;OwnerDetails owner={props.data.owner} number={props.index + 1}&gt;
-  {props.name}
+{props.name}
 &lt;/OwnerDetails&gt;;</code></pre>
+
 <p>More Complex JSX Example</p>
 <pre><code>const BookPanel = (props) =&gt; {
   &lt;section className=&quot;book&quot; id={`book-${props.id}`}&gt;
@@ -1069,11 +1074,12 @@ import ReactDOM from &quot;react-dom&quot;;
 import &quot;./index.css&quot;;
 import App from &quot;./App&quot;;
 ReactDOM.render(
-  &lt;React.StrictMode&gt;
-    &lt;App /&gt;
-  &lt;/React.StrictMode&gt;,
-  document.getElementById(&quot;root&quot;)
+&lt;React.StrictMode&gt;
+&lt;App /&gt;
+&lt;/React.StrictMode&gt;,
+document.getElementById(&quot;root&quot;)
 );</code></pre>
+
 <hr />
 <h3 id="react-class-components">React Class Components</h3>
 <p>Class Components</p>
@@ -2043,19 +2049,20 @@ import { BrowserRouter } from &#39;react-router-dom&#39;;
 import App from &#39;./App&#39;;
 
 const Root = () =&gt; {
-  return (
-    &lt;BrowserRouter&gt;
-      &lt;App /&gt;
-    &lt;/BrowserRouter&gt;
-  );
+return (
+&lt;BrowserRouter&gt;
+&lt;App /&gt;
+&lt;/BrowserRouter&gt;
+);
 };
 
 ReactDOM.render(
-  &lt;React.StrictMode&gt;
-    &lt;Root /&gt;
-  &lt;/React.StrictMode&gt;,
-  document.getElementById(&#39;root&#39;),
+&lt;React.StrictMode&gt;
+&lt;Root /&gt;
+&lt;/React.StrictMode&gt;,
+document.getElementById(&#39;root&#39;),
 );</code></pre>
+
 <p>Now you can route the rendering of certain components to certain URLs (i.e <code>https://www.website.com/profile</code><a href="https://www.website.com/profile%29." class="markup--anchor markup--p-anchor">).</a></p>
 <h3 id="hashrouter">HashRouter</h3>
 <p>Alternatively, you could import and use <code>HashRouter</code> from <code>react-router-dom</code>. Links for applications that use <code>&lt;HashRouter&gt;</code> would look like <code>https://www.website.com/#/profile</code> (with an <code>#</code> between the domain and path).</p>
@@ -2072,21 +2079,22 @@ import App from &#39;./App&#39;;
 import Users from &#39;./Users&#39;;
 
 const Root = () =&gt; {
-  return (
-    &lt;BrowserRouter&gt;
-      &lt;div&gt;
-        {/* TODO: Routes */}
-      &lt;/div&gt;
-    &lt;/BrowserRouter&gt;
-  );
+return (
+&lt;BrowserRouter&gt;
+&lt;div&gt;
+{/_ TODO: Routes _/}
+&lt;/div&gt;
+&lt;/BrowserRouter&gt;
+);
 };
 
 ReactDOM.render(
-  &lt;React.StrictMode&gt;
-    &lt;Root /&gt;
-  &lt;/React.StrictMode&gt;,
-  document.getElementById(&#39;root&#39;),
+&lt;React.StrictMode&gt;
+&lt;Root /&gt;
+&lt;/React.StrictMode&gt;,
+document.getElementById(&#39;root&#39;),
 );</code></pre>
+
 <p>Note that <code>BrowserRouter</code> can only have a single child component, so the snippet above wraps all routes within parent a <code>&lt;div&gt;</code> element. Now let’s create some routes!</p>
 <h3 id="component">component</h3>
 <p>Begin with the <code>component</code> prop. This prop takes a reference to the component to be rendered. Let’s render your <code>App</code> component:</p>
@@ -2117,6 +2125,7 @@ ReactDOM.render(
 
 // This is the preferred way for inline rendering.
 &lt;Route path=&quot;/hello&quot; render={() =&gt; &lt;h1&gt;Hello!&lt;/h1&gt;} /&gt;</code></pre>
+
 <p>It can be helpful to use <code>render</code> instead of <code>component</code> in your <code>&lt;Route&gt;</code> when you need to pass props into the rendered component. For example, imagine that you needed to pass the <code>users</code> object as a prop to your <code>Users</code> component. Then you could pass in props from <code>Root</code> to <code>Users</code> by returning the <code>Users</code> component like so:</p>
 <pre><code>// `users` to be passed as a prop:
 const users = {
@@ -2125,6 +2134,7 @@ const users = {
 };
 
 &lt;Route path=&quot;/users&quot; render={() =&gt; &lt;Users users={users} /&gt;} /&gt;</code></pre>
+
 <p>As a reminder, <code>BrowserRouter</code> can only have a single child component. That’s why you have wrapped all your routes within parent a <code>&lt;div&gt;</code> element.</p>
 <pre><code>const Root = () =&gt; {
   const users = {
@@ -2132,17 +2142,18 @@ const users = {
     2: { name: &#39;Raymond&#39; }
   };
 
-  return (
-    &lt;BrowserRouter&gt;
-      &lt;div&gt;
-        &lt;h1&gt;Hi, I&#39;m Root!&lt;/h1&gt;
-        &lt;Route exact path=&quot;/&quot; component={App} /&gt;
-        &lt;Route path=&quot;/hello&quot; render={() =&gt; &lt;h1&gt;Hello!&lt;/h1&gt;} /&gt;
-        &lt;Route path=&quot;/users&quot; render={() =&gt; &lt;Users users={users} /&gt;} /&gt;
-      &lt;/div&gt;
-    &lt;/BrowserRouter&gt;
-  );
+return (
+&lt;BrowserRouter&gt;
+&lt;div&gt;
+&lt;h1&gt;Hi, I&#39;m Root!&lt;/h1&gt;
+&lt;Route exact path=&quot;/&quot; component={App} /&gt;
+&lt;Route path=&quot;/hello&quot; render={() =&gt; &lt;h1&gt;Hello!&lt;/h1&gt;} /&gt;
+&lt;Route path=&quot;/users&quot; render={() =&gt; &lt;Users users={users} /&gt;} /&gt;
+&lt;/div&gt;
+&lt;/BrowserRouter&gt;
+);
 };</code></pre>
+
 <p>With this <code>Root</code> component, you will always render the <code>&lt;h1&gt;Hi, I'm Root!&lt;/h1&gt;</code>, regardless of the path. Because of the first <code>&lt;Route&gt;</code>, you will only render the <code>App</code> component if the path exactly matches <code>/</code>. Because of the second <code>&lt;Route&gt;</code>, you will only render the <code>Users</code> component if the path matches <code>/users</code>.</p>
 <h3 id="route-path-params">Route path params</h3>
 <p>A component’s props can also hold information about a URL’s parameters. The router will match route segments starting at <code>:</code> up to the next <code>/</code>, <code>?</code>, or <code>#</code>. Those matched values are then passed to components via their props. Such segments are <em>wildcard</em> values that make up your route parameters.</p>
@@ -2159,30 +2170,32 @@ render={(props) =&gt; &lt;Profile users={users} {...props} /&gt;}</code></pre>
 import React from &quot;react&quot;;
 
 const Profile = (props) =&gt; (
-  &lt;div&gt;
-    The user&#39;s id is {props.match.params.userId}.
-  &lt;/div&gt;
+&lt;div&gt;
+The user&#39;s id is {props.match.params.userId}.
+&lt;/div&gt;
 );
 
 export default Profile;</code></pre>
+
 <p>Notice how it uses the <code>match</code> prop to access the <code>:userId</code> parameter from the URL. You can use this wildcard to make and AJAX call to fetch the user information from the database and render the return data in the <code>Profile</code> component. Recall that your <code>Profile</code> component was rendered at the path <code>/users/:userId</code>. Thus you can use your <code>userId</code> parameters from <code>match.params</code> to fetch a specific user:</p>
 <pre><code>// ./src/Profile.js
 import React from &quot;react&quot;;
 
 const Profile = ({ users, match: { params } }) =&gt; {
 
-  // In a real-world scenario, you&#39;d make a call to an API to fetch the user,
-  // instead of passing down and keying into a `users` prop.
-  const user = users[params.userId];
+// In a real-world scenario, you&#39;d make a call to an API to fetch the user,
+// instead of passing down and keying into a `users` prop.
+const user = users[params.userId];
 
-  return (
-    &lt;div&gt;
-      The user&#39;s id is {params.userId} and the user&#39;s name is {user.name}.
-    &lt;/div&gt;
-  );
+return (
+&lt;div&gt;
+The user&#39;s id is {params.userId} and the user&#39;s name is {user.name}.
+&lt;/div&gt;
+);
 };
 
 export default Profile;</code></pre>
+
 <h3 id="match">Match</h3>
 <p>Now that you’ve seen your React Router’s <code>match</code> prop in action, let’s go over more about <a href="https://reacttraining.com/react-router/web/api/Route/route-props" class="markup--anchor markup--p-anchor">route props</a>! React Router passes information to the components as route props, accessible to all components with access to the React Router. The three props it makes available are <code>location</code>, <code>match</code> and <code>history</code>. You’ve learned about <code>props.match.params</code>, but now let’s review the other properties of the <code>match</code> prop!</p>
 <p>This is an object that contains important information about how the current URL matches the route path. Here are some of the more useful keys on the <code>match</code> object:</p>
@@ -2200,12 +2213,12 @@ export default Profile;</code></pre>
     2: { name: &#39;Raymond&#39; }
   };
 
-  return (
-    &lt;BrowserRouter&gt;
-      &lt;h1&gt;Hi, I&#39;m Root!&lt;/h1&gt;
-      &lt;div&gt;
-        &lt;Route exact path=&quot;/&quot; component={App} /&gt;
-        &lt;Route path=&quot;/hello&quot; render={() =&gt; &lt;h1&gt;Hello!&lt;/h1&gt;} /&gt;
+return (
+&lt;BrowserRouter&gt;
+&lt;h1&gt;Hi, I&#39;m Root!&lt;/h1&gt;
+&lt;div&gt;
+&lt;Route exact path=&quot;/&quot; component={App} /&gt;
+&lt;Route path=&quot;/hello&quot; render={() =&gt; &lt;h1&gt;Hello!&lt;/h1&gt;} /&gt;
 
         {/* Render the `Users` page if no ID is included. */}
         &lt;Route exact path=&quot;/users&quot; render={() =&gt; &lt;Users users={users} /&gt;} /&gt;
@@ -2214,8 +2227,10 @@ export default Profile;</code></pre>
         &lt;Route path=&quot;/users/:userId&quot; component={(props) =&gt; &lt;Profile users={users} {...props} /&gt;} /&gt;
       &lt;/div&gt;
     &lt;/BrowserRouter&gt;
-  );
+
+);
 };</code></pre>
+
 <h3 id="what-you-learned">What you learned</h3>
 <p>In this article, you learned how to:</p>
 <ul>
@@ -2250,8 +2265,9 @@ export default Profile;</code></pre>
 
 // Click handler function
 const handleClick = () =&gt; {
-  console.log(&#39;Thanks for clicking!&#39;)
+console.log(&#39;Thanks for clicking!&#39;)
 };</code></pre>
+
 <p>Now, test your routes and links! If you inspect the page, you’ll see that your links are now rendered as <code>&lt;a&gt;</code> elements. Notice that clicking the <code>App with click handler</code> link logs a message in your console while directing your browser to render the <code>App</code> component.</p>
 <h3 id="navlink">NavLink</h3>
 <p>The <code>&lt;NavLink&gt;</code> works just like a <code>&lt;Link&gt;</code>, but with a little extra functionality. It has the ability to add extra styling when the path it links to matches the current path. This makes it an ideal choice for a navigation bar, hence the name. This styling can be controlled by three extra props: <code>activeClassName</code>, <code>activeStyle</code>, and <code>exact</code>. To begin using <code>NavLink</code>, update your imports from the <code>react-router-dom</code> package:</p>
@@ -2272,30 +2288,32 @@ const handleClick = () =&gt; {
 &lt;a href=&quot;/&quot;&gt;App&lt;/a&gt;
 
 &lt;!-- Navigated to the /users path (the activeClassName
-     prop is manually set to red) --&gt;
+prop is manually set to red) --&gt;
 &lt;a href=&quot;/users&quot; class=&quot;red&quot;&gt;Users&lt;/a&gt;
 
 &lt;!-- NOT navigated to the `/users` path --&gt;
 &lt;a href=&quot;/users&quot;&gt;Users&lt;/a&gt;</code></pre>
+
 <p>Import <code>NavLink</code> into your <code>index.js</code> file and take a moment to update all your <code>Link</code> elements to <code>NavLink</code> elements. Set an <code>activeClassName</code> prop to an <code>active</code> class. Add the following <code>.active</code> class to your <code>index.css</code> file:</p>
 <pre><code>.active {
   font-weight: bold;
 }
 
 .red {
-  color: red;
-  font-size: 30px;
+color: red;
+font-size: 30px;
 }
 
 .blue {
-  color: blue;
-  font-size: 30px;
+color: blue;
+font-size: 30px;
 }
 
 .green {
-  color: green;
-  font-size: 30px;
+color: green;
+font-size: 30px;
 }</code></pre>
+
 <p>Test your styled links! Notice how the <code>App</code> and <code>App with click handler</code> links are always bolded. This is because all of your links include the <code>/</code> path, meaning that the link to <code>/</code> will be active when browsing to <code>/users</code> and <code>/users/1</code> because of how <code>users</code> and <code>users/1</code> are both prefaced by a <code>/</code>.</p>
 <p>The <code>activeStyle</code> prop is a style object that will be applied inline to the <code>NavLink</code> when its <code>to</code> prop matches the current URL. Add the following <code>activeStyle</code> to your <code>App</code> link and comment out the <code>.active</code> class in your CSS file.</p>
 <pre><code>&lt;NavLink to=&quot;/&quot; activeStyle={{ fontWeight: &quot;bold&quot; }}&gt;App&lt;/NavLink&gt;</code></pre>
@@ -2324,13 +2342,13 @@ const handleClick = () =&gt; {
     { name: &#39;raymond&#39; }
   ];
 
-  const handleClick = () =&gt; {
-    console.log(&#39;Thanks for clicking!&#39;)
-  };
+const handleClick = () =&gt; {
+console.log(&#39;Thanks for clicking!&#39;)
+};
 
-  return (
-    &lt;BrowserRouter&gt;
-      &lt;h1&gt;Hi, I&#39;m Root!&lt;/h1&gt;
+return (
+&lt;BrowserRouter&gt;
+&lt;h1&gt;Hi, I&#39;m Root!&lt;/h1&gt;
 
       &lt;div&gt;
         &lt;NavLink to=&quot;/&quot; exact={true} activeStyle={{ fontWeight: &quot;bold&quot; }}&gt;App&lt;/NavLink&gt;
@@ -2348,8 +2366,10 @@ const handleClick = () =&gt; {
         &lt;/Switch&gt;
       &lt;/div&gt;
     &lt;/BrowserRouter&gt;
-  );
+
+);
 };</code></pre>
+
 <p>Now you have control over the precedence of rendered components! Try navigating to <code>http://localhost:3000/asdf</code> or any other route you have not defined. The <code>&lt;h1&gt;404: Page not found&lt;/h1&gt;</code> JSX of the last <code>&lt;Route&gt;</code> will be rendered whenever the browser attempts to visit an undefined route.</p>
 <h3 id="redirecting-users">Redirecting users</h3>
 <p>But what if you want to redirect users to a login page when they aren’t logged in? The <code>&lt;Redirect&gt;</code> component from React Router helps you redirect users!</p>
@@ -2366,6 +2386,7 @@ const handleClick = () =&gt; this.props.history.push(&#39;/some/url&#39;);
 
 // Replacing the current URL (won&#39;t be tracked in history stack):
 const redirect = () =&gt; this.props.history.replace(&#39;/some/other/url&#39;);</code></pre>
+
 <p>This prop lets you update the URL programmatically. For example, suppose you want to push a new URL when the user clicks a button. It has two useful methods:</p>
 <ul>
 <li><span id="31f3"><code>push</code> - This adds a new URL to the end of the history stack. That means that clicking the back button will take the browser to the previous URL. Note that pushing the same URL multiple times in a row will have no effect; the URL will still only show up on the stack once. In development mode, pushing the same URL twice in a row will generate a console warning. This warning is disabled in production mode.</span></li>
@@ -2400,9 +2421,9 @@ const redirect = () =&gt; this.props.history.replace(&#39;/some/other/url&#39;);
   const user = fetchUser(props.match.params.userId);
   const { name, id } = user;
 
-  return (
-    &lt;div&gt;
-      &lt;h1&gt;Welcome to the profile of {name}!&lt;/h1&gt;
+return (
+&lt;div&gt;
+&lt;h1&gt;Welcome to the profile of {name}!&lt;/h1&gt;
 
       {/* Links to a specific user&#39;s posts and photos */}
       &lt;Link to={`/users/${id}/posts`}&gt;{name}&#39;s Posts&lt;/Link&gt;
@@ -2412,19 +2433,21 @@ const redirect = () =&gt; this.props.history.replace(&#39;/some/other/url&#39;);
       &lt;Route path=&#39;/users/:userId/posts&#39; component={UserPosts} /&gt;
       &lt;Route path=&#39;/users/:userId/photos&#39; component={UserPhotos} /&gt;
     &lt;/div&gt;
-  );
+
+);
 };</code></pre>
+
 <p>Since this route is not created until the <code>Profile</code> component is rendered, you are dynamically creating your nested <code>/users/:userId/posts</code> and <code>/users/:userId/photos</code> routes. Remember that your <code>match</code> prop also has other helpful properties. You can use <code>match.url</code> instead of <code>/users/${id}</code> in your profile links. You can also use <code>match.path</code> instead of <code>/users/:userId</code> in your profile routes. Remember that you can destructure <code>url</code>, <code>path</code>, and <code>params</code> from your <code>match</code> prop!</p>
 <pre><code>// Destructure `match` prop
 const Profile = ({ match: { url, path, params }) =&gt; {
 
-  // Custom call to database to fetch a user by a user ID.
-  const user = fetchUser(params.userId);
-  const { name, id } = user;
+// Custom call to database to fetch a user by a user ID.
+const user = fetchUser(params.userId);
+const { name, id } = user;
 
-  return (
-    &lt;div&gt;
-      &lt;h1&gt;Welcome to the profile of {name}!&lt;/h1&gt;
+return (
+&lt;div&gt;
+&lt;h1&gt;Welcome to the profile of {name}!&lt;/h1&gt;
 
       {/* Replaced `/users/${id}` URL with `props.match.url` */}
       &lt;Link to={`${url}/posts`}&gt;{name}&#39;s Posts&lt;/Link&gt;
@@ -2434,8 +2457,10 @@ const Profile = ({ match: { url, path, params }) =&gt; {
       &lt;Route path={`${path}/posts`} component={UserPosts} /&gt;
       &lt;Route path={`${path}/photos`} component={UserPhotos} /&gt;
     &lt;/div&gt;}
-  );
+
+);
 };</code></pre>
+
 <p>In tomorrow’s project, you’ll build a rainbow of routes as well as define nested routes. In the future, you may choose to implement nested routes to keep your application’s routes organized within related components.</p>
 <h3 id="what-you-learned-2">What you learned</h3>
 <p>In this article, you learned:</p>
@@ -2590,66 +2615,67 @@ REACT_APP_BAR: another value</code></pre>
 }
 
 h4:hover {
-  text-decoration: underline;
+text-decoration: underline;
 }
 
 #rainbow {
-  position: absolute;
-  top: 0;
-  left: 300px;
+position: absolute;
+top: 0;
+left: 300px;
 }
 
 h3 {
-  position: absolute;
-  top: 1px;
+position: absolute;
+top: 1px;
 }
 
 .red {
-  background-color: red;
-  width: 100px;
-  height: 100px;
+background-color: red;
+width: 100px;
+height: 100px;
 }
 
 .orange {
-  background-color: orange;
-  width: 100px;
-  height: 50px;
+background-color: orange;
+width: 100px;
+height: 50px;
 }
 
 .yellow {
-  background-color: yellow;
-  width: 100px;
-  height: 50px;
+background-color: yellow;
+width: 100px;
+height: 50px;
 }
 
 .green {
-  background-color: green;
-  width: 100px;
-  height: 100px;
+background-color: green;
+width: 100px;
+height: 100px;
 }
 
 .blue {
-  background-color: blue;
-  width: 100px;
-  height: 100px;
+background-color: blue;
+width: 100px;
+height: 100px;
 }
 
 .indigo {
-  background-color: mediumslateblue;
-  width: 100px;
-  height: 50px;
+background-color: mediumslateblue;
+width: 100px;
+height: 50px;
 }
 
 .violet {
-  background-color: darkviolet;
-  width: 100px;
-  height: 100px;
+background-color: darkviolet;
+width: 100px;
+height: 100px;
 }
 
 a {
-  display: block;
-  margin-bottom: 10px;
+display: block;
+margin-bottom: 10px;
 }</code></pre>
+
 <p>Create an <code>index.js</code> entry file in the <code>src</code> directory. At the top of the file, make sure to import <code>React</code> from the <code>react</code> package and <code>ReactDOM</code> from the <code>react-dom</code> package. Make sure to also import your the <code>index.css</code> file you just created! This will take care of styling your <em>rainbow routes</em>.</p>
 <p>Now you can use the <code>ReactDOM.render()</code> method to render a <code>&lt;Root /&gt;</code> component instead of the DOM element with an <code>id</code> of <code>root</code>. Lastly, wrap your render function with a <code>DOMContentLoaded</code> event listener, like so:</p>
 <pre><code>document.addEventListener(&#39;DOMContentLoaded&#39;, () =&gt; {
@@ -2673,17 +2699,19 @@ import React from &#39;react&#39;;
 import { Route, Link, NavLink } from &#39;react-router-dom&#39;;
 
 const Rainbow = () =&gt; (
-  &lt;div&gt;
-    &lt;h1&gt;Rainbow Router!&lt;/h1&gt;
-    {/* Your links should go here */}
+&lt;div&gt;
+&lt;h1&gt;Rainbow Router!&lt;/h1&gt;
+{/_ Your links should go here _/}
 
     &lt;div id=&quot;rainbow&quot;&gt;
       {/* Your routes should go here */}
     &lt;/div&gt;
-  &lt;/div&gt;
+
+&lt;/div&gt;
 );
 
 export default Rainbow;</code></pre>
+
 <p>Your <code>Rainbow</code> component will act as the home page or default path (<code>/</code>) of your application. Import the <code>Rainbow</code> component into your entry file and have your <code>Root</code> component render <code>&lt;Rainbow /&gt;</code> wrapped within <code>&lt;BrowserRouter&gt;</code> tags, like so:</p>
 <pre><code>const Root = () =&gt; (
   &lt;BrowserRouter&gt;
@@ -2706,25 +2734,28 @@ export default Rainbow;</code></pre>
 import { Route, Link, NavLink } from &#39;react-router-dom&#39;;
 
 const Color = () =&gt; (
-  &lt;div&gt;
-    &lt;h2 className=&quot;color&quot;&gt;Color&lt;/h2&gt;
-    {/* Links here */}
+&lt;div&gt;
+&lt;h2 className=&quot;color&quot;&gt;Color&lt;/h2&gt;
+{/_ Links here _/}
 
     {/* Routes here */}
-  &lt;/div&gt;
+
+&lt;/div&gt;
 );
 
 export default Color;</code></pre>
+
 <p>Your <code>Green</code>, <code>Indigo</code>, <code>Orange</code>, <code>Violet</code>, and <code>Yellow</code> components will look something like this:</p>
 <pre><code>import React from &#39;react&#39;;
 
 const Color = () =&gt; (
-  &lt;div&gt;
-    &lt;h3 className=&quot;color&quot;&gt;Color&lt;/h3&gt;
-  &lt;/div&gt;
+&lt;div&gt;
+&lt;h3 className=&quot;color&quot;&gt;Color&lt;/h3&gt;
+&lt;/div&gt;
 );
 
 export default Color;</code></pre>
+
 <p>Now start your server and verify you can see the “Rainbow Router!” header from your <code>Rainbow</code> component. Currently there is no functionality. Let’s fix that!</p>
 <h3 id="phase-1-routes">Phase 1: Routes</h3>
 <p>As a reminder, wrapping the <code>Rainbow</code> component in <code>&lt;BrowserRouter&gt;</code> tags makes the router available to all descendent React Router components. Now open the <code>Rainbow.js</code> file. You’re going to render some of your color components from here. Ultimately you want your routes to look like this.</p>
@@ -2780,14 +2811,15 @@ export default Color;</code></pre>
 import React from &#39;react&#39;;
 
 function App() {
-  return (
-    &lt;div&gt;
-      &lt;h1&gt;Exploring React Builds&lt;/h1&gt;
-    &lt;/div&gt;
-  );
+return (
+&lt;div&gt;
+&lt;h1&gt;Exploring React Builds&lt;/h1&gt;
+&lt;/div&gt;
+);
 }
 
 export default App;</code></pre>
+
 <h3 id="phase-1-using-css-modules">Phase 1: Using CSS modules</h3>
 <p>You’ve already seen an example of using the <code>import</code> keyword to import a stylesheet into a module so that it’ll be included in your application build. That’s the technique being used to include the global <code>index.css</code> stylesheet:</p>
 <pre><code>// ./src/index.js
@@ -2798,11 +2830,12 @@ import &#39;./index.css&#39;;
 import App from &#39;./App&#39;;
 
 ReactDOM.render(
-  &lt;React.StrictMode&gt;
-    &lt;App /&gt;
-  &lt;/React.StrictMode&gt;,
-  document.getElementById(&#39;root&#39;)
+&lt;React.StrictMode&gt;
+&lt;App /&gt;
+&lt;/React.StrictMode&gt;,
+document.getElementById(&#39;root&#39;)
 );</code></pre>
+
 <p>You can also leverage <a href="https://github.com/css-modules/css-modules" class="markup--anchor markup--p-anchor">CSS modules</a> in your Create React App projects. CSS Modules scope stylesheet class names so that they are unique to a specific React component. This allows you to create class names without having to worry if they might collide with class names used in another component.</p>
 <p>Add a new <code>css-modules</code> folder to the <code>src</code> folder. Within that folder, add the following files:</p>
 <ul>
@@ -2818,17 +2851,17 @@ import React from &#39;react&#39;;
 import styles from &#39;./HeadingA.module.css&#39;;
 
 function HeadingA() {
-  return (
-    &lt;h1 className={styles.heading}&gt;Heading A&lt;/h1&gt;
-  );
+return (
+&lt;h1 className={styles.heading}&gt;Heading A&lt;/h1&gt;
+);
 }
 
 export default HeadingA;
 
-/* ./src/css-modules/HeadingA.module.css */
+/_ ./src/css-modules/HeadingA.module.css _/
 
 .heading {
-  color: green;
+color: green;
 }
 
 // ./src/css-modules/HeadingB.js
@@ -2837,18 +2870,19 @@ import React from &#39;react&#39;;
 import styles from &#39;./HeadingB.module.css&#39;;
 
 function HeadingB() {
-  return (
-    &lt;h1 className={styles.heading}&gt;Heading B&lt;/h1&gt;
-  );
+return (
+&lt;h1 className={styles.heading}&gt;Heading B&lt;/h1&gt;
+);
 }
 
 export default HeadingB;
 
-/* ./src/css-modules/HeadingB.module.css */
+/_ ./src/css-modules/HeadingB.module.css _/
 
 .heading {
-  color: red;
+color: red;
 }</code></pre>
+
 <p>Notice how the <code>.heading</code> CSS class name is being used within each component to set the color of the <code>&lt;h1&gt;</code> element. For the <code>HeadingA</code> component, the color is <code>green</code>, and for the <code>HeadingB</code> component, the color is <code>red</code>. Using the file naming convention <code>[name].module.css</code> let’s Create React App know that we want these stylesheets to be processed as CSS Modules. Using CSS Modules allows the <code>.heading</code> class name to be reused across components without any issue.</p>
 <p>To see this feature in action, update your <code>App</code> component to render both of your new components:</p>
 <pre><code>import React from &#39;react&#39;;
@@ -2856,16 +2890,17 @@ import HeadingA from &#39;./css-modules/HeadingA&#39;;
 import HeadingB from &#39;./css-modules/HeadingB&#39;;
 
 function App() {
-  return (
-    &lt;div&gt;
-      &lt;h1&gt;Exploring React Builds&lt;/h1&gt;
-      &lt;HeadingA /&gt;
-      &lt;HeadingB /&gt;
-    &lt;/div&gt;
-  );
+return (
+&lt;div&gt;
+&lt;h1&gt;Exploring React Builds&lt;/h1&gt;
+&lt;HeadingA /&gt;
+&lt;HeadingB /&gt;
+&lt;/div&gt;
+);
 }
 
 export default App;</code></pre>
+
 <p>Then run your application (<code>npm start</code>) to see “Heading A” and “Heading B” displayed respectively in green and red. If you use the browser’s developer tools to inspect “Heading A”, you’ll see that the <code>.heading</code> class name has been modified so that it’s unique to the <code>HeadingA</code> component:</p>
 <p>CSS Modules is an example of how a front-end build process can be used to modify code to enable a feature that’s not natively supported by browsers.</p>
 <h3 id="phase-2-using-an-image-in-a-component">Phase 2: Using an image in a component</h3>
@@ -2884,11 +2919,12 @@ import cat from &#39;./react-builds-cat.png&#39;;
 console.log(cat); // /static/media/react-builds-cat.45f7f4d2.png
 
 function Image() {
-  // Import result is the URL of your image.
-  return &lt;img src={cat} alt=&quot;images/images/Cat&quot; /&gt;;
+// Import result is the URL of your image.
+return &lt;img src={cat} alt=&quot;images/images/Cat&quot; /&gt;;
 }
 
 export default Image;</code></pre>
+
 <p>You can import an image into a component using the <code>import</code> keyword. This tells webpack to include the image in the build. Notice that when you import an image into a module, you’ll get a path to the image’s location within the build. You can use this path to set the <code>src</code> attribute on an <code>&lt;img&gt;</code> element.</p>
 <blockquote>
 <p><em>Be sure to update the image</em> <code>import</code> <em>statement to the correct file name if you’re using your own image!</em></p>
@@ -2902,27 +2938,29 @@ import HeadingB from &#39;./css-modules/HeadingB&#39;;
 import Image from &#39;./image/Image&#39;;
 
 function App() {
-  return (
-    &lt;div&gt;
-      &lt;h1&gt;Exploring React Builds&lt;/h1&gt;
-      &lt;HeadingA /&gt;
-      &lt;HeadingB /&gt;
-      &lt;Image /&gt;
-    &lt;/div&gt;
-  );
+return (
+&lt;div&gt;
+&lt;h1&gt;Exploring React Builds&lt;/h1&gt;
+&lt;HeadingA /&gt;
+&lt;HeadingB /&gt;
+&lt;Image /&gt;
+&lt;/div&gt;
+);
 }
 
 export default App;</code></pre>
+
 <p>If you run your application (<code>npm start</code>) you’ll see your image displayed on the page! You can also open your browser’s developer tools and view the “Sources” for the current page. If you can expand the <code>localhost:3000</code> &gt; <code>static</code> &gt; <code>media</code> node on the left, you can see the image file that webpack copied to your build.</p>
 <h3 id="images-in-stylesheets">Images in stylesheets</h3>
 <p>You can also reference images in your CSS files too. Add a CSS file named <code>Image.css</code> to the <code>./src/image</code> folder and update its contents to this:</p>
 <pre><code>/* ./src/image/Image.css */
 
 .cat {
-  background-image: url(./react-builds-cat.png);
-  width: 400px;
-  height: 400px;
+background-image: url(./react-builds-cat.png);
+width: 400px;
+height: 400px;
 }</code></pre>
+
 <p>Then update the <code>Image</code> component to this:</p>
 <pre><code>// ./src/image/Image.js
 
@@ -2933,16 +2971,17 @@ import cat from &#39;./react-builds-cat.png&#39;;
 console.log(cat); // /static/media/react-builds-cat.45f7f4d2.png
 
 function Image() {
-  return (
-    &lt;div&gt;
-      {/* Import result is the URL of your image. */}
-      &lt;img src={cat} alt=&quot;Cat&quot; /&gt;
-      &lt;div className=&#39;cat&#39;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-  );
+return (
+&lt;div&gt;
+{/_ Import result is the URL of your image. _/}
+&lt;img src={cat} alt=&quot;Cat&quot; /&gt;
+&lt;div className=&#39;cat&#39;&gt;&lt;/div&gt;
+&lt;/div&gt;
+);
 }
 
 export default Image;</code></pre>
+
 <p>Now you’ll see the image displayed twice on the page!</p>
 <h3 id="phase-3-updating-the-supported-browsers-and-its-affect-on-code-transpilation">Phase 3: Updating the supported browsers (and its affect on code transpilation)</h3>
 <p>Earlier you learned about the <code>browerslist</code> setting in the <code>package.json</code> file and now adjusting these targets affect how your code will be transpiled:</p>
@@ -2967,14 +3006,15 @@ export default Image;</code></pre>
 import React from &#39;react&#39;;
 
 class ClassComponent extends React.Component {
-  render() {
-    return (
-      &lt;h1&gt;Class Component&lt;/h1&gt;
-    );
-  }
+render() {
+return (
+&lt;h1&gt;Class Component&lt;/h1&gt;
+);
+}
 }
 
 export default ClassComponent;</code></pre>
+
 <p>Don’t forget to update your <code>App</code> component to render the new component:</p>
 <pre><code>// ./src/App.js
 
@@ -2985,18 +3025,19 @@ import Image from &#39;./image/Image&#39;;
 import ClassComponent from &#39;./class-component/ClassComponent&#39;;
 
 function App() {
-  return (
-    &lt;div&gt;
-      &lt;h1&gt;Exploring React Builds&lt;/h1&gt;
-      &lt;HeadingA /&gt;
-      &lt;HeadingB /&gt;
-      &lt;Image /&gt;
-      &lt;ClassComponent /&gt;
-    &lt;/div&gt;
-  );
+return (
+&lt;div&gt;
+&lt;h1&gt;Exploring React Builds&lt;/h1&gt;
+&lt;HeadingA /&gt;
+&lt;HeadingB /&gt;
+&lt;Image /&gt;
+&lt;ClassComponent /&gt;
+&lt;/div&gt;
+);
 }
 
 export default App;</code></pre>
+
 <p>Now run your application using <code>npm start</code>. Open your browser’s developer tools and view the “Sources” for the current page. Expand the <code>localhost:3000</code> &gt; <code>static</code> &gt; <code>js</code> node on the left and select the <code>main.chunk.js</code> file. Press <code>CMD+F</code> on macOS or <code>CTRL+F</code> on Windows to search the file for “Class Component”. Here’s what the transpiled code looks like for the <code>ClassComponent</code> class:</p>
 <pre><code>class ClassComponent extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   render() {
@@ -3042,30 +3083,32 @@ export default App;</code></pre>
 <pre><code>var ClassComponent = /*#__PURE__*/function (_React$Component) {
   Object(_Users_jameschurchill_Documents_GitHub_Modular_Curriculum_content_react_redux_topics_react_builds_projects_exploring_react_builds_solution_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__[&quot;default&quot;])(ClassComponent, _React$Component);
 
-  var _super = Object(_Users_jameschurchill_Documents_GitHub_Modular_Curriculum_content_react_redux_topics_react_builds_projects_exploring_react_builds_solution_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_3__[&quot;default&quot;])(ClassComponent);
+var \_super = Object(\_Users_jameschurchill_Documents_GitHub_Modular_Curriculum_content_react_redux_topics_react_builds_projects_exploring_react_builds_solution_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_createSuper**WEBPACK_IMPORTED_MODULE_3**[&quot;default&quot;])(ClassComponent);
 
-  function ClassComponent() {
-    Object(_Users_jameschurchill_Documents_GitHub_Modular_Curriculum_content_react_redux_topics_react_builds_projects_exploring_react_builds_solution_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__[&quot;default&quot;])(this, ClassComponent);
+function ClassComponent() {
+Object(\_Users_jameschurchill_Documents_GitHub_Modular_Curriculum_content_react_redux_topics_react_builds_projects_exploring_react_builds_solution_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_classCallCheck**WEBPACK_IMPORTED_MODULE_0**[&quot;default&quot;])(this, ClassComponent);
 
     return _super.apply(this, arguments);
-  }
 
-  Object(_Users_jameschurchill_Documents_GitHub_Modular_Curriculum_content_react_redux_topics_react_builds_projects_exploring_react_builds_solution_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__[&quot;default&quot;])(ClassComponent, [{
-    key: &quot;render&quot;,
-    value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(&quot;h1&quot;, {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 7,
-          columnNumber: 7
-        }
-      }, &quot;Class Component&quot;);
-    }
-  }]);
+}
 
-  return ClassComponent;
-}(react__WEBPACK_IMPORTED_MODULE_4___default.a.Component);</code></pre>
+Object(\_Users_jameschurchill_Documents_GitHub_Modular_Curriculum_content_react_redux_topics_react_builds_projects_exploring_react_builds_solution_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_createClass**WEBPACK_IMPORTED_MODULE_1**[&quot;default&quot;])(ClassComponent, [{
+key: &quot;render&quot;,
+value: function render() {
+return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(&quot;h1&quot;, {
+__self: this,
+__source: {
+fileName: _jsxFileName,
+lineNumber: 7,
+columnNumber: 7
+}
+}, &quot;Class Component&quot;);
+}
+}]);
+
+return ClassComponent;
+}(react**WEBPACK*IMPORTED_MODULE_4***default.a.Component);</code></pre>
+
 <p>Luckily it’s very rare that you’ll need to read the code in your generated bundles. webpack, by default, is configured to generate sourcemaps. Sourcemaps are a mapping of the code in a generated file, like a bundle file, to the original source code. This gives you access to your original source code in the browser’s developer tools:</p>
 <p>You can even set a breakpoint in your source within the developer tools to stop execution on a specific line of code!</p>
 <h3 id="phase-4-adding-environment-variables">Phase 4: Adding environment variables</h3>
@@ -3083,18 +3126,19 @@ import Image from &#39;./image/Image&#39;;
 import ClassComponent from &#39;./class-component/ClassComponent&#39;;
 
 function App() {
-  return (
-    &lt;div&gt;
-      &lt;h1&gt;{process.env.REACT_APP_TITLE}&lt;/h1&gt;
-      &lt;HeadingA /&gt;
-      &lt;HeadingB /&gt;
-      &lt;Image /&gt;
-      &lt;ClassComponent /&gt;
-    &lt;/div&gt;
-  );
+return (
+&lt;div&gt;
+&lt;h1&gt;{process.env.REACT_APP_TITLE}&lt;/h1&gt;
+&lt;HeadingA /&gt;
+&lt;HeadingB /&gt;
+&lt;Image /&gt;
+&lt;ClassComponent /&gt;
+&lt;/div&gt;
+);
 }
 
 export default App;</code></pre>
+
 <p>Environment variables can also be referred to in regular JavaScript code:</p>
 <pre><code>console.log(process.env.REACT_APP_TITLE);</code></pre>
 <p>You can also reference environment variables in your <code>./public/index.html</code> file like this:</p>
@@ -3130,10 +3174,10 @@ export default App;</code></pre>
 
 import React from &#39;react&#39;;
 import {
-  BrowserRouter,
-  Switch,
-  Route,
-  Link
+BrowserRouter,
+Switch,
+Route,
+Link
 } from &#39;react-router-dom&#39;;
 import HeadingA from &#39;./css-modules/HeadingA&#39;;
 import HeadingB from &#39;./css-modules/HeadingB&#39;;
@@ -3141,41 +3185,42 @@ import Image from &#39;./image/Image&#39;;
 import ClassComponent from &#39;./class-component/ClassComponent&#39;;
 
 function App() {
-  return (
-    &lt;BrowserRouter&gt;
-      &lt;div&gt;
-        &lt;h1&gt;{process.env.REACT_APP_TITLE}&lt;/h1&gt;
-        &lt;nav&gt;
-          &lt;ul&gt;
-            &lt;li&gt;
-              &lt;Link to=&quot;/&quot;&gt;Home&lt;/Link&gt;
-            &lt;/li&gt;
-            &lt;li&gt;
-              &lt;Link to=&quot;/image&quot;&gt;Image&lt;/Link&gt;
-            &lt;/li&gt;
-            &lt;li&gt;
-              &lt;Link to=&quot;/class-component&quot;&gt;Class Component&lt;/Link&gt;
-            &lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/nav&gt;
-        &lt;Switch&gt;
-          &lt;Route path=&quot;/image&quot;&gt;
-            &lt;Image /&gt;
-          &lt;/Route&gt;
-          &lt;Route path=&quot;/class-component&quot;&gt;
-            &lt;ClassComponent /&gt;
-          &lt;/Route&gt;
-          &lt;Route path=&quot;/&quot;&gt;
-            &lt;HeadingA /&gt;
-            &lt;HeadingB /&gt;
-          &lt;/Route&gt;
-        &lt;/Switch&gt;
-      &lt;/div&gt;
-    &lt;/BrowserRouter&gt;
-  );
+return (
+&lt;BrowserRouter&gt;
+&lt;div&gt;
+&lt;h1&gt;{process.env.REACT_APP_TITLE}&lt;/h1&gt;
+&lt;nav&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;Link to=&quot;/&quot;&gt;Home&lt;/Link&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;Link to=&quot;/image&quot;&gt;Image&lt;/Link&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;Link to=&quot;/class-component&quot;&gt;Class Component&lt;/Link&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+&lt;Switch&gt;
+&lt;Route path=&quot;/image&quot;&gt;
+&lt;Image /&gt;
+&lt;/Route&gt;
+&lt;Route path=&quot;/class-component&quot;&gt;
+&lt;ClassComponent /&gt;
+&lt;/Route&gt;
+&lt;Route path=&quot;/&quot;&gt;
+&lt;HeadingA /&gt;
+&lt;HeadingB /&gt;
+&lt;/Route&gt;
+&lt;/Switch&gt;
+&lt;/div&gt;
+&lt;/BrowserRouter&gt;
+);
 }
 
 export default App;</code></pre>
+
 <p>Be sure to run and test your application to ensure that the defined routes work as expected:</p>
 <ul>
 <li><span id="151a"><code>/</code> - Should display the <code>HeadingA</code> and <code>HeadingB</code> components;</span></li>
@@ -3192,10 +3237,10 @@ Compiled successfully.
 
 File sizes after gzip:
 
-  47.83 KB  build/static/js/2.722c16c4.chunk.js
-  773 B     build/static/js/runtime-main.b7d1e5ee.js
-  745 B     build/static/js/main.12299197.chunk.js
-  197 B     build/static/css/main.e9a0d1f8.chunk.css
+47.83 KB build/static/js/2.722c16c4.chunk.js
+773 B build/static/js/runtime-main.b7d1e5ee.js
+745 B build/static/js/main.12299197.chunk.js
+197 B build/static/css/main.e9a0d1f8.chunk.css
 
 The project was built assuming it is hosted at /.
 You can control this with the homepage field in your package.json.
@@ -3203,12 +3248,13 @@ You can control this with the homepage field in your package.json.
 The build folder is ready to be deployed.
 You may serve it with a static server:
 
-  npm install -g serve
-  serve -s build
+npm install -g serve
+serve -s build
 
 Find out more about deployment here:
 
-  bit.ly/CRA-deploy</code></pre>
+bit.ly/CRA-deploy</code></pre>
+
 <p>Ignore the comments about using <code>serve</code> to deploy your application (i.e. <code>npm install -g serve</code> and <code>serve -s build</code>). In the next step, you’ll create a simple Express application to server your React application.</p>
 <h3 id="serving-a-react-application-using-express">Serving a React application using Express</h3>
 <p>Create a new folder for your Express application outside of the Create React App project folder.</p>
@@ -3224,15 +3270,16 @@ const path = require(&#39;path&#39;);
 
 const app = express();
 
-app.use(express.static(path.join(__dirname, &#39;public&#39;)));
+app.use(express.static(path.join(\_\_dirname, &#39;public&#39;)));
 
-app.get(&#39;*&#39;, function(req, res) {
-  res.sendFile(path.join(__dirname, &#39;public&#39;, &#39;index.html&#39;));
+app.get(&#39;\*&#39;, function(req, res) {
+res.sendFile(path.join(\_\_dirname, &#39;public&#39;, &#39;index.html&#39;));
 });
 
 const port = 9000;
 
 app.listen(port, () =&gt; console.log(`Listening on port ${port}...`));</code></pre>
+
 <p>This simple Express application will:</p>
 <ul>
 <li><span id="31ba">Attempt to match incoming requests to static files located in the <code>public</code> folder; and</span></li>
@@ -4039,6 +4086,7 @@ over and over. (Think of them as ‘subprograms’)</p>
 <pre><code>let str = &quot;Hello&quot;;
 
 alert( str.toUpperCase() ); // HELLO</code></pre>
+
 <p>Simple, right? Here’s what actually happens in <code>str.toUpperCase()</code>:</p>
 <ol type="1">
 <li><span id="5a30">The string <code>str</code> is a primitive. So in the moment of accessing its property, a special object is created that knows the value of the string, and has useful methods, like <code>toUpperCase()</code>.</span></li>
@@ -4067,6 +4115,7 @@ var array2 = [&#39;d&#39;, &#39;e&#39;, &#39;f&#39;];
 
 console.log(array1.concat(array2));
 // expected output: Array [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;, &quot;f&quot;]</code></pre>
+
 <h4 id="copywithin"><a href="https://doesitmutate.xyz/copywithin" class="markup--anchor markup--h4-anchor">.copyWithin()</a></h4>
 <p><strong>mutates</strong></p>
 <h3 id="description-1">Description</h3>
@@ -4085,6 +4134,7 @@ console.log(array1.copyWithin(0, 3, 4));
 // copy to index 1 all elements from index 3 to the end
 console.log(array1.copyWithin(1, 3));
 // expected output: Array [&quot;d&quot;, &quot;d&quot;, &quot;e&quot;, &quot;d&quot;, &quot;e&quot;]</code></pre>
+
 <h3 id="entries"><a href="https://doesitmutate.xyz/entries" class="markup--anchor markup--h3-anchor">.entries()</a></h3>
 <h4 id="no-mutation">no mutation</h4>
 <h3 id="description-2">Description</h3>
@@ -4101,6 +4151,7 @@ console.log(iterator1.next().value);
 
 console.log(iterator1.next().value);
 // expected output: Array [1, &quot;b&quot;]</code></pre>
+
 <h3 id="every"><a href="https://doesitmutate.xyz/every" class="markup--anchor markup--h3-anchor">.every</a></h3>
 <h4 id="no-mutation-1">no mutation</h4>
 <h3 id="description-3">Description</h3>
@@ -4116,6 +4167,7 @@ var array1 = [1, 30, 39, 29, 10, 13];
 
 console.log(array1.every(isBelowThreshold));
 // expected output: true</code></pre>
+
 <h3 id="fill"><a href="https://doesitmutate.xyz/fill" class="markup--anchor markup--h3-anchor">.fill()</a></h3>
 <h4 id="mutates">mutates</h4>
 <h3 id="description-4">Description</h3>
@@ -4137,6 +4189,7 @@ console.log(array1.fill(5, 1));
 
 console.log(array1.fill(6));
 // expected output: [6, 6, 6, 6]</code></pre>
+
 <h3 id="filter"><a href="https://doesitmutate.xyz/filter" class="markup--anchor markup--h3-anchor">.filter</a></h3>
 <h4 id="no-mutation-2">no mutation</h4>
 <h3 id="description-5">Description</h3>
@@ -4150,6 +4203,7 @@ const result = words.filter(word =&gt; word.length &gt; 6);
 
 console.log(result);
 // expected output: Array [&quot;exuberant&quot;, &quot;destruction&quot;, &quot;present&quot;]</code></pre>
+
 <h3 id="find"><a href="https://doesitmutate.xyz/find" class="markup--anchor markup--h3-anchor">.find()</a></h3>
 <p>no mutation</p>
 <h3 id="description-6">Description</h3>
@@ -4160,11 +4214,12 @@ console.log(result);
 <pre><code>var array1 = [5, 12, 8, 130, 44];
 
 var found = array1.find(function(element) {
-  return element &gt; 10;
+return element &gt; 10;
 });
 
 console.log(found);
 // expected output: 12</code></pre>
+
 <p><a href="https://medium.com/@_benaston/lesson-1b-javascript-fundamentals-380f601ba851" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/@_benaston/lesson-1b-javascript-fundamentals-380f601ba851"><strong>Value types, reference types and scope in JavaScript</strong><br /> <em>There are only two things fundamental to JavaScript: objects and functions.</em>medium.com</a><a href="https://medium.com/@_benaston/lesson-1b-javascript-fundamentals-380f601ba851" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
 <p><a href="https://medium.com/dailyjs/back-to-roots-javascript-value-vs-reference-8fb69d587a18" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://medium.com/dailyjs/back-to-roots-javascript-value-vs-reference-8fb69d587a18"><strong>Back to roots: JavaScript Value vs Reference</strong><br /> <em>Let’s look at the concept of Value vs Reference. Every JavaScript developer should know this topic as it’s often the…</em>medium.com</a><a href="https://medium.com/dailyjs/back-to-roots-javascript-value-vs-reference-8fb69d587a18" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
 <p><a href="https://hackernoon.com/grasp-by-value-and-by-reference-in-javascript-7ed75efa1293" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://hackernoon.com/grasp-by-value-and-by-reference-in-javascript-7ed75efa1293"><strong>Grasp “By Value” and “By Reference” in JavaScript</strong><br /> <em>And learn why it’s crucial to know the difference</em>hackernoon.com</a><a href="https://hackernoon.com/grasp-by-value-and-by-reference-in-javascript-7ed75efa1293" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
@@ -4704,19 +4759,26 @@ console.log(found);
 <h3 id="bold-and-italic">Bold and Italic</h3>
 <pre><code>markdown
 
-This text **is bold**. 
-This text *is italic*.</code></pre>
+This text **is bold**.
+This text _is italic_.</code></pre>
+
 <p>This text is bold.<br />
 This text <em>is italic</em>.</p>
 <h3 id="header-text">Header Text</h3>
 <pre><code>markdown
 
 # Header 1
+
 ## Header 2
+
 ### Header 3
+
 #### Header 4
+
 ##### Header 5
+
 ###### Header 6</code></pre>
+
 <h3 id="header-1">Header 1</h3>
 <h3 id="header-2">Header 2</h3>
 <h3 id="header-3">Header 3</h3>
@@ -4733,6 +4795,7 @@ line because there&#39;s no double space at the end.
 
 The following line has a soft break at the end (two spaces at end)  
 This line should be following on the very next line.</code></pre>
+
 <p>This line has a paragraph break at the end (empty line after).</p>
 <p>Theses two lines should display as a single line because there’s no double space at the end.</p>
 <p>The following line has a soft break at the end (two spaces at end)<br />
@@ -4741,15 +4804,18 @@ This line should be following on the very next line.</p>
 <pre><code>markdown
 
 [Help Builder Web Site](http://helpbuilder.west-wind.com/)</code></pre>
+
 <p><a href="http://helpbuilder.west-wind.com/" class="markup--anchor markup--p-anchor">Help Builder Web Site</a></p>
 <p>If you need additional image tags like targets or title attributes you can also embed HTML directly:</p>
 <pre><code>markdown
 
-Go the Help Builder sitest Wind site: &lt;a href=&quot;http://west-wind.com/&quot; target=&quot;_blank&quot;&gt;Help Builder Site&lt;/a&gt;.</code></pre>
+Go the Help Builder sitest Wind site: &lt;a href=&quot;http://west-wind.com/&quot; target=&quot;\_blank&quot;&gt;Help Builder Site&lt;/a&gt;.</code></pre>
+
 <h3 id="images">Images</h3>
 <pre><code>markdown
 
 ![Help Builder Web Site](https://helpbuilder.west-wind.com/images/HelpBuilder_600.png)</code></pre>
+
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*ibU0D-Zr0qDT5h3z.png" class="graf-image" />
 </figure>
@@ -4757,10 +4823,11 @@ Go the Help Builder sitest Wind site: &lt;a href=&quot;http://west-wind.com/&quo
 <p>Block quotes are callouts that are great for adding notes or warnings into documentation.</p>
 <pre><code>markdown
 
-&gt; ###  Headers break on their own
-&gt; Note that headers don&#39;t need line continuation characters 
+&gt; ### Headers break on their own
+&gt; Note that headers don&#39;t need line continuation characters
 as they are block elements and automatically break. Only text
 lines require the double spaces for single line breaks.</code></pre>
+
 <blockquote>
 <p><em>Headers break on their own</em></p>
 </blockquote>
@@ -4771,7 +4838,8 @@ lines require the double spaces for single line breaks.</code></pre>
 <p>Help Builder includes a custom syntax for <a href="http://fortawesome.github.io/Font-Awesome/icons/" class="markup--anchor markup--p-anchor">FontAwesome</a> icons in its templates. You can embed a <code>@ icon-</code> followed by a font-awesome icon name to automatically embed that icon without full HTML syntax.</p>
 <pre><code>markdown
 
-Gear:  Configuration</code></pre>
+Gear: Configuration</code></pre>
+
 <p>Configuration</p>
 <h3 id="html-markup">HTML Markup</h3>
 <p>You can also embed plain HTML markup into the page if you like. For example, if you want full control over fontawesome icons you can use this:</p>
@@ -4779,17 +4847,19 @@ Gear:  Configuration</code></pre>
 
 This text can be **embedded** into Markdown:  
 &lt;i class=&quot;fa fa-refresh fa-spin fa-lg&quot;&gt;&lt;/i&gt; Refresh Page</code></pre>
+
 <p>This text can be embedded into Markdown:<br />
  Refresh Page</p>
 <h3 id="unordered-lists">Unordered Lists</h3>
 <pre><code>markdown
 
-* Item 1
-* Item 2
-* Item 3
-This text is part of the third item. Use two spaces at end of the the list item to break the line.
+- Item 1
+- Item 2
+- Item 3
+  This text is part of the third item. Use two spaces at end of the the list item to break the line.
 
 A double line break, breaks out of the list.</code></pre>
+
 <ul>
 <li><span id="7904">Item 1</span></li>
 <li><span id="1cf1">Item 2</span></li>
@@ -4801,11 +4871,12 @@ This text is part of the third item. Use two spaces at end of the the list item 
 <pre><code>markdown
 
 1. **Item 1**  
-Item 1 is really something
+   Item 1 is really something
 2. **Item 2**  
-Item two is really something else
+   Item two is really something else
 
 If you want lines to break using soft returns use two spaces at the end of a line.</code></pre>
+
 <ol type="1">
 <li><span id="01d6">Item 1 Item 1 is really something</span></li>
 <li><span id="51ea">Item 2<br />
@@ -4816,8 +4887,9 @@ Item two is really something else</span></li>
 <p>If you want to embed code in the middle of a paragraph of text to highlight a coding syntax or class/member name you can use inline code syntax:</p>
 <pre><code>markdown
 
-Structured statements like `for x =1 to 10` loop structures 
+Structured statements like `for x =1 to 10` loop structures
 can be codified using single back ticks.</code></pre>
+
 <p>Structured statements like <code>for x =1 to 10</code> loop structures can be codified using single back ticks.</p>
 <h3 id="code-blocks-with-syntax-highlighting">Code Blocks with Syntax Highlighting</h3>
 <p>Markdown supports code blocks syntax in a variety of ways:</p>
@@ -4829,54 +4901,49 @@ The following code demonstrates:
     // or a leading tab
 
 More text here</code></pre>
+
 <p>The following code demonstrates:</p>
 <pre><code>pgsql
 
 // This is code by way of four leading spaces
 // or a leading tab</code></pre>
+
 <p>More text here</p>
 <h3 id="code-blocks">Code Blocks</h3>
 <p>You can also use triple back ticks plus an optional coding language to support for syntax highlighting (space injected before last ` to avoid markdown parsing):</p>
 <pre><code>markdown
 
-`` `csharp
-// this code will be syntax highlighted
-for(var i=0; i++; i &lt; 10)
-{
-    Console.WriteLine(i);
-}
-`` `
+`` `csharp // this code will be syntax highlighted for(var i=0; i++; i &lt; 10) { Console.WriteLine(i); } `` `
 
 csharp
 
 // this code will be syntax highlighted
 for(var i=0; i++; i &lt; 10)
 {
-    Console.WriteLine(i);
+Console.WriteLine(i);
 }</code></pre>
+
 <p>Many languages are supported: html, xml, javascript, css, csharp, foxpro, vbnet, sql, python, ruby, php and many more. Use the Code drop down list to get a list of available languages.</p>
 <p>You can also leave out the language to get no syntax coloring but the code box:</p>
 <pre><code>markdown
 
-`` `dos
-robocopy c:\temp\test d:\temp\test
-`` `
+`` `dos robocopy c:\temp\test d:\temp\test `` `
 
 dos
 
 robocopy c:\temp\test d:\temp\test</code></pre>
+
 <p>To create a formatted block but without formatting use the <code>txt</code> format:</p>
 <pre><code>markdown
 
-`` `txt
-This is some text that will not be syntax highlighted
-but shows up in a code box.
-`` `</code></pre>
+`` `txt This is some text that will not be syntax highlighted but shows up in a code box. `` `</code></pre>
+
 <p>which gives you:</p>
 <pre><code>text
 
 This is some text that will not be syntax highlighted
 but shows up in a code box.</code></pre>
+
 <h4 id="if-you-found-this-guide-helpful-feel-free-to-checkout-my-githubgists-where-i-host-similar-content-2">If you found this guide helpful feel free to checkout my github/gists where I host similar content:</h4>
 <p><a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz’s gists · GitHub</a></p>
 <p><a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz — Overview</strong><br /> <em>Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python | React | Node.js | Express | Sequelize…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
@@ -4909,20 +4976,21 @@ but shows up in a code box.</code></pre>
 }
 
 function bar() {
-    console.log(&#39;banana&#39;);
+console.log(&#39;banana&#39;);
 }
 
 const fruitBasket = function() {
-    console.log(&#39;apple&#39;);
-    bar();
-    foo(bar);
-    foo(function() {
-        console.log(&#39;orange&#39;);
-    });
-    console.log(&#39;pear&#39;);
+console.log(&#39;apple&#39;);
+bar();
+foo(bar);
+foo(function() {
+console.log(&#39;orange&#39;);
+});
+console.log(&#39;pear&#39;);
 };
 
 fruitBasket();</code></pre>
+
 <h4 id="function-that-takes-in-a-value-and-two-callbacks.-the-function-should-return-the-result-of-the-callback-whos-invocation-results-in-a-larger-value.">Function that takes in a value and two callbacks. The function should return the result of the callback who’s invocation results in a larger value.</h4>
 <pre><code>function greaterValue(value, cb1, cb2) {
     // compare cb1 invoked with value to cb2 invoked with value
@@ -4935,18 +5003,20 @@ fruitBasket();</code></pre>
         return res1;
     }
     return res2;
+
 }
 
 let negate = function(num) {
-    return num * -1;
+return num \* -1;
 };
 
 let addOne = function(num) {
-    return num + 1;
+return num + 1;
 };
 
 console.log(greaterValue(3, negate, addOne));
 console.log(greaterValue(-2, negate, addOne));</code></pre>
+
 <p><em>Note: we do not invoke</em> <code>negate</code> <em>or</em> <code>addOne</code> <em>(by using</em> <code>()</code> <em>to call them), we are passing the function itself.</em></p>
 <h4 id="write-a-function-mymap-that-takes-in-an-array-and-a-callback-as-arguments.-the-function-should-mimic-the-behavior-of-array.prototype.map.">Write a function, myMap, that takes in an array and a callback as arguments. The function should mimic the behavior of Array.prototype.map.</h4>
 <pre><code>function myMap(arr, callback) {
@@ -4961,12 +5031,14 @@ console.log(greaterValue(-2, negate, addOne));</code></pre>
     }
 
     return mapped;
+
 }
 
 let double = function(num) {
-    return num * 2;
+return num \* 2;
 };
 console.log(myMap([1, 2, 3], double));</code></pre>
+
 <h4 id="write-a-function-myfilter-that-takes-in-an-array-and-a-callback-as-arguments.-the-function-should-mimic-the-behavior-of-array.prototype.filter.">Write a function, myFilter, that takes in an array and a callback as arguments. The function should mimic the behavior of Array.prototype.filter.</h4>
 <pre><code>function myFilter(arr, callback) {
     let filtered = [];
@@ -4980,7 +5052,9 @@ console.log(myMap([1, 2, 3], double));</code></pre>
     }
 
     return filtered;
+
 }</code></pre>
+
 <h4 id="write-a-function-myevery-that-takes-in-an-array-and-a-callback-as-arguments.-the-function-should-mimic-the-behavior-of-array.prototype.every.">Write a function, myEvery, that takes in an array and a callback as arguments. The function should mimic the behavior of Array.prototype.every.</h4>
 <pre><code>function myEvery(arr, callback) {
     for (let i = 0; i &lt; arr.length; i++) {
@@ -4991,7 +5065,9 @@ console.log(myMap([1, 2, 3], double));</code></pre>
         }
     }
     return true;
+
 }</code></pre>
+
 <h3 id="further-examples-of-the-above-concepts">Further Examples of the above concepts</h3>
 <pre><code>const createMeowValue = () =&gt; {
   console.log(this.name);
@@ -5006,34 +5082,34 @@ console.log(myMap([1, 2, 3], double));</code></pre>
 const name = &#39;Fluffy&#39;;
 
 const cat = {
-  name: name,
-  age: 12,
-  createMeow: function () {
-    console.log(this.name);
-    let meow = () =&gt; {
-      const hello = &#39;hello&#39;;
-      console.log(this.name + &#39; meows&#39;);
-    };
-    let world = &#39;&#39;;
-    if (true) {
-      world = &#39;world&#39;;
-    }
-    console.log(world);
-    // meow = meow.bind(this);
-    return meow;
-  }
+name: name,
+age: 12,
+createMeow: function () {
+console.log(this.name);
+let meow = () =&gt; {
+const hello = &#39;hello&#39;;
+console.log(this.name + &#39; meows&#39;);
+};
+let world = &#39;&#39;;
+if (true) {
+world = &#39;world&#39;;
+}
+console.log(world);
+// meow = meow.bind(this);
+return meow;
+}
 };
 
 cat.newKey = function () {
-  const outermostContext = this;
-  const innerFunc = () =&gt; {
-    secondContext = this;
-    console.log(secondContext === outermostContext)
-    return function () {
-      innermostContext = this;
-    }
-  };
-  return innerFunc.bind(outermostContext);
+const outermostContext = this;
+const innerFunc = () =&gt; {
+secondContext = this;
+console.log(secondContext === outermostContext)
+return function () {
+innermostContext = this;
+}
+};
+return innerFunc.bind(outermostContext);
 };
 
 const meow = cat.createMeow(); // method-style invocation
@@ -5046,8 +5122,8 @@ const globalMeow = createMeow(); // function-style
 globalMeow(); // function-style
 
 function createSmoothie(ingredient) {
-  const ingredients = [ingredient];
-  return ingredients;
+const ingredients = [ingredient];
+return ingredients;
 }
 
 // console.log(createSmoothie(&#39;banana&#39;));
@@ -5057,6 +5133,7 @@ function createSmoothie(ingredient) {
 // first argument is a string
 // return an array
 // DO NOT USE forEach</code></pre>
+
 <p>References:</p>
 <p><a href="https://open.appacademy.io/learn" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://open.appacademy.io/learn"><strong>App Academy Open</strong><br /> <em>App Academy Open is the first free, online web development course that’s meant to get you hired as a developer. Get…</em>open.appacademy.io</a><a href="https://open.appacademy.io/learn" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
 <p><a href="https://developer.mozilla.org/en-US/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://developer.mozilla.org/en-US/"><strong>MDN Web Docs</strong><br /> <em>Read more at hacks.mozilla.org Roughly a year ago at Mozilla we started an effort to improve Firefox stability on…</em>developer.mozilla.org</a><a href="https://developer.mozilla.org/en-US/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
@@ -6012,32 +6089,36 @@ sleep 2</code></pre>
 <h3 id="my-commands">MY COMMANDS:</h3>
 <h3 id="recursively-unzip-zip-files-and-then-delete-the-archives-when-finished">1.) Recursively unzip zip files and then delete the archives when finished:</h3>
 <p><strong>here is a</strong> <a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/1-recursive-unzip" class="markup--anchor markup--p-anchor"><strong>folde</strong></a><strong>r containing the before and after… I had to change folder names slightly due to a limit on the length of file-paths in a github repo.</strong></p>
-<pre><code>find . -name &quot;*.zip&quot; | while read filename; do unzip -o -d &quot;`dirname &quot;$filename&quot;`&quot; &quot;$filename&quot;; done;    
+<pre><code>find . -name &quot;*.zip&quot; | while read filename; do unzip -o -d &quot;`dirname &quot;$filename&quot;`&quot; &quot;$filename&quot;; done;
 
-find . -name &quot;*.zip&quot; -type f -print -delete</code></pre>
+find . -name &quot;\*.zip&quot; -type f -print -delete</code></pre>
+
 <hr />
 <h3 id="install-node-modules-recursively">2.) Install node modules recursively:</h3>
-<pre><code>npm i -g recursive-install  
+<pre><code>npm i -g recursive-install
 
 npm-recursive-install</code></pre>
+
 <hr />
 <h3 id="clean-up-unnecessary-filesfolders-in-git-repo">3.) Clean up unnecessary files/folders in git repo:</h3>
 <pre><code>find . -empty -type f -print -delete #Remove empty files
 
 # -------------------------------------------------------
+
 find . -empty -type d -print -delete #Remove empty folders
 
 # -------------------------------------------------------
 
-# This will remove .git folders...    .gitmodule files as well as .gitattributes and .gitignore files. 
+# This will remove .git folders... .gitmodule files as well as .gitattributes and .gitignore files.
 
-find . \( -name &quot;.git&quot; -o -name &quot;.gitignore&quot; -o -name &quot;.gitmodules&quot; -o -name &quot;.gitattributes&quot; \) -exec rm -rf -- {} + 
+find . \( -name &quot;.git&quot; -o -name &quot;.gitignore&quot; -o -name &quot;.gitmodules&quot; -o -name &quot;.gitattributes&quot; \) -exec rm -rf -- {} +
 
 # -------------------------------------------------------
 
 # This will remove the filenames you see listed below that just take up space if a repo has been downloaded for use exclusively in your personal file system (in which case the following files just take up space)# Disclaimer... you should not use this command in a repo that you intend to use with your work as it removes files that attribute the work to their original creators!
 
 find . \( -name &quot;*SECURITY.txt&quot; -o -name &quot;*RELEASE.txt&quot; -o -name &quot;*CHANGELOG.txt&quot; -o -name &quot;*LICENSE.txt&quot; -o -name &quot;*CONTRIBUTING.txt&quot; -name &quot;*HISTORY.md&quot; -o -name &quot;*LICENSE&quot; -o -name &quot;*SECURITY.md&quot; -o -name &quot;*RELEASE.md&quot; -o -name &quot;*CHANGELOG.md&quot; -o -name &quot;*LICENSE.md&quot; -o -name &quot;*CODE_OF_CONDUCT.md&quot; -o -name &quot;\*CONTRIBUTING.md&quot; \) -exec rm -rf -- {} +</code></pre>
+
 <h4 id="in-action">In Action:</h4>
 <p>The following output from my bash shell corresponds to the directory:</p>
 <p><a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master"><strong>bgoonz/bash-commands-walkthrough</strong><br /> <em>Deployment github-pages Navigation Big O notation is the language we use for talking about how long an algorithm takes…</em>github.com</a><a href="https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/3-clean-up-fluf/DS-ALGO-OFFICIAL-master" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
@@ -6076,7 +6157,8 @@ find . -empty -type d -print -delete
 ./.git/branches
 ./.git/objects/info
 ./.git/refs/tags
-|01:33:31|bryan@LAPTOP-9LGJ3JGS:[DS-ALGO-OFFICIAL-master] DS-ALGO-OFFICIAL-master_exitstatus:0[╗___________o&gt;</code></pre>
+|01:33:31|bryan@LAPTOP-9LGJ3JGS:[DS-ALGO-OFFICIAL-master] DS-ALGO-OFFICIAL-master_exitstatus:0[╗****\_\_\_****o&gt;</code></pre>
+
 <blockquote>
 <p><strong>The command seen below deletes .git folders as well as .gitignore, .gitattributes, .gitmodule files</strong></p>
 </blockquote>
@@ -6190,7 +6272,8 @@ cmd $listing --sort=extension &gt;&gt;$html</code></pre>
 
 # OR
 
-find . -name &#39;result.md&#39;  -type f -exec sed -i &#39;/badFolder/d&#39; ./* {} \;</code></pre>
+find . -name &#39;result.md&#39; -type f -exec sed -i &#39;/badFolder/d&#39; ./\* {} \;</code></pre>
+
 <p><strong>As an example I will run this command on a file containing the text:</strong></p>
 <pre><code>Hacks Blog
 
@@ -6231,6 +6314,7 @@ Pyodide Spin Out and 0.17 Release
 We are happy to announce that Pyodide has become an independent and community-driven project. We are also pleased to announce the 0.17 release for Pyodide with many new features and improvements. Pyodide consists of the CPython 3.8 interpreter compiled to WebAssembly which allows Python to run in the browser.The post Pyodide Spin Out and 0.17 Release appeared first on Mozilla Hacks - the Web developer blog. badFolder
 
 Posted Thursday, April 22, 2021 by Teon Brooks</code></pre>
+
 <p><strong><em>I modified the command slightly to apply only to files called ‘result.md’:</em></strong></p>
 <blockquote>
 <p>The result is :</p>
@@ -6260,6 +6344,7 @@ Posted Tuesday, May 18, 2021 by Anny Gakhokidze
 Pyodide Spin Out and 0.17 Release
 
 Posted Thursday, April 22, 2021 by Teon Brooks</code></pre>
+
 <figure>
 <img src="https://cdn-images-1.medium.com/max/1200/1*Up5as-MkHcHbvI_qX1AqPw.png" class="graf-image" />
 </figure>
@@ -6296,15 +6381,16 @@ Posted Thursday, April 22, 2021 by Teon Brooks</code></pre>
 
 #Replace the line below with your own command!
 
-#find ./ -iname &quot;*.md&quot; -maxdepth 1 -type f -exec sh -c &#39;pandoc --standalone &quot;${0}&quot; -o &quot;${0%.md}.html&quot;&#39; {} \;
+#find ./ -iname &quot;\*.md&quot; -maxdepth 1 -type f -exec sh -c &#39;pandoc --standalone &quot;${0}&quot; -o &quot;${0%.md}.html&quot;&#39; {} \;
 
 #####################################################
+
 # YOUR CODE BELOW!
 
 #####################################################
 
-if [[ -d &quot;${f}&quot; ]]; then
-            cd &quot;${f}&quot;
+if [[-d &quot;${f}&quot;]]; then
+cd &quot;${f}&quot;
             RecurseDirs $(ls -1 &quot;.&quot;)
             cd ..
         fi
@@ -6312,6 +6398,7 @@ if [[ -d &quot;${f}&quot; ]]; then
     IFS=$oldIFS
 }
 RecurseDirs &quot;./&quot;</code></pre>
+
 <hr />
 <h3 id="tbc.">TBC….</h3>
 <p><strong>Here are some of the other commands I will cover in greater detail… at a later time:</strong></p>
@@ -6325,25 +6412,26 @@ RecurseDirs &quot;./&quot;</code></pre>
 <pre><code>sanitize() {
   shopt -s extglob;
 
-  filename=$(basename &quot;$1&quot;)
+filename=$(basename &quot;$1&quot;)
   directory=$(dirname &quot;$1&quot;)
 
-  filename_clean=$(echo &quot;$filename&quot; | sed -e &#39;s/[\\/:\*\?&quot;&lt;&gt;\|\x01-\x1F\x7F]//g&#39; -e &#39;s/^\(nul\|prn\|con\|lpt[0-9]\|com[0-9]\|aux\)\(\.\|$\)//i&#39; -e &#39;s/^\.*$//&#39; -e &#39;s/^$/NONAME/&#39;)
+filename_clean=$(echo &quot;$filename&quot; | sed -e &#39;s/[\\/:\*\?&quot;&lt;&gt;\|\x01-\x1F\x7F]//g&#39; -e &#39;s/^\(nul\|prn\|con\|lpt[0-9]\|com[0-9]\|aux\)\(\.\|$\)//i&#39; -e &#39;s/^\.*$//&#39; -e &#39;s/^$/NONAME/&#39;)
 
-  if (test &quot;$filename&quot; != &quot;$filename_clean&quot;)
-  then
-    mv -v &quot;$1&quot; &quot;$directory/$filename_clean&quot;
-  fi
+if (test &quot;$filename&quot; != &quot;$filename_clean&quot;)
+then
+mv -v &quot;$1&quot; &quot;$directory/$filename_clean&quot;
+fi
 }
 
 export -f sanitize
 
 sanitize_dir() {
-  find &quot;$1&quot; -depth -exec bash -c &#39;sanitize &quot;$0&quot;&#39; {} \;
+find &quot;$1&quot; -depth -exec bash -c &#39;sanitize &quot;$0&quot;&#39; {} \;
 
 }
 
 sanitize_dir &#39;/path/to/somewhere&#39;</code></pre>
+
 <hr />
 <h3 id="start-postgresql-in-terminal">12. Start postgresql in terminal</h3>
 <pre><code>sudo -u postgres psql</code></pre>
@@ -6369,14 +6457,16 @@ ext=&quot;.mp4&quot;
 
 while [ $num -le 66 ]
 do
-      wget $link$num$ext -P ~/Downloads/
+wget $link$num$ext -P ~/Downloads/
       num=$(($num+1))
 done</code></pre>
+
 <hr />
 <h3 id="change-file-extension-from-.txt-to-.doc-for-all-files-in-working-directory.">15. Change File Extension from ‘.txt’ to .doc for all files in working directory.</h3>
 <pre><code>sudo apt install rename
 
-rename &#39;s/\.txt$/.doc/&#39; *.txt</code></pre>
+rename &#39;s/\.txt$/.doc/&#39; \*.txt</code></pre>
+
 <h3 id="recursivley-change-any-file-with-extension-.js.download-to-.js">16. Recursivley change any file with extension .js.download to .js</h3>
 <pre><code>find . -name &quot;*.\.js\.download&quot; -exec rename &#39;s/\.js\.download$/.js/&#39; &#39;{}&#39; +</code></pre>
 <hr />
@@ -6460,9 +6550,13 @@ ls -l
 #   file name
 
 # to see hidden files/folders (like .git or .npmignore)
+
 ls -a
+
 # Note, flags can be combined like so
+
 ls -la</code></pre>
+
 <h3 id="view-files-and-folders-in-bash"><a href="https://egghead.io/lessons/bash-view-files-and-folders-in-bash" class="markup--anchor markup--h3-anchor">View files and folders in bash</a></h3>
 <h4 id="output-a-file-to-the-screen-stdout">Output a file to the screen (stdout)</h4>
 <pre><code>cat &lt;file name&gt;
@@ -6561,20 +6655,26 @@ http
 # -o    (output to a file)
 
 # to POST JSON
+
 # (technically you don&#39;t need -X POST because -d will make it POST automatically, but I like to be explicit)
+
 curl -X POST -H &quot;Content-Type: application/json&quot; -d &#39;{ &quot;title&quot;: &quot;Curling&quot; }&#39; http://localhost:3000/api/posts
 
 # POST a url encoded form
+
 curl -X POST --data-urlencode title=&quot;Curling again&quot; http://localhost:3000/api/posts
 
 # multiline curl (applies to any bash command)
+
 curl -i -X PUT \
 -d &#39;{ &quot;title&quot;: &quot;Changed title&quot; }&#39; \
 -H &quot;Content-Type: application/json&quot; \
 http://localhost:3000/api/posts
 
 # pretty print JSON with jsome
+
 curl https://swapi.co/api/people/1/ | jsome</code></pre>
+
 <p>Here’s the <a href="https://www.npmjs.com/package/jsome" class="markup--anchor markup--p-anchor">jsome</a> package that pretty prints JSON</p>
 <h3 id="create-and-run-bash-scripts"><a href="https://egghead.io/lessons/bash-create-and-run-bash-scripts" class="markup--anchor markup--h3-anchor">Create and run bash scripts</a></h3>
 <figure>
@@ -6620,15 +6720,16 @@ echo &quot;the greeting is $greeting&quot;
 global=123
 
 test() {
-  echo &quot;global = $global&quot;
-  local local_var=&quot;i&#39;m a local&quot;
-  echo &quot;local_var = $local_var&quot;
+echo &quot;global = $global&quot;
+local local_var=&quot;i&#39;m a local&quot;
+echo &quot;local_var = $local_var&quot;
 }
 
 test
 
 echo &quot;global = $global&quot;
 echo &quot;local_var = $local_var&quot; # will be empty because it&#39;s out of scope</code></pre>
+
 <h3 id="understand-exit-statuses-in-bash"><a href="https://egghead.io/lessons/bash-understand-exit-statuses-in-bash" class="markup--anchor markup--h3-anchor">Understand exit statuses in bash</a></h3>
 <p>Get the last run command’s exit status</p>
 <pre><code>ls
@@ -6640,7 +6741,7 @@ echo $?</code></pre>
 }
 
 fail() {
-  return 1
+return 1
 }
 
 fail
@@ -6648,6 +6749,7 @@ ok
 
 ./script.sh
 echo $? # exit status is same as the last run function/command</code></pre>
+
 <h3 id="use-conditional-statements-in-bash"><a href="https://egghead.io/lessons/bash-use-conditional-statements-in-bash" class="markup--anchor markup--h3-anchor">Use Conditional Statements in bash</a></h3>
 <p>Basic form</p>
 <pre><code># Some conditional primaries that can be used in the if expression:
@@ -6657,11 +6759,12 @@ echo $? # exit status is same as the last run function/command</code></pre>
 #   -z         check variable is not set
 #   -e         check file/folder exists
 
-if [[ $USER = &#39;cameronnokes&#39; ]]; then
-  echo &quot;true&quot;
+if [[$USER = &#39;cameronnokes&#39;]]; then
+echo &quot;true&quot;
 else
-  echo &quot;false&quot;
+echo &quot;false&quot;
 fi</code></pre>
+
 <p>Conditionals can be used inline in a more ternary-like format</p>
 <pre><code>[[ $USER = &#39;cameronnokes&#39; ]] &amp;&amp; echo &quot;yes&quot; || echo &quot;no&quot;</code></pre>
 <p><code>check-status.sh</code> for checking a URL is responding with a 200</p>
@@ -6677,6 +6780,7 @@ fi</code></pre>
 
 check_status https://example.org
 check_status https://example.org/404</code></pre>
+
 <h3 id="chain-commands-with-pipes-and-redirect-output-in-bash"><a href="https://egghead.io/lessons/bash-chain-commands-with-pipes-and-redirect-output-in-bash" class="markup--anchor markup--h3-anchor">Chain Commands with Pipes and Redirect Output in bash</a></h3>
 <p>Pipes</p>
 <pre><code># ps ax will list all running processes
@@ -6708,21 +6812,27 @@ find . -user &lt;username&gt; -print
 find /etc -type f -user &lt;username&gt; -name &quot;*.conf&quot;
 
 # Group:
+
 find /opt -group &lt;group&gt;
-find /etc -type f -group &lt;group&gt; -iname &quot;*.conf&quot;</code></pre>
+find /etc -type f -group &lt;group&gt; -iname &quot;\*.conf&quot;</code></pre>
+
 <p><strong><em>Find files and directories for all without specific user/group</em></strong></p>
 <pre><code># User:
 find . \! -user &lt;username&gt; -print
 
 # Group:
+
 find . \! -group &lt;group&gt;</code></pre>
+
 <p><strong><em>Looking for files/directories that only have certain permission</em></strong></p>
 <pre><code># User
 find . -user &lt;username&gt; -perm -u+rw # -rw-r--r--
 find /home -user $(whoami) -perm 777 # -rwxrwxrwx
 
 # Group:
+
 find /home -type d -group &lt;group&gt; -perm 755 # -rwxr-xr-x</code></pre>
+
 <p><strong><em>Delete older files than 60 days</em></strong></p>
 <pre><code>find . -type f -mtime +60 -delete</code></pre>
 <p><strong><em>Recursively remove all empty sub-directories from a directory</em></strong></p>
@@ -6903,6 +7013,7 @@ find /home -type d -group &lt;group&gt; -perm 755 # -rwxr-xr-x</code></pre>
 
 NAME=&quot;John&quot;
 echo &quot;Hello $NAME!&quot;</code></pre>
+
 <h3 id="variables-2">Variables</h3>
 <pre><code>NAME=&quot;John&quot;
 echo $NAME
@@ -6927,6 +7038,7 @@ git commit || echo &quot;Commit failed&quot;</code></pre>
 }
 
 echo &quot;You are $(get_name)&quot;</code></pre>
+
 <p>See: <a href="https://bryanguner.medium.com/media/2ab9392fe0f579fca234dcdc71259b1c#functions" class="markup--anchor markup--p-anchor">Functions</a></p>
 <h3 id="conditionals">Conditionals</h3>
 <p>{: id=’conditionals-example’}</p>
@@ -6958,28 +7070,30 @@ echo ${name:(-2):1} #=&gt; &quot;h&quot; (slicing from right)
 echo ${food:-Cake}  #=&gt; $food or &quot;Cake&quot;
 
 length=2
-echo ${name:0:length}  #=&gt; &quot;Jo&quot;</code></pre>
+echo ${name:0:length} #=&gt; &quot;Jo&quot;</code></pre>
+
 <p>See: <a href="http://wiki.bash-hackers.org/syntax/pe" class="markup--anchor markup--p-anchor">Parameter expansion</a></p>
 <pre><code>STR=&quot;/path/to/foo.cpp&quot;
 echo ${STR%.cpp}    # /path/to/foo
 echo ${STR%.cpp}.o  # /path/to/foo.o
 echo ${STR%/*}      # /path/to
 
-echo ${STR##*.}     # cpp (extension)
-echo ${STR##*/}     # foo.cpp (basepath)
+echo ${STR##_.} # cpp (extension)
+echo ${STR##_/} # foo.cpp (basepath)
 
-echo ${STR#*/}      # path/to/foo.cpp
-echo ${STR##*/}     # foo.cpp
+echo ${STR#_/} # path/to/foo.cpp
+echo ${STR##_/} # foo.cpp
 
 echo ${STR/foo/bar} # /path/to/bar.cpp
 
 STR=&quot;Hello world&quot;
-echo ${STR:6:5}   # &quot;world&quot;
-echo ${STR: -5:5}  # &quot;world&quot;
+echo ${STR:6:5} # &quot;world&quot;
+echo ${STR: -5:5} # &quot;world&quot;
 
 SRC=&quot;/path/to/foo.cpp&quot;
 BASE=${SRC##*/}   #=&gt; &quot;foo.cpp&quot; (basepath)
-DIR=${SRC%$BASE}  #=&gt; &quot;/path/to/&quot; (dirpath)</code></pre>
+DIR=${SRC%$BASE} #=&gt; &quot;/path/to/&quot; (dirpath)</code></pre>
+
 <h3 id="substitution">Substitution</h3>
 <p>CodeDescription<code>${FOO%suffix}</code>Remove suffix<code>${FOO#prefix}</code>Remove prefix——<code>${FOO%%suffix}</code>Remove long suffix<code>${FOO##prefix}</code>Remove long prefix——<code>${FOO/from/to}</code>Replace first match<code>${FOO//from/to}</code>Replace all——<code>${FOO/%from/to}</code>Replace suffix<code>${FOO/#from/to}</code>Replace prefix</p>
 <h3 id="comments">Comments</h3>
@@ -6990,6 +7104,7 @@ This is a
 multi line
 comment
 &#39;</code></pre>
+
 <h3 id="substrings">Substrings</h3>
 <p>ExpressionDescription<code>${FOO:0:3}</code>Substring <em>(position, length)</em><code>${FOO:(-3):3}</code>Substring from the right</p>
 <h3 id="length">Length</h3>
@@ -7000,8 +7115,9 @@ echo ${STR,}   #=&gt; &quot;hELLO WORLD!&quot; (lowercase 1st letter)
 echo ${STR,,}  #=&gt; &quot;hello world!&quot; (all lowercase)
 
 STR=&quot;hello world!&quot;
-echo ${STR^}   #=&gt; &quot;Hello world!&quot; (uppercase 1st letter)
-echo ${STR^^}  #=&gt; &quot;HELLO WORLD!&quot; (all uppercase)</code></pre>
+echo ${STR^} #=&gt; &quot;Hello world!&quot; (uppercase 1st letter)
+echo ${STR^^} #=&gt; &quot;HELLO WORLD!&quot; (all uppercase)</code></pre>
+
 <h3 id="default-values">Default values</h3>
 <p>ExpressionDescription<code>${FOO:-val}$FOO</code>, or <code>val</code> if unset (or null)<code>${FOO:=val}</code>Set <code>$FOO</code> to <code>val</code> if unset (or null)<code>${FOO:+val}val</code> if <code>$FOO</code> is set (and not null)<code>${FOO:?message}</code>Show error message and exit if <code>$FOO</code> is unset (or null)</p>
 <p>Omitting the <code>:</code> removes the (non)nullity checks, e.g. <code>${FOO-val}</code> expands to <code>val</code> if unset otherwise <code>$FOO</code>.</p>
@@ -7039,11 +7155,13 @@ done</code></pre>
 }
 
 # Same as above (alternate syntax)
+
 function myfunc() {
-    echo &quot;hello $1&quot;
+echo &quot;hello $1&quot;
 }
 
 myfunc &quot;John&quot;</code></pre>
+
 <h3 id="returning-values">Returning values</h3>
 <pre><code>myfunc() {
     local myresult=&#39;some value&#39;
@@ -7051,16 +7169,18 @@ myfunc &quot;John&quot;</code></pre>
 }
 
 result=&quot;$(myfunc)&quot;</code></pre>
+
 <h3 id="raising-errors">Raising errors</h3>
 <pre><code>myfunc() {
   return 1
 }
 
 if myfunc; then
-  echo &quot;success&quot;
+echo &quot;success&quot;
 else
-  echo &quot;failure&quot;
+echo &quot;failure&quot;
 fi</code></pre>
+
 <h3 id="arguments">Arguments</h3>
 <p>ExpressionDescription<code>$#</code>Number of arguments<code>$*</code>All postional arguments (as a single word)<code>$@</code>All postitional arguments (as separate strings)<code>$1</code>First argument<code>$_</code>Last argument of the previous command</p>
 <p><strong>Note</strong>: <code>$@</code> and <code>$*</code> must be quoted in order to perform as described. Otherwise, they do exactly the same thing (arguments as separate strings).</p>
@@ -7085,23 +7205,27 @@ else
 fi
 
 # Combinations
-if [[ X &amp;&amp; Y ]]; then
-  ...
+
+if [[X &amp;&amp; Y]]; then
+...
 fi
 
 # Equal
-if [[ &quot;$A&quot; == &quot;$B&quot; ]]
+
+if [[&quot;$A&quot; == &quot;$B&quot;]]
 
 # Regex
-if [[ &quot;A&quot; =~ . ]]
+
+if [[&quot;A&quot; =~ .]]
 
 if (( $a &lt; $b )); then
    echo &quot;$a is smaller than $b&quot;
 fi
 
-if [[ -e &quot;file.txt&quot; ]]; then
-  echo &quot;file exists&quot;
+if [[-e &quot;file.txt&quot;]]; then
+echo &quot;file exists&quot;
 fi</code></pre>
+
 <h3 id="arrays">Arrays</h3>
 <h3 id="defining-arrays">Defining arrays</h3>
 <pre><code>Fruits=(&#39;Apple&#39; &#39;Banana&#39; &#39;Orange&#39;)
@@ -7109,6 +7233,7 @@ fi</code></pre>
 Fruits[0]=&quot;Apple&quot;
 Fruits[1]=&quot;Banana&quot;
 Fruits[2]=&quot;Orange&quot;</code></pre>
+
 <h3 id="working-with-arrays">Working with arrays</h3>
 <pre><code>echo ${Fruits[0]}           # Element #0
 echo ${Fruits[-1]}          # Last element
@@ -7139,6 +7264,7 @@ sounds[dog]=&quot;bark&quot;
 sounds[cow]=&quot;moo&quot;
 sounds[bird]=&quot;tweet&quot;
 sounds[wolf]=&quot;howl&quot;</code></pre>
+
 <p>Declares <code>sound</code> as a Dictionary object (aka associative array).</p>
 <h3 id="working-with-dictionaries">Working with dictionaries</h3>
 <pre><code>echo ${sounds[dog]} # Dog&#39;s sound
@@ -7183,7 +7309,8 @@ shopt -s globstar    # Allow ** for recursive matches (&#39;lib/**/*.rb&#39; =&g
 <h3 id="numeric-calculations">Numeric calculations</h3>
 <pre><code>$((a + 200))      # Add 200 to $a
 
-$(($RANDOM%200))  # Random number 0..199</code></pre>
+$(($RANDOM%200)) # Random number 0..199</code></pre>
+
 <h3 id="subshells">Subshells</h3>
 <pre><code>(cd somedir; echo &quot;I&#39;m now in $PWD&quot;)
 pwd # still in first directory</code></pre>
@@ -7195,7 +7322,8 @@ python hello.py 2&gt;&amp;1           # stderr to stdout
 python hello.py 2&gt;/dev/null    # stderr to (null)
 python hello.py &amp;&gt;/dev/null    # stdout and stderr to (null)
 
-python hello.py &lt; foo.txt      # feed foo.txt to stdin for python</code></pre>
+python hello.py &lt; foo.txt # feed foo.txt to stdin for python</code></pre>
+
 <h3 id="inspecting-commands">Inspecting commands</h3>
 <pre><code>command -V cd
 #=&gt; &quot;cd is a function/alias/whatever&quot;</code></pre>
@@ -7208,16 +7336,18 @@ python hello.py &lt; foo.txt      # feed foo.txt to stdin for python</code></pre
 
 set -o errtrace
 trap traperr ERR</code></pre>
+
 <h3 id="caseswitch">Case/switch</h3>
 <pre><code>case &quot;$1&quot; in
   start | up)
     vagrant up
     ;;
 
-  *)
-    echo &quot;Usage: $0 {start|stop|ssh}&quot;
-    ;;
+\*)
+echo &quot;Usage: $0 {start|stop|ssh}&quot;
+;;
 esac</code></pre>
+
 <h3 id="source-relative">Source relative</h3>
 <pre><code>source &quot;${0%/*}/../share/foo.sh&quot;</code></pre>
 <h3 id="printf">printf</h3>
@@ -7229,6 +7359,7 @@ printf &quot;1 + 1 = %d&quot; 2
 
 printf &quot;This is how you print a float: %f&quot; 2
 #=&gt; &quot;This is how you print a float: 2.000000&quot;</code></pre>
+
 <h3 id="directory-of-script">Directory of script</h3>
 <pre><code>DIR=&quot;${0%/*}&quot;</code></pre>
 <h3 id="getting-options">Getting options</h3>
@@ -7254,7 +7385,8 @@ END</code></pre>
 read ans
 echo $ans
 
-read -n 1 ans    # Just one character</code></pre>
+read -n 1 ans # Just one character</code></pre>
+
 <h3 id="special-variables">Special variables</h3>
 <p>ExpressionDescription<code>$?</code>Exit status of last task<code>$!</code>PID of last background task<code>$$</code>PID of shell<code>$0</code>Filename of the shell script</p>
 <p>See <a href="http://wiki.bash-hackers.org/syntax/shellvars#special_parameters_and_shell_variables" class="markup--anchor markup--p-anchor">Special parameters</a>.</p>
@@ -7301,6 +7433,7 @@ fi</code></pre>
 <pre><code>{ x === y ? &lt;div&gt;Naisu&lt;/div&gt; : &lt;div&gt;Not Naisu&lt;/div&gt;; }
 
 Purpose of React.Fragment is to allow you to create groups of children without adding an extra dom element.</code></pre>
+
 <ul>
 <li><span id="5cbe"><strong>React</strong> manages the creation and updating of DOM nodes in your Web page.</span></li>
 <li><span id="d253">All it does is dynamically render stuff into your DOM.</span></li>
@@ -7863,12 +7996,13 @@ Who uses react
 <pre><code>import React from &#39;react&#39;;
 
 class Hello extends React.Component {
-  render () {
-    return &lt;h1&gt;Hello, {this.props.name}!&lt;/h1&gt;;
-  }
+render () {
+return &lt;h1&gt;Hello, {this.props.name}!&lt;/h1&gt;;
+}
 }
 
 export default Hello;</code></pre>
+
 <ul>
 <li><span id="82a3">At the top with have the code to bring react and react dom libraries in.</span></li>
 <li><span id="3b52">React library is used for the react syntax.</span></li>
@@ -8054,6 +8188,7 @@ print(type(thistuple))
 #NOT a tuple
 thistuple = (&quot;apple&quot;)
 print(type(thistuple))</code></pre>
+
 <ul>
 <li><span id="4556">It is also possible to use the tuple() constructor to make a tuple.</span></li>
 </ul>
@@ -8079,6 +8214,7 @@ print(thistuple)</code></pre>
 <pre><code>thisset = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;}
 
 print(len(thisset))</code></pre>
+
 <ul>
 <li><span id="b34e">Set items can be of any data type:</span></li>
 </ul>
@@ -8185,8 +8321,9 @@ A nested loop is a loop inside a loop.</span></li>
 fruits = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]
 
 for x in adj:
-  for y in fruits:
-    print(x, y)</code></pre>
+for y in fruits:
+print(x, y)</code></pre>
+
 <ul>
 <li><span id="1bdd">for loops cannot be empty, but if you for some reason have a for loop with no content, put in the pass statement to avoid getting an error.</span></li>
 </ul>
@@ -8723,6 +8860,7 @@ I am afraid … sometimes… one simply does… at least analogous-ley
 
 console.log(x);
 //Uncaught ReferenceError: x is not defined</code></pre>
+
 <p>IIFE stands for Immediately Invoked Function Expression and is a function that runs immediately after its definition.</p>
 <p>Variables declared with <code>var</code> have only function scope. Even more, variables declared with <code>var</code> are hoisted to the top of their scope. This way they can be accessed before being declared. Take a look at the code below:</p>
 <pre><code>function doSomething(){
@@ -8731,6 +8869,7 @@ console.log(x);
 }
 
 doSomething(); //undefined</code></pre>
+
 <p>This does not happen for <code>let</code>. A variable declared with <code>let</code> can be accessed only after its definition.</p>
 <pre><code>function doSomething(){
   console.log(x);
@@ -8739,6 +8878,7 @@ doSomething(); //undefined</code></pre>
 
 doSomething();
 //Uncaught ReferenceError: x is not defined</code></pre>
+
 <p>A variable declared with <code>var</code> can be re-declared multiple times in the same scope. The following code is just fine:</p>
 <pre><code>function doSomething(){
   var x = 1
@@ -8747,6 +8887,7 @@ doSomething();
 }
 
 doSomething();</code></pre>
+
 <p>Variables declared with <code>let</code> or <code>const</code> cannot be re-declared in the same scope:</p>
 <pre><code>function doSomething(){
   let x = 1
@@ -9294,10 +9435,11 @@ a {
 }
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;example&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;list item&lt;/li&gt;
-  &lt;li&gt;list item&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;example&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;list item&lt;/li&gt;
+&lt;li&gt;list item&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
+
 <ul>
 <li><span id="afd9">[ ] green</span></li>
 <li><span id="f3bd">[x] yellow</span></li>
@@ -9328,11 +9470,12 @@ line-height: 2</code></pre>
 &lt;p&gt;paragraph two&lt;/p&gt;
 
 section p {
-  color: red;
+color: red;
 }
 section + p {
-  color: blue;
+color: blue;
 }</code></pre>
+
 <ul>
 <li><span id="dd2a">[ ] Paragraph one will be blue, paragraph two will be red.</span></li>
 <li><span id="3a7c">[ ] Both paragraphs will be blue.</span></li>
@@ -9527,11 +9670,12 @@ h2 + p {
 }
 
 &lt;section&gt;
-  &lt;p&gt;paragraph 1&lt;/p&gt;
-  &lt;h2&gt;Heading&lt;/h2&gt;
-  &lt;p&gt;paragraph 2&lt;/p&gt;
-  &lt;p&gt;paragraph 3&lt;/p&gt;
+&lt;p&gt;paragraph 1&lt;/p&gt;
+&lt;h2&gt;Heading&lt;/h2&gt;
+&lt;p&gt;paragraph 2&lt;/p&gt;
+&lt;p&gt;paragraph 3&lt;/p&gt;
 &lt;/section&gt;</code></pre>
+
 <ul>
 <li><span id="f0c8">[ ] Paragraphs 2 and 3 will be blue. The h2 and paragraph 2 will have a beige background.</span></li>
 <li><span id="133d">[x] Paragraphs 2, and 3 will be blue, and paragraph 2 will have a beige background.</span></li>
@@ -9705,10 +9849,11 @@ p:first-child {
 }
 
 &lt;div class=&quot;container&quot;&gt;
-  &lt;h1&gt;Heading&lt;/h1&gt;
-  &lt;p&gt;Paragraph1&lt;/p&gt;
-  &lt;p&gt;Paragraph2&lt;/p&gt;
+&lt;h1&gt;Heading&lt;/h1&gt;
+&lt;p&gt;Paragraph1&lt;/p&gt;
+&lt;p&gt;Paragraph2&lt;/p&gt;
 &lt;/div&gt;</code></pre>
+
 <ul>
 <li><span id="6161">[ ] blue</span></li>
 <li><span id="81b0">[ ] green</span></li>
@@ -9974,9 +10119,10 @@ body {font-size: 2rem;}
 .em {font-size: 2em;}
 
 &lt;body&gt;
-  &lt;p class=&quot;rem&quot;&gt;&lt;/p&gt;
-  &lt;p class=&quot;em&quot;&gt;&lt;/p&gt;
+&lt;p class=&quot;rem&quot;&gt;&lt;/p&gt;
+&lt;p class=&quot;em&quot;&gt;&lt;/p&gt;
 &lt;/body&gt;</code></pre>
+
 <ul>
 <li><span id="998d">[ ] The .rem will be equivalent to 25px; the .em value will be 20px.</span></li>
 <li><span id="ac5f">[ ] The .rem will be equivalent to 15px; the .em value will be 20px.</span></li>
@@ -9990,10 +10136,11 @@ ul a {color: green;}
 a {color: red;}
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;example&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;list item&lt;/li&gt;
-  &lt;li&gt;list item&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;example&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;list item&lt;/li&gt;
+&lt;li&gt;list item&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
+
 <ul>
 <li><span id="fc0e">[ ] blue</span></li>
 <li><span id="24c3">[ ] red</span></li>
@@ -11132,9 +11279,10 @@ n = 2^{h} — 1</strong></p>
 <h3 id="if-statements-1">If Statements</h3>
 <pre><code>if name == &#39;Monica&#39;:  print(&#39;Hi, Monica.&#39;)
 
-if name == &#39;Monica&#39;:  print(&#39;Hi, Monica.&#39;) else:  print(&#39;Hello, stranger.&#39;)
+if name == &#39;Monica&#39;: print(&#39;Hi, Monica.&#39;) else: print(&#39;Hello, stranger.&#39;)
 
-if name == &#39;Monica&#39;:  print(&#39;Hi, Monica.&#39;) elif age &lt; 12:  print(&#39;You are not Monica, kiddo.&#39;) elif age &gt; 2000:  print(&#39;Unlike you, Monica is not an undead, immortal vampire.&#39;) elif age &gt; 100:  print(&#39;You are not Monica, grannie.&#39;)</code></pre>
+if name == &#39;Monica&#39;: print(&#39;Hi, Monica.&#39;) elif age &lt; 12: print(&#39;You are not Monica, kiddo.&#39;) elif age &gt; 2000: print(&#39;Unlike you, Monica is not an undead, immortal vampire.&#39;) elif age &gt; 100: print(&#39;You are not Monica, grannie.&#39;)</code></pre>
+
 <ul>
 <li><span id="dce9">Remember the order of <code>elif</code> statements matter.</span></li>
 </ul>
@@ -11159,7 +11307,8 @@ if name == &#39;Monica&#39;:  print(&#39;Hi, Monica.&#39;) elif age &lt; 12:  pr
 <!-- -->
 <pre><code>a = 321 try:  print(len(a)) except:  print(&#39;Silently handle error here&#39;)   # Optionally include a correction to the issue  a = str(a)  print(len(a)
 
-a = &#39;321&#39; try:  print(len(a)) except:  print(&#39;Silently handle error here&#39;)   # Optionally include a correction to the issue  a = str(a)  print(len(a))</code></pre>
+a = &#39;321&#39; try: print(len(a)) except: print(&#39;Silently handle error here&#39;) # Optionally include a correction to the issue a = str(a) print(len(a))</code></pre>
+
 <ul>
 <li><span id="77e7">You can name an error to give the output more specificity.</span></li>
 </ul>
@@ -11198,7 +11347,8 @@ a = &#39;321&#39; try:  print(len(a)) except:  print(&#39;Silently handle error 
 <!-- -->
 <pre><code>if (true) { }  while (true) {}
 
-if True:  pass  while True:  pass</code></pre>
+if True: pass while True: pass</code></pre>
+
 <hr />
 <h3 id="functions-4">Functions</h3>
 <ul>
@@ -11319,6 +11469,7 @@ if True:  pass  while True:  pass</code></pre>
 <pre><code>range(5) # [0, 1, 2, 3, 4] range(1,5) # [1, 2, 3, 4] range(0, 25, 5) # [0, 5, 10, 15, 20] range(0) # [ ]
 
 for let (i = 0; i &lt; 5; i++) for let (i = 1; i &lt; 5; i++) for let (i = 0; i &lt; 25; i+=5) for let(i = 0; i = 0; i++)</code></pre>
+
 <ul>
 <li><span id="a9ff">Keep in mind that <code>stop</code> is not included in the range.</span></li>
 <li><span id="c5a2"><br />
@@ -11605,7 +11756,8 @@ for let (i = 0; i &lt; 5; i++) for let (i = 1; i &lt; 5; i++) for let (i = 0; i 
 <!-- -->
 <pre><code>class AngryBird {  constructor() {  this.x = 0;  this.y = 0;  } }
 
-class AngryBird:  def __init__(self):  &quot;&quot;&quot;  Construct a new AngryBird by setting its position to (0, 0).  &quot;&quot;&quot;  self.x = 0  self.y = 0</code></pre>
+class AngryBird: def **init**(self): &quot;&quot;&quot; Construct a new AngryBird by setting its position to (0, 0). &quot;&quot;&quot; self.x = 0 self.y = 0</code></pre>
+
 <ul>
 <li><span id="a9b1">Both JS and PY use the <code>class</code> keyword to declare classes.</span></li>
 <li><span id="a7a0"><code>constructor</code> == <code>__init__</code></span></li>
@@ -11614,7 +11766,8 @@ class AngryBird:  def __init__(self):  &quot;&quot;&quot;  Construct a new Angry
 <!-- -->
 <pre><code>bird = AngryBird() print(bird.x, bird.y) #&gt; 0 0
 
-class AngryBird:  def __init__(self):  &quot;&quot;&quot;  Construct a new AngryBird by setting its position to (0, 0).  &quot;&quot;&quot;  self.x = 0  self.y = 0   def move_up_by(self, delta):  self.y += delta</code></pre>
+class AngryBird: def **init**(self): &quot;&quot;&quot; Construct a new AngryBird by setting its position to (0, 0). &quot;&quot;&quot; self.x = 0 self.y = 0 def move_up_by(self, delta): self.y += delta</code></pre>
+
 <ul>
 <li><span id="61dc">Note how you do not need to define <code>self</code> it is already bound to the class.</span></li>
 <li><span id="9edd"><br />
@@ -11737,36 +11890,37 @@ router.use(&#39;/api&#39;, apiRouter);
 // Static routes
 // Serve React build files in production
 if (process.env.NODE_ENV === &#39;production&#39;) {
-  const path = require(&#39;path&#39;);
-  // Serve the frontend&#39;s index.html file at the root route
-  router.get(&#39;/&#39;, (req, res) =&gt; {
-    res.cookie(&#39;XSRF-TOKEN&#39;, req.csrfToken());
-    res.sendFile(
-      path.resolve(__dirname, &#39;../../frontend&#39;, &#39;build&#39;, &#39;index.html&#39;)
-    );
-  });
+const path = require(&#39;path&#39;);
+// Serve the frontend&#39;s index.html file at the root route
+router.get(&#39;/&#39;, (req, res) =&gt; {
+res.cookie(&#39;XSRF-TOKEN&#39;, req.csrfToken());
+res.sendFile(
+path.resolve(\_\_dirname, &#39;../../frontend&#39;, &#39;build&#39;, &#39;index.html&#39;)
+);
+});
 
-  // Serve the static assets in the frontend&#39;s build folder
-  router.use(express.static(path.resolve(&quot;../frontend/build&quot;)));
+// Serve the static assets in the frontend&#39;s build folder
+router.use(express.static(path.resolve(&quot;../frontend/build&quot;)));
 
-  // Serve the frontend&#39;s index.html file at all other routes NOT starting with /api
-  router.get(/^(?!\/?api).*/, (req, res) =&gt; {
-    res.cookie(&#39;XSRF-TOKEN&#39;, req.csrfToken());
-    res.sendFile(
-      path.resolve(__dirname, &#39;../../frontend&#39;, &#39;build&#39;, &#39;index.html&#39;)
-    );
-  });
+// Serve the frontend&#39;s index.html file at all other routes NOT starting with /api
+router.get(/^(?!\/?api).\*/, (req, res) =&gt; {
+res.cookie(&#39;XSRF-TOKEN&#39;, req.csrfToken());
+res.sendFile(
+path.resolve(\_\_dirname, &#39;../../frontend&#39;, &#39;build&#39;, &#39;index.html&#39;)
+);
+});
 }
 
 // Add a XSRF-TOKEN cookie in development
 if (process.env.NODE_ENV !== &#39;production&#39;) {
-  router.get(&#39;/api/csrf/restore&#39;, (req, res) =&gt; {
-    res.cookie(&#39;XSRF-TOKEN&#39;, req.csrfToken());
-    res.status(201).json({});
-  });
+router.get(&#39;/api/csrf/restore&#39;, (req, res) =&gt; {
+res.cookie(&#39;XSRF-TOKEN&#39;, req.csrfToken());
+res.status(201).json({});
+});
 }
 
 module.exports = router;</code></pre>
+
 <p>Your Express backend’s <code>package.json</code> should include scripts to run the <code>sequelize</code> CLI commands.</p>
 <p>The <code>backend/package.json</code>’s scripts should now look like this:</p>
 <pre><code>&quot;scripts&quot;: {
@@ -11864,6 +12018,7 @@ Will generate</p>
 
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
+
 <h3 id="child-items">Child items</h3>
 <p>Child items are created using <code>&gt;</code></p>
 <p><code>ul&gt;li&gt;p</code></p>
@@ -11881,6 +12036,7 @@ Will generate</p>
 
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
+
 <h3 id="multiplication">Multiplication</h3>
 <p>Items can be multiplied by <code>*</code></p>
 <p><code>ul&gt;li*5</code></p>
@@ -12390,6 +12546,7 @@ age SMALLINT,
 person_id INTEGER,
 FOREIGN KEY (person_id) REFERENCES people (id)
 );</code></pre>
+
 <p><strong>SQL is not case sensitive for its keywords but is for its entity names</strong></p>
 <ul>
 <li><span id="7749">Exactly as the LO states, CREATE TABLE and create table are interpreted the same way. Using capitalization is a good convention in order to distinguish your keywords.</span></li>
@@ -12540,6 +12697,7 @@ UPDATE cities
 SET city = ‘New York City’
 WHERE city = ‘New York’;
 ROLLBACK;</code></pre>
+
 <p><strong>How to apply indexes to tables to improve performance</strong></p>
 <ul>
 <li><span id="704c">An index can help optimize queries that we have to run regularly. If we are constantly looking up records in a table by a particular field (such as username or phone number), we can add an index in order to speed up this process.</span></li>
@@ -12590,6 +12748,7 @@ const results = await pool.query(allAirportsSql);
 console.log(results.rows);
 pool.end(); // invoking end() will close our connection to the database
 }</code></pre>
+
 <p>selectAllAirports();</p>
 <ul>
 <li><span id="edf8">The return value of this asynchronous function is an object with a rows key that points to an array of objects, each object representing a record with field names as keys.</span></li>
@@ -12638,6 +12797,7 @@ selectAirportsByName(name);</code></pre>
 CREATE DATABASE example_app_test WITH OWNER example_user
 
 CREATE DATABASE example_app_production WITH OWNER example_user</code></pre>
+
 <ul>
 <li><span id="ae27">If we don t create these databases now, we could also create them after we make our changes to our config file. If we take this approach, we need to make sure our user that we created has the CREATEDB option when we make them, since sequelize will attempt to make the databases with this user. This other approach would look like:</span></li>
 <li><span id="f6a3">In psql: CREATE USER example_user WITH PASSWORD ‘badpassword’ CREATEDB</span></li>
@@ -12695,6 +12855,7 @@ CREATE DATABASE example_app_production WITH OWNER example_user</code></pre>
 <pre><code>npx sequelize-cli db:migrate:undo
 
 npx sequelize-cli db:migrate:undo:all</code></pre>
+
 <p><strong>Models Validations and Associations</strong></p>
 <ul>
 <li><span id="a4dd">In addition to the migration files, our model:generate command also created a model file for us. This file is what allows sequelize to transform the results of its SQL queries into useful JavaScript objects for us.</span></li>
@@ -12763,6 +12924,7 @@ foreignKey: ‘petId’
 }
 
 Pet.belongsToMany( models.Owner, columnMapping );</code></pre>
+
 <h3 id="how-to-perform-crud-operations-with-sequelize"><strong>How to perform CRUD operations with Sequelize</strong></h3>
 <ul>
 <li><span id="fc1a">Seed Files</span></li>
@@ -12865,6 +13027,7 @@ console.log(JSON.stringify(cats, null, 2));</code></pre>
 console.log(JSON.stringify(cats, null, 2));
 
 console.log(JSON.stringify(cats, null, 2));</code></pre>
+
 <p><strong>AND in the WHERE clause</strong></p>
 <ul>
 <li><span id="afbb">Providing additional key/value pairs to the where object indicates all filters must match</span></li>
@@ -13247,12 +13410,14 @@ console.log(petPOJO); // { name: &quot;Fido&quot;, petTypeId: 1 }</code></pre>
 return await Recipe.findAll();
 
 }</code></pre>
+
 <p>If you would like to include all the ingredients so you can create a shopping list for all the recipes, you would use <code>include</code>. This is possible because of the association you have defined in your Recipe and Ingredient models.</p>
 <pre><code>async function getShoppingList() {
 
 return await Recipe.findAll({ include: [ Ingredient ] });
 
 }</code></pre>
+
 <p>If you only want to find one where there is chicken in the ingredients list, you would use <code>findOne</code> and <code>findByPk</code>.</p>
 <pre><code>async function findAChickenRecipe() {
 
@@ -13269,22 +13434,26 @@ foodStuff: &#39;chicken&#39;
 return await Recipe.findByPk(chickenRecipe.recipeId);
 
 }</code></pre>
+
 <h3 id="data-access-to-createupdatedelete-rows">Data Access to Create/Update/Delete Rows</h3>
 <p>You have two options when you want to create a row in a table (where you are saving one record into the table). You can either <code>.build</code> the row and then <code>.save</code> it, or you can <code>.create</code> it. Either way it does the same thing. Here are some examples:</p>
 <p>Let’s say we have a form that accepts the name of the recipe (for simplicity). When we get the results of the form, we can:</p>
 <pre><code>const newRecipe = await Recipe.build({ title: &#39;Chicken Noodle Soup&#39; });
 
 await newRecipe.save();</code></pre>
+
 <p>This just created our new recipe and added it to our Recipes table. You can do the same thing like this:</p>
 <pre><code>await Recipe.create({ title: &#39;Chicken Noodle Soup&#39; });</code></pre>
 <p>If you want to modify an item in your table, you can use <code>update</code>. Let’s say we want to change the chicken noodle soup to chicken noodle soup with extra veggies, first we need to get the recipe, then we can update it.</p>
 <pre><code>const modRecipe = await Recipe.findOne({ where: { title: &#39;Chicken Noodle Soup&#39; } });
 
 await modRecipe.update({ title: &#39;Chicken Noodle Soup with Extra Veggies&#39; });</code></pre>
+
 <p>To delete an item from your table, you will do the same kind of process. Find the recipe you want to delete and <code>destroy</code> it, like this:</p>
 <pre><code>const deleteThis = await Recipe.findOne({ where: { title: &#39;Chicken Noodle Soup with Extra Veggies&#39; } });
 
 await deleteThis.destroy();</code></pre>
+
 <p><strong>NOTE:</strong> If you do not await these, you will receive a promise, so you will need to use <code>.then</code> and <code>.catch</code> to do more with the items you are accessing and modifying.</p>
 <h3 id="documentation">Documentation</h3>
 <p>For the data types and validations in your models, here are the official docs. The sequelize docs are hard to look at, so these are the specific sections with just the lists:<br />
@@ -14230,6 +14399,7 @@ router.use(&#39;/clients&#39;, clientRoutes);
 
 // after the route has been fully configured, we then export it so it can be required where needed
 module.exports = router; // standard convention dictates that this is the last line on the file</code></pre>
+
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" />
 </figure>
@@ -14444,6 +14614,7 @@ function update(changes, id) {
 
 function remove(id) {
 }</code></pre>
+
 <p>Each of these functions would use Knex logic to perform the necessary database operation.</p>
 <pre><code>function find() {
   return db(&#39;users&#39;);
@@ -14472,12 +14643,13 @@ function remove(id) {
 <pre><code>const User = require(&#39;./user-model.js&#39;);
 
 router.get(&#39;/&#39;, (req, res) =&gt; {
-  User.find()
-    .then(users =&gt; {
-      res.json(users);
-    })
-    .catch(&amp;nbsp;err =&gt; {});
+User.find()
+.then(users =&gt; {
+res.json(users);
+})
+.catch(&amp;nbsp;err =&gt; {});
 });</code></pre>
+
 <p>There should no be <code>knex</code> code in the endpoints themselves.</p>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/1*9xpwm_56lgvHkFTKsmoMqg.gif" class="graf-image" />
@@ -14651,14 +14823,15 @@ where CustomerName = &#39;WebDev School`;</code></pre>
 <pre><code>const knex = require(&#39;knex&#39;);
 
 const config = {
-  client: &#39;sqlite3&#39;,
-  connection: {
-    filename: &#39;./data/posts.db3&#39;,
-  },
-  useNullAsDefault: true,
+client: &#39;sqlite3&#39;,
+connection: {
+filename: &#39;./data/posts.db3&#39;,
+},
+useNullAsDefault: true,
 };
 
 module.exports = knex(config);</code></pre>
+
 <p>To use the query builder elsewhere in our code, we need to call <code>knex</code> and pass in a <code>config</code> object. We’ll be discussing Knex configuration more in a future module. Still, we only need the <code>client</code>, <code>connection</code>, and <code>useNullAsDefault</code> keys as shown above. The <code>filename</code> should point towards the pre-existing database file, which can be recognized by the <code>.db3</code> extension.</p>
 <p><strong>GOTCHA</strong>: The file path to the database should be with respect to the <strong>root</strong> of the repo, not the configuration file itself.</p>
 <p>Once Knex is configured, we can import the above config file anywhere in our codebase to access the database.</p>
@@ -14688,17 +14861,18 @@ module.exports = knex(config);</code></pre>
   const { id } = req.params;
 
 db(&#39;users&#39;).where({ id })
-  .then(users =&gt; {
-    // we must check the length to find our if our user exists
-    if (users.length) {
-      res.json(users);
-    } else {
-      res.status(404).json({ message: &#39;Could not find user with given id.&#39; })
-   })
-  .catch (err =&gt; {
-    res.status(500).json({ message: &#39;Failed to get user&#39; });
-  });
+.then(users =&gt; {
+// we must check the length to find our if our user exists
+if (users.length) {
+res.json(users);
+} else {
+res.status(404).json({ message: &#39;Could not find user with given id.&#39; })
+})
+.catch (err =&gt; {
+res.status(500).json({ message: &#39;Failed to get user&#39; });
+});
 });</code></pre>
+
 <h3 id="insert-using-knex">INSERT using Knex</h3>
 <p>In Knex, the equivalent of <code>INSERT INTO users (name, age) VALUES ('Eva',                   32)</code> is:</p>
 <pre><code>db(&#39;users&#39;).insert({ name: &#39;Eva&#39;, age: 32 });</code></pre>
@@ -14804,28 +14978,30 @@ db(&#39;users&#39;).where({ id })
 <pre><code>module.exports = {
 
 development: {
-    client: &#39;sqlite3&#39;,
-    connection: {
-      filename: &#39;./dev.sqlite3&#39;
-    }
-  }
+client: &#39;sqlite3&#39;,
+connection: {
+filename: &#39;./dev.sqlite3&#39;
+}
+}
 
 };</code></pre>
+
 <p>We’ll need to update the location (or desired location) of the database as well as add the <code>useNullAsDefault</code> option. The latter option prevents crashes when working with <code>sqlite3</code>.</p>
 <pre><code>module.exports = {
 
 development: {
-    // our DBMS driver
-    client: &#39;sqlite3&#39;,
-    // the location of our db
-    connection: {
-      filename: &#39;./data/database_file.db3&#39;,
-    },
-    // necessary when using sqlite3
-    useNullAsDefault: true
-  }
+// our DBMS driver
+client: &#39;sqlite3&#39;,
+// the location of our db
+connection: {
+filename: &#39;./data/database_file.db3&#39;,
+},
+// necessary when using sqlite3
+useNullAsDefault: true
+}
 
 };</code></pre>
+
 <p>Now, wherever we configure our database, we may use the following syntax instead of hardcoding in a config object.</p>
 <pre><code>const knex = require(&#39;knex&#39;);
 
@@ -14836,6 +15012,7 @@ const db = knex(config.development);
 
 // export for use in codebase
 module.exports = db;</code></pre>
+
 <h3 id="knex-migrations">Knex Migrations</h3>
 <p>Once our <code>knexfile</code> is set up, we can begin creating <strong>migrations</strong>. Though it’s not required, we are going to add an <code>addition</code> option to the config object to specify a directory for the migration files.</p>
 <pre><code>development: {
@@ -14868,9 +15045,10 @@ module.exports = db;</code></pre>
 };
 
 exports.down = function(knex, Promise) {
-  // drops the entire table
-  return knex.schema.dropTableIfExists(&#39;accounts&#39;);
+// drops the entire table
+return knex.schema.dropTableIfExists(&#39;accounts&#39;);
 };</code></pre>
+
 <p>References for these methods are found in the <strong>schema builder</strong> section of the <a href="https://knexjs.org/" class="markup--anchor markup--p-anchor">Knex docs (Links to an external site.)</a>.</p>
 <p>At this point, the table is <strong>not</strong> yet created. To run this (and any other) migrations, use the command:</p>
 <p><code>knex migrate:latest</code></p>
@@ -14906,28 +15084,30 @@ exports.down = function(knex, Promise) {
 <pre><code>module.exports = {
 
 development: {
-    client: &#39;sqlite3&#39;,
-    connection: {
-      filename: &#39;./dev.sqlite3&#39;
-    }
-  }
+client: &#39;sqlite3&#39;,
+connection: {
+filename: &#39;./dev.sqlite3&#39;
+}
+}
 
 };</code></pre>
+
 <p>We’ll need to update the location (or desired location) of the database as well as add the <code>useNullAsDefault</code> option. The latter option prevents crashes when working with <code>sqlite3</code>.</p>
 <pre><code>module.exports = {
 
 development: {
-    // our DBMS driver
-    client: &#39;sqlite3&#39;,
-    // the location of our db
-    connection: {
-      filename: &#39;./data/database_file.db3&#39;,
-    },
-    // necessary when using sqlite3
-    useNullAsDefault: true
-  }
+// our DBMS driver
+client: &#39;sqlite3&#39;,
+// the location of our db
+connection: {
+filename: &#39;./data/database_file.db3&#39;,
+},
+// necessary when using sqlite3
+useNullAsDefault: true
+}
 
 };</code></pre>
+
 <p>Now, wherever we configure our database, we may use the following syntax instead of hardcoding in a config object.</p>
 <pre><code>const knex = require(&#39;knex&#39;);
 
@@ -14938,6 +15118,7 @@ const db = knex(config.development);
 
 // export for use in codebase
 module.exports = db;</code></pre>
+
 <h3 id="knex-migrations-1">Knex Migrations</h3>
 <p>Once our <code>knexfile</code> is set up, we can begin creating <strong>migrations</strong>. Though it’s not required, we are going to add an <code>addition</code> option to the config object to specify a directory for the migration files.</p>
 <pre><code>development: {
@@ -14970,9 +15151,10 @@ module.exports = db;</code></pre>
 };
 
 exports.down = function(knex, Promise) {
-  // drops the entire table
-  return knex.schema.dropTableIfExists(&#39;accounts&#39;);
+// drops the entire table
+return knex.schema.dropTableIfExists(&#39;accounts&#39;);
 };</code></pre>
+
 <p>References for these methods are found in the <strong>schema builder</strong> section of the <a href="https://knexjs.org/" class="markup--anchor markup--p-anchor">Knex docs (Links to an external site.)</a>.</p>
 <p>At this point, the table is <strong>not</strong> yet created. To run this (and any other) migrations, use the command:</p>
 <p><code>knex migrate:latest</code></p>
@@ -15167,6 +15349,7 @@ function update(changes, id) {
 
 function remove(id) {
 }</code></pre>
+
 <p>Each of these functions would use Knex logic to perform the necessary database operation.</p>
 <pre><code>function find() {
   return db(&#39;users&#39;);
@@ -15195,12 +15378,13 @@ function remove(id) {
 <pre><code>const User = require(&#39;./user-model.js&#39;);
 
 router.get(&#39;/&#39;, (req, res) =&gt; {
-  User.find()
-    .then(users =&gt; {
-      res.json(users);
-    })
-    .catch(&amp;nbsp;err =&gt; {});
+User.find()
+.then(users =&gt; {
+res.json(users);
+})
+.catch(&amp;nbsp;err =&gt; {});
 });</code></pre>
+
 <p>There should no be <code>knex</code> code in the endpoints themselves.</p>
 <hr />
 <h3 id="section-21"></h3>
@@ -15365,9 +15549,10 @@ router.get(&#39;/&#39;, (req, res) =&gt; {
     .inTable(&#39;animals&#39;)
 
 // the combination of the two keys becomes our primary key
-  // will enforce unique combinations of ids
-  tbl.primary([&#39;farm_id&#39;, &#39;animal_id&#39;]);
+// will enforce unique combinations of ids
+tbl.primary([&#39;farm_id&#39;, &#39;animal_id&#39;]);
 });</code></pre>
+
 <h3 id="seeds">Seeds</h3>
 <p>Order is also a concern when seeding. We want to create seeds in the <strong>same</strong> order we created our tables. In other words, don’t create a seed with a foreign key, until that reference record exists.</p>
 <p>In our example, make sure to write the <code>01-farms</code> seed file and then the <code>02-ranchers</code> seed file.</p>
@@ -15376,11 +15561,12 @@ router.get(&#39;/&#39;, (req, res) =&gt; {
 <pre><code>const cleaner = require(&#39;knex-cleaner&#39;);
 
 exports.seed = function(knex) {
-  return cleaner.clean(knex, {
-    mode: &#39;truncate&#39;, // resets ids
-    ignoreTables: [&#39;knex_migrations&#39;, &#39;knex_migrations_lock&#39;], // don&#39;t empty migration tables
-  });
+return cleaner.clean(knex, {
+mode: &#39;truncate&#39;, // resets ids
+ignoreTables: [&#39;knex_migrations&#39;, &#39;knex_migrations_lock&#39;], // don&#39;t empty migration tables
+});
 };</code></pre>
+
 <p>This removes all tables (excluding the two tables that track migrations) in the correct order before any seed files run.</p>
 <h3 id="cascading">Cascading</h3>
 <p>If a user attempt to delete a record that is referenced by another record (such as attempting to delete <code>Morton Ranch</code> when entries in our <code>ranchers</code> table reference that record), by default, the database will block the action. The same thing can happen when updating a record when a foreign key reference.</p>
@@ -15415,6 +15601,7 @@ app.enable(&#39;trust proxy&#39;)
 app.disable(&#39;trust proxy&#39;)
 
 app.enabled(&#39;trust proxy&#39;) //=&gt; true</code></pre>
+
 <h3 id="enviorment">Enviorment</h3>
 <pre><code>app.get(&#39;env&#39;)</code></pre>
 <h3 id="config">Config</h3>
@@ -15447,7 +15634,7 @@ req.cookies
 
 req.accepted
 // [ { value: &#39;application/json&#39;, quality: 1, type: &#39;application&#39;, subtype: &#39;json&#39; },
-//   { value: &#39;text/html&#39;, quality: 0.5, type: &#39;text&#39;,subtype: &#39;html&#39; } ]
+// { value: &#39;text/html&#39;, quality: 0.5, type: &#39;text&#39;,subtype: &#39;html&#39; } ]
 
 req.is(&#39;html&#39;)
 req.is(&#39;text/html&#39;)
@@ -15457,6 +15644,7 @@ req.headers[&#39;host&#39;]
 req.headers[&#39;user-agent&#39;]
 req.headers[&#39;accept-encoding&#39;]
 req.headers[&#39;accept-language&#39;]</code></pre>
+
 <h3 id="response">Response</h3>
 <pre><code>res.redirect(&#39;/&#39;)
 res.redirect(301, &#39;/&#39;)
@@ -15467,6 +15655,7 @@ res.send(&#39;hi&#39;)
 res.send(200, &#39;hi&#39;)
 
 res.json({ a: 2 })</code></pre>
+
 <p>By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on <a href="https://medium.com/p/8f93762c59ca">March 5, 2021</a>.</p>
 <p><a href="https://medium.com/@bryanguner/express-quick-sheet-8f93762c59ca" class="p-canonical">Canonical link</a></p>
 <p>Exported from <a href="https://medium.com">Medium</a> on August 17, 2021.</p>
@@ -15688,35 +15877,38 @@ tag as well as any white space around the entry for the data value.</p>
                    //   (&#39;cors&#39; &#39;default&#39; &#39;error&#39;
                    //    &#39;opaque&#39; &#39;opaqueredirect&#39;)
 
-  res.headers.get(&#39;Content-Type&#39;)
+res.headers.get(&#39;Content-Type&#39;)
 })</code></pre>
+
 <h3 id="request-options">Request options</h3>
 <pre><code>fetch(&#39;/data.json&#39;, {
   method: &#39;post&#39;,
   body: new FormData(form), // post body
   body: JSON.stringify(...),
 
-  headers: {
-    &#39;Accept&#39;: &#39;application/json&#39;
-  },
+headers: {
+&#39;Accept&#39;: &#39;application/json&#39;
+},
 
-  credentials: &#39;same-origin&#39;, // send cookies
-  credentials: &#39;include&#39;,     // send cookies, even in CORS
+credentials: &#39;same-origin&#39;, // send cookies
+credentials: &#39;include&#39;, // send cookies, even in CORS
 
 })</code></pre>
+
 <h3 id="catching-errors">Catching errors</h3>
 <pre><code>fetch(&#39;/data.json&#39;)
   .then(checkStatus)
 
 function checkStatus (res) {
-  if (res.status &gt;= 200 &amp;&amp; res.status &lt; 300) {
-    return res
-  } else {
-    let err = new Error(res.statusText)
-    err.response = res
-    throw err
-  }
+if (res.status &gt;= 200 &amp;&amp; res.status &lt; 300) {
+return res
+} else {
+let err = new Error(res.statusText)
+err.response = res
+throw err
+}
 }</code></pre>
+
 <p>Non-2xx responses are still successful requests. Use another function to turn them to errors.</p>
 <h3 id="using-with-node.js">Using with node.js</h3>
 <pre><code>const fetch = require(&#39;isomorphic-fetch&#39;)</code></pre>
@@ -16780,20 +16972,18 @@ console.log(secondEl); // =&gt; 9
 
 // can also destructure using … syntax let array = [35, 9, 14]; let [head, …tail] = array; console.log(head); // =&gt; 35 console.log(tail); // =&gt; [9, 14]
 
--Destructure an object to reference specific values
-    -
-    if you want to use variable names that don &#39;t match the keys, you can use aliasing -
-    `let { oldkeyname: newkeyname } = object` -
-    rule of thumb— only destructure values from objects that are two levels deep ``
-`javascript
+-Destructure an object to reference specific values -
+if you want to use variable names that don &#39;t match the keys, you can use aliasing -
+`let { oldkeyname: newkeyname } = object` -
+rule of thumb— only destructure values from objects that are two levels deep `` `javascript
 let obj = {
-   name: &quot;Wilfred&quot;,
-   appearance: [&quot;short&quot;, &quot;mustache&quot;],
-   favorites: {
-      color: &quot;mauve&quot;,
-      food: &quot;spaghetti squash&quot;,
-      number: 3
-   }
+name: &quot;Wilfred&quot;,
+appearance: [&quot;short&quot;, &quot;mustache&quot;],
+favorites: {
+color: &quot;mauve&quot;,
+food: &quot;spaghetti squash&quot;,
+number: 3
+}
 }
 // with variable names that match keys
 let { name, appearance } = obj;
@@ -16814,6 +17004,7 @@ console.log(&quot;Hello, &quot; + name); // &quot;Hello Wilfred&quot;
 // nested objects + aliasing
 let { favorites: {color, food: vegetable} } = obj;
 console.log(color, vegetable); //=&gt; mauve spaghetti squash</code></pre>
+
 <h4 id="write-a-function-that-accepts-a-array-as-an-argument-and-returns-an-object-representing-the-count-of-each-character-in-the-array-1">Write a function that accepts a array as an argument and returns an object representing the count of each character in the array</h4>
 <pre><code>//
   let elementCounts = function(array) {
@@ -16844,11 +17035,12 @@ console.log(color, vegetable); //=&gt; mauve spaghetti squash</code></pre>
 }
 
 let greaterCB = function(val, callback1, callback2) {
-    if (callback1(val) &gt; callback2(val)) {
-        return callback1(val);
-    }
-    return callback2(val);
+if (callback1(val) &gt; callback2(val)) {
+return callback1(val);
+}
+return callback2(val);
 }</code></pre>
+
 <p>// shorter version let greaterCB = function(val, callback1, callback2) { return Math.max(callback1(val), callback2(val)); } // even shorter, cause why not let greaterCB = (val, cb1, cb2) =&gt; Math.max(cb1(val), cb2(val));</p>
 <pre><code>-Write a
 function, myMap, that takes in an array and a callback as arguments.The
@@ -16866,13 +17058,14 @@ let myMap = function(array, callback) {
 console.log( myMap([16,25,36], Math.sqrt)); // =&gt; [4, 5, 6];
 
 let myMapArrow = (array, callback) =&gt; {
-   let newArr = [];
-   array.forEach( (ele, ind, array) =&gt; {
-      newArr.push(callback(ele, ind, array));
-   })
-   return newArr;
+let newArr = [];
+array.forEach( (ele, ind, array) =&gt; {
+newArr.push(callback(ele, ind, array));
+})
+return newArr;
 }
 console.log(myMapArrow([16,25,36], Math.sqrt)); // =&gt; [4, 5, 6];</code></pre>
+
 <h4 id="write-a-function-myfilter-that-takes-in-an-array-and-a-callback-as-arguments.-the-function-should-mimic-the-behavior-of-arrayfilter.-1">Write a function, myFilter, that takes in an array and a callback as arguments. The function should mimic the behavior of <code>Array#filter</code>.</h4>
 <pre><code>let myFilter = function(array, callback) {
       let filtered = [];
@@ -16943,6 +17136,7 @@ return sum;
 // if your return statement is one line, you can use implied return let arrowFunction = param =&gt; param + 1;
 
 // you don’t have to assign to variable, can be anonymous // if you never need to use it again param =&gt; param + 1;</code></pre>
+
 <h4 id="given-an-arrow-function-deduce-the-value-of-this-without-executing-the-code-2">Given an arrow function, deduce the value of <code>this</code> without executing the code</h4>
 <ul>
 <li><span id="0ee6">arrow functions are automatically bound to the context they were declared in.</span></li>
@@ -16963,14 +17157,14 @@ return this.name;
 boundToGlobal: () =&gt; { return this.name; // this function, no matter how you call it, will be called // on the global object, and it cannot be rebound // this is because it was defined using arrow syntax },
 
 makeFuncBoundToObj: function() {
-        return () =&gt; {
-            return this.name;
-        }
-        // this function will return a function that will be bound
-        // to the object where we call the outer method
-        // because the arrow syntax is nested inside one of this
-        // function&#39;s methods, it cannot be rebound
-    },
+return () =&gt; {
+return this.name;
+}
+// this function will return a function that will be bound
+// to the object where we call the outer method
+// because the arrow syntax is nested inside one of this
+// function&#39;s methods, it cannot be rebound
+},
 
     makeUnboundFunc: function() {
         return function() {
@@ -16996,6 +17190,7 @@ makeFuncBoundToObj: function() {
     let otherObj = {
         name: &quot;my other object&quot;
     }
+
 // call unboundFunc on obj, we get &quot;my object&quot; console.log(&quot;unboundFunc: &quot;, obj.unboundFunc()); // =&gt; &quot;my object&quot; // assign unboundFunc to a variable and call it let newFunc = obj.unboundFunc; // this newFunc will default to being called on global object console.log(&quot;newFunc: &quot;,newFunc()); // =&gt; undefined // but you could bind it directly to a different object if you wanted console.log(&quot;newFunc: &quot;, newFunc.bind(otherObj)()); // &quot;my other object&quot;
 // meanwhile, obj.boundToGlobal will only ever be called on global object console.log(&quot;boundToGlobal: &quot;, obj.boundToGlobal()); //=&gt; undefined let newBoundFunc = obj.boundToGlobal; console.log(&quot;newBoundFunc: &quot;, newBoundFunc()); // =&gt; undefined // even if you try to directly bind to another object, it won&#39;t work! console.log(&quot;newBoundFunc: &quot;, newBoundFunc.bind(otherObj)()); // =&gt; undefined
 // let&#39;s make a new function that will always be bound to the context // where we call our function maker let boundFunc = obj.makeFuncBoundToObj();// note that we&#39;re invoking, not just assigning console.log(&quot;boundFunc: &quot;, boundFunc()); // =&gt; &quot;my object&quot; // we can&#39;t rebind this function console.log(&quot;boundFunc: &quot;, boundFunc.bind(otherObj)()) // =&gt;&quot;my object&quot;
@@ -17005,45 +17200,42 @@ makeFuncBoundToObj: function() {
 
 }
 
--Implement a closure and explain how the closure effects scope
-    -
-    a closure is &quot;the combination of a function and the lexical environment within which that function was declared&quot; -
-    alternatively, &quot;when an inner function uses or changes variables in an outer function&quot; -
-    closures have access to any variables within their own scope + scope of outer functions + global scope— the set of all these available variables is &quot;lexical environemnt&quot; -
-    closure keeps reference to all variables ** even
+-Implement a closure and explain how the closure effects scope -
+a closure is &quot;the combination of a function and the lexical environment within which that function was declared&quot; -
+alternatively, &quot;when an inner function uses or changes variables in an outer function&quot; -
+closures have access to any variables within their own scope + scope of outer functions + global scope— the set of all these available variables is &quot;lexical environemnt&quot; -
+closure keeps reference to all variables ** even
 if the outer
 function has returned **
-    -each
-function has a private mutable state that cannot be accessed externally
-    -
-    the inner
+-each
+function has a private mutable state that cannot be accessed externally -
+the inner
 function will maintain a reference to the scope in which it was declared.so it has access to variables that were initialized in any outer scope— even
-if that scope
-    -
-    if a variable exists in the scope of what could have been accessed by a
+if that scope -
+if a variable exists in the scope of what could have been accessed by a
 function(e.g.global scope, outer
-    function, etc), does that variable wind up in the closure even
-if it never got accessed ?
-    -
-    if you change the value of a variable(e.g.i++) you will change the value of that variable in the scope that it was declared in
+function, etc), does that variable wind up in the closure even
+if it never got accessed ? -
+if you change the value of a variable(e.g.i++) you will change the value of that variable in the scope that it was declared in
 
     ``
+
 `javascript
 function createCounter() {
-   // this function starts a counter at 0, then returns a
-   // new function that can access and change that counter
-   //
-   // each new counter you create will have a single internal
-   // state, that can be changed only by calling the function.
-   // you can&#39;t access that state from outside of the function,
-   // even though the count variable in question is initialized
-   // by the outer function, and it remains accessible to the
-   // inner function after the outer function returns.
-   let count = 0;
-   return function() {
-      count ++;
-      return count;
-   }
+// this function starts a counter at 0, then returns a
+// new function that can access and change that counter
+//
+// each new counter you create will have a single internal
+// state, that can be changed only by calling the function.
+// you can&#39;t access that state from outside of the function,
+// even though the count variable in question is initialized
+// by the outer function, and it remains accessible to the
+// inner function after the outer function returns.
+let count = 0;
+return function() {
+count ++;
+return count;
+}
 }
 
 let counter = createCounter();
@@ -17078,6 +17270,7 @@ console.log(counter2()); // =&gt; 1
 // the internal state is shared with the new function
 let counter3 = counter2;
 console.log(counter3());</code></pre>
+
 <h4 id="define-a-method-that-references-this-on-an-object-literal-2">Define a method that references <code>this</code> on an object literal</h4>
 <ul>
 <li><span id="ae61">when we use <code>this</code> in a method it refers to the object that the method is invoked on</span></li>
@@ -17100,34 +17293,32 @@ console.log(counter3());</code></pre>
   };
   let sayMeow = cat.purrMore; console.log(sayMeow()); // TypeError: this.purr is not a function
 
-  // we can use the built in Function.bind to ensure our context, our this, // is the cat object let boundCat = sayMeow.bind(cat);
-  boundCat(); // prints &quot;meow&quot;
+// we can use the built in Function.bind to ensure our context, our this, // is the cat object let boundCat = sayMeow.bind(cat);
+boundCat(); // prints &quot;meow&quot;
 
 -`bind`
-   can also work with arguments, so you can have a version of a
-   function with particular arguments and a particular context.the first arg will be the context aka the `this`
-   you want it to use.the next arguments will be the functions arguments that you are binding -
-       if you just want to bind it to those arguments in particular, you can use `null`
-   as the first argument, so the context won &#39;t be bound, just the arguments -
-       Given a code snippet, identify what `this`
-   refers to
-       -
-       important to recognize the difference between scope and context -
-       scope works like a dictionary that has all the variables that are available within a given block, plus a pointer back the next outer scope(which itself has pointers to new scopes until you reach the global scope.so you can think about a whole given block &#39;s scope as a kind of linked list of dictionaries) (also, this is not to say that scope is actually implemented in this way, that is just the schema that i can use to understand it) -
-           context refers to the value of the `this`
-           keyword -
-           the keyword `this`
-           exists in every
-           function and it evaluates to the object that is currently invoking that
-           function -so the context is fairly straightforward when we talk about methods being called on specific objects -
-           you could, however, call an object &#39;s method on something other than that object, and then this would refer to the context where/how it was called, e.g.
-           ``
-           `javascript
+can also work with arguments, so you can have a version of a
+function with particular arguments and a particular context.the first arg will be the context aka the `this`
+you want it to use.the next arguments will be the functions arguments that you are binding -
+if you just want to bind it to those arguments in particular, you can use `null`
+as the first argument, so the context won &#39;t be bound, just the arguments -
+Given a code snippet, identify what `this`
+refers to -
+important to recognize the difference between scope and context -
+scope works like a dictionary that has all the variables that are available within a given block, plus a pointer back the next outer scope(which itself has pointers to new scopes until you reach the global scope.so you can think about a whole given block &#39;s scope as a kind of linked list of dictionaries) (also, this is not to say that scope is actually implemented in this way, that is just the schema that i can use to understand it) -
+context refers to the value of the `this`
+keyword -
+the keyword `this`
+exists in every
+function and it evaluates to the object that is currently invoking that
+function -so the context is fairly straightforward when we talk about methods being called on specific objects -
+you could, however, call an object &#39;s method on something other than that object, and then this would refer to the context where/how it was called, e.g.
+`` `javascript
 let dog = {
-   name: &quot;Bowser&quot;,
-   changeName: function () {
-      this.name = &quot;Layla&quot;;
-  },
+name: &quot;Bowser&quot;,
+changeName: function () {
+this.name = &quot;Layla&quot;;
+},
 };
 
 // note this is **not invoked** - we are assigning the function itself
@@ -17138,7 +17329,8 @@ console.log(change()); // undefined
 console.log(dog); // { name: &#39;Bowser&#39;, changeName: [Function: changeName] }
 
 // instead of changing the dog we changed the global name!!!
-console.log(this); // Object [global] {etc, etc, etc,  name: &#39;Layla&#39;}</code></pre>
+console.log(this); // Object [global] {etc, etc, etc, name: &#39;Layla&#39;}</code></pre>
+
 <h3 id="calling-something-in-the-wrong-context-can-mess-you-up-1">CALLING SOMETHING IN THE WRONG CONTEXT CAN MESS YOU UP!</h3>
 <ul>
 <li><span id="b960">could throw an error if it expects this to have some other method or whatever that doesn’t exist</span></li>
@@ -17163,30 +17355,28 @@ console.log(this); // Object [global] {etc, etc, etc,  name: &#39;Layla&#39;}</c
 boundCat(); // prints “meow”
 
 -`bind`
-   can also work with arguments, so you can have a version of a
-   function with particular arguments and a particular context.the first arg will be the context aka the `this`
-   you want it to use.the next arguments will be the functions arguments that you are binding -
-       if you just want to bind it to those arguments in particular, you can use `null`
-   as the first argument, so the context won &#39;t be bound, just the arguments -
-       Given a code snippet, identify what `this`
-   refers to
-       -
-       important to recognize the difference between scope and context -
-       scope works like a dictionary that has all the variables that are available within a given block, plus a pointer back the next outer scope(which itself has pointers to new scopes until you reach the global scope.so you can think about a whole given block &#39;s scope as a kind of linked list of dictionaries) (also, this is not to say that scope is actually implemented in this way, that is just the schema that i can use to understand it) -
-           context refers to the value of the `this`
-           keyword -
-           the keyword `this`
-           exists in every
-           function and it evaluates to the object that is currently invoking that
-           function -so the context is fairly straightforward when we talk about methods being called on specific objects -
-           you could, however, call an object &#39;s method on something other than that object, and then this would refer to the context where/how it was called, e.g.
-           ``
-           `javascript
+can also work with arguments, so you can have a version of a
+function with particular arguments and a particular context.the first arg will be the context aka the `this`
+you want it to use.the next arguments will be the functions arguments that you are binding -
+if you just want to bind it to those arguments in particular, you can use `null`
+as the first argument, so the context won &#39;t be bound, just the arguments -
+Given a code snippet, identify what `this`
+refers to -
+important to recognize the difference between scope and context -
+scope works like a dictionary that has all the variables that are available within a given block, plus a pointer back the next outer scope(which itself has pointers to new scopes until you reach the global scope.so you can think about a whole given block &#39;s scope as a kind of linked list of dictionaries) (also, this is not to say that scope is actually implemented in this way, that is just the schema that i can use to understand it) -
+context refers to the value of the `this`
+keyword -
+the keyword `this`
+exists in every
+function and it evaluates to the object that is currently invoking that
+function -so the context is fairly straightforward when we talk about methods being called on specific objects -
+you could, however, call an object &#39;s method on something other than that object, and then this would refer to the context where/how it was called, e.g.
+`` `javascript
 let dog = {
-   name: &quot;Bowser&quot;,
-   changeName: function () {
-      this.name = &quot;Layla&quot;;
-  },
+name: &quot;Bowser&quot;,
+changeName: function () {
+this.name = &quot;Layla&quot;;
+},
 };
 
 // note this is **not invoked** - we are assigning the function itself
@@ -17197,7 +17387,8 @@ console.log(change()); // undefined
 console.log(dog); // { name: &#39;Bowser&#39;, changeName: [Function: changeName] }
 
 // instead of changing the dog we changed the global name!!!
-console.log(this); // Object [global] {etc, etc, etc,  name: &#39;Layla&#39;}</code></pre>
+console.log(this); // Object [global] {etc, etc, etc, name: &#39;Layla&#39;}</code></pre>
+
 <ul>
 <li><span id="48ab">CALLING SOMETHING IN THE WRONG CONTEXT CAN MESS YOU UP!</span></li>
 <li><span id="857d">could throw an error if it expects this to have some other method or whatever that doesn’t exist</span></li>
@@ -17233,15 +17424,17 @@ console.log(obj[myKey]);
 
 // Choose the dot property accessor when the property name is known ahead of time.
 console.log(obj.two);</code></pre>
+
 <h4 id="write-an-object-literal-with-a-variable-key-using-interpolation-1">3. Write an object literal with a variable key using interpolation</h4>
 <pre><code>let keyName = &quot;two&quot;;
 
 // If the key is not known, you can use an alternative `[]` syntax for
 // object initialization only
 let obj2 = {
-    [keyName]: 2
+[keyName]: 2
 }
 console.log(obj2);</code></pre>
+
 <h4 id="use-the-objkey-undefined-pattern-to-check-if-a-given-variable-that-contains-a-key-exists-in-an-object-1">4. Use the obj[key] !== undefined pattern to check if a given variable that contains a key exists in an object</h4>
 <pre><code>function doesKeyExist(obj, key) {
     // obj[key] !== undefined
@@ -17250,28 +17443,30 @@ console.log(obj2);</code></pre>
 }
 
 let course = {
-    bootcamp: &#39;Lambda&#39;,
-    course: &#39;Bootcamp Prep&#39;
+bootcamp: &#39;Lambda&#39;,
+course: &#39;Bootcamp Prep&#39;
 }
 console.log(doesKeyExist(course, &#39;course&#39;)); // =&gt; true
 console.log(doesKeyExist(course, &#39;name&#39;)); // =&gt; false</code></pre>
+
 <h4 id="utilize-object.keys-and-object.values-in-a-function-1">5. Utilize Object.keys and Object.values in a function</h4>
 <pre><code>function printKeys(object) {
     return Object.keys(object);
 }
 
 function printValues(object) {
-    return Object.values(object);
+return Object.values(object);
 }
 
 console.log(printKeys({
-    dog: &quot;Strelka&quot;,
-    dog2: &quot;Belka&quot;
+dog: &quot;Strelka&quot;,
+dog2: &quot;Belka&quot;
 }));
 console.log(printValues({
-    dog: &quot;Strelka&quot;,
-    dog2: &quot;Belka&quot;
+dog: &quot;Strelka&quot;,
+dog2: &quot;Belka&quot;
 }));</code></pre>
+
 <h4 id="iterate-through-an-object-using-a-for-in-loop-3">6. Iterate through an object using a for in loop</h4>
 <pre><code>let player = {
     name: &quot;Sergey&quot;,
@@ -17279,10 +17474,11 @@ console.log(printValues({
 };
 
 for (let key in player) {
-    console.log(key, player[key]);
+console.log(key, player[key]);
 }
 
 console.log(Object.entries(player));</code></pre>
+
 <h4 id="define-a-function-that-utilizes-rest-syntax-to-accept-an-arbitrary-number-of-arguments-1">7. Define a function that utilizes …rest syntax to accept an arbitrary number of arguments</h4>
 <pre><code>function restSum(...otherNums) {
     let sum = 0;
@@ -17292,11 +17488,13 @@ console.log(Object.entries(player));</code></pre>
     });
 
     return sum;
+
 }
 
 console.log(restSum(3, 5, 6)); // =&gt; 14
 console.log(restSum(1, 2, 3, 4, 5, 6, 7, 8, 9)); // =&gt; 45
 console.log(restSum(0)); // =&gt; 0</code></pre>
+
 <h4 id="use-spread-syntax-for-object-literals-and-array-literals-1">8. Use …spread syntax for Object literals and Array literals</h4>
 <pre><code>let numArray = [1, 2, 3];
 let moreNums = [...numArray, 4, 5, 6]
@@ -17304,24 +17502,26 @@ let moreNums = [...numArray, 4, 5, 6]
 console.log(moreNums);
 
 let shoe = {
-    color: &quot;red&quot;,
-    size: 10
+color: &quot;red&quot;,
+size: 10
 };
 let newShoe = {
-    ...shoe,
-    brand: &quot;Nike&quot;,
-    size: 12
+...shoe,
+brand: &quot;Nike&quot;,
+size: 12
 };
 console.log(newShoe);
 newShoe.color = &quot;black&quot;;
 console.log(newShoe);
 
 console.log(shoe);</code></pre>
+
 <h4 id="destructure-an-array-to-reference-specific-elements-1">9. Destructure an array to reference specific elements</h4>
 <pre><code>let arr = [&#39;one&#39;, &#39;two&#39;, &#39;three&#39;];
 
 let [first] = arr;
 console.log(first);</code></pre>
+
 <h4 id="destructure-an-object-to-reference-specific-values-1">10. Destructure an object to reference specific values</h4>
 <pre><code>let me = {
     name: &quot;Ian&quot;,
@@ -17333,16 +17533,17 @@ console.log(first);</code></pre>
 }
 
 let {
-    name,
-    instruments: musical_instruments,
-    siblings: {
-        sisters
-    }
+name,
+instruments: musical_instruments,
+siblings: {
+sisters
+}
 } = me;
 
 console.log(name);
 console.log(musical_instruments);
 console.log(sisters);</code></pre>
+
 <h4 id="write-a-function-that-accepts-a-string-as-an-argument-and-returns-an-object-representing-the-count-of-each-character-in-the-array-1">11. Write a function that accepts a string as an argument and returns an object representing the count of each character in the array</h4>
 <pre><code>function charCount(inputString) {
 
@@ -17359,6 +17560,7 @@ console.log(sisters);</code></pre>
 }
 
 console.log(charCount(&#39;aaabbbeebbcdkjfalksdfjlkasdfasdfiiidkkdingds&#39;));</code></pre>
+
 <h3 id="review-of-concepts-1">Review of Concepts</h3>
 <h4 id="identify-the-difference-between-const-let-and-var-declarations-1">1. Identify the difference between const, let, and var declarations</h4>
 <h4 id="explain-the-difference-between-const-let-and-var-declarations-2">2. Explain the difference between const, let, and var declarations</h4>
@@ -17398,9 +17600,11 @@ function run() {
     }
 
     console.log(baz); // ReferenceError
+
 }
 
 run();</code></pre>
+
 <p>Notice that referencing <code>baz</code> from outside it’s block results in JavaScript throwing a ReferenceError.</p>
 <p>Consider this <code>run</code> function, inside of which <code>foo</code> has <code>function scope</code> .</p>
 <pre><code>function run() {
@@ -17410,6 +17614,7 @@ run();</code></pre>
 }
 
 run();</code></pre>
+
 <p>Consider this <code>func1</code> function and it’s nested scopes.</p>
 <pre><code>// global scope
 function func1(arg1) {
@@ -17424,7 +17629,9 @@ function func1(arg1) {
             console.log(arg1, arg2, arg3);
         }
     }
+
 }</code></pre>
+
 <h4 id="implement-a-closure-and-explain-how-the-closure-effects-scope-2">6. Implement a closure and explain how the closure effects scope</h4>
 <pre><code>const adder = (arg1) =&gt; {
     return (arg2) =&gt; {
@@ -17435,6 +17642,7 @@ function func1(arg1) {
 const func2 = adder(2);
 const result = func2(2);
 console.log(result); // =&gt; 4;</code></pre>
+
 <h4 id="define-an-arrow-function-3">4. Define an arrow function</h4>
 <pre><code>const returnValue = (val) =&gt; val;</code></pre>
 <p>This simple construct will create a function that accepts <code>val</code> as a parameter, and returns <code>val</code> immediately. We do not need to type <code>return val</code> , because this is a single-line function.</p>
@@ -17449,9 +17657,11 @@ console.log(result); // =&gt; 4;</code></pre>
     return arr.reduce((acc, ele) =&gt; {
         return acc + ele;
     });
+
 };
 
 fDAdder([1, 2, 4, 6]);</code></pre>
+
 <p>If we use a function declaration style function, the <code>this</code> variable is set to the <code>global</code> object (i.e. <code>Object [global]</code> in Node. JS and <code>Window</code> in your browser).</p>
 <pre><code>const adder = (arr) =&gt; {
     console.log(this);
@@ -17470,6 +17680,7 @@ adder([1, 2, 4, 6]);</code></pre>
 };
 
 console.log(pokemon.getPokeName());</code></pre>
+
 <h4 id="utilize-the-built-in-functionbind-on-a-callback-to-maintain-the-context-of-this-1">8. Utilize the built in Function#bind on a callback to maintain the context of <code>this</code></h4>
 <pre><code>const pokemon = {
     firstname: &#39;Pika&#39;,
@@ -17483,6 +17694,7 @@ console.log(pokemon.getPokeName());</code></pre>
 const logPokemon = pokemon.getPokename.bind(pokemon);
 
 logPokemon(&#39;sushi&#39;, &#39;algorithms&#39;); // Pika Chu loves sushi and algorithms</code></pre>
+
 <h4 id="given-a-code-snippet-identify-what-this-refers-to-1">9. Given a code snippet, identify what <code>this</code> refers to</h4>
 <pre><code>function Person(name) {
     // this.name = name; 
@@ -17494,13 +17706,15 @@ logPokemon(&#39;sushi&#39;, &#39;algorithms&#39;); // Pika Chu loves sushi and a
         // this.sayName(); // =&gt; no method error
         that.sayName();
     }, 1000);
+
 }
 
 Person.prototype.sayName = function() {
-    console.log(this.name);
+console.log(this.name);
 };
 
 const jane = new Person(&quot;Jane&quot;);</code></pre>
+
 <h3 id="check-out-my-new-blog">Check Out My New Blog:</h3>
 <p><a href="https://bgoonz-blog.netlify.app/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bgoonz-blog.netlify.app/"><strong>Stackbit Web-Dev-HubTheme</strong><br /> <em>Memoization, Tabulation, and Sorting Algorithms by Example Why is looking at runtime not a reliable method of…</em>bgoonz-blog.netlify.app</a><a href="https://bgoonz-blog.netlify.app/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
 <p>By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on <a href="https://medium.com/p/81c4d839b827">May 27, 2021</a>.</p>
@@ -17520,6 +17734,7 @@ const jane = new Person(&quot;Jane&quot;);</code></pre>
 <pre><code>&gt;&gt;&gt; print()
 
 &gt;&gt;&gt;</code></pre>
+
 <p>Notice the empty line after calling the <code>print</code> function. The default <code>end</code> value when calling print is the newline character <code>\\n</code>.</p>
 <p>Using <code>print</code> with a string literal:</p>
 <pre><code>&gt;&gt;&gt; print(&quot;Lambda School is awesome!&quot;)
@@ -17638,20 +17853,26 @@ HEAD~5      # 5 commits before head</code></pre>
   git push origin $branchname --set-upstream
 
 # get a remote branch
-  git fetch origin
-  git checkout --track origin/$branchname
+
+git fetch origin
+git checkout --track origin/$branchname
 
 # delete local remote-tracking branches (lol)
-  git remote prune origin
+
+git remote prune origin
 
 # list merged branches
-  git branch -a --merged
+
+git branch -a --merged
 
 # delete remote branch
-  git push origin :$branchname
-  
+
+git push origin :$branchname
+
 # go back to previous branch
-  git checkout -</code></pre>
+
+git checkout -</code></pre>
+
 <h3 id="collaboration">Collaboration</h3>
 <pre><code># Rebase your changes on top of the remote master
   git pull --rebase upstream master
@@ -17664,11 +17885,15 @@ HEAD~5      # 5 commits before head</code></pre>
   git submodule init
 
 # Clone missing submodules, and checkout commits
-  git submodule update --init --recursive
+
+git submodule update --init --recursive
 
 # Update remote URLs in .gitmodules
+
 # (Use when you changed remotes in submodules)
-  git submodule sync</code></pre>
+
+git submodule sync</code></pre>
+
 <h3 id="diff">Diff</h3>
 <h3 id="diff-with-stats">Diff with stats</h3>
 <pre><code>git diff --stat
@@ -17682,36 +17907,42 @@ app/b.txt    | 8 ++----
   e11e9f9 Commit message here
 
 --decorate
-  shows &quot;(origin/master)&quot;
+shows &quot;(origin/master)&quot;
 
 --graph
-  shows graph lines
+shows graph lines
 
 --date=relative
-  &quot;2 hours ago&quot;</code></pre>
+&quot;2 hours ago&quot;</code></pre>
+
 <h3 id="misc">Misc</h3>
 <h3 id="cherry-pick">Cherry pick</h3>
 <pre><code>git rebase 76acada^
 
 # get current sha1 (?)
-  git show-ref HEAD -s
+
+git show-ref HEAD -s
 
 # show single commit info
-  git log -1 f5a960b5
+
+git log -1 f5a960b5
 
 # Go back up to root directory
-  cd &quot;$(git rev-parse --show-top-level)&quot;</code></pre>
+
+cd &quot;$(git rev-parse --show-top-level)&quot;</code></pre>
+
 <h3 id="short-log">Short log</h3>
 <pre><code>$ git shortlog
  $ git shortlog HEAD~20..    # last 20 commits
 
- James Dean (1):
-     Commit here
-     Commit there
+James Dean (1):
+Commit here
+Commit there
 
- Frank Sinatra (5):
-     Another commit
-     This other commit</code></pre>
+Frank Sinatra (5):
+Another commit
+This other commit</code></pre>
+
 <h3 id="bisect">Bisect</h3>
 <pre><code>git bisect start HEAD HEAD~6
 git bisect run npm test
@@ -17722,10 +17953,11 @@ git bisect reset</code></pre>
 git bisect good   # current version is good
 
 git checkout HEAD~8
-npm test          # see if it&#39;s good
-git bisect bad    # current version is bad
+npm test # see if it&#39;s good
+git bisect bad # current version is bad
 
-git bisect reset  # abort</code></pre>
+git bisect reset # abort</code></pre>
+
 <h3 id="searching">Searching</h3>
 <pre><code>git log --grep=&quot;fixes things&quot;  # search in commit messages
 git log -S&quot;window.alert&quot;       # search in code
@@ -17733,11 +17965,12 @@ git log -G&quot;foo.*&quot;              # search in code (regex)</code></pre>
 <h3 id="gpg-signing">GPG Signing</h3>
 <pre><code>git config set user.signingkey &lt;GPG KEY ID&gt;       # Sets GPG key to use for signing
 
-git commit -m &quot;Implement feature Y&quot; --gpg-sign    # Or -S, GPG signs commit
+git commit -m &quot;Implement feature Y&quot; --gpg-sign # Or -S, GPG signs commit
 
-git config set commit.gpgsign true                # Sign commits by default
+git config set commit.gpgsign true # Sign commits by default
 git commit -m &quot;Implement feature Y&quot; --no-gpg-sign # Do not sign
 ---</code></pre>
+
 <h3 id="refs">Refs</h3>
 <pre><code>HEAD^       # 1 commit before head
 HEAD^^      # 2 commits before head
@@ -17748,20 +17981,26 @@ HEAD~5      # 5 commits before head</code></pre>
   git push origin $branchname --set-upstream
 
 # get a remote branch
-  git fetch origin
-  git checkout --track origin/$branchname
+
+git fetch origin
+git checkout --track origin/$branchname
 
 # delete local remote-tracking branches (lol)
-  git remote prune origin
+
+git remote prune origin
 
 # list merged branches
-  git branch -a --merged
+
+git branch -a --merged
 
 # delete remote branch
-  git push origin :$branchname
-  
+
+git push origin :$branchname
+
 # go back to previous branch
-  git checkout -</code></pre>
+
+git checkout -</code></pre>
+
 <h3 id="collaboration-1">Collaboration</h3>
 <pre><code># Rebase your changes on top of the remote master
   git pull --rebase upstream master
@@ -17774,11 +18013,15 @@ HEAD~5      # 5 commits before head</code></pre>
   git submodule init
 
 # Clone missing submodules, and checkout commits
-  git submodule update --init --recursive
+
+git submodule update --init --recursive
 
 # Update remote URLs in .gitmodules
+
 # (Use when you changed remotes in submodules)
-  git submodule sync</code></pre>
+
+git submodule sync</code></pre>
+
 <h3 id="diff-1">Diff</h3>
 <h3 id="diff-with-stats-1">Diff with stats</h3>
 <pre><code>git diff --stat
@@ -17792,36 +18035,42 @@ app/b.txt    | 8 ++----
   e11e9f9 Commit message here
 
 --decorate
-  shows &quot;(origin/master)&quot;
+shows &quot;(origin/master)&quot;
 
 --graph
-  shows graph lines
+shows graph lines
 
 --date=relative
-  &quot;2 hours ago&quot;</code></pre>
+&quot;2 hours ago&quot;</code></pre>
+
 <h3 id="miscellaneous-2">Miscellaneous</h3>
 <h4 id="cherry-pick-1">Cherry pick</h4>
 <pre><code>git rebase 76acada^
 
 # get current sha1 (?)
-  git show-ref HEAD -s
+
+git show-ref HEAD -s
 
 # show single commit info
-  git log -1 f5a960b5
+
+git log -1 f5a960b5
 
 # Go back up to root directory
-  cd &quot;$(git rev-parse --show-top-level)&quot;</code></pre>
+
+cd &quot;$(git rev-parse --show-top-level)&quot;</code></pre>
+
 <h3 id="short-log-1">Short log</h3>
 <pre><code>$ git shortlog
  $ git shortlog HEAD~20..    # last 20 commits
 
- James Dean (1):
-     Commit here
-     Commit there
+James Dean (1):
+Commit here
+Commit there
 
- Frank Sinatra (5):
-     Another commit
-     This other commit</code></pre>
+Frank Sinatra (5):
+Another commit
+This other commit</code></pre>
+
 <h3 id="bisect-1">Bisect</h3>
 <pre><code>git bisect start HEAD HEAD~6
 git bisect run npm test
@@ -17832,10 +18081,11 @@ git bisect reset</code></pre>
 git bisect good   # current version is good
 
 git checkout HEAD~8
-npm test          # see if it&#39;s good
-git bisect bad    # current version is bad
+npm test # see if it&#39;s good
+git bisect bad # current version is bad
 
-git bisect reset  # abort</code></pre>
+git bisect reset # abort</code></pre>
+
 <h3 id="searching-1">Searching</h3>
 <pre><code>git log --grep=&quot;fixes things&quot;  # search in commit messages
 git log -S&quot;window.alert&quot;       # search in code
@@ -17843,10 +18093,11 @@ git log -G&quot;foo.*&quot;              # search in code (regex)</code></pre>
 <h3 id="gpg-signing-1">GPG Signing</h3>
 <pre><code>git config set user.signingkey &lt;GPG KEY ID&gt;       # Sets GPG key to use for signing
 
-git commit -m &quot;Implement feature Y&quot; --gpg-sign    # Or -S, GPG signs commit
+git commit -m &quot;Implement feature Y&quot; --gpg-sign # Or -S, GPG signs commit
 
-git config set commit.gpgsign true                # Sign commits by default
+git config set commit.gpgsign true # Sign commits by default
 git commit -m &quot;Implement feature Y&quot; --no-gpg-sign # Do not sign</code></pre>
+
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/1*yyaUC-O43Gs1qAVkdHrMdw.png" class="graf-image" />
 </figure>
@@ -18690,21 +18941,23 @@ def explore(graph):
     explore(remaining_graph)
 
 # iterative
+
 def DFS(graph):
-    for v of graph.verts:
-        v.color = white
-        v.parent = null
-    for v of graph.verts:
-        if v.color == white:
-            DFS_visit(v)
+for v of graph.verts:
+v.color = white
+v.parent = null
+for v of graph.verts:
+if v.color == white:
+DFS_visit(v)
 
 def DFS_visit(v):
-    v.color = gray
-    for neighbor of v.adjacent_nodes:
-        if neighbor.color == white:
-            neighbor.parent = v
-            DFS_visit(neighbor)
-    v.color = black</code></pre>
+v.color = gray
+for neighbor of v.adjacent_nodes:
+if neighbor.color == white:
+neighbor.parent = v
+DFS_visit(neighbor)
+v.color = black</code></pre>
+
 <h3 id="dfs-steps">DFS Steps</h3>
 <ol type="1">
 <li><span id="b45a">Take graph as parameter.</span></li>
@@ -18765,6 +19018,7 @@ graph = {
 &#39;e&#39;: {&#39;b&#39;: -3}
 
 }</code></pre>
+
 <h3 id="review-of-concepts-2">Review of Concepts:</h3>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/1200/0*oOYEgDBV2yhim9SC" class="graf-image" />
@@ -18968,6 +19222,7 @@ CF-RAY: 51d641d1ca7d2d45-TXL
 ...
 ...
 &lt;/html&gt;</code></pre>
+
 <p><strong>Status</strong></p>
 <ul>
 <li><span id="f3f8">First line of an HTTP response — gives us a high level overview of the server’s intentions. (<code>status line</code>)</span></li>
@@ -19035,6 +19290,7 @@ CF-RAY: 51d641d1ca7d2d45-TXL
 <pre><code>heroku create sushi
 
 git push heroku master</code></pre>
+
 <h3 id="access---collaboration"><code>access</code> - Collaboration</h3>
 <h4 id="manage-collaborators">Manage collaborators</h4>
 <pre><code>heroku access                     # List
@@ -19067,6 +19323,7 @@ heroku config -s     # List in shell format</code></pre>
 heroku config:set KEY1=val KEY2=val ...
 
 heroku config:unset KEY1</code></pre>
+
 <h3 id="apps---applications"><code>apps</code> - Applications</h3>
 <pre><code>heroku apps                  # list
 heroku apps:create [NAME]
@@ -19078,6 +19335,7 @@ heroku apps:rename NEWNAME</code></pre>
 <pre><code>heroku maintenance:on
 
 heroku maintenance:off</code></pre>
+
 <h3 id="processes">Processes</h3>
 <h3 id="ps---managing-processes"><code>ps</code> - Managing processes</h3>
 <pre><code>heroku ps              # list
@@ -19100,7 +19358,8 @@ heroku domains:remove example.com</code></pre>
 <h3 id="wildcard-domains">Wildcard domains</h3>
 <pre><code>heroku addons:add wildcard_domains
 
-*.yourdomain.com =&gt; heroku.com</code></pre>
+\*.yourdomain.com =&gt; heroku.com</code></pre>
+
 <h3 id="other-tricks">Other tricks</h3>
 <h3 id="htpasswd-for-php-apps">htpasswd (for PHP apps)</h3>
 <p>Create an <code>.htaccess</code> file in the webroot:</p>
@@ -19306,6 +19565,7 @@ book is Abstract (Telephone Book is an implementation)</p>
 }
 
 // Example usage: &lt;ShoppingList name=&quot;Mark&quot; /&gt;</code></pre>
+
 <p>We’ll get to the funny XML-like tags soon. We use components to tell React what we want to see on the screen. When our data changes, React will efficiently update and re-render our components.</p>
 <p>Here, ShoppingList is a <strong>React component class</strong>, or <strong>React component type</strong>. A component takes in parameters, called <code>props</code> (short for “properties”), and returns a hierarchy of views to display via the <code>render</code> method.</p>
 <p>The <code>render</code> method returns a <em>description</em> of what you want to see on the screen. React takes the description and displays the result. In particular, <code>render</code> returns a <strong>React element</strong>, which is a lightweight description of what to render. Most React developers use a special syntax called “JSX” which makes these structures easier to write. The <code>&lt;div /&gt;</code> syntax is transformed at build time to <code>React.createElement('div')</code>. The example above is equivalent to:</p>
@@ -19444,18 +19704,20 @@ const DemoComponent = function() {
 <pre><code>const MyComponent = function() {
   // Change code below this line
 
-  // Change code above this line
+// Change code above this line
 }</code></pre>
+
 <h3 id="ans-2">ANS:</h3>
 <pre><code>const MyComponent = function() {
   // Change code below this line
 
 return (
-   &lt;div&gt; Some Text &lt;/div &gt;
-  );
+&lt;div&gt; Some Text &lt;/div &gt;
+);
 
-  // Change code above this line
+// Change code above this line
 };</code></pre>
+
 <hr />
 <h3 id="react-create-a-react-component">React: Create a React Component</h3>
 <blockquote>
@@ -19466,12 +19728,13 @@ return (
     super(props);
   }
 
-  render() {
-    return (
-      &lt;h1&gt;Hi&lt;/h1&gt;
-    );
-  }
+render() {
+return (
+&lt;h1&gt;Hi&lt;/h1&gt;
+);
+}
 }</code></pre>
+
 <blockquote>
 <p><em>This creates an ES6 class Kitten which extends the React.Component class.</em></p>
 </blockquote>
@@ -19499,8 +19762,10 @@ return (
     // Change code below this line
 
     // Change code above this line
-  }
+
+}
 };</code></pre>
+
 <h3 id="ans-3">ANS:</h3>
 <pre><code>class MyComponent extends React.Component {
   constructor(props) {
@@ -19515,8 +19780,10 @@ return (
     );
 
     // Change code above this line
-  }
+
+}
 };</code></pre>
+
 <hr />
 <h3 id="react-create-a-component-with-composition">React: Create a Component with Composition</h3>
 <blockquote>
@@ -19557,20 +19824,22 @@ return (
 };
 
 class ParentComponent extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    return (
-      &lt;div&gt;
-        &lt;h1&gt;I am the parent&lt;/h1&gt;
-        { /* Change code below this line */ }
+constructor(props) {
+super(props);
+}
+render() {
+return (
+&lt;div&gt;
+&lt;h1&gt;I am the parent&lt;/h1&gt;
+{ /_ Change code below this line _/ }
 
         { /* Change code above this line */ }
       &lt;/div&gt;
     );
-  }
+
+}
 };</code></pre>
+
 <p>⌛The React component should return a single div element.<br />
 ⌛The component should return two nested elements.<br />
 ⌛The component should return the ChildComponent as its second child.</p>
@@ -19584,20 +19853,22 @@ class ParentComponent extends React.Component {
 };
 
 class ParentComponent extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    return (
-      &lt;div&gt;
-        &lt;h1&gt;I am the parent&lt;/h1&gt;
-        { /* Change code below this line */ }
+constructor(props) {
+super(props);
+}
+render() {
+return (
+&lt;div&gt;
+&lt;h1&gt;I am the parent&lt;/h1&gt;
+{ /_ Change code below this line _/ }
 
         { /* Change code above this line */ }
       &lt;/div&gt;
     );
-  }
+
+}
 };</code></pre>
+
 <h3 id="more-examples">More Examples:</h3>
 <p>For more content follow me on GitHub:</p>
 <p><a href="https://github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://github.com/bgoonz"><strong>bgoonz - Overview</strong><br /> <em>Web Developer, Electrical Engineer https://bryanguner.medium.com/ https://portfolio42.netlify.app/…</em>github.com</a><a href="https://github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
@@ -21961,6 +22232,7 @@ The function should not mutate the original array and instead return a new array
 <pre><code>let cats = [&#39;Bob&#39;, &#39;Willy&#39;, &#39;Mini&#39;];
 
 cats.pop(); // [&#39;Bob&#39;, &#39;Willy&#39;]</code></pre>
+
 <blockquote>
 <p>pop() returns the removed item.</p>
 </blockquote>
@@ -21970,6 +22242,7 @@ cats.pop(); // [&#39;Bob&#39;, &#39;Willy&#39;]</code></pre>
 cats.push(&#39;Willy&#39;); // [&#39;Bob&#39;, &#39;Willy&#39;]
 
 cats.push(&#39;Puff&#39;, &#39;George&#39;); // [&#39;Bob&#39;, &#39;Willy&#39;, &#39;Puff&#39;, &#39;George&#39;]</code></pre>
+
 <blockquote>
 <p>push() returns the new array length.</p>
 </blockquote>
@@ -21977,6 +22250,7 @@ cats.push(&#39;Puff&#39;, &#39;George&#39;); // [&#39;Bob&#39;, &#39;Willy&#39;,
 <pre><code>let cats = [&#39;Bob&#39;, &#39;Willy&#39;, &#39;Mini&#39;];
 
 cats.shift(); // [&#39;Willy&#39;, &#39;Mini&#39;]</code></pre>
+
 <blockquote>
 <p>shift() returns the removed item.</p>
 </blockquote>
@@ -21986,6 +22260,7 @@ cats.shift(); // [&#39;Willy&#39;, &#39;Mini&#39;]</code></pre>
 cats.unshift(&#39;Willy&#39;); // [&#39;Willy&#39;, &#39;Bob&#39;]
 
 cats.unshift(&#39;Puff&#39;, &#39;George&#39;); // [&#39;Puff&#39;, &#39;George&#39;, &#39;Willy&#39;, &#39;Bob&#39;]</code></pre>
+
 <blockquote>
 <p>unshift() returns the new array length.</p>
 </blockquote>
@@ -22913,21 +23188,27 @@ find . -user &lt;username&gt; -print
 find /etc -type f -user &lt;username&gt; -name &quot;*.conf&quot;
 
 # Group:
+
 find /opt -group &lt;group&gt;
-find /etc -type f -group &lt;group&gt; -iname &quot;*.conf&quot;</code></pre>
+find /etc -type f -group &lt;group&gt; -iname &quot;\*.conf&quot;</code></pre>
+
 <p>Find files and directories for all without specific user/group</p>
 <pre><code># User:
 find . \! -user &lt;username&gt; -print
 
 # Group:
+
 find . \! -group &lt;group&gt;</code></pre>
+
 <p>Looking for files/directories that only have certain permission</p>
 <pre><code># User
 find . -user &lt;username&gt; -perm -u+rw # -rw-r--r--
 find /home -user $(whoami) -perm 777 # -rwxrwxrwx
 
 # Group:
+
 find /home -type d -group &lt;group&gt; -perm 755 # -rwxr-xr-x</code></pre>
+
 <p>Delete older files than 60 days</p>
 <pre><code>find . -type f -mtime +60 -delete</code></pre>
 <p>Recursively remove all empty sub-directories from a directory</p>
@@ -22963,18 +23244,19 @@ filename=$(basename &quot;$1&quot;)
 filename_clean=$(echo &quot;$filename&quot; | sed -e &#39;s/[\\/:\*\?&quot;&lt;&gt;\|\x01-\x1F\x7F]//g&#39; -e &#39;s/^\(nul\|prn\|con\|lpt[0-9]\|com[0-9]\|aux\)\(\.\|$\)//i&#39; -e &#39;s/^\.*$//&#39; -e &#39;s/^$/NONAME/&#39;)
 
 if (test &quot;$filename&quot; != &quot;$filename_clean&quot;)
-  then
-    mv -v &quot;$1&quot; &quot;$directory/$filename_clean&quot;
-  fi
+then
+mv -v &quot;$1&quot; &quot;$directory/$filename_clean&quot;
+fi
 }
 
 export -f sanitize
 
 sanitize_dir() {
-  find &quot;$1&quot; -depth -exec bash -c &#39;sanitize &quot;$0&quot;&#39; {} \;
+find &quot;$1&quot; -depth -exec bash -c &#39;sanitize &quot;$0&quot;&#39; {} \;
 }
 
 sanitize_dir &#39;/path/to/somewhere&#39;</code></pre>
+
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" />
 </figure>
@@ -23017,6 +23299,7 @@ sanitize_dir &#39;/path/to/somewhere&#39;</code></pre>
 <pre><code>npm i -g recursive-install
 
 npm-recursive-install</code></pre>
+
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/1*KEUQKLdATTwxLxt4Jrfmzw.jpeg" class="graf-image" />
 </figure>
@@ -23150,6 +23433,7 @@ alert( localStorage.test ); // 2
 
 // remove key
 delete localStorage.test;</code></pre>
+
 <p>That’s allowed for historical reasons, and mostly works, but generally not recommended, because:</p>
 <ol type="1">
 <li><span id="c7fb">If the key is user-generated, it can be anything, like <code>length</code> or <code>toString</code>, or another built-in method of <code>localStorage</code>. In that case <code>getItem/setItem</code> work fine, while object-like access fails:</span></li>
@@ -23197,6 +23481,7 @@ alert(sessionStorage.user); // [object Object]</code></pre>
 // sometime later
 let user = JSON.parse( sessionStorage.user );
 alert( user.name ); // John</code></pre>
+
 <p>Also it is possible to stringify the whole storage object, e.g. for debugging purposes:</p>
 <pre><code>// added formatting options to JSON.stringify to make the object look nicer
 alert( JSON.stringify(localStorage, null, 2) );</code></pre>
@@ -23237,6 +23522,7 @@ window.onstorage = event =&gt; { // same as window.addEventListener(&#39;storage
 };
 
 localStorage.setItem(&#39;now&#39;, Date.now());</code></pre>
+
 <p>Please note that the event also contains: <code>event.url</code> – the url of the document where the data was updated.</p>
 <p>Also, <code>event.storageArea</code> contains the storage object – the event is the same for both <code>sessionStorage</code> and <code>localStorage</code>, so <code>event.storageArea</code> references the one that was modified. We may even want to set something back in it, to “respond” to a change.</p>
 <p><strong>That allows different windows from the same origin to exchange messages.</strong></p>
@@ -23704,6 +23990,7 @@ values
 (&#39;Jaxson&#39;, 0.4, &#39;Beagle&#39;, 19, &#39;yes&#39;),
 (&#39;Leinni&#39;, 1, &#39;Miniature Schnauzer&#39;, 25, &#39;yes&#39; ),
 (&#39;Max&#39;, 1.6, &#39;German Shepherd&#39;, 65, &#39;no&#39;);</code></pre>
+
 <ul>
 <li><span id="2c10">SQL Data Types listed here:</span></li>
 <li><span id="e3ef"><code>varchar(n)</code> : variable length char, n represents the limit.</span></li>
@@ -23808,6 +24095,7 @@ VALUES
 (&#39;Martha&#39;, &#39;Jones&#39;),
 (&#39;Donna&#39;, &#39;Noble&#39;),
 (&#39;River&#39;, &#39;Song&#39;);</code></pre>
+
 <ul>
 <li><span id="2291">Note the use of single quotation marks for string values.</span></li>
 <li><span id="810d">DEFAULT can be used in lieu of our SERIAL pseudo type.</span></li>
@@ -23845,6 +24133,7 @@ INSERT INTO pies VALUES(&#39;Cherry&#39;, 22.32);
 INSERT INTO pies VALUES(&#39;Peach&#39;, 20.45);
 INSERT INTO pies VALUES(&#39;Raspberry&#39;, 20.99);
 INSERT INTO pies VALUES(&#39;Mixed Berry&#39;, 21.45);</code></pre>
+
 <p><strong>Populating a database via &lt; (“left caret”)</strong></p>
 <ul>
 <li><span id="0880">Syntax :<br />
@@ -24076,20 +24365,21 @@ INNER JOIN breeds ON (puppies.breed_id = breeds.id);</code></pre>
 (10 rows)
 
 SELECT
-  puppies.name,
-  age_yrs,
-  breeds.name
+puppies.name,
+age_yrs,
+breeds.name
 FROM
-  puppies
+puppies
 INNER JOIN
-  breeds ON (breeds.id = puppies.breed_id)
+breeds ON (breeds.id = puppies.breed_id)
 WHERE
-  age_yrs &gt; (
-    SELECT
-      AVG (age_yrs)
-    FROM
-      puppies
-  );</code></pre>
+age_yrs &gt; (
+SELECT
+AVG (age_yrs)
+FROM
+puppies
+);</code></pre>
+
 <p><strong>Multiple-row subquery</strong></p>
 <pre><code>SELECT *
 FROM friends
@@ -24127,6 +24417,7 @@ WHERE
 CREATE INDEX addresses_phone_index ON addresses (phone_number);
 
 DROP INDEX addresses_phone_index;</code></pre>
+
 <p><strong>Types of indexes</strong></p>
 <p>There are several types of indexes use in Postgres: B-tree, Hash, GiST, and GIN.</p>
 <ul>
@@ -24152,15 +24443,18 @@ FROM tenk1 t1, tenk2 t2
 WHERE t1.unique1 &lt; 100 AND t1.unique2 = t2.unique2;
 
                                                             QUERY PLAN
-----------------------------------------------------------------------------------------------------------------------------------
- Nested Loop  (cost=2.37..553.11 rows=106 width=488) (actual time=1.392..12.700 rows=100 loops=1)
-   -&gt;  Bitmap Heap Scan on tenk1 t1  (cost=2.37..232.35 rows=106 width=244) (actual time=0.878..2.367 rows=100 loops=1)
-         Recheck Cond: (unique1 &lt; 100)
-         -&gt;  Bitmap Index Scan on tenk1_unique1  (cost=0.00..2.37 rows=106 width=0) (actual time=0.546..0.546 rows=100 loops=1)
-               Index Cond: (unique1 &lt; 100)
-   -&gt;  Index Scan using tenk2_unique2 on tenk2 t2  (cost=0.00..3.01 rows=1 width=244) (actual time=0.067..0.078 rows=1 loops=100)
-         Index Cond: (unique2 = t1.unique2)
- Total runtime: 14.452 ms</code></pre>
+
+---
+
+Nested Loop (cost=2.37..553.11 rows=106 width=488) (actual time=1.392..12.700 rows=100 loops=1)
+-&gt; Bitmap Heap Scan on tenk1 t1 (cost=2.37..232.35 rows=106 width=244) (actual time=0.878..2.367 rows=100 loops=1)
+Recheck Cond: (unique1 &lt; 100)
+-&gt; Bitmap Index Scan on tenk1_unique1 (cost=0.00..2.37 rows=106 width=0) (actual time=0.546..0.546 rows=100 loops=1)
+Index Cond: (unique1 &lt; 100)
+-&gt; Index Scan using tenk2_unique2 on tenk2 t2 (cost=0.00..3.01 rows=1 width=244) (actual time=0.067..0.078 rows=1 loops=100)
+Index Cond: (unique2 = t1.unique2)
+Total runtime: 14.452 ms</code></pre>
+
 <hr />
 <h3 id="accessing-data-from-node.js">Accessing Data from Node.js</h3>
 <p><strong>Node-Postgres And Prepared Statements</strong></p>
@@ -24180,12 +24474,10 @@ WHERE t1.unique1 &lt; 100 AND t1.unique2 = t2.unique2;
   password: &quot;iy7qTEcZ&quot;,
 });
 
-const results = await pool.query(`
-  SELECT id, name, age_yrs
-  FROM puppies;
-`);
+const results = await pool.query(` SELECT id, name, age_yrs FROM puppies;`);
 
 console.log(results);</code></pre>
+
 <p><strong>Prepared Statement</strong></p>
 <ul>
 <li><span id="37b9">Prepared Statements are SQL statements that parameters in them that you can substitute values.</span></li>
@@ -24193,30 +24485,25 @@ console.log(results);</code></pre>
 <!-- -->
 <pre><code>in inside an array.
 
-await pool.query(`
-  INSERT INTO puppies (name, age_yrs, breed, weight_lbs, microchipped)
-  VALUES ($1, $2, $3, $4, $5);
-`, [name, age, breedName, weight, isMicrochipped]);
+await pool.query(` INSERT INTO puppies (name, age_yrs, breed, weight_lbs, microchipped) VALUES ($1, $2, $3, $4, $5);`, [name, age, breedName, weight, isMicrochipped]);
 
 const { Pool } = require(&quot;pg&quot;);
 
-const allPuppiesSql = `
-  SELECT id, name, age_yrs, breed, weight_lbs, microchipped
-  FROM puppies;
-`;
+const allPuppiesSql = ` SELECT id, name, age_yrs, breed, weight_lbs, microchipped FROM puppies;`;
 
 const pool = new Pool({
-  database: &quot;«database name»&quot;,
+database: &quot;«database name»&quot;,
 });
 
 async function selectAllPuppies() {
-  const results = await pool.query(allPuppiesSql);
-  console.log(results.rows);
-  pool.end();
+const results = await pool.query(allPuppiesSql);
+console.log(results.rows);
+pool.end();
 }
 
 const id = Number.parseInt(process.argv[2]);
 selectOnePuppy(id);</code></pre>
+
 <p>By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on <a href="https://medium.com/p/f34676f3802b">August 6, 2021</a>.</p>
 <p><a href="https://medium.com/@bryanguner/mini-review-of-sql-for-postgresql-w-node-express-f34676f3802b" class="p-canonical">Canonical link</a></p>
 <p>Exported from <a href="https://medium.com">Medium</a> on August 17, 2021.</p>
@@ -24242,6 +24529,7 @@ selectOnePuppy(id);</code></pre>
 <pre><code>// change-some-files.js
 
 const fs = require(&quot;fs&quot;);</code></pre>
+
 <p>Similar to what we saw in the <code>readline</code> lesson, <code>require</code> will return to us a object with many properties that will enable us to do file I/O.</p>
 <p><strong><em>Did you know?</em></strong> <em>I/O is short for input/output. It’s usage is widespread and all the hip tech companies are using it, like.io.</em></p>
 <p>The <code>fs</code> module contains tons of functionality! Chances are that if there is some operation you need to perform regarding files, the <code>fs</code> module supports it. The module also offers both synchronous and asynchronous implementations of these methods. We prefer to not block the thread and so we’ll opt for the asynchronous flavors of these methods.</p>
@@ -24260,6 +24548,7 @@ I do not know why
 My code works
 
 I do not know why</code></pre>
+
 <p>We can use the <code>readFile</code> method to read the contents of this file. The method accepts very similar arguments to <code>writeFile</code>, except that the callback may be passed an error object and string containing the file contents. In the snippet below, we have replaced our previous <code>writeFile</code> code with <code>readFile</code>:</p>
 <blockquote>
 <p>Running the code above would print the following in the terminal:</p>
@@ -24273,6 +24562,7 @@ I do not know why
 My code works
 
 I do not know why</code></pre>
+
 <p>Success! From here, you can do anything you please with the data read from the file. For example, since <code>data</code> is a string, we could split the string on the newline character <code>\n</code> to obtain an array of the file’s lines:</p>
 <pre><code>THE CONTENTS ARE:
 
@@ -24285,6 +24575,7 @@ I do not know why</code></pre>
 &#39;I do not know why&#39; ]
 
 The third line is My code works</code></pre>
+
 <h3 id="file-io">File I/O</h3>
 <p><em>Using the same</em> <code>poetry.txt</code> <em>file from before:</em></p>
 <pre><code>My code fails
@@ -24294,6 +24585,7 @@ I do not know why
 My code works
 
 I do not know why</code></pre>
+
 <p>Let’s replace occurrences of the phrase ‘do not’ with the word ‘should’.</p>
 <p>We can read the contents of the file as a string, manipulate this string, then write this new string back into the file.</p>
 <p>We’ll need to utilize callback chaining in order for this to work since our file I/O is asynchronous:</p>
@@ -24305,6 +24597,7 @@ I should know why
 My code works
 
 I should know why</code></pre>
+
 <h4 id="refactor">Refactor:</h4>
 <h4 id="if-you-found-this-guide-helpful-feel-free-to-checkout-my-githubgists-where-i-host-similar-content-15">If you found this guide helpful feel free to checkout my github/gists where I host similar content:</h4>
 <p><a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz’s gists · GitHub</a></p>
@@ -24350,6 +24643,7 @@ let str = &quot;foobar&quot;;
 let ret = rotateString(str, 3);
 console.log(str);
 console.log(ret);</code></pre>
+
 <h3 id="dereferencing">Dereferencing</h3>
 <h4 id="arrays-3">Arrays</h4>
 <p>To dereference an array, use <code>let [var1, var2]</code> syntax.</p>
@@ -24357,6 +24651,7 @@ console.log(ret);</code></pre>
 
 let [first] = arr;
 console.log(first);</code></pre>
+
 <h4 id="objects-1">Objects</h4>
 <p>To dereference attributes from an object, use <code>let {}</code> syntax.</p>
 <h3 id="primitive-data-types-in-depth">Primitive Data Types in Depth</h3>
@@ -24930,12 +25225,13 @@ console.log(first);</code></pre>
 }
 
 const fellowshipOfTheRing = new Book(
-  &quot;The Fellowship of the Ring&quot;,
-  &quot;The Lord of the Rings&quot;,
-  &quot;J.R.R. Tolkien&quot;
+&quot;The Fellowship of the Ring&quot;,
+&quot;The Lord of the Rings&quot;,
+&quot;J.R.R. Tolkien&quot;
 );
 
 console.log(fellowshipOfTheRing); // Book { title: &#39;The Fellowship of the Ring&#39;, ... }</code></pre>
+
 <h3 id="four-things-will-happen-when-invoking-a-constructor-function"><em>Four Things will happen when invoking a constructor function</em></h3>
 <ol type="1">
 <li><span id="b127">A new empty object is created {};</span></li>
@@ -24983,16 +25279,17 @@ console.log(fellowshipOfTheRing); // Book { title: &#39;The Fellowship of the Ri
 // Any method defined on the `Book.prototype` property
 // will be shared across all `Book` instances.
 Book.prototype.getInformation = function () {
-  return `${this.title} by ${this.author}`;
+return `${this.title} by ${this.author}`;
 };
 
 const fellowshipOfTheRing = new Book(
-  &quot;The Fellowship of the Ring&quot;,
-  &quot;The Lord of the Rings&quot;,
-  &quot;J.R.R. Tolkien&quot;
+&quot;The Fellowship of the Ring&quot;,
+&quot;The Lord of the Rings&quot;,
+&quot;J.R.R. Tolkien&quot;
 );
 
 console.log(fellowshipOfTheRing.getInformation());</code></pre>
+
 <ul>
 <li><span id="455e">Every method we define on a constructor function’s prototype property will be shared across all instances of that object type.</span></li>
 </ul>
@@ -25039,8 +25336,9 @@ console.log(fellowshipOfTheRing.getInformation());</code></pre>
 <pre><code>test();
 
 function test() {
-  console.log(&quot;This works!&quot;);
+console.log(&quot;This works!&quot;);
 }</code></pre>
+
 <ul>
 <li><span id="bf4e">In JS you can call a function before it’s declared — this is known as <code>hoisting</code>.</span></li>
 <li><span id="8dd6">Class definitions are <strong>NOT hoisted,</strong> so just get in the habit of declaring them before you use them.</span></li>
@@ -25062,32 +25360,33 @@ function test() {
     this.author = author;
   }
 
-  // Notice the use of a rest parameter (...books)
-  // to capture the passed parameters as an array of values.
-  static getTitles(...books) {
-    return books.map((book) =&gt; book.title);
-  }
+// Notice the use of a rest parameter (...books)
+// to capture the passed parameters as an array of values.
+static getTitles(...books) {
+return books.map((book) =&gt; book.title);
+}
 
-  getInformation() {
-    return `${this.title} by ${this.author}`;
-  }
+getInformation() {
+return `${this.title} by ${this.author}`;
+}
 }
 
 const fellowshipOfTheRing = new Book(
-  &quot;The Fellowship of the Ring&quot;,
-  &quot;The Lord of the Rings&quot;,
-  &quot;J.R.R. Tolkien&quot;
+&quot;The Fellowship of the Ring&quot;,
+&quot;The Lord of the Rings&quot;,
+&quot;J.R.R. Tolkien&quot;
 );
 
 const theTwoTowers = new Book(
-  &quot;The Two Towers&quot;,
-  &quot;The Lord of the Rings&quot;,
-  &quot;J.R.R. Tolkien&quot;
+&quot;The Two Towers&quot;,
+&quot;The Lord of the Rings&quot;,
+&quot;J.R.R. Tolkien&quot;
 );
 
 const bookTitles = Book.getTitles(fellowshipOfTheRing, theTwoTowers);
 
 console.log(bookTitles.join(&quot;, &quot;)); // The Fellowship of the Ring, The Two Towers</code></pre>
+
 <ul>
 <li><span id="133d">If we go back to an example of how constructor functions also use static methods — we see that static methods are <em>defined directly on the constructor function</em> — whereas instance methods need to be defined on the <em>prototype</em> object.</span></li>
 </ul>
@@ -25101,25 +25400,25 @@ console.log(bookTitles.join(&quot;, &quot;)); // The Fellowship of the Ring, The
 // Static methods are defined
 // directly on the constructor function.
 Book.getTitles = function (...books) {
-  return books.map((book) =&gt; book.title);
+return books.map((book) =&gt; book.title);
 };
 
 // Instance methods are defined
 // on the constructor function&#39;s `prototype` property.
 Book.prototype.getInformation = function () {
-  return `${this.title} by ${this.author}`;
+return `${this.title} by ${this.author}`;
 };
 
 const fellowshipOfTheRing = new Book(
-  &quot;The Fellowship of the Ring&quot;,
-  &quot;The Lord of the Rings&quot;,
-  &quot;J.R.R. Tolkien&quot;
+&quot;The Fellowship of the Ring&quot;,
+&quot;The Lord of the Rings&quot;,
+&quot;J.R.R. Tolkien&quot;
 );
 
 const theTwoTowers = new Book(
-  &quot;The Two Towers&quot;,
-  &quot;The Lord of the Rings&quot;,
-  &quot;J.R.R. Tolkien&quot;
+&quot;The Two Towers&quot;,
+&quot;The Lord of the Rings&quot;,
+&quot;J.R.R. Tolkien&quot;
 );
 
 console.log(fellowshipOfTheRing.getInformation()); // The Fellowship of the Ring by J.R.R. Tolkien
@@ -25131,6 +25430,7 @@ console.log(theTwoTowers.getInformation()); // The Two Towers by J.R.R. Tolkien
 const bookTitles = Book.getTitles(fellowshipOfTheRing, theTwoTowers);
 
 console.log(bookTitles.join(&quot;, &quot;)); // The Fellowship of the Ring, The Two Towers</code></pre>
+
 <h3 id="comparing-classes-to-constructor-functions">Comparing Classes to Constructor Functions</h3>
 <blockquote>
 <p><em>ES2015 Classes are essentially</em> <strong><em>syntactic sugar</em></strong> <em>over traditional constructor functions and prototypes.</em></p>
@@ -25149,44 +25449,45 @@ console.log(bookTitles.join(&quot;, &quot;)); // The Fellowship of the Ring, The
     this.series = series;
   }
 
-  getInformation() {
-    if (this.series) {
-      return `${this.title} (${this.series})`;
-    } else {
-      return this.title;
-    }
-  }
+getInformation() {
+if (this.series) {
+return `${this.title} (${this.series})`;
+} else {
+return this.title;
+}
+}
 }
 
 class Book extends CatalogItem {
-  constructor(title, series, author) {
-    super(title, series);
-    this.author = author;
-  }
+constructor(title, series, author) {
+super(title, series);
+this.author = author;
+}
 }
 
 class Movie extends CatalogItem {
-  constructor(title, series, director) {
-    super(title, series);
-    this.director = director;
-  }
+constructor(title, series, director) {
+super(title, series);
+this.director = director;
+}
 }
 
 const theGrapesOfWrath = new Book(
-  &quot;The Grapes of Wrath&quot;,
-  null,
-  &quot;John Steinbeck&quot;
+&quot;The Grapes of Wrath&quot;,
+null,
+&quot;John Steinbeck&quot;
 );
 const aNewHope = new Movie(
-  &quot;Episode 4: A New Hope&quot;,
-  &quot;Star Wars&quot;,
-  &quot;George Lucas&quot;
+&quot;Episode 4: A New Hope&quot;,
+&quot;Star Wars&quot;,
+&quot;George Lucas&quot;
 );
 
 console.log(theGrapesOfWrath.getInformation()); // The Grapes of Wrath
 console.log(aNewHope.getInformation()); // Episode 4: A New Hope (Star Wars)
 console.log(Catalogitem instanceof Function); // true
 console.log(Book instanceof Function); // true</code></pre>
+
 <ul>
 <li><span id="8dcd">A <code>prototype chain</code> defines a series of prototype objects that are delegated to one by one, when a property or method can’t be found on an instance object.</span></li>
 </ul>
@@ -25209,16 +25510,18 @@ console.log(Book instanceof Function); // true</code></pre>
     this.director = director;
   }
 
-  getInformation() {
-    let result = super.getInformation();
+getInformation() {
+let result = super.getInformation();
 
     if (this.director) {
       result += ` [directed by ${this.director}]`;
     }
 
     return result;
-  }
+
+}
 }</code></pre>
+
 <ul>
 <li><span id="68fd">We can simply declare our own method of the same name in our child class to override our parent’s version of <code>getInformation()</code></span></li>
 </ul>
@@ -25238,10 +25541,12 @@ console.log(Book instanceof Function); // true</code></pre>
 <pre><code>module.exports.Book = Book; module.exports.Movie = Movie;
 
 module.exports = { Book, Movie, };</code></pre>
+
 <h4 id="syntax-for-importing-modules">Syntax for importing modules:</h4>
 <pre><code>const classes = require(“./classes”);
 
 const { Book, Movie } = require(“./classes”);</code></pre>
+
 <h4 id="using-single-item-modules">Using Single Item Modules</h4>
 <ul>
 <li><span id="0b43">Following the convention of a single exported item per module helps to keep modules focused and less likely to become bloted with too much code.</span></li>
@@ -25270,6 +25575,7 @@ const { Book, Movie } = require(“./classes”);</code></pre>
 
 // is the same as
 class MyClass extends Object {}</code></pre>
+
 <ul>
 <li><span id="e595"><strong>When you declare a class with no explicit parent class, JS will make it a child of Object.</strong></span></li>
 </ul>
@@ -25277,31 +25583,31 @@ class MyClass extends Object {}</code></pre>
 <pre><code>class Charity {}
 
 class Business {
-  toString() {
-    return &quot;Give us your money.&quot;;
-  }
+toString() {
+return &quot;Give us your money.&quot;;
+}
 }
 
 class Restaurant extends Business {
-  toString() {
-    return &quot;Eat at Joe&#39;s!&quot;;
-  }
+toString() {
+return &quot;Eat at Joe&#39;s!&quot;;
+}
 }
 
 class AutoRepairShop extends Business {}
 
 class Retail extends Business {
-  toString() {
-    return &quot;Buy some stuff!&quot;;
-  }
+toString() {
+return &quot;Buy some stuff!&quot;;
+}
 }
 
 class ClothingStore extends Retail {}
 
 class PhoneStore extends Retail {
-  toString() {
-    return &quot;Upgrade your perfectly good phone, now!&quot;;
-  }
+toString() {
+return &quot;Upgrade your perfectly good phone, now!&quot;;
+}
 }
 
 console.log(new PhoneStore().toString()); // &#39;Upgrade your perfectly good phone, now!&#39;
@@ -25309,6 +25615,7 @@ console.log(new ClothingStore().toString()); // &#39;Buy some stuff!&#39;;
 console.log(new Restaurant().toString()); // &#39;Eat at Joe\&#39;s!&#39;
 console.log(new AutoRepairShop().toString()); // &#39;Give us your money.&#39;
 console.log(new Charity().toString()); // [object object]</code></pre>
+
 <h4 id="the-nuts-and-bolts-of-prototypal-inheritance">The nuts and bolts of prototypal inheritance</h4>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/0*FCIE6k4O9X8f9CbR" class="graf-image" />
@@ -25327,10 +25634,10 @@ console.log(new Charity().toString()); // [object object]</code></pre>
 }
 
 class Child extends Parent {
-  constructor() {
-    super();
-    this.name = &quot;CHILD&quot;;
-  }
+constructor() {
+super();
+this.name = &quot;CHILD&quot;;
+}
 }
 
 const parent = new Parent();
@@ -25338,6 +25645,7 @@ console.log(parent.toString()); // my name is Parent
 
 const child = new Child();
 console.log(child.toString()); // my name is Child</code></pre>
+
 <h3 id="polymorphism">Polymorphism</h3>
 <ul>
 <li><span id="4da7">The ability to treat an object as if it were an instance of one of its parent classes.</span></li>
@@ -25582,6 +25890,7 @@ car[&quot;seats&quot;] = 2;
     // accessing our object at the key of color
     &gt;
     car[&quot;color&quot;]
+
 &quot;Blue&quot;
 
 &gt;
@@ -25593,6 +25902,7 @@ car[&quot;seats&quot;]
         color: &quot;Blue&quot;,
         seats: 2
     }</code></pre>
+
 <ul>
 <li><span id="d19c">We assign values to an object by defining the name of the key in brackets and assigning it to a value.</span></li>
 </ul>
@@ -25608,7 +25918,9 @@ true
 
     &gt;
     &quot;model&quot; in car;
+
 false</code></pre>
+
 <ul>
 <li><span id="6499">If we try to access a key that has not yet been assigned within an object we will output undefined.</span></li>
 <li><span id="7d01">The <strong>preferred method</strong> for checking to see if an object exists at a key is to use the <code>in</code> operator.</span></li>
@@ -25628,23 +25940,25 @@ undefined
 
     &gt;
     car[newVariable]
+
 &quot;Blue&quot;
 
--- -
+---
 
 &gt;
 car {
-    color: &quot;Blue&quot;,
-    seats: 2
+color: &quot;Blue&quot;,
+seats: 2
 }
 
 &gt;
 newVariable
-    &quot;weight&quot;
+&quot;weight&quot;
 
     // assigning a key value pair using a variable!
     &gt;
     car[newVariable] = 1000;
+
 1000
 
     &gt;
@@ -25653,6 +25967,7 @@ newVariable
         seats: 2,
         weight: 1000
     }</code></pre>
+
 <ul>
 <li><span id="e833">It is useful to set a variable as a key because variables can be re-assigned new values — this way we can quickly access different data and also create new key/value pairs.</span></li>
 </ul>
@@ -25663,6 +25978,7 @@ undefined
 
     &gt;
     dog.bark = &quot;Bowowowo&quot;;
+
 &quot;Bowowowowo&quot;
 
 &gt;
@@ -25672,6 +25988,7 @@ dog.bark &quot;Bowowowo&quot;
     dog {
         bark: &quot;Bowowowowo&quot;
     }</code></pre>
+
 <ul>
 <li><span id="ec54">We can also use <strong>dot notation</strong> <strong>“.”</strong> to access key/value pairs in an object.</span></li>
 <li><span id="cd22">One thing to note is that when using dot notation, we do not have to use string quotes as the key.</span></li>
@@ -25691,6 +26008,7 @@ console.log(myDog); // prints `{name: &quot;Fido&quot;}`
 console.log(myDog[myKey]); // prints `Fido`
 
 console.log(myDog.myKey); // prints: undefined</code></pre>
+
 <ul>
 <li><span id="872f">As illustrated above, the dot notation cannot access a variable key — since it takes a <strong>literal</strong> interpretation of the key.</span></li>
 </ul>
@@ -25719,58 +26037,59 @@ console.log(myDog.myKey); // prints: undefined</code></pre>
     let element = document.getElementById(id).value;
 
 - We first resolve the document variable, then use dot notation to retrive the getElementById function, we eval it&#39;s arguments, access it&#39;s value, and then retrieve assignment \(the lowest precedence\).</code></pre>
-<h3 id="iterating-through-objects-1">Iterating Through Objects</h3>
-<p>Because objects store <strong>unordered</strong> key-value pairs, we do not rely on indices to access values; instead, we rely on our keys.</p>
-<h4 id="a-new-kind-of-for-loop"><strong>A New Kind of For Loop</strong></h4>
-<pre><code>for (let variable in object) {
-    statement;
+  <h3 id="iterating-through-objects-1">Iterating Through Objects</h3>
+  <p>Because objects store <strong>unordered</strong> key-value pairs, we do not rely on indices to access values; instead, we rely on our keys.</p>
+  <h4 id="a-new-kind-of-for-loop"><strong>A New Kind of For Loop</strong></h4>
+  <pre><code>for (let variable in object) {
+      statement;
 
-    let obj = {
-        name: &quot;Rose&quot;,
-        cats: 2
-    };
-    for (let currentKey in obj) {
-        console.log(currentKey);
-        console.log(obj[currentKey]);
-    }
+      let obj = {
+          name: &quot;Rose&quot;,
+          cats: 2
+      };
+      for (let currentKey in obj) {
+          console.log(currentKey);
+          console.log(obj[currentKey]);
+      }
 
-    // prints out:
-    // name
-    // cats
-    // Rose
-    // 2
-}</code></pre>
-<ul>
-<li><span id="6607">We use a special syntax to iterate through each key of an object called a <code>for-in loop</code>.</span></li>
-</ul>
-<h4 id="methods-vs-functions"><strong>Methods vs Functions</strong></h4>
-<p>A <code>Method</code> is a function that belongs to an object. Every method is a function, but not every function is a method.</p>
-<pre><code>myFunc is a
-function
-myObject.myFunc is a method of the object myObject
-myObject[&quot;myFunc&quot;] is a method of the object myObject</code></pre>
-<ul>
-<li><span id="417a"><strong>Methods</strong> are just a key-value pair where the <strong>key is the function name and the value is the function definition</strong>.</span></li>
-</ul>
-<!-- -->
-<pre><code>let dog = {
-    name: &quot;Fido&quot;,
-};
+      // prints out:
+      // name
+      // cats
+      // Rose
+      // 2
+
+  }</code></pre>
+  <ul>
+  <li><span id="6607">We use a special syntax to iterate through each key of an object called a <code>for-in loop</code>.</span></li>
+  </ul>
+  <h4 id="methods-vs-functions"><strong>Methods vs Functions</strong></h4>
+  <p>A <code>Method</code> is a function that belongs to an object. Every method is a function, but not every function is a method.</p>
+  <pre><code>myFunc is a
+  function
+  myObject.myFunc is a method of the object myObject
+  myObject[&quot;myFunc&quot;] is a method of the object myObject</code></pre>
+  <ul>
+  <li><span id="417a"><strong>Methods</strong> are just a key-value pair where the <strong>key is the function name and the value is the function definition</strong>.</span></li>
+  </ul>
+  <!-- -->
+  <pre><code>let dog = {
+      name: &quot;Fido&quot;,
+  };
 
 dog.bark = function() {
-    console.log(&quot;bark bark!&quot;);
+console.log(&quot;bark bark!&quot;);
 };
 
 // this is the same thing as above just using Bracket Notation
 dog[&quot;speak&quot;] = function(string) {
-    console.log(&quot;WOOF &quot; + string + &quot; WOOF!!!&quot;);
+console.log(&quot;WOOF &quot; + string + &quot; WOOF!!!&quot;);
 };
 
 dog.bark(); // prints `bark bark!`
 dog.speak(&quot;pizza&quot;); // prints `WOOF pizza WOOF!!!`
 
 let dog2 = {
-    name: &quot;Rover&quot;,
+name: &quot;Rover&quot;,
 
     bark: function() {
         console.log(&quot;bork bork!&quot;);
@@ -25779,12 +26098,14 @@ let dog2 = {
     speak: function(string) {
         console.log(&quot;BORK &quot; + string + &quot; BORK!!!&quot;);
     },
+
 };
 // Notice that in the object above, we still separate the key-value pairs with commas.
 // `bark` and `speak` are just keys with functions as values.
 
 dog2.bark(); // prints `bork bork!`
 dog2.speak(&quot;burrito&quot;); // prints `BORK burrito BORK!!!`</code></pre>
+
 <ul>
 <li><span id="724f">To invoke these methods we just need to specify which object is calling that method.</span></li>
 </ul>
@@ -25839,13 +26160,14 @@ dog2.speak(&quot;burrito&quot;); // prints `BORK burrito BORK!!!`</code></pre>
 <!-- -->
 <pre><code>let numArray = [1, 2, 3];
 
-// here we are taking `numArray` and *spreading* it into a new array where
+// here we are taking `numArray` and _spreading_ it into a new array where
 // comma separated elements are expected to be
 let moreNums = [...numArray, 4, 5, 6];
 
 &gt;
 moreNums
 // =&gt; [1, 2, 3, 4, 5, 6]</code></pre>
+
 <p><strong>With Objects</strong></p>
 <pre><code>let colors = {
     red: &quot;scarlet&quot;,
@@ -25860,22 +26182,23 @@ newColors
 // { red: &quot;scarlet&quot;, blue: &quot;aquamarine&quot; };
 
 let colors = {
-    red: &quot;scarlet&quot;,
-    blue: &quot;aquamarine&quot;
+red: &quot;scarlet&quot;,
+blue: &quot;aquamarine&quot;
 };
 let colors2 = {
-    green: &quot;forest&quot;,
-    yellow: &quot;sunflower&quot;
+green: &quot;forest&quot;,
+yellow: &quot;sunflower&quot;
 };
 
 let moreColors = {
-    ...colors,
-    ...colors2
+...colors,
+...colors2
 };
 
 &gt;
 moreColors
 // {red: &quot;scarlet&quot;, blue: &quot;aquamarine&quot;, green: &quot;forest&quot;, yellow: &quot;sunflo</code></pre>
+
 <p>By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on <a href="https://medium.com/p/b212486dade6">May 27, 2021</a>.</p>
 <p><a href="https://medium.com/@bryanguner/objects-in-javascript-b212486dade6" class="p-canonical">Canonical link</a></p>
 <p>Exported from <a href="https://medium.com">Medium</a> on August 17, 2021.</p>
@@ -25988,15 +26311,16 @@ moreColors
 <pre><code>let empty_object = {};
 
 let today = {
-    day: &quot;Wednesday&quot;,
-    month: &quot;April&quot;,
-    year: 2014,
+day: &quot;Wednesday&quot;,
+month: &quot;April&quot;,
+year: 2014,
 
 weather: { //objects can contain nested objects like this one
-        morning: &quot;sunny&quot;,
-        afternoon: &quot;cloudy&quot;
-    }
+morning: &quot;sunny&quot;,
+afternoon: &quot;cloudy&quot;
+}
 }</code></pre>
+
 <h3 id="retrieval">Retrieval</h3>
 <ul>
 <li><span id="ee43">Can be done with either dot notation <code>today.weather.morning</code> or with square brackets <code>today['month']</code></span></li>
@@ -26059,16 +26383,17 @@ for (i = 0; i &lt; properties.length; i++) {
 <pre><code>let MYAPP = {}
 
 MYAPP.today = {
-    day: &quot;Wednesday&quot;,
-    month: &quot;April&quot;,
-    year: 2014,
+day: &quot;Wednesday&quot;,
+month: &quot;April&quot;,
+year: 2014,
 
 weather: { //objects can contain nested objects like this one
-        morning: &quot;sunny&quot;,
-        afternoon: &quot;cloudy&quot;
-    }
+morning: &quot;sunny&quot;,
+afternoon: &quot;cloudy&quot;
+}
 }
 //Making sure all other variables (like today) are contained within this one global variable (MYAPP) means none of them have global scope and therefore the risk of naming conflicts, etc in your application is reduced</code></pre>
+
 <h4 id="further-resources">Further resources:</h4>
 <p><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>A list of all of my articles to link to future posts</strong><br /> <em>You should probably skip this one… seriously it’s just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a></p>
 <p><a href="https://gist.github.com/bgoonz" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://gist.github.com/bgoonz"><strong>bgoonz’s gists</strong><br /> <em>Instantly share code, notes, and snippets. Web Developer, Electrical Engineer JavaScript | CSS | Bootstrap | Python |…</em>gist.github.com</a><a href="https://gist.github.com/bgoonz" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a></p>
@@ -26329,21 +26654,22 @@ postgres=# select * from dummy_table;
 (4 rows)
 
 postgres=#</code></pre>
+
 <p>If we want to modify all the values in the address and age columns in dummy_table, then we do not need to use the WHERE clause. The UPDATE query would look like this:</p>
 <pre><code>postgres=# update dummy_table set age=54,address=&#39;location-X&#39;;
 UPDATE 4
 
-
-postgres=# select * from dummy_table ;
- name |  address   | age 
+postgres=# select \* from dummy_table ;
+name | address | age
 ------+------------+--------
- XYZ  | location-X |  54
- ABC  | location-X |  54
- DEF  | location-X |  54
- GHI  | location-X |  54
+XYZ | location-X | 54
+ABC | location-X | 54
+DEF | location-X | 54
+GHI | location-X | 54
 (4 rows)
 
 postgres=#</code></pre>
+
 <p>A RETURNING clause returns the updated rows. This is optional in UPDATE:</p>
 <pre><code>postgres=# update dummy_table set age=30 where name=&#39;XYZ&#39; returning age as age_no;
  age_no 
@@ -26352,6 +26678,7 @@ postgres=#</code></pre>
 (1 row)
 
 UPDATE 1</code></pre>
+
 <p>It is always recommended to perform such operations under transaction blocks (i.e., BEGIN…COMMIT/ROLLBACK;), so we have the option to roll back the operation.</p>
 <h3 id="delete-query-in-postgresql">5. DELETE query in PostgreSQL</h3>
 <p>The <a href="https://www.postgresql.org/docs/12/sql-delete.html" class="markup--anchor markup--p-anchor">DELETE command</a> is used to delete row(s). It can be used with or without the optional WHERE condition, but take note: if the WHERE condition is missing, the command will delete all rows, leaving you with an empty table.</p>
@@ -26725,17 +27052,18 @@ INSERT 0 1
 postgres=# insert into Y values (5,&#39;axyz&#39;);
 INSERT 0 1
 
-postgres=# update Y set n1=X.n1 from X  where X.n=Y.n;
+postgres=# update Y set n1=X.n1 from X where X.n=Y.n;
 UPDATE 2
-postgres=# select * from Y;
- n |     n1     
+postgres=# select \* from Y;
+n | n1  
 ---+------------
- 5 | axyz      
- 1 | abc       
- 2 | xyz       
+5 | axyz  
+ 1 | abc  
+ 2 | xyz  
 (3 rows)
 
 postgres=#</code></pre>
+
 <h3 id="inner-join-query-in-postgresql">27. INNER JOIN query in PostgreSQL</h3>
 <p>The <a href="https://www.postgresql.org/docs/current/tutorial-join.html" class="markup--anchor markup--p-anchor">INNER JOIN</a> command will find rows from two (or more) tables where the specified columns data in the tables match:</p>
 <pre><code>postgres=# select *  from x inner join  y on  x.n1 = y.n1;
@@ -26746,6 +27074,7 @@ postgres=#</code></pre>
 (2 rows)
 
 postgres=#</code></pre>
+
 <h3 id="case-expression-in-postgresql">28. CASE expression in PostgreSQL</h3>
 <p>The <a href="https://www.postgresql.org/docs/12/functions-conditional.html" class="markup--anchor markup--p-anchor">CASE expression</a> is a generic conditional expression, similar to the IF … ELSE statement.</p>
 <pre><code>postgres=# SELECT age,
@@ -26779,6 +27108,7 @@ INSERT INTO emp_test VALUES (4, &#39;cde&#39;, 1);
 INSERT INTO emp_test VALUES (5, &#39;qrs&#39;, 2);
 INSERT INTO emp_test VALUES (9, &#39;iop&#39;, 3);
 INSERT INTO emp_test VALUES (10, &#39;klm&#39;, 4);</code></pre>
+
 <p>The recursive query below will give all the reports in a certain order:</p>
 <pre><code>postgres=#WITH RECURSIVE emp_testnew  AS (
   SELECT id, ename, emanager
@@ -26792,41 +27122,43 @@ INSERT INTO emp_test VALUES (10, &#39;klm&#39;, 4);</code></pre>
 SELECT *
 FROM emp_testnew;
 
- id | ename | emanager 
+id | ename | emanager
 ----+-------+----------
-  2 | xyz   |        1
-  3 | def   |        2
-  5 | qrs   |        2
-  9 | iop   |        3
+2 | xyz | 1
+3 | def | 2
+5 | qrs | 2
+9 | iop | 3
 (4 rows)
 
 postgres=#</code></pre>
+
 <h3 id="postgresql-log-queries">30. PostgreSQL log queries</h3>
 <p>Using the <a href="https://www.postgresql.org/docs/12/pgstatstatements.html" class="markup--anchor markup--p-anchor">pg_stat_statements module</a>, we can track execution statistics for all SQL statements. To do this, we need to create an extension and add in shared_preload_libraries inside the postgresql.conf file:</p>
 <pre><code>postgres=# create extension pg_stat_statements;
 CREATE EXTENSION
 
-
 postgres=# show shared_preload_libraries ;
-                           shared_preload_libraries                           
--------------------------------------------------
- $libdir/pg_stat_statements
+shared_preload_libraries
+
+---
+
+$libdir/pg_stat_statements
 (1 row)
 
-
-postgres=# select query from pg_stat_statements where query like &#39;create table%&#39;;
--[ RECORD 1 ]-------------------
+postgres=# select query from pg_stat_statements where query like &#39;create table%&#39;; -[ RECORD 1 ]-------------------
 query | create table test(n int)</code></pre>
+
 <p>We can also configure PostgreSQL to generate log output by enabling these parameters in the postgresql.conf file:</p>
 <pre><code>logging_collector = on
 log_directory = &#39;log&#39;
 log_filename = ‘postgresql-%Y-%m-%d_%H%M%S.log&#39;
 log_destination = ‘stderr’
-Log file will be created under the pg_log directory which resides under the data folder. 
+Log file will be created under the pg_log directory which resides under the data folder.
 
-[centos@tushar-ldap-docker bin]$ ls  data/log
-postgresql-2020-09-17_150932.log  postgresql-2020-09-19_000000.log  
+[centos@tushar-ldap-docker bin]$ ls data/log
+postgresql-2020-09-17_150932.log postgresql-2020-09-19_000000.log  
 [centos@tushar-ldap-docker bin]$</code></pre>
+
 <p>Queries will be recorded in these files.</p>
 <h3 id="using-a-variable-in-a-postgresql-query">31. Using a variable in a PostgreSQL query</h3>
 <p>We can declare a variable in PostgreSQL at the psql prompt:</p>
@@ -26853,16 +27185,21 @@ postgres=# select :cond+100 ;
 (1 row)
 
 postgres=# select current_date;
- current_date 
---------------
- 22-SEP-20
+current_date
+
+---
+
+22-SEP-20
 (1 row)
 
 postgres=# select current_time;
-     current_time      
------------------------
- 03:08:53.648466+05:30
+current_time
+
+---
+
+03:08:53.648466+05:30
 (1 row)</code></pre>
+
 <p>We can also perform a date range query to find rows with values between two time stamps:</p>
 <pre><code>postgres=# create table datetable(n int,n1 date);
 CREATE TABLE
@@ -26873,12 +27210,13 @@ postgres=# insert into datetable values (2,&#39;12-01-2020&#39;);
 INSERT 0 1
 postgres=# insert into datetable values (3,&#39;12-01-2000&#39;);
 INSERT 0 1
-postgres=# select * from datetable where n1 between &#39;12-01-1980&#39; and &#39;12-01-2000&#39;;
- n |         n1         
+postgres=# select \* from datetable where n1 between &#39;12-01-1980&#39; and &#39;12-01-2000&#39;;
+n | n1  
 ---+--------------------
- 1 | 12-JAN-80 00:00:00
- 3 | 12-JAN-00 00:00:00
+1 | 12-JAN-80 00:00:00
+3 | 12-JAN-00 00:00:00
 (2 rows)</code></pre>
+
 <h3 id="postgresql-function-return-query-result">33. PostgreSQL function RETURN QUERY result</h3>
 <p>When a PL/pgSQL function is declared to return a SETOF some data type, the return is specified by a <a href="https://www.postgresql.org/docs/12/plpgsql-control-structures.html" class="markup--anchor markup--p-anchor">RETURN QUERY</a> command:</p>
 <pre><code>postgres=# CREATE FUNCTION get(int) RETURNS SETOF integer AS
@@ -26892,15 +27230,17 @@ BEGIN
 $BODY$
 LANGUAGE plpgsql;
 
+postgres=# select \* from get(9);
+get
 
-postgres=# select * from get(9);
- get 
------
-  25
-  35
-  40
-  50
+---
+
+25
+35
+40
+50
 (4 rows)</code></pre>
+
 <h3 id="postgresql-parallel-query-performance">34. PostgreSQL parallel query performance</h3>
 <p><a href="https://www.postgresql.org/docs/12/parallel-query.html" class="markup--anchor markup--p-anchor">Parallel queries</a> in PostgreSQL allow you to finish queries faster by utilizing many CPUs. These GUCs parameters are set in postgresql.conf file:</p>
 <pre><code>#max_parallel_maintenance_workers = 2   # taken from max_parallel_workers
@@ -26909,7 +27249,6 @@ postgres=# select * from get(9);
 #max_parallel_workers = 8               # maximum number of max_worker_processes that
                                                            # can be used in parallel operations
 
-
 postgres=# create table ty(n int);
 CREATE TABLE
 postgres=# insert into ty values (generate_series(1,300000));
@@ -26917,16 +27256,19 @@ INSERT 0 300000
 
 postgres=# analyze ty;
 ANALYZE
-postgres=# explain  select * from ty where n&lt;=1;
-                             QUERY PLAN                              
----------------------------------------------------------------------
- Gather  (cost=1000.00..4536.88 rows=30 width=4)
-   Workers Planned: 1
-   -&gt;  Parallel Seq Scan on ty  (cost=0.00..3533.88 rows=18 width=4)
-         Filter: (n &lt;= 1)
+postgres=# explain select \* from ty where n&lt;=1;
+QUERY PLAN
+
+---
+
+Gather (cost=1000.00..4536.88 rows=30 width=4)
+Workers Planned: 1
+-&gt; Parallel Seq Scan on ty (cost=0.00..3533.88 rows=18 width=4)
+Filter: (n &lt;= 1)
 (4 rows)
 
 postgres=#</code></pre>
+
 <h3 id="logical-operators-in-postgresql">35. Logical operators in PostgreSQL</h3>
 <p>There are three basic <a href="https://www.postgresql.org/docs/12/functions-logical.html" class="markup--anchor markup--p-anchor">logical operators</a> available in PostgreSQL: AND, OR, and NOT.</p>
 <p>These operators are used to match conditions in SQL statements—e.g., in WHERE and HAVING clauses.</p>
@@ -26938,6 +27280,7 @@ NOT = reverses the value of Boolean operator</code></pre>
 
 If one expression is true and another expression is NULL, then the result is NULL. postgresql=# select 4=4 and null; ?column? ---------- (1 row)
 If one expression is true and another expression is false, then the result is TRUE. postgres=# select 1=100 OR 2=2; ?column? ---------- t (1 row)</code></pre>
+
 <h3 id="catching-duplicate-rows-in-a-postgresql-table">36. Catching duplicate rows in a PostgreSQL table</h3>
 <p>In the following SQL query, there are two records with the value 50:</p>
 <pre><code>postgres=# select age from dummy_table;
@@ -26985,18 +27328,19 @@ INSERT INTO newtb(rowid, attri, val) values(&#39;t2&#39;,&#39;a4&#39;,&#39;v8&#3
 <pre><code>postgres=# create extension tablefunc;
 CREATE EXTENSION
 
-Select *
+Select \*
 FROM crosstab(
-  &#39;select rowid, attri, val
-   from newtb
-   where attri = &#39;&#39;a2&#39;&#39; or attri = &#39;&#39;a3&#39;&#39;
-   order by 1,2&#39;)
+&#39;select rowid, attri, val
+from newtb
+where attri = &#39;&#39;a2&#39;&#39; or attri = &#39;&#39;a3&#39;&#39;
+order by 1,2&#39;)
 AS newtb(row_name varchar(10), category_1 varchar(10), category_2 varchar(10), category_3 varchar(10));
- row_name | category_1 | category_2 | category_3 
+row_name | category_1 | category_2 | category_3
 ----------+------------+------------+--------------------------
-   t1       |              v2        |            v3    | 
-   t2       |             v6         |             v7   | 
+t1 | v2 | v3 |
+t2 | v6 | v7 |
 (2 rows)</code></pre>
+
 <h3 id="self-join-query-in-postgresql">39. SELF JOIN query in PostgreSQL</h3>
 <p>When we join a table against itself, this is called a SELF JOIN. This can be done using INNER JOIN or LEFT JOIN. SELF JOINs are useful when comparing the columns of rows within the same table:</p>
 <pre><code>postgres=# create table emp1(emp_id int, firstname char(10), lastname char(10) , manager_id int);
@@ -27016,18 +27360,18 @@ INSERT 0 1
 postgres=# insert into emp1 values(6,&#39;DREU&#39;,&#39;QZV&#39;,3);
 INSERT 0 1
 
-
 postgres=# select a.firstname,b.lastname from emp1 a inner join emp1 b on a.emp_id=b.manager_id order by 1 ;
- firstname  |  lastname  
+firstname | lastname  
 ------------+------------
- ABC        | ZZV       
- ABC        | BGV       
- TEU        | QZV       
- TYU        | WZV       
- TYU        | AZV       
+ABC | ZZV  
+ ABC | BGV  
+ TEU | QZV  
+ TYU | WZV  
+ TYU | AZV  
 (5 rows)
 
 postgres=#</code></pre>
+
 <h3 id="parent-child-recursive-query-in-postgresql">40. Parent-child recursive query in PostgreSQL</h3>
 <p>With the help of <a href="https://www.postgresql.org/docs/12/queries-with.html" class="markup--anchor markup--p-anchor">common table expressions</a> (CTE) we can perform parent-child recursive queries:</p>
 <pre><code>postgres=# CREATE TABLE recu_pc (
@@ -27043,20 +27387,20 @@ INSERT 0 1
 postgres=# insert into recu_pc values (3, &#39;daughter&#39;, 2);
 INSERT 0 1
 
-
 postgres=# WITH RECURSIVE rec_q (id) as
-(          
-  SELECT recu_pc.id, recu_pc.name from recu_pc where name=&#39;mother&#39;
-  UNION ALL
-  SELECT recu_pc.id, recu_pc.name from rec_q, recu_pc where recu_pc.parent_id = rec_q.id
-  )
-SELECT *
+(  
+ SELECT recu_pc.id, recu_pc.name from recu_pc where name=&#39;mother&#39;
+UNION ALL
+SELECT recu_pc.id, recu_pc.name from rec_q, recu_pc where recu_pc.parent_id = rec_q.id
+)
+SELECT \*
 FROM rec_q;
- id |   name   
+id | name  
 ----+----------
-  2 | mother
-  3 | daughter
+2 | mother
+3 | daughter
 (2 rows)</code></pre>
+
 <h3 id="defining-a-variable-in-a-query-in-postgresql">41. Defining a variable in a query in PostgreSQL</h3>
 <p>Using an <a href="https://www.postgresql.org/docs/12/sql-do.html" class="markup--anchor markup--p-anchor">anonymous block</a>, we can define a variable that can be passed to in a query:</p>
 <pre><code>postgres=# do 
@@ -27184,6 +27528,7 @@ postgres=# execute test(50);
 Type &quot;help&quot; for help.
 
 postgres=#</code></pre>
+
 <p>Type <code>\q</code> and hit Enter to exit the PostgreSQL client tool.</p>
 <p>Now, you will add a user for your Ubuntu identity so that you don’t have to specify it all the time. Then, you will create a file that PostgreSQL will use to automatically send your password every time.</p>
 <p>Copy and paste the following into your Ubuntu shell. Think of a password that you want to use for your user. <strong>Replace the password in the single quotes in the command with the password that you want.</strong> It <em>has</em> to be a non-empty string. PostgreSQL doesn’t like it when it’s not.</p>
@@ -27255,6 +27600,7 @@ const result = R.head(R.values(R.head(res.rows)))
 
 console.log(result)
 }).finally(() =&gt; client.end());</code></pre>
+
 <p>The example connects to the database and issues a SELECT statement.</p>
 <pre><code>const pg = require(‘pg’);
 const R = require(‘ramda’);</code></pre>
@@ -27271,6 +27617,7 @@ const result = R.head(R.values(R.head(res.rows)));
 console.log(result);
 
 }).finally(() =&gt; client.end());</code></pre>
+
 <p>We issue a simple SELECT query. We get the result and output it to the console. The <code>res.rows</code> is an array of objects; we use Ramda to get the returned scalar value. In the end, we close the connection with <code>end()</code>.</p>
 <pre><code>node first.js
 5</code></pre>
@@ -27288,7 +27635,7 @@ const client = new pg.Client(cs);
 
 client.connect();
 
-client.query(‘SELECT * FROM cars’).then(res =&gt; {
+client.query(‘SELECT \* FROM cars’).then(res =&gt; {
 
 const fields = res.fields.map(field =&gt; field.name);
 
@@ -27299,6 +27646,7 @@ console.log(err.stack);
 }).finally(() =&gt; {
 client.end()
 });</code></pre>
+
 <p>The column names are retrieved with <code>res.fields</code> attribute. We also use the <code>catch</code> clause to output potential errors.</p>
 <pre><code>node column_names.js
 ‘id’, ‘name’, ‘price’′id′,′name′,′price′</code></pre>
@@ -27317,13 +27665,13 @@ const client = new pg.Client(cs);
 
 client.connect();
 
-client.query(‘SELECT * FROM cars’).then(res =&gt; {
+client.query(‘SELECT \* FROM cars’).then(res =&gt; {
 
 const data = res.rows;
 
 console.log(&#39;all data&#39;);
 data.forEach(row =&gt; {
-    console.log(\`Id: ${row.id} Name: ${row.name} Price: ${row.price}\`);
+console.log(\`Id: ${row.id} Name: ${row.name} Price: ${row.price}\`);
 })
 
 console.log(&#39;Sorted prices:&#39;);
@@ -27333,6 +27681,7 @@ console.log(prices);
 }).finally(() =&gt; {
 client.end()
 });</code></pre>
+
 <p><strong>TBC…</strong></p>
 <h4 id="if-you-found-this-guide-helpful-feel-free-to-checkout-my-githubgists-where-i-host-similar-content-18">If you found this guide helpful feel free to checkout my github/gists where I host similar content:</h4>
 <p><a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor">bgoonz’s gists · GitHub</a></p>
@@ -27546,10 +27895,11 @@ CREATE DATABASE books_db WITH ENCODING=&#39;UTF8&#39; TEMPLATE template0;
 DROP TABLE IF EXISTS books;
 
 CREATE TABLE books (
-  id SERIAL PRIMARY KEY,
-  client VARCHAR NOT NULL,
-  data JSONb NOT NULL
+id SERIAL PRIMARY KEY,
+client VARCHAR NOT NULL,
+data JSONb NOT NULL
 );</code></pre>
+
 <h3 id="populating-the-db">Populating the DB</h3>
 <pre><code>INSERT INTO books(client, data) values( &#39;Joe&#39;, &#39;{ &quot;title&quot;: &quot;Siddhartha&quot;, &quot;author&quot;: { &quot;first_name&quot;: &quot;Herman&quot;, &quot;last_name&quot;: &quot;Hesse&quot; } }&#39; ); INSERT INTO books(client, data) values(&#39;Jenny&#39;, &#39;{ &quot;title&quot;: &quot;Bryan Guner&quot;, &quot;author&quot;: { &quot;first_name&quot;: &quot;Jack&quot;, &quot;last_name&quot;: &quot;Kerouac&quot; } }&#39;); INSERT INTO books(client, data) values(&#39;Jenny&#39;, &#39;{ &quot;title&quot;: &quot;100 años de soledad&quot;, &quot;author&quot;: { &quot;first_name&quot;: &quot;Gabo&quot;, &quot;last_name&quot;: &quot;Marquéz&quot; } }&#39;);</code></pre>
 <p>Lets see everything inside the table books:</p>
@@ -27772,11 +28122,14 @@ print(17)               # =&gt; 17
 print(float(17))        # =&gt; 17.0
 
 # Using Int
-print(17.0)             # =&gt; 17.0
-print(int(17.0))        # =&gt; 17
+
+print(17.0) # =&gt; 17.0
+print(int(17.0)) # =&gt; 17
 
 # Using Str
-print(str(17.0) + &#39; and &#39; + str(17))        # =&gt; 17.0 and 17</code></pre>
+
+print(str(17.0) + &#39; and &#39; + str(17)) # =&gt; 17.0 and 17</code></pre>
+
 <p><strong>The arithmetic operators are the same between JS and Python, with two additions:</strong></p>
 <ul>
 <li><span id="8cf4"><em>“**” : Double asterisk for exponent.</em></span></li>
@@ -27805,9 +28158,10 @@ the end of the string!&#39;&#39;&#39;)</code></pre>
 <pre><code>print(len(“Spaghetti”)) # =&gt; 9</code></pre>
 <h3 id="python-uses-zero-based-indexing"><strong>Python uses</strong> <code>zero-based indexing</code></h3>
 <h4 id="python-allows-negative-indexing-thank-god">Python allows negative indexing (thank god!)</h4>
-<pre><code>print(“Spaghetti”[-1]) # =&gt; i 
+<pre><code>print(“Spaghetti”[-1]) # =&gt; i
 
 print(“Spaghetti”[-4]) # =&gt; e</code></pre>
+
 <ul>
 <li><span id="7567">Python let’s you use ranges</span></li>
 </ul>
@@ -27824,8 +28178,10 @@ print(&quot;Spaghetti&quot;[:4])  # =&gt; Spag
 print(&quot;Spaghetti&quot;[:-1])    # =&gt; Spaghett
 
 # Shortcut to get from a certain index to the end of a string.
-print(&quot;Spaghetti&quot;[1:])  # =&gt; paghetti
-print(&quot;Spaghetti&quot;[-4:])    # =&gt; etti</code></pre>
+
+print(&quot;Spaghetti&quot;[1:]) # =&gt; paghetti
+print(&quot;Spaghetti&quot;[-4:]) # =&gt; etti</code></pre>
+
 <ul>
 <li><span id="c786">The <code>index</code> string function is the equiv. of <code>indexOf()</code> in JS</span></li>
 </ul>
@@ -27919,14 +28275,17 @@ print(True and False)   # =&gt; False
 print(False and False)  # =&gt; False
 
 # Logical OR
-print(True or True)     # =&gt; True
-print(True or False)    # =&gt; True
-print(False or False)   # =&gt; False
+
+print(True or True) # =&gt; True
+print(True or False) # =&gt; True
+print(False or False) # =&gt; False
 
 # Logical NOT
-print(not True)             # =&gt; False
-print(not False and True)   # =&gt; True
-print(not True or False)    # =&gt; False</code></pre>
+
+print(not True) # =&gt; False
+print(not False and True) # =&gt; True
+print(not True or False) # =&gt; False</code></pre>
+
 <ul>
 <li><span id="18cc">By default, Python considers an object to be true UNLESS it is one of the following:</span></li>
 <li><span id="6e0a">Constant <code>None</code> or <code>False</code></span></li>
@@ -27960,12 +28319,14 @@ print(not True or False)    # =&gt; False</code></pre>
 <pre><code>print (2 == &#39;2&#39;)    # =&gt; False
 print (2 is &#39;2&#39;)    # =&gt; False
 
-print (&quot;2&quot; == &#39;2&#39;)    # =&gt; True
-print (&quot;2&quot; is &#39;2&#39;)    # =&gt; True
+print (&quot;2&quot; == &#39;2&#39;) # =&gt; True
+print (&quot;2&quot; is &#39;2&#39;) # =&gt; True
 
 # There is a distinction between the number types.
-print (2 == 2.0)    # =&gt; True
-print (2 is 2.0)    # =&gt; False</code></pre>
+
+print (2 == 2.0) # =&gt; True
+print (2 is 2.0) # =&gt; False</code></pre>
+
 <ul>
 <li><span id="c5a5">In the Python community it is better to use <code>is</code> and <code>is not</code> over <code>==</code> or <code>!=</code></span></li>
 </ul>
@@ -27975,18 +28336,19 @@ print (2 is 2.0)    # =&gt; False</code></pre>
     print(&#39;Hi, Monica.&#39;)
 
 if name == &#39;Monica&#39;:
-    print(&#39;Hi, Monica.&#39;)
+print(&#39;Hi, Monica.&#39;)
 else:
-    print(&#39;Hello, stranger.&#39;)
+print(&#39;Hello, stranger.&#39;)
 
 if name == &#39;Monica&#39;:
-    print(&#39;Hi, Monica.&#39;)
+print(&#39;Hi, Monica.&#39;)
 elif age &lt; 12:
-    print(&#39;You are not Monica, kiddo.&#39;)
+print(&#39;You are not Monica, kiddo.&#39;)
 elif age &gt; 2000:
-   print(&#39;Unlike you, Monica is not an undead, immortal vampire.&#39;)
+print(&#39;Unlike you, Monica is not an undead, immortal vampire.&#39;)
 elif age &gt; 100:
-   print(&#39;You are not Monica, grannie.&#39;)</code></pre>
+print(&#39;You are not Monica, grannie.&#39;)</code></pre>
+
 <blockquote>
 <p>Remember the order of <code>elif</code> statements matter.</p>
 </blockquote>
@@ -28035,13 +28397,14 @@ except:
 
 a = &#39;321&#39;
 try:
-    print(len(a))
+print(len(a))
 except:
-    print(&#39;Silently handle error here&#39;)
+print(&#39;Silently handle error here&#39;)
 
     # Optionally include a correction to the issue
     a = str(a)
     print(len(a))</code></pre>
+
 <ul>
 <li><span id="dcd1">You can name an error to give the output more specificity.</span></li>
 </ul>
@@ -28083,18 +28446,17 @@ except (TypeError, NameError):
 files = (&#39;one.txt&#39;, &#39;two.txt&#39;, &#39;three.txt&#39;)
 
 # simple loop
+
 for filename in files:
-    try:
-        # open the file in read mode
-        f = open(filename, &#39;r&#39;)
-    except OSError:
-        # handle the case where file does not exist or permission is denied
-        print(&#39;cannot open file&#39;, filename)
-    else:
-        # do stuff with the file object (f)
-        print(filename, &#39;opened successfully&#39;)
-        print(&#39;found&#39;, len(f.readlines()), &#39;lines&#39;)
-        f.close()</code></pre>
+try: # open the file in read mode
+f = open(filename, &#39;r&#39;)
+except OSError: # handle the case where file does not exist or permission is denied
+print(&#39;cannot open file&#39;, filename)
+else: # do stuff with the file object (f)
+print(filename, &#39;opened successfully&#39;)
+print(&#39;found&#39;, len(f.readlines()), &#39;lines&#39;)
+f.close()</code></pre>
+
 <ul>
 <li><span id="0e91"><code>finally</code> is used at the end to clean up all actions under any circumstance.</span></li>
 </ul>
@@ -28118,9 +28480,11 @@ if hasattr(a, &#39;__len__&#39;):
     print(len(a))
 
 # Try a string - the length will print out (4 in this case)
+
 b = &quot;5555&quot;
-if hasattr(b, &#39;__len__&#39;):
-    print(len(b))</code></pre>
+if hasattr(b, &#39;**len**&#39;):
+print(len(b))</code></pre>
+
 <hr />
 <h3 id="pass-1">Pass</h3>
 <ul>
@@ -28133,10 +28497,11 @@ if hasattr(b, &#39;__len__&#39;):
 while (true) {}
 
 if True:
-  pass
+pass
 
 while True:
-  pass</code></pre>
+pass</code></pre>
+
 <hr />
 <h3 id="functions-5">Functions</h3>
 <ul>
@@ -28153,10 +28518,13 @@ while True:
     print(saying, name)
 
 greeting(&quot;Monica&quot;)
+
 # Hello Monica
 
 greeting(&quot;Barry&quot;, &quot;Hey&quot;)
+
 # Hey Barry</code></pre>
+
 <h4 id="keep-in-mind-default-parameters-must-always-come-after-regular-parameters."><strong>Keep in mind, default parameters must always come after regular parameters.</strong></h4>
 <pre><code># THIS IS BAD CODE AND WILL NOT RUN
 def increment(delta=1, value):
@@ -28169,8 +28537,11 @@ def increment(delta=1, value):
     print(saying, name)
 
 # name has no default value, so just provide the value
+
 # saying has a default value, so use a keyword argument
+
 greeting(&quot;Monica&quot;, saying=&quot;Hi&quot;)</code></pre>
+
 <ul>
 <li><span id="54ac">The <code>lambda</code> keyword is used to create anonymous functions and are supposed to be <code>one-liners</code>.</span></li>
 </ul>
@@ -28368,6 +28739,7 @@ print(c)
 lst = [0, 1, 2, 3]
 for i in lst:
 print(i)</code></pre>
+
 <p><strong><em>Common technique is to use the len() on a pre-defined list with a for loop to iterate over the indices of the list.</em></strong></p>
 <pre><code>supplies = [‘pens’, ‘staplers’, ‘flame-throwers’, ‘binders’]
 for i in range(len(supplies)):
@@ -28417,8 +28789,9 @@ print(c)</code></pre>
 <pre><code>def example(arg_1, arg_2, *args, **kwargs):
 pass
 
-def example2(arg_1, arg_2, *args, kw_1=”shark”, kw_2=”blowfish”, **kwargs):
+def example2(arg_1, arg_2, \*args, kw_1=”shark”, kw_2=”blowfish”, \*\*kwargs):
 pass</code></pre>
+
 <hr />
 <h3 id="importing-in-python-1"><strong>Importing in Python</strong></h3>
 <p><strong>Modules are similar to packages in Node.js</strong><br />
@@ -29150,11 +29523,13 @@ let myArray = myRe.exec(&#39;cdbbdbsbz&#39;);
 console.log(&#39;The value of lastIndex is &#39; + myRe.lastIndex);
 
 // &quot;The value of lastIndex is 5&quot;</code></pre>
+
 <p>However, if you have this script:</p>
 <pre><code>let myArray = /d(b+)d/g.exec(&#39;cdbbdbsbz&#39;);
 console.log(&#39;The value of lastIndex is &#39; + /d(b+)d/g.lastIndex);
 
 // &quot;The value of lastIndex is 0&quot;</code></pre>
+
 <p>The occurrences of <code>/d(b+)d/g</code> in the two statements are different regular expression objects and hence have different values for their <code>lastIndex</code> property.</p>
 <p>If you need to access the properties of a regular expression created with an object initializer, you should first assign it to a variable.</p>
 <h3 id="advanced-searching-with-flags">[Advanced searching with flags]</h3>
@@ -29181,6 +29556,7 @@ let myArray = str.match(re);
 console.log(myArray);
 
 // [&quot;fee &quot;, &quot;fi &quot;, &quot;fo &quot;]</code></pre>
+
 <p>You could replace the line:</p>
 <pre><code>let re = /\w+\s/g;</code></pre>
 <p>with:</p>
@@ -29361,17 +29737,19 @@ Usually, that’s a function. For historical reasons, a string of code can be pa
   alert(&#39;Hello&#39;);
 }
 
-*!*
+_!_
 setTimeout(sayHi, 1000);
-*/!*</code></pre>
+_/!_</code></pre>
+
 <p>With arguments:</p>
 <pre><code>function sayHi(phrase, who) {
   alert( phrase + &#39;, &#39; + who );
 }
 
-*!*
+_!_
 setTimeout(sayHi, 1000, &quot;Hello&quot;, &quot;John&quot;); // Hello, John
-*/!*</code></pre>
+_/!_</code></pre>
+
 <p>If the first argument is a string, then JavaScript creates a function from it.</p>
 <p>So, this will also work:</p>
 <pre><code>setTimeout(&quot;alert(&#39;Hello&#39;)&quot;, 1000);</code></pre>
@@ -29384,7 +29762,9 @@ Novice developers sometimes make a mistake by adding brackets `()` after the fun
 // wrong!
 setTimeout(sayHi(), 1000);
 ```
-That doesn&#39;t work, because `setTimeout` expects a reference to a function. And here `sayHi()` runs the function, and the *result of its execution* is passed to `setTimeout`. In our case the result of `sayHi()` is `undefined` (the function returns nothing), so nothing is scheduled.</code></pre>
+
+That doesn&#39;t work, because `setTimeout` expects a reference to a function. And here `sayHi()` runs the function, and the _result of its execution_ is passed to `setTimeout`. In our case the result of `sayHi()` is `undefined` (the function returns nothing), so nothing is scheduled.</code></pre>
+
 <h3 id="canceling-with-cleartimeout">Canceling with clearTimeout</h3>
 <p>A call to <code>setTimeout</code> returns a “timer identifier” <code>timerId</code> that we can use to cancel the execution.</p>
 <p>The syntax to cancel:</p>
@@ -29396,6 +29776,7 @@ alert(timerId); // timer identifier
 
 clearTimeout(timerId);
 alert(timerId); // same identifier (doesn&#39;t become null after canceling)</code></pre>
+
 <p>As we can see from <code>alert</code> output, in a browser the timer identifier is a number. In other environments, this can be something else. For instance, Node.js returns a timer object with additional methods.</p>
 <p>Again, there is no universal specification for these methods, so that’s fine.</p>
 <p>For browsers, timers are described in the <a href="https://www.w3.org/TR/html5/webappapis.html#timers" class="markup--anchor markup--p-anchor">timers section</a> of HTML5 standard.</p>
@@ -29410,6 +29791,7 @@ let timerId = setInterval(() =&gt; alert(&#39;tick&#39;), 2000);
 
 // after 5 seconds stop
 setTimeout(() =&gt; { clearInterval(timerId); alert(&#39;stop&#39;); }, 5000);</code></pre>
+
 <p>```smart header = “Time goes on while <code>alert</code> is shown”</p>
 <p>In most browsers, including Chrome and Firefox, the internal timer continues “ticking” while showing <code>alert/confirm/prompt</code>.</p>
 <p>So if you run the code above and don’t dismiss the <code>alert</code> window for some time, then the next <code>alert</code> will be shown immediately as you do it. The actual interval between alerts will be shorter than 2 seconds.</p>
@@ -29420,7 +29802,7 @@ There are two ways of running something regularly.
 
 One is `setInterval`. The other one is a nested `setTimeout`, like this:
 
-```js
+````js
 /** instead of:
 let timerId = setInterval(() =&gt; alert(&#39;tick&#39;), 2000);
 */
@@ -29476,11 +29858,12 @@ setTimeout(function run() {
 ```js
 // the function stays in memory until the scheduler calls it
 setTimeout(function() {...}, 100);
-```
+````
 
 For `setInterval` the function stays in memory until `clearInterval` is called.
 
 There&#39;s a side-effect. A function references the outer lexical environment, so, while it lives, outer variables live too. They may take much more memory than the function itself. So when we don&#39;t need the scheduled function anymore, it&#39;s better to cancel it, even if it&#39;s very small.</code></pre>
+
 <h3 id="zero-delay-settimeout">Zero delay setTimeout</h3>
 <p>There’s a special use case: <code>setTimeout(func, 0)</code>, or just <code>setTimeout(func)</code>.</p>
 <p>This schedules the execution of <code>func</code> as soon as possible. But the scheduler will invoke it only after the currently executing script is complete.</p>
@@ -29489,6 +29872,7 @@ There&#39;s a side-effect. A function references the outer lexical environment, 
 <pre><code>setTimeout(() =&gt; alert(&quot;World&quot;));
 
 alert(&quot;Hello&quot;);</code></pre>
+
 <p>The first line “puts the call into calendar after 0ms”. But the scheduler will only “check the calendar” after the current script is complete, so <code>"Hello"</code> is first, and <code>"World"</code> – after it.</p>
 <p>There are also advanced browser-related use cases of a zero-delay timeout, that we’ll discuss in the chapter info:event-loop.</p>
 <pre><code>In the browser, there&#39;s a limitation of how often nested timers can run. The [HTML5 standard](https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#timers) says: &quot;after five nested timers, the interval is forced to be at least 4 milliseconds.&quot;.
@@ -29517,6 +29901,7 @@ The similar thing happens if we use `setInterval` instead of `setTimeout`: `setI
 That limitation comes from ancient times and many scripts rely on it, so it exists for historical reasons.
 
 For server-side JavaScript, that limitation does not exist, and there exist other ways to schedule an immediate asynchronous job, like [setImmediate](https://nodejs.org/api/timers.html#timers_setimmediate_callback_args) for Node.js. So this note is browser-specific.</code></pre>
+
 <h3 id="summary-1">Summary</h3>
 <ul>
 <li><span id="4074">Methods <code>setTimeout(func, delay, ...args)</code> and <code>setInterval(func, delay, ...args)</code> allow us to run the <code>func</code> once/regularly after <code>delay</code> milliseconds.</span></li>
@@ -29660,6 +30045,7 @@ For server-side JavaScript, that limitation does not exist, and there exist othe
 &lt;! — Everything the user sees on the webpage goes here! — ps… this is a comment →
 
 &lt;/body&gt;</code></pre>
+
 <p>Let us now have a look on the basic structure of HTML. That is the code which is must for every webpage to have:</p>
 <p><strong><em>&lt;!DOCTYPE html&gt;</em></strong></p>
 <h4 id="here-is-some-boilerplate-html-you-can-use-as-a-starting-pointevery-webpage-must-contain-this-code.">Here is some boilerplate html you can use as a starting point:!!Every Webpage must contain this code.!!</h4>
@@ -30125,6 +30511,7 @@ console.log(&quot;hello world&quot;);
 // console.log(&quot;how are you?&quot;);
 
 console.log(&quot;goodbye moon&quot;);</code></pre>
+
 <p>The program above would only print:</p>
 <pre><code>hello world
 goodbye moon</code></pre>
@@ -30932,6 +31319,7 @@ goodbye moon</code></pre>
 return [Math.sqrt(x*x+y*y), Math.atan2(y,x)];
 
 }</code></pre>
+
 <p>Variable destructuring in loops:</p>
 <p><code>let o = { x: 1, y: 2 };</code></p>
 <pre><code>for(const [name, value] of Object.entries(o)) {
@@ -30939,6 +31327,7 @@ return [Math.sqrt(x*x+y*y), Math.atan2(y,x)];
 console.log(name, value); // Prints &quot;x 1&quot; and &quot;y 2&quot;
 
 }</code></pre>
+
 <p><strong>Note</strong>: The <code>Object.entries()</code> method returns an array of a given object’s own enumerable string-keyed property <code>[key, value]</code> pairs, in the same order as that provided by a <code>for...in</code> loop. (The only important difference is that a <code>for...in</code> loop enumerates properties in the prototype chain as well).</p>
 <p>The list of variables on the left can include extra commas to skip certain values on the right</p>
 <p><code>[,x,,y] = [1,2,3,4];</code></p>
@@ -30964,9 +31353,10 @@ console.log(name, value); // Prints &quot;x 1&quot; and &quot;y 2&quot;
 
 log?.(x); // Call the function if there is one
 
-return x * x;
+return x \* x;
 
 }</code></pre>
+
 <p>Note that expression <code>x++</code> is not always the same as <code>x = x + 1</code>.The <code>++</code> operator never performs string concatenation: it always converts its operand to a number and increments it. If x is the string “1”, <code>++x</code> is the number 2, but<code>x + 1</code> is the string “11”.</p>
 <p>JavaScript objects are compared by reference, not by value. An object is equal to itself, but not to any other object. If two distinct objects have the same number of properties, with the same names and values, they are still not equal. Similarly, two arrays that have the same elements in the same order are not equal to each other.</p>
 <p><code>NaN</code>value is never equal to any other value, including itself! To check whether a value <code>x</code> is <code>NaN</code>, use <code>x !== </code>, or the global <code>isNaN()</code> function.</p>
@@ -31018,6 +31408,7 @@ for(let word of wordSet) {
 unique.push(word);
 
 }</code></pre>
+
 <p>String</p>
 <pre><code>let frequency = {};
 
@@ -31036,6 +31427,7 @@ frequency[letter] = 1;
 }
 
 }</code></pre>
+
 <p>Map</p>
 <pre><code>let m = new Map([[1, &quot;one&quot;]]);
 
@@ -31046,6 +31438,7 @@ key // =&gt; 1
 value // =&gt; &quot;one&quot;
 
 }</code></pre>
+
 <p>Objects are not (by default) iterable. Attempting to use <code>for/of</code> on a regular object throws a <code>TypeError</code> at runtime.</p>
 <p>If you want to iterate through the properties of an object, you can use the <code>for/in</code> loop.</p>
 <p>Note: <code>for/of</code> can be used on objects with <code>Object.entries</code> property, but it will not pick properties from object’s prototype.</p>
@@ -31056,6 +31449,7 @@ value // =&gt; &quot;one&quot;
 console.log(o[p]);
 
 }</code></pre>
+
 <p>Note: this will enumerate array indexes, not values.</p>
 <pre><code>for(let i in a) console.log(i);</code></pre>
 <p>The <code>for/in</code> loop does not actually enumerate all properties of an object. It does not enumerate properties whose names are symbols. And of the properties whose names are strings, it only loops over the <code>enumerable</code>properties.</p>
@@ -31073,6 +31467,7 @@ address.value = &quot;&quot;;
 email.value = &quot;&quot;;
 
 }</code></pre>
+
 <h3 id="debugger">debugger</h3>
 <p>If a debugger program is available and is running, then an implementation may (but is not required to) perform some kind of debugging action.</p>
 <p>In practice, this statement acts like a breakpoint: execution of JavaScript code stops, and you can use the debugger to print variables’ values, examine the call stack, and so on.</p>
@@ -31125,6 +31520,7 @@ surname: &quot;Flanagan&quot;
 }
 
 };</code></pre>
+
 <p><code>new</code></p>
 <p><code>let o = new Object();</code><br />
  <code>let a = new Array();</code><br />
@@ -31136,6 +31532,7 @@ surname: &quot;Flanagan&quot;
 <pre><code>let o = { x: &quot;don&#39;t change this value&quot; };
 
 library.function(Object.create(o));</code></pre>
+
 <p>Note: the library function can modify the passed in object, but not the original <code>o</code> object</p>
 <h3 id="access-object-properties-with-an-array-notation">Access Object Properties with an array ([]) notation</h3>
 <pre><code>let addr = &quot;&quot;;
@@ -31145,6 +31542,7 @@ for(let i = 0; i &lt; 4; i++) {
 addr += customer[`address${i}`] + &quot;\n&quot;;
 
 }</code></pre>
+
 <h3 id="inheritance-2">Inheritance</h3>
 <p><code>let o = {};</code></p>
 <p><code>o.x = 1;</code></p>
@@ -31216,6 +31614,7 @@ for(let p in o) {
 if (typeof o[p] === &quot;function&quot;) continue;
 
 }</code></pre>
+
 <p>Functions you can use to get an array of property names</p>
 <p>· <code>Object.keys()</code> returns an array of the names of the enumerable own properties of an object. It does not include non-enumerable properties, inherited properties, or properties whose name is a Symbol.</p>
 <p>· <code>Object.getOwnPropertyNames()</code> works like <code>Object.keys()</code>but returns an array of the names of nonenumerable own properties as well.</p>
@@ -31230,6 +31629,7 @@ for(let key of Object.keys(source)) {
 target[key] = source[key];
 
 }</code></pre>
+
 <p>One reason to assign properties from one object into another is when you have an object that defines default values for many properties and you want to copy those default properties into another object if a property by that name does not already exist in that object. Using <code>Object.assign()</code> naively will not do what you want:</p>
 <pre><code>Object.assign(o, defaults);</code></pre>
 <p>overwrites everything in o with defaults</p>
@@ -31258,6 +31658,7 @@ x: x,
 y: y
 
 };</code></pre>
+
 <p>←&gt;</p>
 <p><code>let x = 1, y = 2;</code><br />
  <code>let o = { x, y };</code></p>
@@ -31269,14 +31670,15 @@ y: y
 o[PROPERTY_NAME] = 1;
 
 o[computePropertyName()] = 2;</code></pre>
+
 <p>←&gt;</p>
 <pre><code>let p = {
 
-[PROPERTY_NAME]: 1,
-
-[computePropertyName()]: 2
+[property_name]: 1,
+[computepropertyname()]: 2
 
 };</code></pre>
+
 <h3 id="symbols-as-property-names">Symbols as Property Names</h3>
 <pre><code>const extension = Symbol(&quot;my extension symbol&quot;);
 
@@ -31287,6 +31689,7 @@ let o = {
 };
 
 o[extension].x = 0;</code></pre>
+
 <p>Two Symbols created with the same string argument are still different from one another.</p>
 <p>The point of Symbols is not security, but to define a safe extension mechanism for JavaScript objects. If you get an object from third-party code that you do not control and need to add some of your own properties to that object but want to be sure that your properties will not conflict with any properties that may already exist on the object, you can safely use Symbols as your property names.</p>
 <h3 id="spread-operator">Spread Operator</h3>
@@ -31300,21 +31703,23 @@ o[extension].x = 0;</code></pre>
 
 area: function() {
 
-return this.side * this.side; },
+return this.side \* this.side; },
 
 side: 10
 
 };</code></pre>
+
 <p>←&gt;</p>
 <pre><code>let square = {
 
 area() {
 
-return this.side * this.side; },
+return this.side \* this.side; },
 
 side: 10
 
 };</code></pre>
+
 <p>When you write a method using this shorthand syntax, the property name can take any of the forms that are legal in an object literal: in addition to a regular JavaScript identifier like the name area above, you can also use string literals and computed property names, which can include Symbol property names:</p>
 <pre><code>const METHOD_NAME = &quot;m&quot;;
 
@@ -31329,6 +31734,7 @@ let weirdMethods = {
 [symbol](x) { return x + 3; }
 
 };</code></pre>
+
 <p><code>weirdMethods["method With Spaces"](1)</code></p>
 <p>2</p>
 <p><code>weirdMethods[METHOD_NAME](1)</code></p>
@@ -31345,6 +31751,7 @@ get accessorProp() { return this.dataProp; },
 set accessorProp(value) { this.dataProp = value; }
 
 };</code></pre>
+
 <h3 id="arrays-4">Arrays</h3>
 <h3 id="creating-arrays">Creating Arrays</h3>
 <p>· Array literals</p>
@@ -31443,6 +31850,7 @@ for(let letter of letters) {
 string += letter;
 
 }</code></pre>
+
 <p>It has no special behavior for sparse arrays and simply returns <code>undefined</code> for any array elements that do not exist.</p>
 <p>If you want to use a <code>for/of</code> loop for an array and need to know the index of each array element, use the <code>entries()</code> method of the array</p>
 <pre><code>let letters = [...&quot;Hello world&quot;];
@@ -31454,6 +31862,7 @@ for(let [index, letter] of letters.entries()) {
 if (index % 2 === 0) everyother += letter;
 
 }</code></pre>
+
 <p>Another good way to iterate arrays is with <code>forEach()</code>. This is not a new form of the for loop, but an array method that offers a functional approach to array iteration.</p>
 <pre><code>let letters = [...&quot;Hello world&quot;];
 
@@ -31464,12 +31873,14 @@ letters.forEach(letter =&gt; {
 uppercase += letter.toUpperCase();
 
 });</code></pre>
+
 <p>You can also loop through the elements of an array with a <code>for</code> loop.</p>
 <pre><code>for(let i = 0, len = letters.length; i &lt; len; i++) {
 
 // loop body
 
 }</code></pre>
+
 <h3 id="multidimensional-arrays">Multidimensional Arrays</h3>
 <h3 id="create-a-multidimensional-array">Create a multidimensional array</h3>
 <p><code>let table = new Array(10);</code></p>
@@ -31483,11 +31894,12 @@ for(let row = 0; row &lt; table.length; row++) {
 
 for(let col = 0; col &lt; table[row].length; col++) {
 
-table[row][col] = row * col;
+table[row][col] = row \* col;
 
 }
 
 }</code></pre>
+
 <h3 id="array-methods-1">Array Methods</h3>
 <h3 id="array-iterator-methods">Array Iterator Methods</h3>
 <p>First, all of these methods accept a function as their first argument and invoke that function once for each element (or some elements) of the array. If the array is sparse, the function you pass is not invoked for nonexistent elements. In most cases, the function you supply is invoked with three arguments: the value of the array element, the index of the array element, and the array itself.</p>
@@ -31500,6 +31912,7 @@ data.forEach(function(v, i, a) {
 a[i] = v + 1;
 
 });</code></pre>
+
 <p>15</p>
 <p>[2,3,4,5,6]</p>
 <p>MAP()</p>
@@ -31659,6 +32072,7 @@ if (a &gt; b) return 1;
 return 0;
 
 });</code></pre>
+
 <p><code>[1111, 222, 33, 4];</code></p>
 <p><code>[4, 33, 222, 1111]</code></p>
 <p>REVERSE()</p>
@@ -31701,7 +32115,7 @@ let i = 0;
 
 while(i &lt; 10) {
 
-a[i] = i * i;
+a[i] = i \* i;
 
 i++;
 
@@ -31718,6 +32132,7 @@ for(let j = 0; j &lt; a.length; j++) {
 total += a[j];
 
 }</code></pre>
+
 <p>Since array-like objects do not inherit from <code>Array.prototype</code>, you cannot invoke array methods on them directly. You can invoke them indirectly using the <code>Function.call</code> method.</p>
 <p><code>let a = {"0": "a", "1": "b", "2": "c", length: 3};</code></p>
 <p>// An array-like object</p>
@@ -31747,6 +32162,7 @@ console.log(`${p}: ${o[p]}\n`);
 }
 
 }</code></pre>
+
 <p>Function declaration statements are “hoisted” to the top of the enclosing script, function, or block so that functions defined in this way may be invoked from code that appears before the definition.</p>
 <h3 id="function-expressions">Function Expressions</h3>
 <p><code>const square = function(x) { return x*x; };</code></p>
@@ -31754,9 +32170,10 @@ console.log(`${p}: ${o[p]}\n`);
 
 if (x &lt;= 1) return 1;
 
-return x * fact(x-1);
+return x \* fact(x-1);
 
 }</code></pre>
+
 <p>Function expressions can include names, which is useful for recursion</p>
 <p><code>[3,2,1].sort(function(a,b) { return a - b; });</code></p>
 <p>Function expressions can also be used as arguments to other functions</p>
@@ -31783,11 +32200,12 @@ return x * fact(x-1);
 <h3 id="nested-functions">Nested Functions</h3>
 <pre><code>function hypotenuse(a, b) {
 
-function square(x) { return x*x; }
+function square(x) { return x\*x; }
 
 return Math.sqrt(square(a) + square(b));
 
 }</code></pre>
+
 <h3 id="invoking-functions">Invoking Functions</h3>
 <p>For function invocation in non-strict mode, the invocation context (the <code>this</code> value) is the global object. In strict mode, however, the invocation context is <code>undefined</code>.</p>
 <p><code>const strict = (function() { return !this; }())</code></p>
@@ -31816,6 +32234,7 @@ for(let property in o) a.push(property);
 return a;
 
 }</code></pre>
+
 <p>One interesting case is that, for functions with multiple parameters, you can use the value of a previous parameter to define the default value of the parameters that follow it</p>
 <pre><code>const rectangle = (width, height = width*2) =&gt; ({width, height});</code></pre>
 <h3 id="rest-parameters-and-variable-length-argument-lists">Rest Parameters and Variable-Length Argument Lists</h3>
@@ -31839,6 +32258,7 @@ return maxValue;
 }
 
 max(1, 10, 100, 2, 3, 1000, 4, 5, 6)</code></pre>
+
 <p>1000</p>
 <p>within the body of a function, the value of a rest parameter will always be an array. The array may be empty, but a rest parameter will never be <code>undefined</code>.</p>
 <p>This type of function is called variadic functions, variable arity functions, or vararg functions.</p>
@@ -31861,12 +32281,14 @@ return maxValue;
 }
 
 max(1, 10, 100, 2, 3, 1000, 4, 5, 6)</code></pre>
+
 <p>1000</p>
 <p>you should avoid using it in any new code you write.</p>
 <h3 id="the-spread-operator-for-function-calls">The Spread Operator for Function Calls</h3>
 <pre><code>let numbers = [5, 2, 10, -1, 9, 100, 1];
 
 Math.min(...numbers)</code></pre>
+
 <p>-1</p>
 <pre><code>function timed(f) {
 
@@ -31907,6 +32329,7 @@ return sum;
 // Now invoke the timed version of that test function
 
 timed(benchmark)(1000000)</code></pre>
+
 <h3 id="destructuring-function-arguments-into-parameters">Destructuring Function Arguments into Parameters</h3>
 <pre><code>function vectorAdd(v1, v2) {
 
@@ -31915,6 +32338,7 @@ return [v1[0] + v2[0], v1[1] + v2[1]];
 }
 
 vectorAdd([1,2], [3,4])</code></pre>
+
 <p>←&gt;</p>
 <pre><code>function vectorAdd([x1,y1], [x2,y2]) {
 
@@ -31931,6 +32355,7 @@ return { x: x*scalar, y: y*scalar };
 }
 
 vectorMultiply({x: 1, y: 2}, 2)</code></pre>
+
 <p>←&gt;</p>
 <pre><code>function vectorMultiply({x,y}, scalar) {
 
@@ -31939,6 +32364,7 @@ return { x: x*scalar, y: y*scalar};
 }
 
 vectorMultiply({x: 1, y: 2}, 2)</code></pre>
+
 <h3 id="argument-types">Argument Types</h3>
 <p>Adding code to check the types of arguments</p>
 <pre><code>function sum(a) {
@@ -31960,6 +32386,7 @@ total += element;
 return total;
 
 }</code></pre>
+
 <p><code>sum([1,2,3])</code></p>
 <p>6</p>
 <p><code>sum(1, 2, 3);</code></p>
@@ -31987,7 +32414,7 @@ return total;
 
 function subtract(x,y) { return x - y; }
 
-function multiply(x,y) { return x * y; }
+function multiply(x,y) { return x \* y; }
 
 function divide(x,y) { return x / y; }
 
@@ -31996,6 +32423,7 @@ function operate(operator, operand1, operand2) {
 return operator(operand1, operand2);
 
 }</code></pre>
+
 <p><code>let i = operate(add, operate(add, 2, 3), operate(multiply, 4,5));</code></p>
 <p><code>(2+3) + (4*5):</code></p>
 <p>or:</p>
@@ -32005,7 +32433,7 @@ add: (x,y) =&gt; x+y,
 
 subtract: (x,y) =&gt; x-y,
 
-multiply: (x,y) =&gt; x*y,
+multiply: (x,y) =&gt; x\*y,
 
 divide: (x,y) =&gt; x/y,
 
@@ -32024,6 +32452,7 @@ return operators[operation](operand1, operand2);
 else throw &quot;unknown operator&quot;;
 
 }</code></pre>
+
 <p><code>operate2("add", "hello", operate2("add", " ", "world"))</code></p>
 <p>// “hello world”</p>
 <p><code>operate2("pow", 10, 2)</code></p>
@@ -32040,6 +32469,7 @@ return uniqueInteger.counter++;
 }
 
 uniqueInteger()</code></pre>
+
 <p>0</p>
 <pre><code>uniqueInteger()</code></pre>
 <p>1</p>
@@ -32050,7 +32480,7 @@ if (Number.isInteger(n) &amp;&amp; n &gt; 0) {
 
 if (!(n in factorial)) {
 
-factorial[n] = n * factorial(n-1);
+factorial[n] = n \* factorial(n-1);
 
 }
 
@@ -32067,6 +32497,7 @@ return NaN;
 }
 
 factorial[1] = 1;</code></pre>
+
 <p>Initialize the cache to hold this base case.</p>
 <pre><code>factorial(6)</code></pre>
 <p>720</p>
@@ -32086,6 +32517,7 @@ factorial[1] = 1;</code></pre>
 }
 
 chunkNamespace();</code></pre>
+
 <p>If defining even a single property is too much, you can define and invoke an anonymous function in a single expression — IIEF (immediately invoked function expression)</p>
 <pre><code>(function() {
 
@@ -32094,6 +32526,7 @@ chunkNamespace();</code></pre>
 // Chunk of code goes here
 
 }());</code></pre>
+
 <h3 id="closures-1">Closures</h3>
 <p>JavaScript uses lexical scoping. This means that functions are executed using the variable scope that was in effect when they were defined, not the variable scope that is in effect when they are invoked.</p>
 <p>In order to implement lexical scoping, the internal state of a JavaScript function object must include not only the code of the function but also a reference to the scope in which the function definition appears.</p>
@@ -32110,6 +32543,7 @@ function f() { return scope; }
 return f();
 
 }</code></pre>
+
 <p><code>checkscope()</code></p>
 <p>“local scope”</p>
 <pre><code>let scope = &quot;global scope&quot;;
@@ -32123,6 +32557,7 @@ function f() { return scope; }
 return f;
 
 }</code></pre>
+
 <p><code>let s = checkscope()();</code></p>
 <p>“local scope”</p>
 <p>Closures capture the local variables of a single function invocation and can use those variables as private state.</p>
@@ -32133,6 +32568,7 @@ let counter = 0;
 return function() { return counter++; };
 
 }());</code></pre>
+
 <p><code>uniqueInteger()</code></p>
 <p>0</p>
 <p><code>uniqueInteger()</code></p>
@@ -32152,6 +32588,7 @@ reset: function() { n = 0; }
 };
 
 }</code></pre>
+
 <p><code>let c = counter(), d = counter();</code></p>
 <p><code>c.count()</code></p>
 <p>0</p>
@@ -32180,6 +32617,7 @@ else throw Error(&quot;count can only be set to a larger value&quot;)
 };
 
 }</code></pre>
+
 <p><code>let c = counter(1000);</code></p>
 <p><code>c.count</code></p>
 <p>1000</p>
@@ -32214,6 +32652,7 @@ value = v;
 };
 
 }</code></pre>
+
 <p><code>let o = {};</code></p>
 <p><code>addPrivateProperty(o, "Name", x =&gt; typeof x === "string");</code></p>
 <p><code>o.setName("Frank");</code></p>
@@ -32256,6 +32695,7 @@ return result;
 };
 
 }</code></pre>
+
 <h3 id="the-bind-method">The bind() Method</h3>
 <p>The primary purpose of <code>bind()</code> is to bind a function to an object.</p>
 <p><code>function f(y) { return this.x + y; }</code></p>
@@ -32289,6 +32729,7 @@ return !result;
 };
 
 }</code></pre>
+
 <p><code>const even = x =&gt; x % 2 === 0;</code></p>
 <p>A function to determine if a number is even</p>
 <p><code>const odd = not(even);</code></p>
@@ -32308,6 +32749,7 @@ const increment = x =&gt; x + 1;
 const incrementAll = mapper(increment);
 
 incrementAll([1,2,3]</code></pre>
+
 <p>[2,3,4]</p>
 <p>Example that takes two functions, f and g, and returns a new function that computes f(g()):</p>
 <pre><code>function compose(f, g) {
@@ -32319,6 +32761,7 @@ return f.call(this, g.apply(this, args));
 };
 
 }</code></pre>
+
 <p><code>const sum = (x,y) =&gt; x+y;</code></p>
 <p><code>const square = x =&gt; x*x;</code></p>
 <p><code>compose(square, sum)(2,3)</code></p>
@@ -32346,7 +32789,7 @@ range.methods = {
 
 includes(x) { return this.from &lt;= x &amp;&amp; x &lt;= this.to; },
 
-*[Symbol.iterator]() {
+\*[Symbol.iterator]() {
 
 for(let x = Math.ceil(this.from); x &lt;= this.to; x++)
 
@@ -32357,6 +32800,7 @@ yield x;
 toString() { return &quot;(&quot; + this.from + &quot;...&quot; + this.to +&quot;)&quot;; }
 
 };</code></pre>
+
 <p><code>let r = range(1,3);</code></p>
 <p><code>r.includes(2)</code></p>
 <p>true</p>
@@ -32382,7 +32826,7 @@ Range.prototype = {
 
 includes: function(x) { return this.from &lt;= x &amp;&amp; x &lt;= this.to; },
 
-[Symbol.iterator]: function*() {
+[Symbol.iterator]: function\*() {
 
 for(let x = Math.ceil(this.from); x &lt;= this.to; x++)
 
@@ -32393,6 +32837,7 @@ yield x;
 toString: function() { return &quot;(&quot; + this.from + &quot;...&quot; + this.to + &quot;)&quot;; }
 
 };</code></pre>
+
 <p><code>let r = new Range(1,3);</code></p>
 <p><code>r.includes(2)</code></p>
 <p>true</p>
@@ -32411,6 +32856,7 @@ toString: function() { return &quot;(&quot; + this.from + &quot;...&quot; + this
 Strange.prototype = Range.prototype;
 
 new Strange() instanceof Range</code></pre>
+
 <p>true</p>
 <p>If you want to test the prototype chain of an object for a specific prototype and do not want to use the constructor function as an intermediary, you can use the <code>isPrototypeOf()</code> method</p>
 <pre><code>range.methods.isPrototypeOf(r);</code></pre>
@@ -32424,6 +32870,7 @@ let p = F.prototype;
 let c = p.constructor;
 
 c === F</code></pre>
+
 <p>true</p>
 <p><code>let o = new F();</code></p>
 <p><code>o.constructor === F</code></p>
@@ -32434,6 +32881,7 @@ c === F</code></pre>
 constructor: Range
 
 };</code></pre>
+
 <p>Another common technique that you are likely to see in older JavaScript code is to use the predefined prototype object with its constructor property and add methods to it one at a time with code like this:</p>
 <pre><code>Range.prototype.includes = function(x) {
 
@@ -32446,6 +32894,7 @@ Range.prototype.toString = function() {
 return &quot;(&quot; + this.from + &quot;...&quot; + this.to + &quot;)&quot;;
 
 };</code></pre>
+
 <h3 id="classes-with-the-class-keyword">Classes with the class Keyword</h3>
 <pre><code>class Range {
 
@@ -32459,7 +32908,7 @@ this.to = to;
 
 includes(x) { return this.from &lt;= x &amp;&amp; x &lt;= this.to; }
 
-*[Symbol.iterator]() {
+\*[Symbol.iterator]() {
 
 for(let x = Math.ceil(this.from); x &lt;= this.to; x++)
 
@@ -32470,6 +32919,7 @@ yield x;
 toString() { return `(${this.from}...${this.to})`; }
 
 }</code></pre>
+
 <p><code>let r = new Range(1,3);</code></p>
 <p><code>r.includes(2)</code></p>
 <p>true</p>
@@ -32499,6 +32949,7 @@ super(start + length, start);
 }
 
 }</code></pre>
+
 <p>class declarations have both statement and expression forms</p>
 <p><code>let Square = class { constructor(x) { this.area = x * x; } };</code></p>
 <p><code>new Square(3).area</code></p>
@@ -32520,6 +32971,7 @@ return new Range(parseInt(matches[1]),
 parseInt(matches[2]));
 
 }</code></pre>
+
 <p>The method defined by this code is <code>Range.parse()</code>, not <code>Range.prototype.parse()</code>, and you must invoke it through the constructor, not through an instance:</p>
 <pre><code>let r = Range.parse(&#39;(1...10)&#39;);</code></pre>
 <h3 id="getters-setters-and-other-method-forms">Getters, Setters, and other Method Forms</h3>
@@ -32541,6 +32993,7 @@ this.buffer = new Uint8Array(this.capacity);
 }
 
 }</code></pre>
+
 <p>←&gt;</p>
 <pre><code>class Buffer {
 
@@ -32551,6 +33004,7 @@ capacity = 4096;
 buffer = new Uint8Array(this.capacity);
 
 }</code></pre>
+
 <p>The same proposal that seeks to standardize these instance fields also defines private (with the # prefix) instance fields.</p>
 <pre><code>class Buffer {
 
@@ -32559,6 +33013,7 @@ buffer = new Uint8Array(this.capacity);
 get size() { return this.#size; }
 
 }</code></pre>
+
 <p>A related proposal seeks to standardize the use of the <code>static</code> keyword for fields.</p>
 <pre><code>static integerRangePattern = /^\((\d+)\.\.\.(\d+)\)$/;
 
@@ -32575,6 +33030,7 @@ throw new TypeError(`Cannot parse Range from &quot;${s}&quot;.`)
 return new Range(parseInt(matches[1]), matches[2]);
 
 }</code></pre>
+
 <h3 id="adding-methods-to-existing-classes">Adding Methods to Existing Classes</h3>
 <p>We can augment JavaScript classes simply by adding new methods to their prototype objects.</p>
 <pre><code>if (!String.prototype.startsWith) {
@@ -32594,6 +33050,7 @@ let n = this.valueOf();
 for(let i = 0; i &lt; n; i++) f.call(context, i);
 
 };</code></pre>
+
 <h3 id="subclasses">Subclasses</h3>
 <h3 id="subclasses-and-prototypes">Subclasses and Prototypes</h3>
 <p>Span subclass of the Range class. This subclass will work just like a Range, but instead of initializing it with a start and an end, we’ll instead specify a start and a distance, or span.</p>
@@ -32616,6 +33073,7 @@ this.from = start + span;
 }
 
 }</code></pre>
+
 <p>Ensure that the <code>Span</code> prototype inherits from the <code>Range</code></p>
 <pre><code>Span.prototype = Object.create(Range.prototype);</code></pre>
 <p>We don’t want to inherit <code>Range.prototype.constructor</code>, so we define our own constructor property:</p>
@@ -32633,6 +33091,7 @@ get first() { return this[0]; }
 get last() { return this[this.length-1]; }
 
 }</code></pre>
+
 <p><code>let a = new EZArray();</code></p>
 <p><code>a instanceof EZArray</code></p>
 <p>true</p>
@@ -32701,6 +33160,7 @@ return super.set(key, value);
 }
 
 }</code></pre>
+
 <p>You may not use the <code>this</code> keyword in your constructor until after you have invoked the superclass constructor with <code>super()</code>. This enforces a rule that superclasses get to initialize themselves before subclasses do.</p>
 <p>Once private fields are supported, we could change these properties to <code>#keyType</code> and <code>#valueType</code> so that they could not be altered from the outside.</p>
 <h3 id="class-hierarchies-and-abstract-classes">Class Hierarchies and Abstract Classes</h3>
@@ -32728,7 +33188,7 @@ const exports = {};
 
 const sum = (x, y) =&gt; x + y;
 
-const square = x = &gt; x * x;
+const square = x = &gt; x \* x;
 
 exports.mean = function(data) { ... };
 
@@ -32737,6 +33197,7 @@ exports.stddev = function(data) { ... };
 return exports;
 
 }());</code></pre>
+
 <p>writing code like the following to make use of those modules</p>
 <pre><code>const stats = require(&quot;stats.js&quot;);
 
@@ -32753,6 +33214,7 @@ s.insert(20);
 s.insert(30);
 
 let average = stats.mean([...s]);</code></pre>
+
 <h3 id="modules-in-es6">Modules in ES6</h3>
 <p>ES6 adds import and export keywords to JavaScript and finally supports real modularity as a core language feature.</p>
 <p>ES6 modularity is conceptually the same as Node modularity: each file is its own module, and constants, variables, functions, and classes defined within a file are private to that module unless they are explicitly exported.</p>
@@ -32760,15 +33222,16 @@ let average = stats.mean([...s]);</code></pre>
 <p>To export a constant, variable, function, or class from an ES6 module, simply add the keyword export before the declaration</p>
 <pre><code>export const PI = Math.PI;
 
-export function degreesToRadians(d) { return d * PI / 180; }
+export function degreesToRadians(d) { return d \* PI / 180; }
 
 export class Circle {
 
 constructor(r) { this.r = r; }
 
-area() { return PI * this.r * this.r; }
+area() { return PI _ this.r _ this.r; }
 
 }</code></pre>
+
 <p>or:</p>
 <pre><code>export { Circle, degreesToRadians, PI };</code></pre>
 <p>It is common to write modules that export only one value (typically a function or class), and in this case, we usually use export <code>default</code> instead of <code>export</code></p>
@@ -32777,10 +33240,12 @@ area() { return PI * this.r * this.r; }
 // implementation omitted
 
 }</code></pre>
+
 <h3 id="es6-imports">ES6 Imports</h3>
 <pre><code>import BitSet from &#39;./bitset.js&#39;;
 
 import { mean, stddev } from &quot;./stats.js&quot;;</code></pre>
+
 <p>When importing from a module that defines many exports, however, you can easily import everything with an import statement like this:</p>
 <pre><code>import * as stats from &quot;./stats.js&quot;;</code></pre>
 <p>With the wildcard import shown in the previous example, the importing module would use the imported <code>mean()</code> and<code>stddev()</code> functions through the stats object, invoking them as <code>stats.mean()</code> and <code>stats.stddev()</code>.</p>
@@ -32795,6 +33260,7 @@ let t = new Set([1, s]);
 let t = new Set(s);
 
 let unique = new Set(&quot;Mississippi&quot;);</code></pre>
+
 <p>The argument to the <code>Set()</code> constructor need not be an array: any iterable object (including other Set objects) is allowed.</p>
 <p>The <code>add()</code> method takes a single argument; if you pass an array, it adds the array itself to the set, not the individual array elements. <code>add()</code> always returns the set it is invoked on, however, so if you want to add multiple values to a set, you can used chained method calls like.</p>
 <p>it is very important to understand that set membership is based on strict equality checks, like the === operator performs.</p>
@@ -32809,13 +33275,15 @@ for(let p of oneDigitPrimes) {
 sum += p; // and add them up
 
 }</code></pre>
+
 <p>Because Set objects are iterable, you can convert them to arrays and argument lists with the … spread operator</p>
 <p><code>[...oneDigitPrimes]</code></p>
 <p>JavaScript Set class always remembers the order that elements were inserted in, and it always uses this order when you iterate a set: the first element inserted will be the first one iterated (assuming you haven’t deleted it first), and the most recently inserted element will be the last one iterated.</p>
 <p>Set class also implements a <code>forEach()</code> method</p>
 <pre><code>let product = 1;
 
-oneDigitPrimes.forEach(n =&gt; { product *= n; });</code></pre>
+oneDigitPrimes.forEach(n =&gt; { product \*= n; });</code></pre>
+
 <h3 id="the-map-class">The Map Class</h3>
 <pre><code>let m = new Map();
 
@@ -32826,6 +33294,7 @@ let copy = new Map(n);
 let o = { x: 1, y: 2};
 
 let p = new Map(Object.entries(o));</code></pre>
+
 <p>map is a set of keys, each of which has an associated value. This is not quite the same as a set of key/value pairs.</p>
 <p>use <code>has()</code> to check whether a map includes the specified key; use <code>delete()</code> to remove a key (and its associated value) from the map; use <code>clear()</code> to remove all key/value pairs from the map; and use the size property to find out how many keys a map contains.</p>
 <p><code>set()</code> method of Map can be chained.</p>
@@ -32855,6 +33324,7 @@ let p = new Map(Object.entries(o));</code></pre>
 [...m.values()]
 
 [...m.entries()]</code></pre>
+
 <p>Map objects can also be iterated using the <code>forEach()</code></p>
 <pre><code>m.forEach((value, key) =&gt; {...}</code></pre>
 <p>Note that the value parameter comes before the key parameter.</p>
@@ -32893,14 +33363,17 @@ let bytes = new Uint8Array(1024);
 let matrix = new Float64Array(9);
 
 let sudoku = new Int8Array(81);</code></pre>
+
 <p>Initialize with values</p>
 <pre><code>let white = Uint8ClampedArray.of(255, 255, 255, 0);
 
 let ints = Uint32Array.from(white);</code></pre>
+
 <p>one more way to create typed arrays that involves the <code>ArrayBuffer</code> type</p>
 <pre><code>let buffer = new ArrayBuffer(1024*1024);
 
 buffer.byteLength</code></pre>
+
 <p>1024*1024</p>
 <p>Typed arrays are not true arrays, but they re-implement most array methods, so you can use them pretty much just like you’d use regular arrays:</p>
 <p><code>let ints = new Int16Array(10);</code></p>
@@ -32912,6 +33385,7 @@ buffer.byteLength</code></pre>
 <pre><code>let littleEndian = new Int8Array(new Int32Array([1]).buffer)
 
 [0] === 1;</code></pre>
+
 <p>You can use the <code>DataView</code> class, which defines methods for reading and writing values from an <code>ArrayBuffer</code> with explicitly specified byte ordering. Refer to book for more examples.</p>
 <h3 id="pattern-matching-with-regular-expressions">Pattern Matching with Regular Expressions</h3>
 <p>RegExp objects may be created with the <code>RegExp()</code> constructor, of course, but they are more often created using a special literal syntax.</p>
@@ -32990,6 +33464,7 @@ buffer.byteLength</code></pre>
 /a+?/
 
 &quot;a&quot;</code></pre>
+
 <p>Note that using non-greedy repetition may not always produce the results you expect. This is because regular expression pattern matching is done by findingthe first position in the string at which a match is possible. Since a match is possible starting at the first character of the string, shorter matches starting at subsequent characters are never even considered.</p>
 <h3 id="alternation-grouping-and-references">ALTERNATION, GROUPING, AND REFERENCES</h3>
 <p><strong>Char</strong></p>
@@ -33103,6 +33578,7 @@ let fullurl, protocol, host, path;
 if (match !== null) {
 
 fullurl = match[0];</code></pre>
+
 <p><a href="http://www.example.com/~david" class="markup--anchor markup--p-anchor">“http://www.example.com/~david</a>”</p>
 <pre><code>protocol = match[1];</code></pre>
 <p>“http”</p>
@@ -33162,6 +33638,7 @@ console.log(`Matched ${match[0]} at ${match.index}`);
 console.log(`Next search begins at ${pattern.lastIndex}`);
 
 }</code></pre>
+
 <h3 id="the-lastindex-property-and-regexp-reuse">THE LASTINDEX PROPERTY AND REGEXP REUSE</h3>
 <p>The use of the <code>lastIndex</code> property with the g and y flags is a particularly awkward part of this API. When you use these flags, you need to be particularly careful when calling the <code>match(), exec()</code>, or <code>test()</code> methods because the behavior of these methods depends on <code>lastIndex</code>, and the value of <code>lastIndex</code> depends on what you have previously done with the RegExp object.</p>
 <p>To find the index of all &lt;p&gt; tags within a string of HTML text:</p>
@@ -33172,6 +33649,7 @@ while((match = /&lt;p&gt;/g.exec(html)) !== null) {
 positions.push(match.index);
 
 }</code></pre>
+
 <p>If the html string contains at least one &lt;p&gt; tag, then it will loop forever. For each iteration of the loop, we’re creating a new RegExp object with <code>lastIndex</code> set to 0, so <code>exec()</code> always begins at the start of the string, and if there is a match, it will keep matching over and over. The solution, of course, is to define the RegExp once, and save it to a variable so that we’re using the same RegExp object for each iteration of the loop.</p>
 <p>On the other hand, sometimes reusing a RegExp object is the wrong thing to do. Suppose, for example, that we want to loop through all of the words in a dictionary to find words that contain pairs of double letters.</p>
 <pre><code>let dictionary = [ &quot;apple&quot;, &quot;book&quot;, &quot;coffee&quot; ];
@@ -33189,6 +33667,7 @@ doubleLetterWords.push(word);
 }
 
 }</code></pre>
+
 <p><code>doubleLetterWords</code></p>
 <p>[“apple”, “coffee”]: “book” is missing!</p>
 <p>Because we set the g flag on the RegExp, the <code>lastIndex</code> property is changed after successful matches, and the <code>test()</code> method (which is based on <code>exec()</code>) starts searching for a match at the position specified by <code>lastIndex</code>. After matching the “pp” in “apple”, <code>lastIndex</code> is 3, and so we start searching the word “book” at position 3 and do not see the “oo” that it contains.</p>
@@ -33204,6 +33683,7 @@ doubleLetterWords.push(word);
 1,
 
 2, 3, 4, 5);</code></pre>
+
 <p>Year 2100</p>
 <p>January</p>
 <p>1st</p>
@@ -33228,6 +33708,7 @@ reticulateSplines(); // Do some time-consuming operation
 let endTime = Date.now();
 
 console.log(`Spline reticulation took ${endTime -startTime}ms.`);</code></pre>
+
 <p>adds three months and two weeks to the current date:</p>
 <p><code>let d = new Date();</code><br />
  <code>d.setMonth(d.getMonth() + 3, d.getDate() + 14);</code></p>
@@ -33235,6 +33716,7 @@ console.log(`Spline reticulation took ${endTime -startTime}ms.`);</code></pre>
 <pre><code>let d = new Date(2020, 0, 1, 17, 10, 30);
 
 d.toString()</code></pre>
+
 <p>“Wed Jan 01 2020 17:10:30 GMT-0800 (Pacific Standard Time)”</p>
 <pre><code>d.toUTCString()</code></pre>
 <p>“Thu, 02 Jan 2020 01:10:30 GMT”</p>
@@ -33271,6 +33753,7 @@ get name() { return &quot;HTTPError&quot;; }
 let error = new HTTPError(404, &quot;Not Found&quot;, &quot;http://example.com/&quot;);
 
 error.status</code></pre>
+
 <p>404</p>
 <pre><code>error.message</code></pre>
 <p>“404 Not Found:<a href="http://example.com/" class="markup--anchor markup--p-anchor">http://example.com/</a>”</p>
@@ -33281,6 +33764,7 @@ error.status</code></pre>
 <pre><code>let o = {s: &quot;&quot;, n: 0, a: [true, false, null]};
 
 let s = JSON.stringify(o);</code></pre>
+
 <p>s == ‘{“s”:””,”n”:0,”a”:[true,false,null]}’</p>
 <pre><code>let copy = JSON.parse(s);</code></pre>
 <p>copy == {s: “”, n: 0, a:[true, false, null]}</p>
@@ -33290,6 +33774,7 @@ let s = JSON.stringify(o);</code></pre>
 return JSON.parse(JSON.stringify(o));
 
 }</code></pre>
+
 <p>Typically, you pass only a single argument to <code>JSON.stringify()</code> and <code>JSON.parse()</code>. Both functions accept an optional second argument that allows us to extend the JSON format.</p>
 <p><code>JSON.stringify()</code> also takes an optional third argument. If you would like your JSONformatted string to be human-readable (if it is being used as a configuration file, for example), then you should pass null as the second argument and pass a number or string as the third argument. If the third argument is a number, then it will use that number of spaces for each indentation level. If the third argument is a string of whitespace (such as ‘\t’), it will use that string for each level of indent.</p>
 <h3 id="json-customizations">JSON Customizations</h3>
@@ -33297,7 +33782,7 @@ return JSON.parse(JSON.stringify(o));
 <p>If you need to re-create Date objects (or modify the parsed object inany other way), you can pass a “reviver” function as the second argument to <code>JSON.parse()</code>.</p>
 <pre><code>let data = JSON.parse(text, function(key, value) {
 
-if (key[0] === &quot;_&quot;) return undefined;
+if (key[0] === &quot;\_&quot;) return undefined;
 
 if (typeof value === &quot;string&quot; &amp;&amp; /^\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\d.\d\d\dZ$/.test(value)) {
 
@@ -33308,12 +33793,14 @@ return new Date(value);
 return value;
 
 });</code></pre>
+
 <h3 id="the-console-api">The Console API</h3>
 <p>Console functions that print their arguments like console.log() have a little-known feature: if the first argument is a string that includes <code>%s, %i, %d, %f, %o, %O, or %c</code>, then this first argument is treated as format string, and the values of subsequent arguments are substituted into the string in place of the two-character % sequences.</p>
 <h3 id="url-api">URL API</h3>
 <pre><code>let url = new URL(&quot;https://example.com:8000/path/name?q=term#fragment&quot;);
 
 url.href</code></pre>
+
 <p><a href="https://example.com:8000/path/name" class="markup--anchor markup--p-anchor">“https://example.com:8000/path/name</a>?q=term#fragment”</p>
 <pre><code>url.origin</code></pre>
 <p><a href="https://example.com:8000/" class="markup--anchor markup--p-anchor">“https://example.com:8000</a>”</p>
@@ -33334,6 +33821,7 @@ url.href</code></pre>
 <pre><code>let url = new URL(&quot;https://example.com&quot;);
 
 url.pathname = &quot;api/search&quot;;</code></pre>
+
 <p>Add a path to an API endpoint</p>
 <pre><code>url.search = &quot;q=test&quot;;</code></pre>
 <p>Add a query parameter</p>
@@ -33345,10 +33833,12 @@ url.pathname = &quot;api/search&quot;;</code></pre>
 url.pathname = &quot;path with spaces&quot;;
 
 url.pathname</code></pre>
+
 <p>“/path%20with%20spaces”</p>
 <pre><code>url.search = &quot;q=foo#bar&quot;;
 
 url.search</code></pre>
+
 <p>“?q=foo%23bar”</p>
 <pre><code>url.href</code></pre>
 <p><a href="https://example.com/path%20with%20spaces?q=foo%23bar" class="markup--anchor markup--p-anchor">“https://example.com/path%20with%20spaces?q=foo%23bar</a>”</p>
@@ -33383,6 +33873,7 @@ url.search</code></pre>
 setTimeout(() =&gt; { console.log(&quot;set...&quot;); }, 2000);
 
 setTimeout(() =&gt; { console.log(&quot;go!&quot;); }, 3000);</code></pre>
+
 <p>If you want to invoke a function repeatedly, use <code>setInterval()</code></p>
 <p>Both <code>setTimeout()</code> and <code>setInterval()</code> return a value. If you save this value in a variable, you can then use it later to cancel the execution of the function by passing it to <code>clearTimeout()</code> or <code>clearInterval()</code>.</p>
 <pre><code>let clock = setInterval(() =&gt; {
@@ -33394,6 +33885,7 @@ console.log(new Date().toLocaleTimeString());
 }, 1000);
 
 setTimeout(() =&gt; { clearInterval(clock); }, 10000);</code></pre>
+
 <p>After 10 seconds: stop the repeating code above</p>
 <h3 id="iterators-and-generators">Iterators and Generators</h3>
 <p>The iterator method of an iterable object does not have a conventional name but uses the Symbol, Symbol.iterator as its name. So a simple for/of loop over an iterable object iterable could also be written the hard way, like this:</p>
@@ -33406,6 +33898,7 @@ for(let result = iterator.next(); !result.done; result =iterator.next()) {
 console.log(result.value) // result.value == 99
 
 }</code></pre>
+
 <p>When you want to iterate though a “partially used” iterator:</p>
 <p><code>let list = [1,2,3,4,5];</code><br />
  <code>let iter = list[Symbol.iterator]();</code></p>
@@ -33453,6 +33946,7 @@ return (next &lt;= last) ? { value: next++ } : { done: true };
 }
 
 for(let x of new Range(1,10)) console.log(x);</code></pre>
+
 <p>Logs numbers 1 to 10</p>
 <pre><code>[...new Range(-2,2)]</code></pre>
 <p>[-2, -1, 0,1, 2]</p>
@@ -33487,6 +33981,7 @@ return { value: f(v.value) };
 };
 
 }</code></pre>
+
 <p><code>[...map(new Range(1,4), x =&gt; x*x)]</code></p>
 <p>[1, 4, 9, 16]</p>
 <p>Return an iterable object that filters the specified iterable, iterating only those elements for which the predicate returns true</p>
@@ -33517,6 +34012,7 @@ return v;
 };
 
 }</code></pre>
+
 <p><code>[...filter(new Range(1,10), x =&gt; x % 2 === 0)]</code></p>
 <p>[2,4,6,8,10]</p>
 <h3 id="generators">Generators</h3>
@@ -33538,6 +34034,7 @@ yield 7;
 }
 
 let primes = oneDigitPrimes();</code></pre>
+
 <p>we get a generator</p>
 <pre><code>primes.next().value</code></pre>
 <p>2</p>
@@ -33558,6 +34055,7 @@ let primes = oneDigitPrimes();</code></pre>
 for(let prime of oneDigitPrimes()) sum += prime;
 
 sum</code></pre>
+
 <p>17</p>
 <p>Like regular functions, however, we can also define generators in expression form.</p>
 <pre><code>const seq = function*(from,to) {
@@ -33567,13 +34065,14 @@ for(let i = from; i &lt;= to; i++) yield i;
 };
 
 [...seq(3,5)]</code></pre>
+
 <p>[3, 4, 5]</p>
 <p>In classes and object literals, we can use shorthand notation to omit the function keyword entirely when we define methods.</p>
 <pre><code>let o = {
 
 x: 1, y: 2, z: 3,
 
-*g() {
+\*g() {
 
 for(let key of Object.keys(this)) {
 
@@ -33584,6 +34083,7 @@ yield key;
 }
 
 };</code></pre>
+
 <p><code>[...o.g()]</code></p>
 <p>[“x”, “y”, “z”, “g”]</p>
 <p>Generators often make it particularly easy to define iterable classes.</p>
@@ -33594,6 +34094,7 @@ for(let x = Math.ceil(this.from); x &lt;= this.to; x++)
 yield x;
 
 }</code></pre>
+
 <h3 id="generator-examples">Generator Examples</h3>
 <p>Generators are more interesting if they actually generate the values they yield by doing some kind of computation.</p>
 <p>generator function that yields Fibonacci numbers</p>
@@ -33610,6 +34111,7 @@ yield y;
 }
 
 }</code></pre>
+
 <p>If this generator is used with the … spread operator, it will loop until memory is exhausted and the program crashes.</p>
 <p>Use it in a <code>for/of</code> loop, however</p>
 <pre><code>function fibonacci(n) {
@@ -33623,6 +34125,7 @@ if (n-- &lt;= 0) return f;
 }
 
 fibonacci(20)</code></pre>
+
 <p>10946</p>
 <p>This kind of infinite generator becomes more useful with a <code>take()</code> generator like this</p>
 <pre><code>function* take(n, iterable) {
@@ -33642,6 +34145,7 @@ else yield next.value;
 }
 
 [...take(5, fibonacciSequence())]</code></pre>
+
 <p>[1, 1, 2, 3, 5]</p>
 <h3 id="asynchronous-javascript">Asynchronous Javascript</h3>
 <p><code>Promises</code>, new in ES6, are objects that represent the not-yet-available result of an asynchronous operation.</p>
@@ -33657,6 +34161,7 @@ function stopCheckingForUpdates() {
 clearInterval(updateIntervalId);
 
 }</code></pre>
+
 <h3 id="events-1">Events</h3>
 <p>Event-driven JavaScript programs register callback functions for specified types of events in specified contexts, and the web browser invokes those functions whenever the specified events occur.</p>
 <p>These callback functions are called event handlers or event listeners, and they are registered with <code>addEventListener()</code></p>
@@ -33699,6 +34204,7 @@ versionCallback(e.type, null);
 };
 
 }</code></pre>
+
 <h3 id="promises">Promises</h3>
 <p>Promises, a core language feature designed to simplify asynchronous programming.</p>
 <p>A Promise is an object that represents the result of an asynchronous computation. That result may or may not be ready yet, and the Promise API is intentionally vague about this: there is no way to synchronously get the value of a Promise; you can only ask the Promise to call a callback function when the value is ready.</p>
@@ -33714,12 +34220,14 @@ versionCallback(e.type, null);
 // callback function that will be asynchronously invoked with the parsed JSON value when it becomes available.
 
 });</code></pre>
+
 <p>The Promise object defines a then() instance method. Instead of passing our callback function directly to <code>getJSON()</code>, we instead pass it to the then() method. When the HTTP response arrives, the body of that response is parsed as JSON, and the resulting parsed value is passed to the function that we passed to <code>then()</code>.</p>
 <p>If you call the <code>then()</code> method of a Promise object multiple times, each of the functions you specify will be called when the promised computation is complete.</p>
 <p>Unlike many event listeners, though, a Promise represents a single computation, and each function registered with then() will be invoked only once.</p>
 <pre><code>function displayUserProfile(profile) { ...}
 
 getJSON(&quot;/api/user/profile&quot;).then(displayUserProfile);</code></pre>
+
 <h3 id="handling-errors-with-promises">HANDLING ERRORS WITH PROMISES</h3>
 <p>Asynchronous operations, particularly those that involve networking, can typically fail in a number of ways, and robust code has to be written to handle the errors that will inevitably occur.</p>
 <p><code>getJSON("/api/user/profile").then(displayUserProfile, handleProfileError);</code></p>
@@ -33739,18 +34247,20 @@ getJSON(&quot;/api/user/profile&quot;).then(displayUserProfile);</code></pre>
 .then(rendered =&gt; {cacheInDatabase(rendered); })
 
 .catch(error =&gt; handle(error));</code></pre>
+
 <p>has largely been replaced by the newer, Promise-based Fetch API. In its simplest form, this new HTTP API is just the function fetch(). That promise is fulfilled when the HTTP response begins to arrive and the HTTP status and headers are available.</p>
 <pre><code>fetch(&quot;/api/user/profile&quot;)
 
 .then(response =&gt; {
 
-if (response.ok &amp;&amp;  response.headers.get(&quot;Content-Type&quot;) === &quot;application/json&quot;) {
+if (response.ok &amp;&amp; response.headers.get(&quot;Content-Type&quot;) === &quot;application/json&quot;) {
 
 // What can we do here? We don&#39;t actually have the response body yet.
 
 }
 
 });</code></pre>
+
 <p>But although the initial Promise is fulfilled, the body of the response may not yet have arrived. So these <code>text()</code> and<code>json()</code> methods for accessing the body of the response themselves return Promises.</p>
 <pre><code>fetch(&quot;/api/user/profile&quot;)
 
@@ -33765,13 +34275,15 @@ return response.json();
 displayUserProfile(profile);
 
 });</code></pre>
+
 <p>There is a second <code>then()</code> in the chain, which means that the first invocation of the <code>then()</code> method must itself return a Promise. That is not how Promises work, however.</p>
 <p>When we write a chain of <code>.then()</code> invocations, we are not registering multiple callbacks on a single Promise object. Instead, each invocation of the <code>then()</code> method returns a new Promise object. That new Promise object is not fulfilled until the function passed to <code>then()</code> is complete.</p>
 <pre><code>fetch(theURL)       // task 1; returns promise 1
 
-.then(callback1)  // task 2; returns promise 2
+.then(callback1) // task 2; returns promise 2
 
 .then(callback2); // task 3; returns promise 3</code></pre>
+
 <h3 id="resolving-promises">Resolving Promises</h3>
 <p>There is actually a fourth Promise object involved as which brings up the point of what it means for a Promise to be “resolved.”</p>
 <p>fetch() returns a Promise object which, when fulfilled, passes a Response object to the callback function we register. This Response object has <code>.text(), .json(),</code> and other methods to request the body of the HTTP response in various forms. But since the body may not yet have arrived, these methods must return Promise objects.</p>
@@ -33808,6 +34320,7 @@ promise 2, task 2
 let p3 = p2.then(c2);
 
 promise 3, task 3</code></pre>
+
 <p>In order for Promise chains to work usefully, the output of task 2 must become the input to task 3. The input to task 3 is the body of the URL that was fetched, parsed as a JSON object. But the return value of callback c1 is not a JSON object, but Promise p4 for that JSON object.</p>
 <p>When p1 is fulfilled, c1 is invoked, and task 2 begins. And when p2 is fulfilled, c2 is invoked, and task 3 begins.</p>
 <p>And when p2 is fulfilled, c2 is invoked, and task 3 begins. But just because task 2 begins when c1 is invoked,it does not mean that task 2 must end when c1 returns.</p>
@@ -33881,6 +34394,7 @@ console.error(e);
 }
 
 });</code></pre>
+
 <p>p1 is the Promise returned by the <code>fetch()</code> call</p>
 <p>p2 is the Promise returned by the first <code>.then()</code> call</p>
 <p>c1 is the callback that we pass to that .<code>then()</code> call</p>
@@ -33904,6 +34418,7 @@ console.error(e);
 .then(doStageFour)
 
 .catch(logStageThreeAndFourErrors);</code></pre>
+
 <p>If the callback returns normally, then the <code>.catch()</code> callback will be skipped, and the return value of the previous callback will become the input to the next .<code>then()</code> callback.</p>
 <p>Once an error has been passed to a <code>.catch()</code> callback, it stops propagating down the Promise chain. A <code>.catch()</code> callback can throw a new error, but if it returns normally, than that return value is used to resolve and/or fulfill the associated Promise, and<br />
  the error stops propagating.</p>
@@ -33915,6 +34430,7 @@ console.error(e);
 .then(displayTable)
 
 .catch(displayDatabaseError);</code></pre>
+
 <h3 id="promises-in-parallel">Promises in Parallel</h3>
 <p>Sometimes,we want to execute a number of asynchronous operations in parallel. The function <code>Promise.all()</code> can do this. <code>Promise.all()</code> takes an array of Promise objects as its input and returns a Promise.</p>
 <p>The returned Promise will be rejected if any of the input Promises are rejected. Otherwise, it will be fulfilled with an array of the fulfillment values of each of the input Promises.</p>
@@ -33924,9 +34440,10 @@ promises = urls.map(url =&gt; fetch(url).then(r =&gt; r.text()));
 
 Promise.all(promises)
 
-.then(bodies =&gt; { /* do something with the array of strings */ })
+.then(bodies =&gt; { /_ do something with the array of strings _/ })
 
 .catch(e =&gt; console.error(e));</code></pre>
+
 <p>The Promise returned by <code>Promise.all()</code> rejects when any of the input Promises is rejected. This happens immediately upon the first rejection and can happen while other input Promises are still pending. In ES2020, <code>Promise.allSettled()</code> takes an array of input<br />
  Promises and returns a Promise, just like Promise.all() does. But <code>Promise.allSettled()</code> never rejects the returned Promise, and it does not fulfill that Promise until all of the input Promises have settled. The Promise resolves to an array of objects, with one object for each input Promise. Each of these returned objects has a status property set to “fulfilled” or “rejected.” If the status is “fulfilled”, then the object will also have a value property that gives the fulfillment value. And if the status is “rejected”, then the object will also have a reason property that gives the error or rejection value of the corresponding Promise.</p>
 <pre><code>Promise.allSettled([Promise.resolve(1), Promise.reject(2),3]).then(results =&gt; {
@@ -33938,6 +34455,7 @@ results[1] // =&gt; { status: &quot;rejected&quot;, reason: 2 }
 results[2] // =&gt; { status: &quot;fulfilled&quot;, value: 3 }
 
 });</code></pre>
+
 <p>Occasionally, you may want to run a number of Promises at once but may only care about the value of the first one to fulfill. In that case, you can use <code>Promise.race()</code> instead of <code>Promise.all()</code>. It returns a Promise that is fulfilled or rejected when the first of the Promises in the input array is fulfilled or rejected.</p>
 <h3 id="making-promises">Making Promises</h3>
 <h3 id="promises-in-sequence">Promises in Sequence</h3>
@@ -33949,6 +34467,7 @@ results[2] // =&gt; { status: &quot;fulfilled&quot;, value: 3 }
 <pre><code>let response = await fetch(&quot;/api/user/profile&quot;);
 
 let profile = await response.json();</code></pre>
+
 <p>It is critical to understand right away that the <code>await</code> keyword does not cause your program to block and literally do nothing until the specified Promise settles. The code remains asynchronous, and the <code>await</code> simply disguises this fact. This means that any code that uses await is itself asynchronous.</p>
 <h3 id="async-functions">async Functions</h3>
 <p>Because any code that uses await is asynchronous, there is one critical rule: you can only use the await keyword within functions that have been declared with the <code>async</code> keyword.</p>
@@ -33961,6 +34480,7 @@ let profile = await response.json();
 return profile.highScore;
 
 }</code></pre>
+
 <p>Declaring a function <code>async</code> means that the return value of the function will be a Promise even if no Promise-related code appears in the body of the function.</p>
 <p>The <code>getHighScore()</code> function is declared <code>async</code>, so it returns a Promise. And because it returns a Promise, we can use the <code>await</code> keyword with it:</p>
 <pre><code>displayHighScore(await getHighScore());</code></pre>
@@ -33975,10 +34495,12 @@ let body = await response.json();
 return body;
 
 }</code></pre>
+
 <p>And now suppose that we want to fetch two JSON values with this function</p>
 <pre><code>let value1 = await getJSON(url1);
 
 let value2 = await getJSON(url2);</code></pre>
+
 <p>The problem with this code is that it is unnecessarily sequential: the fetch of the second URL will not begin until the first fetch is complete. If the second URL does not depend on the value obtained from the firstURL, then we should probably try to fetch the two values at the same time.</p>
 <pre><code>let [value1, value2] = await Promise.all([getJSON(url1), getJSON(url2)]);</code></pre>
 <h3 id="the-forawait-loop">The for/await Loop</h3>
@@ -33994,12 +34516,14 @@ response = await promise;
 handle(response);
 
 }</code></pre>
+
 <p>←&gt;</p>
 <pre><code>for await (const response of promises) {
 
 handle(response);
 
 }</code></pre>
+
 <p>both examples will only work if they are within functions declared async; a <code>for/await</code> loop is no different than a regular await expression in that way</p>
 <h4 id="if-you-found-this-guide-helpful-feel-free-to-checkout-my-githubgists-where-i-host-similar-content-26">If you found this guide helpful feel free to checkout my GitHub/gist’s where I host similar content:</h4>
 <p><a href="https://gist.github.com/bgoonz" class="markup--anchor markup--p-anchor"><strong>bgoonz’s</strong> gists · GitHub</a></p>
@@ -34066,16 +34590,17 @@ const hostname = &quot;127.0.0.1&quot;; // the local computer where the server i
 const port = 3000; // a port we&#39;ll use to watch for traffic
 
 const server = http.createServer((req, res) =&gt; {
-    // creates our server
-    res.statusCode = 200; // http status code returned to the client
-    res.setHeader(&quot;Content-Type&quot;, &quot;text/plain&quot;); // inform the client that we&#39;ll be returning text
-    res.end(&quot;Hello World from Node\\n&quot;); // end the request and send a response with the specified message
+// creates our server
+res.statusCode = 200; // http status code returned to the client
+res.setHeader(&quot;Content-Type&quot;, &quot;text/plain&quot;); // inform the client that we&#39;ll be returning text
+res.end(&quot;Hello World from Node\\n&quot;); // end the request and send a response with the specified message
 });
 
 server.listen(port, hostname, () =&gt; {
-    // start watching for connections on the port specified
-    console.log(`Server running at &lt;http://$&gt;{hostname}:${port}/`);
+// start watching for connections on the port specified
+console.log(`Server running at &lt;http://$&gt;{hostname}:${port}/`);
 });</code></pre>
+
 <p>Now navigate to the folder in a terminal/console window and type: <code>node index.js</code> to execute your file. A message that reads “<em>Server running at</em> <a href="http://127.0.0.1:3000" class="markup--anchor markup--p-anchor"><em>http://127.0.0.1:3000</em></a>” should be displayed, and the server is now waiting for connections.</p>
 <p>Open a browser and visit: <code>http://localhost:3000</code>. <code>localhost</code> and the IP address <code>127.0.0.1</code> point to the same thing: your local computer. The browser should show the message: “<em>Hello World from Node</em>”. There you have it, your first web server, built from scratch using nothing but <code>Node.js</code>.</p>
 <figure>
@@ -34144,13 +34669,14 @@ const server = express(); // creates the server
 
 // handle requests to the root of the api, the / route
 server.get(&#39;/&#39;, (req, res) =&gt; {
-  res.send(&#39;Hello from Express&#39;);
+res.send(&#39;Hello from Express&#39;);
 });
 
 // watch for connections on port 5000
 server.listen(5000, () =&gt;
-  console.log(&#39;Server running on &lt;http://localhost:5000&gt;&#39;)
+console.log(&#39;Server running on &lt;http://localhost:5000&gt;&#39;)
 );</code></pre>
+
 <p>Run the server by typing: <code>node server.js</code> and visit <code>http://localhost:5000</code> in the browser.</p>
 <p>To stop the server, type <code>Ctrl + c</code> at the terminal window.</p>
 <figure>
@@ -34179,14 +34705,15 @@ const server = express();
 // the second argument passed to the .get() method is the &quot;Route Handler Function&quot;
 // the route handler function will run on every GET request to &quot;/&quot;
 server.get(&#39;/&#39;, (req, res) =&gt; {
-  // express will pass the request and response objects to this function
-  // the .send() on the response object can be used to send a response to the client
-  res.send(&#39;Hello World&#39;);
+// express will pass the request and response objects to this function
+// the .send() on the response object can be used to send a response to the client
+res.send(&#39;Hello World&#39;);
 });
 
 // once the server is fully configured we can have it &quot;listen&quot; for connections on a particular &quot;port&quot;
 // the callback function passed as the second argument will run once when the server starts
 server.listen(8000, () =&gt; console.log(&#39;API running on port 8000&#39;));</code></pre>
+
 <p><strong>make sure to save your changes to</strong> <code>index.js</code><strong>.</strong></p>
 <p>We are using the <code>express</code> npm module in our code, so we need to add it as a dependency to our project. To do this:</p>
 <ul>
@@ -34242,25 +34769,26 @@ server.listen(8000, () =&gt; console.log(&#39;API running on port 8000&#39;));</
 const server = express();
 
 server.get(&#39;/&#39;, (req, res) =&gt; {
-  res.send(&#39;Hello World&#39;);
+res.send(&#39;Hello World&#39;);
 });
 
 server.get(&#39;/hobbits&#39;, (req, res) =&gt; {
-  const hobbits = [
-    {
-      id: 1,
-      name: &#39;Samwise Gamgee&#39;,
-    },
-    {
-      id: 2,
-      name: &#39;Frodo Baggins&#39;,
-    },
-  ];
+const hobbits = [
+{
+id: 1,
+name: &#39;Samwise Gamgee&#39;,
+},
+{
+id: 2,
+name: &#39;Frodo Baggins&#39;,
+},
+];
 
-  res.status(200).json(hobbits);
+res.status(200).json(hobbits);
 });
 
 server.listen(8000, () =&gt; console.log(&#39;API running on port 8000&#39;));</code></pre>
+
 <p>Now we can visit <code>http://localhost:8000/hobbits</code> in our browser, and we should get back our JSON array.</p>
 <p>If you are using the Google Chrome browser, <a href="https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc" class="markup--anchor markup--p-anchor">this extension (Links to an external site.)</a> can format the JSON data in a more readable fashion.</p>
 <p>Congratulations! You just built an API that can return data in JSON format.</p>
@@ -34276,8 +34804,9 @@ server.get(&#39;/about&#39;, (req, res) =&gt; {
 
 // this request handler executes when making a GET request to /contact
 server.get(&#39;/contact&#39;, (req, res) =&gt; {
-  res.status(200).send(&#39;&lt;h1&gt;Contact Form&lt;/h1&gt;&#39;);
+res.status(200).send(&#39;&lt;h1&gt;Contact Form&lt;/h1&gt;&#39;);
 });</code></pre>
+
 <p>Two things to note:</p>
 <blockquote>
 <p>1.) We are using the same HTTP Method on both endpoints, but express looks at the URL and executes the corresponding request handler.</p>
@@ -34349,13 +34878,14 @@ server.delete(&#39;/hobbits&#39;, (req, res) =&gt; {
     },
   ];
 
-  // apply the sorting
-  const response = hobbits.sort(
-    (a, b) =&gt; (a[sortField] &lt; b[sortField] ? -1 : 1)
-  );
+// apply the sorting
+const response = hobbits.sort(
+(a, b) =&gt; (a[sortField] &lt; b[sortField] ? -1 : 1)
+);
 
-  res.status(200).json(response);
+res.status(200).json(response);
 });</code></pre>
+
 <p>Visit <code>localhost:8000/hobbits?sortby=name</code>, and the list should be sorted by <code>name</code>. Visit <code>localhost:8000/hobbits?sortby=id</code>, and the list should now be sorted by <code>id</code>. If no <code>sortby</code> parameter is provided, it should default to sorting by <code>id</code>.</p>
 <p>To read values from the query string, we use the <code>req.query</code> object added by Express. There will be a key and a value in the <code>req.query</code> object for each key/value pair found in the query string.</p>
 <p>The parameter’s value will be of type <code>array</code> if more than one value is passed for the same key and <code>string</code> when only one value is passed. For example, in the query string <code>?id=123</code>, <code>req.query.id</code> will be a string, but for <code>?id=123&amp;id=234</code>, it will be an array.</p>
@@ -34370,28 +34900,29 @@ server.delete(&#39;/hobbits&#39;, (req, res) =&gt; {
 server.use(express.json());
 
 let hobbits = [
-  {
-    id: 1,
-    name: &#39;Bilbo Baggins&#39;,
-    age: 111,
-  },
-  {
-    id: 2,
-    name: &#39;Frodo Baggins&#39;,
-    age: 33,
-  },
+{
+id: 1,
+name: &#39;Bilbo Baggins&#39;,
+age: 111,
+},
+{
+id: 2,
+name: &#39;Frodo Baggins&#39;,
+age: 33,
+},
 ];
 let nextId = 3;
 
 // and modify the post endpoint like so:
 server.post(&#39;/hobbits&#39;, (req, res) =&gt; {
-  const hobbit = req.body;
-  hobbit.id = nextId++;
+const hobbit = req.body;
+hobbit.id = nextId++;
 
-  hobbits.push(hobbit);
+hobbits.push(hobbit);
 
-  res.status(201).json(hobbits);
+res.status(201).json(hobbits);
 });</code></pre>
+
 <p>To make this work with the hobbits array, we first move it out of the get endpoint into the outer scope. Now we have access to it from all route handlers.</p>
 <p>Then we define a variable for manual id generation. When using a database, this is not necessary as the database management system generates ids automatically.</p>
 <p>To read data from the request body, we need to do two things:</p>
@@ -34432,15 +34963,17 @@ server.post(&#39;/hobbits&#39;, (req, res) =&gt; {
 <pre><code>server.put(&#39;/hobbits/:id&#39;, (req, res) =&gt; {
   const hobbit = hobbits.find(h =&gt; h.id == req.params.id);
 
-  if (!hobbit) {
-    res.status(404).json({ message: &#39;Hobbit does not exist&#39; });
-  } else {
-    // modify the existing hobbit
-    Object.assign(hobbit, req.body);
+if (!hobbit) {
+res.status(404).json({ message: &#39;Hobbit does not exist&#39; });
+} else {
+// modify the existing hobbit
+Object.assign(hobbit, req.body);
 
     res.status(200).json(hobbit);
-  }
+
+}
 });</code></pre>
+
 <p>Concentrate on the code related to reading the <code>id</code> from the <code>req.params</code> object and reading the hobbit information from <code>req.body</code>. The rest of the code will change as this is a simple example using an in-memory array. Most production APIs will use a database.</p>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/1200/1*nGyJHK1Q_sSB6fjbBbF3xA.png" class="graf-image" />
@@ -34530,8 +35063,9 @@ app.use(compression())</code></pre>
 })
 
 app.use(function (err, req, res, next) {
-  // handle error
+// handle error
 })</code></pre>
+
 <p>Now all errors asynchronous and synchronous get propagated to the error middleware.</p>
 <p>However, there are two caveats:</p>
 <ol type="1">
@@ -34628,263 +35162,263 @@ Environment=NODE_ENV=production</code></pre>
 <h3 id="html-3">HTML:</h3>
 <pre><code>&lt;!-- Document Summary --&gt;
 
-&lt;!DOCTYPE html&gt;        &lt;!-- Tells the browser that HTML5 version of HTML to be recognized by the browser --&gt;
+&lt;!DOCTYPE html&gt; &lt;!-- Tells the browser that HTML5 version of HTML to be recognized by the browser --&gt;
 
-&lt;html lang=&quot;en&quot;&gt;&lt;/html&gt;        &lt;!-- The HTML lang attribute is used to identify the language of text content on the web. This information helps search engines return language specific results, --&gt;
+&lt;html lang=&quot;en&quot;&gt;&lt;/html&gt; &lt;!-- The HTML lang attribute is used to identify the language of text content on the web. This information helps search engines return language specific results, --&gt;
 
-&lt;head&gt;&lt;/head&gt;     &lt;!-- Contains Information specific to the page like title, styles and scripts --&gt;
+&lt;head&gt;&lt;/head&gt; &lt;!-- Contains Information specific to the page like title, styles and scripts --&gt;
 
-&lt;title&gt;&lt;/title&gt;        &lt;!-- Title for the page that shows up in the browser title bar --&gt;
+&lt;title&gt;&lt;/title&gt; &lt;!-- Title for the page that shows up in the browser title bar --&gt;
 
-&lt;body&gt;&lt;/body&gt;     &lt;!-- Content that the user will see --&gt;
+&lt;body&gt;&lt;/body&gt; &lt;!-- Content that the user will see --&gt;
 
 &lt;!-- Document Information --&gt;
 
-&lt;base/&gt;        &lt;!-- Usefull for specifying relative links in a document --&gt;
+&lt;base/&gt; &lt;!-- Usefull for specifying relative links in a document --&gt;
 
-&lt;style&gt;&lt;/style&gt;        &lt;!-- Contains styles for the html document --&gt;
+&lt;style&gt;&lt;/style&gt; &lt;!-- Contains styles for the html document --&gt;
 
-&lt;meta/&gt;        &lt;!-- Contains additional information about the page, author, page description and other hidden page info --&gt;
+&lt;meta/&gt; &lt;!-- Contains additional information about the page, author, page description and other hidden page info --&gt;
 
-&lt;script&gt;&lt;/script&gt;         &lt;!-- Contains all scripts internal or external --&gt;
+&lt;script&gt;&lt;/script&gt; &lt;!-- Contains all scripts internal or external --&gt;
 
-&lt;link/&gt;        &lt;!-- Used to create relationships with external pages and stylesheets --&gt;
+&lt;link/&gt; &lt;!-- Used to create relationships with external pages and stylesheets --&gt;
 
 &lt;!-- Document Structure --&gt;
 
-&lt;h1&gt;&lt;/h1&gt; ... &lt;h6&gt;&lt;/h6&gt;        &lt;!-- All six levels of heading with 1 being the most promiment and 6 being the least prominent --&gt;
+&lt;h1&gt;&lt;/h1&gt; ... &lt;h6&gt;&lt;/h6&gt; &lt;!-- All six levels of heading with 1 being the most promiment and 6 being the least prominent --&gt;
 
-&lt;p&gt;&lt;/p&gt;        &lt;!-- Used to organize paragraph text --&gt;
+&lt;p&gt;&lt;/p&gt; &lt;!-- Used to organize paragraph text --&gt;
 
-&lt;div&gt;&lt;/div&gt;       &lt;!-- A generic container used to denote a page section --&gt;
+&lt;div&gt;&lt;/div&gt; &lt;!-- A generic container used to denote a page section --&gt;
 
-&lt;span&gt;&lt;/span&gt;     &lt;!-- Inline section or block container used for creating inline style elements --&gt;
+&lt;span&gt;&lt;/span&gt; &lt;!-- Inline section or block container used for creating inline style elements --&gt;
 
-&lt;br/&gt;          &lt;!-- Creates a line-break --&gt;
+&lt;br/&gt; &lt;!-- Creates a line-break --&gt;
 
-&lt;hr&gt;           &lt;!-- Creates a sectional break into HTML --&gt;
+&lt;hr&gt; &lt;!-- Creates a sectional break into HTML --&gt;
 
 &lt;!-- Text Formatting --&gt;
 
-&lt;strong&gt;&lt;/strong&gt; and &lt;b&gt;&lt;/b&gt;     &lt;!-- Makes text contained in the tag as bold --&gt;
+&lt;strong&gt;&lt;/strong&gt; and &lt;b&gt;&lt;/b&gt; &lt;!-- Makes text contained in the tag as bold --&gt;
 
-&lt;em&gt;&lt;/em&gt; and &lt;i&gt;&lt;/i&gt;     &lt;!-- Alternative way to make the text contained in the tag as italic --&gt;
+&lt;em&gt;&lt;/em&gt; and &lt;i&gt;&lt;/i&gt; &lt;!-- Alternative way to make the text contained in the tag as italic --&gt;
 
-&lt;strike&gt;&lt;/strike&gt;         &lt;!-- Creates a strike through the text element --&gt;
+&lt;strike&gt;&lt;/strike&gt; &lt;!-- Creates a strike through the text element --&gt;
 
-&lt;pre&gt;&lt;/pre&gt;       &lt;!-- Preformatted monospace text block with some spacing intact --&gt;
+&lt;pre&gt;&lt;/pre&gt; &lt;!-- Preformatted monospace text block with some spacing intact --&gt;
 
-&lt;blockquote&gt;&lt;/blockquote&gt;      &lt;!-- Contains long paragraphs of quotations often cited --&gt;
+&lt;blockquote&gt;&lt;/blockquote&gt; &lt;!-- Contains long paragraphs of quotations often cited --&gt;
 
-&lt;abbr&gt;&lt;/abbr&gt;     &lt;!-- Contains abbreviations while also making the full form avaialable --&gt;
+&lt;abbr&gt;&lt;/abbr&gt; &lt;!-- Contains abbreviations while also making the full form avaialable --&gt;
 
-&lt;address&gt;&lt;/address&gt;       &lt;!-- Used to display contact information --&gt;
+&lt;address&gt;&lt;/address&gt; &lt;!-- Used to display contact information --&gt;
 
-&lt;code&gt;&lt;/code&gt;     &lt;!-- Used to display inline code snippets --&gt;
+&lt;code&gt;&lt;/code&gt; &lt;!-- Used to display inline code snippets --&gt;
 
-&lt;q&gt;&lt;/q&gt;        &lt;!-- Defines a short inline quotation --&gt;
+&lt;q&gt;&lt;/q&gt; &lt;!-- Defines a short inline quotation --&gt;
 
-&lt;sub&gt;&lt;/sub&gt;       &lt;!--  Defines subscripted text --&gt;
+&lt;sub&gt;&lt;/sub&gt; &lt;!-- Defines subscripted text --&gt;
 
-&lt;sup&gt;&lt;/sup&gt;       &lt;!-- Defines superscripted text --&gt;
+&lt;sup&gt;&lt;/sup&gt; &lt;!-- Defines superscripted text --&gt;
 
-&lt;kbd&gt;&lt;/kbd&gt;       &lt;!-- Specifies text as keyboard input --&gt;
+&lt;kbd&gt;&lt;/kbd&gt; &lt;!-- Specifies text as keyboard input --&gt;
 
-&lt;small&gt;&lt;/small&gt;        &lt;!-- Specifies small text --&gt;
+&lt;small&gt;&lt;/small&gt; &lt;!-- Specifies small text --&gt;
 
 &lt;!-- Links Formatting --&gt;
 
-&lt;a href=&quot;url&quot;&gt;&lt;/a&gt;        &lt;!-- Used to link to external or internal pages of a wbesite --&gt;
+&lt;a href=&quot;url&quot;&gt;&lt;/a&gt; &lt;!-- Used to link to external or internal pages of a wbesite --&gt;
 
-&lt;a href=&quot;mailto:email@example.com&quot;&gt;&lt;/a&gt;        &lt;!-- Used to link to an email address --&gt;
+&lt;a href=&quot;mailto:email@example.com&quot;&gt;&lt;/a&gt; &lt;!-- Used to link to an email address --&gt;
 
-&lt;a href=&quot;name&quot;&gt;&lt;/a&gt;       &lt;!-- Used to link to a document element --&gt;
+&lt;a href=&quot;name&quot;&gt;&lt;/a&gt; &lt;!-- Used to link to a document element --&gt;
 
-&lt;a href=&quot;#name&quot;&gt;&lt;/a&gt;      &lt;!-- Used to link to specific div element --&gt;
+&lt;a href=&quot;#name&quot;&gt;&lt;/a&gt; &lt;!-- Used to link to specific div element --&gt;
 
-&lt;a href=&quot;tel://####-####-##&quot;&gt;&lt;/a&gt;      &lt;!-- Used to display phone numbers and make them clickable --&gt;
+&lt;a href=&quot;tel://####-####-##&quot;&gt;&lt;/a&gt; &lt;!-- Used to display phone numbers and make them clickable --&gt;
 
 &lt;!-- Image Formatting --&gt;
 
-&lt;img src=&quot;url&quot; alt=&quot;text&quot;&gt;     &lt;!-- Used to display images in a webpage where src=&quot;url&quot; contains the link to the image source and alt=&quot;&quot; contains an alternative text to display when the image is not displayed --&gt;
+&lt;img src=&quot;url&quot; alt=&quot;text&quot;&gt; &lt;!-- Used to display images in a webpage where src=&quot;url&quot; contains the link to the image source and alt=&quot;&quot; contains an alternative text to display when the image is not displayed --&gt;
 
 &lt;!-- List Formatting --&gt;
 
-&lt;ol&gt;&lt;/ol&gt;         &lt;!-- Used to create ordered lists with numbers in the items --&gt;
+&lt;ol&gt;&lt;/ol&gt; &lt;!-- Used to create ordered lists with numbers in the items --&gt;
 
-&lt;ul&gt;&lt;/ul&gt;         &lt;!-- Used to display unordered lists with numbers in the items --&gt;
+&lt;ul&gt;&lt;/ul&gt; &lt;!-- Used to display unordered lists with numbers in the items --&gt;
 
-&lt;li&gt;&lt;/li&gt;         &lt;!-- Contains list items inside ordered and unordered lists --&gt;
+&lt;li&gt;&lt;/li&gt; &lt;!-- Contains list items inside ordered and unordered lists --&gt;
 
-&lt;dl&gt;&lt;/dl&gt;         &lt;!-- Contains list item definitions --&gt;
+&lt;dl&gt;&lt;/dl&gt; &lt;!-- Contains list item definitions --&gt;
 
-&lt;dt&gt;&lt;/dt&gt;         &lt;!-- Definition of single term inline with body content --&gt;
+&lt;dt&gt;&lt;/dt&gt; &lt;!-- Definition of single term inline with body content --&gt;
 
-&lt;dd&gt;&lt;/dd&gt;         &lt;!-- The descrpition of the defined term --&gt;
+&lt;dd&gt;&lt;/dd&gt; &lt;!-- The descrpition of the defined term --&gt;
 
 &lt;!-- Forms Formatting and Attributes --&gt;
 
-&lt;form action=&quot;url&quot;&gt;&lt;/form&gt;     &lt;!-- Form element creates a form and action=&quot;&quot; specifies where the data is to be sent to when the visitor submits the form --&gt;
+&lt;form action=&quot;url&quot;&gt;&lt;/form&gt; &lt;!-- Form element creates a form and action=&quot;&quot; specifies where the data is to be sent to when the visitor submits the form --&gt;
 
 &lt;!-- Supported attributes --&gt;
 
-method=&quot;somefunction()&quot;        &lt;!-- Contains the type of request (GET, POST... etc) which dictates how to send the data of the form --&gt;
+method=&quot;somefunction()&quot; &lt;!-- Contains the type of request (GET, POST... etc) which dictates how to send the data of the form --&gt;
 
-enctype=&quot;&quot;        &lt;!-- Dictates how the data is to be encoded when the data is sent to the web server. --&gt;
+enctype=&quot;&quot; &lt;!-- Dictates how the data is to be encoded when the data is sent to the web server. --&gt;
 
-autocomplete=&quot;&quot;        &lt;!-- Specifies if the autocomplete functionality is enabled or not --&gt;
+autocomplete=&quot;&quot; &lt;!-- Specifies if the autocomplete functionality is enabled or not --&gt;
 
-novalidate        &lt;!-- Dictates if the form will be validated or not --&gt;
+novalidate &lt;!-- Dictates if the form will be validated or not --&gt;
 
-accept-charset=&quot;&quot;         &lt;!-- Identifies the character encoding upon form submission --&gt;
+accept-charset=&quot;&quot; &lt;!-- Identifies the character encoding upon form submission --&gt;
 
-target=&quot;&quot;         &lt;!-- Tell where to display the information upon form submission. Possible values: &#39;_blank&#39;, &#39;_self&#39;, &#39;_parent&#39;, &#39;_top&#39; --&gt;
+target=&quot;&quot; &lt;!-- Tell where to display the information upon form submission. Possible values: &#39;\_blank&#39;, &#39;\_self&#39;, &#39;\_parent&#39;, &#39;\_top&#39; --&gt;
 
-&lt;fieldset disabled=&quot;disabled&quot;&gt;&lt;/fieldset&gt;      &lt;!-- Identifies the group of all fields in the form --&gt;
+&lt;fieldset disabled=&quot;disabled&quot;&gt;&lt;/fieldset&gt; &lt;!-- Identifies the group of all fields in the form --&gt;
 
-&lt;label for=&quot;&quot;&gt;&lt;/label&gt;    &lt;!-- A simple field label telling the user what to type in the field --&gt;
+&lt;label for=&quot;&quot;&gt;&lt;/label&gt; &lt;!-- A simple field label telling the user what to type in the field --&gt;
 
-&lt;legend&gt;&lt;/legend&gt;         &lt;!-- The form legend acts as a caption for the fieldset element --&gt;
+&lt;legend&gt;&lt;/legend&gt; &lt;!-- The form legend acts as a caption for the fieldset element --&gt;
 
-&lt;input type=&quot;text/email/number/color/date&quot;&gt;    &lt;!-- Input is the input field where the user can input various types of data --&gt;
+&lt;input type=&quot;text/email/number/color/date&quot;&gt; &lt;!-- Input is the input field where the user can input various types of data --&gt;
 
 &lt;!-- Supported attributes --&gt;
 
-name=&quot;&quot;        &lt;!-- Describes the name of the form --&gt;
+name=&quot;&quot; &lt;!-- Describes the name of the form --&gt;
 
-width=&quot;&quot;          &lt;!-- Specifies the width of an input field --&gt;
+width=&quot;&quot; &lt;!-- Specifies the width of an input field --&gt;
 
-value=&quot;&quot;          &lt;!-- Describes the value of the input information field --&gt;
+value=&quot;&quot; &lt;!-- Describes the value of the input information field --&gt;
 
-size=&quot;&quot;        &lt;!-- Specifies the input element width in characters --&gt;
+size=&quot;&quot; &lt;!-- Specifies the input element width in characters --&gt;
 
-maxlength=&quot;&quot;      &lt;!-- Specifies the maximum input character numbers --&gt;
+maxlength=&quot;&quot; &lt;!-- Specifies the maximum input character numbers --&gt;
 
-required=&quot;&quot;       &lt;!-- Specifies if the input field is required to fill in before submitting the form --&gt;
+required=&quot;&quot; &lt;!-- Specifies if the input field is required to fill in before submitting the form --&gt;
 
-step=&quot;&quot;        &lt;!-- Identifies the legal number intervals of the input field --&gt;
+step=&quot;&quot; &lt;!-- Identifies the legal number intervals of the input field --&gt;
 
-&lt;textarea name=&quot;&quot; id=&quot;&quot; cols=&quot;30&quot; rows=&quot;10&quot;&gt;      &lt;!-- Specifies a large input text field for longer messages --&gt;
+&lt;textarea name=&quot;&quot; id=&quot;&quot; cols=&quot;30&quot; rows=&quot;10&quot;&gt; &lt;!-- Specifies a large input text field for longer messages --&gt;
 
 &lt;/textarea&gt;
 
-&lt;select name=&quot;&quot;&gt;&lt;/select&gt;      &lt;!-- Describes a dropdown box for users to select from variety of choices --&gt;
+&lt;select name=&quot;&quot;&gt;&lt;/select&gt; &lt;!-- Describes a dropdown box for users to select from variety of choices --&gt;
 
 &lt;!-- Supported attributes --&gt;
 
-name=&quot;&quot;        &lt;!-- The name for a dropdown combination box --&gt;
+name=&quot;&quot; &lt;!-- The name for a dropdown combination box --&gt;
 
-size=&quot;&quot;        &lt;!-- Specifies the number of available options --&gt;
+size=&quot;&quot; &lt;!-- Specifies the number of available options --&gt;
 
-multiple          &lt;!-- Allows for multiple option selections --&gt;
+multiple &lt;!-- Allows for multiple option selections --&gt;
 
-required          &lt;!-- Requires that a value is selected before submitting the form --&gt;
+required &lt;!-- Requires that a value is selected before submitting the form --&gt;
 
-autofocus         &lt;!-- Specifies that the dropdown automatically comes to focus once the page loads --&gt;
+autofocus &lt;!-- Specifies that the dropdown automatically comes to focus once the page loads --&gt;
 
-&lt;optgroup&gt;&lt;/optgroup&gt;     &lt;!-- Specifies the entire grouping of available options --&gt;
+&lt;optgroup&gt;&lt;/optgroup&gt; &lt;!-- Specifies the entire grouping of available options --&gt;
 
-&lt;option value=&quot;&quot;&gt;&lt;/option&gt;     &lt;!-- Defines one of the avaialble option from the dropdown list --&gt;
+&lt;option value=&quot;&quot;&gt;&lt;/option&gt; &lt;!-- Defines one of the avaialble option from the dropdown list --&gt;
 
-&lt;button&gt;&lt;/button&gt;         &lt;!-- A clickable button to submit the form --&gt;
+&lt;button&gt;&lt;/button&gt; &lt;!-- A clickable button to submit the form --&gt;
 
 &lt;!-- Tables Formatting --&gt;
 
-&lt;table&gt;&lt;/table&gt;        &lt;!-- Defines and contains all table related content --&gt;
+&lt;table&gt;&lt;/table&gt; &lt;!-- Defines and contains all table related content --&gt;
 
-&lt;caption&gt;&lt;/caption&gt;       &lt;!-- A description of what table is and what it contains --&gt;
+&lt;caption&gt;&lt;/caption&gt; &lt;!-- A description of what table is and what it contains --&gt;
 
-&lt;thead&gt;&lt;/thead&gt;        &lt;!-- The table headers contain the type of information defined in each column underneath --&gt;
+&lt;thead&gt;&lt;/thead&gt; &lt;!-- The table headers contain the type of information defined in each column underneath --&gt;
 
-&lt;tbody&gt;&lt;/tbody&gt;        &lt;!-- Contains the tables data or information --&gt;
+&lt;tbody&gt;&lt;/tbody&gt; &lt;!-- Contains the tables data or information --&gt;
 
-&lt;tfoot&gt;&lt;/tfoot&gt;        &lt;!-- Defines table footer --&gt;
+&lt;tfoot&gt;&lt;/tfoot&gt; &lt;!-- Defines table footer --&gt;
 
-&lt;tr&gt;&lt;/tr&gt;         &lt;!-- Contains the information to be included in a table row --&gt;
+&lt;tr&gt;&lt;/tr&gt; &lt;!-- Contains the information to be included in a table row --&gt;
 
-&lt;th&gt;&lt;/th&gt;         &lt;!-- Contains the information to be included in a single table header --&gt;
+&lt;th&gt;&lt;/th&gt; &lt;!-- Contains the information to be included in a single table header --&gt;
 
-&lt;td&gt;&lt;/td&gt;         &lt;!-- Contains actual information in a table cell --&gt;
+&lt;td&gt;&lt;/td&gt; &lt;!-- Contains actual information in a table cell --&gt;
 
-&lt;colgroup&gt;&lt;/colgroup&gt;     &lt;!-- Groups a single or multiple columns for formatting purposes --&gt;
+&lt;colgroup&gt;&lt;/colgroup&gt; &lt;!-- Groups a single or multiple columns for formatting purposes --&gt;
 
-&lt;col&gt;          &lt;!-- Defines a single column of information inside a table --&gt;
+&lt;col&gt; &lt;!-- Defines a single column of information inside a table --&gt;
 
 &lt;!-- Objects and iFrames --&gt;
 
-&lt;object data=&quot;&quot;&gt;&lt;/object&gt;      &lt;!-- Describes and embed file type including audio, video, PDF&#39;s, images --&gt;
+&lt;object data=&quot;&quot;&gt;&lt;/object&gt; &lt;!-- Describes and embed file type including audio, video, PDF&#39;s, images --&gt;
 
 &lt;!-- Supported attributes --&gt;
 
-type=&quot;&quot;        &lt;!-- Describes the type of media embedded --&gt;
+type=&quot;&quot; &lt;!-- Describes the type of media embedded --&gt;
 
-height=&quot;&quot;         &lt;!-- Describes the height of the object in pixels --&gt;
+height=&quot;&quot; &lt;!-- Describes the height of the object in pixels --&gt;
 
-width=&quot;&quot;          &lt;!-- Describes the width of the object in pixels --&gt;
+width=&quot;&quot; &lt;!-- Describes the width of the object in pixels --&gt;
 
-usemap=&quot;&quot;         &lt;!-- This is the name of the client-side image map in the object --&gt;
+usemap=&quot;&quot; &lt;!-- This is the name of the client-side image map in the object --&gt;
 
-&lt;iframe src=&quot;&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;       &lt;!-- Contains an inline frame that allows to embed external information --&gt;
+&lt;iframe src=&quot;&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt; &lt;!-- Contains an inline frame that allows to embed external information --&gt;
 
-&lt;embed src=&quot;&quot; type=&quot;&quot;&gt;    &lt;!-- Acts as a container for external application or plug-in --&gt;
+&lt;embed src=&quot;&quot; type=&quot;&quot;&gt; &lt;!-- Acts as a container for external application or plug-in --&gt;
 
-src=&quot;&quot;         &lt;!-- The source of the external file you&#39;re embedding --&gt;
+src=&quot;&quot; &lt;!-- The source of the external file you&#39;re embedding --&gt;
 
-width=&quot;&quot;          &lt;!-- Describes the width of the iframe in pixels --&gt;
+width=&quot;&quot; &lt;!-- Describes the width of the iframe in pixels --&gt;
 
 &lt;!-- HTML5 New Tags --&gt;
 
-&lt;header&gt;&lt;/header&gt;         &lt;!-- Defines the header block for a document or a section --&gt;
+&lt;header&gt;&lt;/header&gt; &lt;!-- Defines the header block for a document or a section --&gt;
 
-&lt;footer&gt;&lt;/footer&gt;         &lt;!-- Defines the footer block for a document or a section --&gt;
+&lt;footer&gt;&lt;/footer&gt; &lt;!-- Defines the footer block for a document or a section --&gt;
 
-&lt;main&gt;&lt;/main&gt;     &lt;!-- Describes the main content of a document --&gt;
+&lt;main&gt;&lt;/main&gt; &lt;!-- Describes the main content of a document --&gt;
 
-&lt;article&gt;&lt;/article&gt;       &lt;!-- Identifies an article inside a document --&gt;
+&lt;article&gt;&lt;/article&gt; &lt;!-- Identifies an article inside a document --&gt;
 
-&lt;aside&gt;&lt;/aside&gt;        &lt;!-- Specifies content contained in a document sidebar --&gt;
+&lt;aside&gt;&lt;/aside&gt; &lt;!-- Specifies content contained in a document sidebar --&gt;
 
-&lt;section&gt;&lt;/section&gt;       &lt;!-- Defines a section of a document --&gt;
+&lt;section&gt;&lt;/section&gt; &lt;!-- Defines a section of a document --&gt;
 
-&lt;details&gt;&lt;/details&gt;       &lt;!-- Describes additonal information that user can view or hide --&gt;
+&lt;details&gt;&lt;/details&gt; &lt;!-- Describes additonal information that user can view or hide --&gt;
 
-&lt;dialog&gt;&lt;/dialog&gt;         &lt;!-- A dialog box or a window --&gt;
+&lt;dialog&gt;&lt;/dialog&gt; &lt;!-- A dialog box or a window --&gt;
 
-&lt;figure&gt;&lt;/figure&gt;         &lt;!-- An independent content block featuring images, diagrams or illustrations --&gt;
+&lt;figure&gt;&lt;/figure&gt; &lt;!-- An independent content block featuring images, diagrams or illustrations --&gt;
 
-&lt;figcaption&gt;&lt;/figcaption&gt;      &lt;!-- Caption that describe a figure --&gt;
+&lt;figcaption&gt;&lt;/figcaption&gt; &lt;!-- Caption that describe a figure --&gt;
 
-&lt;mark&gt;&lt;/mark&gt;     &lt;!-- Displays a portion of highlighted text with in a page content --&gt;
+&lt;mark&gt;&lt;/mark&gt; &lt;!-- Displays a portion of highlighted text with in a page content --&gt;
 
-&lt;nav&gt;&lt;/nav&gt;       &lt;!-- Navigation links for the user in a document --&gt;
+&lt;nav&gt;&lt;/nav&gt; &lt;!-- Navigation links for the user in a document --&gt;
 
-&lt;menuitem&gt;&lt;/menuitem&gt;     &lt;!-- The specific menu item that a user can raise from a pop up menu --&gt;
+&lt;menuitem&gt;&lt;/menuitem&gt; &lt;!-- The specific menu item that a user can raise from a pop up menu --&gt;
 
-&lt;meter&gt;&lt;/meter&gt;        &lt;!-- Describes the scalar measurement with in a known array --&gt;
+&lt;meter&gt;&lt;/meter&gt; &lt;!-- Describes the scalar measurement with in a known array --&gt;
 
-&lt;progress&gt;&lt;/progress&gt;     &lt;!-- Displays the progress of a task usually a progress bar --&gt;
+&lt;progress&gt;&lt;/progress&gt; &lt;!-- Displays the progress of a task usually a progress bar --&gt;
 
-&lt;rp&gt;&lt;/rp&gt;         &lt;!-- Describes text within the browsers that do not support ruby notations --&gt;
+&lt;rp&gt;&lt;/rp&gt; &lt;!-- Describes text within the browsers that do not support ruby notations --&gt;
 
-&lt;rt&gt;&lt;/rt&gt;         &lt;!-- Displays east asian typography character details --&gt;
+&lt;rt&gt;&lt;/rt&gt; &lt;!-- Displays east asian typography character details --&gt;
 
-&lt;ruby&gt;&lt;/ruby&gt;     &lt;!-- Describes annotations for east asian typography --&gt;
+&lt;ruby&gt;&lt;/ruby&gt; &lt;!-- Describes annotations for east asian typography --&gt;
 
-&lt;summary&gt;&lt;/summary&gt;       &lt;!-- Contains a visible heading for details element --&gt;
+&lt;summary&gt;&lt;/summary&gt; &lt;!-- Contains a visible heading for details element --&gt;
 
-&lt;bdi&gt;&lt;/bdi&gt;       &lt;!-- Helps you format parts of text in a different direction than other text --&gt;
+&lt;bdi&gt;&lt;/bdi&gt; &lt;!-- Helps you format parts of text in a different direction than other text --&gt;
 
-&lt;time&gt;&lt;/time&gt;     &lt;!-- Identifies the time and date --&gt;
+&lt;time&gt;&lt;/time&gt; &lt;!-- Identifies the time and date --&gt;
 
-&lt;wbr&gt;          &lt;!-- A line break within the content --&gt;
+&lt;wbr&gt; &lt;!-- A line break within the content --&gt;
 
 &lt;!-- Some other useful tags --&gt;
 
-&lt;canvas&gt;&lt;/canvas&gt;         &lt;!-- Allows to draw 2D shapes on the web page with the help of javascript --&gt;
+&lt;canvas&gt;&lt;/canvas&gt; &lt;!-- Allows to draw 2D shapes on the web page with the help of javascript --&gt;
 
-&lt;keygen&gt;          &lt;!-- Represents a control for generating a public-private key pair --&gt;
+&lt;keygen&gt; &lt;!-- Represents a control for generating a public-private key pair --&gt;
 
-&lt;map&gt;&lt;/map&gt;       &lt;!-- Specifies an image map --&gt;
+&lt;map&gt;&lt;/map&gt; &lt;!-- Specifies an image map --&gt;
 
 &lt;!-- Collective Character Obejcts --&gt;
 
@@ -34905,6 +35439,7 @@ width=&quot;&quot;          &lt;!-- Describes the width of the iframe in pixels 
 &amp;#149; &amp;ouml; Small bullet - .
 
 &amp;#153; &amp;ucirc; Trademark Symbol - ™</code></pre>
+
 <figure>
 <img src="https://cdn-images-1.medium.com/max/600/1*jUFEdBQ552AU7eeQQ7EdPw.png" class="graf-image" />
 </figure>
@@ -35028,6 +35563,7 @@ print(type(thistuple))
 #NOT a tuple
 thistuple = (&quot;apple&quot;)
 print(type(thistuple))</code></pre>
+
 <ul>
 <li><span id="6c4d">It is also possible to use the tuple() constructor to make a tuple.</span></li>
 </ul>
@@ -35053,6 +35589,7 @@ print(thistuple)</code></pre>
 <pre><code>thisset = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;}
 
 print(len(thisset))</code></pre>
+
 <ul>
 <li><span id="f9cc">Set items can be of any data type:</span></li>
 </ul>
@@ -35159,8 +35696,9 @@ A nested loop is a loop inside a loop.</span></li>
 fruits = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]
 
 for x in adj:
-  for y in fruits:
-    print(x, y)</code></pre>
+for y in fruits:
+print(x, y)</code></pre>
+
 <ul>
 <li><span id="2c64">for loops cannot be empty, but if you for some reason have a for loop with no content, put in the pass statement to avoid getting an error.</span></li>
 </ul>
@@ -36308,11 +36846,12 @@ git push -u origin master</code></pre>
 
 # This will add all the files in the current directory ending in `.js`:
 
-&gt; git add *.js
+&gt; git add \*.js
 
 # This will add everything in your current directory:
 
 &gt; git add .</code></pre>
+
 <p>Adding a file (or files) moves them from Git’s working directory to the staging area. You can see what’s been “staged” and what hasn’t by using <code>git status</code>:</p>
 <figure>
 <img src="https://cdn-images-1.medium.com/max/800/1*iiehU7FvC-JK90x6Fr0q6g.png" class="graf-image" />
@@ -36324,6 +36863,7 @@ git push -u origin master</code></pre>
 <pre><code>&gt; git config --global core.editor &quot;code --wait&quot;
 
 &gt; git config --global -e</code></pre>
+
 <p>If you experience any issues, you may be missing Visual Studio Code’s command line tools. You can find more details and some troubleshooting tips on Microsoft’s official <a href="https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line" class="markup--anchor markup--p-anchor">VS Code and macOS documentation</a>.</p>
 <p>Once you close your editor, the commit will be added to your repository’s commit history. Use <code>git log</code> to see this history at any time. This command will show all the commits in your repository’s history, beginning with the most recent:</p>
 <figure>
@@ -36355,6 +36895,7 @@ git push -u origin master</code></pre>
 &gt; git checkout master
 
 &gt; git merge my-changes</code></pre>
+
 <p>Following these steps will integrate the commit from <code>my-changes</code> over to <code>master</code>. Boom! Now you have your <code>new-file.js</code> on your default branch.</p>
 <p>As you can imagine, branching can get <em>very</em> complicated. Your repository’s history may look more like a shrub than a beautiful tree! You’ll discuss advanced merging and other options in an upcoming lesson.</p>
 <h3 id="connect-w-github">Connect-W-Github</h3>
@@ -36376,6 +36917,7 @@ git push -u origin master</code></pre>
 &gt; git commit -m &quot;Add new file&quot;
 
 &gt; git push -u origin add-my-new-file</code></pre>
+
 <p>Notice how you used the <code>-u</code> flag with <code>git push</code>. This flag, shorthand for <code>--set-upstream</code>, lets Git know that you want your local branch to follow a remote branch. You’ve passed the same name in, so you’ll now have two branches in your local repository: <code>add-my-new-file</code>, which is where your changes live after being committed, and <code>origin/add-my-new-file</code>, which keeps up with your remote branch and updates it after you use <code>git push</code>.</p>
 <p><strong>You only need to use the</strong> <code>-u</code> <strong>flag the first time you push each new branch - Git will know what to do with a simple</strong> <code>git push</code> <strong>from then on.</strong></p>
 <p>You now know how to push your changes up, but what about getting the changes your teammates have made? For this, you’ll use <code>git pull</code>. Pulling from the remote repo will update all of your local branches with the code from each branch’s remote counterpart.</p>
@@ -36432,6 +36974,7 @@ git push -u origin master</code></pre>
 # Compare a specific file across separate commits
 
 &gt; git diff 1fc345a 2e3dff my-file.js</code></pre>
+
 <h3 id="time-travel">Time travel</h3>
 <p><code>git diff</code> gives us the opportunity to explore our code’s current state, but what if we wanted to see its state at a different point in time? We can use <em>checkout</em>! <code>git checkout</code> lets us take control of our <code>HEAD</code> to bounce around our timeline as we please.</p>
 <p>Remember that <code>HEAD</code> is a special Git reference that usually follows the latest commit on our current branch. We can use <code>git checkout</code> to point our <code>HEAD</code> reference at a different commit, letting us travel to any commit in our repository’s history. By reading the commit message and exploring the code at the time of the commit, we can see not only what changed but also why it changed! This can be great for debugging a problem or understanding how an app evolved.</p>
@@ -36462,6 +37005,7 @@ git push -u origin master</code></pre>
 # to the current HEAD
 
 &gt; git checkout HEAD~3</code></pre>
+
 <p>Once you’re done browsing the repo’s history, you can use <code>git checkout &lt;your-branch-name&gt;</code> to move <code>HEAD</code> back to the front of the line (your most recent commit). For example, in our diagram above, we could use <code>git checkout master</code> to take our <code>HEAD</code> reference back to commit <code>42ffa1</code>.</p>
 <h3 id="why-checkout">Why checkout?</h3>
 <p>Most of Git’s power comes from a simple ability: viewing commits in the past and understanding how they connect. This is why mastering the <code>git checkout</code> command is so important: it lets you think more like Git and gives you full freedom of navigation without risking damage to the repo’s contents.</p>
@@ -36806,7 +37350,9 @@ fatal: The remote end hung up unexpectedly</code></pre>
 sudo systemctl restart ssh
 
 # CentOS/RHEL
+
 sudo service sshd restart</code></pre>
+
 <h3 id="timeout-during-git-push-git-pull">Timeout during <code>git push</code> / <code>git pull</code></h3>
 <p>If pulling/pushing from/to your repository ends up taking more than 50 seconds, a timeout is issued. It contains a log of the number of operations performed and their respective timings, like the example below:</p>
 <pre><code>remote: Running checks for branch: master
@@ -39021,9 +39567,10 @@ b = 11
 c = 12
 a = 10
 
-Red: 4 * (16^1) + 11 * (16^0) = 75
-Green: 12 * (16^1) + 0 * (16^0) = 192
-Blue: 10 * (16^1) + 9 * (16^0) = 169</code></pre>
+Red: 4 _ (16^1) + 11 _ (16^0) = 75
+Green: 12 _ (16^1) + 0 _ (16^0) = 192
+Blue: 10 _ (16^1) + 9 _ (16^0) = 169</code></pre>
+
 <p>Hex: #4bc0a9 is RGB: 75, 192, 169.</p>
 <p><strong>Hoisting</strong> — Hoisting is JavaScript’s default behaviour of moving <code>var</code><br />
 declarations to the top of the current <strong>scope</strong> when your code is run. What<br />
@@ -39048,11 +39595,12 @@ function twice (func, value) {
 
 // func can be any simple (preferably pure) function:
 function func (value) {
-  return value + 3;
+return value + 3;
 }
 
 console.log(twice(func, 1)); // 7
 console.log(twice(func, 7)); // 13</code></pre>
+
 <p>Not to be confused with pure functions, <a href="https://github.com/dwyl/learn-redux/issues/40#issuecomment-272489779" class="markup--anchor markup--p-anchor">this comment</a> explains the difference between the variations.</p>
 <p><strong>Hypertext Transfer Protocol (HTTP)</strong> — the set of rules for transferring files<br />
 (text, graphic images, sound, video, and other multimedia files) on the World<br />
@@ -40606,7 +41154,8 @@ number for a given input.</p>
   return fib(n - 1) + fib(n - 2);
 }
 
-fib(6);     // =&gt; 8</code></pre>
+fib(6); // =&gt; 8</code></pre>
+
 <p>The time complexity of this function is not super intuitive to describe because<br />
 the code branches twice recursively. Fret not! You’ll find it useful to<br />
 visualize the calls needed to do this with a tree. When reasoning about the time complexity for recursive functions, draw a tree that helps you see the calls. Every node of the tree represents a call of the recursion:</p>
@@ -40903,9 +41452,10 @@ a third line</code></pre>
 filecontent = [&quot;Hello, world&quot;, &quot;a second line&quot;, &quot;and a third line&quot;]
 
 with open(filename, &#39;w&#39;) as filehandle:
-    
+
     for line in filecontent:
         print &gt;&gt;filehandle, line</code></pre>
+
 <p><em>Listing 7</em></p>
 <p>For the latest Python releases this does not work in the same way anymore. To do something like this we must use the <code>sys</code> module. It allows us to access the UNIX standard output channels via <code>sys.stdout</code>, <code>sys.stdin</code>, and <code>sys.stderr</code>.</p>
 <p>In our case we preserve the original value of the output channel <code>sys.stdout</code>, first (line 8 in the code below), redefine it to the handle of our output file,</p>
@@ -40919,14 +41469,15 @@ original = sys.stdout
 filecontent = [&quot;Hello, world&quot;, &quot;a second line&quot;, &quot;and a third line&quot;]
 
 with open(filename, &#39;w&#39;) as filehandle:
-    
+
     sys.stdout = filehandle
-     
+
     for line in filecontent:
         print(line)
-     
-    
+
+
     sys.stdout = original</code></pre>
+
 <p><em>Listing 8</em></p>
 <p>This is not necessarily best practice, but it does give you other options for writing lines to a file.</p>
 <h3 id="appending-data-to-a-file">Appending Data to a File</h3>
@@ -40946,6 +41497,7 @@ a second line
 and a third line
 
 Hello, world!</code></pre>
+
 <h3 id="conclusion-1">Conclusion</h3>
 <p>Writing plain text data to files, or appending data to existing files, is as easy as reading from files in Python. As soon as a file is closed after writing or appending data, Python triggers a synchronization call. As a result, the updated file is immediately written to disk.</p>
 <h4 id="if-you-found-this-guide-helpful-feel-free-to-checkout-my-githubgists-where-i-host-similar-content-33">If you found this guide helpful feel free to checkout my github/gists where I host similar content:</h4>

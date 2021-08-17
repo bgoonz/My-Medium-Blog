@@ -1,4 +1,4 @@
-# Learn CSS 
+# Learn CSS
 
 CSS Selectors
 
