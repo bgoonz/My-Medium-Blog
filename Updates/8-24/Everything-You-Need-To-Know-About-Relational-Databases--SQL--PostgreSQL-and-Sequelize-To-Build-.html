@@ -1128,13 +1128,15 @@
               <code class="markup--code markup--p-code">model</code> and <code
                 class="markup--code markup--p-code">include</code>.<br>This is in case you have nested
               associations.<br>In this case Owner doesn&#39;t have an association with PetType, but<br>Pet does, so we
-              want to include PetType onto the Pet Model.</p>
+              want to include PetType onto the Pet Model.
+            </p>
             <pre name="e81d" id="e81d"
               class="graf graf--pre graf-after--p">await Owner.findByPk(1, {<br>        include: {<br>            model: Pet<br>            include: PetType<br>        }<br>    });</pre>
             <h3 name="2a72" id="2a72" class="graf graf--h3 graf-after--pre">toJSON method</h3>
             <p name="d5d1" id="d5d1" class="graf graf--p graf-after--h3">The confusingly named toJSON() method does
               <strong class="markup--strong markup--p-strong">not</strong> return a JSON string but instead<br>returns a
-              POJO for the instance.</p>
+              POJO for the instance.
+            </p>
             <pre name="40f4" id="40f4"
               class="graf graf--pre graf-after--p">// pet is an instance of the Pet class<br>const pet = await Pet.findByPk(1);<br>console.log(pet) // prints a giant object with<br>                 // tons of properties and methods<br>// petPOJO is now just a plain old Javascript Object<br>const petPOJO = pet.toJSON();<br>console.log(petPOJO); // { name: &quot;Fido&quot;, petTypeId: 1 }</pre>
             <h3 name="7313" id="7313" class="graf graf--h3 graf-after--pre">Common Where Operators</h3>
@@ -1157,7 +1159,8 @@
                 class="markup--code markup--p-code">findOne</code>, and <code
                 class="markup--code markup--p-code">findAll</code> methods. First, make sure you import the models in
               your JavaScript file. In this case, we are assuming your JavaScript file is in the root of your project
-              and so is the models folder.</p>
+              and so is the models folder.
+            </p>
             <pre name="3c05" id="3c05"
               class="graf graf--pre graf-after--p">const { Recipe, Ingredient, Instruction, MeasurementUnit } = require(&#39;./models&#39;);</pre>
             <p name="6ff5" id="6ff5" class="graf graf--p graf-after--pre">The models folder exports each of the models

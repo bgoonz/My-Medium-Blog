@@ -640,7 +640,8 @@
                   class="markup--strong markup--li-strong">Data Definition Language (DDL)</strong>: used to modify
                 database objects. Some examples are: <code class="markup--code markup--li-code">CREATE TABLE</code>,
                 <code class="markup--code markup--li-code">ALTER TABLE</code>, and <code
-                  class="markup--code markup--li-code">DROP TABLE</code>.</li>
+                  class="markup--code markup--li-code">DROP TABLE</code>.
+              </li>
               <li name="4f3f" id="4f3f" class="graf graf--li graf-after--li"><strong
                   class="markup--strong markup--li-strong">Data Manipulation Language (DML)</strong>: used to manipulate
                 the data stored in the database. Some examples are: <code
@@ -683,7 +684,8 @@
               class="graf graf--pre graf-after--p"><code class="markup--code markup--pre-code">select &lt;selection&gt; from &lt;table name&gt;;</code></pre>
             <p name="0b50" id="0b50" class="graf graf--p graf-after--pre">To see all the fields on a table, we can use a
               <code class="markup--code markup--p-code">*</code> as the <code
-                class="markup--code markup--p-code">selection</code>.</p>
+                class="markup--code markup--p-code">selection</code>.
+            </p>
             <pre name="14d7" id="14d7"
               class="graf graf--pre graf-after--p"><code class="markup--code markup--pre-code">select * from employees;</code></pre>
             <p name="949b" id="949b" class="graf graf--p graf-after--pre">The preceding statement would show all the
@@ -768,7 +770,8 @@
                 class="markup--code markup--p-code">WHERE</code> conditions, such as <code
                 class="markup--code markup--p-code">&gt;</code>, <code class="markup--code markup--p-code">&lt;</code>,
               <code class="markup--code markup--p-code">&lt;=</code>, and <code
-                class="markup--code markup--p-code">&gt;=</code>.</p>
+                class="markup--code markup--p-code">&gt;=</code>.
+            </p>
             <pre name="9e52" id="9e52"
               class="graf graf--pre graf-after--p"><code class="markup--code markup--pre-code">select * from employees where salary &gt;= 50000</code></pre>
             <h3 name="662e" id="662e" class="graf graf--h3 graf-after--pre">Ordering results using the ORDER BY clause
@@ -792,7 +795,8 @@
               fields’ position in the <em class="markup--em markup--p-em">selection</em> portion of the query, so <code
                 class="markup--code markup--p-code">1</code> would be <em class="markup--em markup--p-em">name</em>,
               <code class="markup--code markup--p-code">2</code> would be <em
-                class="markup--em markup--p-em">salary</em>, and so on.</p>
+                class="markup--em markup--p-em">salary</em>, and so on.
+            </p>
             <p name="ef09" id="ef09" class="graf graf--p graf-after--p">Note that the <code
                 class="markup--code markup--p-code">WHERE</code> clause should come after the <code
                 class="markup--code markup--p-code">FROM</code> clause. The <code
@@ -897,7 +901,8 @@
               <code class="markup--code markup--p-code">connection</code>, and <code
                 class="markup--code markup--p-code">useNullAsDefault</code> keys as shown above. The <code
                 class="markup--code markup--p-code">filename</code> should point towards the pre-existing database file,
-              which can be recognized by the <code class="markup--code markup--p-code">.db3</code> extension.</p>
+              which can be recognized by the <code class="markup--code markup--p-code">.db3</code> extension.
+            </p>
             <p name="ba8f" id="ba8f" class="graf graf--p graf-after--p"><strong
                 class="markup--strong markup--p-strong">GOTCHA</strong>: The file path to the database should be with
               respect to the <strong class="markup--strong markup--p-strong">root</strong> of the repo, not the
@@ -1065,7 +1070,8 @@
             </ul>
             <p name="a7eb" id="a7eb" class="graf graf--p graf-after--li">Looking at the following schema diagram for an
               <code class="markup--code markup--p-code">accounts</code> table, we can the answer to each other those
-              questions:</p>
+              questions:
+            </p>
             <p name="0109" id="0109" class="graf graf--p graf-after--p"><a
                 href="https://www.notion.so/9790405dda624818822293a383eec2d2"
                 data-href="https://www.notion.so/9790405dda624818822293a383eec2d2"
@@ -1218,7 +1224,8 @@
                 class="markup--code markup--p-code">up</code> function, we write the ended database changes. Within the
               <code class="markup--code markup--p-code">down</code> function, we write the code to undo the <code
                 class="markup--code markup--p-code">up</code> functions. This allows us to undo any changes made to the
-              schema if necessary.</p>
+              schema if necessary.
+            </p>
             <pre name="dc84" id="dc84"
               class="graf graf--pre graf-after--p"><code class="markup--code markup--pre-code">exports.up = function(knex, Promise) {<br>  // don&#39;t forget the return statement<br>  return knex.schema.createTable(&#39;accounts&#39;, tbl =&gt; {<br>    // creates a primary key called id<br>    tbl.increments();<br>    // creates a text field called name which is both required and unique<br>    tbl.text(&#39;name&#39;, 128).unique().notNullable();<br>    // creates a numeric field called budget which is required<br>    tbl.decimal(&#39;budget&#39;).notNullable();<br>  });<br>};</code></pre>
             <pre name="0656" id="0656"
@@ -1226,7 +1233,8 @@
             <p name="88f7" id="88f7" class="graf graf--p graf-after--pre">References for these methods are found in the
               <strong class="markup--strong markup--p-strong">schema builder</strong> section of the <a
                 href="https://knexjs.org/" data-href="https://knexjs.org/" class="markup--anchor markup--p-anchor"
-                rel="noopener" target="_blank">Knex docs (Links to an external site.)</a>.</p>
+                rel="noopener" target="_blank">Knex docs (Links to an external site.)</a>.
+            </p>
             <p name="4502" id="4502" class="graf graf--p graf-after--p">At this point, the table is <strong
                 class="markup--strong markup--p-strong">not</strong> yet created. To run this (and any other)
               migrations, use the command:</p>
@@ -1251,7 +1259,8 @@
             <p name="3a47" id="3a47" class="graf graf--p graf-after--p"><code
                 class="markup--code markup--p-code">knex migrate:rollback</code></p>
             <p name="67c2" id="67c2" class="graf graf--p graf-after--p">Finally, we are free to rerun that file with
-              <code class="markup--code markup--p-code">knex migrate</code> latest.</p>
+              <code class="markup--code markup--p-code">knex migrate</code> latest.
+            </p>
             <p name="7217" id="7217" class="graf graf--p graf-after--p"><strong
                 class="markup--strong markup--p-strong">NOTE</strong>: A rollback should not be used to edit an old
               migration file once that file has accepted into a main branch. However, an entire team may use a rollback
@@ -1351,7 +1360,8 @@
                 class="markup--code markup--p-code">up</code> function, we write the ended database changes. Within the
               <code class="markup--code markup--p-code">down</code> function, we write the code to undo the <code
                 class="markup--code markup--p-code">up</code> functions. This allows us to undo any changes made to the
-              schema if necessary.</p>
+              schema if necessary.
+            </p>
             <pre name="ac93" id="ac93"
               class="graf graf--pre graf-after--p"><code class="markup--code markup--pre-code">exports.up = function(knex, Promise) {<br>  // don&#39;t forget the return statement<br>  return knex.schema.createTable(&#39;accounts&#39;, tbl =&gt; {<br>    // creates a primary key called id<br>    tbl.increments();<br>    // creates a text field called name which is both required and unique<br>    tbl.text(&#39;name&#39;, 128).unique().notNullable();<br>    // creates a numeric field called budget which is required<br>    tbl.decimal(&#39;budget&#39;).notNullable();<br>  });<br>};</code></pre>
             <pre name="8bff" id="8bff"
@@ -1359,7 +1369,8 @@
             <p name="509c" id="509c" class="graf graf--p graf-after--pre">References for these methods are found in the
               <strong class="markup--strong markup--p-strong">schema builder</strong> section of the <a
                 href="https://knexjs.org/" data-href="https://knexjs.org/" class="markup--anchor markup--p-anchor"
-                rel="noopener" target="_blank">Knex docs (Links to an external site.)</a>.</p>
+                rel="noopener" target="_blank">Knex docs (Links to an external site.)</a>.
+            </p>
             <p name="b88e" id="b88e" class="graf graf--p graf-after--p">At this point, the table is <strong
                 class="markup--strong markup--p-strong">not</strong> yet created. To run this (and any other)
               migrations, use the command:</p>
@@ -1384,7 +1395,8 @@
             <p name="f2e3" id="f2e3" class="graf graf--p graf-after--p"><code
                 class="markup--code markup--p-code">knex migrate:rollback</code></p>
             <p name="a496" id="a496" class="graf graf--p graf-after--p">Finally, we are free to rerun that file with
-              <code class="markup--code markup--p-code">knex migrate</code> latest.</p>
+              <code class="markup--code markup--p-code">knex migrate</code> latest.
+            </p>
             <p name="4cbe" id="4cbe" class="graf graf--p graf-after--p"><strong
                 class="markup--strong markup--p-strong">NOTE</strong>: A rollback should not be used to edit an old
               migration file once that file has accepted into a main branch. However, an entire team may use a rollback
@@ -1396,7 +1408,8 @@
             <h3 name="9e0b" id="9e0b" class="graf graf--h3 graf-after--p">Follow Along</h3>
             <p name="8f0d" id="8f0d" class="graf graf--p graf-after--h3">The Knex command-line tool offers a way to
               <strong class="markup--strong markup--p-strong">seed</strong> our database; in other words, pre-populate
-              our tables.</p>
+              our tables.
+            </p>
             <p name="1318" id="1318" class="graf graf--p graf-after--p">Similarly to migrations, we want to customize
               where our seed files are generated using our <code class="markup--code markup--p-code">knexfile</code></p>
             <pre name="80c7" id="80c7"
@@ -1760,7 +1773,8 @@
               has exactly one projection, and every project corresponds to exactly one farm.</p>
             <p name="41dc" id="41dc" class="graf graf--p graf-after--p">This data can be represented in two tables:
               <code class="markup--code markup--p-code">farms</code> and <code
-                class="markup--code markup--p-code">projections</code></p>
+                class="markup--code markup--p-code">projections</code>
+            </p>
             <p name="0397" id="0397" class="graf graf--p graf-after--p"><a
                 href="https://www.notion.so/944e594f3464473ea06383bfdea13265"
                 data-href="https://www.notion.so/944e594f3464473ea06383bfdea13265"
@@ -1884,7 +1898,8 @@
             <pre name="20cc" id="20cc"
               class="graf graf--pre graf-after--p"><code class="markup--code markup--pre-code">exports.up = function(knex, Promise) {<br>  return knex.schema<br>    .createTable(&#39;farms&#39;, tbl =&gt; {<br>      tbl.increments();<br>      tbl.string(&#39;farm_name&#39;, 128)<br>        .notNullable();<br>    })<br>    // we can chain together createTable<br>    .createTable(&#39;ranchers&#39;, tbl =&gt; {<br>      tbl.increments();<br>      tbl.string(&#39;rancher_name&#39;, 128);<br>      tbl.integer(&#39;farm_id&#39;)<br>        // forces integer to be positive<br>        .unsigned()<br>        .notNullable()<br>        .references(&#39;id&#39;)<br>        // this table must exist already<br>        .inTable(&#39;farms&#39;)<br>    })<br>};</code></pre>
             <p name="47c0" id="47c0" class="graf graf--p graf-after--pre">Note that the foreign key can only be created
-              <em class="markup--em markup--p-em">after</em> the reference table.</p>
+              <em class="markup--em markup--p-em">after</em> the reference table.
+            </p>
             <p name="b94e" id="b94e" class="graf graf--p graf-after--p">In the down function, the opposite is true. We
               always want to drop a table with a foreign key <em class="markup--em markup--p-em">before</em> dropping
               the table it references.</p>

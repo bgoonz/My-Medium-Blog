@@ -116,7 +116,8 @@
               class="graf graf--p graf--hasDropCapModel graf--hasDropCap graf--startsWithDoubleQuote graf-after--figure">
               <span class="graf-dropCap"><span class="graf-dropCapQuote">“</span>J</span>avaScript’s global scope is
               like a public toilet. You can’t avoid going in there, but try to limit your contact with surfaces when you
-              do.”<br>― <strong class="markup--strong markup--p-strong">Dmitry Baranowski</strong></p>
+              do.”<br>― <strong class="markup--strong markup--p-strong">Dmitry Baranowski</strong>
+            </p>
             <p name="b736" id="b736" class="graf graf--p graf-after--p">Here’s another (much) more simple article I
               wrote on the subject:</p>
             <div name="4250" id="4250" class="graf graf--mixtapeEmbed graf-after--p"><a
@@ -304,7 +305,8 @@
                   class="markup--anchor markup--li-anchor" rel="noopener" target="_blank"><strong
                     class="markup--strong markup--li-strong">variable</strong></a> or other expression is not “in the
                 current scope,” then it is unavailable for use. Scopes can also be layered in a hierarchy, so that child
-                scopes have access to parent scopes, but not vice versa.</li>
+                scopes have access to parent scopes, but not vice versa.
+              </li>
             </ul>
             <figure name="5e76" id="5e76" class="graf graf--figure graf--layoutOutsetLeft graf-after--li"><img
                 class="graf-image" data-image-id="1*RaM-5KbhUOZ_HoP5j-kNWQ.png" data-width="969" data-height="601"
@@ -733,7 +735,8 @@
               is only available within the statement or loop (like <code class="markup--code markup--p-code">i</code> in
               a <code class="markup--code markup--p-code">for</code> loop). Similarly, there is function scope, where
               <code class="markup--code markup--p-code">temperature</code> exists inside the function, but not elsewhere
-              in your code file.</p>
+              in your code file.
+            </p>
             <h3 name="c306" id="c306" class="graf graf--h3 graf-after--p">More on hoisting:</h3>
             <h4 name="71d2" id="71d2" class="graf graf--h4 graf-after--h3">source:<a
                 href="https://blog.bitsrc.io/hoisting-in-modern-javascript-let-const-and-var-b290405adfda"
@@ -747,7 +750,8 @@
             </p>
             <p name="1297" id="1297" class="graf graf--p graf-after--p">When the JavaScript engine encounters a call to
               <code class="markup--code markup--p-code">helloWorld()</code>, it will look into the lexical environment,
-              finds the function and will be able to execute it.</p>
+              finds the function and will be able to execute it.
+            </p>
             <h3 name="ef0a" id="ef0a" class="graf graf--h3 graf-after--p">Hoisting Function Expressions</h3>
             <p name="2d52" id="2d52" class="graf graf--p graf-after--h3">Only function declarations are hoisted in
               JavaScript, function expressions are not hoisted. For example: this code won’t work.</p>
@@ -956,14 +960,16 @@
                 class="markup--code markup--p-code">global scope</code>.</p>
             <p name="220c" id="220c" class="graf graf--p graf-after--p">There are two types of scope in javascript,
               <code class="markup--code markup--p-code">Global Vs. Local</code> and that this is important to understand
-              in terms of a computer program written in JavaScript.</p>
+              in terms of a computer program written in JavaScript.
+            </p>
             <p name="aeb7" id="aeb7" class="graf graf--p graf-after--p">When a function is declared and created, a new
               <code class="markup--code markup--p-code">scope</code> is also created. Any variables declared within that
               function&#39;s scope will be <code class="markup--code markup--p-code">enclosed</code> in a
               lexical/private scope that belongs to that function. Also, it is important to remember that functions look
               <code class="markup--code markup--p-code">outward</code> for context. If some variable isn&#39;t defined
               in a function&#39;s scope, the function will look outside the scope chain and search for a variable being
-              referenced in the outer scope. This is what closure is all about.</p>
+              referenced in the outer scope. This is what closure is all about.
+            </p>
             <p name="76ec" id="76ec" class="graf graf--p graf-after--p">In it’s most simplest of forms this is a
               closure:</p>
             <pre name="ec5d" id="ec5d"
@@ -1076,7 +1082,8 @@
             <p name="6bac" id="6bac" class="graf graf--p graf--startsWithDoubleQuote graf-after--p">“The simplest use of
               <code
                 class="markup--code markup--p-code"><strong class="markup--strong markup--p-strong">bind()</strong></code>
-              is to make a function that, no matter how it is called, is called with a particular this value&quot;.</p>
+              is to make a function that, no matter how it is called, is called with a particular this value&quot;.
+            </p>
             <figure name="e41f" id="e41f" class="graf graf--figure graf--iframe graf-after--p">
               <script src="https://gist.github.com/bgoonz/550835dfb10f803c6cbd16fd43e3e4e6.js"></script>
             </figure>
@@ -1203,12 +1210,14 @@
             </figure>
             <p name="cf7b" id="cf7b" class="graf graf--p graf--hasDropCapModel graf--hasDropCap graf-after--figure">
               <span class="graf-dropCap">C</span>closure is a word we use to refer to the context of a given function.
-              Normally our function starts from scratch every time we run it.</p>
+              Normally our function starts from scratch every time we run it.
+            </p>
             <p name="ca5b" id="ca5b" class="graf graf--p graf-after--p">However, if we were to return a function from
               <code class="markup--code markup--p-code">addOne()</code> that referenced <code
                 class="markup--code markup--p-code">counter</code>, counter would become part of the context of that new
               function, even after <code class="markup--code markup--p-code">addOne()</code> finishes executing. This is
-              easier to see in code than to explain in words:</p>
+              easier to see in code than to explain in words:
+            </p>
             <figure name="d493" id="d493" class="graf graf--figure graf--iframe graf-after--p">
               <script src="https://gist.github.com/bgoonz/f1cf6457948c70e326f4081e44bb0832.js"></script>
             </figure>
