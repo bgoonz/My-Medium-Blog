@@ -1,10 +1,6 @@
 # Web Developer’s Technical Glossary
 
-This will be a running list as I make updates!
 
----
-
-### Web Developer’s Technical Appendix
 
 This will be a running list as I make updates!
 
