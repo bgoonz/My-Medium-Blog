@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Array Callback Methods Implemented With For Loops</title>
   <style>
     * {
@@ -74,8 +74,8 @@
     }
 
     header,
-    section[data-field=subtitle],
-    section[data-field=description] {
+    section[data-field="subtitle"],
+    section[data-field="description"] {
       display: none;
     }
   </style>
@@ -84,7 +84,9 @@
 <body>
   <article class="h-entry">
     <header>
-      <h1 class="p-name">Array Callback Methods Implemented With For Loops</h1>
+      <h1 class="p-name">
+        Array Callback Methods Implemented With For Loops
+      </h1>
     </header>
     <section data-field="subtitle" class="p-summary">
       How to implement array callback methods in JavaScript
@@ -92,37 +94,52 @@
     <section data-field="body" class="e-content">
       <section name="f6db" class="section section--body section--first section--last">
         <div class="section-divider">
-          <hr class="section-divider">
+          <hr class="section-divider" />
         </div>
         <div class="section-content">
           <div class="section-inner sectionLayout--insetColumn">
-            <h3 name="1921" id="1921" class="graf graf--h3 graf--leading graf--title">Array Callback Methods Implemented
-              With For Loops</h3>
-            <h4 name="e029" id="e029" class="graf graf--h4 graf-after--h3 graf--subtitle">How to implement array
-              callback methods in JavaScript</h4>
-            <figure name="05be" id="05be" class="graf graf--figure graf-after--h4"><img class="graf-image"
-                data-image-id="0*WpKqOdTsTPhvapuW" data-width="602" data-height="313"
-                src="https://cdn-images-1.medium.com/max/800/0*WpKqOdTsTPhvapuW"></figure>
-            <figure name="2d3d" id="2d3d" class="graf graf--figure graf--iframe graf-after--figure"><iframe
-                src="https://jsfiddle.net/bgoonz/61ch53jt/embedded/" width="600" height="400" frameborder="0"
-                scrolling="no"></iframe></figure>
-            <h4 name="ea15" id="ea15" class="graf graf--h4 graf-after--figure">Functions are called “First Class
-              Objects” in JavaScript because:</h4>
+            <h3 name="1921" id="1921" class="graf graf--h3 graf--leading graf--title">
+              Array Callback Methods Implemented With For Loops
+            </h3>
+            <h4 name="e029" id="e029" class="graf graf--h4 graf-after--h3 graf--subtitle">
+              How to implement array callback methods in JavaScript
+            </h4>
+            <figure name="05be" id="05be" class="graf graf--figure graf-after--h4">
+              <img class="graf-image" data-image-id="0*WpKqOdTsTPhvapuW" data-width="602" data-height="313"
+                src="https://cdn-images-1.medium.com/max/800/0*WpKqOdTsTPhvapuW" />
+            </figure>
+            <figure name="2d3d" id="2d3d" class="graf graf--figure graf--iframe graf-after--figure">
+              <iframe src="https://jsfiddle.net/bgoonz/61ch53jt/embedded/" width="600" height="400" frameborder="0"
+                scrolling="no"></iframe>
+            </figure>
+            <h4 name="ea15" id="ea15" class="graf graf--h4 graf-after--figure">
+              Functions are called “First Class Objects” in JavaScript
+              because:
+            </h4>
             <ul class="postList">
-              <li name="1df8" id="1df8" class="graf graf--li graf-after--h4">A function is an instance of the Object
-                type</li>
-              <li name="6e67" id="6e67" class="graf graf--li graf-after--li">A function can have properties and has a
-                link back to its constructor method</li>
-              <li name="c7cf" id="c7cf" class="graf graf--li graf-after--li">You can store the function in a variable
+              <li name="1df8" id="1df8" class="graf graf--li graf-after--h4">
+                A function is an instance of the Object type
               </li>
-              <li name="b709" id="b709" class="graf graf--li graf-after--li">You can pass the function as a parameter to
-                another function</li>
-              <li name="2c3c" id="2c3c" class="graf graf--li graf-after--li">You can return the function from a function
+              <li name="6e67" id="6e67" class="graf graf--li graf-after--li">
+                A function can have properties and has a link back to its
+                constructor method
+              </li>
+              <li name="c7cf" id="c7cf" class="graf graf--li graf-after--li">
+                You can store the function in a variable
+              </li>
+              <li name="b709" id="b709" class="graf graf--li graf-after--li">
+                You can pass the function as a parameter to another function
+              </li>
+              <li name="2c3c" id="2c3c" class="graf graf--li graf-after--li">
+                You can return the function from a function
               </li>
             </ul>
-            <p name="679b" id="679b" class="graf graf--p graf-after--li">What do you think will be printed in the
-              following:</p>
-            <h4 name="8d4f" id="8d4f" class="graf graf--h4 graf-after--p">Anonymous callback, a named callback</h4>
+            <p name="679b" id="679b" class="graf graf--p graf-after--li">
+              What do you think will be printed in the following:
+            </p>
+            <h4 name="8d4f" id="8d4f" class="graf graf--h4 graf-after--p">
+              Anonymous callback, a named callback
+            </h4>
             <pre name="3414" id="3414"
               class="graf graf--pre graf-after--h4"><code class="markup--code markup--pre-code">function foo(callback) {<br>    console.log(&#39;grape&#39;);<br>    callback();<br>}</code></pre>
             <pre name="3b70" id="3b70"
@@ -131,9 +148,11 @@
               class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">const fruitBasket = function() {<br>    console.log(&#39;apple&#39;);<br>    bar();<br>    foo(bar);<br>    foo(function() {<br>        console.log(&#39;orange&#39;);<br>    });<br>    console.log(&#39;pear&#39;);<br>};</code></pre>
             <pre name="9b4a" id="9b4a"
               class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">fruitBasket();</code></pre>
-            <h4 name="b8e8" id="b8e8" class="graf graf--h4 graf-after--pre">Function that takes in a value and two
-              callbacks. The function should return the result of the callback who’s invocation results in a
-              larger value.</h4>
+            <h4 name="b8e8" id="b8e8" class="graf graf--h4 graf-after--pre">
+              Function that takes in a value and two callbacks. The function
+              should return the result of the callback who’s invocation
+              results in a larger value.
+            </h4>
             <pre name="a2d6" id="a2d6"
               class="graf graf--pre graf-after--h4"><code class="markup--code markup--pre-code u-paddingRight0 u-marginRight0">function greaterValue(value, cb1, cb2) {<br>    <em class="markup--em markup--pre-em">// compare cb1 invoked with value to cb2 invoked with value</em><br>    <em class="markup--em markup--pre-em">// return the greater result</em></code></pre>
             <pre name="252e" id="252e"
@@ -144,16 +163,21 @@
               class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">let addOne = function(num) {<br>    return num + 1;<br>};</code></pre>
             <pre name="8c8c" id="8c8c"
               class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">console.log(greaterValue(3, negate, addOne));<br>console.log(greaterValue(-2, negate, addOne));</code></pre>
-            <p name="9687" id="9687" class="graf graf--p graf-after--pre"><em class="markup--em markup--p-em">Note: we
-                do not invoke </em><code
+            <p name="9687" id="9687" class="graf graf--p graf-after--pre">
+              <em class="markup--em markup--p-em">Note: we do not invoke </em><code
                 class="markup--code markup--p-code"><em class="markup--em markup--p-em">negate</em></code><em
                 class="markup--em markup--p-em"> or </em><code
                 class="markup--code markup--p-code"><em class="markup--em markup--p-em">addOne</em></code><em
                 class="markup--em markup--p-em"> (by using </em><code
                 class="markup--code markup--p-code"><em class="markup--em markup--p-em">()</em></code><em
-                class="markup--em markup--p-em"> to call them), we are passing the function itself.</em></p>
-            <h4 name="217c" id="217c" class="graf graf--h4 graf-after--p">Write a function, myMap, that takes in an
-              array and a callback as arguments. The function should mimic the behavior of Array.prototype.map.</h4>
+                class="markup--em markup--p-em">
+                to call them), we are passing the function itself.</em>
+            </p>
+            <h4 name="217c" id="217c" class="graf graf--h4 graf-after--p">
+              Write a function, myMap, that takes in an array and a callback
+              as arguments. The function should mimic the behavior of
+              Array.prototype.map.
+            </h4>
             <pre name="d541" id="d541"
               class="graf graf--pre graf-after--h4"><code class="markup--code markup--pre-code u-paddingRight0 u-marginRight0">function myMap(arr, callback) {<br>    <em class="markup--em markup--pre-em">// iterate through the array, perform the cb on each element</em><br>    <em class="markup--em markup--pre-em">// return a new array with those new values<br></em>    let mapped = [];</code></pre>
             <pre name="391d" id="391d"
@@ -162,8 +186,11 @@
               class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">    return mapped;<br>}</code></pre>
             <pre name="7738" id="7738"
               class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">let double = function(num) {<br>    return num * 2;<br>};<br>console.log(myMap([1, 2, 3], double));</code></pre>
-            <h4 name="47af" id="47af" class="graf graf--h4 graf-after--pre">Write a function, myFilter, that takes in an
-              array and a callback as arguments. The function should mimic the behavior of Array.prototype.filter.</h4>
+            <h4 name="47af" id="47af" class="graf graf--h4 graf-after--pre">
+              Write a function, myFilter, that takes in an array and a
+              callback as arguments. The function should mimic the behavior of
+              Array.prototype.filter.
+            </h4>
             <pre name="d6e8" id="d6e8"
               class="graf graf--pre graf-after--h4"><code class="markup--code markup--pre-code">function myFilter(arr, callback) {<br>    let filtered = [];</code></pre>
             <pre name="7177" id="7177"
@@ -172,13 +199,18 @@
               class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">        if (callback(element, i, arr)) {<br>            filtered.push(element);<br>        }<br>    }</code></pre>
             <pre name="74be" id="74be"
               class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">    return filtered;<br>}</code></pre>
-            <h4 name="ac49" id="ac49" class="graf graf--h4 graf-after--pre">Write a function, myEvery, that takes in an
-              array and a callback as arguments. The function should mimic the behavior of Array.prototype.every.</h4>
+            <h4 name="ac49" id="ac49" class="graf graf--h4 graf-after--pre">
+              Write a function, myEvery, that takes in an array and a callback
+              as arguments. The function should mimic the behavior of
+              Array.prototype.every.
+            </h4>
             <pre name="1c30" id="1c30"
               class="graf graf--pre graf-after--h4"><code class="markup--code markup--pre-code">function myEvery(arr, callback) {<br>    for (let i = 0; i &lt; arr.length; i++) {<br>        let element = arr[i];</code></pre>
             <pre name="9260" id="9260"
               class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code">        if (callback(element, i, arr) === false) {<br>            return false;<br>        }<br>    }<br>    return true;<br>}</code></pre>
-            <h3 name="ceeb" id="ceeb" class="graf graf--h3 graf-after--pre">Further Examples of the above concepts</h3>
+            <h3 name="ceeb" id="ceeb" class="graf graf--h3 graf-after--pre">
+              Further Examples of the above concepts
+            </h3>
             <pre name="1daf" id="1daf"
               class="graf graf--pre graf-after--h3"><code class="markup--code markup--pre-code">const createMeowValue = () =&gt; {<br>  console.log(this.name);<br>  let meow = function () {<br>    console.log(this);<br>    console.log(this.name + &#39; meows&#39;);<br>  }<br>  meow = meow.bind(this);<br>  return meow;<br>};</code></pre>
             <pre name="a42a" id="a42a"
@@ -199,53 +231,71 @@
               class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code u-paddingRight0 u-marginRight0"><em class="markup--em markup--pre-em">// console.log(createSmoothie(&#39;banana&#39;));</em><br><em class="markup--em markup--pre-em">// console.log(createSmoothie(&#39;apple&#39;));</em></code></pre>
             <pre name="55d3" id="55d3"
               class="graf graf--pre graf-after--pre"><code class="markup--code markup--pre-code u-paddingRight0 u-marginRight0"><em class="markup--em markup--pre-em">// one parameter only</em><br><em class="markup--em markup--pre-em">// first argument is a string</em><br><em class="markup--em markup--pre-em">// return an array</em><br><em class="markup--em markup--pre-em">// DO NOT USE forEach</em></code></pre>
-            <p name="0135" id="0135" class="graf graf--p graf-after--pre">References:</p>
-            <div name="7e3f" id="7e3f" class="graf graf--mixtapeEmbed graf-after--p"><a
-                href="https://open.appacademy.io/learn" data-href="https://open.appacademy.io/learn"
+            <p name="0135" id="0135" class="graf graf--p graf-after--pre">
+              References:
+            </p>
+            <div name="7e3f" id="7e3f" class="graf graf--mixtapeEmbed graf-after--p">
+              <a href="https://open.appacademy.io/learn" data-href="https://open.appacademy.io/learn"
                 class="markup--anchor markup--mixtapeEmbed-anchor" title="https://open.appacademy.io/learn"><strong
-                  class="markup--strong markup--mixtapeEmbed-strong">App Academy Open</strong><br><em
+                  class="markup--strong markup--mixtapeEmbed-strong">App Academy Open</strong><br /><em
                   class="markup--em markup--mixtapeEmbed-em">App Academy Open is the first free, online web development
-                  course that&#39;s meant to get you hired as a developer. Get…</em>open.appacademy.io</a><a
-                href="https://open.appacademy.io/learn" class="js-mixtapeImage mixtapeImage u-ignoreBlock"
-                data-media-id="d04f627f6896406e30a00386f07a9206" data-thumbnail-img-id="0*ARV8qFb2eSLR9o3m"
-                style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/0*ARV8qFb2eSLR9o3m);"></a>
+                  course that&#39;s meant to get you hired as a developer.
+                  Get…</em>open.appacademy.io</a><a href="https://open.appacademy.io/learn"
+                class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="d04f627f6896406e30a00386f07a9206"
+                data-thumbnail-img-id="0*ARV8qFb2eSLR9o3m" style="
+                    background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/0*ARV8qFb2eSLR9o3m);
+                  "></a>
             </div>
-            <div name="06cc" id="06cc" class="graf graf--mixtapeEmbed graf-after--mixtapeEmbed"><a
-                href="https://developer.mozilla.org/en-US/" data-href="https://developer.mozilla.org/en-US/"
+            <div name="06cc" id="06cc" class="graf graf--mixtapeEmbed graf-after--mixtapeEmbed">
+              <a href="https://developer.mozilla.org/en-US/" data-href="https://developer.mozilla.org/en-US/"
                 class="markup--anchor markup--mixtapeEmbed-anchor" title="https://developer.mozilla.org/en-US/"><strong
-                  class="markup--strong markup--mixtapeEmbed-strong">MDN Web Docs</strong><br><em
+                  class="markup--strong markup--mixtapeEmbed-strong">MDN Web Docs</strong><br /><em
                   class="markup--em markup--mixtapeEmbed-em">Read more at hacks.mozilla.org Roughly a year ago at
-                  Mozilla we started an effort to improve Firefox stability on…</em>developer.mozilla.org</a><a
-                href="https://developer.mozilla.org/en-US/" class="js-mixtapeImage mixtapeImage u-ignoreBlock"
-                data-media-id="28301287e1798060706e523eeb0466d7" data-thumbnail-img-id="0*PHwh_lPmUvBYz0u0"
-                style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/0*PHwh_lPmUvBYz0u0);"></a>
+                  Mozilla we started an effort to improve Firefox stability
+                  on…</em>developer.mozilla.org</a><a href="https://developer.mozilla.org/en-US/"
+                class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="28301287e1798060706e523eeb0466d7"
+                data-thumbnail-img-id="0*PHwh_lPmUvBYz0u0" style="
+                    background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/0*PHwh_lPmUvBYz0u0);
+                  "></a>
             </div>
-            <div name="b96f" id="b96f" class="graf graf--mixtapeEmbed graf-after--mixtapeEmbed"><a
-                href="https://javascript.info/callbacks" data-href="https://javascript.info/callbacks"
+            <div name="b96f" id="b96f" class="graf graf--mixtapeEmbed graf-after--mixtapeEmbed">
+              <a href="https://javascript.info/callbacks" data-href="https://javascript.info/callbacks"
                 class="markup--anchor markup--mixtapeEmbed-anchor" title="https://javascript.info/callbacks"><strong
-                  class="markup--strong markup--mixtapeEmbed-strong">Introduction: callbacks</strong><br><em
+                  class="markup--strong markup--mixtapeEmbed-strong">Introduction: callbacks</strong><br /><em
                   class="markup--em markup--mixtapeEmbed-em">To demonstrate the use of callbacks, promises and other
-                  abstract concepts, we&#39;ll be using some browser methods…</em>javascript.info</a><a
-                href="https://javascript.info/callbacks" class="js-mixtapeImage mixtapeImage u-ignoreBlock"
-                data-media-id="f54c2b338195bc56dd0faaaecb92677c" data-thumbnail-img-id="0*ARMXj1F3HS6Ylx1G"
-                style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/0*ARMXj1F3HS6Ylx1G);"></a>
+                  abstract concepts, we&#39;ll be using some browser
+                  methods…</em>javascript.info</a><a href="https://javascript.info/callbacks"
+                class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="f54c2b338195bc56dd0faaaecb92677c"
+                data-thumbnail-img-id="0*ARMXj1F3HS6Ylx1G" style="
+                    background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/0*ARMXj1F3HS6Ylx1G);
+                  "></a>
             </div>
-            <p name="78f3" id="78f3" class="graf graf--p graf-after--mixtapeEmbed graf--trailing"><em
-                class="markup--em markup--p-em">More content at </em><a href="http://plainenglish.io"
+            <p name="78f3" id="78f3" class="graf graf--p graf-after--mixtapeEmbed graf--trailing">
+              <em class="markup--em markup--p-em">More content at </em><a href="http://plainenglish.io"
                 data-href="http://plainenglish.io" class="markup--anchor markup--p-anchor" rel="noopener"
                 target="_blank"><strong class="markup--strong markup--p-strong"><em
-                    class="markup--em markup--p-em">plainenglish.io</em></strong></a></p>
+                    class="markup--em markup--p-em">plainenglish.io</em></strong></a>
+            </p>
           </div>
         </div>
       </section>
     </section>
     <footer>
-      <p>By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on <a
-          href="https://medium.com/p/d08875df6777"><time class="dt-published" datetime="2021-05-27T15:09:35.071Z">May
-            27, 2021</time></a>.</p>
-      <p><a href="https://medium.com/@bryanguner/array-callback-methods-implemented-with-for-loops-d08875df6777"
-          class="p-canonical">Canonical link</a></p>
-      <p>Exported from <a href="https://medium.com">Medium</a> on August 24, 2021.</p>
+      <p>
+        By
+        <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a>
+        on
+        <a href="https://medium.com/p/d08875df6777"><time class="dt-published" datetime="2021-05-27T15:09:35.071Z">May
+            27, 2021</time></a>.
+      </p>
+      <p>
+        <a href="https://medium.com/@bryanguner/array-callback-methods-implemented-with-for-loops-d08875df6777"
+          class="p-canonical">Canonical link</a>
+      </p>
+      <p>
+        Exported from <a href="https://medium.com">Medium</a> on August 24,
+        2021.
+      </p>
     </footer>
   </article>
 </body>
