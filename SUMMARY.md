@@ -16,6 +16,15 @@
 * [Bash Commands That Save Me Time and Frustration](untitled-11.md)
 * [Bash Proficiency In Under 15 Minutes](untitled-12.md)
 * [Basic React Tutorial](untitled-13.md)
-* [Basic Web Development Environment Setup](untitled-14.md)
 * [Beginners Guide To Python](untitled-15.md)
+
+## python
+
+## Javascript
+
+## resources
+
+* [Basic Web Development Environment Setup](resources/untitled-14.md)
+
+## bash
 
