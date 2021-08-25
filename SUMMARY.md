@@ -35,6 +35,7 @@
 ## DS\_N\_ALGO
 
 * [A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting Algorithms by Example](ds_n_algo/untitled-5.md)
+* [Data Structures & Algorithms Resource List Part 1](ds_n_algo/untitled.md)
 * [A Very Quick Guide To Calculating Big O Computational Complexity](ds_n_algo/untitled-7.md)
 
 ## VanillaJSCSSHTML
