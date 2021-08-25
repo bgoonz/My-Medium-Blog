@@ -9,23 +9,23 @@ My Bash Cheatsheet Index:
 ## Table Of Contents: <a id="f1e1"></a>
 
 > One Liners
-
+>
 > Block Bad IPs
-
+>
 > If Statements
-
+>
 > Check if args are passed
-
+>
 > Check if required variables exist
-
+>
 > Check if environment variables exists
-
+>
 > While Loops
-
+>
 > Run for 5 Seconds
-
+>
 > Redirecting Outputs
-
+>
 > Stdout, Stderr
 
 ## Commands <a id="e775"></a>
@@ -166,3 +166,4 @@ Redirect both to a file:
 ```text
 grep -irl faker . &> file.log
 ```
+

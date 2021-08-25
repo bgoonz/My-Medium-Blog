@@ -136,7 +136,7 @@ lines require the double spaces for single line breaks.
 ```
 
 > _Headers break on their own_
-
+>
 > _Note that headers don’t need line continuation characters as they are block elements and automatically break. Only text lines require the double spaces for single line breaks._
 
 ## Fontawesome Icons <a id="1fab"></a>
@@ -167,7 +167,7 @@ This text can be **embedded** into Markdown:
 ```
 
 This text can be embedded into Markdown:  
- Refresh Page
+Refresh Page
 
 ## Unordered Lists <a id="dc79"></a>
 
@@ -186,9 +186,9 @@ This text is part of the third item. Use two spaces at end of the the list item 
 A double line break, breaks out of the list.
 ```
 
-- Item 1
-- Item 2
-- Item 3 This text is part of the third item. Use two spaces at end of the the list item to break the line.
+* Item 1
+* Item 2
+* Item 3 This text is part of the third item. Use two spaces at end of the the list item to break the line.
 
 A double line break, breaks out of the list.
 
@@ -209,8 +209,8 @@ Item two is really something else
 If you want lines to break using soft returns use two spaces at the end of a line.
 ```
 
-1.  Item 1 Item 1 is really something
-2.  Item 2 Item two is really something else
+1. Item 1 Item 1 is really something
+2. Item 2 Item two is really something else
 
 If you want to lines to break using soft returns use to spaces at the end of a line.
 
@@ -344,3 +344,4 @@ but shows up in a code box.
 [bgoonz’s gists · GitHub](https://gist.github.com/bgoonz)
 
 Or Checkout my personal Resource Site:
+
