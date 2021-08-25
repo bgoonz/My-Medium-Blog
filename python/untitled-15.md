@@ -14,57 +14,57 @@ My favorite language for maintainability is Python. It has simple, clean syntax,
 
 ## Python <a id="5ca3"></a>
 
-- Python is an interpreted, high-level and general-purpose, dynamically typed programming language
-- It is also Object oriented, modular oriented and a scripting language.
-- In Python, everything is considered as an Object.
-- A python file has an extension of .py
-- Python follows Indentation to separate code blocks instead of flower brackets\({}\).
-- We can run a python file by the following command in cmd\(Windows\) or shell\(mac/linux\).
-- `python <filename.py>`
+* Python is an interpreted, high-level and general-purpose, dynamically typed programming language
+* It is also Object oriented, modular oriented and a scripting language.
+* In Python, everything is considered as an Object.
+* A python file has an extension of .py
+* Python follows Indentation to separate code blocks instead of flower brackets\({}\).
+* We can run a python file by the following command in cmd\(Windows\) or shell\(mac/linux\).
+* `python <filename.py>`
 
 ### By default, the python doesn’t require any imports to run a python file. <a id="ec60"></a>
 
 ## Create and execute a program <a id="f00a"></a>
 
-1.  Open up a terminal/cmd
-2.  Create the program: nano/cat &gt; [nameProgram.py](http://nameprogram.py/)
-3.  Write the program and save it
-4.  python [nameProgram.py](http://nameprogram.py/)
+1. Open up a terminal/cmd
+2. Create the program: nano/cat &gt; [nameProgram.py](http://nameprogram.py/)
+3. Write the program and save it
+4. python [nameProgram.py](http://nameprogram.py/)
 
 ## Basic Datatypes <a id="ae3b"></a>
 
-![Data TypeDescriptionintInteger values [0, 1, -2, 3]floatFloating point values [0.1, 4.532, -5.092]charCharacters [a, b, @, !, `]strStrings [abc, AbC, A@B, sd!, `asa]boolBoolean Values [True, False]charCharacters [a, b, @, !, `]complexComplex numbers [2+3j, 4–1j]](https://cdn-images-1.medium.com/max/800/1*LDLNGnpgmyeWojLU_mKKJw.png)
+![Data TypeDescriptionintInteger values \[0, 1, -2, 3\]floatFloating point values \[0.1, 4.532, -5.092\]charCharacters \[a, b, @, !, \`\]strStrings \[abc, AbC, A@B, sd!, \`asa\]boolBoolean Values \[True, False\]charCharacters \[a, b, @, !, \`\]complexComplex numbers \[2+3j, 4&#x2013;1j\]](https://cdn-images-1.medium.com/max/800/1*LDLNGnpgmyeWojLU_mKKJw.png)
 
 ## Keywords <a id="9615"></a>
 
-![KeywordDescriptionbreakused to exit loop and used to exitcharbasic declaration of a type characterconstprefix declaration meaning variable can not be changedcontinuego to bottom of loop in for, while loopsclassto define a classdefto define a functionelifshortcut for (else if) used in else if ladderelseexecutable statement, part of “if” structurefloatbasic declaration of floating pointforexecutable statement, for loopfromexecutable statement, used to import only specific objects from a packageife](https://cdn-images-1.medium.com/max/800/1*rMzTksSg1jUZm2ECvvzO_g.png)
+![KeywordDescriptionbreakused to exit loop and used to exitcharbasic declaration of a type characterconstprefix declaration meaning variable can not be changedcontinuego to bottom of loop in for, while loopsclassto define a classdefto define a functionelifshortcut for \(else if\) used in else if ladderelseexecutable statement, part of &#x201C;if&#x201D; structurefloatbasic declaration of floating pointforexecutable statement, for loopfromexecutable statement, used to import only specific objects from a packageife](https://cdn-images-1.medium.com/max/800/1*rMzTksSg1jUZm2ECvvzO_g.png)
 
 ## Operators <a id="8ef4"></a>
 
-![OperatorDescription( )grouping parenthesis, function call, tuple declaration[ ]array indexing, also declaring lists etc.!relational not, complement, ! a yields true or false~bitwise not, ones complement, ~a-unary minus, — a+unary plus, + a*multiply, a * b/divide, a / b%modulo, a % b+add, a + b-subtract, a — b&lt;&lt;shift left, left operand is shifted left by right operand bits&gt;&gt;shift right, left operand is shifted right by right operand bits&lt;less than, result is true or false, a %lt; b&lt;=less than or](https://cdn-images-1.medium.com/max/800/1*3ud99ZpJ20AhhApKhjvlqQ.png) ![OperatorDescription( )grouping parenthesis, function call, tuple declaration[ ]array indexing, also declaring lists etc.!relational not, complement, ! a yields true or false~bitwise not, ones complement, ~a-unary minus, — a+unary plus, + a*multiply, a * b/divide, a / b%modulo, a % b+add, a + b-subtract, a — b&lt;&lt;shift left, left operand is shifted left by right operand bits&gt;&gt;shift right, left operand is shifted right by right operand bits&lt;less than, result is true or false, a %lt; b&lt;=less than or](https://cdn-images-1.medium.com/max/800/1*_Chk6-fWKs-i52q2Zx0ZTw.png)
+![OperatorDescription\( \)grouping parenthesis, function call, tuple declaration\[ \]array indexing, also declaring lists etc.!relational not, complement, ! a yields true or false~bitwise not, ones complement, ~a-unary minus, &#x2014; a+unary plus, + a\*multiply, a \* b/divide, a / b%modulo, a % b+add, a + b-subtract, a &#x2014; b&amp;lt;&amp;lt;shift left, left operand is shifted left by right operand bits&amp;gt;&amp;gt;shift right, left operand is shifted right by right operand bits&amp;lt;less than, result is true or false, a %lt; b&amp;lt;=less than or](https://cdn-images-1.medium.com/max/800/1*3ud99ZpJ20AhhApKhjvlqQ.png) ![OperatorDescription\( \)grouping parenthesis, function call, tuple declaration\[ \]array indexing, also declaring lists etc.!relational not, complement, ! a yields true or false~bitwise not, ones complement, ~a-unary minus, &#x2014; a+unary plus, + a\*multiply, a \* b/divide, a / b%modulo, a % b+add, a + b-subtract, a &#x2014; b&amp;lt;&amp;lt;shift left, left operand is shifted left by right operand bits&amp;gt;&amp;gt;shift right, left operand is shifted right by right operand bits&amp;lt;less than, result is true or false, a %lt; b&amp;lt;=less than or](https://cdn-images-1.medium.com/max/800/1*_Chk6-fWKs-i52q2Zx0ZTw.png)
 
 ## Basic Data Structures <a id="e8e2"></a>
 
 ## List <a id="61a3"></a>
 
-- List is a collection which is ordered and changeable. Allows duplicate members.
-- Lists are created using square brackets:
+* List is a collection which is ordered and changeable. Allows duplicate members.
+* Lists are created using square brackets:
 
 ```text
 thislist = ["apple", "banana", "cherry"]
 ```
 
-- List items are ordered, changeable, and allow duplicate values.
-- List items are indexed, the first item has index `[0]`, the second item has index `[1]` etc.
-- The list is changeable, meaning that we can change, add, and remove items in a list after it has been created.
-- To determine how many items a list has, use the `len()` function.
-- A list can contain different data types:
+* List items are ordered, changeable, and allow duplicate values.
+* List items are indexed, the first item has index `[0]`, the second item has index `[1]` etc.
+* The list is changeable, meaning that we can change, add, and remove items in a list after it has been created.
+* To determine how many items a list has, use the `len()` function.
+* A list can contain different data types:
 
 ```text
 list1 = ["abc", 34, True, 40, "male"]
 ```
 
-- It is also possible to use the list\(\) constructor when creating a new list
+* It is also possible to use the list\(\) constructor when creating a new list
 
 ```text
 thislist = list(("apple", "banana", "cherry"))  # note the double round-brackets
@@ -72,33 +72,33 @@ thislist = list(("apple", "banana", "cherry"))  # note the double round-brackets
 
 ## Tuple <a id="1f05"></a>
 
-- Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
-- A tuple is a collection which is ordered and unchangeable.
-- Tuples are written with round brackets.
+* Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
+* A tuple is a collection which is ordered and unchangeable.
+* Tuples are written with round brackets.
 
 ```text
 thistuple = ("apple", "banana", "cherry")
 ```
 
-- Tuple items are ordered, unchangeable, and allow duplicate values.
-- Tuple items are indexed, the first item has index `[0]`, the second item has index `[1]` etc.
-- When we say that tuples are ordered, it means that the items have a defined order, and that order will not change.
-- Tuples are unchangeable, meaning that we cannot change, add or remove items after the tuple has been created.
-- Since tuple are indexed, tuples can have items with the same value:
-- Tuples allow duplicate values:
+* Tuple items are ordered, unchangeable, and allow duplicate values.
+* Tuple items are indexed, the first item has index `[0]`, the second item has index `[1]` etc.
+* When we say that tuples are ordered, it means that the items have a defined order, and that order will not change.
+* Tuples are unchangeable, meaning that we cannot change, add or remove items after the tuple has been created.
+* Since tuple are indexed, tuples can have items with the same value:
+* Tuples allow duplicate values:
 
 ```text
 thistuple = ("apple", "banana", "cherry", "apple", "cherry")
 ```
 
-- To determine how many items a tuple has, use the `len()`function:
+* To determine how many items a tuple has, use the `len()`function:
 
 ```text
 thistuple = ("apple", "banana", "cherry")
 print(len(thistuple))
 ```
 
-- To create a tuple with only one item, you have to add a comma after the item, otherwise Python will not recognize it as a tuple.
+* To create a tuple with only one item, you have to add a comma after the item, otherwise Python will not recognize it as a tuple.
 
 ```text
 thistuple = ("apple",)
@@ -111,7 +111,7 @@ thistuple = ("apple")
 print(type(thistuple))
 ```
 
-- It is also possible to use the tuple\(\) constructor to make a tuple.
+* It is also possible to use the tuple\(\) constructor to make a tuple.
 
 ```text
 thistuple = tuple(("apple", "banana", "cherry")) # note the double round-brackets
@@ -120,19 +120,19 @@ print(thistuple)
 
 ## Set <a id="5698"></a>
 
-- Set is a collection which is unordered and unindexed. No duplicate members.
-- A set is a collection which is both unordered and unindexed.
+* Set is a collection which is unordered and unindexed. No duplicate members.
+* A set is a collection which is both unordered and unindexed.
 
 ```text
 thisset = {"apple", "banana", "cherry"}
 ```
 
-- Set items are unordered, unchangeable, and do not allow duplicate values.
-- Unordered means that the items in a set do not have a defined order.
-- Set items can appear in a different order every time you use them, and cannot be referred to by index or key.
-- Sets are unchangeable, meaning that we cannot change the items after the set has been created.
-- Duplicate values will be ignored.
-- To determine how many items a set has, use the `len()` method.
+* Set items are unordered, unchangeable, and do not allow duplicate values.
+* Unordered means that the items in a set do not have a defined order.
+* Set items can appear in a different order every time you use them, and cannot be referred to by index or key.
+* Sets are unchangeable, meaning that we cannot change the items after the set has been created.
+* Duplicate values will be ignored.
+* To determine how many items a set has, use the `len()` method.
 
 ```text
 thisset = {"apple", "banana", "cherry"}
@@ -142,7 +142,7 @@ thisset = {"apple", "banana", "cherry"}
 print(len(thisset))
 ```
 
-- Set items can be of any data type:
+* Set items can be of any data type:
 
 ```text
 set1 = {"apple", "banana", "cherry"}
@@ -151,7 +151,7 @@ set3 = {True, False, False}
 set4 = {"abc", 34, True, 40, "male"}
 ```
 
-- It is also possible to use the `set()` constructor to make a set.
+* It is also possible to use the `set()` constructor to make a set.
 
 ```text
 thisset = set(("apple", "banana", "cherry")) # note the double round-brackets
@@ -159,9 +159,9 @@ thisset = set(("apple", "banana", "cherry")) # note the double round-brackets
 
 ## Dictionary <a id="d0d0"></a>
 
-- Dictionary is a collection which is unordered and changeable. No duplicate members.
-- Dictionaries are used to store data values in key:value pairs.
-- Dictionaries are written with curly brackets, and have keys and values:
+* Dictionary is a collection which is unordered and changeable. No duplicate members.
+* Dictionaries are used to store data values in key:value pairs.
+* Dictionaries are written with curly brackets, and have keys and values:
 
 ```text
 thisdict = {
@@ -171,7 +171,7 @@ thisdict = {
 }
 ```
 
-- Dictionary items are presented in key:value pairs, and can be referred to by using the key name.
+* Dictionary items are presented in key:value pairs, and can be referred to by using the key name.
 
 ```text
 thisdict = {
@@ -182,16 +182,16 @@ thisdict = {
 print(thisdict["brand"])
 ```
 
-- Dictionaries are changeable, meaning that we can change, add or remove items after the dictionary has been created.
-- Dictionaries cannot have two items with the same key.
-- Duplicate values will overwrite existing values.
-- To determine how many items a dictionary has, use the `len()` function.
+* Dictionaries are changeable, meaning that we can change, add or remove items after the dictionary has been created.
+* Dictionaries cannot have two items with the same key.
+* Duplicate values will overwrite existing values.
+* To determine how many items a dictionary has, use the `len()` function.
 
 ```text
 print(len(thisdict))
 ```
 
-- The values in dictionary items can be of any data type
+* The values in dictionary items can be of any data type
 
 ```text
 thisdict = {
@@ -217,13 +217,13 @@ if condition:
 
 Python has two primitive loop commands:
 
-1.  while loops
-2.  for loops
+1. while loops
+2. for loops
 
 ### While loop <a id="cef8"></a>
 
-- With the `while` loop we can execute a set of statements as long as a condition is true.
-- Example: Print i as long as i is less than 6
+* With the `while` loop we can execute a set of statements as long as a condition is true.
+* Example: Print i as long as i is less than 6
 
 ```text
 i = 1
@@ -232,16 +232,16 @@ while i < 6:
   i += 1
 ```
 
-- The while loop requires relevant variables to be ready, in this example we need to define an indexing variable, i, which we set to 1.
-- With the `break` statement we can stop the loop even if the while condition is true
-- With the continue statement we can stop the current iteration, and continue with the next.
-- With the else statement we can run a block of code once when the condition no longer is true.
+* The while loop requires relevant variables to be ready, in this example we need to define an indexing variable, i, which we set to 1.
+* With the `break` statement we can stop the loop even if the while condition is true
+* With the continue statement we can stop the current iteration, and continue with the next.
+* With the else statement we can run a block of code once when the condition no longer is true.
 
 ### For loop <a id="2925"></a>
 
-- A for loop is used for iterating over a sequence \(that is either a list, a tuple, a dictionary, a set, or a string\).
-- This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.
-- With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.
+* A for loop is used for iterating over a sequence \(that is either a list, a tuple, a dictionary, a set, or a string\).
+* This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.
+* With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.
 
 ```text
 fruits = ["apple", "banana", "cherry"]
@@ -249,12 +249,12 @@ for x in fruits:
   print(x)
 ```
 
-- The for loop does not require an indexing variable to set beforehand.
-- To loop through a set of code a specified number of times, we can use the range\(\) function.
-- The range\(\) function returns a sequence of numbers, starting from 0 by default, and increments by 1 \(by default\), and ends at a specified number.
-- The range\(\) function defaults to increment the sequence by 1, however it is possible to specify the increment value by adding a third parameter: range\(2, 30, 3\).
-- The else keyword in a for loop specifies a block of code to be executed when the loop is finished. A nested loop is a loop inside a loop.
-- The “inner loop” will be executed one time for each iteration of the “outer loop”:
+* The for loop does not require an indexing variable to set beforehand.
+* To loop through a set of code a specified number of times, we can use the range\(\) function.
+* The range\(\) function returns a sequence of numbers, starting from 0 by default, and increments by 1 \(by default\), and ends at a specified number.
+* The range\(\) function defaults to increment the sequence by 1, however it is possible to specify the increment value by adding a third parameter: range\(2, 30, 3\).
+* The else keyword in a for loop specifies a block of code to be executed when the loop is finished. A nested loop is a loop inside a loop.
+* The “inner loop” will be executed one time for each iteration of the “outer loop”:
 
 ```text
 adj = ["red", "big", "tasty"]
@@ -267,7 +267,7 @@ for x in adj:
     print(x, y)
 ```
 
-- for loops cannot be empty, but if you for some reason have a for loop with no content, put in the pass statement to avoid getting an error.
+* for loops cannot be empty, but if you for some reason have a for loop with no content, put in the pass statement to avoid getting an error.
 
 ```text
 for x in [0, 1, 2]:
@@ -287,9 +287,9 @@ def function_name():
 function_name()
 ```
 
-- We need not to specify the return type of the function.
-- Functions by default return `None`
-- We can return any datatype.
+* We need not to specify the return type of the function.
+* Functions by default return `None`
+* We can return any datatype.
 
 ## Python Syntax <a id="c509"></a>
 
@@ -338,7 +338,7 @@ Unlike many other languages, there is no `var`, `let`, or `const` to declare a v
 
 Remember, there is a difference between integers and strings. _Remember: String =_ _`""`._ To convert between these two, you can put an int in a `str()` function, and a string in a `int()` function. There is also a less used one, called a float. Mainly, these are integers with decimals. Change them using the `float()` command.
 
-[https://repl.it/@bgoonz/second-scr?lite=true&amp;referrer=https%3A%2F%2Fbryanguner.medium.com](https://repl.it/@bgoonz/second-scr?lite=true&referrer=https%3A%2F%2Fbryanguner.medium.com)
+[https://repl.it/@bgoonz/second-scr?lite=true&referrer=https%3A%2F%2Fbryanguner.medium.com](https://repl.it/@bgoonz/second-scr?lite=true&referrer=https%3A%2F%2Fbryanguner.medium.com)
 
 ```text
 x = 5
@@ -354,10 +354,10 @@ Instead of using the `,` in the print function, you can put a `+` to combine the
 
 There are many operators in python:
 
-- `+`
-- `-`
-- `/`
-- `*` These operators are the same in most languages, and allow for addition, subtraction, division, and multiplicaiton. Now, we can look at a few more complicated ones:
+* `+`
+* `-`
+* `/`
+* `*` These operators are the same in most languages, and allow for addition, subtraction, division, and multiplicaiton. Now, we can look at a few more complicated ones:
 
 ![](https://cdn-images-1.medium.com/max/800/0*oVIDxWdgJXoIt7CI.jpg)
 
@@ -423,12 +423,12 @@ x[2:-3] # 'llo everyb'
 
 Here is a list of functions/methods we will go over:
 
-- `.strip()`
-- `len()`
-- `.lower()`
-- `.upper()`
-- `.replace()`
-- `.split()`
+* `.strip()`
+* `len()`
+* `.lower()`
+* `.upper()`
+* `.replace()`
+* `.split()`
 
 ## New: Input\(\) <a id="8520"></a>
 
@@ -518,7 +518,7 @@ for number in range(100):
      time.sleep(.1)
 ```
 
-[https://storage.googleapis.com/replit/images/1539649280875_37d22e6d49e8e8fbc453631def345387.pn](https://storage.googleapis.com/replit/images/1539649280875_37d22e6d49e8e8fbc453631def345387.pn)
+[https://storage.googleapis.com/replit/images/1539649280875\_37d22e6d49e8e8fbc453631def345387.pn](https://storage.googleapis.com/replit/images/1539649280875_37d22e6d49e8e8fbc453631def345387.pn)
 
 ### `while` Loop <a id="90e7"></a>
 
@@ -829,3 +829,4 @@ while True:
 ```
 
 ## Discover More: <a id="3bfd"></a>
+

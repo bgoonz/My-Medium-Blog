@@ -1,6 +1,6 @@
-# README
+# A list of all of my articles to link to future posts
 
-## **All Of My** Medium **Stories**
+**All Of My** Medium **Stories**
 
 **This is another backup of all of them!**
 

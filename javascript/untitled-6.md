@@ -8,11 +8,11 @@
 
 ### Functions are called “First Class Objects” in JavaScript because: <a id="ea15"></a>
 
-- A function is an instance of the Object type
-- A function can have properties and has a link back to its constructor method
-- You can store the function in a variable
-- You can pass the function as a parameter to another function
-- You can return the function from a function
+* A function is an instance of the Object type
+* A function can have properties and has a link back to its constructor method
+* You can store the function in a variable
+* You can pass the function as a parameter to another function
+* You can return the function from a function
 
 What do you think will be printed in the following:
 
@@ -245,3 +245,4 @@ function createSmoothie(ingredient) {
 References:
 
 _More content at_ [_**plainenglish.io**_](http://plainenglish.io/)
+

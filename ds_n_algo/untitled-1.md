@@ -80,7 +80,7 @@ That’s right, things are starting to _heat up_.
 
 Suppose we wanted to keep a count of how many bottles of kombucha we drink every day.
 
-Let’s store each day’s kombucha count in an 8-bit, fixed-width, unsigned integer. That should be plenty — we’re not likely to get through more than 256 \(2⁸\) bottles in a _single day_, right?
+Let’s store each day’s kombucha count in an 8-bit, fixed-width, unsigned integer. That should be plenty — we’re not likely to get through more than 256 \(2⁸\) bottles in a _single day_, right?
 
 And let’s store the kombucha counts right next to each other in RAM, starting at memory address 0: ![](https://cdn-images-1.medium.com/max/800/0*FM_W-EkXYGYwG6LK)
 
@@ -106,11 +106,11 @@ So how do we build an array of _64-bit_ \(8 byte\) integers on top of our _8-bit
 
 We simply give each array index _8_ address slots instead of 1: ![](https://cdn-images-1.medium.com/max/800/0*Y_mxvkxQGPP7rqQJ)
 
-So we can still use simple math to grab the start of the nth item in our array — just gotta throw in some multiplication:
+So we can still use simple math to grab the start of the nth item in our array — just gotta throw in some multiplication:
 
 \text{address of nth item in array} = \text{address of array start} + \(n \* \text{size of each item in bytes}\)
 
-Don’t worry — adding this multiplication doesn’t really slow us down. Remember: addition, subtraction, multiplication, and division of fixed-width integers takes time. So _all_ the math we’re using here to get the address of the nth item in the array takes time.
+Don’t worry — adding this multiplication doesn’t really slow us down. Remember: addition, subtraction, multiplication, and division of fixed-width integers takes time. So _all_ the math we’re using here to get the address of the nth item in the array takes time.
 
 And remember how we said the memory controller has a _direct connection_ to each slot in RAM? That means we can read the stuff at any given memory address in time. ![](https://cdn-images-1.medium.com/max/800/0*kqv_M8aCHZWjRv90)
 
@@ -118,11 +118,11 @@ And remember how we said the memory controller has a _direct connection_ to each
 
 But the formula we used to get the address of the nth item in our array only works _if_:
 
-1.  **Each item in the array is the** _**same size**_ \(takes up the same
+1. **Each item in the array is the** _**same size**_ \(takes up the same
 
 number of bytes\).
 
-1.  **The array is** _**uninterrupted**_ **\(contiguous\) in memory**. There can’t
+1. **The array is** _**uninterrupted**_ **\(contiguous\) in memory**. There can’t
 
 be any gaps in the array…like to “skip over” a memory slot Spotify was already using.
 
@@ -154,13 +154,13 @@ The pointers are marked with a \* at the beginning.
 
 Pretty clever, right? This fixes _both_ the disadvantages of arrays:
 
-1.  The items don’t have to be the same length — each string can be as
+1. The items don’t have to be the same length — each string can be as
 
 long or as short as we want.
 
-1.  We don’t need enough uninterrupted free memory to store all our
+1. We don’t need enough uninterrupted free memory to store all our
 
-strings next to each other — we can place each of them separately, wherever there’s space in RAM.
+strings next to each other — we can place each of them separately, wherever there’s space in RAM.
 
 We fixed it! No more tradeoffs. Right?
 
@@ -178,7 +178,7 @@ This slowdown isn’t reflected in the big O time cost. Lookups in this pointer-
 
 ## Linked lists <a id="8a7e"></a>
 
-Our word processor is definitely going to need fast appends — appending to the document is like the _main thing_ you do with a word processor.
+Our word processor is definitely going to need fast appends — appending to the document is like the _main thing_ you do with a word processor.
 
 Can we build a data structure that can store a string, has fast appends, _and_ doesn’t require you to say how long the string will be ahead of time?
 
@@ -188,7 +188,7 @@ What if we pushed that idea even further?
 
 What if each _character_ in our string were a _two-index array_ with:
 
-1.  the character itself 2. a pointer to the next character
+1. the character itself 2. a pointer to the next character
 
 ![](https://cdn-images-1.medium.com/max/800/0*KcG72KzdYU-ftXWq)
 
@@ -204,7 +204,7 @@ The first node of a linked list is called the **head**, and the last node is usu
 
 Confusingly, some people prefer to use “tail” to refer to _everything after the head_ of a linked list. In an interview it’s fine to use either definition. Briefly say which definition you’re using, just to be clear.
 
-It’s important to have a pointer variable referencing the head of the list — otherwise we’d be unable to find our way back to the start of the list!
+It’s important to have a pointer variable referencing the head of the list — otherwise we’d be unable to find our way back to the start of the list!
 
 We’ll also sometimes keep a pointer to the tail. That comes in handy when we want to add something new to the end of the linked list. In fact, let’s try that out:
 
@@ -240,7 +240,7 @@ For our linked list, it’s just as easy as appending. Create the node: ![](http
 
 And tweak some pointers:
 
-1.  Point “B”’s next to “L”. 2. Point the head to “B”.
+1. Point “B”’s next to “L”. 2. Point the head to “B”.
 
 ![](https://cdn-images-1.medium.com/max/800/0*GoeByRt15C4nQvQr)
 
@@ -262,7 +262,7 @@ It’s all in the step where we made room for the first letter. We had to move _
 
 **So linked lists have faster \*pre\*pends \( time\) than dynamic arrays \( time\).**
 
-No “worst case” caveat this time — prepends for dynamic arrays are _always_ time. And prepends for linked lists are _always_ time.
+No “worst case” caveat this time — prepends for dynamic arrays are _always_ time. And prepends for linked lists are _always_ time.
 
 These quick appends and prepends for linked lists come from the fact that linked list nodes can go anywhere in memory. They don’t have to sit right next to each other the way items in an array do.
 
@@ -270,11 +270,11 @@ So if linked lists are so great, why do we usually store strings in an array? **
 
 Lookups with a linked list are more of a process, because we have no way of knowing where the ith node is in memory. So we have to walk through the linked list node by node, counting as we go, until we hit the ith item.
 
-def get_ith_item_in_linked_list\(head, i\): if i &lt; 0: raise ValueError\(“i can’t be negative: %d” % i\) current_node = head current_position = 0 while current_node: if current_position == i: \# Found it! return current_node \# Move on to the next node current_node = current_node.next current_position += 1 raise ValueError\(‘List has fewer than i + 1 \(%d\) nodes’ % \(i + 1\)\)
+def get\_ith\_item\_in\_linked\_list\(head, i\): if i &lt; 0: raise ValueError\(“i can’t be negative: %d” % i\) current\_node = head current\_position = 0 while current\_node: if current\_position == i: \# Found it! return current\_node \# Move on to the next node current\_node = current\_node.next current\_position += 1 raise ValueError\(‘List has fewer than i + 1 \(%d\) nodes’ % \(i + 1\)\)
 
 That’s i + 1 steps down our linked list to get to the ith node \(we made our function zero-based to match indices in arrays\). **So linked lists have -time lookups.** Much slower than the -time lookups for arrays and dynamic arrays.
 
-Not only that — **walking down a linked list is** _**not**_ **cache-friendly.** Because the next node could be _anywhere_ in memory, we don’t get any benefit from the processor cache. This means lookups in a linked list are even slower.
+Not only that — **walking down a linked list is** _**not**_ **cache-friendly.** Because the next node could be _anywhere_ in memory, we don’t get any benefit from the processor cache. This means lookups in a linked list are even slower.
 
 So the tradeoff with linked lists is they have faster prepends and faster appends than dynamic arrays, _but_ they have slower lookups.
 
@@ -300,15 +300,15 @@ Quick lookups are often really important. For that reason, we tend to use arrays
 
 For example, suppose we wanted to count how many times each ASCII character appears in [Romeo and Juliet](https://raw.githubusercontent.com/GITenberg/The-Tragedy-of-Romeo-and-Juliet_1112/master/1112.txt). How would we store those counts?
 
-We can use arrays in a clever way here. Remember — characters are just numbers. In ASCII \(a common character encoding\) ‘A’ is 65, ‘B’ is 66, etc.
+We can use arrays in a clever way here. Remember — characters are just numbers. In ASCII \(a common character encoding\) ‘A’ is 65, ‘B’ is 66, etc.
 
 So we can use the character\(‘s number value\) as the _index_ in our array, and store the _count_ for that character _at that index_ in the array: ![](https://cdn-images-1.medium.com/max/800/0*84jW_RfhW2MNqLGl)
 
 With this array, we can look up \(and edit\) the count for any character in constant time. Because we can access any index in our array in constant time.
 
-Something interesting is happening here — this array isn’t just a list of values. This array is storing _two_ things: characters and counts. The characters are _implied_ by the indices.
+Something interesting is happening here — this array isn’t just a list of values. This array is storing _two_ things: characters and counts. The characters are _implied_ by the indices.
 
-**So we can think of an array as a** _**table**_ **with** _**two columns**_**…except you don’t really get to pick the values in one column \(the indices\) — they’re always 0, 1, 2, 3, etc.**
+**So we can think of an array as a** _**table**_ **with** _**two columns**_**…except you don’t really get to pick the values in one column \(the indices\) — they’re always 0, 1, 2, 3, etc.**
 
 But what if we wanted to put _any_ value in that column and still get quick lookups?
 
@@ -330,17 +330,17 @@ This data structure is called a **hash table** or **hash map**. In our hash tabl
 
 !\[A blank array except for a 20, labeled as the value, stored at index
 
-1.  To the left the array is the word “lies,” labeled as the key, with an
+1. To the left the array is the word “lies,” labeled as the key, with an
 
-arrow pointing to the right at diamond with a question mark in the middle, labeled as the hashing function. The diamond points to the 9th index of the array.\]\([https://www.interviewcake.com/images/svgs/cs_for_hackers\_\_hash_tables_lies_key_labeled.svg?bust=209](https://www.interviewcake.com/images/svgs/cs_for_hackers__hash_tables_lies_key_labeled.svg?bust=209)\)
+arrow pointing to the right at diamond with a question mark in the middle, labeled as the hashing function. The diamond points to the 9th index of the array.\]\([https://www.interviewcake.com/images/svgs/cs_for\_hackers\_\_hash\_tables\_lies\_key\_labeled.svg?bust=209](https://www.interviewcake.com/images/svgs/cs_for_hackers__hash_tables_lies_key_labeled.svg?bust=209)\)
 
-The hashing functions used in modern systems get pretty complicated — the one we used here is a simplified example.
+The hashing functions used in modern systems get pretty complicated — the one we used here is a simplified example.
 
-Note that our quick lookups are only in one direction — we can quickly get the value for a given key, but the only way to get the key for a given value is to walk through all the values and keys.
+Note that our quick lookups are only in one direction — we can quickly get the value for a given key, but the only way to get the key for a given value is to walk through all the values and keys.
 
-Same thing with arrays — we can quickly look up the value at a given index, but the only way to figure out the index for a given value is to walk through the whole array.
+Same thing with arrays — we can quickly look up the value at a given index, but the only way to figure out the index for a given value is to walk through the whole array.
 
-One problem — what if two keys hash to the same index in our array? Look at “lies” and “foes”: ![](https://cdn-images-1.medium.com/max/800/0*FEGUBbShygDT_Xmp)
+One problem — what if two keys hash to the same index in our array? Look at “lies” and “foes”: ![](https://cdn-images-1.medium.com/max/800/0*FEGUBbShygDT_Xmp)
 
 They both sum up to 429! So of course they’ll have the same answer when we mod by 30:
 
@@ -350,13 +350,13 @@ So our hashing function gives us the same answer for “lies” and “foes.” 
 
 Here’s a common one: instead of storing the actual values in our array, let’s have each array slot hold a _pointer_ to a _linked list_ holding the counts for all the words that hash to that index: ![](https://cdn-images-1.medium.com/max/800/0*FJ_oFYwm3xi5gvS6)
 
-One problem — how do we know which count is for “lies” and which is for “foes”? To fix this, we’ll store the _word_ as well as the count in each linked list node: ![](https://cdn-images-1.medium.com/max/800/0*zUqqK4NJil6nCjlK)
+One problem — how do we know which count is for “lies” and which is for “foes”? To fix this, we’ll store the _word_ as well as the count in each linked list node: ![](https://cdn-images-1.medium.com/max/800/0*zUqqK4NJil6nCjlK)
 
 “But wait!” you may be thinking, “Now lookups in our hash table take time in the worst case, since we have to walk down a linked list.” That’s true! You could even say that in the worst case _every_ key creates a hash collision, so our whole hash table _degrades to a linked list_.
 
 In industry though, we usually wave our hands and say **collisions are rare enough that on** _**average**_ **lookups in a hash table are time**. And there are fancy algorithms that keep the number of collisions low and keep the lengths of our linked lists nice and short.
 
-But that’s sort of the tradeoff with hash tables. You get fast lookups by key…except _some_ lookups could be slow. And of course, you only get those fast lookups in one direction — looking up the _key_ for a given _value_ still takes time
+But that’s sort of the tradeoff with hash tables. You get fast lookups by key…except _some_ lookups could be slow. And of course, you only get those fast lookups in one direction — looking up the _key_ for a given _value_ still takes time
 
 ## Breadth-First Search \(BFS\) and Breadth-First Traversal <a id="01a9"></a>
 
@@ -378,13 +378,13 @@ Breadth-first search is often compared with **depth-first search**.
 
 Advantages:
 
-- A BFS will find the **shortest path** between the starting point and
+* A BFS will find the **shortest path** between the starting point and
 
 any other reachable node. A depth-first search will not necessarily find the shortest path.
 
 Disadvantages
 
-- A BFS on a binary tree _generally_ requires more memory than a DFS.
+* A BFS on a binary tree _generally_ requires more memory than a DFS.
 
 ![](https://cdn-images-1.medium.com/max/800/0*1ptw-98Yjj1scRX6)
 
@@ -417,11 +417,11 @@ Let’s just add up the number of nodes on each level!
 
 If we zero-index the levels, the number of nodes on the xth level is exactly 2^x.
 
-1.  Level 0: 2⁰ nodes,
-2.  2. Level 1: 2¹ nodes,
-3.  3. Level 2: 2² nodes,
-4.  4. Level 3: 2³ nodes,
-5.  5. _etc_
+1. Level 0: 2⁰ nodes,
+2. 1. Level 1: 2¹ nodes,
+3. 1. Level 2: 2² nodes,
+4. 1. Level 3: 2³ nodes,
+5. 1. _etc_
 
 So our total number of nodes is:
 
@@ -431,9 +431,9 @@ Why only up to 2^{h-1}?
 
 Notice that we **started counting our levels at 0.**
 
-- So if we have h levels in total,
-- the last level is actually the “h-1”-th level.
-- That means the number of nodes on the last level is 2^{h-1}.
+* So if we have h levels in total,
+* the last level is actually the “h-1”-th level.
+* That means the number of nodes on the last level is 2^{h-1}.
 
 But we can simplify.
 
@@ -441,13 +441,13 @@ But we can simplify.
 
 **so we can just take the number of nodes on the last level, multiply it by 2, and subtract 1 to get the number of nodes overall**.
 
-- We know the number of nodes on the last level is 2^{h-1},
-- So:
+* We know the number of nodes on the last level is 2^{h-1},
+* So:
 
 **n = 2^{h-1} \* 2–1  
-n = 2^{h-1} \* 2¹ — 1  
+n = 2^{h-1} \* 2¹ — 1  
 n = 2^{h-1+1}- 1  
-n = 2^{h} — 1**
+n = 2^{h} — 1**
 
 So that’s how we can go from h to n. What about the other direction?
 
@@ -491,14 +491,15 @@ Notice we have two “1”s here, but they don’t _mean_ the same thing. The le
 
 Notice how the _places_ in base 10 \(ones place, tens place, hundreds place, etc.\) are _sequential powers of 10_:
 
-- 10⁰=1 \* 10¹=10 \* 10²=100 \* 10³=1000 \* etc.
+* 10⁰=1 \* 10¹=10 \* 10²=100 \* 10³=1000 \* etc.
 
 **The places in** _**binary**_ **\(base 2\) are sequential powers of** _**2**_**:**
 
-- 2⁰=1 \* 2¹=2 \* 2²=4 \* 2³=8 \* etc.
+* 2⁰=1 \* 2¹=2 \* 2²=4 \* 2³=8 \* etc.
 
 So let’s take that same “101” but this time let’s read it as a _binary_ number: ![](https://cdn-images-1.medium.com/max/800/0*pKEnJ9JCGcMapiG4)
 
 Reading this from right to left: we have a 1 in the ones place, a 0 in the twos place, and a 1 in the fours place. So our total is 4 + 0 + 1 which is 5. ![](https://cdn-images-1.medium.com/max/800/0*bCIyxai2cNhILyxr)
 
 ## Discover More: <a id="fc93"></a>
+

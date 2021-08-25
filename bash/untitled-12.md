@@ -551,7 +551,7 @@ Probably, this is a more difficult way to do ls -l \*.txt, but this is for educa
 ls -l | grep "\.txt$"
 ```
 
-> Here, the output of the program ls -l is sent to the grep program, which, in turn, will print lines which match the regex “\.txt$”.
+> Here, the output of the program ls -l is sent to the grep program, which, in turn, will print lines which match the regex “.txt$”.
 
 ## Variables <a id="5ce2"></a>
 
@@ -578,7 +578,7 @@ Line 2 creates a variable called STR and assigns the string “Hello World!” t
 ```
 
 > This script introduces another thing. First of all, you should be familiarized with the variable creation and assignation on line 2. Notice the expression ‘$\(date +%Y%m%d\)’. If you run the script you’ll notice that it runs the command inside the parenthesis, capturing its output.
-
+>
 > Notice that in this script, the output filename will be different every day, due to the format switch to the date command\(+%Y%m%d\). You can change this by specifying a different format.
 
 **examples**:
@@ -642,11 +642,11 @@ _The code to be executed if the expression within braces is true can be found af
 
 ## Loops <a id="a6ef"></a>
 
-- _**for**_
-- _**while**_
+* _**for**_
+* _**while**_
 
 > \(there’s another loop called until but I don’t use it so you can look it up if you’d like\)
-
+>
 > _**The until loop is almost equal to the while loop, except that the code is executed while the**_ [_**control expression**_](https://www.cs.fsu.edu/~myers/c++/notes/control1.html) _**evaluates to false.**_
 
 The **for** loop is a little bit different from other programming languages. Basically, it let’s you iterate over a series of ‘words’ within a string.
@@ -663,11 +663,11 @@ The **while** executes a piece of code if the control expression is true, and on
 ```
 
 > On the second line, we declare i to be the variable that will take the different values contained in $\( ls \).
-
+>
 > The third line could be longer if needed, or there could be more lines before the done \(4\).
-
+>
 > ‘done’ \(4\) indicates that the code that used the value of $i has finished and $i can take a new value.
-
+>
 > A more useful way to use the for loop would be to use it to match only certain files on the previous example
 
 ## While <a id="c2ac"></a>
@@ -685,7 +685,7 @@ The **while** executes a piece of code if the control expression is true, and on
 
 As in almost any programming language, you can use functions to group pieces of code in a more logical way or practice the divine art of recursion.
 
-Declaring a function is just a matter of writing function my_func { my_code }.
+Declaring a function is just a matter of writing function my\_func { my\_code }.
 
 Calling a function is just like calling another program, you just write its name.
 
@@ -705,9 +705,9 @@ Calling a function is just like calling another program, you just write its name
 ```
 
 > Lines 2–4 contain the ‘quit’ function. Lines 5–7 contain the ‘hello’ function If you are not absolutely sure about what this script does, please try it!.
-
+>
 > Notice that a functions don’t need to be declared in any specific order.
-
+>
 > When running the script you’ll notice that first: the function ‘hello’ is called, second the ‘quit’ function, and the program never reaches line 10.
 
 ## Functions with parameters <a id="1ec4"></a>
@@ -1430,8 +1430,9 @@ fi
 
 {: .-one-column}
 
-- [Bash-hackers wiki](http://wiki.bash-hackers.org/) _\(bash-hackers.org\)_
-- [Shell vars](http://wiki.bash-hackers.org/syntax/shellvars) _\(bash-hackers.org\)_
-- [Learn bash in y minutes](https://learnxinyminutes.com/docs/bash/) _\(learnxinyminutes.com\)_
-- [Bash Guide](http://mywiki.wooledge.org/BashGuide) _\(mywiki.wooledge.org\)_
-- [ShellCheck](https://www.shellcheck.net/) _\(shellcheck.net\)_
+* [Bash-hackers wiki](http://wiki.bash-hackers.org/) _\(bash-hackers.org\)_
+* [Shell vars](http://wiki.bash-hackers.org/syntax/shellvars) _\(bash-hackers.org\)_
+* [Learn bash in y minutes](https://learnxinyminutes.com/docs/bash/) _\(learnxinyminutes.com\)_
+* [Bash Guide](http://mywiki.wooledge.org/BashGuide) _\(mywiki.wooledge.org\)_
+* [ShellCheck](https://www.shellcheck.net/) _\(shellcheck.net\)_
+

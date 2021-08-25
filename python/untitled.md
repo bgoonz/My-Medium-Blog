@@ -10,8 +10,8 @@ A guide to commands in Python from what you know in JavaScript
 
 ## Basics <a id="b0f3"></a>
 
-- **PEP8** : Python Enhancement Proposals, style-guide for Python.
-- `print` is the equivalent of `console.log`.
+* **PEP8** : Python Enhancement Proposals, style-guide for Python.
+* `print` is the equivalent of `console.log`.
 
 > ‘print\(\) == console.log\(\)’
 
@@ -31,10 +31,9 @@ def foo():
 
 ## Numbers <a id="e708"></a>
 
-- Python has three types of numbers:
-
-1.  **Integer**
-2.  **Positive and Negative Counting Numbers.**
+* Python has three types of numbers:
+* **Integer**
+* **Positive and Negative Counting Numbers.**
 
 No Decimal Point
 
@@ -69,7 +68,7 @@ print(27e-5) # => 0.00027
 
 > **The** **`i`** **is switched to a** **`j`** **in programming.**
 
-T*his is because the letter i is common place as the de facto index for any and all enumerable entities so it just makes sense not to compete for name-**space*** _when there’s another 25 letters that don’t get used for every loop under the sun. My most medium apologies to Leonhard Euler._
+T_his is because the letter i is common place as the de facto index for any and all enumerable entities so it just makes sense not to compete for name-**space**_ _when there’s another 25 letters that don’t get used for every loop under the sun. My most medium apologies to Leonhard Euler._
 
 ```text
 print(7j) # => 7j
@@ -79,7 +78,7 @@ print(complex(17)) # => 17+0j
 print(complex()) # => 0j
 ```
 
-- **Type Casting** : The process of converting one number to another.
+* **Type Casting** : The process of converting one number to another.
 
 ```text
 # Using Float
@@ -100,19 +99,19 @@ print(str(17.0) + ' and ' + str(17))        # => 17.0 and 17
 
 **The arithmetic operators are the same between JS and Python, with two additions:**
 
-- _“\*\*” : Double asterisk for exponent._
-- _“//” : Integer Division._
-- **There are no spaces between math operations in Python.**
-- **Integer Division gives the other part of the number from Module; it is a way to do round down numbers replacing** **`Math.floor()`** **in JS.**
-- **There are no** **`++`** **and** **`--`** **in Python, the only shorthand operators are:**
+* _“\*\*” : Double asterisk for exponent._
+* _“//” : Integer Division._
+* **There are no spaces between math operations in Python.**
+* **Integer Division gives the other part of the number from Module; it is a way to do round down numbers replacing** **`Math.floor()`** **in JS.**
+* **There are no** **`++`** **and** **`--`** **in Python, the only shorthand operators are:**
 
 ![](https://cdn-images-1.medium.com/max/600/0*Ez_1PZ93N4FfvkRr.png)
 
 ## Strings <a id="f25c"></a>
 
-- Python uses both single and double quotes.
-- You can escape strings like so `'Jodi asked, "What\'s up, Sam?"'`
-- Multiline strings use triple quotes.
+* Python uses both single and double quotes.
+* You can escape strings like so `'Jodi asked, "What\'s up, Sam?"'`
+* Multiline strings use triple quotes.
 
 ```text
 print('''My instructions are very long so to make them
@@ -140,7 +139,7 @@ print(“Spaghetti”[-1]) # => i
 print(“Spaghetti”[-4]) # => e
 ```
 
-- Python let’s you use ranges
+* Python let’s you use ranges
 
 You can think of this as roughly equivalent to the slice method called on a JavaScript object or string… _\(mind you that in JS … strings are wrapped in an object \(under the hood\)… upon which the string methods are actually called. As a immutable privative type_ _**by textbook definition**, a string literal could not hope to invoke most of it’s methods without violating the state it was bound to on initialization if it were not for this bit of syntactic sugar.\)_
 
@@ -150,7 +149,7 @@ print(“Spaghetti”[4:-1]) # => hett
 print(“Spaghetti”[4:4]) # => (empty string)
 ```
 
-- The end range is exclusive just like `slice` in JS.
+* The end range is exclusive just like `slice` in JS.
 
 ```text
 # Shortcut to get from the beginning of a string to a certain index.
@@ -164,14 +163,14 @@ print("Spaghetti"[1:])  # => paghetti
 print("Spaghetti"[-4:])    # => etti
 ```
 
-- The `index` string function is the equiv. of `indexOf()` in JS
+* The `index` string function is the equiv. of `indexOf()` in JS
 
 ```text
 print("Spaghetti".index("h"))    # => 4
 print("Spaghetti".index("t"))    # => 6
 ```
 
-- The `count` function finds out how many times a substring appears in a string… pretty nifty for a hard coded feature of the language.
+* The `count` function finds out how many times a substring appears in a string… pretty nifty for a hard coded feature of the language.
 
 ```text
 print("Spaghetti".count("h"))    # => 1
@@ -185,9 +184,9 @@ postpone, and one which we intend to win, and the others, too.
 '''.count('the '))                # => 4
 ```
 
-- **You can use** **`+`** **to concatenate strings, just like in JS.**
-- **You can also use “\*” to repeat strings or multiply strings.**
-- **Use the** **`format()`** **function to use placeholders in a string to input values later on.**
+* **You can use** **`+`** **to concatenate strings, just like in JS.**
+* **You can also use “\*” to repeat strings or multiply strings.**
+* **Use the** **`format()`** **function to use placeholders in a string to input values later on.**
 
 ```text
 first_name = "Billy"
@@ -195,23 +194,23 @@ last_name = "Bob"
 print('Your name is {0} {1}'.format(first_name, last_name))  # => Your name is Billy Bob
 ```
 
-- _Shorthand way to use format function is:_ `print(f'Your name is {first_name} {last_name}')`
+* _Shorthand way to use format function is:_ `print(f'Your name is {first_name} {last_name}')`
 
 ### Some useful string methods. <a id="8ff4"></a>
 
-- **Note that in JS** **`join`** **is used on an Array, in Python it is used on String.**
+* **Note that in JS** **`join`** **is used on an Array, in Python it is used on String.**
 
 ![](https://cdn-images-1.medium.com/max/800/0*eE3E5H0AoqkhqK1z.png)
 
-- There are also many handy testing methods.
+* There are also many handy testing methods.
 
 ![](https://cdn-images-1.medium.com/max/800/0*Q0CMqFd4PozLDFPB.png)
 
 ## Variables and Expressions <a id="920e"></a>
 
-- **Duck-Typing** : Programming Style which avoids checking an object’s type to figure out what it can do.
-- Duck Typing is the fundamental approach of Python.
-- Assignment of a value automatically declares a variable.
+* **Duck-Typing** : Programming Style which avoids checking an object’s type to figure out what it can do.
+* Duck Typing is the fundamental approach of Python.
+* Assignment of a value automatically declares a variable.
 
 ```text
 a = 7
@@ -220,7 +219,7 @@ print(a)         # => 7
 print(b)         # => Marbles
 ```
 
-- _**You can chain variable assignments to give multiple var names the same value.**_
+* _**You can chain variable assignments to give multiple var names the same value.**_
 
 ### Use with caution as this is highly unreadable <a id="ab40"></a>
 
@@ -240,15 +239,15 @@ a = 'seventeen'
 print(a)         # => seventeen
 ```
 
-- _`NaN`_ _does not exist in Python, but you can 'create' it like so: **`print(float("nan"))`**_
-- _Python replaces_ _`null`_ _with_ _`none`._
-- _**`none`**_ _**is an object**_ _and can be directly assigned to a variable._
+* _`NaN`_ _does not exist in Python, but you can 'create' it like so: **`print(float("nan"))`**_
+* _Python replaces_ _`null`_ _with_ _`none`._
+* _**`none`**_ _**is an object**_ _and can be directly assigned to a variable._
 
 > Using none is a convenient way to check to see why an action may not be operating correctly in your program.
 
 ## Boolean Data Type <a id="6f4e"></a>
 
-- One of the biggest benefits of Python is that it reads more like English than JS does.
+* One of the biggest benefits of Python is that it reads more like English than JS does.
 
 ![](https://cdn-images-1.medium.com/max/800/0*HQpndNhm1Z_xSoHb.png)
 
@@ -273,24 +272,23 @@ print(not False and True)   # => True
 print(not True or False)    # => False
 ```
 
-- By default, Python considers an object to be true UNLESS it is one of the following:
-- Constant `None` or `False`
-- Zero of any numeric type.
-- Empty Sequence or Collection.
-- `True` and `False` must be capitalized
+* By default, Python considers an object to be true UNLESS it is one of the following:
+* Constant `None` or `False`
+* Zero of any numeric type.
+* Empty Sequence or Collection.
+* `True` and `False` must be capitalized
 
 ## Comparison Operators <a id="586f"></a>
 
-- Python uses all the same equality operators as JS.
-- In Python, equality operators are processed from left to right.
-- Logical operators are processed in this order:
-
-1.  **NOT**
-2.  **AND**
-3.  **OR**
+* Python uses all the same equality operators as JS.
+* In Python, equality operators are processed from left to right.
+* Logical operators are processed in this order:
+* **NOT**
+* **AND**
+* **OR**
 
 > Just like in JS, you can use `parentheses` to change the inherent order of operations.
-
+>
 > **Short Circuit** : Stopping a program when a `true` or `false` has been reached.
 
 ![](https://cdn-images-1.medium.com/max/800/0*qHzGRLTOMTf30miT.png)
@@ -313,7 +311,7 @@ print (2 == 2.0)    # => True
 print (2 is 2.0)    # => False
 ```
 
-- In the Python community it is better to use `is` and `is not` over `==` or `!=`
+* In the Python community it is better to use `is` and `is not` over `==` or `!=`
 
 ## If Statements <a id="a959"></a>
 
@@ -351,7 +349,7 @@ while spam < 5:
   spam = spam + 1
 ```
 
-- `Break` statement also exists in Python.
+* `Break` statement also exists in Python.
 
 ```text
 spam = 0
@@ -362,7 +360,7 @@ while True:
     break
 ```
 
-- As are `continue` statements
+* As are `continue` statements
 
 ```text
 spam = 0
@@ -376,7 +374,7 @@ while True:
 
 ## Try/Except Statements <a id="fb57"></a>
 
-- Python equivalent to `try/catch`
+* Python equivalent to `try/catch`
 
 ```text
 a = 321
@@ -406,7 +404,7 @@ except:
     print(len(a))
 ```
 
-- You can name an error to give the output more specificity.
+* You can name an error to give the output more specificity.
 
 ```text
 a = 100
@@ -418,7 +416,7 @@ except ZeroDivisionError:
 print(c)
 ```
 
-- You can also use the `pass` commmand to by pass a certain error.
+* You can also use the `pass` commmand to by pass a certain error.
 
 ```text
 a = 100
@@ -429,7 +427,7 @@ except ZeroDivisionError:
     pass
 ```
 
-- The `pass` method won't allow you to bypass every single error so you can chain an exception series like so:
+* The `pass` method won't allow you to bypass every single error so you can chain an exception series like so:
 
 ```text
 a = 100
@@ -442,7 +440,7 @@ except (TypeError, NameError):
     print("ERROR!")
 ```
 
-- You can use an `else` statement to end a chain of `except` statements.
+* You can use an `else` statement to end a chain of `except` statements.
 
 ```text
 # tuple of file names
@@ -465,7 +463,7 @@ for filename in files:
         f.close()
 ```
 
-- `finally` is used at the end to clean up all actions under any circumstance.
+* `finally` is used at the end to clean up all actions under any circumstance.
 
 ```text
 def divide(x, y):
@@ -479,7 +477,7 @@ def divide(x, y):
         print("Finally...")
 ```
 
-- Using duck typing to check to see if some value is able to use a certain method.
+* Using duck typing to check to see if some value is able to use a certain method.
 
 ```text
 # Try a number - nothing will print out
@@ -497,7 +495,7 @@ if hasattr(b, '__len__'):
 
 ## Pass <a id="e485"></a>
 
-- Pass Keyword is required to write the JS equivalent of :
+* Pass Keyword is required to write the JS equivalent of :
 
 ```text
 if (true) {
@@ -520,13 +518,13 @@ while True:
 
 ## Functions <a id="2623"></a>
 
-- **Function definition includes:**
-- **The** **`def`** **keyword**
-- **The name of the function**
-- **A list of parameters enclosed in parentheses.**
-- **A colon at the end of the line.**
-- **One tab indentation for the code to run.**
-- **You can use default parameters just like in JS**
+* **Function definition includes:**
+* **The** **`def`** **keyword**
+* **The name of the function**
+* **A list of parameters enclosed in parentheses.**
+* **A colon at the end of the line.**
+* **One tab indentation for the code to run.**
+* **You can use default parameters just like in JS**
 
 ```text
 def greeting(name, saying="Hello"):
@@ -551,7 +549,7 @@ def increment(delta=1, value):
     return delta + value
 ```
 
-- _You can specify arguments by name without destructuring in Python._
+* _You can specify arguments by name without destructuring in Python._
 
 ```text
 def greeting(name, saying="Hello"):
@@ -564,7 +562,7 @@ def greeting(name, saying="Hello"):
 greeting("Monica", saying="Hi")
 ```
 
-- The `lambda` keyword is used to create anonymous functions and are supposed to be `one-liners`.
+* The `lambda` keyword is used to create anonymous functions and are supposed to be `one-liners`.
 
 `toUpper = lambda s: s.upper()`
 
@@ -807,7 +805,6 @@ print(a | b) # => {1, 2, 3, 4, 6}
 ### Intersection : The & operator ca be used to produce a new set of only the elements that appear in all sets. <a id="e5aa"></a>
 
 ```text
-
 a = {1, 2, 3}
 b = {2, 4, 6}
 print(a & b) # => {2}
@@ -878,9 +875,9 @@ print(a, ‘, ‘, b)
 ```
 
 > Prints 1, 2
-
+>
 > Prints 3, 4
-
+>
 > Prints 5, 6
 
 **You can use values\(\) and keys\(\) to loop over dictionaries.**
@@ -1024,3 +1021,4 @@ Or Checkout my personal Resource Site:
 ## Or Checkout my personal Resource Site: <a id="a4a1"></a>
 
 ## Discover More: <a id="5b19"></a>
+

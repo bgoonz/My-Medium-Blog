@@ -8,11 +8,11 @@
 
 > _Short JavaScript code snippets for all your development needs_
 
-- Visit [their website](https://30secondsofcode.org/) to view multiple snippet collections.
-- Use the [Search page](https://30secondsofcode.org/search) to find snippets that suit your needs. You can search by name, tag, language or using a snippet’s description. Just start typing a term and see what comes up.
-- Browse the [JavaScript Snippet List](https://30secondsofcode.org/js/p/1) to see all the snippets in this project or click individual tags at the top of the same page to narrow down your search to a specific tag.
-- Click on each snippet card to view the whole snippet, including code, explanation and examples.
-- You can use the button on the right side of a snippet card to copy the code to clipboard.
+* Visit [their website](https://30secondsofcode.org/) to view multiple snippet collections.
+* Use the [Search page](https://30secondsofcode.org/search) to find snippets that suit your needs. You can search by name, tag, language or using a snippet’s description. Just start typing a term and see what comes up.
+* Browse the [JavaScript Snippet List](https://30secondsofcode.org/js/p/1) to see all the snippets in this project or click individual tags at the top of the same page to narrow down your search to a specific tag.
+* Click on each snippet card to view the whole snippet, including code, explanation and examples.
+* You can use the button on the right side of a snippet card to copy the code to clipboard.
 
 [30-seconds/30-seconds-of-codeShort JavaScript code snippets for all your development needs Visit our website to view our snippet collection. Use the…github.com](https://github.com/30-seconds/30-seconds-of-code)
 
@@ -68,30 +68,30 @@ The open-source curriculum for learning Data Science. Foundational in both theor
 
 ## Contents <a id="89b8"></a>
 
-- [The Open-Source Data Science Masters](https://github.com/datasciencemasters/go#the-open-source-data-science-masters)
-- [Contents](https://github.com/datasciencemasters/go#contents)
-- [The Internet is Your Oyster](https://github.com/datasciencemasters/go#the-internet-is-your-oyster)
-- [The Motivation](https://github.com/datasciencemasters/go#the-motivation)
-- [An Academic Shortfall](https://github.com/datasciencemasters/go#an-academic-shortfall)
-- [Ready?](https://github.com/datasciencemasters/go#ready)
-- [The Open Source Data Science Curriculum](https://github.com/datasciencemasters/go#the-open-source-data-science-curriculum)
-- [A Note About Direction](https://github.com/datasciencemasters/go#a-note-about-direction)
-- [Math](https://github.com/datasciencemasters/go#math)
-- [Computing](https://github.com/datasciencemasters/go#computing)
-- [Data Analysis](https://github.com/datasciencemasters/go#data-analysis)
-- [Data Communication and Design](https://github.com/datasciencemasters/go#data-communication-and-design)
-- [Python \(Learning\)](https://github.com/datasciencemasters/go#python-learning)
-- [Python \(Libraries\)](https://github.com/datasciencemasters/go#python-libraries)
-- [Datasets are now here](https://github.com/datasciencemasters/go#datasets-are-now-here)
-- [R resources are now here](https://github.com/datasciencemasters/go#r-resources-are-now-here)
-- [Data Science as a Profession](https://github.com/datasciencemasters/go#data-science-as-a-profession)
-- [Capstone Project](https://github.com/datasciencemasters/go#capstone-project)
-- [Resources](https://github.com/datasciencemasters/go#resources)
-- [Read](https://github.com/datasciencemasters/go#read)
-- [Watch & Listen](https://github.com/datasciencemasters/go#watch--listen)
-- [Learn](https://github.com/datasciencemasters/go#learn)
-- [Notation](https://github.com/datasciencemasters/go#notation)
-- [Contribute](https://github.com/datasciencemasters/go#contribute)
+* [The Open-Source Data Science Masters](https://github.com/datasciencemasters/go#the-open-source-data-science-masters)
+* [Contents](https://github.com/datasciencemasters/go#contents)
+* [The Internet is Your Oyster](https://github.com/datasciencemasters/go#the-internet-is-your-oyster)
+* [The Motivation](https://github.com/datasciencemasters/go#the-motivation)
+* [An Academic Shortfall](https://github.com/datasciencemasters/go#an-academic-shortfall)
+* [Ready?](https://github.com/datasciencemasters/go#ready)
+* [The Open Source Data Science Curriculum](https://github.com/datasciencemasters/go#the-open-source-data-science-curriculum)
+* [A Note About Direction](https://github.com/datasciencemasters/go#a-note-about-direction)
+* [Math](https://github.com/datasciencemasters/go#math)
+* [Computing](https://github.com/datasciencemasters/go#computing)
+* [Data Analysis](https://github.com/datasciencemasters/go#data-analysis)
+* [Data Communication and Design](https://github.com/datasciencemasters/go#data-communication-and-design)
+* [Python \(Learning\)](https://github.com/datasciencemasters/go#python-learning)
+* [Python \(Libraries\)](https://github.com/datasciencemasters/go#python-libraries)
+* [Datasets are now here](https://github.com/datasciencemasters/go#datasets-are-now-here)
+* [R resources are now here](https://github.com/datasciencemasters/go#r-resources-are-now-here)
+* [Data Science as a Profession](https://github.com/datasciencemasters/go#data-science-as-a-profession)
+* [Capstone Project](https://github.com/datasciencemasters/go#capstone-project)
+* [Resources](https://github.com/datasciencemasters/go#resources)
+* [Read](https://github.com/datasciencemasters/go#read)
+* [Watch & Listen](https://github.com/datasciencemasters/go#watch--listen)
+* [Learn](https://github.com/datasciencemasters/go#learn)
+* [Notation](https://github.com/datasciencemasters/go#notation)
+* [Contribute](https://github.com/datasciencemasters/go#contribute)
 
 [datasciencemasters/goThe open-source curriculum for learning Data Science. Foundational in both theory and technologies, the OSDSM breaks…github.com](https://github.com/datasciencemasters/go)
 
@@ -109,7 +109,7 @@ A list of programming tutorials in which learners build an application from scra
 
 ## 100+ Python Projects Challenge <a id="4077"></a>
 
-[zhiwehu/100_plus_Python_Projects_Challenge100+ Python Projects Challenge. Contribute to zhiwehu/100_plus_Python_Projects_Challenge development by creating an…github.com](https://github.com/zhiwehu/100_plus_Python_Projects_Challenge)[zhiwehu/Python-programming-exercises100+ Python challenge programming exercises. https://github.com/zhiwehu/100_plus_Python_Projects_Challenge Hey guys I…github.com](https://github.com/zhiwehu/Python-programming-exercises)
+[zhiwehu/100\_plus\_Python\_Projects\_Challenge100+ Python Projects Challenge. Contribute to zhiwehu/100\_plus\_Python\_Projects\_Challenge development by creating an…github.com](https://github.com/zhiwehu/100_plus_Python_Projects_Challenge)[zhiwehu/Python-programming-exercises100+ Python challenge programming exercises. https://github.com/zhiwehu/100\_plus\_Python\_Projects\_Challenge Hey guys I…github.com](https://github.com/zhiwehu/Python-programming-exercises)
 
 ## MunGell/awesome-for-beginners <a id="0df7"></a>
 
@@ -121,7 +121,7 @@ Inspired by [First Timers Only](https://kentcdodds.com/blog/first-timers-only) b
 
 If you are a maintainer of open-source projects, add the label `first-timers-only` \(or similar\) to your project and list it here so that people can find it.
 
-If you are looking to contribute, then explore this list, look at [`first-timers-only`](https://github.com/search?utf8=%E2%9C%93&q=label%3Afirst-timers-only+is%3Aissue+is%3Aopen&type=)[ labelled open issues on Github](https://github.com/search?utf8=%E2%9C%93&q=label%3Afirst-timers-only+is%3Aissue+is%3Aopen&type=), and follow [@first_tmrs_only](https://twitter.com/first_tmrs_only) on Twitter to be notified when a new `first-timers-only` issue is created.
+If you are looking to contribute, then explore this list, look at [`first-timers-only`](https://github.com/search?utf8=%E2%9C%93&q=label%3Afirst-timers-only+is%3Aissue+is%3Aopen&type=)[ labelled open issues on Github](https://github.com/search?utf8=%E2%9C%93&q=label%3Afirst-timers-only+is%3Aissue+is%3Aopen&type=), and follow [@first\_tmrs\_only](https://twitter.com/first_tmrs_only) on Twitter to be notified when a new `first-timers-only` issue is created.
 
 If you are not a programmer but would like to contribute, check out the [Awesome for non-programmers](https://github.com/szabgab/awesome-for-non-programmers) list.[MunGell/awesome-for-beginnersA list of awesome beginners-friendly projects. Contribute to MunGell/awesome-for-beginners development by creating an…github.com](https://github.com/MunGell/awesome-for-beginners)
 
@@ -295,48 +295,48 @@ Practice common system design interview questions and compare your results with 
 
 ## Table of contents <a id="d849"></a>
 
-- [3D Renderer](https://github.com/danistefanovic/build-your-own-x#build-your-own-3d-renderer)
-- [Augmented Reality](https://github.com/danistefanovic/build-your-own-x#build-your-own-augmented-reality)
-- [BitTorrent Client](https://github.com/danistefanovic/build-your-own-x#build-your-own-bittorrent-client)
-- [Blockchain / Cryptocurrency](https://github.com/danistefanovic/build-your-own-x#build-your-own-blockchain--cryptocurrency)
-- [Bot](https://github.com/danistefanovic/build-your-own-x#build-your-own-bot)
-- [Command-Line Tool](https://github.com/danistefanovic/build-your-own-x#build-your-own-command-line-tool)
-- [Database](https://github.com/danistefanovic/build-your-own-x#build-your-own-database)
-- [Docker](https://github.com/danistefanovic/build-your-own-x#build-your-own-docker)
-- [Emulator / Virtual Machine](https://github.com/danistefanovic/build-your-own-x#build-your-own-emulator--virtual-machine)
-- [Front-end Framework / Library](https://github.com/danistefanovic/build-your-own-x#build-your-own-front-end-framework--library)
-- [Game](https://github.com/danistefanovic/build-your-own-x#build-your-own-game)
-- [Git](https://github.com/danistefanovic/build-your-own-x#build-your-own-git)
-- [Network Stack](https://github.com/danistefanovic/build-your-own-x#build-your-own-network-stack)
-- [Neural Network](https://github.com/danistefanovic/build-your-own-x#build-your-own-neural-network)
-- [Operating System](https://github.com/danistefanovic/build-your-own-x#build-your-own-operating-system)
-- [Physics Engine](https://github.com/danistefanovic/build-your-own-x#build-your-own-physics-engine)
-- [Programming Language](https://github.com/danistefanovic/build-your-own-x#build-your-own-programming-language)
-- [Regex Engine](https://github.com/danistefanovic/build-your-own-x#build-your-own-regex-engine)
-- [Search Engine](https://github.com/danistefanovic/build-your-own-x#build-your-own-search-engine)
-- [Shell](https://github.com/danistefanovic/build-your-own-x#build-your-own-shell)
-- [Template Engine](https://github.com/danistefanovic/build-your-own-x#build-your-own-template-engine)
-- [Text Editor](https://github.com/danistefanovic/build-your-own-x#build-your-own-text-editor)
-- [Visual Recognition System](https://github.com/danistefanovic/build-your-own-x#build-your-own-visual-recognition-system)
-- [Voxel Engine](https://github.com/danistefanovic/build-your-own-x#build-your-own-voxel-engine)
-- [Web Search Engine](https://github.com/danistefanovic/build-your-own-x#build-your-own-web-search-engine)
-- [Web Server](https://github.com/danistefanovic/build-your-own-x#build-your-own-web-server)
-- [Uncategorized](https://github.com/danistefanovic/build-your-own-x#uncategorized)
+* [3D Renderer](https://github.com/danistefanovic/build-your-own-x#build-your-own-3d-renderer)
+* [Augmented Reality](https://github.com/danistefanovic/build-your-own-x#build-your-own-augmented-reality)
+* [BitTorrent Client](https://github.com/danistefanovic/build-your-own-x#build-your-own-bittorrent-client)
+* [Blockchain / Cryptocurrency](https://github.com/danistefanovic/build-your-own-x#build-your-own-blockchain--cryptocurrency)
+* [Bot](https://github.com/danistefanovic/build-your-own-x#build-your-own-bot)
+* [Command-Line Tool](https://github.com/danistefanovic/build-your-own-x#build-your-own-command-line-tool)
+* [Database](https://github.com/danistefanovic/build-your-own-x#build-your-own-database)
+* [Docker](https://github.com/danistefanovic/build-your-own-x#build-your-own-docker)
+* [Emulator / Virtual Machine](https://github.com/danistefanovic/build-your-own-x#build-your-own-emulator--virtual-machine)
+* [Front-end Framework / Library](https://github.com/danistefanovic/build-your-own-x#build-your-own-front-end-framework--library)
+* [Game](https://github.com/danistefanovic/build-your-own-x#build-your-own-game)
+* [Git](https://github.com/danistefanovic/build-your-own-x#build-your-own-git)
+* [Network Stack](https://github.com/danistefanovic/build-your-own-x#build-your-own-network-stack)
+* [Neural Network](https://github.com/danistefanovic/build-your-own-x#build-your-own-neural-network)
+* [Operating System](https://github.com/danistefanovic/build-your-own-x#build-your-own-operating-system)
+* [Physics Engine](https://github.com/danistefanovic/build-your-own-x#build-your-own-physics-engine)
+* [Programming Language](https://github.com/danistefanovic/build-your-own-x#build-your-own-programming-language)
+* [Regex Engine](https://github.com/danistefanovic/build-your-own-x#build-your-own-regex-engine)
+* [Search Engine](https://github.com/danistefanovic/build-your-own-x#build-your-own-search-engine)
+* [Shell](https://github.com/danistefanovic/build-your-own-x#build-your-own-shell)
+* [Template Engine](https://github.com/danistefanovic/build-your-own-x#build-your-own-template-engine)
+* [Text Editor](https://github.com/danistefanovic/build-your-own-x#build-your-own-text-editor)
+* [Visual Recognition System](https://github.com/danistefanovic/build-your-own-x#build-your-own-visual-recognition-system)
+* [Voxel Engine](https://github.com/danistefanovic/build-your-own-x#build-your-own-voxel-engine)
+* [Web Search Engine](https://github.com/danistefanovic/build-your-own-x#build-your-own-web-search-engine)
+* [Web Server](https://github.com/danistefanovic/build-your-own-x#build-your-own-web-server)
+* [Uncategorized](https://github.com/danistefanovic/build-your-own-x#uncategorized)
 
 ## Tutorials <a id="df49"></a>
 
 ### Build your own `3D Renderer` <a id="42c1"></a>
 
-- [C++: _Introduction to Ray Tracing: a Simple Method for Creating 3D Images_](https://www.scratchapixel.com/lessons/3d-basic-rendering/introduction-to-ray-tracing/how-does-it-work)
-- [C++: _How OpenGL works: software rendering in 500 lines of code_](https://github.com/ssloy/tinyrenderer/wiki)
-- [C++: _Raycasting engine of Wolfenstein 3D_](http://lodev.org/cgtutor/raycasting.html)
-- [C++: _Physically Based Rendering:From Theory To Implementation_](http://www.pbr-book.org/)
-- [C++: _Rasterization: a Practical Implementation_](https://www.scratchapixel.com/lessons/3d-basic-rendering/rasterization-practical-implementation/overview-rasterization-algorithm)
-- [C\# / TypeScript / JavaScript: _Learning how to write a 3D soft engine from scratch in C\#, TypeScript or JavaScript_](https://www.davrous.com/2013/06/13/tutorial-series-learning-how-to-write-a-3d-soft-engine-from-scratch-in-c-typescript-or-javascript/)
-- [Java / JavaScript: _Build your own 3D renderer_](https://avik-das.github.io/build-your-own-raytracer/)
-- [Java: _How to create your own simple 3D render engine in pure Java_](http://blog.rogach.org/2015/08/how-to-create-your-own-simple-3d-render.html)
-- [JavaScript / Pseudocode: _Computer Graphics from scratch_](http://www.gabrielgambetta.com/computer-graphics-from-scratch/introduction.html)
-- [Python: _A 3D Modeller_](http://aosabook.org/en/500L/a-3d-modeller.html)
+* [C++: _Introduction to Ray Tracing: a Simple Method for Creating 3D Images_](https://www.scratchapixel.com/lessons/3d-basic-rendering/introduction-to-ray-tracing/how-does-it-work)
+* [C++: _How OpenGL works: software rendering in 500 lines of code_](https://github.com/ssloy/tinyrenderer/wiki)
+* [C++: _Raycasting engine of Wolfenstein 3D_](http://lodev.org/cgtutor/raycasting.html)
+* [C++: _Physically Based Rendering:From Theory To Implementation_](http://www.pbr-book.org/)
+* [C++: _Rasterization: a Practical Implementation_](https://www.scratchapixel.com/lessons/3d-basic-rendering/rasterization-practical-implementation/overview-rasterization-algorithm)
+* [C\# / TypeScript / JavaScript: _Learning how to write a 3D soft engine from scratch in C\#, TypeScript or JavaScript_](https://www.davrous.com/2013/06/13/tutorial-series-learning-how-to-write-a-3d-soft-engine-from-scratch-in-c-typescript-or-javascript/)
+* [Java / JavaScript: _Build your own 3D renderer_](https://avik-das.github.io/build-your-own-raytracer/)
+* [Java: _How to create your own simple 3D render engine in pure Java_](http://blog.rogach.org/2015/08/how-to-create-your-own-simple-3d-render.html)
+* [JavaScript / Pseudocode: _Computer Graphics from scratch_](http://www.gabrielgambetta.com/computer-graphics-from-scratch/introduction.html)
+* [Python: _A 3D Modeller_](http://aosabook.org/en/500L/a-3d-modeller.html)
 
 [danistefanovic/build-your-own-x🤓 Build your own \(insert technology here\). Contribute to danistefanovic/build-your-own-x development by creating an…github.com](https://github.com/danistefanovic/build-your-own-x)
 
@@ -372,63 +372,63 @@ The [Free Ebook Foundation](https://ebookfoundation.org/) now administers the re
 
 Learning Philosophy:
 
-- [The Power of Tiny Gains](https://jamesclear.com/continuous-improvement)
-- [Master Adjacent Disciplines](http://www.effectiveengineer.com/blog/master-adjacent-disciplines)
-- [T-shaped skills](https://en.wikipedia.org/wiki/T-shaped_skills)
-- [Data Scientists Should Be More End-to-End](https://eugeneyan.com/writing/end-to-end-data-science/)
-- [Just in Time Learning](https://www.developgoodhabits.com/just-in-time-learning/)
+* [The Power of Tiny Gains](https://jamesclear.com/continuous-improvement)
+* [Master Adjacent Disciplines](http://www.effectiveengineer.com/blog/master-adjacent-disciplines)
+* [T-shaped skills](https://en.wikipedia.org/wiki/T-shaped_skills)
+* [Data Scientists Should Be More End-to-End](https://eugeneyan.com/writing/end-to-end-data-science/)
+* [Just in Time Learning](https://www.developgoodhabits.com/just-in-time-learning/)
 
 ## Index <a id="ffa4"></a>
 
-- [Have basic business understanding](https://github.com/amitness/learning#have-basic-business-understanding)
-- [Be able to frame an ML problem](https://github.com/amitness/learning#be-able-to-frame-an-ml-problem)
-- [Be familiar with data ethics](https://github.com/amitness/learning#be-familiar-with-data-ethics)
-- [Be able to import data from multiple sources](https://github.com/amitness/learning#be-able-to-import-data-from-multiple-sources)
-- [Be able to setup data annotation efficiently](https://github.com/amitness/learning#be-able-to-setup-data-annotation-efficiently)
-- [Be able to manipulate data with Numpy](https://github.com/amitness/learning#be-able-to-manipulate-data-with-numpy)
-- [Be able to manipulate data with Pandas](https://github.com/amitness/learning#be-able-to-manipulate-data-with-pandas)
-- [Be able to manipulate data in spreadsheets](https://github.com/amitness/learning#be-able-to-manipulate-data-in-spreadsheets)
-- [Be able to manipulate data in databases](https://github.com/amitness/learning#be-able-to-manipulate-data-in-databases)
-- [Be able to use Linux tools](https://github.com/amitness/learning#be-able-to-use-linux-tools)
-- [Be able to perform feature engineering](https://github.com/amitness/learning#be-able-to-perform-feature-engineering)
-- [Be able to experiment in a notebook](https://github.com/amitness/learning#be-able-to-experiment-in-a-notebook)
-- [Be able to visualize data](https://github.com/amitness/learning#be-able-to-visualize-data)
-- [Be able to do literature review using research papers](https://github.com/amitness/learning#be-able-to-do-literature-review-using-research-papers)
-- [Be able to model problems mathematically](https://github.com/amitness/learning#be-able-to-model-problems-mathematically)
-- [Be able to structure machine learning projects](https://github.com/amitness/learning#be-able-to-structure-machine-learning-projects)
-- [Be able to version control code](https://github.com/amitness/learning#be-able-to-version-control-code)
-- [Be able to version control data](https://github.com/amitness/learning#be-able-to-version-control-data)
-- [Be familiar with fundamentals of ML and DL](https://github.com/amitness/learning#be-familiar-with-fundamentals-of-ml-and-dl)
-- [Be able to implement models in scikit-learn](https://github.com/amitness/learning#be-able-to-implement-models-in-scikit-learn)
-- [Be able to implement models in Tensorflow and Keras](https://github.com/amitness/learning#be-able-to-implement-models-in-tensorflow-and-keras)
-- [Be able to implement models in PyTorch](https://github.com/amitness/learning#be-able-to-implement-models-in-pytorch)
-- [Be able to implement models using cloud services](https://github.com/amitness/learning#be-able-to-implement-models-using-cloud-services)
-- [Be able to apply unsupervised learning algorithms](https://github.com/amitness/learning#be-able-to-apply-unsupervised-learning-algorithms)
-- [Be able to implement NLP models](https://github.com/amitness/learning#be-able-to-implement-nlp-models)
-- [Be familiar with multi-modal machine learning](https://github.com/amitness/learning#be-familiar-with-multi-modal-machine-learning)
-- [Be familiar with Recommendation Systems](https://github.com/amitness/learning#be-familiar-with-recommendation-systems)
-- [Be able to implement computer vision models](https://github.com/amitness/learning#be-able-to-implement-computer-vision-models)
-- [Be able to model graphs and network data](https://github.com/amitness/learning#be-able-to-model-graphs-and-network-data)
-- [Be able to implement models for timeseries and forecasting](https://github.com/amitness/learning#be-able-to-implement-models-for-timeseries-and-forecasting)
-- [Be familiar with Reinforcement Learning](https://github.com/amitness/learning#be-familiar-with-reinforcement-learning)
-- [Be able to optimize performance metric](https://github.com/amitness/learning#be-able-to-optimize-performance-metric)
-- [Be familiar with literature on model interpretability](https://github.com/amitness/learning#be-familiar-with-literature-on-model-interpretability)
-- [Be able to optimize models for inference](https://github.com/amitness/learning#be-able-to-optimize-models-for-inference)
-- [Be able to write unit tests](https://github.com/amitness/learning#be-able-to-write-unit-tests)
-- [Be able to serve models via APIs](https://github.com/amitness/learning#be-able-to-serve-models-via-apis)
-- [Be able to build interactive UI for models](https://github.com/amitness/learning#be-able-to-build-interactive-ui-for-models)
-- [Be able to deploy model to production](https://github.com/amitness/learning#be-able-to-deploy-model-to-production)
-- [Be able to perform load testing](https://github.com/amitness/learning#be-able-to-perform-load-testing)
-- [Be able to perform A/B testing](https://github.com/amitness/learning#be-able-to-perform-ab-testing)
-- [Be proficient in Python](https://github.com/amitness/learning#be-proficient-in-python)
-- [Be familiar with compiled languages](https://github.com/amitness/learning#be-familiar-with-compiled-languages)
-- [Have a general understanding of other parts of the stack](https://github.com/amitness/learning#have-a-general-understanding-of-other-parts-of-the-stack)
-- [Be familiar with fundamental Computer Science concepts](https://github.com/amitness/learning#be-familiar-with-fundamental-computer-science-concepts)
-- [Be able to apply proper software engineering process](https://github.com/amitness/learning#be-able-to-apply-proper-software-engineering-process)
-- [Be able to efficiently use a text editor](https://github.com/amitness/learning#be-able-to-efficiently-use-a-text-editor)
-- [Be able to communicate and collaborate well](https://github.com/amitness/learning#be-able-to-communicate-and-collaborate-well)
-- [Be familiar with the hiring pipeline](https://github.com/amitness/learning#be-familiar-with-the-hiring-pipeline)
-- [Broaden Perspective](https://github.com/amitness/learning#broaden-perspective)
+* [Have basic business understanding](https://github.com/amitness/learning#have-basic-business-understanding)
+* [Be able to frame an ML problem](https://github.com/amitness/learning#be-able-to-frame-an-ml-problem)
+* [Be familiar with data ethics](https://github.com/amitness/learning#be-familiar-with-data-ethics)
+* [Be able to import data from multiple sources](https://github.com/amitness/learning#be-able-to-import-data-from-multiple-sources)
+* [Be able to setup data annotation efficiently](https://github.com/amitness/learning#be-able-to-setup-data-annotation-efficiently)
+* [Be able to manipulate data with Numpy](https://github.com/amitness/learning#be-able-to-manipulate-data-with-numpy)
+* [Be able to manipulate data with Pandas](https://github.com/amitness/learning#be-able-to-manipulate-data-with-pandas)
+* [Be able to manipulate data in spreadsheets](https://github.com/amitness/learning#be-able-to-manipulate-data-in-spreadsheets)
+* [Be able to manipulate data in databases](https://github.com/amitness/learning#be-able-to-manipulate-data-in-databases)
+* [Be able to use Linux tools](https://github.com/amitness/learning#be-able-to-use-linux-tools)
+* [Be able to perform feature engineering](https://github.com/amitness/learning#be-able-to-perform-feature-engineering)
+* [Be able to experiment in a notebook](https://github.com/amitness/learning#be-able-to-experiment-in-a-notebook)
+* [Be able to visualize data](https://github.com/amitness/learning#be-able-to-visualize-data)
+* [Be able to do literature review using research papers](https://github.com/amitness/learning#be-able-to-do-literature-review-using-research-papers)
+* [Be able to model problems mathematically](https://github.com/amitness/learning#be-able-to-model-problems-mathematically)
+* [Be able to structure machine learning projects](https://github.com/amitness/learning#be-able-to-structure-machine-learning-projects)
+* [Be able to version control code](https://github.com/amitness/learning#be-able-to-version-control-code)
+* [Be able to version control data](https://github.com/amitness/learning#be-able-to-version-control-data)
+* [Be familiar with fundamentals of ML and DL](https://github.com/amitness/learning#be-familiar-with-fundamentals-of-ml-and-dl)
+* [Be able to implement models in scikit-learn](https://github.com/amitness/learning#be-able-to-implement-models-in-scikit-learn)
+* [Be able to implement models in Tensorflow and Keras](https://github.com/amitness/learning#be-able-to-implement-models-in-tensorflow-and-keras)
+* [Be able to implement models in PyTorch](https://github.com/amitness/learning#be-able-to-implement-models-in-pytorch)
+* [Be able to implement models using cloud services](https://github.com/amitness/learning#be-able-to-implement-models-using-cloud-services)
+* [Be able to apply unsupervised learning algorithms](https://github.com/amitness/learning#be-able-to-apply-unsupervised-learning-algorithms)
+* [Be able to implement NLP models](https://github.com/amitness/learning#be-able-to-implement-nlp-models)
+* [Be familiar with multi-modal machine learning](https://github.com/amitness/learning#be-familiar-with-multi-modal-machine-learning)
+* [Be familiar with Recommendation Systems](https://github.com/amitness/learning#be-familiar-with-recommendation-systems)
+* [Be able to implement computer vision models](https://github.com/amitness/learning#be-able-to-implement-computer-vision-models)
+* [Be able to model graphs and network data](https://github.com/amitness/learning#be-able-to-model-graphs-and-network-data)
+* [Be able to implement models for timeseries and forecasting](https://github.com/amitness/learning#be-able-to-implement-models-for-timeseries-and-forecasting)
+* [Be familiar with Reinforcement Learning](https://github.com/amitness/learning#be-familiar-with-reinforcement-learning)
+* [Be able to optimize performance metric](https://github.com/amitness/learning#be-able-to-optimize-performance-metric)
+* [Be familiar with literature on model interpretability](https://github.com/amitness/learning#be-familiar-with-literature-on-model-interpretability)
+* [Be able to optimize models for inference](https://github.com/amitness/learning#be-able-to-optimize-models-for-inference)
+* [Be able to write unit tests](https://github.com/amitness/learning#be-able-to-write-unit-tests)
+* [Be able to serve models via APIs](https://github.com/amitness/learning#be-able-to-serve-models-via-apis)
+* [Be able to build interactive UI for models](https://github.com/amitness/learning#be-able-to-build-interactive-ui-for-models)
+* [Be able to deploy model to production](https://github.com/amitness/learning#be-able-to-deploy-model-to-production)
+* [Be able to perform load testing](https://github.com/amitness/learning#be-able-to-perform-load-testing)
+* [Be able to perform A/B testing](https://github.com/amitness/learning#be-able-to-perform-ab-testing)
+* [Be proficient in Python](https://github.com/amitness/learning#be-proficient-in-python)
+* [Be familiar with compiled languages](https://github.com/amitness/learning#be-familiar-with-compiled-languages)
+* [Have a general understanding of other parts of the stack](https://github.com/amitness/learning#have-a-general-understanding-of-other-parts-of-the-stack)
+* [Be familiar with fundamental Computer Science concepts](https://github.com/amitness/learning#be-familiar-with-fundamental-computer-science-concepts)
+* [Be able to apply proper software engineering process](https://github.com/amitness/learning#be-able-to-apply-proper-software-engineering-process)
+* [Be able to efficiently use a text editor](https://github.com/amitness/learning#be-able-to-efficiently-use-a-text-editor)
+* [Be able to communicate and collaborate well](https://github.com/amitness/learning#be-able-to-communicate-and-collaborate-well)
+* [Be familiar with the hiring pipeline](https://github.com/amitness/learning#be-familiar-with-the-hiring-pipeline)
+* [Broaden Perspective](https://github.com/amitness/learning#broaden-perspective)
 
 [amitness/learningBecoming better at data science every day. Contribute to amitness/learning development by creating an account on…github.com](https://github.com/amitness/learning)
 
@@ -442,34 +442,34 @@ Licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0).
 
 ## [Intro](https://github.com/mhinz/vim-galore#intro-1) <a id="b691"></a>
 
-- [What is Vim?](https://github.com/mhinz/vim-galore#what-is-vim)
-- [The Vim Philosophy](https://github.com/mhinz/vim-galore#the-vim-philosophy)
-- [First steps](https://github.com/mhinz/vim-galore#first-steps)
-- [Minimal vimrc](https://github.com/mhinz/vim-galore#minimal-vimrc)
-- [What kind of Vim am I running?](https://github.com/mhinz/vim-galore#what-kind-of-vim-am-i-running)
-- [Cheatsheets](https://github.com/mhinz/vim-galore#cheatsheets)
+* [What is Vim?](https://github.com/mhinz/vim-galore#what-is-vim)
+* [The Vim Philosophy](https://github.com/mhinz/vim-galore#the-vim-philosophy)
+* [First steps](https://github.com/mhinz/vim-galore#first-steps)
+* [Minimal vimrc](https://github.com/mhinz/vim-galore#minimal-vimrc)
+* [What kind of Vim am I running?](https://github.com/mhinz/vim-galore#what-kind-of-vim-am-i-running)
+* [Cheatsheets](https://github.com/mhinz/vim-galore#cheatsheets)
 
 ## [Basics](https://github.com/mhinz/vim-galore#basics-1) <a id="cf66"></a>
 
-- [Buffers, windows, tabs](https://github.com/mhinz/vim-galore#buffers-windows-tabs)
-- [Active, loaded, listed, named buffers](https://github.com/mhinz/vim-galore#active-loaded-listed-named-buffers)
-- [Argument list](https://github.com/mhinz/vim-galore#argument-list)
-- [Mappings](https://github.com/mhinz/vim-galore#mappings)
-- [Mapleader](https://github.com/mhinz/vim-galore#mapleader)
-- [Registers](https://github.com/mhinz/vim-galore#registers)
-- [Ranges](https://github.com/mhinz/vim-galore#ranges)
-- [Marks](https://github.com/mhinz/vim-galore#marks)
-- [Completion](https://github.com/mhinz/vim-galore#completion)
-- [Motions, operators, text objects](https://github.com/mhinz/vim-galore#motions-operators-text-objects)
-- [Autocmds](https://github.com/mhinz/vim-galore#autocmds)
-- [Changelist, jumplist](https://github.com/mhinz/vim-galore#changelist-jumplist)
-- [Undo tree](https://github.com/mhinz/vim-galore#undo-tree)
-- [Quickfix and location lists](https://github.com/mhinz/vim-galore#quickfix-and-location-lists)
-- [Macros](https://github.com/mhinz/vim-galore#macros)
-- [Colorschemes](https://github.com/mhinz/vim-galore#colorschemes)
-- [Folding](https://github.com/mhinz/vim-galore#folding)
-- [Sessions](https://github.com/mhinz/vim-galore#sessions)
-- [Locality](https://github.com/mhinz/vim-galore#locality)
+* [Buffers, windows, tabs](https://github.com/mhinz/vim-galore#buffers-windows-tabs)
+* [Active, loaded, listed, named buffers](https://github.com/mhinz/vim-galore#active-loaded-listed-named-buffers)
+* [Argument list](https://github.com/mhinz/vim-galore#argument-list)
+* [Mappings](https://github.com/mhinz/vim-galore#mappings)
+* [Mapleader](https://github.com/mhinz/vim-galore#mapleader)
+* [Registers](https://github.com/mhinz/vim-galore#registers)
+* [Ranges](https://github.com/mhinz/vim-galore#ranges)
+* [Marks](https://github.com/mhinz/vim-galore#marks)
+* [Completion](https://github.com/mhinz/vim-galore#completion)
+* [Motions, operators, text objects](https://github.com/mhinz/vim-galore#motions-operators-text-objects)
+* [Autocmds](https://github.com/mhinz/vim-galore#autocmds)
+* [Changelist, jumplist](https://github.com/mhinz/vim-galore#changelist-jumplist)
+* [Undo tree](https://github.com/mhinz/vim-galore#undo-tree)
+* [Quickfix and location lists](https://github.com/mhinz/vim-galore#quickfix-and-location-lists)
+* [Macros](https://github.com/mhinz/vim-galore#macros)
+* [Colorschemes](https://github.com/mhinz/vim-galore#colorschemes)
+* [Folding](https://github.com/mhinz/vim-galore#folding)
+* [Sessions](https://github.com/mhinz/vim-galore#sessions)
+* [Locality](https://github.com/mhinz/vim-galore#locality)
 
 [mhinz/vim-galoreVim is a text editor with a long line of ancestors that goes back to qed. Bram Moolenaar released it in 1991. The…github.com](https://github.com/mhinz/vim-galore)
 
@@ -481,14 +481,14 @@ A curated list of awesome places to learn and/or practice algorithms. Inspired b
 
 If you want to contribute, please read the [contribution guidelines](https://github.com/tayllan/awesome-algorithms/blob/master/CONTRIBUTING.md).
 
-- [Awesome Algorithms](https://github.com/tayllan/awesome-algorithms#awesome-algorithms)
-- [Websites](https://github.com/tayllan/awesome-algorithms#websites)
-- [Online Courses](https://github.com/tayllan/awesome-algorithms#online-courses)
-- [Books](https://github.com/tayllan/awesome-algorithms#books)
-- [Cheat Sheets](https://github.com/tayllan/awesome-algorithms#cheat-sheets)
-- [Github Libraries](https://github.com/tayllan/awesome-algorithms#github-libraries)
-- [Online Judges](https://github.com/tayllan/awesome-algorithms#online-judges)
-- [Tools](https://github.com/tayllan/awesome-algorithms#tools)
+* [Awesome Algorithms](https://github.com/tayllan/awesome-algorithms#awesome-algorithms)
+* [Websites](https://github.com/tayllan/awesome-algorithms#websites)
+* [Online Courses](https://github.com/tayllan/awesome-algorithms#online-courses)
+* [Books](https://github.com/tayllan/awesome-algorithms#books)
+* [Cheat Sheets](https://github.com/tayllan/awesome-algorithms#cheat-sheets)
+* [Github Libraries](https://github.com/tayllan/awesome-algorithms#github-libraries)
+* [Online Judges](https://github.com/tayllan/awesome-algorithms#online-judges)
+* [Tools](https://github.com/tayllan/awesome-algorithms#tools)
 
 [tayllan/awesome-algorithmsA curated list of awesome places to learn and/or practice algorithms. Inspired by awesome-awesomeness and all the other…github.com](https://github.com/tayllan/awesome-algorithms)
 
@@ -585,23 +585,23 @@ If you know of any other workshopper/adventure tutorials, feel free to fork/PR o
 
 _Note: I’m planning to revise this and looking for a new co-author to help with expanding this into a more comprehensive guide. While it’s very popular, it could be broader and a bit deeper. If you like to write and are close to being an expert on this material and willing to consider helping, please drop me a note at josh \(0x40\) holloway.com. –_[_jlevy_](https://github.com/jlevy)_,_ [_Holloway_](https://www.holloway.com/)_. Thank you!_
 
-- [Meta](https://github.com/jlevy/the-art-of-command-line#meta)
-- [Basics](https://github.com/jlevy/the-art-of-command-line#basics)
-- [Everyday use](https://github.com/jlevy/the-art-of-command-line#everyday-use)
-- [Processing files and data](https://github.com/jlevy/the-art-of-command-line#processing-files-and-data)
-- [System debugging](https://github.com/jlevy/the-art-of-command-line#system-debugging)
-- [One-liners](https://github.com/jlevy/the-art-of-command-line#one-liners)
-- [Obscure but useful](https://github.com/jlevy/the-art-of-command-line#obscure-but-useful)
-- [macOS only](https://github.com/jlevy/the-art-of-command-line#macos-only)
-- [Windows only](https://github.com/jlevy/the-art-of-command-line#windows-only)
-- [More resources](https://github.com/jlevy/the-art-of-command-line#more-resources)
-- [Disclaimer](https://github.com/jlevy/the-art-of-command-line#disclaimer)
+* [Meta](https://github.com/jlevy/the-art-of-command-line#meta)
+* [Basics](https://github.com/jlevy/the-art-of-command-line#basics)
+* [Everyday use](https://github.com/jlevy/the-art-of-command-line#everyday-use)
+* [Processing files and data](https://github.com/jlevy/the-art-of-command-line#processing-files-and-data)
+* [System debugging](https://github.com/jlevy/the-art-of-command-line#system-debugging)
+* [One-liners](https://github.com/jlevy/the-art-of-command-line#one-liners)
+* [Obscure but useful](https://github.com/jlevy/the-art-of-command-line#obscure-but-useful)
+* [macOS only](https://github.com/jlevy/the-art-of-command-line#macos-only)
+* [Windows only](https://github.com/jlevy/the-art-of-command-line#windows-only)
+* [More resources](https://github.com/jlevy/the-art-of-command-line#more-resources)
+* [Disclaimer](https://github.com/jlevy/the-art-of-command-line#disclaimer)
 
 ![](https://miro.medium.com/max/60/0*UEmZ4FoX_E22AlKG.png?q=20)![](https://miro.medium.com/max/432/0*UEmZ4FoX_E22AlKG.png)
 
 Fluency on the command line is a skill often neglected or considered arcane, but it improves your flexibility and productivity as an engineer in both obvious and subtle ways. This is a selection of notes and tips on using the command-line that we’ve found useful when working on Linux. Some tips are elementary, and some are fairly specific, sophisticated, or obscure. This page is not long, but if you can use and recall all the items here, you know a lot.
 
-This work is the result of [many authors and translators](https://github.com/jlevy/the-art-of-command-line/blob/master/AUTHORS.md). Some of this [originally](http://www.quora.com/What-are-some-lesser-known-but-useful-Unix-commands) [appeared](http://www.quora.com/What-are-the-most-useful-Swiss-army-knife-one-liners-on-Unix) on [Quora](http://www.quora.com/What-are-some-time-saving-tips-that-every-Linux-user-should-know), but it has since moved to GitHub, where people more talented than the original author have made numerous improvements. [Please submit a question](https://airtable.com/shrzMhx00YiIVAWJg) if you have a question related to the command line. [Please contribute](https://github.com/jlevy/the-art-of-command-line/blob/master/CONTRIBUTING.md) if you see an error or something that could be better![jlevy/the-art-of-command-lineMaster the command line, in one page. Contribute to jlevy/the-art-of-command-line development by creating an account on…github.com](https://github.com/jlevy/the-art-of-command-line)
+This work is the result of [many authors and translators](https://github.com/jlevy/the-art-of-command-line/blob/master/AUTHORS.md). Some of this [originally](http://www.quora.com/What-are-some-lesser-known-but-useful-Unix-commands) [appeared](http://www.quora.com/What-are-the-most-useful-Swiss-army-knife-one-liners-on-Unix) on [Quora](http://www.quora.com/What-are-some-time-saving-tips-that-every-Linux-user-should-know), but it has since moved to GitHub, where people more talented than the original author have made numerous improvements. [Please submit a question](https://airtable.com/shrzMhx00YiIVAWJg) if you have a question related to the command line. [Please contribute](https://github.com/jlevy/the-art-of-command-line/blob/master/CONTRIBUTING.md) if you see an error or something that could be better![jlevy/the-art-of-command-lineMaster the command line, in one page. Contribute to jlevy/the-art-of-command-line development by creating an account on&#x2026;github.com](https://github.com/jlevy/the-art-of-command-line)
 
 ## papers-we-love/papers-we-love <a id="9e04"></a>
 
@@ -675,18 +675,18 @@ Yup! We’ve built step-by-step tutorials for all of our stacks that teach you h
 
 Forks, tutorials, workshops, and other resources based on the RealWorld project:
 
-- [React+Redux / Node testing workshop](https://github.com/kentcdodds/testing-workshop) by [Kent C. Dodds](https://github.com/kentcdodds)
-- Example repo showing the React+Redux and Node stacks working together w/ TDD
-- Live recording of his workshop is [available on YouTube](https://www.youtube.com/watch?v=DdqiXcYDv-8)
-- [RealWorld React/NodeJS E2E Tests](https://github.com/anishkny/realworld-e2e-test) by [Anish Karandikar](https://github.com/anishkny)
-- A repo showing how to wire [React](https://github.com/gothinkster/react-redux-realworld-example-app) frontend with [NodeJS](https://github.com/gothinkster/node-express-realworld-example-app) backend for a RealWorld fullstack
-- Includes E2E integration tests that use [Chrome Puppeteer](https://github.com/GoogleChrome/puppeteer) and [Mocha](https://mochajs.org/) and work with CI systems like [Travis CI](https://travis-ci.org/anishkny/realworld-e2e-test) and [CircleCI](https://circleci.com/gh/anishkny/realworld-e2e-test)
-- Also demonstrates usage of [Greenkeeper](https://greenkeeper.io/) for automatic dependency updates and [Snyk](https://snyk.io/) for vulnerability monitoring
-- Performance comparisons:
-- [A Real-World Comparison of Front-End Frameworks with Benchmarks 2020](https://medium.com/dailyjs/a-realworld-comparison-of-front-end-frameworks-2020-4e50655fe4c1)
-- [A Real-World Comparison of Front-End Frameworks with Benchmarks 2019](https://medium.freecodecamp.org/a-realworld-comparison-of-front-end-frameworks-with-benchmarks-2019-update-4be0d3c78075)
-- [A Real-World Comparison of Front-End Frameworks with Benchmarks 2018](https://medium.freecodecamp.org/a-real-world-comparison-of-front-end-frameworks-with-benchmarks-2018-update-e5760fb4a962)
-- [A Real-World Comparison of Front-End Frameworks with Benchmarks 2017](https://medium.freecodecamp.org/a-real-world-comparison-of-front-end-frameworks-with-benchmarks-e1cb62fd526c)
+* [React+Redux / Node testing workshop](https://github.com/kentcdodds/testing-workshop) by [Kent C. Dodds](https://github.com/kentcdodds)
+* Example repo showing the React+Redux and Node stacks working together w/ TDD
+* Live recording of his workshop is [available on YouTube](https://www.youtube.com/watch?v=DdqiXcYDv-8)
+* [RealWorld React/NodeJS E2E Tests](https://github.com/anishkny/realworld-e2e-test) by [Anish Karandikar](https://github.com/anishkny)
+* A repo showing how to wire [React](https://github.com/gothinkster/react-redux-realworld-example-app) frontend with [NodeJS](https://github.com/gothinkster/node-express-realworld-example-app) backend for a RealWorld fullstack
+* Includes E2E integration tests that use [Chrome Puppeteer](https://github.com/GoogleChrome/puppeteer) and [Mocha](https://mochajs.org/) and work with CI systems like [Travis CI](https://travis-ci.org/anishkny/realworld-e2e-test) and [CircleCI](https://circleci.com/gh/anishkny/realworld-e2e-test)
+* Also demonstrates usage of [Greenkeeper](https://greenkeeper.io/) for automatic dependency updates and [Snyk](https://snyk.io/) for vulnerability monitoring
+* Performance comparisons:
+* [A Real-World Comparison of Front-End Frameworks with Benchmarks 2020](https://medium.com/dailyjs/a-realworld-comparison-of-front-end-frameworks-2020-4e50655fe4c1)
+* [A Real-World Comparison of Front-End Frameworks with Benchmarks 2019](https://medium.freecodecamp.org/a-realworld-comparison-of-front-end-frameworks-with-benchmarks-2019-update-4be0d3c78075)
+* [A Real-World Comparison of Front-End Frameworks with Benchmarks 2018](https://medium.freecodecamp.org/a-real-world-comparison-of-front-end-frameworks-with-benchmarks-2018-update-e5760fb4a962)
+* [A Real-World Comparison of Front-End Frameworks with Benchmarks 2017](https://medium.freecodecamp.org/a-real-world-comparison-of-front-end-frameworks-with-benchmarks-e1cb62fd526c)
 
 [gothinkster/realworld"The mother of all demo apps" - Exemplary fullstack Medium.com clone powered by React, Angular, Node, Django, and many…github.com](https://github.com/gothinkster/realworld)
 
@@ -709,17 +709,18 @@ It is based on Front-End developers’ years of experience, with the additions c
 
 All items in the Front-End Checklist are required for the majority of the projects, but some elements can be omitted or are not essential \(in the case of an administration web app, you may not need RSS feed for example\). We choose to use 3 levels of flexibility:
 
-- means that the item is recommended but can be omitted in some particular situations.
-- means that the item is highly recommended and can eventually be omitted in some really particular cases. Some elements, if omitted, can have bad repercussions in terms of performance or SEO.
-- means that the item can’t be omitted by any reason. You may cause a dysfunction in your page or have accessibility or SEO issues. The testing priority needs to be on these elements first.
+* means that the item is recommended but can be omitted in some particular situations.
+* means that the item is highly recommended and can eventually be omitted in some really particular cases. Some elements, if omitted, can have bad repercussions in terms of performance or SEO.
+* means that the item can’t be omitted by any reason. You may cause a dysfunction in your page or have accessibility or SEO issues. The testing priority needs to be on these elements first.
 
 Some resources possess an emoticon to help you understand which type of content / help you may find on the checklist:
 
-- 📖: documentation or article
-- 🛠: online tool / testing tool
-- 📹: media or video content
+* 📖: documentation or article
+* 🛠: online tool / testing tool
+* 📹: media or video content
 
 > _You can contribute to the_ Front-End Checklist App _reading the_ [_CONTRIBUTING.md file_](https://github.com/thedaviddias/Front-End-Checklist/blob/master/CONTRIBUTING.md) _which explains everything about the project._
 
-[thedaviddias/Front-End-ChecklistThe Front-End Checklist is an exhaustive list of all elements you need to have / to test before launching your website…github.com  
+[thedaviddias/Front-End-ChecklistThe Front-End Checklist is an exhaustive list of all elements you need to have / to test before launching your website…github.com    
 ](https://github.com/thedaviddias/Front-End-Checklist)
+

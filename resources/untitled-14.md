@@ -12,15 +12,15 @@ Test if you have Ubuntu installed by typing “Ubuntu” in the search box in th
 
 ‌
 
-1.  In the application search box in the bottom bar, type “PowerShell” to find the application named “Windows PowerShell”
-2.  Right-click on “Windows PowerShell” and choose “Run as administrator” from the popup menu
-3.  In the blue PowerShell window, type the following: `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`
-4.  Restart your computer
-5.  In the application search box in the bottom bar, type “Store” to find the application named “Microsoft Store”
-6.  Click “Microsoft Store”
-7.  Click the “Search” button in the upper-right corner of the window
-8.  Type in “Ubuntu”
-9.  Click “Run Linux on Windows \(Get the apps\)”
+1. In the application search box in the bottom bar, type “PowerShell” to find the application named “Windows PowerShell”
+2. Right-click on “Windows PowerShell” and choose “Run as administrator” from the popup menu
+3. In the blue PowerShell window, type the following: `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`
+4. Restart your computer
+5. In the application search box in the bottom bar, type “Store” to find the application named “Microsoft Store”
+6. Click “Microsoft Store”
+7. Click the “Search” button in the upper-right corner of the window
+8. Type in “Ubuntu”
+9. Click “Run Linux on Windows \(Get the apps\)”
 10. Click the orange tile labeled **“Ubuntu”** Note that there are 3 versions in the Microsoft Store… you want the one just entitled ‘Ubuntu’
 11. Click “Install”
 12. After it downloads, click “Launch”
@@ -37,8 +37,8 @@ Git comes with Ubuntu, so there’s nothing to install. However, you should conf
 
 ‌Open an Ubuntu terminal if you don’t have one open already.
 
-1.  You need to configure Git, so type `git config --global user.name "Your Name"` with replacing "Your Name" with your real name.
-2.  You need to configure Git, so type `git config --global user.email your@email.com` with replacing "[your@email.com](mailto:your@email.com)" with your real email.
+1. You need to configure Git, so type `git config --global user.name "Your Name"` with replacing "Your Name" with your real name.
+2. You need to configure Git, so type `git config --global user.email your@email.com` with replacing "[your@email.com](mailto:your@email.com)" with your real email.
 
 **Note: if you want git to remember your login credentials type:**
 
@@ -54,19 +54,19 @@ Test if you have Chrome installed by typing “Chrome” in the search box in th
 
 ‌
 
-1.  Open Microsoft Edge, the blue “e” in the task bar, and type in [http://chrome.google.com](http://chrome.google.com/). Click the “Download Chrome” button. Click the “Accept and Install” button after reading the terms of service. Click “Save” in the “What do you want to do with ChromeSetup.exe” dialog at the bottom of the window. When you have the option to “Run” it, do so. Answer the questions as you’d like. Set it as the default browser.
-2.  Right-click on the Chrome icon in the task bar and choose “Pin to taskbar”.
+1. Open Microsoft Edge, the blue “e” in the task bar, and type in [http://chrome.google.com](http://chrome.google.com/). Click the “Download Chrome” button. Click the “Accept and Install” button after reading the terms of service. Click “Save” in the “What do you want to do with ChromeSetup.exe” dialog at the bottom of the window. When you have the option to “Run” it, do so. Answer the questions as you’d like. Set it as the default browser.
+2. Right-click on the Chrome icon in the task bar and choose “Pin to taskbar”.
 
 ## Node.js <a id="ce17"></a>
 
 Test if you have Node.js installed by opening an Ubuntu terminal and typing `node --version`. If it reports "Command 'node' not found", then you need to follow these directions.
 
-1.  In the Ubuntu terminal, type `sudo apt update` and press Enter
-2.  In the Ubuntu terminal, type `sudo apt install build-essential` and press Enter
-3.  In the Ubuntu terminal, type `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash` and press Enter
-4.  In the Ubuntu terminal, type `. ./.bashrc` and press Enter
-5.  In the Ubuntu terminal, type `nvm install --lts` and press Enter
-6.  Confirm that **node** is installed by typing `node --version` and seeing it print something that is not "Command not found"!
+1. In the Ubuntu terminal, type `sudo apt update` and press Enter
+2. In the Ubuntu terminal, type `sudo apt install build-essential` and press Enter
+3. In the Ubuntu terminal, type `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash` and press Enter
+4. In the Ubuntu terminal, type `. ./.bashrc` and press Enter
+5. In the Ubuntu terminal, type `nvm install --lts` and press Enter
+6. Confirm that **node** is installed by typing `node --version` and seeing it print something that is not "Command not found"!
 
 ## Unzip <a id="7d5d"></a>
 
@@ -143,3 +143,4 @@ sudo apt-get install -y filezilla
 [bgoonz’s gists · GitHub](https://gist.github.com/bgoonz)
 
 Or Checkout my personal Resource Site:
+
