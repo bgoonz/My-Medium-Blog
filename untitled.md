@@ -34,7 +34,9 @@
 
 ![](https://cdn-images-1.medium.com/max/600/1*HCYn5Uz_jZ6uRjgp_NA5Yw.png)
 
- **If you wanna skip this section you’ll find the main content about 10% of the way down the page… it will look like this:** ![](https://cdn-images-1.medium.com/max/600/0*iHxLNzz1MOZACC5u.png)
+ **If you wanna skip this section you’ll find the main content about 10% of the way down the page… it will look like this:** 
+
+![](https://cdn-images-1.medium.com/max/600/0*iHxLNzz1MOZACC5u.png)
 
 ##  The Number Data Type <a id="a203"></a>
 
