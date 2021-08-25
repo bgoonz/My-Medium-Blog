@@ -13,7 +13,7 @@
 \*\*\*\*
 
 [**All OF MEDIUM ARTICLES**  
- 2021-02-27\_A-Quick-Guide-to-Big-O-Notation--Memoization--Tabulation--and-Sorting-Algorithms-by-Example-803ff193c522…golden-lobe-519.notion.site](https://golden-lobe-519.notion.site/Medium-7b5b9bd642344d60afe3f03fe6431952)
+ 2021-02-27_A-Quick-Guide-to-Big-O-Notation--Memoization--Tabulation--and-Sorting-Algorithms-by-Example-803ff193c522…golden-lobe-519.notion.site](https://golden-lobe-519.notion.site/Medium-7b5b9bd642344d60afe3f03fe6431952)
 
 [**The ExpressJS Way To Write APIs**  
  This article will cover the basics of express from the perspective of a beginner without concerning it’s self with the…bryanguner.medium.com](https://bryanguner.medium.com/prerequisites-to-writing-express-apis-75e3267b284a)
@@ -267,4 +267,3 @@
 
 [**Basic Web Development Environment Setup**  
  Windows Subsystem for Linux \(WSL\) and Ubuntulevelup.gitconnected.com](https://levelup.gitconnected.com/basic-web-development-environment-setup-9f36c3f15afe)
-

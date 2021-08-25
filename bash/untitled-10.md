@@ -1,12 +1,12 @@
 # BASH CHEAT SHEET
 
- My Bash Cheatsheet Index:
+My Bash Cheatsheet Index:
 
-##  BASH CHEAT SHEET <a id="9030"></a>
+## BASH CHEAT SHEET <a id="9030"></a>
 
-###  My Bash Cheatsheet Index: <a id="b1cc"></a>
+### My Bash Cheatsheet Index: <a id="b1cc"></a>
 
-##  Table Of Contents: <a id="f1e1"></a>
+## Table Of Contents: <a id="f1e1"></a>
 
 > One Liners
 
@@ -28,22 +28,22 @@
 
 > Stdout, Stderr
 
-##  Commands <a id="e775"></a>
+## Commands <a id="e775"></a>
 
-##  tr command <a id="bbc1"></a>
+## tr command <a id="bbc1"></a>
 
- Remove whitespace:
+Remove whitespace:
 
 ```text
 $ echo 'foo - bar' | tr -d '[:space:]'
 foo-bar
 ```
 
-##  One Liners <a id="3b77"></a>
+## One Liners <a id="3b77"></a>
 
-##  Block Bad IPs <a id="371f"></a>
+## Block Bad IPs <a id="371f"></a>
 
- Use iptables to block all bad ip addresses:
+Use iptables to block all bad ip addresses:
 
 ```text
 $ cat /var/log/maillog | grep 'lost connection after AUTH from unknown' | tail -n 5
@@ -54,7 +54,7 @@ May 10 11:23:51 srv4 postfix/smtpd[1838]: lost connection after AUTH from unknow
 May 10 11:24:02 srv4 postfix/smtpd[1838]: lost connection after AUTH from unknown[185.211.245.170]
 ```
 
- Get the data to show only IPs:
+Get the data to show only IPs:
 
 ```text
 cat /var/log/maillog | grep 'lost connection after AUTH from unknown' | cut -d'[' -f3 | cut -d ']' -f1 | tail -n5
@@ -65,7 +65,7 @@ cat /var/log/maillog | grep 'lost connection after AUTH from unknown' | cut -d'[
 185.36.81.173
 ```
 
- Get the unique IP addresses:
+Get the unique IP addresses:
 
 ```text
 $ cat /var/log/maillog | grep 'lost connection after AUTH from unknown' | cut -d'[' -f3 | cut -d ']' -f1 | sort | uniq
@@ -76,15 +76,15 @@ $ cat /var/log/maillog | grep 'lost connection after AUTH from unknown' | cut -d
 139.59.224.234
 ```
 
- Redirect the output to iptables:
+Redirect the output to iptables:
 
 ```text
 $ for ip in $(cat /var/log/maillog | grep 'lost connection after AUTH from unknown' | cut -d'[' -f3 | cut -d ']' -f1 | sort | uniq); do iptables -I INPUT -s ${ip} -p tcp --dport 25 -j DROP; done
 ```
 
-##  If Statements <a id="e51b"></a>
+## If Statements <a id="e51b"></a>
 
-##  Check if args are passed <a id="c78a"></a>
+## Check if args are passed <a id="c78a"></a>
 
 ```text
 if [[ $# -eq 0 ]] ; then
@@ -93,7 +93,7 @@ if [[ $# -eq 0 ]] ; then
 fi
 ```
 
-##  Check if required variables exist <a id="1a57"></a>
+## Check if required variables exist <a id="1a57"></a>
 
 ```text
 if [ $1 == "one" ] || [ $1 == "two" ]
@@ -106,7 +106,7 @@ else
 fi
 ```
 
-##  Check if environment variables exists <a id="a333"></a>
+## Check if environment variables exists <a id="a333"></a>
 
 ```text
 if [ -z ${OWNER} ] || [ -z ${NAME} ]
@@ -118,9 +118,9 @@ else
 fi
 ```
 
-##  While Loops <a id="9321"></a>
+## While Loops <a id="9321"></a>
 
-##  Run process for 5 Seconds <a id="b307"></a>
+## Run process for 5 Seconds <a id="b307"></a>
 
 ```text
 set -ex
@@ -139,31 +139,30 @@ kill $!
 sleep 2
 ```
 
-##  Redirecting Outputs <a id="b06b"></a>
+## Redirecting Outputs <a id="b06b"></a>
 
-##  Stdout, Stderr <a id="6774"></a>
+## Stdout, Stderr <a id="6774"></a>
 
- Redirect stderr to /dev/null:
+Redirect stderr to /dev/null:
 
 ```text
 grep -irl faker . 2>/dev/null
 ```
 
- Redirect stdout to one file and stderr to another file:
+Redirect stdout to one file and stderr to another file:
 
 ```text
 grep -irl faker . > out 2>error
 ```
 
- Redirect stderr to stdout \(&1\), and then redirect stdout to a file:
+Redirect stderr to stdout \(&1\), and then redirect stdout to a file:
 
 ```text
 grep -irl faker . >out 2>&1
 ```
 
- Redirect both to a file:
+Redirect both to a file:
 
 ```text
 grep -irl faker . &> file.log
 ```
-

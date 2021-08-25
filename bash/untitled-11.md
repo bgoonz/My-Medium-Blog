@@ -1,187 +1,187 @@
 # Bash Commands That Save Me Time and Frustration
 
- Here’s a list of bash commands that stand between me and insanity.
+Here’s a list of bash commands that stand between me and insanity.
 
-##  Bash Commands That Save Me Time and Frustration <a id="d867"></a>
+## Bash Commands That Save Me Time and Frustration <a id="d867"></a>
 
-###  Here’s a list of bash commands that stand between me and insanity. <a id="a449"></a>
+### Here’s a list of bash commands that stand between me and insanity. <a id="a449"></a>
 
 ![](https://cdn-images-1.medium.com/max/800/0*w0J8u6jWTikYVZzW.jpg)
 
- [https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b](https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b)
+[https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b](https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b)
 
 > **This article will be accompanied by the following** [**github repository**](https://github.com/bgoonz/bash-commands-walkthrough) **which will contain all the commands listed as well as folders that demonstrate before and after usage!**
 
 > The [readme](https://github.com/bgoonz/bash-commands-walkthrough#readme) for this git repo will provide a much more condensed list… whereas this article will break up the commands with explanations… images & links!
 
- **I will include the code examples as both github gists \(for proper syntax highlighting\) and as code snippets adjacent to said gists so that they can easily be copied and pasted… or … if you’re like me for instance; and like to use an extension to grab the markdown content of a page… the code will be included rather than just a link to the gist!** 
+**I will include the code examples as both github gists \(for proper syntax highlighting\) and as code snippets adjacent to said gists so that they can easily be copied and pasted… or … if you’re like me for instance; and like to use an extension to grab the markdown content of a page… the code will be included rather than just a link to the gist!**
 
 ![](https://cdn-images-1.medium.com/max/1200/1*3m_UcQOAyKtIpHQ6j9JzZw.gif)
 
-##  Here’s a Cheatsheet: <a id="7959"></a>
+## Here’s a Cheatsheet: <a id="7959"></a>
 
-##  Getting Started \(Advanced Users Skip Section\): <a id="4202"></a>
+## Getting Started \(Advanced Users Skip Section\): <a id="4202"></a>
 
-###  ✔ Check the Current Directory ➡ `pwd`: <a id="4ea4"></a>
+### ✔ Check the Current Directory ➡ `pwd`: <a id="4ea4"></a>
 
- On the command line, it’s important to know the directory we are currently working on. For that, we can use `pwd` command. 
+On the command line, it’s important to know the directory we are currently working on. For that, we can use `pwd` command.
 
 ![](https://cdn-images-1.medium.com/max/800/0*dimzLUrmDI4Ufev6.gif)
 
- It shows that I’m working on my Desktop directory.
+It shows that I’m working on my Desktop directory.
 
-###  ✔ Display List of Files ➡ `ls`: <a id="b52c"></a>
+### ✔ Display List of Files ➡ `ls`: <a id="b52c"></a>
 
- To see the list of files and directories in the current directory use `ls` command in your CLI. 
+To see the list of files and directories in the current directory use `ls` command in your CLI.
 
 ![](https://cdn-images-1.medium.com/max/800/0*HHzVrK2CtTPwTdYT.gif)
 
- Shows all of my files and directories of my Desktop directory.
+Shows all of my files and directories of my Desktop directory.
 
-*  To show the contents of a directory pass the directory name to the `ls` command i.e. `ls directory_name`.
-*  Some useful `ls` command options:-
+- To show the contents of a directory pass the directory name to the `ls` command i.e. `ls directory_name`.
+- Some useful `ls` command options:-
 
- OptionDescriptionls -alist all files including hidden file starting with ‘.’ls -llist with the long formatls -lalist long format including hidden files
+OptionDescriptionls -alist all files including hidden file starting with ‘.’ls -llist with the long formatls -lalist long format including hidden files
 
-###  ✔ Create a Directory ➡ `mkdir`: <a id="507f"></a>
+### ✔ Create a Directory ➡ `mkdir`: <a id="507f"></a>
 
- We can create a new folder using the `mkdir` command. To use it type `mkdir folder_name`. 
+We can create a new folder using the `mkdir` command. To use it type `mkdir folder_name`.
 
 ![](https://cdn-images-1.medium.com/max/800/0*m3dDyC9vRJBUZSxR.gif)
 
- Use `ls` command to see the directory is created or not.
+Use `ls` command to see the directory is created or not.
 
- I created a cli-practice directory in my working directory i.e. Desktop directory.
+I created a cli-practice directory in my working directory i.e. Desktop directory.
 
-###  ✔ Move Between Directories ➡ `cd`: <a id="dc4d"></a>
+### ✔ Move Between Directories ➡ `cd`: <a id="dc4d"></a>
 
- It’s used to change directory or to move other directories. To use it type `cd directory_name`. 
+It’s used to change directory or to move other directories. To use it type `cd directory_name`.
 
 ![](https://cdn-images-1.medium.com/max/800/0*34KGxT2G8oNMDnIc.gif)
 
- Can use `pwd` command to confirm your directory name.
+Can use `pwd` command to confirm your directory name.
 
- Changed my directory to the cli-practice directory. And the rest of the tutorial I’m gonna work within this directory.
+Changed my directory to the cli-practice directory. And the rest of the tutorial I’m gonna work within this directory.
 
-###  ✔ Parent Directory ➡ `..`: <a id="ff81"></a>
+### ✔ Parent Directory ➡ `..`: <a id="ff81"></a>
 
- We have seen `cd` command to change directory but if we want to move back or want to move to the parent directory we can use a special symbol `..` after `cd` command, like `cd ..`
+We have seen `cd` command to change directory but if we want to move back or want to move to the parent directory we can use a special symbol `..` after `cd` command, like `cd ..`
 
-###  ✔ Create Files ➡ `touch`: <a id="0787"></a>
+### ✔ Create Files ➡ `touch`: <a id="0787"></a>
 
- We can create an empty file by typing `touch file_name`. It's going to create a new file in the current directory \(the directory you are currently in\) with your provided name. 
+We can create an empty file by typing `touch file_name`. It's going to create a new file in the current directory \(the directory you are currently in\) with your provided name.
 
 ![](https://cdn-images-1.medium.com/max/800/0*xu1wtv7gJ2NMvP60.gif)
 
- I created a hello.txt file in my current working directory. Again you can use `ls` command to see the file is created or not.
+I created a hello.txt file in my current working directory. Again you can use `ls` command to see the file is created or not.
 
- Now open your hello.txt file in your text editor and write _Hello Everyone!_ into your hello.txt file and save it.
+Now open your hello.txt file in your text editor and write _Hello Everyone!_ into your hello.txt file and save it.
 
-###  ✔ Display the Content of a File ➡ `cat`: <a id="3af9"></a>
+### ✔ Display the Content of a File ➡ `cat`: <a id="3af9"></a>
 
- We can display the content of a file using the `cat` command. To use it type `cat file_name`. 
+We can display the content of a file using the `cat` command. To use it type `cat file_name`.
 
 ![](https://cdn-images-1.medium.com/max/800/0*iKf5w9QFNCeLRv8a.gif)
 
- Shows the content of my hello.txt file.
+Shows the content of my hello.txt file.
 
-###  ✔ Move Files & Directories ➡ `mv`: <a id="5907"></a>
+### ✔ Move Files & Directories ➡ `mv`: <a id="5907"></a>
 
- To move a file and directory, we use `mv` command.
+To move a file and directory, we use `mv` command.
 
- By typing `mv file_to_move destination_directory`, you can move a file to the specified directory.
+By typing `mv file_to_move destination_directory`, you can move a file to the specified directory.
 
- By entering `mv directory_to_move destination_directory`, you can move all the files and directories under that directory.
+By entering `mv directory_to_move destination_directory`, you can move all the files and directories under that directory.
 
- Before using this command, we are going to create two more directories and another txt file in our cli-practice directory.
+Before using this command, we are going to create two more directories and another txt file in our cli-practice directory.
 
- `mkdir html css touch bye.txt` 
+`mkdir html css touch bye.txt`
 
 ![](https://cdn-images-1.medium.com/max/800/0*piaAQz_MQpzo7DPH.gif)
 
- Yes, we can use multiple directories & files names one after another to create multiple directories & files in one command. 
+Yes, we can use multiple directories & files names one after another to create multiple directories & files in one command.
 
 ![](https://cdn-images-1.medium.com/max/800/0*5jmj_ZyNz46GuQKz.gif)
 
- Moved my bye.txt file into my css directory and then moved my css directory into my html directory.
+Moved my bye.txt file into my css directory and then moved my css directory into my html directory.
 
-###  ✔ Rename Files & Directories ➡ `mv`: <a id="4cc2"></a>
+### ✔ Rename Files & Directories ➡ `mv`: <a id="4cc2"></a>
 
- `mv` command can also be used to rename a file and a directory.
+`mv` command can also be used to rename a file and a directory.
 
- You can rename a file by typing `mv old_file_name new_file_name` & also rename a directory by typing `mv old_directory_name new_directory_name`. 
+You can rename a file by typing `mv old_file_name new_file_name` & also rename a directory by typing `mv old_directory_name new_directory_name`.
 
 ![](https://cdn-images-1.medium.com/max/800/0*WTVu1dd6gr-nmWhD.gif)
 
- Renamed my hello.txt file to the hi.txt file and html directory to the folder directory.
+Renamed my hello.txt file to the hi.txt file and html directory to the folder directory.
 
-###  ✔ Copy Files & Directories ➡ `cp`: <a id="686d"></a>
+### ✔ Copy Files & Directories ➡ `cp`: <a id="686d"></a>
 
- To do this, we use the `cp` command.
+To do this, we use the `cp` command.
 
-*  You can copy a file by entering `cp file_to_copy new_file_name`.
+- You can copy a file by entering `cp file_to_copy new_file_name`.
 
 ![](https://cdn-images-1.medium.com/max/800/0*kCLVtKN9oKPbHfRF.gif)
 
- Copied my hi.txt file content into hello.txt file. For confirmation open your hello.txt file in your text editor.
+Copied my hi.txt file content into hello.txt file. For confirmation open your hello.txt file in your text editor.
 
-*  You can also copy a directory by adding the `-r` option, like `cp -r directory_to_copy new_directory_name`.
+- You can also copy a directory by adding the `-r` option, like `cp -r directory_to_copy new_directory_name`.
 
- _The_ _`-r`_ _option for "recursive" means that it will copy all of the files including the files inside of subfolders._ 
+_The_ _`-r`_ _option for "recursive" means that it will copy all of the files including the files inside of subfolders._
 
 ![](https://cdn-images-1.medium.com/max/800/0*MnmzMiioIYCuK92B.gif)
 
- Here I copied all of the files from the folder to folder-copy.
+Here I copied all of the files from the folder to folder-copy.
 
-###  ✔ Remove Files & Directories ➡ `rm`: <a id="8748"></a>
+### ✔ Remove Files & Directories ➡ `rm`: <a id="8748"></a>
 
- To do this, we use the `rm` command.
+To do this, we use the `rm` command.
 
-*  To remove a file, you can use the command like `rm file_to_remove`.
+- To remove a file, you can use the command like `rm file_to_remove`.
 
 ![](https://cdn-images-1.medium.com/max/800/0*ohCmdthd92_HA6Ze.gif)
 
- Here I removed my hi.txt file.
+Here I removed my hi.txt file.
 
-*  To remove a directory, use the command like `rm -r directory_to_remove`.
+- To remove a directory, use the command like `rm -r directory_to_remove`.
 
 ![](https://cdn-images-1.medium.com/max/800/0*voDbzwSpw24A2RjQ.gif)
 
- I removed my folder-copy directory from my cli-practice directory i.e. current working directory.
+I removed my folder-copy directory from my cli-practice directory i.e. current working directory.
 
-###  ✔ Clear Screen ➡ `clear`: <a id="daf1"></a>
+### ✔ Clear Screen ➡ `clear`: <a id="daf1"></a>
 
- Clear command is used to clear the terminal screen.
+Clear command is used to clear the terminal screen.
 
-###  ✔ Home Directory ➡ `~`: <a id="78d4"></a>
+### ✔ Home Directory ➡ `~`: <a id="78d4"></a>
 
- The Home directory is represented by `~`. The Home directory refers to the base directory for the user. If we want to move to the Home directory we can use `cd ~` command. Or we can only use `cd` command.
+The Home directory is represented by `~`. The Home directory refers to the base directory for the user. If we want to move to the Home directory we can use `cd ~` command. Or we can only use `cd` command.
 
-##  MY COMMANDS: <a id="1eb7"></a>
+## MY COMMANDS: <a id="1eb7"></a>
 
-##  1.\) Recursively unzip zip files and then delete the archives when finished: <a id="1cfb"></a>
+## 1.\) Recursively unzip zip files and then delete the archives when finished: <a id="1cfb"></a>
 
- **here is a** [**folde**](https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/1-recursive-unzip)**r containing the before and after… I had to change folder names slightly due to a limit on the length of file-paths in a github repo.**
+**here is a** [**folde**](https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/1-recursive-unzip)**r containing the before and after… I had to change folder names slightly due to a limit on the length of file-paths in a github repo.**
 
 ```text
-find . -name "*.zip" | while read filename; do unzip -o -d "`dirname "$filename"`" "$filename"; done;    
+find . -name "*.zip" | while read filename; do unzip -o -d "`dirname "$filename"`" "$filename"; done;
 ```
 
 ```text
 find . -name "*.zip" -type f -print -delete
 ```
 
-##  2.\) Install node modules recursively: <a id="d38d"></a>
+## 2.\) Install node modules recursively: <a id="d38d"></a>
 
 ```text
-npm i -g recursive-install  
+npm i -g recursive-install
 ```
 
 ```text
 npm-recursive-install
 ```
 
-##  3.\) Clean up unnecessary files/folders in git repo: <a id="68be"></a>
+## 3.\) Clean up unnecessary files/folders in git repo: <a id="68be"></a>
 
 ```text
 find . -empty -type f -print -delete #Remove empty files
@@ -197,12 +197,12 @@ find . -empty -type d -print -delete #Remove empty folders
 ```
 
 ```text
-# This will remove .git folders...    .gitmodule files as well as .gitattributes and .gitignore files. 
+# This will remove .git folders...    .gitmodule files as well as .gitattributes and .gitignore files.
 ```
 
 ```text
 
-find . \( -name ".git" -o -name ".gitignore" -o -name ".gitmodules" -o -name ".gitattributes" \) -exec rm -rf -- {} + 
+find . \( -name ".git" -o -name ".gitignore" -o -name ".gitmodules" -o -name ".gitattributes" \) -exec rm -rf -- {} +
 ```
 
 ```text
@@ -217,11 +217,11 @@ find . \( -name ".git" -o -name ".gitignore" -o -name ".gitmodules" -o -name ".g
 find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o -name "*CHANGELOG.txt" -o -name "*LICENSE.txt" -o -name "*CONTRIBUTING.txt" -name "*HISTORY.md" -o -name "*LICENSE" -o -name "*SECURITY.md" -o -name "*RELEASE.md" -o -name "*CHANGELOG.md" -o -name "*LICENSE.md" -o -name "*CODE_OF_CONDUCT.md" -o -name "\*CONTRIBUTING.md" \) -exec rm -rf -- {} +
 ```
 
-###  In Action: <a id="59a3"></a>
+### In Action: <a id="59a3"></a>
 
- The following output from my bash shell corresponds to the directory:
+The following output from my bash shell corresponds to the directory:
 
-###  which was created by running the aforementioned commands in in a perfect copy of this directory: <a id="6cbf"></a>
+### which was created by running the aforementioned commands in in a perfect copy of this directory: <a id="6cbf"></a>
 
 > **…..below is the terminal output for the following commands:**
 
@@ -271,17 +271,17 @@ find . -empty -type d -print -delete
 find . \( -name ".git" -o -name ".gitignore" -o -name ".gitmodules" -o -name ".gitattributes" \) -exec rm -rf -- {} +
 ```
 
- **The command seen below deletes most SECURITY, RELEASE, CHANGELOG, LICENSE, CONTRIBUTING, & HISTORY files that take up pointless space in repo’s you wish to keep exclusively for your own reference.**
+**The command seen below deletes most SECURITY, RELEASE, CHANGELOG, LICENSE, CONTRIBUTING, & HISTORY files that take up pointless space in repo’s you wish to keep exclusively for your own reference.**
 
-##  !!!Use with caution as this command removes the attribution of the work from it’s original authors!!!!! <a id="1ce0"></a>
+## !!!Use with caution as this command removes the attribution of the work from it’s original authors!!!!! <a id="1ce0"></a>
 
- ![](https://cdn-images-1.medium.com/max/800/0*r5dGhtbeZ4VdO54U) !!!Use with caution as this command removes the attribution of the work from it’s original authors!!!!!
+![](https://cdn-images-1.medium.com/max/800/0*r5dGhtbeZ4VdO54U) !!!Use with caution as this command removes the attribution of the work from it’s original authors!!!!!
 
 ```text
 find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o  -name "*CHANGELOG.txt" -o -name "*LICENSE.txt" -o -name "*CONTRIBUTING.txt" -name "*HISTORY.md" -o -name "*LICENSE" -o -name "*SECURITY.md" -o -name "*RELEASE.md" -o  -name "*CHANGELOG.md" -o -name "*LICENSE.md" -o -name "*CODE_OF_CONDUCT.md" -o -name "*CONTRIBUTING.md" \) -exec rm -rf -- {} +
 ```
 
-##  4.\) Generate index.html file that links to all other files in working directory: <a id="785b"></a>
+## 4.\) Generate index.html file that links to all other files in working directory: <a id="785b"></a>
 
 ```text
 #!/bin/sh
@@ -355,17 +355,17 @@ echo '  </style>'
 cmd $listing --sort=extension >>$html
 ```
 
-###  In Action: <a id="b33b"></a>
+### In Action: <a id="b33b"></a>
 
- **I will use this copy of my Data Structures Practice Site to demonstrate the result:** ![](https://cdn-images-1.medium.com/max/800/1*PuuDTUviX5G6mja-5eKUIw.png)
+**I will use this copy of my Data Structures Practice Site to demonstrate the result:** ![](https://cdn-images-1.medium.com/max/800/1*PuuDTUviX5G6mja-5eKUIw.png)
 
-###  The result is a index.html file that contains a list of links to each file in the directory: <a id="1db1"></a>
+### The result is a index.html file that contains a list of links to each file in the directory: <a id="1db1"></a>
 
 > here is a link to and photo of the resulting html file:
 
 ![](https://cdn-images-1.medium.com/max/800/1*AOYbWvUGN9yJ4ceNzAGGsw.png)
 
-##  5.\) Download all links to a files of a specified extension on a user provided \(url\) webpage: <a id="83e9"></a>
+## 5.\) Download all links to a files of a specified extension on a user provided \(url\) webpage: <a id="83e9"></a>
 
 ```text
 wget -r -A.pdf https://overapi.com/gitwget --wait=2 --level=inf --limit-rate=20K --recursive --page-requisites --user-agent=Mozilla --no-parent --convert-links --adjust-extension --no-clobber -e robots=off
@@ -375,7 +375,7 @@ wget -r -A.pdf https://overapi.com/gitwget --wait=2 --level=inf --limit-rate=20K
 
 ![](https://cdn-images-1.medium.com/max/1200/1*8evVPO_z-_TATzkcDTp15Q.png)
 
-##  6.\)Recursively remove lines of text containing the string badFolder from files in the working directory. <a id="e758"></a>
+## 6.\)Recursively remove lines of text containing the string badFolder from files in the working directory. <a id="e758"></a>
 
 ```text
 find . -type f -exec sed -i '/badFolder/d' ./* {} \;
@@ -389,7 +389,7 @@ find . -type f -exec sed -i '/badFolder/d' ./* {} \;
 find . -name 'result.md'  -type f -exec sed -i '/badFolder/d' ./* {} \;
 ```
 
- **As an example I will run this command on a file containing the text:**
+**As an example I will run this command on a file containing the text:**
 
 ```text
 Hacks Blog
@@ -471,7 +471,7 @@ We are happy to announce that Pyodide has become an independent and community-dr
 Posted Thursday, April 22, 2021 by Teon Brooks
 ```
 
- _**I modified the command slightly to apply only to files called ‘result.md’:**_
+_**I modified the command slightly to apply only to files called ‘result.md’:**_
 
 > The result is :
 
@@ -529,29 +529,29 @@ Posted Thursday, April 22, 2021 by Teon Brooks
 
 ![](https://cdn-images-1.medium.com/max/1200/1*Up5as-MkHcHbvI_qX1AqPw.png)
 
- **the test.txt and result.md files can be found here:**
+**the test.txt and result.md files can be found here:**
 
-##  7.\) Execute command recursively: <a id="7685"></a>
+## 7.\) Execute command recursively: <a id="7685"></a>
 
- **Here I have modified the command I wish to run recursively to account for the fact that the ‘find’ command already works recursively, by appending the -maxdepth 1 flag…**
+**Here I have modified the command I wish to run recursively to account for the fact that the ‘find’ command already works recursively, by appending the -maxdepth 1 flag…**
 
 > **I am essentially removing the recursive action of the find command…**
 
- **That way, if the command affects the more deeply nested folders we know the outer RecurseDirs function we are using to run the** _**find/pandoc**_ **line once in every subfolder of the working directory… is working properly!** ![](https://cdn-images-1.medium.com/max/600/1*5C_uzLnuCSlTiioi2EtnUA.png)
+**That way, if the command affects the more deeply nested folders we know the outer RecurseDirs function we are using to run the** _**find/pandoc**_ **line once in every subfolder of the working directory… is working properly!** ![](https://cdn-images-1.medium.com/max/600/1*5C_uzLnuCSlTiioi2EtnUA.png)
 
- **Run in the folder shown to the left… we would expect every .md file to be accompanied by a newly generated html file by the same name.**
+**Run in the folder shown to the left… we would expect every .md file to be accompanied by a newly generated html file by the same name.**
 
- **The results of said operation can be found in the** [**following directory**](https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/7-recursive-run)
+**The results of said operation can be found in the** [**following directory**](https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/7-recursive-run)
 
-###  In Action: <a id="ea00"></a>
+### In Action: <a id="ea00"></a>
 
- 🢃 Below 🢃 ![](https://cdn-images-1.medium.com/max/1200/1*k9c1QRKY07TLJnp9Se89lQ.gif)
+🢃 Below 🢃 ![](https://cdn-images-1.medium.com/max/1200/1*k9c1QRKY07TLJnp9Se89lQ.gif)
 
-###  The final result is: <a id="780a"></a>
+### The final result is: <a id="780a"></a>
 
 ![](https://cdn-images-1.medium.com/max/1200/1*jqrjNeBuRmTrDt3vmQ50LQ.png)
 
- _If you want to run any bash script recursively all you have to do is substitue out line \#9 with the command you want to run once in every sub-folder._
+_If you want to run any bash script recursively all you have to do is substitue out line \#9 with the command you want to run once in every sub-folder._
 
 ```text
 function RecurseDirs ()
@@ -592,23 +592,23 @@ if [[ -d "${f}" ]]; then
 RecurseDirs "./"
 ```
 
-##  TBC…. <a id="dca3"></a>
+## TBC…. <a id="dca3"></a>
 
- **Here are some of the other commands I will cover in greater detail… at a later time:**
+**Here are some of the other commands I will cover in greater detail… at a later time:**
 
-##  9. Copy any text between &lt;script&gt; tags in a file called example.html to be inserted into a new file: out.js <a id="b7f6"></a>
+## 9. Copy any text between &lt;script&gt; tags in a file called example.html to be inserted into a new file: out.js <a id="b7f6"></a>
 
 ```text
 sed -n -e '/<script>/,/<\/script>/p' example.html >out.js
 ```
 
-##  10. Recursively Delete node\_modules folders <a id="b6e5"></a>
+## 10. Recursively Delete node_modules folders <a id="b6e5"></a>
 
 ```text
 find . -name 'node_modules' -type d -print -prune -exec rm -rf '{}' +
 ```
 
-##  11. Sanatize file and folder names to remove illegal characters and reserved words. <a id="4dab"></a>
+## 11. Sanatize file and folder names to remove illegal characters and reserved words. <a id="4dab"></a>
 
 ```text
 sanitize() {
@@ -649,13 +649,13 @@ sanitize_dir() {
 sanitize_dir '/path/to/somewhere'
 ```
 
-##  12. Start postgresql in terminal <a id="1dae"></a>
+## 12. Start postgresql in terminal <a id="1dae"></a>
 
 ```text
 sudo -u postgres psql
 ```
 
-##  13. Add closing body and script tags to each html file in working directory. <a id="2c94"></a>
+## 13. Add closing body and script tags to each html file in working directory. <a id="2c94"></a>
 
 ```text
 for f in * ; do
@@ -666,7 +666,7 @@ doneecho "<form>
   </body></html>" | tee -a *.html
 ```
 
-##  14. Batch Download Videos <a id="d476"></a>
+## 14. Batch Download Videos <a id="d476"></a>
 
 ```text
 #!/bin/bash
@@ -694,7 +694,7 @@ do
 done
 ```
 
-##  15. Change File Extension from ‘.txt’ to .doc for all files in working directory. <a id="0b32"></a>
+## 15. Change File Extension from ‘.txt’ to .doc for all files in working directory. <a id="0b32"></a>
 
 ```text
 sudo apt install rename
@@ -704,19 +704,18 @@ sudo apt install rename
 rename 's/\.txt$/.doc/' *.txt
 ```
 
-##  16. Recursivley change any file with extension .js.download to .js <a id="bc7b"></a>
+## 16. Recursivley change any file with extension .js.download to .js <a id="bc7b"></a>
 
 ```text
 find . -name "*.\.js\.download" -exec rename 's/\.js\.download$/.js/' '{}' +
 ```
 
-##  17. Copy folder structure including only files of a specific extension into an ouput Folder <a id="9e3e"></a>
+## 17. Copy folder structure including only files of a specific extension into an ouput Folder <a id="9e3e"></a>
 
 ```text
 find . -name '*.md' | cpio -pdm './../outputFolder'
 ```
 
-##  Discover More: <a id="e8cc"></a>
+## Discover More: <a id="e8cc"></a>
 
-##  Part 2 of this series: <a id="daae"></a>
-
+## Part 2 of this series: <a id="daae"></a>

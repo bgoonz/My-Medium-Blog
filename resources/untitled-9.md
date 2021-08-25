@@ -1,12 +1,10 @@
 # Awesome Web Development Youtube Video Archive
 
- Awesome Web Development Youtube Video Archive
+Awesome Web Development Youtube Video Archive
 
 ![](../.gitbook/assets/image.png)
 
 ### This is going to be a running list of youtube videos and channels that I discover as I learn web development. It will not be strictly confined to web development but that will be it’s focus <a id="f480"></a>
-
-
 
 ## Tutorials:
 
@@ -52,15 +50,11 @@
 
 {% embed url="https://youtu.be/yURwWGKhOK0" %}
 
-
-
 ### Google TechTalks <a id="ca34"></a>
 
 > Google Tech Talks is a grass-roots program at Google for sharing information of interest to the technical community. At its best, it’s part of an ongoing discussion about our world featuring top experts in diverse fields. Presentations range from the broadest of perspective overviews to the most technical of deep dives, on topics well-established to wildly speculative.
 
 {% embed url="https://youtu.be/p\_PK1CuEuAE" %}
-
-
 
 ### mycodeschool <a id="9e7b"></a>
 
@@ -68,41 +62,26 @@
 
 {% embed url="https://youtu.be/k1wraWzqtvQ" %}
 
-
-
 ### Siraj Raval <a id="30c0"></a>
 
 > Hello World, it’s Siraj! I’m a technologist on a mission to spread data literacy. Artificial Intelligence, Mathematics, Science, Technology, I simplify these topics to help you understand how they work. Using this knowledge you can build wealth and live a happier, more meaningful life. I live to serve this community. We are the fastest growing AI community in the world! Co-Founder of Sage Health \(www.sage-health.org\) Twitter: [http://www.twitter.com/sirajraval](http://www.twitter.com/sirajraval) Instagram: [https://instagram.com/sirajraval/](https://instagram.com/sirajraval/) Facebook: [https://www.facebook.com/sirajology/](https://www.facebook.com/sirajology/)
 
 {% embed url="https://youtu.be/fGv6VmfGMLc" %}
 
-
-
 ### suckerpinch <a id="fe53"></a>
 
 > This is Tom 7’s youtube!
 
-
-
 {% embed url="https://youtu.be/HLRdruqQfRk" %}
-
-
 
 ### Scaler Academy <a id="73bb"></a>
 
 > Scaler is a tech-focused upskilling and reskilling platform for all of us that may have written anywhere between zero to a few million lines of code but want to get better. The brainchild of Abhimanyu Saxena and Anshuman Singh, founders of InterviewBit, one of India’s largest interview preparation platforms for top tech companies, started out with Academy, a course for working professionals with more than 1 year of experience, and has now grown to include Edge which is for college students. Scaler’s courses have industry-relevant curriculums which are vetted by CTOs, regular doubt solving support through Teaching Assistants and 1:1 personal mentorship from people who currently work at some top tech companies and startups. True to our mission, we have already empowered thousands of students, with our alumni working in companies such as Google, Microsoft and Amazon. But we believe this is only the beginning. Come along, as we build a future together.
 
-
-
 {% embed url="https://youtu.be/HRsxyUW9oNY" %}
-
-
 
 ## Miscellaneous:
 
 General Learning:[Bryan Guner](https://bryanguner.medium.com/?source=post_sidebar--------------------------post_sidebar-----------)
 
 {% embed url="https://youtu.be/aircAruvnKk" %}
-
-
-

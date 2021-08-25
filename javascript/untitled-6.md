@@ -1,22 +1,22 @@
 # Array Callback Methods Implemented With For Loops
 
-##  Array Callback Methods Implemented With For Loops <a id="1921"></a>
+## Array Callback Methods Implemented With For Loops <a id="1921"></a>
 
-###  How to implement array callback methods in JavaScript <a id="e029"></a>
+### How to implement array callback methods in JavaScript <a id="e029"></a>
 
 ![](https://cdn-images-1.medium.com/max/800/0*WpKqOdTsTPhvapuW)
 
-###  Functions are called “First Class Objects” in JavaScript because: <a id="ea15"></a>
+### Functions are called “First Class Objects” in JavaScript because: <a id="ea15"></a>
 
-*  A function is an instance of the Object type
-*  A function can have properties and has a link back to its constructor method
-*  You can store the function in a variable
-*  You can pass the function as a parameter to another function
-*  You can return the function from a function
+- A function is an instance of the Object type
+- A function can have properties and has a link back to its constructor method
+- You can store the function in a variable
+- You can pass the function as a parameter to another function
+- You can return the function from a function
 
- What do you think will be printed in the following:
+What do you think will be printed in the following:
 
-###  Anonymous callback, a named callback <a id="8d4f"></a>
+### Anonymous callback, a named callback <a id="8d4f"></a>
 
 ```text
 function foo(callback) {
@@ -47,7 +47,7 @@ const fruitBasket = function() {
 fruitBasket();
 ```
 
-###  Function that takes in a value and two callbacks. The function should return the result of the callback who’s invocation results in a larger value. <a id="b8e8"></a>
+### Function that takes in a value and two callbacks. The function should return the result of the callback who’s invocation results in a larger value. <a id="b8e8"></a>
 
 ```text
 function greaterValue(value, cb1, cb2) {
@@ -83,9 +83,9 @@ console.log(greaterValue(3, negate, addOne));
 console.log(greaterValue(-2, negate, addOne));
 ```
 
- _Note: we do not invoke_ _`negate`_ _or_ _`addOne`_ _\(by using_ _`()`_ _to call them\), we are passing the function itself._
+_Note: we do not invoke_ _`negate`_ _or_ _`addOne`_ _\(by using_ _`()`_ _to call them\), we are passing the function itself._
 
-###  Write a function, myMap, that takes in an array and a callback as arguments. The function should mimic the behavior of Array.prototype.map. <a id="217c"></a>
+### Write a function, myMap, that takes in an array and a callback as arguments. The function should mimic the behavior of Array.prototype.map. <a id="217c"></a>
 
 ```text
 function myMap(arr, callback) {
@@ -114,7 +114,7 @@ let double = function(num) {
 console.log(myMap([1, 2, 3], double));
 ```
 
-###  Write a function, myFilter, that takes in an array and a callback as arguments. The function should mimic the behavior of Array.prototype.filter. <a id="47af"></a>
+### Write a function, myFilter, that takes in an array and a callback as arguments. The function should mimic the behavior of Array.prototype.filter. <a id="47af"></a>
 
 ```text
 function myFilter(arr, callback) {
@@ -138,7 +138,7 @@ function myFilter(arr, callback) {
 }
 ```
 
-###  Write a function, myEvery, that takes in an array and a callback as arguments. The function should mimic the behavior of Array.prototype.every. <a id="ac49"></a>
+### Write a function, myEvery, that takes in an array and a callback as arguments. The function should mimic the behavior of Array.prototype.every. <a id="ac49"></a>
 
 ```text
 function myEvery(arr, callback) {
@@ -155,7 +155,7 @@ function myEvery(arr, callback) {
 }
 ```
 
-##  Further Examples of the above concepts <a id="ceeb"></a>
+## Further Examples of the above concepts <a id="ceeb"></a>
 
 ```text
 const createMeowValue = () => {
@@ -242,7 +242,6 @@ function createSmoothie(ingredient) {
 // DO NOT USE forEach
 ```
 
- References:
+References:
 
- _More content at_ [_**plainenglish.io**_](http://plainenglish.io/)
-
+_More content at_ [_**plainenglish.io**_](http://plainenglish.io/)
