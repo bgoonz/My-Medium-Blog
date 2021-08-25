@@ -4,6 +4,7 @@
 
 ## python
 
+* [Python Study Guide for a JavaScript Programmer](python/untitled.md)
 * [Beginners Guide To Python](python/untitled-15.md)
 
 ## Javascript
