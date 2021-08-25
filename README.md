@@ -1,4 +1,4 @@
-# 2021-02-27\_Basic-Web-Development-Environment-Setup-9f36c3f15afe
+# Basic-Web-Development-Environment-Setup
 
 Windows Subsystem for Linux \(WSL\) and Ubuntu
 
