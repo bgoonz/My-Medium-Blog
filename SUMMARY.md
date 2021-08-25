@@ -1,10 +1,6 @@
 # Table of contents
 
-* [Basic-Web-Development-Environment-Setup](README.md)
-* [Absolutely Everything You Could Need To Know About How JavaScript Works.](untitled.md)
-* [A Comprehensive Deep Dive into React](untitled-1.md)
-* [Adding CSS To Your HTML](untitled-3.md)
-* [A list of all of my articles to link to future posts](untitled-4.md)
+* [README](README.md)
 
 ## python
 
@@ -12,11 +8,13 @@
 
 ## Javascript
 
+* [Absolutely Everything You Could Need To Know About How JavaScript Works.](javascript/untitled.md)
 * [Array Callback Methods Implemented With For Loops](javascript/untitled-6.md)
 
 ## resources
 
 * [An Introduction to Markdown \(Bonus Markdown Templates Included\)](resources/untitled-2.md)
+* [Windows Subsystem for Linux \(WSL\) and UbuntuBasic Web Development Environment SetupWindows Subsyst](resources/windows-subsystem-for-linux-wsl-and-ubuntubasic-web-development-environment-setupwindows-subsyst.md)
 * [Awesome List Of Github Repositories](resources/untitled-8.md)
 * [Github Repositories That Will Teach You How To Code For Free!](resources/github-repositories-that-will-teach-you-how-to-code-for-free.md)
 * [Awesome Web Development Youtube Video Archive](resources/untitled-9.md)
@@ -30,10 +28,16 @@
 
 ## react
 
+* [A Comprehensive Deep Dive into React](react/untitled-1/README.md)
+  * [A list of all of my articles to link to future posts](react/untitled-1/untitled-4.md)
 * [Basic React Tutorial](react/untitled-13.md)
 
 ## DS\_N\_ALGO
 
 * [A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting Algorithms by Example](ds_n_algo/untitled-5.md)
 * [A Very Quick Guide To Calculating Big O Computational Complexity](ds_n_algo/untitled-7.md)
+
+## VanillaJSCSSHTML
+
+* [Adding CSS To Your HTML](vanillajscsshtml/untitled-3.md)
 
