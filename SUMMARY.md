@@ -31,6 +31,7 @@
 
 * [A list of all of my articles to link to future posts](react/untitled-4.md)
 * [A Comprehensive Deep Dive into React](react/untitled-1.md)
+* [Beginner’s Guide To React Part 2](react/untitled.md)
 * [Basic React Tutorial](react/untitled-13.md)
 
 ## DS\_N\_ALGO
