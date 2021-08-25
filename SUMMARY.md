@@ -9,4 +9,6 @@
 * [A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting Algorithms by Example](untitled-5.md)
 * [Array Callback Methods Implemented With For Loops](untitled-6.md)
 * [A Very Quick Guide To Calculating Big O Computational Complexity](untitled-7.md)
+* [Awesome List Of Github Repositories](untitled-8.md)
+* [Github Repositories That Will Teach You How To Code For Free!](github-repositories-that-will-teach-you-how-to-code-for-free.md)
 
