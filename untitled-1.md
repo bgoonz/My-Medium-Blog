@@ -2710,3 +2710,818 @@ const Root = () => {
 
 Now you have control over the precedence of rendered components! Try navigating to `http://localhost:3000/asdf` or any other route you have not defined. The `<h1>404: Page not found</h1>` JSX of the last `<Route>` will be rendered whenever the browser attempts to visit an undefined route.
 
+
+
+
+
+#### Redirecting users <a id="3cc5"></a>
+
+But what if you want to redirect users to a login page when they aren’t logged in? The `<Redirect>` component from React Router helps you redirect users!
+
+The component takes only one prop: `to`. When it renders, it replaces the current URL with the value of its `to` prop. Typically you conditionally render `<Redirect>` to redirect the user away from some page you don't want them to visit. The example below checks whether there is a defined `currentUser` prop. If so, the `<Route>` will render the `Home` component. Otherwise, it will redirect the user to the `/login` path.
+
+```text
+<Route
+  exact path="/"
+  render={() => (this.props.currentUser ? <Home /> : <Redirect to="/login" />)}
+/>
+```
+
+Note: you will learn how to use a more flexible auth pattern — don’t directly imitate this example.
+
+#### History <a id="1e98"></a>
+
+You know how to redirect users with a `<Redirect>` component, but what if you need to redirect users programmatically? You've learned about the React Router's `match` prop, but now let's go over another one of the [route props](https://reacttraining.com/react-router/web/api/Route/route-props): `history`!
+
+```text
+// Pushing a new URL (and adding to the end of history stack):
+const handleClick = () => this.props.history.push('/some/url');
+```
+
+```text
+// Replacing the current URL (won't be tracked in history stack):
+const redirect = () => this.props.history.replace('/some/other/url');
+```
+
+This prop lets you update the URL programmatically. For example, suppose you want to push a new URL when the user clicks a button. It has two useful methods:
+
+* `push` - This adds a new URL to the end of the history stack. That means that clicking the back button will take the browser to the previous URL. Note that pushing the same URL multiple times in a row will have no effect; the URL will still only show up on the stack once. In development mode, pushing the same URL twice in a row will generate a console warning. This warning is disabled in production mode.
+* `replace` - This replaces the current URL on the history stack, so the back button won't take you to it. For example:
+
+#### What you learned <a id="41b9"></a>
+
+In this article, you learned how to:
+
+* Create navigation links for your route paths; and
+* Redirect users through using the `<Redirect>` component; and
+* Update a browser’s URL programmatically by using React Router’s `history` prop.
+
+#### React Router Nested Routes <a id="fa3e"></a>
+
+Now you know how to create front-end routes and add navigation with React Router. When initializing Express projects, you declare static routes. Static routes are routes that are declared when an application is initialized. When using React Router in your application’s initialization, you can declare dynamic routes. React Router introduces dynamic routing, where your routes are created as your application is rendering. This allows you to create nested routes within components!
+
+In this article, let’s dive into [nested routes](https://reacttraining.com/react-router/core/guides/philosophy/nested-routes)! When you finish the article, you should:
+
+* Describe what nested routes are; and
+* Be able to use React Router to create and navigate nested routes; and
+* Know how to use the React Router `match` prop to generate links and routes.
+
+#### Why nested routes? <a id="ee6c"></a>
+
+Let’s begin with why you might need nested routes. As you remember, you are using React to create a single-page application. This means that you’ll be organizing your application into different components and sub-components.
+
+For example, imagine creating a simple front-end application with three main pages: a home welcome page \(path of `/`\), a users index page \(path of `/users`\), and user profile pages \(path of `/users/:userId`\). Now imagine if every user had links to separate `posts` and `photos` pages.
+
+You can create those routes and links within the user profile component, instead of creating the routes and links where the main routes are defined.
+
+#### What are nested routes? <a id="e0e9"></a>
+
+Now let’s dive into a user profile component to understand what are nested routes! Imagine you have a route in your application’s entry file to each user’s profile like so:
+
+```text
+<Route path="/users/:userId" component={Profile} />
+```
+
+This means that upon navigating to `http://localhost:3000/users/1`, you would render the following `Profile` component and the `userId` parameter within `props.match.params` would have the value of `"1"`.
+
+```text
+const Profile = (props) => {
+  // Custom call to database to fetch a user by a user ID.
+  const user = fetchUser(props.match.params.userId);
+  const { name, id } = user;
+```
+
+```text
+  return (
+    <div>
+      <h1>Welcome to the profile of {name}!</h1>
+```
+
+```text
+      {/* Links to a specific user's posts and photos */}
+      <Link to={`/users/${id}/posts`}>{name}'s Posts</Link>
+      <Link to={`/users/${id}/photos`}>{name}'s Photos</Link>
+```
+
+```text
+      {/* Routes to a specific user's posts and photos */}
+      <Route path='/users/:userId/posts' component={UserPosts} />
+      <Route path='/users/:userId/photos' component={UserPhotos} />
+    </div>
+  );
+};
+```
+
+Since this route is not created until the `Profile` component is rendered, you are dynamically creating your nested `/users/:userId/posts` and `/users/:userId/photos` routes. Remember that your `match` prop also has other helpful properties. You can use `match.url` instead of `/users/${id}` in your profile links. You can also use `match.path` instead of `/users/:userId` in your profile routes. Remember that you can destructure `url`, `path`, and `params` from your `match` prop!
+
+```text
+// Destructure `match` prop
+const Profile = ({ match: { url, path, params }) => {
+```
+
+```text
+  // Custom call to database to fetch a user by a user ID.
+  const user = fetchUser(params.userId);
+  const { name, id } = user;
+```
+
+```text
+  return (
+    <div>
+      <h1>Welcome to the profile of {name}!</h1>
+```
+
+```text
+      {/* Replaced `/users/${id}` URL with `props.match.url` */}
+      <Link to={`${url}/posts`}>{name}'s Posts</Link>
+      <Link to={`${url}/photos`}>{name}'s Photos</Link>
+```
+
+```text
+      {/* Replaced `/users/:userId` path with `props.match.path` */}
+      <Route path={`${path}/posts`} component={UserPosts} />
+      <Route path={`${path}/photos`} component={UserPhotos} />
+    </div>}
+  );
+};
+```
+
+In tomorrow’s project, you’ll build a rainbow of routes as well as define nested routes. In the future, you may choose to implement nested routes to keep your application’s routes organized within related components.
+
+#### What you learned <a id="4bd7"></a>
+
+In this article, you learned:
+
+* What nested routes are; and
+* About creating and navigating nested routes with React Router; and
+* How to use the React Router props to generate nested links and routes.
+
+#### React Builds <a id="ff9c"></a>
+
+A “build” is the process of converting code into something that can actually execute or run on the target platform. A “front-end build” is a process of preparing a front-end or client-side application for the browser.
+
+With React applications, that means \(at a minimum\) converting JSX to something that browsers can actually understand. When using Create React App, the build process is automatically configured to do that and a lot more.
+
+When you finish this article, you should be able to:
+
+* Describe what front-end builds are and why they’re needed;
+* Describe at a high level what happens in a Create React App when you run `npm start`; and
+* Prepare to deploy a React application into a production environment.
+
+#### Understanding front-end builds <a id="581c"></a>
+
+The need for front-end builds predates React. Over the years, developers have found it helpful to extend the lowest common denominator version of JavaScript and CSS that they could use.
+
+Sometimes developers extend JavaScript and CSS with something like [TypeScript](https://www.typescriptlang.org/) or [Sass](https://sass-lang.com/). Using these non-standard languages and syntaxes require you to use a build process to convert your code into standard JavaScript and CSS that can actually run in the browser.
+
+Browser-based applications also require a fair amount of optimization to deliver the best, or at least acceptable, experience to end users. Front-end build processes could be configured to lint code, run unit tests, optimize images, minify and bundle code, and more — all automatically at the press of a button \(i.e. running a command at the terminal\).
+
+#### JavaScript versions and the growth of front-end builds <a id="080d"></a>
+
+Developers are generally an impatient lot. When new features are added to JavaScript, we don’t like to wait for browsers to widely support those features before we start to use them in our code. And we _really_ don’t like when we have to support older, legacy versions of browsers.
+
+In recent years, JavaScript has been updated on a yearly basis and browser vendors do a decent job of updating their browsers to support the new features as they’re added to the language. Years ago though, there was an infamous delay between versions 5 and 6 of JavaScript. It took _years_ before ES6 \(or ES2015 as it eventually was renamed to\) to officially be completed and even longer before browsers supported all of its features.
+
+In the period of time before ES2015 was broadly supported by browsers, developers used front-end builds to convert or _transpile_ ES2015 features and syntax to an older version of the language that was more broadly supported by browsers \(typically ES5\). The transpilation from ES2015/ES6 down to ES5 was one of the major drivers for developers to add front-end builds to their client-side projects.
+
+#### Reviewing common terminology <a id="a4af"></a>
+
+When learning about front-end or React builds, you’ll encounter a lot of terminology that you may or may not be familiar with. Here’s some of the terminology that you’ll likely encounter:
+
+Linting is process of using a tool to analyze your code to catch common programming errors, bugs, stylistic inconsistencies, and suspicious coding patterns. [ESLint](https://eslint.org/) is a popular JavaScript linting tool.
+
+Transpilation is the process of converting source code, like JavaScript, from one version to another version. Usually this means converting newer versions of JavaScript, [ES2019](https://www.ecma-international.org/ecma-262/10.0/index.html) or [ES2021](https://tc39.es/ecma262/), to a version that’s more widely supported by browsers, like [ES2015](http://www.ecma-international.org/ecma-262/6.0/), or even [ES5](https://www.ecma-international.org/ecma-262/5.1/) or [ES3](https://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-262,%203rd%20edition,%20December%201999.pdf) \(if you need to support the browser that your parents or grandparents use\).
+
+Minification is the process of removing all unnecessary characters in your code \(e.g. white space characters, new line characters, comments\) to produce an overall smaller file. Minification tools will often also rename identifers in your code \(i.e. parameter and variable names\) in the quest for smaller and smaller file sizes. Source maps can also be generated to allow debugging tools to cross reference between minified code and the original source code.
+
+Bundling is the process of combining multiple code files into a single file. Creating a bundle \(or a handful of bundles\) reduces the number of requests that a client needs to make to the server.
+
+Tree shaking is the process of removing unused \(or dead\) code from your application before it’s bundled. Tree shaking external dependencies can sometimes have a dramatic positive impact on overall bundled file sizes.
+
+#### Configuration or code? <a id="820d"></a>
+
+Front-end build tools have come and gone over the years; sometimes very quickly, which helped bring about the phenomenon known as [JavaScript fatigue](https://sdtimes.com/softwaredev/is-the-javascript-fatigue-real/).
+
+Configuration based tools allow you to create your build tasks by declaring \(usually using JSON, XML, or YAML\) what you want to be done, without explicitly writing every step in the process. In contrast, coding or scripting based tools allow you to, well, write code to create your build tasks. Configuration based tools _can_ sometimes feel simpler to use while giving up some control \(at least initially\) while coding based tools _can_ feel more familiar and predictable \(since you’re describing tasks procedurally\). Every generalization is false though \(including this one\), so there are plenty of exceptions.
+
+[Grunt](https://gruntjs.com/) is a JSON configuration based task runner that can be used to orchestrate the various tasks that make up your front-end build. Grunt was very quickly supplanted by [Gulp](https://gulpjs.com/), which allowed developers to write JavaScript to define front-end build tasks. After Gulp, the front-end tooling landscape became a bit more muddled. Some developers preferred the simplicity of using [npm scripts](https://docs.npmjs.com/misc/scripts) to define build tasks while others preferred the power of configuration based bundlers like [webpack](https://webpack.js.org/).
+
+#### Babel and webpack \(yes, that’s intentionally a lowercase ‘w’\) <a id="573f"></a>
+
+As front-end or client-side applications grew in complexity, developers found themselves wanting to leverage more advanced JavaScript features and newer syntax like classes, arrow functions, destructuring, async/await, etc. Using a code transpiler, like [Babel](https://babeljs.io/), allows you to use all of the latest and greatest features and syntax without worrying about what browsers support what.
+
+Module loaders and bundlers, like [webpack](https://webpack.js.org/), also allowed developers to use JavaScript modules without requiring users to use a browser that natively supports ES modules. Also, module bundling \(along with minification and tree-shaking\) helps to reduce the bandwidth that’s required to deliver the assets for your application to the client.
+
+\[Create React App\]\[cra\] uses webpack \(along with Babel\) under the covers to build your React applications. Even if you’re not using Create React App, webpack and Babel are still very popular choices for building React applications.
+
+#### Pulling back the covers \(a bit\) on the Create React App build process <a id="24d2"></a>
+
+Running an application created by Create React App using `npm start` can feel magical. Some stuff happens in the terminal and your application opens into your default browser. Even better, when you make changes to your application, your changes will \(usually\) automatically appear in the browser!
+
+#### The Create React App build process <a id="b25a"></a>
+
+At a high level, here’s what happens when you run `npm start`:
+
+* Environment variables are loaded \(more about this in a bit\);
+* The list of browsers to support are checked \(more about this too in a bit\);
+* The configured HTTP port is checked to ensure that it’s available;
+* The application compiler is configured and created;
+* [`webpack-dev-server`](https://webpack.js.org/configuration/dev-server/) is started;
+* [`webpack-dev-server`](https://webpack.js.org/configuration/dev-server/) compiles your application;
+* The `index.html` file is loaded into the browser; and
+* A file watcher is started to watch your files, waiting for changes.
+
+#### Ejecting <a id="194d"></a>
+
+Create React App provides a script that you can run to “eject” your application from the Create React App tooling. When you eject your application, all of the hidden stuff is exposed so that you can review and customize it.
+
+> _The need to customize Create React App rarely happens. Also, don’t eject an actual project as it’s a one-way trip! Once a Create React App project has been ejected, there’s no going back \(though you could always undo the ejection process by reverting to an earlier commit if you’re using source control\)._
+
+To eject your application from Create React App, run the command `npm run eject`. You'll be prompted if you want to continue; type "y" to continue with the ejection process. Once the ejection process has completed, you can review the files that were previously hidden from you.
+
+In the `package.json` file, you'll see the following npm scripts:
+
+```text
+{
+  "scripts": {
+    "start": "node scripts/start.js",
+    "build": "node scripts/build.js",
+    "test": "node scripts/test.js"
+  }
+}
+```
+
+You can open the `./scripts/start.js` file to see the code that's executed when you run `npm start`.
+
+If you’re curious about the webpack configuration, you can open and review the `./config/webpack.config.js`.
+
+#### Preparing to deploy a React application for production <a id="dbd3"></a>
+
+Before you deploy your application to production, you’ll want to make sure that you’ve replaced static values in your code with environment variables and considered what browsers you need to support.
+
+#### Defining environment variables <a id="c583"></a>
+
+Create React App supports defining environment variables in an `.env` file. To define an environment variable, add an `.env` file to your project and define one or more variables that start with the prefix `REACT_APP_`:
+
+```text
+REACT_APP_FOO: some value
+REACT_APP_BAR: another value
+```
+
+Environment variables can be used in code like this:
+
+```text
+console.log(process.env.REACT_APP_FOO);
+```
+
+You can also reference environment variables in your `index.html` like this:
+
+```text
+<title>%REACT_APP_BAR%</title>
+```
+
+> _Important: Environment variables are embedded into your HTML, CSS, and JavaScript bundles during the build process. Because of this, it’s_ very important _to not store any secrets, like API keys, in your environment variables as anyone can view your bundled code in the browser by inspecting your files._
+
+#### Configuring the supported browsers <a id="0b96"></a>
+
+In your project’s `package.json` file, you can see the list of targeted browsers:
+
+```text
+{
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
+```
+
+Adjusting these targets affect how your code will be transpiled. Specifying older browser versions will result in your code being transpiled to older versions of JavaScript in order to be compatible with the specified browser versions. The `production` list specifies the browsers to target when creating a production build and the `development` list specifics the browsers to target when running the application using `npm start`.
+
+The [browserl.ist](https://browserl.ist/) website can be used to see the browsers supported by your configured `browserslist`.
+
+#### Creating a production build <a id="e997"></a>
+
+To create a production build, run the command `npm run build`. The production build process bundles React in production mode and optimizes the build for the best performance. When the command completes, you'll find your production ready files in the `build` folder.
+
+Now your application is ready to be deployed!
+
+> _For more information about how to deploy a Create React App project into production, see_ [_this page_](https://facebook.github.io/create-react-app/docs/deployment) _in the official documentation._
+
+#### What you learned <a id="66a7"></a>
+
+In this article, you learned how to:
+
+* Describe what front-end builds are and why they’re needed;
+* Describe at a high level what happens in a Create React App when you run `npm start`; and
+* Prepare to deploy a React application into a production environment.
+
+#### React Router Documentation <a id="9002"></a>
+
+Now that you’ve had an introduction to React Router, feel free to explore the official documentation to learn more! As you become a full-fledged software engineer, remember that documentation is your friend. You can take a brief overview for now, as the documentation might include a lot of information at first. The more you learn about React, the more you should revisit the official documentation and learn!
+
+#### Setting up React Router <a id="9dd6"></a>
+
+* [React Router Quick Start](https://reacttraining.com/react-router/web/guides/quick-start)
+* [HashRouter](https://reacttraining.com/react-router/web/api/HashRouter)
+* [BrowserRouter](https://reacttraining.com/react-router/web/api/BrowserRouter)
+
+#### Routes and Links <a id="3ba4"></a>
+
+* [Route](https://reacttraining.com/react-router/web/api/Route)
+* [Link](https://reacttraining.com/react-router/web/api/Link)
+* [NavLink](https://reacttraining.com/react-router/web/api/NavLink)
+
+#### Switch and Redirect <a id="daab"></a>
+
+* [Switch](https://reacttraining.com/react-router/web/api/Switch)
+* [Redirect](https://reacttraining.com/react-router/web/api/Redirect)
+
+#### React Router Params \(ownProps\) <a id="a515"></a>
+
+* [props.history](https://reacttraining.com/react-router/web/api/history)
+* [props.location](https://reacttraining.com/react-router/web/api/location)
+* [props.match](https://reacttraining.com/react-router/web/api/match)
+
+#### Rainbow Routes Project <a id="4862"></a>
+
+Today you’re going to get our first experience using React Router. The goal is to create a basic app that displays the colors of the rainbow. This rainbow, however, has something special about it — some of the colors are nested within others.
+
+#### Phase 0: Setup <a id="57c5"></a>
+
+Begin by creating a new React project:
+
+```text
+npx create-react-app rainbow-routes --template @appacademy/simple
+```
+
+Now you’ll remove all the contents of your `src` and all the contents from your `public` directory to build the application architecture from scratch! After you have deleted all your files within the directories, create a new `index.html` file in your `public` folder. Use the `html:5` emmet shortcut to generate an HTML template. Title your page "Rainbow Routes" and create a `div` with an `id` of `root` in your DOM's `<body>` element. Create an `index.css` file in your `src` directory with the following code. Now let's create your entry file!
+
+```text
+h4 {
+  color: darkblue;
+  cursor: pointer;
+}
+```
+
+```text
+h4:hover {
+  text-decoration: underline;
+}
+```
+
+```text
+#rainbow {
+  position: absolute;
+  top: 0;
+  left: 300px;
+}
+```
+
+```text
+h3 {
+  position: absolute;
+  top: 1px;
+}
+```
+
+```text
+.red {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+}
+```
+
+```text
+.orange {
+  background-color: orange;
+  width: 100px;
+  height: 50px;
+}
+```
+
+```text
+.yellow {
+  background-color: yellow;
+  width: 100px;
+  height: 50px;
+}
+```
+
+```text
+.green {
+  background-color: green;
+  width: 100px;
+  height: 100px;
+}
+```
+
+```text
+.blue {
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+}
+```
+
+```text
+.indigo {
+  background-color: mediumslateblue;
+  width: 100px;
+  height: 50px;
+}
+```
+
+```text
+.violet {
+  background-color: darkviolet;
+  width: 100px;
+  height: 100px;
+}
+```
+
+```text
+a {
+  display: block;
+  margin-bottom: 10px;
+}
+```
+
+Create an `index.js` entry file in the `src` directory. At the top of the file, make sure to import `React` from the `react` package and `ReactDOM` from the `react-dom` package. Make sure to also import your the `index.css` file you just created! This will take care of styling your _rainbow routes_.
+
+Now you can use the `ReactDOM.render()` method to render a `<Root />` component instead of the DOM element with an `id` of `root`. Lastly, wrap your render function with a `DOMContentLoaded` event listener, like so:
+
+```text
+document.addEventListener('DOMContentLoaded', () => {
+  ReactDOM.render(
+    <Root />,
+    document.getElementById('root'),
+  );
+});
+```
+
+Let’s create your `Root` component right in your entry file! Your `Root` component will take care of applying your `BrowserRouter` to the application. Applying the `BrowserRouter` to your `Root` component allows all the child components rendering within `<BrowserRouter>` tags to use and access the `Route`, `Link`, and `NavLink` components within the `react-router-dom` package.
+
+```text
+const Root = () => (
+  // TODO: Apply BrowserRouter
+  // TODO: Render rainbow
+);
+```
+
+Install the `react-router-dom` package:
+
+```text
+npm install react-router-dom@^5.0.0
+```
+
+Now import `BrowserRouter` from the `react-router-dom` package, like so:
+
+```text
+import { BrowserRouter } from 'react-router-dom';
+```
+
+You’re going to be rendering a lot of components, so let’s keep your `src` directory organized by creating a `components` directory within. Within your new `./src/components` directory, create a `Rainbow.js` file for your `Rainbow` component with the following code:
+
+```text
+// ./src/components/Rainbow.js
+import React from 'react';
+import { Route, Link, NavLink } from 'react-router-dom';
+```
+
+```text
+const Rainbow = () => (
+  <div>
+    <h1>Rainbow Router!</h1>
+    {/* Your links should go here */}
+```
+
+```text
+    <div id="rainbow">
+      {/* Your routes should go here */}
+    </div>
+  </div>
+);
+```
+
+```text
+export default Rainbow;
+```
+
+Your `Rainbow` component will act as the home page or default path \(`/`\) of your application. Import the `Rainbow` component into your entry file and have your `Root` component render `<Rainbow />` wrapped within `<BrowserRouter>` tags, like so:
+
+```text
+const Root = () => (
+  <BrowserRouter>
+    <Rainbow />
+  </BrowserRouter>
+);
+```
+
+Within your `Rainbow` component, you'll be rendering `<NavLink>` and `<Route>` components to add different navigation paths to different components. Let's create all the components you will render!
+
+Create files for the following components in your `./src/components` directory:
+
+* `Red`
+* `Blue`
+* `Green`
+* `Indigo`
+* `Orange`
+* `Violet`
+* `Yellow`
+
+Your `Red` and `Blue` components will look something like this:
+
+```text
+import React from 'react';
+import { Route, Link, NavLink } from 'react-router-dom';
+```
+
+```text
+const Color = () => (
+  <div>
+    <h2 className="color">Color</h2>
+    {/* Links here */}
+```
+
+```text
+    {/* Routes here */}
+  </div>
+);
+```
+
+```text
+export default Color;
+```
+
+Your `Green`, `Indigo`, `Orange`, `Violet`, and `Yellow` components will look something like this:
+
+```text
+import React from 'react';
+```
+
+```text
+const Color = () => (
+  <div>
+    <h3 className="color">Color</h3>
+  </div>
+);
+```
+
+```text
+export default Color;
+```
+
+Now start your server and verify you can see the “Rainbow Router!” header from your `Rainbow` component. Currently there is no functionality. Let's fix that!
+
+#### Phase 1: Routes <a id="6f53"></a>
+
+As a reminder, wrapping the `Rainbow` component in `<BrowserRouter>` tags makes the router available to all descendent React Router components. Now open the `Rainbow.js` file. You're going to render some of your color components from here. Ultimately you want your routes to look like this.
+
+URLComponents`/Rainbow/redRainbow -> Red/red/orangeRainbow -> Red -> Orange/red/yellowRainbow -> Red -> Yellow/greenRainbow -> Green/blueRainbow -> Blue/blue/indigoRainbow -> Blue -> Indigo/violetRainbow -> Violet`
+
+This means that the `Red`, `Green`, `Blue`, and `Violet` components need to render in the `Rainbow` component, but only when you are at the corresponding URL. You'll do this with `Route` components. Begin by importing the `Red`, `Green`, `Blue`, and `Violet` components into your `Rainbow.js` file. Then add the necessary `Route` components inside the `div` with `id="rainbow"` in the `Rainbow` component. For example to render the `Red` component with the `/red` path, you would use the following `Route` component:
+
+```text
+<Route path="/red" component={Red} />
+```
+
+Test that your code works! Manually type in each URL you just created, and you should see the color component pop up. Remember, these are React Routes, so the paths you created will come after the `/`. For example, your default rainbow route will look like `http://localhost:3000/` while your red route will look like [`http://localhost:3000/red`](http://localhost:3000/red.)[.](http://localhost:3000/red.)
+
+You want to nest the `Orange` and `Yellow` components inside the `Red` component, and the `Indigo` component inside the `Blue` component. Remember to import your components to use them in a `Route` tag. You'll have to go add the corresponding `Route` tags to the `Red.js` and `Blue.js` files. Make sure to use the correct nested paths, such as `"/red/orange"` for the orange `Route`.
+
+#### Phase 2: Links <a id="ae5d"></a>
+
+Manually navigating to our newly created routes is tiresome, so let’s add functionality to take care of this process for us. React Router provides the `Link` and `NavLink` components for this purpose.
+
+Add `Link`s to the paths `/red`, `/green`, `/blue`, and `/violet` in the `Rainbow` component. For example, your red link should look like
+
+```text
+<Link to="/red">Red</NavLink>
+```
+
+When you are at `blue` you want to be able to get to `/blue/indigo`, and then back to `/blue`. Add the corresponding `Link`s to the `Blue` component like this:
+
+```text
+<Link to='/blue' >Blue only</Link>
+<Link to='/blue/indigo' >Add indigo</Link>
+```
+
+Similarly, add `Link`s to `/red`, `/red/orange` and `/red/yellow` to the `Red` component. Test all your links. Navigation is so much easier now!
+
+#### Phase 3: NavLinks <a id="542d"></a>
+
+It would be nice if our links gave us some indication of which route you were at. Fortunately, React Router has a special component for that very purpose: `NavLink`. NavLinks get an extra CSS class when their `to` prop matches the current URL. By default this class is called `active`.
+
+Go ahead and switch all your `Link`s to `NavLink`s. If you open the app you won't see any change yet. That's because you haven't added any special styling to the `active` class. Go ahead and open the `index.css` file. Create an `.active` class and add the line `font-weight: 700`. Now your active links will be bold. Isn't that nice!
+
+The only problem is that now the `Blue only` link is active even when the path is `/blue/indigo`. That doesn't make a lot of sense. Let's add the `exact` flag to that link so it will only be active when its `to` exactly matches the current path. Now it should look like:
+
+```text
+<NavLink exact to="/blue">
+  Blue only
+</NavLink>
+```
+
+Do the same for the `Red only` link. Everything should be working now.
+
+#### Phase 4 — Changing NavLink’s Active Class <a id="6b56"></a>
+
+You’ve already set up `NavLink` to bold the link text using the `.active` class in `src/index.css`. But what if you wanted this class to be something else? For instance, what if you want your main color links \(Red, Green, Blue, Violet\) to be styled differently when active than your sub-route links \(Red Only, Add Orange, Add Yellow, etc.\).
+
+You can set the class that React Router sets to an active `NavLink` by adding the `activeClassName` prop.
+
+For instance, when we are at a route matching the below `NavLink`'s `to` prop, the component will have a class of `.parent-active` applied:
+
+```text
+<NavLink to="/blue" activeClassName="parent-active" >
+  Blue
+</NavLink>
+```
+
+This allows much more flexibility to style an active `NavLink`!
+
+Using the example above, add an `activeClassName` prop to each of your `NavLink`s in `src/components/Rainbow.js`. Now, add some CSS styling for that class in your `src/index.css` to distinguish your main and your sub-route links.
+
+Compare your work to the solution and make sure the behavior is the same. Time to celebrate! ✨ 🌈 ✨
+
+You can also learn more about using the React Router at [reacttraining.com](https://reacttraining.com/react-router/web/guides/quick-start)!
+
+#### Exploring React Builds Project <a id="7b8c"></a>
+
+In this project, you’ll use Create React App to create a simple React application. You’ll experiment with some of the features that Create React App provides and deploy a production build of your application to a standalone Express application.
+
+#### Phase 0: Setup <a id="5a0d"></a>
+
+Begin by using the [create-react-app](https://github.com/facebook/create-react-app) package to create a React application:
+
+```text
+npx create-react-app exploring-react-builds --template @appacademy/simple
+```
+
+> _Remember that using the `create-react-app` command initializes your project as a Git repository. If you use the `ls -a` to view the hidden files in your project, you'll see the `.git` file._
+
+Update the `App` component:
+
+* Wrap the `<h1>` element with a `<div>` element; and
+* Change the `<h1>` element content to something like "Exploring React Builds".
+
+```text
+// ./src/App.js
+```
+
+```text
+import React from 'react';
+```
+
+```text
+function App() {
+  return (
+    <div>
+      <h1>Exploring React Builds</h1>
+    </div>
+  );
+}
+```
+
+```text
+export default App;
+```
+
+#### Phase 1: Using CSS modules <a id="fb93"></a>
+
+You’ve already seen an example of using the `import` keyword to import a stylesheet into a module so that it'll be included in your application build. That's the technique being used to include the global `index.css` stylesheet:
+
+```text
+// ./src/index.js
+```
+
+```text
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+```
+
+```text
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+```
+
+You can also leverage [CSS modules](https://github.com/css-modules/css-modules) in your Create React App projects. CSS Modules scope stylesheet class names so that they are unique to a specific React component. This allows you to create class names without having to worry if they might collide with class names used in another component.
+
+Add a new `css-modules` folder to the `src` folder. Within that folder, add the following files:
+
+* `HeadingA.js`
+* `HeadingA.module.css`
+* `HeadingB.js`
+* `HeadingB.module.css`
+
+Then update the contents of each file to the following:
+
+```text
+// ./src/css-modules/HeadingA.js
+```
+
+```text
+import React from 'react';
+import styles from './HeadingA.module.css';
+```
+
+```text
+function HeadingA() {
+  return (
+    <h1 className={styles.heading}>Heading A</h1>
+  );
+}
+```
+
+```text
+export default HeadingA;
+```
+
+```text
+/* ./src/css-modules/HeadingA.module.css */
+```
+
+```text
+.heading {
+  color: green;
+}
+```
+
+```text
+// ./src/css-modules/HeadingB.js
+```
+
+```text
+import React from 'react';
+import styles from './HeadingB.module.css';
+```
+
+```text
+function HeadingB() {
+  return (
+    <h1 className={styles.heading}>Heading B</h1>
+  );
+}
+```
+
+```text
+export default HeadingB;
+```
+
+```text
+/* ./src/css-modules/HeadingB.module.css */
+```
+
+```text
+.heading {
+  color: red;
+}
+```
+
+Notice how the `.heading` CSS class name is being used within each component to set the color of the `<h1>` element. For the `HeadingA` component, the color is `green`, and for the `HeadingB` component, the color is `red`. Using the file naming convention `[name].module.css` let's Create React App know that we want these stylesheets to be processed as CSS Modules. Using CSS Modules allows the `.heading` class name to be reused across components without any issue.
+
+To see this feature in action, update your `App` component to render both of your new components:
+
+```text
+import React from 'react';
+import HeadingA from './css-modules/HeadingA';
+import HeadingB from './css-modules/HeadingB';
+```
+
+```text
+function App() {
+  return (
+    <div>
+      <h1>Exploring React Builds</h1>
+      <HeadingA />
+      <HeadingB />
+    </div>
+  );
+}
+```
+
+```text
+export default App;
+```
+
+Then run your application \(`npm start`\) to see "Heading A" and "Heading B" displayed respectively in green and red. If you use the browser's developer tools to inspect "Heading A", you'll see that the `.heading` class name has been modified so that it's unique to the `HeadingA` component:
+
+CSS Modules is an example of how a front-end build process can be used to modify code to enable a feature that’s not natively supported by browsers.
+
+#### Phase 2: Using an image in a component <a id="1a96"></a>
+
