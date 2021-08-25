@@ -1,21 +1,16 @@
-Getting Comfortable With Python:
-================================
+# Getting Comfortable With Python:
 
 Objective 04 - Use a print statement
 
-------------------------------------------------------------------------
+---
 
 ### Getting Comfortable With Python:
-
-  
-
-  
 
 ### Objective 04 - Use a print statement
 
 ### Overview
 
-Learning to use the `print` function in Python is the perfect way to start writing Python code. When learning to write in any new programming language, one of the first things you want to do is get some *output* from your program. The `print` function is how you output the value of an object to the screen. You will learn how to use the `print` function in Python.
+Learning to use the `print` function in Python is the perfect way to start writing Python code. When learning to write in any new programming language, one of the first things you want to do is get some _output_ from your program. The `print` function is how you output the value of an object to the screen. You will learn how to use the `print` function in Python.
 
 ### Follow Along
 
@@ -115,7 +110,7 @@ Here is how you can change the default `end` value (which is `\\n`) when calling
 
 Customizing the `end` value when calling the `print` function can be useful and necessary in some circumstances.
 
-------------------------------------------------------------------------
+---
 
 You have now learned the basics of using the `print` function in Python. You learned how to call the `print` function to print objects of different types. You now know how to use `print` with multiple positional arguments. In certain necessary situations, you also know how to change the default `end` value when calling the `print` function.
 
@@ -127,7 +122,7 @@ Now, get some practice using the `print` function by completing the challenge be
 
 ### Additional Resources
 
--   <span id="1660"><a href="https://www.w3schools.com/python/ref_func_print.asp" class="markup--anchor markup--li-anchor">https://www.w3schools.com/python/ref_func_print.asp</a></span>
+- <span id="1660"><a href="https://www.w3schools.com/python/ref_func_print.asp" class="markup--anchor markup--li-anchor">https://www.w3schools.com/python/ref_func_print.asp</a></span>
 
 ### Objective 05 - Use white space to denote blocks
 
