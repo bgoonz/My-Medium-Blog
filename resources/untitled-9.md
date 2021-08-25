@@ -2,7 +2,7 @@
 
  Awesome Web Development Youtube Video Archive
 
-![](.gitbook/assets/image.png)
+![](../.gitbook/assets/image.png)
 
 ### This is going to be a running list of youtube videos and channels that I discover as I learn web development. It will not be strictly confined to web development but that will be it’s focus <a id="f480"></a>
 
