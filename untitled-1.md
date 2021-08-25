@@ -1170,3 +1170,1543 @@ ReactDOM.render(
 );
 ```
 
+#### React Class Components <a id="3e55"></a>
+
+Class Components
+
+* You can write React components using ES2015 Classes: Function Component
+
+```text
+// ./src/Message.js
+import React from "react";
+const Message = (props) => {
+  return <div>{props.text}</div>;
+};
+export default Message;
+```
+
+ES2015 Version
+
+```text
+// ./src/Message.js
+import React from "react";
+class Message extends React.Component {
+  render() {
+    return <div>{this.props.text}</div>;
+  }
+}
+export default Message;
+```
+
+* We can access props within a `class component` by using `this.props`
+* Keep in mind Class Components are used just like function components.
+
+```text
+// ./src/index.js
+import React from "react";
+import ReactDOM from "react-dom";
+import Message from "./Message";
+ReactDOM.render(
+  <React.StrictMode>
+    <Message text="Hello world!" />
+  </React.StrictMode>,
+  document.getElementById("root")
+);
+```
+
+Setting and accessing props
+
+```text
+class Message extends React.Component {
+  constructor(props) {
+    super(props);
+    // TODO Initialize state, etc.
+  }
+  render() {
+    return <div>{this.props.text}</div>;
+  }
+}
+```
+
+* If we define a constructor method in our Class Component, we have to define the `super` method with `props` passed through it.
+* Side Note: Before React used ES2015 Classes, it used `React.createclass` function, if you ever need to use this antiquated method make sure you install a module called `create-react-class` Stateful components
+* One of the major reasons why you would choose to use a Class Component over a Function Component is to add and manage local or internal state to your component.
+* Second of the major reasons is to be able to use a Class Component’s lifecycle methods. What is state?
+* Props are data that are provided by the consumer or caller of the component.
+* Not meant to be changed by a component.
+* State is data that is `internal` to the component.
+* Intended to be updated or mutated. When to use state
+* _Only Use State when it is absolutely necessary_
+* If the data never changes, or if it’s needed through an entire application use props instead.
+* State is more often used when creating components that retrieve data from APIs or render forms.
+* The general rule of thumb: If a component doesn’t need to use state or lifecyle methods, it should be prioritized as a `function component`.
+* Functional:Stateless \|\| Class:Stateful Initializing state
+* Use a class constructor method to initialize `this.state` object. // Application Entry Point
+
+```text
+// ./src/index.js
+import React from 'react'
+import ReactDOM from 'react-dom';
+import RandomQuote from './RandomQuote';
+ReactDOM.render(
+  <React.StrictMode>
+    <RandomQuote />
+  </React.StrictMode>
+  document.getElementById('root');
+)
+```
+
+// Class Component: RandomQuote
+
+```text
+import React from "react";
+class RandomQuote extends React.Component {
+  constructor() {
+    super();
+    const quotes = [
+      "May the Force be with you.",
+      "There's no place like home.",
+      "I'm the king of the world!",
+      "My mama always said life was like a box of chocolates.",
+      "I'll be back.",
+    ];
+    this.state = {
+      quotes,
+      currentQuoteIndex: this.getRandomInt(quotes.length);
+    }
+  }
+  getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+  }
+  render() {
+    return (
+      <div>
+        <h2>Random Quote</h2>
+        <p>{this.state.quotes[this.state.currentQuoteIndex]}</p>
+      </div>
+    )
+  }
+}
+export default RandomQuote;
+```
+
+Updating State
+
+* Let’s say we want to update our state with a new quote.
+* We can set up event listeners in React similarly to how we did them before.
+* &lt;button type=”button” onClick={this.changeQuote}&gt; Change Quote &lt;/button&gt;
+* `onClick` is the event listener.
+* `{this.changeQuote}` is the event handler method.
+* Our Class Component File should now look like this with the new additions:
+
+```text
+import React from "react";
+class RandomQuote extends React.Component {
+  constructor() {
+    super();
+    const quotes = [
+      "May the Force be with you.",
+      "There's no place like home.",
+      "I'm the king of the world!",
+      "My mama always said life was like a box of chocolates.",
+      "I'll be back.",
+    ];
+    this.state = {
+      quotes,
+      currentQuoteIndex: this.getRandomInt(quotes.length);
+    }
+  }
+  changeQuote = () => {
+    const newIndex = this.getRandomInt(this.state.quotes.length);
+    // Setting the 'new state' of currentQuoteIndex state property
+    // to newly generated random index #.
+    this.setState({
+      currentQuoteIndex: newIndex;
+    })
+  }
+  getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+  }
+  render() {
+    return (
+      <div>
+        <h2>Random Quote</h2>
+        <p>{this.state.quotes[this.state.currentQuoteIndex]}</p>
+        <button type="button" onClick={this.changeQuote}>
+          Change Quote
+        </button>
+      </div>
+    )
+  }
+}
+export default RandomQuote;
+```
+
+Don’t modify state directly
+
+* It is important to `never` modify your state directly!
+* ALWAYS use `this.setState` method to update state.
+* This is because when you only use this.state to re-assign, no re-rendering will occur =&gt; leaving our component out of sync. Properly updating state from the previous state
+* In our current example, the way we have `changeQuote` set up leaves us with occasionally producing the same index twice in a row.
+* One solution is to design a loop but keep in mind that state updates are handled asynchronously in React \(your current value is not guaranteed to be the latest\)
+* A safe method is to pass an anonymous method to `this.setState` \(instead of an object literal\) Previous
+
+```text
+changeQuote = () => {
+    const newIndex = this.getRandomInt(this.state.quotes.length);
+    this.setState({
+      currentQuoteIndex: newIndex;
+    })
+  }
+```
+
+Passing w/ Anon Method
+
+```text
+changeQuote = () => {
+  this.setState((state, props) => {
+    const { quotes, currentQuoteIndex } = state;
+    let newIndex = -1;
+    do {
+      newIndex = this.getRandomInt(quote.length);
+    } while (newIndex === currentQuoteIndex);
+    return {
+      currentQuoteIndex: newIndex,
+    };
+  });
+};
+```
+
+Providing default values for props
+
+* In our current example, we pass in a static array of predefined quotes in our constructor.
+* The way it is set up right now leaves our list of quotes unchanged after initialization.
+* We can make quotes more dynamic by replacing our static array with a `props` argument passed into `super`.
+* constructor\(props\) { super\(props\); }
+* We can now move our quotes array to our application entry point and pass it in as a prop. // Application Entry Point
+
+```text
+// ./src/index.js
+import React from 'react'
+import ReactDOM from 'react-dom';
+import RandomQuote from './RandomQuote';
+// Re-assign our array here and pass it in as a prop in Render.
+const quotes = [
+      "May the Force be with you.",
+      "There's no place like home.",
+      "I'm the king of the world!",
+      "My mama always said life was like a box of chocolates.",
+      "I'll be back.",
+      "This way I can define more quotes",
+    ];
+ReactDOM.render(
+  <React.StrictMode>
+    <RandomQuote quotes={quotes}/>
+  </React.StrictMode>
+  document.getElementById('root');
+)
+```
+
+* One thing to note about this workaround is that the caller of the component _must_ set the quotes prop or the component will throw an error =&gt; so use `defaultProps`!
+
+```text
+// At the bottom of RandomQuote.js...
+RandomQuote.defaultProps = {
+  quotes: [
+    "May the Force be with you.",
+    "There's no place like home.",
+    "I'm the king of the world!",
+    "My mama always said life was like a box of chocolates.",
+    "I'll be back.",
+    "This way I can define more quotes",
+  ],
+};
+```
+
+* A good safety net in case the consumer/caller doesn’t provide a value for the quotes array.
+* We can even remove it from our index.js now and an error will not be thrown.
+
+#### Handling Events <a id="9171"></a>
+
+* To add an event listener to an element, just define a method to handle the event and associate that method with the element event you are listening for. Example
+
+```text
+import React from "react";
+class AlertButton extends React.Component {
+  showAlert = () => {
+    window.alert("Button Clicked!");
+  };
+  render() {
+    return (
+      <button type="button" onClick={this.showAlert}>
+        Submit
+      </button>
+    );
+  }
+}
+```
+
+* Note that when refering the handler method in onClick we’re not invoking showAlert simply just passing a reference. Preventing default behavior
+* HTML Elements in the browser often have a lot of default behavior.
+* I.E. Clicking on an `<a>` element navigates so a resource denoted by `<href>` property.
+* Here is an example of where using `e.preventDefault()` could come in handy.
+
+```text
+import React from "react";
+class NoDefaultSubmitForm extends React.Component {
+  submitForm = (e) => {
+    e.preventDefault();
+    window.alert("Handling form submission...");
+  };
+  render() {
+    return (
+    <form onSubmit={this.submitForm}>
+      <button>Submit</button>
+    </form>;
+    )}
+}
+```
+
+* The button contained within the form will end up refreshing the page before `this.submitForm` method can be completed.
+* We can stick an `e.preventDefault()` into the actual method to get around this problem.
+* `e` : Parameter that references a `Synthetic Event` object type. Using `this` in event handlers
+
+```text
+// ./src/AlertButton.js
+import React from "react";
+class AlertButton extends React.Component {
+  showAlert = () => {
+    window.alert("Button clicked!");
+    console.log(this);
+  };
+  render() {
+    return (
+      <button type="button" onClick={this.showAlert}>
+        Click Me
+      </button>
+    );
+  }
+}
+export default AlertButton;
+```
+
+* When we console log `this` we see the AlertButton object.
+* If we were to write the showAlert method with a regular class method like:
+
+```text
+showAlert() {
+  console.log(this);
+}
+```
+
+* We would get `undefined` =&gt; remember that fat arrow binds to the current context! Reviewing class methods and the `this` keyword
+* Let’s refresh on binding.
+
+```text
+class Boyfriend {
+  constructor() {
+    this.name = "Momato Riruru";
+  }
+  displayName() {
+    console.log(this.name);
+  }
+}
+const Ming = new Boyfriend();
+Ming.displayName(); // => Momato Riruru
+const displayAgain = Ming.displayName;
+displayAgain(); // => Result in a Type Error: Cannot read property 'name' of undefined.
+```
+
+* The first time we use our `displayMethod` call, it is called directly on the instance of the boyfriend class, which is why `Momato Riruru` was printed out.
+* The second time it was called, the ref of the method is stored as a variable and method is called on that variable instead of the instance; resulting in a type error \(it has lost it’s context\)
+* Remember we can use the `bind` method to rebind context!
+* We can refactor to get the second call working like this:
+* const displayAgain = Ming.displayName.bind\(Ming\); displayAgain\(\); // =&gt; Now Momato Riruru will be printed out.
+* To continue using function declarations vs fat arrow we can assign context in a constructor within a class component.
+
+```text
+import React from "react";
+class AlertButton extends React.Component {
+  constructor() {
+    super();
+    this.showAlert = this.showAlert.bind(this); // binding context
+  }
+  showAlert() {
+    console.log(this);
+  }
+  render() {
+    return (
+      <button type="button" onClick={this.showAlert}>
+        Submit
+      </button>
+    );
+  }
+}
+export default AlertButton;
+```
+
+* `Experimental Syntax` : Syntax that has been proposed to add to ECMAScript but hasn't officially been added to the language specification yet.
+* It’s good to pick one approach and use it consistently, either:
+
+1. Class Properties & Arrow Functions
+2. Bind Method & This Keyword The `SyntheticEvent` object
+
+* Synthetic Event Objects: Cross Browser wrappeds around the browser’s native event.
+* Includes the use of stopPropagation\(\) and preventDefault\(\);
+* Attributes of the Synthetic Event Object:Attributesboolean bubblesboolean cancelableDOMEventTarget currentTargetboolean defaultPreventednumber eventPhaseboolean isTrustedDOMEvent nativeEventvoid preventDefault\(\)boolean isDefaultPrevented\(\)void stopPropagation\(\)boolean isPropagationStopped\(\)void persist\(\)DOMEventTarget targetnumber timeStampstring type
+* `nativeEvent` : property defined in a synthetic event object that gives you access to the underlying native browser event \(rarely used!\)
+
+#### Forms in React <a id="593c"></a>
+
+_Exercise being done in a separate file_ Random Notes
+
+* `onChange` : detects when a value of an input element changes.
+* Assigning `onChange` to our input fields makes our component's state update in real time during user input.
+* Dont forget to add `preventDefault` onto form submissions to deal with the default behavior of the browser refreshing the page!
+* `submittedOn: new Date(),` Can be added to a form, most likely will persist into a DB.
+* Controlled Components
+* We use the `onChange` event handlers on form fields to keep our component's state as the `"one source of truth"`
+* Adding an `onChange` event handler to every single input can massively bloat your code.
+* Try assiging it to it’s own method to apply everywhere.
+* `textarea` is handled differently in react: it takes in a value property to handle what the inner text will be.
+
+```text
+// ./src/ContactUs.js
+import React from "react";
+class ContactUs extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      name: "",
+      email: "",
+      phone: "",
+      phoneType: "",
+      comments: "",
+      validationErrors: [],
+    };
+  }
+  onChange = (e) => {
+    const { name, value } = e.target;
+    this.setState({ [name]: value });
+  };
+  // Vanilla JS Function for validating inputs
+  validate(name, email) {
+    const validationErrors = [];
+    if (!name) {
+      validationErrors.push("Please provide a Name");
+    }
+    if (!email) {
+      validationErrors.push("Please provide an Email");
+    }
+    return validationErrors;
+  }
+  onSubmit = (e) => {
+    // Prevent the default form behavior
+    // so the page doesn't reload.
+    e.preventDefault();
+    // Retrieve the contact us information from state.
+    const { name, email, phone, phoneType, comments } = this.state;
+    // Get Validation Errors - proceeding destructuring values from this.state.
+    const validationErrors = this.validate(name, email);
+    // If we have errors...
+    if (validationErrors.length > 0) {
+      this.setState({ validationErrors });
+    } else {
+      // Proceed normally
+      // Create a new object for the contact us information.
+      const contactUsInformation = {
+        name,
+        email,
+        phone,
+        phoneType,
+        comments,
+        submittedOn: new Date(),
+      };
+      console.log(contactUsInformation);
+      // Reset the form state.
+      this.setState({
+        name: "",
+        email: "",
+        phone: "",
+        phoneType: "",
+        comments: "",
+        validationErrors: [],
+      });
+    }
+  };
+  render() {
+    const { name, email, phone, phoneType, comments, validationErrors } =
+      this.state;
+    return (
+      <div>
+        <h2>Contact Us</h2>
+        {validationErrors.length > 0 && (
+          <div>
+            The following errors were found:
+            <ul>
+              {validationErrors.map((error) => (
+                <li key={error}>{error}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+        <form onSubmit={this.onSubmit}>
+          <div>
+            <label htmlFor="name">Name:</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              onChange={this.onChange}
+              value={name}
+            />
+          </div>
+          <div>
+            <label htmlFor="email">Email:</label>
+            <input
+              id="email"
+              name="email"
+              type="text"
+              onChange={this.onChange}
+              value={email}
+            />
+          </div>
+          <div>
+            <label htmlFor="phone">Phone:</label>
+            <input
+              id="phone"
+              name="phone"
+              type="text"
+              onChange={this.onChange}
+              value={phone}
+            />
+            <select name="phoneType" onChange={this.onChange} value={phoneType}>
+              <option value="">Select a phone type...</option>
+              {this.props.phoneTypes.map((phoneType) => (
+                <option key={phoneType}>{phoneType}</option>
+              ))}
+            </select>
+          </div>
+          <div>
+            <label htmlFor="comments">Comments:</label>
+            <textarea
+              id="comments"
+              name="comments"
+              onChange={this.onChange}
+              value={comments}
+            />
+          </div>
+          <div>
+            <button>Submit</button>
+          </div>
+        </form>
+      </div>
+    );
+  }
+}
+ContactUs.defaultProps = {
+  phoneTypes: ["Home", "Work", "Mobile"],
+};
+export default ContactUs;
+```
+
+* We can use validation libraries like `validate` to make our validation functions more complex.
+
+```text
+import isEmail from "validator/es/lib/isEmail";
+  validate(name, email) {
+    const validationErrors = [];
+    if (!name) {
+      validationErrors.push("Please provide a Name");
+    }
+    if (!email) {
+      validationErrors.push("Please provide an Email");
+    } else if (!isEmail(email)) {
+      validationErrors.push("Please provide a valid Email");
+    }
+    return validationErrors;
+  }
+```
+
+Note About Client-side vs server-side validation
+
+* Server-side validation is not optional.
+* Tech-savvy users can manipulate client-side validations.
+* Sometimes the ‘best approach’ is to skip implementing validations on the client-side and rely completely on the server-side validation.
+
+#### Component Lifecycle <a id="4d46"></a>
+
+![](https://cdn-images-1.medium.com/max/800/0*c24XQBvqBBg0Eztz)
+
+* Component Lifecycle is simply a way of describing the key moments in the lifetime of a component.
+
+1. Loading \(Mounting\)
+2. Updating
+3. Unloading \(Unmounting\) The lifecycle of a React component
+
+* Each `Class Component` has several `lifecycle methods` that you can add to run code at specific times.
+* `componentDidMount` : Method called after your component has been added to the component tree.
+* `componentDidUpdate` : Method called after your component has been updated.
+* `componentWillUnmount` : Method called just before your component is removed from the component tree.
+* `Mounting`
+
+1. `constructor` method is called
+2. `render` method is called
+3. React updates the `DOM`
+4. `componentDidMount` is called
+
+* `Updating`
+* When component receives new `props`
+
+1. `render` method is called
+2. React updates the `DOM`
+3. `componentDidUpdate` is called
+
+* When `setState` is called
+
+1. `render` method is called
+2. React updates the `DOM`
+3. `componentDidUpdate` is called
+
+* `Unmounting`
+* The moment before a class component is removed from the component tree:
+* `componentDidMount` will be called. Avoiding the legacy lifecycle methods
+* Occasionally you will encounter some deprecated lifecycle methods:
+* UNSAFE\_componentWillMount
+* UNSAFE\_componentWillReceiveProps
+* UNSAFE\_componentWillUpdate
+* Just know they will be removed soon from React’s API, peace. Using the class component lifecycle methods _Exercise done in sep. directory_
+* Assorted Notes:
+* Common Use for `componentDidMount` lifecycle method is for fetching data from an API.
+
+—
+
+#### Notes <a id="bd96"></a>
+
+#### React Context <a id="209c"></a>
+
+* You can use `React Context` to pass data through a component tree without having to manually thread props.
+* Convenient way to share & update `global data`. Creating a Context
+
+```text
+// PupContext.js
+import { createContext } from "react";
+const PupContext = createContext();
+export default PupContext;
+```
+
+* We use `React.createContext` to create context.
+* Keep in mind if you invoke this method with aruguments, those arguments will be set as default context. Adding a Provider to the App component
+* In order to pass context over to child components we need to wrap them in a provider component.
+* The provider component takes in a value property that points to the information that needs to be passed to the children.
+
+```text
+<MyContext.Provider value={/* some value */}>
+  <ChildComponent />
+</MyContext.Provider>
+```
+
+Setting up a Consumer
+
+```text
+<MyContext.Consumer>
+  {(value) => <Component value={value} />}
+</MyContext.Consumer>
+```
+
+* Keep in mind that `Context.Consumer` expects a function as a child.
+* The function has a value prop passed in from `Context.Provider`
+
+#### Notes <a id="e985"></a>
+
+#### Redux Explained <a id="05b8"></a>
+
+* JS Framework for managing the frontend state of a web application.
+* Gives us ability to store information in an organized manner in a web app and quickly retrieve that information from anywhere in the app.
+* `Redux`
+* Client Side Data Management
+* Controls “Frontend State”
+* NOT Your Database
+* NOT Component State
+* Just used for managing Data
+
+![](https://cdn-images-1.medium.com/max/800/0*N7KFfhOZZ7UrY8s4)
+
+* Visual of how an app without React manages it’s data.
+* A lot of prop threading happening.
+* Data stored in a sep. location — `global data`. The Anatomy of Redux
+* `Store`
+* Holds the Frontend State
+* Provides an API for the Frontend State
+* `Action`
+* POJOs
+* Outline Changes to Frontend State
+* `Reducers`
+* Functions
+* Make Changes to Frontend State Where did Redux come from?
+* There are three central philosophies of Redux:
+
+1. `A Single Source of Truth` : state is stored in a POJO
+2. `State is Read Only` : State is immutable, modified by dispatching actions.
+3. `Changes are Made with Pure Functions` : Reducers that receive the actions and return updated state are pure functions of the old state and action. When is it appropriate to use Redux?
+
+* When doing a project with simpler global state requirements, it may be better to choose React’s Context API over Redux.
+* Redux offers more flexibility and support for middleware along with richer developer tools. Vocabulary
+* `State`
+* _Redux is a State Manager_
+* State is all the information stored by that program at a particular point in time.
+* Redux’s main job is to store the state and make it directly available to your entire app.
+* `Store`
+* _Redux stores state in a single store_.
+* Redux store is a single JS object with a couple of methods \(not a class!\)
+* Methods include: `getState`, `dispatch(action)`, and `subscribe(listener)`
+* `Actions`
+* _Redux store is updated by dispatching actions_
+* Action is just a POJO that includes a mandatory `type` property.
+* Contain info to update the store.
+* We dispatch actions in response to User actions or AJAX requests.
+* `Pure Functions`
+* _Redux Reducers are Pure Functions_
+* Functions are pure when their behavior depends only on it’s arguments as has no side effects.
+* Simply takes in an argument and outputs a value.
+* `Reducer`
+* _Redux handles actions using reducers_
+* A function that is called each time an action is dispatched.
+* Takes in an `action` and `current state`
+* Required to be pure functions so their behavior is predictable.
+* `Middleware`
+* _Customize response to dispatch actions by using Middleware_
+* Middleware is an optional component of Redus that allows custom responses to dispatched actions.
+* Most common use is to dispatch async requests to a server.
+* `Time Traveling Dev Tools`
+* _Redux can time travel wow_
+* Time travel refers to Redux’s ability to revert to a previous state because reducers are all pure functions.
+* `Thunks`
+* _Convenient format for taking async actions in Redux_
+* General concept in CS referring to a function who’s primary purpose is to call another function.
+* Most commonly used to make async API requests.
+
+#### Flux and Redux <a id="40b9"></a>
+
+What is Flux?
+
+* Front-end application architecutre.
+* A pattern in which to structure an application.
+* Unidirectional Data Flow — offers more predictability.
+* `Actions` : Begins the data flow of data, simple object that contains a type; type indicates the type of change to be performed.
+* `Dispatcher` : Mechanism for distributing actions to the store.
+* `Store` : The entire state of the application, responsible for updating the state of your app.
+* `View` : Unit of code that's responsible for rendering the user interface. Used to re-render the application when actions and changes occur.
+
+![](https://cdn-images-1.medium.com/max/800/0*ywV6dO4a4QcGJxK5)
+
+* Redux
+
+![](https://cdn-images-1.medium.com/max/800/0*Nd73GjTY1PVQtjtQ)
+
+* Library that facilitates the implementation of Flux.
+* Redux Three Principles
+* `Single Source of Truth`
+* `State is Read-Only`
+* `Only Pure Functions Change State`
+
+#### Store <a id="a5be"></a>
+
+* Simply an object that holds the application state wrapped in an API.
+* `Three methods`:
+* `getState()` : Returns the store's current state.
+* `dispatch(action)` : Passes an action into the store's reducer to tell it what info to update.
+* `subscribe(callback)` : Registers a callback to be triggered whenever the store updates. Updating the Store
+
+```text
+store.dispatch(action);
+// Add Orange Action
+const addOrange = {
+  type: "ADD_FRUIT",
+  fruit: "orange",
+};
+// Reducer for Orange Action
+const fruitReducer = (state = [], action) => {
+  switch (action.type) {
+    case "ADD_FRUIT":
+      return [...state, action.fruit];
+    default:
+      return state;
+  }
+};
+// Run the Dispatch
+console.log(store.getState()); // []
+store.dispatch(addOrange);
+console.log(store.getState()); // [ 'orange' ]
+```
+
+Subscribing to the store
+
+* Whenever a store process a dispatch\(\), it triggers all its subscribers.
+* `Subscribers` : callbacks that can be added to the store via subscribe\(\).
+
+```text
+const display = () => {
+  console.log(store.getState());
+};
+const unsubscribeDisplay = store.subscribe(display);
+store.dispatch(addOrange); // [ 'orange', 'orange' ]
+// display will no longer be invoked after store.dispatch()
+unsubscribeDisplay();
+store.dispatch(addOrange); // no output
+```
+
+Reviewing a simple example
+
+```text
+// app.js
+const { createStore } = require("redux");
+// Define the store's reducer.
+const fruitReducer = (state = [], action) => {
+  switch (action.type) {
+    case "ADD_FRUIT":
+      return [...state, action.fruit];
+    default:
+      return state;
+  }
+};
+// Create the store.
+const store = createStore(fruitReducer);
+// Define an 'ADD_FRUIT' action for adding an orange to the store.
+const addOrange = {
+  type: "ADD_FRUIT",
+  fruit: "orange",
+};
+// Log to the console the store's state before and after
+// dispatching the 'ADD_FRUIT' action.
+console.log(store.getState()); // []
+store.dispatch(addOrange);
+console.log(store.getState()); // [ 'orange' ]
+// Define and register a callback to listen for store updates
+// and console log the store's state.
+const display = () => {
+  console.log(store.getState());
+};
+const unsubscribeDisplay = store.subscribe(display);
+// Dispatch the 'ADD_FRUIT' action. This time the `display` callback
+// will be called by the store when its state is updated.
+store.dispatch(addOrange); // [ 'orange', 'orange' ]
+// Unsubscribe the `display` callback to stop listening for store updates.
+unsubscribeDisplay();
+// Dispatch the 'ADD_FRUIT' action one more time
+// to confirm that the `display` method won't be called
+// when the store state is updated.
+store.dispatch(addOrange); // no output
+```
+
+#### Reducers <a id="22c1"></a>
+
+* Reducer function receives the current `state` and `action`, updates the state appropriately based on the `action.type` and returns the following state.
+* You can bundles different action types and ensuing logic by using a switch/case statement.
+
+```text
+const fruitReducer = (state = [], action) => {
+  switch (action.type) {
+    case "ADD_FRUIT":
+      return [...state, action.fruit];
+    case "ADD_FRUITS":
+      return [...state, ...action.fruits];
+    case "SELL_FRUIT":
+      const index = state.indexOf(action.fruit);
+      if (index !== -1) {
+        // remove first instance of action.fruit
+        return [...state.slice(0, index), ...state.slice(index + 1)];
+      }
+      return state; // if action.fruit is not in state, return previous state
+    case "SELL_OUT":
+      return [];
+    default:
+      return state;
+  }
+};
+```
+
+Reviewing how Array\#slice works
+
+```text
+const fruits = ["apple", "apple", "orange", "banana", "watermelon"];
+// The index of the 'orange' element is 2.
+const index = fruits.indexOf("orange");
+// `...fruits.slice(0, index)` returns the array ['apple', 'apple']
+// `...fruits.slice(index + 1)` returns the array ['banana', 'watermelon']
+// The spread syntax combines the two array slices into the array
+// ['apple', 'apple', 'banana', 'watermelon']
+const newFruits = [...fruits.slice(0, index), ...fruits.slice(index + 1)];
+```
+
+* Approach that can be used to remove an element without mutating the original array. Avoiding state mutations
+* Your reducer must always return a new object if the state changes. GOOD
+
+```text
+const goodReducer = (state = { count: 0 }, action) => {
+  switch (action.type) {
+    case "INCREMENT_COUNTER":
+      const nextState = Object.assign({}, state);
+      nextState.count++;
+      return nextState;
+    default:
+      return state;
+  }
+};
+```
+
+BAD
+
+```text
+const badReducer = (state = { count: 0 }, action) => {
+  switch (action.type) {
+    case "INCREMENT_COUNTER":
+      state.count++;
+      return state;
+    default:
+      return state;
+  }
+};
+```
+
+#### Actions <a id="ad53"></a>
+
+* Actions are the only way to trigger changes to the store’s state. Using action creators
+
+```text
+const addOrange = {
+  type: "ADD_FRUIT",
+  fruit: "orange",
+};
+store.dispatch(addOrange);
+console.log(store.getState()); // [ 'orange' ]
+```
+
+* fruit is the `payload key` and orange is the `state data`
+* `Action Creators` : Functions created from extrapolating the creation of an action object.
+
+```text
+const addFruit = (fruit) => ({
+  type: "ADD_FRUIT",
+  fruit,
+});
+```
+
+* Use parenthesis for implicit return value.
+* We can now add whatever fruit we’d like.
+
+```text
+store.dispatch(addFruit("apple"));
+store.dispatch(addFruit("strawberry"));
+store.dispatch(addFruit("lychee"));
+console.log(store.getState()); // [ 'orange', 'apple', 'strawberry', 'lychee' ]
+```
+
+Preventing typos in action type string literals
+
+```text
+const ADD_FRUIT = "ADD_FRUIT";
+const ADD_FRUITS = "ADD_FRUITS";
+const SELL_FRUIT = "SELL_FRUIT";
+const SELL_OUT = "SELL_OUT";
+const addFruit = (fruit) => ({
+  type: ADD_FRUIT,
+  fruit,
+});
+const addFruits = (fruits) => ({
+  type: ADD_FRUITS,
+  fruits,
+});
+const sellFruit = (fruit) => ({
+  type: SELL_FRUIT,
+  fruit,
+});
+const sellOut = () => ({
+  type: SELL_OUT,
+});
+```
+
+* Using constant variables helps reduce simple typos in a reducer’s case clauses.
+
+#### Debugging Arrow Functions <a id="04b5"></a>
+
+* It is important to learn how to use debugger statements with arrow functions to effectively debug Redux cycle. Understanding the limitations of implicit return values
+
+```text
+const addFruit = (fruit) => {
+  return {
+    type: "ADD_FRUIT",
+    fruit,
+  };
+};
+const addFruit = (fruit) => {
+  debugger;
+  return {
+    type: "ADD_FRUIT",
+    fruit,
+  };
+};
+```
+
+* You must use explicit return statement arrow function to use a debugger.
+
+#### React Router Introduction <a id="1b66"></a>
+
+Now that you know how to render components in a React app, how do you handle rendering different components for different website pages? React Router is the answer!
+
+Think of how you have created server-side routes in Express. Take the following URL and server-side route. Notice how the `/users/:userId` path corresponds with the `http://localhost:3000/users/2` URL to render a specific HTML page.
+
+```text
+// http://localhost:3000/users/2
+app.get('/users/:userId', (req, res) => {
+  res.render('userProfile.pug');
+});
+```
+
+In the default React setup, you lose the ability to create routes in the same manner as in Express. This is what React Router aims to solve!
+
+[React Router](https://github.com/ReactTraining/react-router) is a frontend routing library that allows you to control which components to display using the browser location. A user can also copy and paste a URL and email it to a friend or link to it from their own website.
+
+When you finish this article, you should be able to use the following from the `react-router-dom` library:
+
+* `<BrowserRouter>` to provide your application access to the `react-router-dom` library; and
+* `<Route>` to connect specific URL paths to specific components you want rendered; and
+* `<Switch>` to wrap several `Route` elements, rendering only one even if several match the current URL; and
+* React Router’s `match` prop to access route path parameters.
+
+#### Getting started with routing <a id="e166"></a>
+
+Since you are writing single page apps, you don’t want to refresh the page each time you change the browser location. Instead, you want to update the browser location and your app’s response using JavaScript. This is known as client-side routing. You are using React, so you will use React Router to do this.
+
+Create a simple react project template:
+
+```text
+npx create-react-app my-app --template @appacademy/simple
+```
+
+Then install React Router:
+
+```text
+npm install --save react-router-dom@^5.1.2
+```
+
+Now import `BrowserRouter` from `react-router-dom` in your entry file:
+
+```text
+import { BrowserRouter } from 'react-router-dom`;
+```
+
+#### BrowserRouter <a id="9870"></a>
+
+`BrowserRouter` is the primary component of the router that wraps your route hierarchy. It creates a React context that passes routing information down to all its descendent components. For example, if you want to give `<App>` and all its children components access to React Router, you would wrap `<App>` like so:
+
+```text
+// ./src/index.js
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
+import App from './App';
+```
+
+```text
+const Root = () => {
+  return (
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  );
+};
+```
+
+```text
+ReactDOM.render(
+  <React.StrictMode>
+    <Root />
+  </React.StrictMode>,
+  document.getElementById('root'),
+);
+```
+
+Now you can route the rendering of certain components to certain URLs \(i.e [`https://www.website.com/profile`](https://www.website.com/profile%29.)[\).](https://www.website.com/profile%29.)
+
+#### HashRouter <a id="8fd1"></a>
+
+Alternatively, you could import and use `HashRouter` from `react-router-dom`. Links for applications that use `<HashRouter>` would look like `https://www.website.com/#/profile` \(with an `#` between the domain and path\).
+
+You’ll focus on using the `<BrowserRouter>`.
+
+#### Creating frontend routes <a id="2387"></a>
+
+React Router helps your React application render specific components based on the URL. The React Router component you’ll use most often is `<Route>`.
+
+The `<Route>` component is used to wrap another component, causing that component to only be rendered if a certain URL is matched. The behavior of the `<Route>` component is controlled by the following props: `path`, `component`, `exact`, and `render` \(optional\).
+
+Create a simple `Users` component that returns `<h1>This is the users index!</h1>`. Now let's refactor your `index.js` file so that you can create your routes within the component:
+
+```text
+// ./src/index.js
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
+import App from './App';
+import Users from './Users';
+```
+
+```text
+const Root = () => {
+  return (
+    <BrowserRouter>
+      <div>
+        {/* TODO: Routes */}
+      </div>
+    </BrowserRouter>
+  );
+};
+```
+
+```text
+ReactDOM.render(
+  <React.StrictMode>
+    <Root />
+  </React.StrictMode>,
+  document.getElementById('root'),
+);
+```
+
+Note that `BrowserRouter` can only have a single child component, so the snippet above wraps all routes within parent a `<div>` element. Now let's create some routes!
+
+#### component <a id="b4a5"></a>
+
+Begin with the `component` prop. This prop takes a reference to the component to be rendered. Let's render your `App` component:
+
+```text
+const Root = () => {
+  return (
+    <BrowserRouter>
+      <div>
+        <Route component={App} />
+      </div>
+    </BrowserRouter>
+  );
+};
+```
+
+Now you’ll need to connect a path to the component!
+
+#### path <a id="57c2"></a>
+
+The wrapped component will only be rendered when the path is matched. The path matches the URL when it matches some initial portion of the URL. For example, a path of `/` would match both of the following URLs: `/` and `/users`. \(Because `/users` begins with a `/` it matches the path `/`\)
+
+```text
+<Route path='/' component={App} />
+<Route path='/users' component={Users} />
+```
+
+Take a moment to navigate to `http://localhost:3000/users` to see how both the `App` component and `Users` component are rendering.
+
+#### exact <a id="85f8"></a>
+
+If this `exact` flag is set, the path will only match when it exactly matches the URL. Then browsing to the `/users` path would no longer match `/` and only the `Users` component will be rendered \(instead of both the `App` component and `Users` component\).
+
+```text
+<Route exact path='/' component={App} />
+<Route path='/users' component={Users} />
+```
+
+#### render <a id="f550"></a>
+
+This is an optional prop that takes in a function to be called. The function will be called when the path matches. The function’s return value is rendered. You could also define a functional component inside the `component` prop, but this results in extra, unnecessary work for React. The `render` prop is preferred for inline rendering of simple functional components.
+
+The difference between using `component` and `render` is that `component` returns new JSX to be re-mounted every time the route renders, while `render` simply returns to JSX what will be mounted once and re-rendered. For any given route, you should only use either the `component` prop, or the `render` prop. If both are supplied, only the `component` prop will be used.
+
+```text
+// This inline rendering will work, but is unnecessarily slow.
+<Route path="/hello" component={() => <h1>Hello!</h1>} />
+```
+
+```text
+// This is the preferred way for inline rendering.
+<Route path="/hello" render={() => <h1>Hello!</h1>} />
+```
+
+It can be helpful to use `render` instead of `component` in your `<Route>` when you need to pass props into the rendered component. For example, imagine that you needed to pass the `users` object as a prop to your `Users` component. Then you could pass in props from `Root` to `Users` by returning the `Users` component like so:
+
+```text
+// `users` to be passed as a prop:
+const users = {
+  1: { name: 'Andrew' },
+  2: { name: 'Raymond' }
+};
+```
+
+```text
+<Route path="/users" render={() => <Users users={users} />} />
+```
+
+As a reminder, `BrowserRouter` can only have a single child component. That's why you have wrapped all your routes within parent a `<div>` element.
+
+```text
+const Root = () => {
+  const users = {
+    1: { name: 'Andrew' },
+    2: { name: 'Raymond' }
+  };
+```
+
+```text
+  return (
+    <BrowserRouter>
+      <div>
+        <h1>Hi, I'm Root!</h1>
+        <Route exact path="/" component={App} />
+        <Route path="/hello" render={() => <h1>Hello!</h1>} />
+        <Route path="/users" render={() => <Users users={users} />} />
+      </div>
+    </BrowserRouter>
+  );
+};
+```
+
+With this `Root` component, you will always render the `<h1>Hi, I'm Root!</h1>`, regardless of the path. Because of the first `<Route>`, you will only render the `App` component if the path exactly matches `/`. Because of the second `<Route>`, you will only render the `Users` component if the path matches `/users`.
+
+#### Route path params <a id="adca"></a>
+
+A component’s props can also hold information about a URL’s parameters. The router will match route segments starting at `:` up to the next `/`, `?`, or `#`. Those matched values are then passed to components via their props. Such segments are _wildcard_ values that make up your route parameters.
+
+For example, take the route below:
+
+```text
+<Route path="/users/:userId"
+       render={(props) => <Profile users={users} {...props} />} />
+```
+
+The router would break down the full `/users/:userId/photos` path to two parts: `/users`, `:userId`.
+
+The `Profile` component's props would have access to the `:userId` part of the `http://localhost:3000/users/:userId/photos` URL through the `props` with router parameter information. You would access the the `match` prop's parameters \(`props.match.params`\). If you are using the `render` prop of the `Route` component, make sure to spread the props back into the component if you want it to know about the "match" parameters.
+
+```text
+// Route's `render` prop allows you to pass the `users`
+// prop and spread the router `props`.
+render={(props) => <Profile users={users} {...props} />}
+```
+
+The `params` object would then have a property of `userId` which would hold the value of the `:userId` _wildcard_ value. Let's render the `userId` parameter in a user profile component. Take a moment to create a `Profile.js` file with the following code:
+
+```text
+// ./src/Profile.js
+import React from "react";
+```
+
+```text
+const Profile = (props) => (
+  <div>
+    The user's id is {props.match.params.userId}.
+  </div>
+);
+```
+
+```text
+export default Profile;
+```
+
+Notice how it uses the `match` prop to access the `:userId` parameter from the URL. You can use this wildcard to make and AJAX call to fetch the user information from the database and render the return data in the `Profile` component. Recall that your `Profile` component was rendered at the path `/users/:userId`. Thus you can use your `userId` parameters from `match.params` to fetch a specific user:
+
+```text
+// ./src/Profile.js
+import React from "react";
+```
+
+```text
+const Profile = ({ users, match: { params } }) => {
+```
+
+```text
+  // In a real-world scenario, you'd make a call to an API to fetch the user,
+  // instead of passing down and keying into a `users` prop.
+  const user = users[params.userId];
+```
+
+```text
+  return (
+    <div>
+      The user's id is {params.userId} and the user's name is {user.name}.
+    </div>
+  );
+};
+```
+
+```text
+export default Profile;
+```
+
+#### Match <a id="c94c"></a>
+
+Now that you’ve seen your React Router’s `match` prop in action, let's go over more about [route props](https://reacttraining.com/react-router/web/api/Route/route-props)! React Router passes information to the components as route props, accessible to all components with access to the React Router. The three props it makes available are `location`, `match` and `history`. You've learned about `props.match.params`, but now let's review the other properties of the `match` prop!
+
+This is an object that contains important information about how the current URL matches the route path. Here are some of the more useful keys on the `match` object:
+
+* `isExact`: a boolean that tells you whether or not the URL exactly matches the path
+* `url`: the current URL
+* `path`: the route path it matched against \(without wildcards filled in\)
+* `params`: the matches for the individual wildcard segments, nested under their names
+
+When you use React Router, the browser `location` and `history` are a part of the state of your app. You can store information about which component should be displayed, which user profile you are currently viewing, or any other piece of state, in the browser location. You can then access that information from anywhere your Router props are passed to in your app.
+
+Now that you’ve learned about parameters and route props, let’s revisit your `Root` component to add an `exact` flag to your `/users` route so that it does not render with your `/users/:userId` route. Your component should look something like this:
+
+```text
+const Root = () => {
+  const users = {
+    1: { name: 'Andrew' },
+    2: { name: 'Raymond' }
+  };
+```
+
+```text
+  return (
+    <BrowserRouter>
+      <h1>Hi, I'm Root!</h1>
+      <div>
+        <Route exact path="/" component={App} />
+        <Route path="/hello" render={() => <h1>Hello!</h1>} />
+```
+
+```text
+        {/* Render the `Users` page if no ID is included. */}
+        <Route exact path="/users" render={() => <Users users={users} />} />
+```
+
+```text
+        {/* Otherwise, render the profile page for that userId. */}
+        <Route path="/users/:userId" component={(props) => <Profile users={users} {...props} />} />
+      </div>
+    </BrowserRouter>
+  );
+};
+```
+
+#### What you learned <a id="1774"></a>
+
+In this article, you learned how to:
+
+* Use components from the React Router library; and
+* Create routes to render specific components; and
+* Manage the order of rendered routes; and
+* Use the `exact` flag to ensure that a specific path renders a specific component; and
+* Use the React Router `match` prop to access Router params.
+
+#### React Router Navigation <a id="b260"></a>
+
+Now that you know how to create front-end routes with React Router, you’ll need to implement a way for your users to navigate the routes! This is what using React Router’s `Link`, `NavLink`, `Redirect`, and `history` prop can help you do.
+
+In this article, you’ll be working off of the demo project you built in the React Router Intro reading. When you finish this article, you should be able to use the following components from the `react-router-dom` library:
+
+* `<Link>` or `<NavLink>` to create links with absolute paths to routes in your application \(like "/users/1"\); and,
+* `<Redirect>` to redirect a user to another path \(i.e. a login page when the user is not logged in\); and
+* React Router’s `history` prop to update a browser's URL programmatically.
+
+#### Adding links for navigation <a id="daf0"></a>
+
+React Router’s `<Link>` is one way to simplify navigation around your app. It issues an on-click navigation event to a route defined in your app's router. Using `<Link>` renders an anchor tag with a correctly set `href` attribute.
+
+#### Link <a id="7364"></a>
+
+To use it, update your imports from the `react-router-dom` package to include `Link`:
+
+```text
+import { BrowserRouter, Route, Link } from 'react-router-dom';
+```
+
+Note that `<Link>` can take two props: `to` and `onClick`.
+
+The `to` prop is a route location description that points to an absolute path, \(i.e. `/users`\). Add the following `Link` components in your `index.js` file above your routes:
+
+```text
+<Link to="/">App</Link>
+<Link to="/users">Users</Link>
+<Link to="/users/1">Andrew's Profile</Link>
+```
+
+The `onClick` prop is just like any other JSX click handler. You can write a function that takes in an `event` and handles it. Add the following `Link` before your routes and the following click handler function within your `Root` component:
+
+```text
+// Link with onClick prop
+<Link to="/" onClick={handleClick}>App with click handler</Link>
+```
+
+```text
+// Click handler function
+const handleClick = () => {
+  console.log('Thanks for clicking!')
+};
+```
+
+Now, test your routes and links! If you inspect the page, you’ll see that your links are now rendered as `<a>` elements. Notice that clicking the `App with click handler` link logs a message in your console while directing your browser to render the `App` component.
+
+#### NavLink <a id="4811"></a>
+
+The `<NavLink>` works just like a `<Link>`, but with a little extra functionality. It has the ability to add extra styling when the path it links to matches the current path. This makes it an ideal choice for a navigation bar, hence the name. This styling can be controlled by three extra props: `activeClassName`, `activeStyle`, and `exact`. To begin using `NavLink`, update your imports from the `react-router-dom` package:
+
+```text
+import { BrowserRouter, Route, NavLink } from 'react-router-dom';
+```
+
+The `activeClassName` prop of the `NavLink` component allows you to set a CSS class name for styling the `NavLink` when its route is active. By default, the `activeClassName` is already set to `active`. This means that you simply need to add an `.active` class to your CSS file to add active styling to your link. A `NavLink` will be active if its `to` prop path matches the current URL.
+
+Let’s change your “Users”, “Hello”, and “Andrew’s Profile” links to be different colors and have a larger font size when active.
+
+```text
+<NavLink to="/">App</NavLink>
+<NavLink activeClassName="red" to="/users">Users</NavLink>
+<NavLink activeClassName="blue" to="/hello">Hello</NavLink>
+<NavLink activeClassName="green" to="/users/1">Andrew's Profile</NavLink>
+<NavLink to="/" onClick={handleClick}>App with click handler</NavLink>
+```
+
+For example, this is what the rendered HTML `<a>` tag would look like when when the browser is navigated to the `/` path or the `/users` path:
+
+```text
+<!-- Navigated to the / path (the activeClassName
+     prop is set to active by default) -->
+<a href="/" class="active">App</a>
+```
+
+```text
+<!-- NOT navigated to the `/` path -->
+<a href="/">App</a>
+```
+
+```text
+<!-- Navigated to the /users path (the activeClassName
+     prop is manually set to red) -->
+<a href="/users" class="red">Users</a>
+```
+
+```text
+<!-- NOT navigated to the `/users` path -->
+<a href="/users">Users</a>
+```
+
+Import `NavLink` into your `index.js` file and take a moment to update all your `Link` elements to `NavLink` elements. Set an `activeClassName` prop to an `active` class. Add the following `.active` class to your `index.css` file:
+
+```text
+.active {
+  font-weight: bold;
+}
+```
+
+```text
+.red {
+  color: red;
+  font-size: 30px;
+}
+```
+
+```text
+.blue {
+  color: blue;
+  font-size: 30px;
+}
+```
+
+```text
+.green {
+  color: green;
+  font-size: 30px;
+}
+```
+
+Test your styled links! Notice how the `App` and `App with click handler` links are always bolded. This is because all of your links include the `/` path, meaning that the link to `/` will be active when browsing to `/users` and `/users/1` because of how `users` and `users/1` are both prefaced by a `/`.
+
+The `activeStyle` prop is a style object that will be applied inline to the `NavLink` when its `to` prop matches the current URL. Add the following `activeStyle` to your `App` link and comment out the `.active` class in your CSS file.
+
+```text
+<NavLink to="/" activeStyle={{ fontWeight: "bold" }}>App</NavLink>
+```
+
+The following html is rendered when at the `/` path:
+
+```text
+<a href="/" style="font-weight:bold;" class="active">App</a>
+```
+
+Notice how your `App with click handler` is not bolded anymore. This is because the default `active` class being applied does not have any CSS stylings set to the class. Uncomment your `.active` class in your CSS file to bring back bolding to this NavLink.
+
+The `exact` prop is a boolean that defaults to `false`. If set to `true`, then the `activeStyle` and `activeClassName` props will only be applied when the current URL exactly matches the `to` prop. Update your `App` and `App with click handler` links with an `exact` prop set. Just like in your routes, you can use the `exact` flag instead of `exact={true}`.
+
+```text
+<NavLink to="/" exact={true} activeStyle={{ fontWeight: "bold" }}>App</NavLink>
+<NavLink to="/" exact onClick={handleClick}>App with click handler</NavLink>
+```
+
+Now your `App` and `App with click handler` links will only be bolded when you have navigated precisely to the `/` path.
+
+#### Switching between routes <a id="b2b3"></a>
+
+You came across styling issues when the `/users` and `/users/1` paths matched the `/` path. Routing can have this issue as well. This is why you need to control the switching between routes.
+
+React Router’s `<Switch>` component allows you to only render one `<Route>` even if several match the current URL. You can nest as many `Route`s as you wish between the opening and closing `Switch` tags, but only the first one that matches the current URL will be rendered.
+
+This is particularly useful if you want a default component that will only render if none of our other routes match. View the example below. Without the Switch, `DefaultComponent` would always render. Since there isn't set a path in the `DefaultComponent` route, it will simply use the default path of `/`. Now the `DefaultComponent` will only render when neither of the preceding routes match.
+
+```text
+<Switch>
+  <Route path="some/url" component={SomeComponent} />
+  <Route path="some/other/url" component={OtherComponent} />
+  <Route component={DefaultComponent} />
+</Switch>
+```
+
+Import `Switch` from `react-router-dom` and add `<Switch>` tags around your routes to take care of ordering and switching between your routes! Begin by adding the following route to the bottom of your routes to render that a `404: Page not found` message:
+
+```text
+<Route render={() => <h1>404: Page not found</h1>} />
+```
+
+This is what your `Root` component should look like at this point:
+
+```text
+const Root = () => {
+  const users = [
+    { name: 'andrew' },
+    { name: 'raymond' }
+  ];
+```
+
+```text
+  const handleClick = () => {
+    console.log('Thanks for clicking!')
+  };
+```
+
+```text
+  return (
+    <BrowserRouter>
+      <h1>Hi, I'm Root!</h1>
+```
+
+```text
+      <div>
+        <NavLink to="/" exact={true} activeStyle={{ fontWeight: "bold" }}>App</NavLink>
+        <NavLink activeClassName="red" to="/users">Users</NavLink>
+        <NavLink activeClassName="blue" to="/hello">Hello</NavLink>
+        <NavLink activeClassName="green" to="/users/1">Andrew's Profile</NavLink>
+        <NavLink to="/" exact onClick={handleClick}>App with click handler</NavLink>
+```
+
+```text
+        <Switch>
+          <Route path="/users/:userId" component={(props) => <Profile users={users} {...props} />} />
+          <Route exact path="/users" render={() => <Users users={users} />} />
+          <Route path="/hello" render={() => <h1>Hello!</h1>} />
+          <Route exact path="/" component={App} />
+          <Route render={() => <h1>404: Page not found</h1>} />
+        </Switch>
+      </div>
+    </BrowserRouter>
+  );
+};
+```
+
+Now you have control over the precedence of rendered components! Try navigating to `http://localhost:3000/asdf` or any other route you have not defined. The `<h1>404: Page not found</h1>` JSX of the last `<Route>` will be rendered whenever the browser attempts to visit an undefined route.
+
