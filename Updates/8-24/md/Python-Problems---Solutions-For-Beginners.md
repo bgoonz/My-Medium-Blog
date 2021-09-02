@@ -165,16 +165,3 @@ For example, suppose the mice are positioned at `[1, 4, 9, 15]`, and the holes a
 <em>You should probably skip this one… seriously it’s just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
 
 ---
-
-### Level Up Coding
-
-Thanks for being a part of our community! <a href="https://www.youtube.com/channel/UC3v9kBR_ab4UHXXdknz8Fbg?sub_confirmation=1" class="markup--anchor markup--p-anchor">Subscribe to our YouTube channel</a> or join the <a href="https://skilled.dev/" class="markup--anchor markup--p-anchor"><strong>Skilled.dev coding interview course</strong></a>.
-
-<a href="https://skilled.dev" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://skilled.dev"><strong>Coding Interview Questions + Land Your Dev Job | Skilled.dev</strong><br />
-<em>Coding interview course taught in Python</em>skilled.dev</a><a href="https://skilled.dev" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
-
-By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on [August 21, 2021](https://medium.com/p/dd631e9c3a9f).
-
-<a href="https://medium.com/@bryanguner/beginner-python-problems-solutions-dd631e9c3a9f" class="p-canonical">Canonical link</a>
-
-Exported from [Medium](https://medium.com) on August 24, 2021.
