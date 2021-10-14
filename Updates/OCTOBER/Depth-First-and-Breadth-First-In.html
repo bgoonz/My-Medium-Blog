@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Depth-First and Breadth-First In JS</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Depth-First and Breadth-First In JS</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+are two classic traversal strategies that differ in the order nodes are hit.
+</section>
+<section data-field="body" class="e-content">
+<section name="3592" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="2a32" id="2a32" class="graf graf--h3 graf--leading graf--title">Depth-First and Breadth-First In JS</h3><h4 name="e69e" id="e69e" class="graf graf--h4 graf-after--h3 graf--subtitle">are two classic traversal strategies that differ in the order nodes are hit.</h4><figure name="7cde" id="7cde" class="graf graf--figure graf-after--h4"><img class="graf-image" data-image-id="0*0PsVCrmAbxw9h0-p.png" data-width="342" data-height="221" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/0*0PsVCrmAbxw9h0-p.png"><figcaption class="imageCaption">Example we will be using</figcaption></figure><p name="5091" id="5091" class="graf graf--p graf-after--figure">Like we are accustomed to, we can represent the tree programmatically with:</p><pre name="9a46" id="9a46" class="graf graf--pre graf-after--p">class TreeNode {<br>        constructor(val) {<br>            this.val = val;<br>            this.left = null;<br>            this.right = null;<br>        }<br>    }<br>    <br>    let a = new TreeNode(&#39;a&#39;);<br>    let b = new TreeNode(&#39;b&#39;);<br>    let c = new TreeNode(&#39;c&#39;);<br>    let d = new TreeNode(&#39;d&#39;);<br>    let e = new TreeNode(&#39;e&#39;);<br>    let f = new TreeNode(&#39;f&#39;);<br>    <br>    a.left = b;<br>    a.right = c;<br>    b.left = d;<br>    b.right = e;<br>    c.right = f;</pre><p name="f433" id="f433" class="graf graf--p graf-after--pre"><a href="https://gist.github.com/bgoonz/0a9a307a896aa5f56e43dd086b2a4457" data-href="https://gist.github.com/bgoonz/0a9a307a896aa5f56e43dd086b2a4457" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">https://gist.github.com/bgoonz/0a9a307a896aa5f56e43dd086b2a4457</a></p><h3 name="eb7b" id="eb7b" class="graf graf--h3 graf-after--p">Depth-First</h3><figure name="c09e" id="c09e" class="graf graf--figure graf--layoutOutsetLeft graf-after--h3"><img class="graf-image" data-image-id="0*I1o42aaViXOWQy4a.gif" data-width="350" data-height="350" src="https://cdn-images-1.medium.com/max/600/0*I1o42aaViXOWQy4a.gif"></figure><blockquote name="af08" id="af08" class="graf graf--pullquote graf-after--figure">To help verbalize Depth-First (DF), we’ll be using a few familial terms to describe the relative positions of the nodes. Think of the words you would use if viewing a family tree!</blockquote><figure name="8191" id="8191" class="graf graf--figure graf-after--pullquote"><img class="graf-image" data-image-id="0*0PsVCrmAbxw9h0-p.png" data-width="342" data-height="221" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/0*0PsVCrmAbxw9h0-p.png"><figcaption class="imageCaption">Example we will be using</figcaption></figure><h4 name="e163" id="e163" class="graf graf--h4 graf-after--figure"><strong class="markup--strong markup--h4-strong">examples</strong>:</h4><ul class="postList"><li name="c539" id="c539" class="graf graf--li graf-after--h4"><code class="markup--code markup--li-code">B</code> and <code class="markup--code markup--li-code">C</code> are siblings</li><li name="dcaf" id="dcaf" class="graf graf--li graf-after--li"><code class="markup--code markup--li-code">D</code> and <code class="markup--code markup--li-code">E</code> are descendants of <code class="markup--code markup--li-code">B</code></li><li name="7974" id="7974" class="graf graf--li graf-after--li"><code class="markup--code markup--li-code">B</code>, <code class="markup--code markup--li-code">C</code>, <code class="markup--code markup--li-code">D</code>, <code class="markup--code markup--li-code">E</code>, <code class="markup--code markup--li-code">F</code> are all descendants of <code class="markup--code markup--li-code">A</code></li></ul><p name="57c8" id="57c8" class="graf graf--p graf-after--li">A Depth-First traversal will continually travel deeper into a tree before switching branches. This means that, given a node, we must visit all of it’s descendants before visiting it’s sibling.</p><p name="1073" id="1073" class="graf graf--p graf-after--p">Performing DF on our tree will hit the nodes in the order: <code class="markup--code markup--p-code">A, B, D, E, C, F</code></p><h3 name="9a72" id="9a72" class="graf graf--h3 graf-after--p">Depth-First Implementation</h3><p name="833b" id="833b" class="graf graf--p graf-after--h3">To travel the nodes of a tree according to Depth-First behavior, we’ll utilize a <strong class="markup--strong markup--p-strong">stack.</strong> Recall from earlier that a stack is LIFO (Last In, First Out). Our strategy is to use an array as a stack. We’ll use <code class="markup--code markup--p-code">push</code> to add to the top of our stack and <code class="markup--code markup--p-code">pop</code> to remove the top. Below is a complete implementation of <code class="markup--code markup--p-code">depthFirst</code>. Try to interpret the code below and scroll further to see the annotated version:</p><figure name="5c06" id="5c06" class="graf graf--figure graf--iframe graf-after--p"><script src="https://gist.github.com/bgoonz/676b6b3d00633f3d6d7634da7d55c176.js"></script></figure><p name="6899" id="6899" class="graf graf--p graf-after--figure">For now, a key idea to take away is that we only consider a node “visited” once we pop it. We do not consider a node “visited” when we push it.</p><p name="cc49" id="cc49" class="graf graf--p graf-after--p">Because a stack naturally leads to DF order on a tree, we can easily write a recursive version. Why is recursion relevant to DF? Recursion utilizies the call <strong class="markup--strong markup--p-strong">stack</strong>:</p><figure name="54a2" id="54a2" class="graf graf--figure graf--iframe graf-after--p"><script src="https://gist.github.com/bgoonz/04eac07b011223d5c2aeab7f5a942f29.js"></script></figure><p name="3008" id="3008" class="graf graf--p graf-after--figure">Does this code look familiar? It’s identical to the <code class="markup--code markup--p-code">preOrderPrint</code> function we wrote previously. That&#39;s right, pre-order and depth-first are identical tree node orderings.</p><p name="4d24" id="4d24" class="graf graf--p graf-after--p">You should study both the iterative and recursive implementations as they will both prove valuable to solving problems.</p><h3 name="704c" id="704c" class="graf graf--h3 graf-after--p">Breadth-First</h3><figure name="56e9" id="56e9" class="graf graf--figure graf--layoutOutsetLeft graf-after--h3"><img class="graf-image" data-image-id="0*ft65BcmA-tc432xZ.gif" data-width="350" data-height="350" src="https://cdn-images-1.medium.com/max/600/0*ft65BcmA-tc432xZ.gif"></figure><blockquote name="698c" id="698c" class="graf graf--pullquote graf-after--figure">The word “breadth” is the same as “width”. To help verbalize Breadth-First (BF) we’ll need to understand the simple concept of tree <strong class="markup--strong markup--pullquote-strong">levels</strong>. With the tree at the top of this reading in mind, we can say the following:</blockquote><figure name="0995" id="0995" class="graf graf--figure graf-after--pullquote"><img class="graf-image" data-image-id="0*0PsVCrmAbxw9h0-p.png" data-width="342" data-height="221" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/0*0PsVCrmAbxw9h0-p.png"><figcaption class="imageCaption">Example we will be using</figcaption></figure><ul class="postList"><li name="8d92" id="8d92" class="graf graf--li graf-after--figure"><strong class="markup--strong markup--li-strong"><em class="markup--em markup--li-em">level 0 contains </em></strong><code class="markup--code markup--li-code"><strong class="markup--strong markup--li-strong"><em class="markup--em markup--li-em">A</em></strong></code></li><li name="e59d" id="e59d" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong"><em class="markup--em markup--li-em">level 1 contains </em></strong><code class="markup--code markup--li-code"><strong class="markup--strong markup--li-strong"><em class="markup--em markup--li-em">B</em></strong></code><strong class="markup--strong markup--li-strong"><em class="markup--em markup--li-em">, </em></strong><code class="markup--code markup--li-code"><strong class="markup--strong markup--li-strong"><em class="markup--em markup--li-em">C</em></strong></code></li><li name="4363" id="4363" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong"><em class="markup--em markup--li-em">level 2 contains </em></strong><code class="markup--code markup--li-code"><strong class="markup--strong markup--li-strong"><em class="markup--em markup--li-em">D</em></strong></code><strong class="markup--strong markup--li-strong"><em class="markup--em markup--li-em">, </em></strong><code class="markup--code markup--li-code"><strong class="markup--strong markup--li-strong"><em class="markup--em markup--li-em">E</em></strong></code><strong class="markup--strong markup--li-strong"><em class="markup--em markup--li-em">, </em></strong><code class="markup--code markup--li-code"><strong class="markup--strong markup--li-strong"><em class="markup--em markup--li-em">F</em></strong></code></li></ul><p name="c606" id="c606" class="graf graf--p graf-after--li">A Breadth-First traversal will visit all nodes across a level, before moving to the next level. This means we travel laterally as much as we can before going deeper into the tree.</p><p name="7bb8" id="7bb8" class="graf graf--p graf-after--p">Perform BF on our tree will hit the nodes in the order: <code class="markup--code markup--p-code">A, B, C, D, E, F</code></p><h3 name="3c89" id="3c89" class="graf graf--h3 graf-after--p">Breadth-First Implementation</h3><p name="4fb3" id="4fb3" class="graf graf--p graf-after--h3">While DF uses a stack, BF will use a <strong class="markup--strong markup--p-strong">queue</strong>. Recall that a queue is FIFO (First In, First Out). The code is very similar to our iterative DF, except we will use an array as a queue. <code class="markup--code markup--p-code">shift</code> will remove the front of the queue and <code class="markup--code markup--p-code">push</code> will add to the back of the queue. Interpret the implementation below and scroll further to the annotated version when you need more insight:</p><figure name="b120" id="b120" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="0*0PsVCrmAbxw9h0-p.png" data-width="342" data-height="221" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/0*0PsVCrmAbxw9h0-p.png"><figcaption class="imageCaption">Example we will be using</figcaption></figure><figure name="e206" id="e206" class="graf graf--figure graf--iframe graf-after--figure"><script src="https://gist.github.com/bgoonz/4909aae058fb3a6debbd0cb52b7c7450.js"></script></figure><p name="c270" id="c270" class="graf graf--p graf-after--figure graf--trailing">We’ll rarely run into a recursive BF implementation (probably never) because recursion uses an underlying call stack, but we really want the opposite of a stack (a queue).</p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@bryanguner" class="p-author h-card">Bryan Guner</a> on <a href="https://medium.com/p/bd444cf7c30d"><time class="dt-published" datetime="2021-10-02T05:35:59.647Z">October 2, 2021</time></a>.</p><p><a href="https://medium.com/@bryanguner/depth-first-and-breadth-first-in-js-bd444cf7c30d" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on October 14, 2021.</p></footer></article></body></html>
