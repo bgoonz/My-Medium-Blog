@@ -1,8 +1,6 @@
-All-of-my-articles
-==================
+# All-of-my-articles
 
-All-of-my-articles
-------------------
+## All-of-my-articles
 
 [Heroku Deploy Guides & Cheatsheet Compilation](https://medium.com/p/b2897b69ce02)
 

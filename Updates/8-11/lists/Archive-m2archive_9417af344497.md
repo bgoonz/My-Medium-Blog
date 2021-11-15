@@ -1,8 +1,6 @@
-Archive
-=======
+# Archive
 
-Archive
--------
+## Archive
 
 [10 Super Useful Tricks for JavaScript Developers](https://medium.com/p/f1b76691199b)
 

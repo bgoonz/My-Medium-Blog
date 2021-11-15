@@ -1,3 +1,3 @@
 ### Memberships
 
--   No memberships
+- No memberships

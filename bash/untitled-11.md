@@ -38,8 +38,8 @@ To see the list of files and directories in the current directory use `ls` comma
 
 Shows all of my files and directories of my Desktop directory.
 
-* To show the contents of a directory pass the directory name to the `ls` command i.e. `ls directory_name`.
-* Some useful `ls` command options:-
+- To show the contents of a directory pass the directory name to the `ls` command i.e. `ls directory_name`.
+- Some useful `ls` command options:-
 
 OptionDescriptionls -alist all files including hidden file starting with ‘.’ls -llist with the long formatls -lalist long format including hidden files
 
@@ -119,13 +119,13 @@ Renamed my hello.txt file to the hi.txt file and html directory to the folder di
 
 To do this, we use the `cp` command.
 
-* You can copy a file by entering `cp file_to_copy new_file_name`.
+- You can copy a file by entering `cp file_to_copy new_file_name`.
 
 ![](https://cdn-images-1.medium.com/max/800/0*kCLVtKN9oKPbHfRF.gif)
 
 Copied my hi.txt file content into hello.txt file. For confirmation open your hello.txt file in your text editor.
 
-* You can also copy a directory by adding the `-r` option, like `cp -r directory_to_copy new_directory_name`.
+- You can also copy a directory by adding the `-r` option, like `cp -r directory_to_copy new_directory_name`.
 
 _The_ _`-r`_ _option for "recursive" means that it will copy all of the files including the files inside of subfolders._
 
@@ -137,13 +137,13 @@ Here I copied all of the files from the folder to folder-copy.
 
 To do this, we use the `rm` command.
 
-* To remove a file, you can use the command like `rm file_to_remove`.
+- To remove a file, you can use the command like `rm file_to_remove`.
 
 ![](https://cdn-images-1.medium.com/max/800/0*ohCmdthd92_HA6Ze.gif)
 
 Here I removed my hi.txt file.
 
-* To remove a directory, use the command like `rm -r directory_to_remove`.
+- To remove a directory, use the command like `rm -r directory_to_remove`.
 
 ![](https://cdn-images-1.medium.com/max/800/0*voDbzwSpw24A2RjQ.gif)
 
@@ -600,7 +600,7 @@ RecurseDirs "./"
 sed -n -e '/<script>/,/<\/script>/p' example.html >out.js
 ```
 
-## 10. Recursively Delete node\_modules folders <a id="b6e5"></a>
+## 10. Recursively Delete node_modules folders <a id="b6e5"></a>
 
 ```text
 find . -name 'node_modules' -type d -print -prune -exec rm -rf '{}' +
@@ -717,4 +717,3 @@ find . -name '*.md' | cpio -pdm './../outputFolder'
 ## Discover More: <a id="e8cc"></a>
 
 ## Part 2 of this series: <a id="daae"></a>
-

@@ -1,8 +1,6 @@
-tutorials
-=========
+# tutorials
 
-tutorials
----------
+## tutorials
 
 [Heroku Deploy Guides & Cheatsheet Compilation](https://medium.com/p/b2897b69ce02)
 

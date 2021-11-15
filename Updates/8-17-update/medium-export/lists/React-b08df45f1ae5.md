@@ -1,8 +1,6 @@
-React
-=====
+# React
 
-React
------
+## React
 
 [The Penultimate Web Developer’s Cheat Sheet](https://medium.com/p/a02a423139a4)
 

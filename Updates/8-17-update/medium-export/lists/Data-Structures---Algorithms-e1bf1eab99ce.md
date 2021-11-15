@@ -1,8 +1,6 @@
-Data Structures & Algorithms
-============================
+# Data Structures & Algorithms
 
-Data Structures & Algorithms
-----------------------------
+## Data Structures & Algorithms
 
 [A Quick Guide to Big-O Notation, Memoization, Tabulation, and Sorting Algorithms by Example](https://medium.com/p/803ff193c522)
 

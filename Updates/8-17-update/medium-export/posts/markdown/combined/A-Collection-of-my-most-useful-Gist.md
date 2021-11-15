@@ -1,4 +1,4 @@
-* * * * *
+---
 
 ### A Collection of my most useful Gist Entries
 
@@ -6,12 +6,11 @@
 
 <https://bgoonz-blog.netlify.app/>
 
-A list of all of my articles to link to future posts
-====================================================
+# A list of all of my articles to link to future posts
 
 You should probably skip this one... seriously it's just for internal use!
 
-* * * * *
+---
 
 ### A list of all of my articles to link to future posts
 
@@ -227,12 +226,11 @@ Exported from [Medium](https://medium.com/) on July 13, 2021.
 
 [view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/A-list-of-my-articles.md)[A-list-of-my-articles.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-a-list-of-my-articles-md) hosted with ❤ by [GitHub](https://github.com/)
 
-A Very Quick Guide To Calculating Big O Computational Complexity
-================================================================
+# A Very Quick Guide To Calculating Big O Computational Complexity
 
 Big O: big picture, broad strokes, not details
 
-* * * * *
+---
 
 ### A Very Quick Guide To Calculating Big O Computational Complexity
 
@@ -259,44 +257,44 @@ no loops or exit & return = O(1)
 **recursive**: as you add more terms, increase in time as you add input diminishes\
 **recursion**: when you define something in terms of itself, a function that calls itself
 
--   used because of ability to maintain state at diffferent levels of recursion
--   inherently carries large footprint
--   every time function called, you add call to stack
+- used because of ability to maintain state at diffferent levels of recursion
+- inherently carries large footprint
+- every time function called, you add call to stack
 
 **iterative**: use loops instead of recursion (preferred)
 
--   favor readability over performance
+- favor readability over performance
 
 `O(n log(n))` & `O(log(n))`: dividing/halving
 
--   if code employs recursion/divide-and-conquer strategy
--   what power do i need to power my base to get n
+- if code employs recursion/divide-and-conquer strategy
+- what power do i need to power my base to get n
 
 ### Time Definitions
 
--   **constant**: does not scale with input, will take same amount of time
--   for any input size n, constant time performs same number of operations every time
--   **logarithmic**: increases number of operations it performs as logarithmic function of input size n
--   function log n grows very slowly, so as n gets longer, number of operations the algorithm needs to perform doesn't increase very much
--   halving
--   **linear**: increases number of operations it performs as linear function of input size n
--   number of additional operations needed to perform grows in direct proportion to increase in input size n
--   **log-linear**: increases number of operations it performs as log-linear function of input size n
--   looking over every element and doing work on each one
--   **quadratic**: increases number of operations it performs as quadratic function of input size n
--   **exponential**: increases number of operations it performs as exponential function of input size n
--   number of nested loops increases as function of n
--   **polynomial**: as size of input increases, runtime/space used will grow at a faster rate
--   **factorial**: as size of input increases, runtime/space used will grow astronomically even with relatively small inputs
--   **rate of growth**: how fast a function grows with input size
+- **constant**: does not scale with input, will take same amount of time
+- for any input size n, constant time performs same number of operations every time
+- **logarithmic**: increases number of operations it performs as logarithmic function of input size n
+- function log n grows very slowly, so as n gets longer, number of operations the algorithm needs to perform doesn't increase very much
+- halving
+- **linear**: increases number of operations it performs as linear function of input size n
+- number of additional operations needed to perform grows in direct proportion to increase in input size n
+- **log-linear**: increases number of operations it performs as log-linear function of input size n
+- looking over every element and doing work on each one
+- **quadratic**: increases number of operations it performs as quadratic function of input size n
+- **exponential**: increases number of operations it performs as exponential function of input size n
+- number of nested loops increases as function of n
+- **polynomial**: as size of input increases, runtime/space used will grow at a faster rate
+- **factorial**: as size of input increases, runtime/space used will grow astronomically even with relatively small inputs
+- **rate of growth**: how fast a function grows with input size
 
 [![](https://camo.githubusercontent.com/ef0eac5be0b1dfbf2b062560dc14031c3d971790e74f827eed32ac7643c1a526/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a35743275386e31754b68696f497a5a495858327a62672e706e67)](https://camo.githubusercontent.com/ef0eac5be0b1dfbf2b062560dc14031c3d971790e74f827eed32ac7643c1a526/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a35743275386e31754b68696f497a5a495858327a62672e706e67)
 
 ### Space Complexity
 
--   How does the space usage scale/change as input gets very large?
--   What auxiliary space does your algorithm use or is it in place (constant)?
--   Runtime stack space counts as part of space complexity unless told otherwise.
+- How does the space usage scale/change as input gets very large?
+- What auxiliary space does your algorithm use or is it in place (constant)?
+- Runtime stack space counts as part of space complexity unless told otherwise.
 
 ### Sorting Algorithms
 
@@ -313,7 +311,7 @@ no loops or exit & return = O(1)
 For similar content check out my GitHub:
 
 [**bgoonz - Overview**\
-*Web Developer, Electrical Engineer *](https://github.com/bgoonz "https://github.com/bgoonz")*<https://bryanguner.medium.com/> [https://portfolio42.netlify.app/...](https://portfolio42.netlify.app/%E2%80%A6)*github.com[](https://github.com/bgoonz)
+_Web Developer, Electrical Engineer _](https://github.com/bgoonz "https://github.com/bgoonz")*<https://bryanguner.medium.com/> [https://portfolio42.netlify.app/...](https://portfolio42.netlify.app/%E2%80%A6)*github.com[](https://github.com/bgoonz)
 
 By [Bryan Guner](https://medium.com/@bryanguner) on [May 19, 2021](https://medium.com/p/eb1557e85fa3).
 
@@ -323,12 +321,11 @@ Exported from [Medium](https://medium.com/) on July 13, 2021.
 
 [view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/A-Very-Qui.md)[A-Very-Qui.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-a-very-qui-md) hosted with ❤ by [GitHub](https://github.com/)
 
-Array Callback Methods Implemented With For Loops
-=================================================
+# Array Callback Methods Implemented With For Loops
 
 How to implement array callback methods in JavaScript
 
-* * * * *
+---
 
 ### Array Callback Methods Implemented With For Loops
 
@@ -338,11 +335,11 @@ How to implement array callback methods in JavaScript
 
 #### Functions are called "First Class Objects" in JavaScript because:
 
--   A function is an instance of the Object type
--   A function can have properties and has a link back to its constructor method
--   You can store the function in a variable
--   You can pass the function as a parameter to another function
--   You can return the function from a function
+- A function is an instance of the Object type
+- A function can have properties and has a link back to its constructor method
+- You can store the function in a variable
+- You can pass the function as a parameter to another function
+- You can return the function from a function
 
 What do you think will be printed in the following:
 
@@ -543,7 +540,7 @@ References:
 [**Introduction: callbacks**\
 *To demonstrate the use of callbacks, promises and other abstract concepts, we'll be using some browser methods...*javascript.info](https://javascript.info/callbacks "https://javascript.info/callbacks")[](https://javascript.info/callbacks)
 
-*More content at* [***plainenglish.io***](http://plainenglish.io/)
+*More content at* [**_plainenglish.io_**](http://plainenglish.io/)
 
 By [Bryan Guner](https://medium.com/@bryanguner) on [May 27, 2021](https://medium.com/p/d08875df6777).
 
@@ -553,12 +550,11 @@ Exported from [Medium](https://medium.com/) on July 13, 2021.
 
 [view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/Array-Call.md)[Array-Call.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-array-call-md) hosted with ❤ by [GitHub](https://github.com/)
 
-Bash Commands That Save Me Time and Frustration
-===============================================
+# Bash Commands That Save Me Time and Frustration
 
 Here's a list of bash commands that stand between me and insanity.
 
-* * * * *
+---
 
 ### Bash Commands That Save Me Time and Frustration
 
@@ -581,7 +577,7 @@ Here's a list of bash commands that stand between me and insanity.
 
 ### Getting Started (Advanced Users Skip Section):
 
-* * * * *
+---
 
 #### ✔ Check the Current Directory ➡ `pwd`:
 
@@ -599,8 +595,8 @@ To see the list of files and directories in the current directory use `ls` com
 
 Shows all of my files and directories of my Desktop directory.
 
--   To show the contents of a directory pass the directory name to the `ls` command i.e. `ls directory_name`.
--   Some useful `ls` command options:-
+- To show the contents of a directory pass the directory name to the `ls` command i.e. `ls directory_name`.
+- Some useful `ls` command options:-
 
 OptionDescriptionls -alist all files including hidden file starting with '.'ls -llist with the long formatls -lalist long format including hidden files
 
@@ -680,13 +676,13 @@ Renamed my hello.txt file to the hi.txt file and html directory to the folder di
 
 To do this, we use the `cp` command.
 
--   You can copy a file by entering `cp file_to_copy new_file_name`.
+- You can copy a file by entering `cp file_to_copy new_file_name`.
 
 [![](https://camo.githubusercontent.com/9b67b2ef374ba0f1457b24007824ea5b65ca861a100397322d1a13f30a70818f/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6b434c56744b4e396f4b5062486652462e676966)](https://camo.githubusercontent.com/9b67b2ef374ba0f1457b24007824ea5b65ca861a100397322d1a13f30a70818f/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6b434c56744b4e396f4b5062486652462e676966)
 
 Copied my hi.txt file content into hello.txt file. For confirmation open your hello.txt file in your text editor.
 
--   You can also copy a directory by adding the `-r` option, like `cp -r directory_to_copy new_directory_name`.
+- You can also copy a directory by adding the `-r` option, like `cp -r directory_to_copy new_directory_name`.
 
 *The* `-r` *option for "recursive" means that it will copy all of the files including the files inside of subfolders.*
 
@@ -698,13 +694,13 @@ Here I copied all of the files from the folder to folder-copy.
 
 To do this, we use the `rm` command.
 
--   To remove a file, you can use the command like `rm file_to_remove`.
+- To remove a file, you can use the command like `rm file_to_remove`.
 
 [![](https://camo.githubusercontent.com/e35ef5a179966ed8271639d381b997455862bb77794f0b8c219f7ffada7168da/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6f68436d6474686439325f4841365a652e676966)](https://camo.githubusercontent.com/e35ef5a179966ed8271639d381b997455862bb77794f0b8c219f7ffada7168da/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6f68436d6474686439325f4841365a652e676966)
 
 Here I removed my hi.txt file.
 
--   To remove a directory, use the command like `rm -r directory_to_remove`.
+- To remove a directory, use the command like `rm -r directory_to_remove`.
 
 [![](https://camo.githubusercontent.com/5622af09767bfd626db8e52f5e040afeaf16be692b75a3069f7b01d74c1c4ee6/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a766f44627a7753707732344132526a512e676966)](https://camo.githubusercontent.com/5622af09767bfd626db8e52f5e040afeaf16be692b75a3069f7b01d74c1c4ee6/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a766f44627a7753707732344132526a512e676966)
 
@@ -718,7 +714,7 @@ Clear command is used to clear the terminal screen.
 
 The Home directory is represented by `~`. The Home directory refers to the base directory for the user. If we want to move to the Home directory we can use `cd ~` command. Or we can only use `cd` command.
 
-* * * * *
+---
 
 ### MY COMMANDS:
 
@@ -733,7 +729,7 @@ find . -name "*.zip" -type f -print -delete
 
 ```
 
-* * * * *
+---
 
 ### 2.) Install node modules recursively:
 
@@ -744,7 +740,7 @@ npm-recursive-install
 
 ```
 
-* * * * *
+---
 
 ### 3.) Clean up unnecessary files/folders in git repo:
 
@@ -842,9 +838,9 @@ find . \( -name ".git" -o -name ".gitignore" -o -name ".gitmodules" -o -name ".g
 
 [![!!!Use with caution as this command removes the attribution of the work from it's original authors!!!!!](https://camo.githubusercontent.com/ea68eea425581d8683031170810ceb578f8bafb975c1d5323100965dd912a3fa/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a72356447687462655a3456644f353455)](https://camo.githubusercontent.com/ea68eea425581d8683031170810ceb578f8bafb975c1d5323100965dd912a3fa/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a72356447687462655a3456644f353455)
 
-!!!Use with caution as this command removes the attribution of the work from it's original authors!!!!!find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o -name "*CHANGELOG.txt" -o -name "*LICENSE.txt" -o -name "*CONTRIBUTING.txt" -name "*HISTORY.md" -o -name "*LICENSE" -o -name "*SECURITY.md" -o -name "*RELEASE.md" -o -name "*CHANGELOG.md" -o -name "*LICENSE.md" -o -name "*CODE_OF_CONDUCT.md" -o -name "*CONTRIBUTING.md" \) -exec rm -rf -- {} +
+!!!Use with caution as this command removes the attribution of the work from it's original authors!!!!!find . \( -name "*SECURITY.txt" -o -name "*RELEASE.txt" -o -name "*CHANGELOG.txt" -o -name "*LICENSE.txt" -o -name "*CONTRIBUTING.txt" -name "*HISTORY.md" -o -name "*LICENSE" -o -name "*SECURITY.md" -o -name "*RELEASE.md" -o -name "*CHANGELOG.md" -o -name "*LICENSE.md" -o -name "*CODE_OF_CONDUCT.md" -o -name "\*CONTRIBUTING.md" \) -exec rm -rf -- {} +
 
-* * * * *
+---
 
 ### 4.) Generate index.html file that links to all other files in working directory:
 
@@ -939,7 +935,7 @@ cmd $listing --sort=extension >>$html
 
 [![](https://camo.githubusercontent.com/ce04a06e4fc2c23c62fd6a9dbea96125b5920b8c53a1c62434325989768cd1a7/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a414f5962577655474e39794a3463654e7a41474773772e706e67)](https://camo.githubusercontent.com/ce04a06e4fc2c23c62fd6a9dbea96125b5920b8c53a1c62434325989768cd1a7/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a414f5962577655474e39794a3463654e7a41474773772e706e67)
 
-* * * * *
+---
 
 ### 5.) Download all links to a files of a specified extension on a user provided (url) webpage:
 
@@ -952,7 +948,7 @@ wget -r -A.pdf https://overapi.com/gitwget --wait=2 --level=inf --limit-rate=20K
 
 [![](https://camo.githubusercontent.com/02861c1b49280db7ab6c017bc4dc93f0d22b7385e2b33e2154fc3e734b1da3c7/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a38657656504f5f7a2d5f5441547a6b634454703135512e706e67)](https://camo.githubusercontent.com/02861c1b49280db7ab6c017bc4dc93f0d22b7385e2b33e2154fc3e734b1da3c7/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a38657656504f5f7a2d5f5441547a6b634454703135512e706e67)
 
-* * * * *
+---
 
 ### 6.)Recursively remove lines of text containing the string badFolder from files in the working directory.
 
@@ -1010,7 +1006,7 @@ Posted Thursday, April 22, 2021 by Teon Brooks
 
 ```
 
-***I modified the command slightly to apply only to files called 'result.md':***
+**_I modified the command slightly to apply only to files called 'result.md':_**
 
 > The result is :
 
@@ -1050,7 +1046,7 @@ Posted Thursday, April 22, 2021 by Teon Brooks
 [**bgoonz/bash-commands-walkthrough**\
 *to accompany the medium article I am writing. Contribute to bgoonz/bash-commands-walkthrough development by creating an...*github.com](https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text "https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text")[](https://github.com/bgoonz/bash-commands-walkthrough/tree/master/steps/6-remove-lines-contaning-bad-text)
 
-* * * * *
+---
 
 ### 7.) Execute command recursively:
 
@@ -1076,7 +1072,7 @@ Posted Thursday, April 22, 2021 by Teon Brooks
 
 [![](https://camo.githubusercontent.com/1d5d06c2c92fbb7a3f42080beacb2ae8e3e0e9887220cfe81ba851eff627c753/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a6a71726a4e654275526d5472447433766d5135304c512e706e67)](https://camo.githubusercontent.com/1d5d06c2c92fbb7a3f42080beacb2ae8e3e0e9887220cfe81ba851eff627c753/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a6a71726a4e654275526d5472447433766d5135304c512e706e67)
 
-*If you want to run any bash script recursively all you have to do is substitue out line #9 with the command you want to run once in every sub-folder.*
+_If you want to run any bash script recursively all you have to do is substitue out line #9 with the command you want to run once in every sub-folder._
 
 ```
 function RecurseDirs ()
@@ -1107,7 +1103,7 @@ RecurseDirs "./"
 
 ```
 
-* * * * *
+---
 
 ### TBC....
 
@@ -1120,7 +1116,7 @@ sed -n -e '/<script>/,/<\/script>/p' example.html >out.js
 
 ```
 
-* * * * *
+---
 
 ### 10\. Recursively Delete node_modules folders
 
@@ -1129,7 +1125,7 @@ find . -name 'node_modules' -type d -print -prune -exec rm -rf '{}' +
 
 ```
 
-* * * * *
+---
 
 ### 11\. Sanatize file and folder names to remove illegal characters and reserved words.
 
@@ -1159,7 +1155,7 @@ sanitize_dir '/path/to/somewhere'
 
 ```
 
-* * * * *
+---
 
 ### 12\. Start postgresql in terminal
 
@@ -1168,7 +1164,7 @@ sudo -u postgres psql
 
 ```
 
-* * * * *
+---
 
 ### 13\. Add closing body and script tags to each html file in working directory.
 
@@ -1182,7 +1178,7 @@ doneecho "<form>
 
 ```
 
-* * * * *
+---
 
 ### 14\. Batch Download Videos
 
@@ -1205,7 +1201,7 @@ done
 
 ```
 
-* * * * *
+---
 
 ### 15\. Change File Extension from '.txt' to .doc for all files in working directory.
 
@@ -1223,7 +1219,7 @@ find . -name "*.\.js\.download" -exec rename 's/\.js\.download$/.js/' '{}' +
 
 ```
 
-* * * * *
+---
 
 ### 17\. Copy folder structure including only files of a specific extension into an ouput Folder
 
@@ -1232,7 +1228,7 @@ find . -name '*.md' | cpio -pdm './../outputFolder'
 
 ```
 
-* * * * *
+---
 
 ### Discover More:
 
@@ -1242,9 +1238,9 @@ find . -name '*.md' | cpio -pdm './../outputFolder'
 ### Part 2 of this series:
 
 [**Medium**\
-*Continued!!!medium.com*](https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682 "https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682")[](https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682)
+_Continued!!!medium.com_](https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682 "https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682")[](https://medium.com/@bryanguner/life-saving-bash-scripts-part-2-b40c8ee22682)
 
-* * * * *
+---
 
 By [Bryan Guner](https://medium.com/@bryanguner) on [June 29, 2021](https://medium.com/p/920fb6ab9d0a).
 
@@ -1254,12 +1250,11 @@ Exported from [Medium](https://medium.com/) on July 13, 2021.
 
 [view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/Bash-Comma.md)[Bash-Comma.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-bash-comma-md) hosted with ❤ by [GitHub](https://github.com/)
 
-Basic Web Development Environment Setup
-=======================================
+# Basic Web Development Environment Setup
 
 Windows Subsystem for Linux (WSL) and Ubuntu
 
-* * * * *
+---
 
 ### Basic Web Development Environment Setup
 
@@ -1421,12 +1416,11 @@ Exported from [Medium](https://medium.com/) on July 13, 2021.
 
 [view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/Basic-Web-.md)[Basic-Web-.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-basic-web-md) hosted with ❤ by [GitHub](https://github.com/)
 
-Beginner's Guide To React Part 2
-================================
+# Beginner's Guide To React Part 2
 
 As I learn to build web applications in React I will blog about it in this series in an attempt to capture the questions that a complete...
 
-* * * * *
+---
 
 ### Beginner's Guide To React Part 2
 
@@ -1441,28 +1435,28 @@ As I learn to build web applications in React I will blog about it in this serie
 
 [![](https://camo.githubusercontent.com/0dcb6bc2bee0de115bc8aafb64335791caf8c1bd28b643f217aba020c929ddd2/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a625a6a6c414a44456d50367966704b492e676966)](https://camo.githubusercontent.com/0dcb6bc2bee0de115bc8aafb64335791caf8c1bd28b643f217aba020c929ddd2/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a625a6a6c414a44456d50367966704b492e676966)
 
-* * * * *
+---
 
 Here I will walk through a demo.... skip down below for more fundamental examples and resources...
 
 ### React Demo
 
--   ex1 --- A Basic React Component
--   ex2 --- A Basic React Class Component
--   ex3 --- A Class Component with State
--   ex4 --- A Class Component that Updates State
--   ex5 --- A Class Component that Iterates through State
--   ex6 --- An Example of Parent and Child Components
+- ex1 --- A Basic React Component
+- ex2 --- A Basic React Class Component
+- ex3 --- A Class Component with State
+- ex4 --- A Class Component that Updates State
+- ex5 --- A Class Component that Iterates through State
+- ex6 --- An Example of Parent and Child Components
 
 With regards to converting an existing HTML, CSS, and JS site into React, first you'll want to think about how to break up your site into components,
 
--   as well as think about what the general hierarchical component structure of your site will look like.
--   From there, it's a simple matter of copying the relevant HTML for that component and throwing it into the **render method of your component file.**
--   *Any methods that are needed for that component to function properly can added onto your new component.*
+- as well as think about what the general hierarchical component structure of your site will look like.
+- From there, it's a simple matter of copying the relevant HTML for that component and throwing it into the **render method of your component file.**
+- _Any methods that are needed for that component to function properly can added onto your new component._
 
 Once you've refactored your HTML components into React components, you'll want to lay them out in the desired hierarchical structure
 
--   with children components being rendered by their parents, as well as ensuring that the parent components are passing down the necessary data as props to their children components.
+- with children components being rendered by their parents, as well as ensuring that the parent components are passing down the necessary data as props to their children components.
 
 ex.)
 
@@ -1488,14 +1482,14 @@ You *could* have an entire static site encapsulated in a single React componen
 
 So the first thing to remember about a component is that a **component must *render* something.**
 
-*If nothing is being rendered from a component, then React will throw an error.*
+_If nothing is being rendered from a component, then React will throw an error._
 
 Inside of `BasicComponent.js` , first import React at the top of the file. Our most basic of components looks like this:
 
-> *This is a component that simply returns a div tag with the words Hello World! inside.*
+> _This is a component that simply returns a div tag with the words Hello World! inside._
 
-> *The last line simply exports our component so that it can be imported\
-> by another file.*
+> _The last line simply exports our component so that it can be imported\
+> by another file._
 
 Notice that this component looks exactly like an anonymous arrow function that we've named `BasicComponent` .
 
@@ -1507,9 +1501,9 @@ The arrow function then is simply returning the div tag. When a component is wri
 
 The above component is an example of a functional component, which is appropriate since that component is literally nothing more than a function that returns some HTML.
 
-*Functional components are great when all you want a component to do is to render some stuff.*
+_Functional components are great when all you want a component to do is to render some stuff._
 
-*Components can also be written as classes (although this paradigm is becoming outdated and you should strive to write your components functionally!*
+_Components can also be written as classes (although this paradigm is becoming outdated and you should strive to write your components functionally!_
 
 For this exercise, we're going to write a class component that does exactly the same thing as the functional component we just wrote.
 
@@ -1543,17 +1537,17 @@ The `render()` method is the only required method in a class component.
 
 When called, it should examine `this.props` and `this.state` and return one of the following types:
 
--   **React elements.** Typically created via [JSX](https://reactjs.org/docs/introducing-jsx.html). For example, `<div />` and `<MyComponent />` are React elements that instruct React to render a DOM node, or another user-defined component, respectively.
--   **Arrays and fragments.** Let you return multiple elements from render. See the documentation on [fragments](https://reactjs.org/docs/fragments.html) for more details.
--   **Portals**. Let you render children into a different DOM subtree. See the documentation on [portals](https://reactjs.org/docs/portals.html) for more details.
--   **String and numbers.** These are rendered as text nodes in the DOM.
--   **Booleans or** `null`. Render nothing. (Mostly exists to support `return test && <Child />` pattern, where `test` is boolean.)
+- **React elements.** Typically created via [JSX](https://reactjs.org/docs/introducing-jsx.html). For example, `<div />` and `<MyComponent />` are React elements that instruct React to render a DOM node, or another user-defined component, respectively.
+- **Arrays and fragments.** Let you return multiple elements from render. See the documentation on [fragments](https://reactjs.org/docs/fragments.html) for more details.
+- **Portals**. Let you render children into a different DOM subtree. See the documentation on [portals](https://reactjs.org/docs/portals.html) for more details.
+- **String and numbers.** These are rendered as text nodes in the DOM.
+- **Booleans or** `null`. Render nothing. (Mostly exists to support `return test && <Child />` pattern, where `test` is boolean.)
 
 The `render()` function should be pure, meaning that it does not modify component state, it returns the same result each time it's invoked, and it does not directly interact with the browser.
 
 If you need to interact with the browser, perform your work in `componentDidMount()` or the other lifecycle methods instead. Keeping `render()` pure makes components easier to think about.
 
-> *Note*
+> _Note_
 
 > `render()` *will not be invoked if* `shouldComponentUpdate()` *returns false.*
 
@@ -1561,7 +1555,7 @@ The export statement at the bottom of the file also stays, completely unchanged.
 
 **Notice that our** `BasicClassComponent` **inherits from the base** `Component` **class that we imported from the React library, by virtue of the 'extends' keyword.**
 
-*That being said, there's nothing in this minimal component that takes advantage of any of those inherited methods.*
+_That being said, there's nothing in this minimal component that takes advantage of any of those inherited methods._
 
 **All we have is a method on our component class called** `render` **that returns the same div tag.**
 
@@ -1571,7 +1565,7 @@ This is because class components are much better suited for handling component s
 
 #### The important takeaways at this point are that there are two types of components, functional and class components, and that functional components are well-suited if you're just looking to render some HTML.
 
-*Class components, on the other hand, are much better suited for handling components that require more complex functionality, need to exhibit more varied behavior, and/or need to keep track of some state that may change throughout said component's lifecycle.*
+_Class components, on the other hand, are much better suited for handling components that require more complex functionality, need to exhibit more varied behavior, and/or need to keep track of some state that may change throughout said component's lifecycle._
 
 ### A Class Component with Some State
 
@@ -1597,8 +1591,8 @@ Our class component with state will look a lot like the basic class component we
 
 #### Point being, the constructor function and the call to the `super` function are *not* associated with React, they are associated with all JavaScript classes.
 
--   Then there is the `this.state` **property inside the constructor function that is set as an empty object**.
--   We're adding a property called `state` to our class and setting it to an empty object.
+- Then there is the `this.state` **property inside the constructor function that is set as an empty object**.
+- We're adding a property called `state` to our class and setting it to an empty object.
 
 #### State objects in React are always just plain old objects.
 
@@ -1612,15 +1606,15 @@ That is because we had no need for them since all our class component was doing 
 
 Ok, now let's actually use this state object.
 
-*One very common application of state objects in React components is to render the data being stored inside them within our component's render function.*
+_One very common application of state objects in React components is to render the data being stored inside them within our component's render function._
 
 #### Refactoring our component class to do that:
 
 We added a key-value pair to our state object inside our constructor.
 
--   Then we changed the contents of the render function.
--   Now, it's actually rendering the data that we have inside the state object.
--   Notice that inside the div tags we're using a template string literal so that we can access the value of `this.state.someData` straight inside of our rendered content.
+- Then we changed the contents of the render function.
+- Now, it's actually rendering the data that we have inside the state object.
+- Notice that inside the div tags we're using a template string literal so that we can access the value of `this.state.someData` straight inside of our rendered content.
 
 **With Reacts newest version, we can actually now add state to a component without explicitly defining a constructor on the class. We can refactor our class component to look like this:**
 
@@ -1646,7 +1640,7 @@ Notice that we've added two methods to our class: `increment` and `decrement`
 
 Unlike the `render` method, `increment` and `decrement` were not already a part of our class component.
 
-This is why `increment` and `decrement` are written as arrow functions, ***so that they are automatically bound to our class component.***
+This is why `increment` and `decrement` are written as arrow functions, **_so that they are automatically bound to our class component._**
 
 The alternative is using a declaration syntax function with the bind method to bind the context of our methods to the class component.
 
@@ -1654,7 +1648,7 @@ The more interesting thing is what is going on within the bodies of these method
 
 #### Each calls the `setState` function.
 
--   `setState` in fact *is* provided to us by React.
+- `setState` in fact *is* provided to us by React.
 
 It is the standard way to update a component's state.
 
@@ -1692,9 +1686,9 @@ This event object is part of the browser's API.
 
 When we interact with some DOM element, **such as clicking on an HTML button, the *function that is invoked upon that button being clicked* actually receives the event object.**
 
--   So when we type some input into an input tag, we're able grab each character that was typed into the input field through the event object parameter.
--   The `handleIngredientInput` method is what gets invoked every time the user presses a key to enter text in the input box for adding a new ingredient.
--   Every character the user types gets persisted in the `newIngredient` field on the state object.
+- So when we type some input into an input tag, we're able grab each character that was typed into the input field through the event object parameter.
+- The `handleIngredientInput` method is what gets invoked every time the user presses a key to enter text in the input box for adding a new ingredient.
+- Every character the user types gets persisted in the `newIngredient` field on the state object.
 
 We're able to grab the text in the input box using `event.target.value`
 
@@ -1795,7 +1789,7 @@ The overall structure of React applications can be represented as a hierarchical
 
 [![](https://camo.githubusercontent.com/094e0fa7f2acaa693446b0ae69a8fb0e312f9d771d8938803bbd4bb31188dc03/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a61717166484d6a425854385057594a43)](https://camo.githubusercontent.com/094e0fa7f2acaa693446b0ae69a8fb0e312f9d771d8938803bbd4bb31188dc03/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a61717166484d6a425854385057594a43)
 
-* * * * *
+---
 
 [![](https://camo.githubusercontent.com/f72910d37420981df09f60fe900f5507146050aab230b4cc63cc0bb324687a20/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6a3961504b7a6137593468744265512d2e676966)](https://camo.githubusercontent.com/f72910d37420981df09f60fe900f5507146050aab230b4cc63cc0bb324687a20/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6a3961504b7a6137593468744265512d2e676966)
 
@@ -1807,13 +1801,13 @@ The overall structure of React applications can be represented as a hierarchical
 
 > React manages the **creation and continuous updating of DOM nodes in your Web page**.
 
--   *It does not handle* [*AJAX*](https://skillcrush.com/blog/what-is-ajax/) *requests, Local Storage or style your website. IT is just a tool to dynamically render content on a webpage as a result of changes in 'state'. Because it's function is so limited in scope you may hear it referred to as a library... (not a framework ... like Angular for example) and you may also hear it described as unopinionated.*
+- *It does not handle* [_AJAX_](https://skillcrush.com/blog/what-is-ajax/) *requests, Local Storage or style your website. IT is just a tool to dynamically render content on a webpage as a result of changes in 'state'. Because it's function is so limited in scope you may hear it referred to as a library... (not a framework ... like Angular for example) and you may also hear it described as unopinionated.*
 
 #### 2\. Why use react?
 
--   Works for teams and helps UI workflow patterns
--   The components can be reusable
--   Componentized UI is the future of web dev
+- Works for teams and helps UI workflow patterns
+- The components can be reusable
+- Componentized UI is the future of web dev
 
 [![](https://camo.githubusercontent.com/9a67e95e7c98b34a5d906fcf2a2e64b2e58346a2d40f769ebffb6cdd6a7bb94a/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a7046655f763745612d2d7666646d7652335563756e412e706e67)](https://camo.githubusercontent.com/9a67e95e7c98b34a5d906fcf2a2e64b2e58346a2d40f769ebffb6cdd6a7bb94a/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a7046655f763745612d2d7666646d7652335563756e412e706e67)
 
@@ -1828,9 +1822,9 @@ React... like HTML is Declarative[Declarative programming](https://en.wikipedia.
 
 A number of other common definitions attempt to define it by simply contrasting it with imperative programming. For example:
 
--   A high-level program that describes what a computation should perform.
--   Any programming language that lacks [side effects](https://en.wikipedia.org/wiki/Side_effect_%28computer_science%29 "Computation")
--   A language with a clear correspondence to [mathematical logic](https://en.wikipedia.org/wiki/Mathematical_logic).[[5]](https://en.wikipedia.org/wiki/Declarative_programming#cite_note-5)
+- A high-level program that describes what a computation should perform.
+- Any programming language that lacks [side effects](https://en.wikipedia.org/wiki/Side_effect_%28computer_science%29 "Computation")
+- A language with a clear correspondence to [mathematical logic](https://en.wikipedia.org/wiki/Mathematical_logic).[[5]](https://en.wikipedia.org/wiki/Declarative_programming#cite_note-5)
 
 These definitions overlap substantially.
 
@@ -1838,7 +1832,7 @@ D**eclarative programming is a non-imperative style of programming in which prog
 
 [Functional](https://en.wikipedia.org/wiki/Functional_programming "Functional programming") and [logical programming](https://en.wikipedia.org/wiki/Logical_programming "Logical programming") languages are characterized by a declarative programming style.
 
-*In a* [*pure functional language*](https://en.wikipedia.org/wiki/Pure_functional_language "Pure functional language")*, such as* [*Haskell*](https://en.wikipedia.org/wiki/Haskell_%28programming_language%29)*, all functions are* [*without side effects*](https://en.wikipedia.org/wiki/Pure_function "Pure function")*, and state changes are only represented as functions that transform the state, which is explicitly represented as a* [*first-class*](https://en.wikipedia.org/wiki/First-class_citizen "Mathematical logic") *object in the program.*
+*In a* [_pure functional language_](https://en.wikipedia.org/wiki/Pure_functional_language "Pure functional language")*, such as* [_Haskell_](https://en.wikipedia.org/wiki/Haskell_%28programming_language%29)*, all functions are* [_without side effects_](https://en.wikipedia.org/wiki/Pure_function "Pure function")*, and state changes are only represented as functions that transform the state, which is explicitly represented as a* [_first-class_](https://en.wikipedia.org/wiki/First-class_citizen "Mathematical logic") *object in the program.*
 
 --- Wikipedia
 
@@ -1846,8 +1840,8 @@ D**eclarative programming is a non-imperative style of programming in which prog
 
 [Based on the concept of purity in functional programming paradigms, a function is said to be pure if:](https://blog.logrocket.com/react-pure-components-functional/#whatisareactpurecomponent)
 
--   Its return value is only determined by its input values
--   Its return value is always the same for the same input values
+- Its return value is only determined by its input values
+- Its return value is always the same for the same input values
 
 A React component is considered pure if it renders the same output for the same state and props. For class components like this, React provides the `PureComponent` base class. Class components that extend the `React.PureComponent` class are treated as pure components.
 
@@ -1893,34 +1887,34 @@ makes React one of the speediest front-end libraries available.
 
 #### 3. Who uses react?
 
--   Companies such as Facebook app for android and Instagram
--   [Here](https://facebook.github.io/react-native/showcase.html) is a link to a list of other companies who use react.
+- Companies such as Facebook app for android and Instagram
+- [Here](https://facebook.github.io/react-native/showcase.html) is a link to a list of other companies who use react.
 
 [![Who uses react](https://camo.githubusercontent.com/db1993cb5bd5254c83ef679883e8b95f8c9aa11a80212d5cfb96451364522e0a/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a436e394a7661536d6b78644c776758494f39593869512e706e67)](https://camo.githubusercontent.com/db1993cb5bd5254c83ef679883e8b95f8c9aa11a80212d5cfb96451364522e0a/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a436e394a7661536d6b78644c776758494f39593869512e706e67)
 
 Who uses react#### 4. Setting up react
 
--   React can be set up in CodePen for quick practice development by adding react.js, react-dom and babel.
--   It can also be set up by downloading a react starter project from GitHub installing node and following these [instructions](https://github.com/hjb23/ReduxSimpleStarter).
--   Alternatively it can be set up through NPM like [this](https://www.codementor.io/tamizhvendan/beginner-guide-setup-reactjs-environment-npm-babel-6-webpack-du107r9zr).
+- React can be set up in CodePen for quick practice development by adding react.js, react-dom and babel.
+- It can also be set up by downloading a react starter project from GitHub installing node and following these [instructions](https://github.com/hjb23/ReduxSimpleStarter).
+- Alternatively it can be set up through NPM like [this](https://www.codementor.io/tamizhvendan/beginner-guide-setup-reactjs-environment-npm-babel-6-webpack-du107r9zr).
 
 #### 5\. Intro to eco system
 
--   Composition, being able to wrap up sections of code into there own containers so they can be re used.
--   How to make a large application? by combining small components to create a larger complex application.
+- Composition, being able to wrap up sections of code into there own containers so they can be re used.
+- How to make a large application? by combining small components to create a larger complex application.
 
 #### 6\. Imperative vs Declarative [(React is Declarative)](https://medium.com/trabe/why-is-react-declarative-a-story-about-function-components-aaae83198f79)
 
--   **Imperative, 'telling to computer HOW to do something' e.g looping over an array of numbers using a for loop.**
--   **Declarative, is concerned about WHAT we want to happen. e.g using a reduce method on an array.**
--   Benefits of using declarative code:
--   Reduce side effects
--   Minimize mutability
--   Less Bugs
+- **Imperative, 'telling to computer HOW to do something' e.g looping over an array of numbers using a for loop.**
+- **Declarative, is concerned about WHAT we want to happen. e.g using a reduce method on an array.**
+- Benefits of using declarative code:
+- Reduce side effects
+- Minimize mutability
+- Less Bugs
 
 #### 7\. Unidirectional Data Flow
 
--   As the state collects from user interaction, the UI gets updated.
+- As the state collects from user interaction, the UI gets updated.
 
 1.  Explicit Mutations
 2.  Whenever the state needs to be updated in our application setState has to be called.
@@ -1934,12 +1928,12 @@ this.setState({
 
 #### 7.1. First component
 
--   Components are the building blocks of React.
--   They are similar to a collection of HTML,CSS, JS and data specific to that component.
--   They can be defined in pure JavaScript or JSX.
--   Data is either received from a component's parent component, or it's contained in the component itself.
--   Applications can be separated into smaller components like this...
--   React components can be created using ES6 class like this.
+- Components are the building blocks of React.
+- They are similar to a collection of HTML,CSS, JS and data specific to that component.
+- They can be defined in pure JavaScript or JSX.
+- Data is either received from a component's parent component, or it's contained in the component itself.
+- Applications can be separated into smaller components like this...
+- React components can be created using ES6 class like this.
 
 ```
 import React from 'react';
@@ -1954,13 +1948,13 @@ export default Hello;
 
 ```
 
--   At the top with have the code to bring react and react dom libraries in.
--   React library is used for the react syntax.
--   React DOM is used to update the DOM.
--   We then have the Class section which creates the component.
--   Render() describes the specific UI for the component.
--   Return is used to return the JSX
--   And Finally ReactDOM.render is used to update the DOM.
+- At the top with have the code to bring react and react dom libraries in.
+- React library is used for the react syntax.
+- React DOM is used to update the DOM.
+- We then have the Class section which creates the component.
+- Render() describes the specific UI for the component.
+- Return is used to return the JSX
+- And Finally ReactDOM.render is used to update the DOM.
 
 #### 8\. Data flow with props
 
@@ -1978,13 +1972,13 @@ Checking data to see if Boolean is true then adding detail to the list.
 
 PropTypes allow you to declare the type (string, number, function, etc) of each prop being passed to a component. Then if a prop passed in isn't of the declared type you'll get a warning in the console.
 
-* * * * *
+---
 
 ### Excerpt from the React website:
 
 ### React --- A JavaScript library for building user interfaces
 
-> *A JavaScript library for building user interfaces*
+> _A JavaScript library for building user interfaces_
 
 #### Declarative
 
@@ -2008,7 +2002,7 @@ Using `props` and `state`, we can put together a small Todo application. This
 
 React allows you to interface with other libraries and frameworks. This example uses remarkable, an external Markdown library, to convert the `<textarea>`'s value in real time.
 
-* * * * *
+---
 
 ### React Cheat Sheet:
 
@@ -2025,7 +2019,7 @@ React Boilerplate:
 For more resources visit:
 
 [**bgoonz - Overview**\
-*Web Developer, Electrical Engineer *](https://github.com/bgoonz "https://github.com/bgoonz")*<https://bryanguner.medium.com/> [https://portfolio42.netlify.app/...](https://portfolio42.netlify.app/%E2%80%A6)*github.com[](https://github.com/bgoonz)
+_Web Developer, Electrical Engineer _](https://github.com/bgoonz "https://github.com/bgoonz")*<https://bryanguner.medium.com/> [https://portfolio42.netlify.app/...](https://portfolio42.netlify.app/%E2%80%A6)*github.com[](https://github.com/bgoonz)
 
 By [Bryan Guner](https://medium.com/@bryanguner) on [May 19, 2021](https://medium.com/p/cda01615a186).
 
@@ -2035,18 +2029,17 @@ Exported from [Medium](https://medium.com/) on July 13, 2021.
 
 [view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/Beginner-s.md)[Beginner-s.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-beginner-s-md) hosted with ❤ by [GitHub](https://github.com/)
 
-Beginners Guide To Python
-=========================
+# Beginners Guide To Python
 
 My favorite language for maintainability is Python. It has simple, clean syntax, object encapsulation, good library support, and optional...
 
-* * * * *
+---
 
 ### Beginners Guide To Python
 
 My favorite language for maintainability is Python. It has simple, clean syntax, object encapsulation, good library support, and optional named parameters.
 
--   Bram Cohen
+- Bram Cohen
 
 Article on basic web development setup... it is geared towards web but VSCode is an incredibly versitile editor and this stack really could suit just about anyone working in the field of computer science.
 
@@ -2059,9 +2052,9 @@ Article on basic web development setup... it is geared towards web but VSCode is
 
 [Python enables programs to be written compactly and readably. Programs written in Python are typically much shorter than equivalent C, C++, or Java programs, for several reasons:](https://docs.python.org/3/tutorial/appetite.html)
 
--   the high-level data types allow you to express complex operations in a single statement;
--   statement grouping is done by indentation instead of beginning and ending brackets;
--   no variable or argument declarations are necessary.
+- the high-level data types allow you to express complex operations in a single statement;
+- statement grouping is done by indentation instead of beginning and ending brackets;
+- no variable or argument declarations are necessary.
 
 ### Installing Python:
 
@@ -2077,7 +2070,7 @@ To determine if your Windows computer already has Python 3:
 
 [![](https://camo.githubusercontent.com/e0bc38b117e812dcc0dd55914a8e6815912cbba0fb63b67f0fcafea223c66f6a/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3630302f312a353956325a4e62794a6673644752324e3230504d37772e706e67)](https://camo.githubusercontent.com/e0bc38b117e812dcc0dd55914a8e6815912cbba0fb63b67f0fcafea223c66f6a/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3630302f312a353956325a4e62794a6673644752324e3230504d37772e706e67)
 
-1\. Running `python --version` may not return a value, or may return an error message stating *'python' is not recognized as an internal or external command, operable program or batch file.* This indicates Python is not installed on your Windows system. 2. If you see the word `Python` with a set of numbers separated by `.` characters, some version of Python is installed.
+1\. Running `python --version` may not return a value, or may return an error message stating _'python' is not recognized as an internal or external command, operable program or batch file._ This indicates Python is not installed on your Windows system. 2. If you see the word `Python` with a set of numbers separated by `.` characters, some version of Python is installed.
 
 #### i.e.
 
@@ -2089,17 +2082,17 @@ To determine if your Windows computer already has Python 3:
 
 > Download Link: [](https://www.python.org/ftp/python/3.9.5/python-3.9.5-amd64.exe)<https://www.python.org/ftp/python/3.9.5/python-3.9.5-amd64.exe>
 
-* * * * *
+---
 
 ### Python
 
--   Python is an interpreted, high-level and general-purpose, dynamically typed programming language
--   It is also Object oriented, modular oriented and a scripting language.
--   In Python, everything is considered as an Object.
--   A python file has an extension of .py
--   Python follows Indentation to separate code blocks instead of flower brackets({}).
--   We can run a python file by the following command in cmd(Windows) or shell(mac/linux).
--   `python <filename.py>`
+- Python is an interpreted, high-level and general-purpose, dynamically typed programming language
+- It is also Object oriented, modular oriented and a scripting language.
+- In Python, everything is considered as an Object.
+- A python file has an extension of .py
+- Python follows Indentation to separate code blocks instead of flower brackets({}).
+- We can run a python file by the following command in cmd(Windows) or shell(mac/linux).
+- `python <filename.py>`
 
 #### By default, the python doesn't require any imports to run a python file.
 
@@ -2128,26 +2121,26 @@ To determine if your Windows computer already has Python 3:
 
 ### List
 
--   List is a collection which is ordered and changeable. Allows duplicate members.
--   Lists are created using square brackets:
+- List is a collection which is ordered and changeable. Allows duplicate members.
+- Lists are created using square brackets:
 
 ```
 thislist = ["apple", "banana", "cherry"]
 
 ```
 
--   List items are ordered, changeable, and allow duplicate values.
--   List items are indexed, the first item has index `[0]`, the second item has index `[1]` etc.
--   The list is changeable, meaning that we can change, add, and remove items in a list after it has been created.
--   To determine how many items a list has, use the `len()` function.
--   A list can contain different data types:
+- List items are ordered, changeable, and allow duplicate values.
+- List items are indexed, the first item has index `[0]`, the second item has index `[1]` etc.
+- The list is changeable, meaning that we can change, add, and remove items in a list after it has been created.
+- To determine how many items a list has, use the `len()` function.
+- A list can contain different data types:
 
 ```
 list1 = ["abc", 34, True, 40, "male"]
 
 ```
 
--   It is also possible to use the list() constructor when creating a new list
+- It is also possible to use the list() constructor when creating a new list
 
 ```
 thislist = list(("apple", "banana", "cherry"))  # note the double round-brackets
@@ -2156,28 +2149,28 @@ thislist = list(("apple", "banana", "cherry"))  # note the double round-brackets
 
 ### Tuple
 
--   Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
--   A tuple is a collection which is ordered and unchangeable.
--   Tuples are written with round brackets.
+- Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
+- A tuple is a collection which is ordered and unchangeable.
+- Tuples are written with round brackets.
 
 ```
 thistuple = ("apple", "banana", "cherry")
 
 ```
 
--   Tuple items are ordered, unchangeable, and allow duplicate values.
--   Tuple items are indexed, the first item has index `[0]`, the second item has index `[1]` etc.
--   When we say that tuples are ordered, it means that the items have a defined order, and that order will not change.
--   Tuples are unchangeable, meaning that we cannot change, add or remove items after the tuple has been created.
--   Since tuple are indexed, tuples can have items with the same value:
--   Tuples allow duplicate values:
+- Tuple items are ordered, unchangeable, and allow duplicate values.
+- Tuple items are indexed, the first item has index `[0]`, the second item has index `[1]` etc.
+- When we say that tuples are ordered, it means that the items have a defined order, and that order will not change.
+- Tuples are unchangeable, meaning that we cannot change, add or remove items after the tuple has been created.
+- Since tuple are indexed, tuples can have items with the same value:
+- Tuples allow duplicate values:
 
 ```
 thistuple = ("apple", "banana", "cherry", "apple", "cherry")
 
 ```
 
--   To determine how many items a tuple has, use the `len()`function:
+- To determine how many items a tuple has, use the `len()`function:
 
 ```
 thistuple = ("apple", "banana", "cherry")
@@ -2185,7 +2178,7 @@ print(len(thistuple))
 
 ```
 
--   To create a tuple with only one item, you have to add a comma after the item, otherwise Python will not recognize it as a tuple.
+- To create a tuple with only one item, you have to add a comma after the item, otherwise Python will not recognize it as a tuple.
 
 ```
 thistuple = ("apple",)
@@ -2197,7 +2190,7 @@ print(type(thistuple))
 
 ```
 
--   It is also possible to use the tuple() constructor to make a tuple.
+- It is also possible to use the tuple() constructor to make a tuple.
 
 ```
 thistuple = tuple(("apple", "banana", "cherry")) # note the double round-brackets
@@ -2207,20 +2200,20 @@ print(thistuple)
 
 ### Set
 
--   Set is a collection which is unordered and unindexed. No duplicate members.
--   A set is a collection which is both unordered and unindexed.
+- Set is a collection which is unordered and unindexed. No duplicate members.
+- A set is a collection which is both unordered and unindexed.
 
 ```
 thisset = {"apple", "banana", "cherry"}
 
 ```
 
--   Set items are unordered, unchangeable, and do not allow duplicate values.
--   Unordered means that the items in a set do not have a defined order.
--   Set items can appear in a different order every time you use them, and cannot be referred to by index or key.
--   Sets are unchangeable, meaning that we cannot change the items after the set has been created.
--   Duplicate values will be ignored.
--   To determine how many items a set has, use the `len()` method.
+- Set items are unordered, unchangeable, and do not allow duplicate values.
+- Unordered means that the items in a set do not have a defined order.
+- Set items can appear in a different order every time you use them, and cannot be referred to by index or key.
+- Sets are unchangeable, meaning that we cannot change the items after the set has been created.
+- Duplicate values will be ignored.
+- To determine how many items a set has, use the `len()` method.
 
 ```
 thisset = {"apple", "banana", "cherry"}
@@ -2229,7 +2222,7 @@ print(len(thisset))
 
 ```
 
--   Set items can be of any data type:
+- Set items can be of any data type:
 
 ```
 set1 = {"apple", "banana", "cherry"}
@@ -2239,7 +2232,7 @@ set4 = {"abc", 34, True, 40, "male"}
 
 ```
 
--   It is also possible to use the `set()` constructor to make a set.
+- It is also possible to use the `set()` constructor to make a set.
 
 ```
 thisset = set(("apple", "banana", "cherry")) # note the double round-brackets
@@ -2248,9 +2241,9 @@ thisset = set(("apple", "banana", "cherry")) # note the double round-brackets
 
 ### Dictionary
 
--   Dictionary is a collection which is unordered and changeable. No duplicate members.
--   Dictionaries are used to store data values in key:value pairs.
--   Dictionaries are written with curly brackets, and have keys and values:
+- Dictionary is a collection which is unordered and changeable. No duplicate members.
+- Dictionaries are used to store data values in key:value pairs.
+- Dictionaries are written with curly brackets, and have keys and values:
 
 ```
 thisdict = {
@@ -2261,7 +2254,7 @@ thisdict = {
 
 ```
 
--   Dictionary items are presented in key:value pairs, and can be referred to by using the key name.
+- Dictionary items are presented in key:value pairs, and can be referred to by using the key name.
 
 ```
 thisdict = {
@@ -2273,17 +2266,17 @@ print(thisdict["brand"])
 
 ```
 
--   Dictionaries are changeable, meaning that we can change, add or remove items after the dictionary has been created.
--   Dictionaries cannot have two items with the same key.
--   Duplicate values will overwrite existing values.
--   To determine how many items a dictionary has, use the `len()` function.
+- Dictionaries are changeable, meaning that we can change, add or remove items after the dictionary has been created.
+- Dictionaries cannot have two items with the same key.
+- Duplicate values will overwrite existing values.
+- To determine how many items a dictionary has, use the `len()` function.
 
 ```
 print(len(thisdict))
 
 ```
 
--   The values in dictionary items can be of any data type
+- The values in dictionary items can be of any data type
 
 ```
 thisdict = {
@@ -2316,8 +2309,8 @@ Python has two primitive loop commands:
 
 #### While loop
 
--   With the `while` loop we can execute a set of statements as long as a condition is true.
--   Example: Print i as long as i is less than 6
+- With the `while` loop we can execute a set of statements as long as a condition is true.
+- Example: Print i as long as i is less than 6
 
 ```
 i = 1
@@ -2327,16 +2320,16 @@ while i < 6:
 
 ```
 
--   The while loop requires relevant variables to be ready, in this example we need to define an indexing variable, i, which we set to 1.
--   With the `break` statement we can stop the loop even if the while condition is true
--   With the continue statement we can stop the current iteration, and continue with the next.
--   With the else statement we can run a block of code once when the condition no longer is true.
+- The while loop requires relevant variables to be ready, in this example we need to define an indexing variable, i, which we set to 1.
+- With the `break` statement we can stop the loop even if the while condition is true
+- With the continue statement we can stop the current iteration, and continue with the next.
+- With the else statement we can run a block of code once when the condition no longer is true.
 
 #### For loop
 
--   A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
--   This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.
--   With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.
+- A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
+- This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.
+- With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.
 
 ```
 fruits = ["apple", "banana", "cherry"]
@@ -2345,13 +2338,13 @@ for x in fruits:
 
 ```
 
--   The for loop does not require an indexing variable to set beforehand.
--   To loop through a set of code a specified number of times, we can use the range() function.
--   The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and ends at a specified number.
--   The range() function defaults to increment the sequence by 1, however it is possible to specify the increment value by adding a third parameter: range(2, 30, 3).
--   The else keyword in a for loop specifies a block of code to be executed when the loop is finished.\
-    A nested loop is a loop inside a loop.
--   The "inner loop" will be executed one time for each iteration of the "outer loop":
+- The for loop does not require an indexing variable to set beforehand.
+- To loop through a set of code a specified number of times, we can use the range() function.
+- The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and ends at a specified number.
+- The range() function defaults to increment the sequence by 1, however it is possible to specify the increment value by adding a third parameter: range(2, 30, 3).
+- The else keyword in a for loop specifies a block of code to be executed when the loop is finished.\
+  A nested loop is a loop inside a loop.
+- The "inner loop" will be executed one time for each iteration of the "outer loop":
 
 ```
 adj = ["red", "big", "tasty"]
@@ -2363,7 +2356,7 @@ for x in adj:
 
 ```
 
--   for loops cannot be empty, but if you for some reason have a for loop with no content, put in the pass statement to avoid getting an error.
+- for loops cannot be empty, but if you for some reason have a for loop with no content, put in the pass statement to avoid getting an error.
 
 ```
 for x in [0, 1, 2]:
@@ -2386,11 +2379,11 @@ function_name()
 
 ```
 
--   We need not to specify the return type of the function.
--   Functions by default return `None`
--   We can return any datatype.
+- We need not to specify the return type of the function.
+- Functions by default return `None`
+- We can return any datatype.
 
-* * * * *
+---
 
 ### Python Syntax
 
@@ -2405,7 +2398,7 @@ print('Hello world!')
 
 ```
 
-> *Brian Kernighan actually wrote the first "Hello, World!" program as part of the documentation for the BCPL programming language developed by Martin Richards.*
+> _Brian Kernighan actually wrote the first "Hello, World!" program as part of the documentation for the BCPL programming language developed by Martin Richards._
 
 Now, press the run button, which obviously runs the code. If you are not using replit, this will not work. You should research how to run a file with your text editor.
 
@@ -2441,7 +2434,7 @@ Unlike many other languages, there is no `var`, `let`, or `const` to declare
 
 Remember, there is a difference between integers and strings. *Remember: String =* `""`*.* To convert between these two, you can put an int in a `str()` function, and a string in a `int()` function. There is also a less used one, called a float. Mainly, these are integers with decimals. Change them using the `float()` command.
 
-[](https://repl.it/@bgoonz/second-scr?lite=true&amp;referrer=https%3A%2F%2Fbryanguner.medium.com)<https://repl.it/@bgoonz/second-scr?lite=true&amp;amp;referrer=https%3A%2F%2Fbryanguner.medium.com>
+[](https://repl.it/@bgoonz/second-scr?lite=true&referrer=https%3A%2F%2Fbryanguner.medium.com)<https://repl.it/@bgoonz/second-scr?lite=true&amp;referrer=https%3A%2F%2Fbryanguner.medium.com>
 
 ```
 x = 5
@@ -2458,16 +2451,16 @@ Instead of using the `,` in the print function, you can put a `+` to combine
 
 There are many operators in python:
 
--   `+`
--   `-`
--   `/`
--   `*`\
-    These operators are the same in most languages, and allow for addition, subtraction, division, and multiplicaiton.\
-    Now, we can look at a few more complicated ones:
+- `+`
+- `-`
+- `/`
+- `*`\
+  These operators are the same in most languages, and allow for addition, subtraction, division, and multiplicaiton.\
+  Now, we can look at a few more complicated ones:
 
 [![](https://camo.githubusercontent.com/12367f978d6008632ed72f277e602ee53cac5e4c001c13420971a0ef648e0c7f/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6f564944785764674a586f49743743492e6a7067)](https://camo.githubusercontent.com/12367f978d6008632ed72f277e602ee53cac5e4c001c13420971a0ef648e0c7f/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6f564944785764674a586f49743743492e6a7067)
 
-*simpleops.py*
+_simpleops.py_
 
 ```
 x = 4
@@ -2480,7 +2473,7 @@ a = x / 2
 
 You should already know everything shown above, as it is similar to other languages. If you continue down, you will see more complicated ones.
 
-*complexop.py*
+_complexop.py_
 
 ```
 a += 1
@@ -2493,7 +2486,7 @@ a /= 2
 The ones above are to edit the current value of the variable.\
 Sorry to JS users, as there is no `i++;` or anything.
 
-### *Fun Fact: The python language was named after Monty Python.*
+### _Fun Fact: The python language was named after Monty Python._
 
 If you really want to know about the others, view [Py Operators](https://www.tutorialspoint.com/python/python_basic_operators.htm)
 
@@ -2502,7 +2495,7 @@ If you really want to know about the others, view [Py Operators](https://www.tu
 Like the title?\
 Anyways, a `'` and a `"` both indicate a string, but **do not combine them!**
 
-*quotes.py*
+_quotes.py_
 
 ```
 x = 'hello' # Good
@@ -2511,7 +2504,7 @@ x = "hello' # ERRORRR!!!
 
 ```
 
-*slicing.py*
+_slicing.py_
 
 ### String Slicing
 
@@ -2533,12 +2526,12 @@ x[2:-3] # 'llo everyb'
 
 Here is a list of functions/methods we will go over:
 
--   `.strip()`
--   `len()`
--   `.lower()`
--   `.upper()`
--   `.replace()`
--   `.split()`
+- `.strip()`
+- `len()`
+- `.lower()`
+- `.upper()`
+- `.replace()`
+- `.split()`
 
 [**Put Python Anywhere on the Web**\
 *Python in the browser. No installation required.*trinket.io](https://trinket.io/python3/2b693977e7 "https://trinket.io/python3/2b693977e7")[](https://trinket.io/python3/2b693977e7)
@@ -2547,7 +2540,7 @@ Here is a list of functions/methods we will go over:
 
 Input is a function that gathers input entered from the user in the command line. It takes one optional parameter, which is the users prompt.
 
-*inp.py*
+_inp.py_
 
 ```
 print('Type something: ')
@@ -2558,7 +2551,7 @@ print('Here is what you said: ', x)
 
 If you wanted to make it smaller, and look neater to the user, you could do...
 
-*inp2.py*
+_inp2.py_
 
 ```
 print('Here is what you said: ', input('Type something: '))
@@ -2566,7 +2559,7 @@ print('Here is what you said: ', input('Type something: '))
 ```
 
 Running:\
-*inp.py*
+_inp.py_
 
 ```
 Type something:
@@ -2575,7 +2568,7 @@ Here is what you said: Hello World
 
 ```
 
-*inp2.py*
+_inp2.py_
 
 ```
 Type something: Hello World
@@ -2587,7 +2580,7 @@ Here is what you said: Hello World
 
 Python has created a lot of functions that are located in other .py files. You need to import these **modules** to gain access to the,, You may wonder why python did this. The purpose of separate modules is to make python faster. Instead of storing millions and millions of functions, , it only needs a few basic ones. To import a module, you must write `input <modulename>`. Do not add the .py extension to the file name. In this example , we will be using a python created module named random.
 
-*module.py*
+_module.py_
 
 ```
 import random
@@ -2596,7 +2589,7 @@ import random
 
 Now, I have access to all functions in the random.py file. To access a specific function in the module, you would do `<module>.<function>`. For example:
 
-*module2.py*
+_module2.py_
 
 ```
 import random
@@ -2605,8 +2598,8 @@ print(random.randint(3,5)) # Prints a random number between 3 and 5
 ```
 
 > *Pro Tip:\
-> Do* `from random import randint` *to not have to do* `random.randint()`*, just* `randint()`_\
-> To import all functions from a module, you could do_ `from random import *`
+> Do* `from random import randint` *to not have to do* `random.randint()`*, just* `randint()`*\
+> To import all functions from a module, you could do* `from random import *`
 
 ### New: Loops!
 
@@ -2617,7 +2610,7 @@ Loops allow you to repeat code over and over again. This is useful if you want t
 The for loop goes through a list of variables, making a seperate variable equal one of the list every time.\
 Let's say we wanted to create the example above.
 
-*loop.py*
+_loop.py_
 
 ```
 from time import sleep
@@ -2629,7 +2622,7 @@ for i in range(100):
 
 This will print Hello with a .3 second delay 100 times. This is just one way to use it, but it is usually used like this:
 
-*loop2.py*
+_loop2.py_
 
 ```
 import time
@@ -2645,7 +2638,7 @@ for number in range(100):
 
 The while loop runs the code while something stays true. You would put `while <expression>`. Every time the loop runs, it evaluates if the expression is True. It it is, it runs the code, if not it continues outside of the loop. For example:
 
-*while.py*
+_while.py_
 
 ```
 while True: # Runs forever
@@ -2655,7 +2648,7 @@ while True: # Runs forever
 
 Or you could do:
 
-*while2.py*
+_while2.py_
 
 ```
 import random
@@ -2670,7 +2663,7 @@ while position != 1: # will run at least once
 
 The if statement allows you to check if something is True. If so, it runs the code, if not, it continues on. It is kind of like a while loop, but it executes **only once**. An if statement is written:
 
-*if.py*
+_if.py_
 
 ```
 import random
@@ -2686,7 +2679,7 @@ if num == 12:
 
 Now, you may think that it would be better if you could make it print only one message. Not as many that are True. You can do that with an `elif` statement:
 
-*elif.py*
+_elif.py_
 
 ```
 import random
@@ -2700,7 +2693,7 @@ elif num > 2:
 
 Now, you may wonder how to run code if none work. Well, there is a simple statement called `else:`
 
-*else.py*
+_else.py_
 
 ```
 import random
@@ -2721,7 +2714,7 @@ It is quite tiring to type:
 
 Characters: 389
 
-*nofunc.py*
+_nofunc.py_
 
 ```
 import random
@@ -2744,7 +2737,7 @@ Now with functions, you can seriously lower the amount of characters:
 
 Characters: 254
 
-*functions.py*
+_functions.py_
 
 ```
 import random
@@ -2760,7 +2753,7 @@ r('j')
 
 ```
 
-* * * * *
+---
 
 ### Project Based Learning:
 
@@ -2988,12 +2981,11 @@ Exported from [Medium](https://medium.com/) on July 13, 2021.
 
 [view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/Beginners-.md)[Beginners-.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-beginners-md) hosted with ❤ by [GitHub](https://github.com/)
 
-CSS Interview Prep Quiz
-=======================
+# CSS Interview Prep Quiz
 
 Plus Css Cheat Sheet (82 questions total)
 
-* * * * *
+---
 
 ### CSS Interview Prep Quiz
 
@@ -3023,30 +3015,30 @@ div a
 
 ```
 
--   [x] `.example a`
--   [ ] `div a`
--   [ ] `a`
--   [ ] `ul li a`
+- [x] `.example a`
+- [ ] `div a`
+- [ ] `a`
+- [ ] `ul li a`
 
 #### Q2. Using an attribute selector, how would you select an `<a>` element with a "title" attribute?
 
--   [x] a[title]{...}
--   [ ] a > title {...}
--   [ ] a.title {...}
--   [ ] a=title {...}
+- [x] a[title]{...}
+- [ ] a > title {...}
+- [ ] a.title {...}
+- [ ] a=title {...}
 
 #### Q3. CSS grid and flexbox are now becoming a more popular way to create page layouts. However, floats are still commonly used, especially when working with an older code base, or it you need to support older browser version. What are two valid techniques used to clear floats?
 
--   [ ] Use the "clearfix hack" on the floated element and add a float to the parent element.
--   [ ] Use the overflow property on the floated element or the "clearfix hack" on either the floated or parent element.
--   [ ] Use the "clearfix hack" on the floated element or the overflow property on the parent element.
--   [x] Use the "clearfix hack" on the parent element or use the overflow property with a value other than "visible."
+- [ ] Use the "clearfix hack" on the floated element and add a float to the parent element.
+- [ ] Use the overflow property on the floated element or the "clearfix hack" on either the floated or parent element.
+- [ ] Use the "clearfix hack" on the floated element or the overflow property on the parent element.
+- [x] Use the "clearfix hack" on the parent element or use the overflow property with a value other than "visible."
 
 #### Q4. What element(s) do the following selectors match to?
 
 `1) .nav {...}` `2) nav {...}` `3) #nav {...}`
 
--   [ ]
+- [ ]
 
 ```
 1\. An element with an ID of "nav"
@@ -3055,14 +3047,14 @@ div a
 
 ```
 
--   [ ]
+- [ ]
 
 ```
 They all target the same nav element.
 
 ```
 
--   [x]
+- [x]
 
 ```
 1\. An element with an class of "nav"
@@ -3071,7 +3063,7 @@ They all target the same nav element.
 
 ```
 
--   [ ]
+- [ ]
 
 ```
 1\. An element with an class of "nav"
@@ -3082,17 +3074,17 @@ They all target the same nav element.
 
 #### Q5. When adding transparency styles, what is the difference between using the opacity property versus the background property with an `rgba()` value?
 
--   [ ] Opacity specifies the level of transparency of the child elements. Background with an `rgba()` value applies transparency to the background color only.
--   [ ] Opacity applies transparency to the background color only. Background with an `rgba()` value specifies the level of transparency of an element, as a whole, including its content.
--   [x] Opacity specifies the level of transparency of an element, including its content. Background with an `rgba()` value applies transparency to the background color only.
--   [ ] Opacity applies transparency to the parent and child elements. Background with an `rgba()` value specifies the level of transparency of the parent element only.
+- [ ] Opacity specifies the level of transparency of the child elements. Background with an `rgba()` value applies transparency to the background color only.
+- [ ] Opacity applies transparency to the background color only. Background with an `rgba()` value specifies the level of transparency of an element, as a whole, including its content.
+- [x] Opacity specifies the level of transparency of an element, including its content. Background with an `rgba()` value applies transparency to the background color only.
+- [ ] Opacity applies transparency to the parent and child elements. Background with an `rgba()` value specifies the level of transparency of the parent element only.
 
 #### Q6. What is true of block and inline elements? (Alternative: Which statement about block and inline elements is true?)
 
--   [ ] By default, block elements are the same height and width as the content container between their tags; inline elements span the entire width of its container.
--   [x] By default, block elements span the entire width of its container; inline elements are the same height and width as the content contained between their tags.
--   [ ] A `<nav>` element is an example of an inline element. `<header>` is an example of a block element.
--   [ ] A `<span>` is an example of a block element. `<div>` is an example of an inline element.
+- [ ] By default, block elements are the same height and width as the content container between their tags; inline elements span the entire width of its container.
+- [x] By default, block elements span the entire width of its container; inline elements are the same height and width as the content contained between their tags.
+- [ ] A `<nav>` element is an example of an inline element. `<header>` is an example of a block element.
+- [ ] A `<span>` is an example of a block element. `<div>` is an example of an inline element.
 
 #### Q7. CSS grid introduced a new length unit, fr, to create flexible grid tracks. Referring to the code sample below, what will the widths of the three columns be?
 
@@ -3105,37 +3097,37 @@ They all target the same nav element.
 
 ```
 
--   [ ] The first column will have a width of 50px. The second column will be 50px wide and the third column will be 100px wide.
--   [x] The first column will have a width of 50px. The second column will be 150px wide and the third column will be 300px wide.
--   [ ] The first column will have a width of 50px. The second column will be 300px wide and the third column will be 150px wide.
--   [ ] The first column will have a width of 50px. The second column will be 500px wide and the third column will be 1000px wide.
+- [ ] The first column will have a width of 50px. The second column will be 50px wide and the third column will be 100px wide.
+- [x] The first column will have a width of 50px. The second column will be 150px wide and the third column will be 300px wide.
+- [ ] The first column will have a width of 50px. The second column will be 300px wide and the third column will be 150px wide.
+- [ ] The first column will have a width of 50px. The second column will be 500px wide and the third column will be 1000px wide.
 
 #### Q8. What is the line-height property primarily used for?
 
--   [x] to control the height of the space between two lines of content
--   [ ] to control the height of the space between heading elements
--   [ ] to control the height of the character size
--   [ ] to control the width of the space between characters
+- [x] to control the height of the space between two lines of content
+- [ ] to control the height of the space between heading elements
+- [ ] to control the height of the character size
+- [ ] to control the width of the space between characters
 
 #### Q9. Three of these choices are true about class selectors. Which is NOT true?
 
--   [ ] Multiple classes can be used within the same element.
--   [ ] The same class can be used multiple times per page.
--   [ ] Class selectors with a leading period
--   [x] Classes can be used multiple times per page but not within the same element.
+- [ ] Multiple classes can be used within the same element.
+- [ ] The same class can be used multiple times per page.
+- [ ] Class selectors with a leading period
+- [x] Classes can be used multiple times per page but not within the same element.
 
 #### Q10. There are many properties that can be used to align elements and create page layouts such as float, position, flexbox and grid. Of these four properties, which one should be used to align a global navigation bar which stays fixed at the top of the page?
 
--   [x] position
--   [ ] flexbox
--   [ ] grid
--   [ ] float
+- [x] position
+- [ ] flexbox
+- [ ] grid
+- [ ] float
 
 #### Q11. In the shorthand example below, which individual background properties are represented?
 
 `background: blue url(image.jpg) no-repeat scroll 0px 0px;`
 
--   [x]
+- [x]
 
 ```
 background-color: blue;
@@ -3146,7 +3138,7 @@ background-position: 0px 0px;
 
 ```
 
--   [ ]
+- [ ]
 
 ```
 background-color: blue;
@@ -3157,7 +3149,7 @@ background-size: 0px 0px;
 
 ```
 
--   [ ]
+- [ ]
 
 ```
 background-color: blue;
@@ -3168,7 +3160,7 @@ background-position: 0px 0px;
 
 ```
 
--   [ ]
+- [ ]
 
 ```
 background-color: blue;
@@ -3203,17 +3195,17 @@ a {
 
 ```
 
--   [ ] green
--   [x] yellow
--   [ ] blue
--   [ ] red
+- [ ] green
+- [x] yellow
+- [ ] blue
+- [ ] red
 
 #### Q13. When elements overlap, they are ordered on the z-axis (i.e., which element covers another). The z-index property can be used to specify the z-order of overlapping elements. Which set of statements about the z-index property are true?
 
--   [x] Larger z-index values appear on top of elements with a lower z-index value. Negative and positive numbers can be used. z-index can only be used on positioned elements.
--   [ ] Smaller z-index values appear on top of elements with a larger z-index value. Negative and positive numbers can be used. z-index must also be used with positioned elements.
--   [ ] Larger z-index values appear on top of elements with a lower z-index value. Only positive numbers can be used. z-index must also be used with positioned elements.
--   [ ] Smaller z-index values appear on top of elements with a larger z-index value. Negative and positive numbers can be used. z-index can be used with or without positioned elements.
+- [x] Larger z-index values appear on top of elements with a lower z-index value. Negative and positive numbers can be used. z-index can only be used on positioned elements.
+- [ ] Smaller z-index values appear on top of elements with a larger z-index value. Negative and positive numbers can be used. z-index must also be used with positioned elements.
+- [ ] Larger z-index values appear on top of elements with a lower z-index value. Only positive numbers can be used. z-index must also be used with positioned elements.
+- [ ] Smaller z-index values appear on top of elements with a larger z-index value. Negative and positive numbers can be used. z-index can be used with or without positioned elements.
 
 #### Q14. What is the difference between the following line-height settings?
 
@@ -3223,10 +3215,10 @@ line-height: 2
 
 ```
 
--   [x] The value of 20px will set the line-height to 20px. The value of 2 will set the line-height to twice the size of the corresponding font-size value.
--   [ ] The value of 20px will set the line-height to 20px. The value of 2 is not valid.
--   [ ] The value of 20px will set the line-height to 20px. The value of 2 will default to a value of 2px.
--   [ ] The value of 20px will set the line-height to 20px. The value of 2 will set the line-height to 20% of the corresponding font-size value.
+- [x] The value of 20px will set the line-height to 20px. The value of 2 will set the line-height to twice the size of the corresponding font-size value.
+- [ ] The value of 20px will set the line-height to 20px. The value of 2 is not valid.
+- [ ] The value of 20px will set the line-height to 20px. The value of 2 will default to a value of 2px.
+- [ ] The value of 20px will set the line-height to 20px. The value of 2 will set the line-height to 20% of the corresponding font-size value.
 
 #### Q15. In the following example, what color will paragraph one and paragraph two be? (Alternative: In this example, what color will paragraphs one and two be?)
 
@@ -3246,14 +3238,14 @@ section + p {
 
 ```
 
--   [ ] Paragraph one will be blue, paragraph two will be red.
--   [ ] Both paragraphs will be blue.
--   [x] Paragraphs one will be red, paragraph two will be blue.
--   [ ] Both paragraphs will be red.
+- [ ] Paragraph one will be blue, paragraph two will be red.
+- [ ] Both paragraphs will be blue.
+- [x] Paragraphs one will be red, paragraph two will be blue.
+- [ ] Both paragraphs will be red.
 
 #### Q16.What are three valid ways of adding CSS to an HTML page?
 
--   [ ]
+- [ ]
 
 ```
 1\. External; CSS is written in a separate file.
@@ -3262,7 +3254,7 @@ section + p {
 
 ```
 
--   [ ]
+- [ ]
 
 ```
 1\. External; CSS is written in a separate file and is linked within the <header> element of the HTML file.
@@ -3271,7 +3263,7 @@ section + p {
 
 ```
 
--   [ ]
+- [ ]
 
 ```
 1\. External; CSS is written in a separate file and is linked within the <head> element of the HTML file.
@@ -3280,7 +3272,7 @@ section + p {
 
 ```
 
--   [x]
+- [x]
 
 ```
 1\. External; CSS is written in a separate file and is linked within the <head> element of the HTML file .
@@ -3291,10 +3283,10 @@ section + p {
 
 #### Q17. Which of the following is true of the SVG image format? (Alternative: Which statement about the SVG image format is true?)
 
--   [ ] CSS can be applied to SVGs but JavaScript cannot be.
--   [ ] SVGs work best for creating 3D graphics.
--   [x] SVGs can be created as a vector graphic or coded using SVG specific elements such as <svg>, <line>, and <ellipse>.
--   [ ] SVGs are a HAML-based markup language for creating vector graphics.
+- [ ] CSS can be applied to SVGs but JavaScript cannot be.
+- [ ] SVGs work best for creating 3D graphics.
+- [x] SVGs can be created as a vector graphic or coded using SVG specific elements such as <svg>, <line>, and <ellipse>.
+- [ ] SVGs are a HAML-based markup language for creating vector graphics.
 
 #### Q18. In the example below, when will the color pink be applied to the anchor element?
 
@@ -3305,45 +3297,45 @@ a:active {
 
 ```
 
--   [ ] The color of the link will display as pink after its been clicked or if the mouse is hovering over the link.
--   [ ] The color of the link will display as pink on mouse hover.
--   [x] The color of the link will display as pink while the link is being clicked but before the mouse click is released.
--   [ ] The color of the link will display as pink before it has been clicked.
+- [ ] The color of the link will display as pink after its been clicked or if the mouse is hovering over the link.
+- [ ] The color of the link will display as pink on mouse hover.
+- [x] The color of the link will display as pink while the link is being clicked but before the mouse click is released.
+- [ ] The color of the link will display as pink before it has been clicked.
 
 #### Q19. To change the color of an SVG using CSS, which property is used?
 
--   [ ] Use background-fill to set the color inside the object and stroke or border to set the color of the border.
--   [ ] The color cannot be changed with CSS.
--   [ ] Use fill or background to set the color inside the object and stroke to set the color of the border.
--   [x] Use fill to set the color inside the object and stroke to set the color of the border.
+- [ ] Use background-fill to set the color inside the object and stroke or border to set the color of the border.
+- [ ] The color cannot be changed with CSS.
+- [ ] Use fill or background to set the color inside the object and stroke to set the color of the border.
+- [x] Use fill to set the color inside the object and stroke to set the color of the border.
 
 #### Q20. When using position: fixed, what will the element always be positioned relative to?
 
--   [ ] the closest element with position: relative
--   [x] the viewport
--   [ ] the parent element
--   [ ] the wrapper element
+- [ ] the closest element with position: relative
+- [x] the viewport
+- [ ] the parent element
+- [ ] the wrapper element
 
 #### Q21. By default, a background image will repeat `\_\_\_`
 
--   [ ] only if the background-repeat property is set to repeat
--   [x] indefinitely, vertically, and horizontally
--   [ ] indefinitely on the horizontal axis only
--   [ ] once, on the x and y axis
+- [ ] only if the background-repeat property is set to repeat
+- [x] indefinitely, vertically, and horizontally
+- [ ] indefinitely on the horizontal axis only
+- [ ] once, on the x and y axis
 
 #### Q22. When using media queries, media types are used to target a device category. Which choice lists current valid media types?
 
--   [ ] print, screen, aural
--   [ ] print, screen, television
--   [x] print, screen, speech
--   [ ] print, speech, device
+- [ ] print, screen, aural
+- [ ] print, screen, television
+- [x] print, screen, speech
+- [ ] print, speech, device
 
 #### Q23. How would you make the first letter of every paragraph on the page red?
 
--   [x] p::first-letter { color: red; }
--   [ ] p:first-letter { color: red; }
--   [ ] first-letter::p { color: red; }
--   [ ] first-letter:p { color: red; }
+- [x] p::first-letter { color: red; }
+- [ ] p:first-letter { color: red; }
+- [ ] first-letter::p { color: red; }
+- [ ] first-letter:p { color: red; }
 
 #### Q24. In this example, what is the selector, property, and value?
 
@@ -3354,7 +3346,7 @@ p {
 
 ```
 
--   [ ]
+- [ ]
 
 ```
 "p" is the selector
@@ -3363,7 +3355,7 @@ p {
 
 ```
 
--   [x]
+- [x]
 
 ```
 "p" is the selector
@@ -3372,7 +3364,7 @@ p {
 
 ```
 
--   [ ]
+- [ ]
 
 ```
 "color" is the selector
@@ -3381,7 +3373,7 @@ p {
 
 ```
 
--   [ ]
+- [ ]
 
 ```
 "color" is the selector
@@ -3392,17 +3384,17 @@ p {
 
 #### Q25. What is the rem unit based on?
 
--   [ ] The rem unit is relative to the font-size of the p element.
--   [ ] You have to set the value for the rem unit by writing a declaration such as rem { font-size: 1 Spx; }
--   [ ] The rem unit is relative to the font-size of the containing (parent) element.
--   [x] The rem unit is relative to the font-size of the root element of the page.
+- [ ] The rem unit is relative to the font-size of the p element.
+- [ ] You have to set the value for the rem unit by writing a declaration such as rem { font-size: 1 Spx; }
+- [ ] The rem unit is relative to the font-size of the containing (parent) element.
+- [x] The rem unit is relative to the font-size of the root element of the page.
 
 #### Q26.Which of these would give a block element rounded corners?
 
--   [ ] corner-curve: 10px
--   [ ] border-corner: 10px
--   [x] border-radius: 10px
--   [ ] corner-radius: 10px
+- [ ] corner-curve: 10px
+- [ ] border-corner: 10px
+- [x] border-radius: 10px
+- [ ] corner-radius: 10px
 
 #### Q27. In the following media query example, what conditions are being targeted?
 
@@ -3411,24 +3403,24 @@ p {
 
 ```
 
--   [x] The rule will apply to a device that has either a width of 1024px or wider, or is a screen device in landscape mode.
--   [ ] The rule will apply to a device that has a width of 1024px or narrower and is a screen device in landscape mode.
--   [ ] The rule will apply to a device that has a width of 1024px or wider and is a screen device in landscape mode.
--   [ ] The rule will apply to a device that has a width of 1024px or narrower, or is a screen device in landscape mode.
+- [x] The rule will apply to a device that has either a width of 1024px or wider, or is a screen device in landscape mode.
+- [ ] The rule will apply to a device that has a width of 1024px or narrower and is a screen device in landscape mode.
+- [ ] The rule will apply to a device that has a width of 1024px or wider and is a screen device in landscape mode.
+- [ ] The rule will apply to a device that has a width of 1024px or narrower, or is a screen device in landscape mode.
 
 #### Q28. CSS transform properties are used to change the shape and position of the selected objects. The transform-origin property specifies the location of the element's transformation origin. By default, what is the location of the origin?
 
--   [x] the top left corner of the element
--   [ ] the center of the element
--   [ ] the top right corner of the element
--   [ ] the bottom left of the element
+- [x] the top left corner of the element
+- [ ] the center of the element
+- [ ] the top right corner of the element
+- [ ] the bottom left of the element
 
 #### Q29. Which of the following is not a valid color value?
 
--   [ ] color: #000
--   [ ] color: rgb(0,0,0)
--   [ ] color: #000000
--   [x] color: 000000
+- [ ] color: #000
+- [ ] color: rgb(0,0,0)
+- [ ] color: #000000
+- [x] color: 000000
 
 #### Q30. What is the vertical gap between the two elements below?
 
@@ -3438,31 +3430,31 @@ p {
 
 ```
 
--   [x] 2rem
--   [ ] 32px
--   [ ] 64px
--   [ ] 4rem
+- [x] 2rem
+- [ ] 32px
+- [ ] 64px
+- [ ] 4rem
 
 #### Q31. When using the Flexbox method, what property and value is used to display flex items in a column?
 
--   [x] flex-flow: column; or flex-direction: column
--   [ ] flex-flow: column;
--   [ ] flex-column: auto;
--   [ ] flex-direction: column;
+- [x] flex-flow: column; or flex-direction: column
+- [ ] flex-flow: column;
+- [ ] flex-column: auto;
+- [ ] flex-direction: column;
 
 #### Q32. Which type of declaration will take precedence?
 
--   [ ] any declarations in user-agent stylesheets
--   [x] important declarations in user stylesheets
--   [ ] normal declarations in author stylesheets
--   [ ] important declarations in author stylesheets
+- [ ] any declarations in user-agent stylesheets
+- [x] important declarations in user stylesheets
+- [ ] normal declarations in author stylesheets
+- [ ] important declarations in author stylesheets
 
 #### Q33. The flex-direction property is used to specify the direction that flex items are displayed. What are the values used to specify the direction of the items in the following examples?
 
--   [x] Example 1: `flex-direction: row;` Example 2: `flex-direction: row-reverse;` Example 3: `flex-direction: column;` Example 4: `flex-direction: column-reverse;`
--   [ ] Example 1: `flex-direction: row-reverse;` Example 2: `flex-direction: row;` Example 3: `flex-direction: column-reverse;` Example 4: `flex-direction: column;`
--   [ ] Example 1: `flex-direction: row;` Example 2: `flex-direction: row-reverse;` Example 3: `flex-direction: column;` Example 4: `flex-direction: reverse-column;`
--   [ ] Example 1: `flex-direction: column;` Example 2: `flex-direction: column-reverse;` Example 3: `flex-direction: row;` Example 4: `flex-direction: row-reverse;`
+- [x] Example 1: `flex-direction: row;` Example 2: `flex-direction: row-reverse;` Example 3: `flex-direction: column;` Example 4: `flex-direction: column-reverse;`
+- [ ] Example 1: `flex-direction: row-reverse;` Example 2: `flex-direction: row;` Example 3: `flex-direction: column-reverse;` Example 4: `flex-direction: column;`
+- [ ] Example 1: `flex-direction: row;` Example 2: `flex-direction: row-reverse;` Example 3: `flex-direction: column;` Example 4: `flex-direction: reverse-column;`
+- [ ] Example 1: `flex-direction: column;` Example 2: `flex-direction: column-reverse;` Example 3: `flex-direction: row;` Example 4: `flex-direction: row-reverse;`
 
 #### Q34. There are two sibling combinators that can be used to select elements contained within the same parent element; the general sibling combinator (~) and the adjacent sibling combinator (+). Referring to example below, which elements will the styles be applied to?
 
@@ -3483,67 +3475,67 @@ h2 + p {
 
 ```
 
--   [ ] Paragraphs 2 and 3 will be blue. The h2 and paragraph 2 will have a beige background.
--   [x] Paragraphs 2, and 3 will be blue, and paragraph 2 will have a beige background.
--   [x] Paragraphs 2 and 3 will be blue. Paragraph 2 will have a beige background.
--   [ ] Paragraph 2 will be blue. Paragraphs 2 and 3 will have a beige background.
+- [ ] Paragraphs 2 and 3 will be blue. The h2 and paragraph 2 will have a beige background.
+- [x] Paragraphs 2, and 3 will be blue, and paragraph 2 will have a beige background.
+- [x] Paragraphs 2 and 3 will be blue. Paragraph 2 will have a beige background.
+- [ ] Paragraph 2 will be blue. Paragraphs 2 and 3 will have a beige background.
 
 #### Q35. When using flexbox, the "justify-content" property can be used to distribute the space between the flex items along the main axis. Which value should be used to evenly distribute the flex items within the container shown below?
 
--   [x] justify-content: space-around;
--   [ ] justify-content: center;
--   [ ] justify-content: auto;
--   [ ] justify-content: space-between;
+- [x] justify-content: space-around;
+- [ ] justify-content: center;
+- [ ] justify-content: auto;
+- [ ] justify-content: space-between;
 
 #### Q36. There are many advantages to using icon fonts. What is one of those advantages?
 
--   [ ] Icon fonts increase accessibility.
--   [ ] Icon fonts can be used to replace custom fonts.
--   [x] Icon fonts can be styled with typography related properties such as font-size and color.
--   [ ] Icon fonts are also web safe fonts.
+- [ ] Icon fonts increase accessibility.
+- [ ] Icon fonts can be used to replace custom fonts.
+- [x] Icon fonts can be styled with typography related properties such as font-size and color.
+- [ ] Icon fonts are also web safe fonts.
 
 #### Q37. What is the difference between `display:none` and `visibility:hidden`?
 
--   [ ] Both will hide the element on the page, but display:none has greater browser support. visibility:hidden is a new property and does not have the best browser support
--   [ ] display:none hides the elements but maintains the space it previously occupied. visibility:hidden will hide the element from view and remove it from the normal flow of the document
--   [x] display:none hides the element from view and removes it from the normal flow of the document. visibility:hidden will hide the element but maintains the space it previously occupied.
--   [ ] There is no difference; both will hide the element on the page
+- [ ] Both will hide the element on the page, but display:none has greater browser support. visibility:hidden is a new property and does not have the best browser support
+- [ ] display:none hides the elements but maintains the space it previously occupied. visibility:hidden will hide the element from view and remove it from the normal flow of the document
+- [x] display:none hides the element from view and removes it from the normal flow of the document. visibility:hidden will hide the element but maintains the space it previously occupied.
+- [ ] There is no difference; both will hide the element on the page
 
 #### Q38. What selector and property would you use to scale an element to be 50% smaller on hover?
 
--   [ ] element:hover {scale: 0.5;}
--   [x] element:hover {transform: scale(0.5);}
--   [ ] element:hover {scale: 50%;}
--   [ ] element:hover {transform: scale(50%);}
+- [ ] element:hover {scale: 0.5;}
+- [x] element:hover {transform: scale(0.5);}
+- [ ] element:hover {scale: 50%;}
+- [ ] element:hover {transform: scale(50%);}
 
 #### Q39. Which statement regarding icon fonts is true?
 
--   [ ] Icon fonts can be inserted only using JavaScript.
--   [ ] Icon fonts are inserted as inline images.
--   [ ] Icon fonts require browser extensions.
--   [x] Icon fonts can be styled with typography-related properties such as font-size and color.
+- [ ] Icon fonts can be inserted only using JavaScript.
+- [ ] Icon fonts are inserted as inline images.
+- [ ] Icon fonts require browser extensions.
+- [x] Icon fonts can be styled with typography-related properties such as font-size and color.
 
 #### Q40. The values for the font-weight property can be keywords or numbers. For each numbered value below, what is the associated keyword?
 
 `font-weight: 400; font-weight: 700;`
 
--   [ ] bold; normal
--   [x] normal; bold
--   [ ] light; normal
--   [ ] normal; bolder
+- [ ] bold; normal
+- [x] normal; bold
+- [ ] light; normal
+- [ ] normal; bolder
 
 #### Q41. If the width of the container is 500 pixels, what would the width of the three columns be in this layout?
 
 `.grid { display: grid; grid-template-columns: 50px 1fr 2fr; }`
 
--   [x] 50px, 150px, 300px
--   [ ] 50px, 200px, 300px
--   [ ] 50px, 100px, 200px
--   [ ] 50px, 50px, 100px
+- [x] 50px, 150px, 300px
+- [ ] 50px, 200px, 300px
+- [ ] 50px, 100px, 200px
+- [ ] 50px, 50px, 100px
 
 #### Q42. Using the :nth-child pseudo class, what would be the most efficient way to style every third item in a list, no matter how many items are present, starting with item 2?
 
--   [ ]
+- [ ]
 
 ```
 li:nth-child(3 + 2n) {
@@ -3552,7 +3544,7 @@ li:nth-child(3 + 2n) {
 
 ```
 
--   [x]
+- [x]
 
 ```
 li:nth-child(3n + 2) {
@@ -3561,7 +3553,7 @@ li:nth-child(3n + 2) {
 
 ```
 
--   [ ]
+- [ ]
 
 ```
 li:nth-child(2),
@@ -3572,7 +3564,7 @@ li:nth-child(8) {
 
 ```
 
--   [ ]
+- [ ]
 
 ```
 li:nth-child(2n + 3) {
@@ -3583,31 +3575,31 @@ li:nth-child(2n + 3) {
 
 #### Q43. Which selector would select only internal links within the current page?
 
--   [ ] `a[href="#"] {...}`
--   [ ] `a[href~="#"]`
--   [ ] `a[href^="#"]`
--   [x] `a[href="#"]`
+- [ ] `a[href="#"] {...}`
+- [ ] `a[href~="#"]`
+- [ ] `a[href^="#"]`
+- [x] `a[href="#"]`
 
 #### Q44. What is not true about class selectors?
 
--   [x] Only one class value can be assigned to an element.
--   [ ] An element can have multiple class value.
--   [ ] Class selectors are marked with a leading period.
--   [ ] More than one element can have the same class value.
+- [x] Only one class value can be assigned to an element.
+- [ ] An element can have multiple class value.
+- [ ] Class selectors are marked with a leading period.
+- [ ] More than one element can have the same class value.
 
 #### Q45. What is the difference between the margin and padding properties?
 
--   [ ] Margin adds space around and inside of an element; padding adds space only inside of an element.
--   [x] Margin adds space around an element; padding adds apace inside of an element.
--   [ ] Margin adds a line around an element, padding adds space inside of an element.
--   [ ] Margin adds space inside of an element, padding adds space around an element.
+- [ ] Margin adds space around and inside of an element; padding adds space only inside of an element.
+- [x] Margin adds space around an element; padding adds apace inside of an element.
+- [ ] Margin adds a line around an element, padding adds space inside of an element.
+- [ ] Margin adds space inside of an element, padding adds space around an element.
 
 #### Q46. What is not a valid way of declaring a padding value of 10 pixels on the top and bottom, and 0 pixels on the left and right?
 
--   [x] padding: 10px 10px 0px 0px;
--   [ ] padding: 10px 0px;
--   [ ] padding: 10px 0;
--   [ ] padding: 10px 0px 10px 0px;
+- [x] padding: 10px 10px 0px 0px;
+- [ ] padding: 10px 0px;
+- [ ] padding: 10px 0;
+- [ ] padding: 10px 0px 10px 0px;
 
 #### Q47. Is there an error in this code? If so, find the best description of the problem
 
@@ -3619,17 +3611,17 @@ li:nth-child(2n + 3) {
 
 ```
 
--   [ ] The font file formats are not supported in modern browsers.
--   [ ] The src attribute requires a comma between the URL and format values.
--   [ ] There are no errors in the example.
--   [x] The sans-serif inclusion is problematic.
+- [ ] The font file formats are not supported in modern browsers.
+- [ ] The src attribute requires a comma between the URL and format values.
+- [ ] There are no errors in the example.
+- [x] The sans-serif inclusion is problematic.
 
 #### Q48. Which style places an element at a fixed location within its container?
 
--   [x] position: absolute;
--   [ ] display: flex;
--   [ ] display: block;
--   [ ] float: left;
+- [x] position: absolute;
+- [ ] display: flex;
+- [ ] display: block;
+- [ ] float: left;
 
 #### Q49. The calc() CSS function is often used for calculating relative values. In the example below, what is the specified margin-left value?
 
@@ -3640,24 +3632,24 @@ li:nth-child(2n + 3) {
 
 ```
 
--   [x] The left margin value is equal to 5% of its parents element's width plus 5px
--   [ ] The left margin value is equal to 5% of the viewport width plus 5px
--   [ ] The left margin value is equal to 5% of the closest positioned element's width plus 5px
--   [ ] The left margin value is equal to 5% of the selected element's width (.example) plus 5px
+- [x] The left margin value is equal to 5% of its parents element's width plus 5px
+- [ ] The left margin value is equal to 5% of the viewport width plus 5px
+- [ ] The left margin value is equal to 5% of the closest positioned element's width plus 5px
+- [ ] The left margin value is equal to 5% of the selected element's width (.example) plus 5px
 
 #### Q50. What is the CSS selector for an `<a>` tag containing the title attribute?
 
--   [x] `a[title]`
--   [ ] `a > title`
--   [ ] `a=title`
--   [ ] `a.title`
+- [x] `a[title]`
+- [ ] `a > title`
+- [ ] `a=title`
+- [ ] `a.title`
 
 #### Q51. Which code would you use to absolutely position an element of the logo class?
 
--   [x] `.logo { position: absolute; left: 100px; top: 150px; }`
--   [ ] `.logo { position: absolute; margin-left: 100px; margin-top: 150px; }`
--   [ ] `.logo { position: absolute; padding-left: 100px; padding-top: 150px; }`
--   [ ] `.logo { position: absolute; left-padding: 100px; top-padding: 150px; }`
+- [x] `.logo { position: absolute; left: 100px; top: 150px; }`
+- [ ] `.logo { position: absolute; margin-left: 100px; margin-top: 150px; }`
+- [ ] `.logo { position: absolute; padding-left: 100px; padding-top: 150px; }`
+- [ ] `.logo { position: absolute; left-padding: 100px; top-padding: 150px; }`
 
 #### Q52. In this example, what color will Paragraph 1 be?
 
@@ -3683,42 +3675,42 @@ p:first-child {
 
 ```
 
--   [ ] blue
--   [ ] green
--   [x] red
--   [ ] yellow
+- [ ] blue
+- [ ] green
+- [x] red
+- [ ] yellow
 
 #### Q53. What is the `::placeholder pseudo-element` used for?
 
--   [x] It is used to format the appearance of placeholder text within a form control.
--   [ ] It specifies the default input text for a form control.
--   [ ] It writes text content into a hyperlink tooltip.
--   [ ] It writes text content into any page element.
+- [x] It is used to format the appearance of placeholder text within a form control.
+- [ ] It specifies the default input text for a form control.
+- [ ] It writes text content into a hyperlink tooltip.
+- [ ] It writes text content into any page element.
 
 #### Q54. Which statement is true of the single colon (`:`) or double colon (`::`) notations for pseudo-elements-for example, `::before` and `:before`?
 
--   [ ] All browsers support single and double colons for new and older pseudo-elements. So you can use either but it is convention to use single colons for consistency.
--   [ ] In CSS3, the double colon notation (`::`) was introduced to create a consistency between pseudo-elements from pseudo-classes. For newer browsers, use the double colon notation. For IE8 and below, using single colon notation (`:`).
--   [ ] Only the new CSS3 pseudo-elements require the double colon notation while the CSS2 pseudo-elements do not.
--   [x] In CSS3, the double colon notation (`::`) was introduced to differentiate pseudo-elements from pseudo-classes. However, modern browsers support both formats. Older browsers such as IE8 and below do not.
+- [ ] All browsers support single and double colons for new and older pseudo-elements. So you can use either but it is convention to use single colons for consistency.
+- [ ] In CSS3, the double colon notation (`::`) was introduced to create a consistency between pseudo-elements from pseudo-classes. For newer browsers, use the double colon notation. For IE8 and below, using single colon notation (`:`).
+- [ ] Only the new CSS3 pseudo-elements require the double colon notation while the CSS2 pseudo-elements do not.
+- [x] In CSS3, the double colon notation (`::`) was introduced to differentiate pseudo-elements from pseudo-classes. However, modern browsers support both formats. Older browsers such as IE8 and below do not.
 
 #### Q55. Which choice is not valid value for the font-style property?
 
--   [ ] normal
--   [ ] italic
--   [x] none
--   [ ] oblique
+- [ ] normal
+- [ ] italic
+- [x] none
+- [ ] oblique
 
 #### Q56. When would you use the @font-face method?
 
--   [ ] to set the font size of the text
--   [x] to load custom fonts into stylesheet
--   [ ] to change the name of the font declared in the font-family
--   [ ] to set the color of the text
+- [ ] to set the font size of the text
+- [x] to load custom fonts into stylesheet
+- [ ] to change the name of the font declared in the font-family
+- [ ] to set the color of the text
 
 #### Q57. When elements within a container overlap, the z-index property can be used to indicate how those items are stacked on top of each other. Which set of statements is true?
 
--   [x]
+- [x]
 
 ```
 1\. Larger z-index values appear on top elements with a lower z-index value.
@@ -3727,7 +3719,7 @@ p:first-child {
 
 ```
 
--   [ ]
+- [ ]
 
 ```
 1\. Smaller z-index values appear on top of elements with a larger z-index value.
@@ -3736,7 +3728,7 @@ p:first-child {
 
 ```
 
--   [ ]
+- [ ]
 
 ```
 1\. Smaller z-index values appear on top of elements with a larger z-index value.
@@ -3745,7 +3737,7 @@ p:first-child {
 
 ```
 
--   [ ]
+- [ ]
 
 ```
 1\. Larger z-index values appear on top of elements with a lower z-index value.
@@ -3756,45 +3748,45 @@ p:first-child {
 
 #### Q58. You have a large image that needs to fit into a 400 x 200 pixel area. What should you resize the image to if your users are using Retina displays?
 
--   [ ] 2000 x 1400 pixels
--   [ ] 200 x 100 pixels
--   [x] 800 x 400 pixels
--   [ ] 400 x 200 pixels
+- [ ] 2000 x 1400 pixels
+- [ ] 200 x 100 pixels
+- [x] 800 x 400 pixels
+- [ ] 400 x 200 pixels
 
 #### Q59. In Chrome's Developer Tools view, where are the default styles listed?
 
--   [x] under the User Agent Stylesheet section on the right
--   [ ] in the third panel under the Layout tab
--   [ ] under the HTML view on the left
--   [ ] in the middle panel
+- [x] under the User Agent Stylesheet section on the right
+- [ ] in the third panel under the Layout tab
+- [ ] under the HTML view on the left
+- [ ] in the middle panel
 
-#### Q60. While HTML controls document structure, CSS controls _.
+#### Q60. While HTML controls document structure, CSS controls \_.
 
--   [ ] semantic meaning
--   [ ] content meaning
--   [ ] document structure
--   [x] content appearance
+- [ ] semantic meaning
+- [ ] content meaning
+- [ ] document structure
+- [x] content appearance
 
 #### Q61. What is the recommended name you should give the folder that holds your project's images?
 
--   [x] images
--   [ ] #images
--   [ ] Images
--   [ ] my images
+- [x] images
+- [ ] #images
+- [ ] Images
+- [ ] my images
 
 #### Q62. What is an advantage of using inline CSS?
 
--   [ ] It is easier to manage.
--   [x] It is easier to add multiple styles through it.
--   [ ] It can be used to quickly test local CSS overrides.
--   [ ] It reduces conflict with other CSS definition methods.
+- [ ] It is easier to manage.
+- [x] It is easier to add multiple styles through it.
+- [ ] It can be used to quickly test local CSS overrides.
+- [ ] It reduces conflict with other CSS definition methods.
 
 #### Q63.Which W3C status code represents a CSS specification that is fully implemented by modern browsers?
 
--   [ ] Proposed Recommendation
--   [ ] Working Draft
--   [x] Recommendation
--   [ ] Candidate Recommendation
+- [ ] Proposed Recommendation
+- [ ] Working Draft
+- [x] Recommendation
+- [ ] Candidate Recommendation
 
 #### Q64. Are any of the following declarations invalid?
 
@@ -3805,14 +3797,14 @@ padding: 10px 0; /* declaration C */
 
 ```
 
--   [ ] Declaration A is invalid.
--   [ ] Declaration B is invalid.
--   [ ] Declaration C is invalid.
--   [x] All declarations are valid.
+- [ ] Declaration A is invalid.
+- [ ] Declaration B is invalid.
+- [ ] Declaration C is invalid.
+- [x] All declarations are valid.
 
 #### Q65. Which CSS will cause your links to have a solid blue background that changes to semitransparent on hover?
 
--   [x]
+- [x]
 
 ```
 a:link {
@@ -3824,7 +3816,7 @@ a:hover {
 
 ```
 
--   [ ]
+- [ ]
 
 ```
 a {
@@ -3836,7 +3828,7 @@ a:hover {
 
 ```
 
--   [ ]
+- [ ]
 
 ```
 a:link {
@@ -3848,7 +3840,7 @@ a:hover {
 
 ```
 
--   [ ]
+- [ ]
 
 ```
 a:hover {
@@ -3862,10 +3854,10 @@ a:link {
 
 #### Q66. Which CSS rule takes precedence over the others listed?
 
--   [ ] `div.sidebar {}`
--   [ ] `* {}`
--   [x] `div#sidebar2 p {}`
--   [ ] `.sidebar p {}`
+- [ ] `div.sidebar {}`
+- [ ] `* {}`
+- [x] `div#sidebar2 p {}`
+- [ ] `.sidebar p {}`
 
 #### Q67. The body of your page includes some HTML sections. How will it look with the following CSS applied?
 
@@ -3880,45 +3872,45 @@ section {
 
 ```
 
--   [x] blue sections on a white background
--   [ ] Yellow sections on a blue background
--   [ ] Green sections on a white background
--   [ ] blue sections on a red background
+- [x] blue sections on a white background
+- [ ] Yellow sections on a blue background
+- [ ] Green sections on a white background
+- [ ] blue sections on a red background
 
 #### Q68. Which CSS keyword can you use to override standard source order and specificity rules?
 
--   [ ] `!elevate!`
--   [ ] `*prime`
--   [ ] `override`
--   [x] `!important`
+- [ ] `!elevate!`
+- [ ] `*prime`
+- [ ] `override`
+- [x] `!important`
 
-#### Q69. You can use the _ pseudo-class to set a different color on a link if it was clicked on.
+#### Q69. You can use the \_ pseudo-class to set a different color on a link if it was clicked on.
 
--   [x] `a:visited`
--   [ ] `a:hover`
--   [ ] `a:link`
--   [ ] `a:focus`
+- [x] `a:visited`
+- [ ] `a:hover`
+- [ ] `a:link`
+- [ ] `a:focus`
 
 #### Q70. Which color will look the brightest on your screen, assuming the background is white?
 
--   [ ] `background-color: #aaa;`
--   [ ] `background-color: #999999;`
--   [ ] `background-color: rgba(170,170,170,0.5);`
--   [x] `background-color: rgba(170,170,170,0.2);`
+- [ ] `background-color: #aaa;`
+- [ ] `background-color: #999999;`
+- [ ] `background-color: rgba(170,170,170,0.5);`
+- [x] `background-color: rgba(170,170,170,0.2);`
 
 #### Q71. Which CSS selector can you use to select all elements on your page associated with the two classes header and clear?
 
--   [ ] `."header clear" {}`
--   [ ] `header#clear {}`
--   [x] `.header.clear {}`
--   [ ] `.header clear {}`
+- [ ] `."header clear" {}`
+- [ ] `header#clear {}`
+- [x] `.header.clear {}`
+- [ ] `.header clear {}`
 
-#### Q72. A universal selector is specified using a(n) _.
+#### Q72. A universal selector is specified using a(n) \_.
 
--   [ ] "h1" string
--   [ ] "a" character
--   [ ] "p" character
--   [x] "*" character
+- [ ] "h1" string
+- [ ] "a" character
+- [ ] "p" character
+- [x] "\*" character
 
 #### Q73. In the following CSS code, `'h1'` is the _, while `'color'` is the _.
 
@@ -3929,10 +3921,10 @@ h1 {
 
 ```
 
--   [ ] property; declaration
--   [ ] declaration; rule
--   [ ] "p" character
--   [x] selector; property
+- [ ] property; declaration
+- [ ] declaration; rule
+- [ ] "p" character
+- [x] selector; property
 
 #### Q74. What is an alternate way to define the following CSS rule?
 
@@ -3941,38 +3933,38 @@ font-weight: bold;
 
 ```
 
--   [ ] font-weight: 400;
--   [ ] font-weight: medium;
--   [x] font-weight: 700;
--   [ ] font-weight: Black;
+- [ ] font-weight: 400;
+- [ ] font-weight: medium;
+- [x] font-weight: 700;
+- [ ] font-weight: Black;
 
 #### Q75. You want your styling to be based on a font stack consisting of three fonts. Where should the generic font for your font family be specified?
 
--   [ ] It should be the first one on the list.
--   [ ] Generic fonts are discouraged from this list.
--   [x] It should be the last one on the list.
--   [ ] It should be the second one on the list.
+- [ ] It should be the first one on the list.
+- [ ] Generic fonts are discouraged from this list.
+- [x] It should be the last one on the list.
+- [ ] It should be the second one on the list.
 
 #### Q76. What is one disadvantage of using a web font service?
 
--   [ ] It requires you to host font files on your own server.
--   [ ] It uses more of your site's bandwidth.
--   [ ] It offers a narrow selection of custom fonts.
--   [x] It is not always a free service.
+- [ ] It requires you to host font files on your own server.
+- [ ] It uses more of your site's bandwidth.
+- [ ] It offers a narrow selection of custom fonts.
+- [x] It is not always a free service.
 
 #### Q77. How do you add Google fonts to your project?
 
--   [x] by using an HTML link element referring to a Google-provided CSS
--   [ ] by embedding the font file directly into the project's master JavaScript
--   [ ] by using a Google-specific CSS syntax that directly links to the desired font file
--   [ ] by using a standard font-face CSS definition sourcing a font file on Google's servers
+- [x] by using an HTML link element referring to a Google-provided CSS
+- [ ] by embedding the font file directly into the project's master JavaScript
+- [ ] by using a Google-specific CSS syntax that directly links to the desired font file
+- [ ] by using a standard font-face CSS definition sourcing a font file on Google's servers
 
 #### Q78. which choice is not a valid color?
 
--   [ ] color: `#000`;
--   [ ] color: `rgb(0,0,0)`;
--   [ ] color: `#000000`;
--   [x] color: `000000`;
+- [ ] color: `#000`;
+- [ ] color: `rgb(0,0,0)`;
+- [ ] color: `#000000`;
+- [x] color: `000000`;
 
 #### Q79. Using the following HTML and CSS example, what will equivalent pixel value be for .em and .rem elements?
 
@@ -3989,10 +3981,10 @@ body {font-size: 2rem;}
 
 ```
 
--   [ ] The .rem will be equivalent to 25px; the .em value will be 20px.
--   [ ] The .rem will be equivalent to 15px; the .em value will be 20px.
--   [ ] The .rem will be equivalent to 15px; the .em value will be 40px.
--   [ ] The .rem will be equivalent to 20px; the .em value will be 40px.
+- [ ] The .rem will be equivalent to 25px; the .em value will be 20px.
+- [ ] The .rem will be equivalent to 15px; the .em value will be 20px.
+- [ ] The .rem will be equivalent to 15px; the .em value will be 40px.
+- [ ] The .rem will be equivalent to 20px; the .em value will be 40px.
 
 #### Q80. In this example, according to cascading and specificity rules, what color will the link be?
 
@@ -4010,24 +4002,24 @@ a {color: red;}
 
 ```
 
--   [ ] blue
--   [ ] red
--   [x] yellow
--   [ ] green
+- [ ] blue
+- [ ] red
+- [x] yellow
+- [ ] green
 
 #### Q81. What property is used to adjust the space between text characters?
 
--   [ ] `font-style`
--   [ ] `text-transform`
--   [ ] `font-variant`
--   [x] `letter-spacing`
+- [ ] `font-style`
+- [ ] `text-transform`
+- [ ] `font-variant`
+- [x] `letter-spacing`
 
 #### Q82. What is the correct syntax for changing the curse from an arrow to a pointing hand when it interacts with a named element?
 
--   [x] `.element {cursor: pointer;}`
--   [ ] `.element {cursor: hand;}`
--   [ ] `.element {cursor: move-hand;}`
--   [ ] `.element {cursor: pointer-hand;}`
+- [x] `.element {cursor: pointer;}`
+- [ ] `.element {cursor: hand;}`
+- [ ] `.element {cursor: move-hand;}`
+- [ ] `.element {cursor: pointer-hand;}`
 
 By [Bryan Guner](https://medium.com/@bryanguner) on [June 3, 2021](https://medium.com/p/6e3e4de7ca53).
 
@@ -4037,22 +4029,21 @@ Exported from [Medium](https://medium.com/) on July 13, 2021.
 
 [view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/CSS-Interv.md)[CSS-Interv.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-css-interv-md) hosted with ❤ by [GitHub](https://github.com/)
 
-Data Structures & Algorithms Resource List Part 1
-=================================================
+# Data Structures & Algorithms Resource List Part 1
 
 Guess the author of the following quotes:
 
-* * * * *
+---
 
 ### Data Structures & Algorithms Resource List Part 1
 
 Guess the author of the following quotes:
 
-> *Talk is cheap. Show me the code.*
+> _Talk is cheap. Show me the code._
 
-> *Software is like sex: it's better when it's free.*
+> _Software is like sex: it's better when it's free._
 
-> *Microsoft isn't evil, they just make really crappy operating systems.*
+> _Microsoft isn't evil, they just make really crappy operating systems._
 
 [![](https://camo.githubusercontent.com/d43034aab86822488883c93d58f863203e49bdb8cd0327c5441c67494cde8812/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a72624d7948354c785151466f7a4c3746)](https://camo.githubusercontent.com/d43034aab86822488883c93d58f863203e49bdb8cd0327c5441c67494cde8812/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a72624d7948354c785151466f7a4c3746)
 
@@ -4060,207 +4051,207 @@ Guess the author of the following quotes:
 
 #### Here's some more:
 
--   [The Framework for Learning Algorithms and intense problem solving exercises](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/Framework%20and%20thoughts%20about%20learning%20data%20structure%20and%20algorithm.md)
--   [Algs4: Recommended book for Learning Algorithms and Data Structures](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/why_i_recommend_algs4.md)
--   [An analysis of Dynamic Programming](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/AnalysisOfDynamicProgramming.md)
--   [Dynamic Programming Q&A --- What is Optimal Substructure](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/OptimalSubstructure.md)
--   [The Framework for Backtracking Algorithm](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/DetailsaboutBacktracking.md)
--   [Binary Search in Detail: I wrote a Poem](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/DetailedBinarySearch.md)
--   [The Sliding Window Technique](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/SlidingWindowTechnique.md)
--   [Difference Between Process and Thread in Linux](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/common_knowledge/linuxProcess.md)
--   [Some Good Online Practice Platforms](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/common_knowledge/OnlinePraticePlatform.md)
--   [Dynamic Programming in Details](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/AnalysisOfDynamicProgramming.md)
--   [Dynamic Programming Q&A --- What is Optimal Substructure](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/OptimalSubstructure.md)
--   [Classic DP: Longest Common Subsequence](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/LongestCommonSubsequence.md)
--   [Classic DP: Edit Distance](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/EditDistance.md)
--   [Classic DP: Super Egg](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/ThrowingEggsinHighBuildings.md)
--   [Classic DP: Super Egg (Advanced Solution)](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/SuperEggDropAdvanced.md)
--   [The Strategies of Subsequence Problem](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/StrategiesForSubsequenceProblem.md)
--   [Classic DP: Game Problems](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/GameProblemsInDynamicProgramming.md)
--   [Greedy: Interval Scheduling](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/IntervalScheduling.md)
--   [KMP Algorithm In Detail](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/KMPCharacterMatchingAlgorithmInDynamicProgramming.md)
--   [A solution to all Buy Time to Buy and Sell Stock Problems](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/BestTimeToBuyAndSellStock.md)
--   [A solution to all House Robber Problems](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/HouseRobber.md)
--   [4 Keys Keyboard](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/FourKeysKeyboard.md)
--   [Regular Expression](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/RegularExpression.md)
--   [Longest Increasing Subsequence](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/LongestIncreasingSubsequence.md)
--   [The Framework for Learning Algorithms and intense problem solving exercises](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/Framework%20and%20thoughts%20about%20learning%20data%20structure%20and%20algorithm.md)
--   [Algs4: Recommended book for Learning Algorithms and Data Structures](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/why_i_recommend_algs4.md)
--   [Binary Heap and Priority Queue](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/data_structure/binary_heap_implements_priority_queues.md)
--   [LRU Cache Strategy in Detail](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/LRU_algorithm.md)
--   [Collections of Binary Search Operations](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/data_structure/The_Manipulation_Collection_of_Binary_Search_Tree.md)
--   [Special Data Structure: Monotonic Stack](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/data_structure/MonotonicStack.md)
--   [Special Data Structure: Monotonic Stack](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/data_structure/Monotonic_queue.md)
--   [Design Twitter](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/data_structure/design_Twitter.md)
--   [Reverse Part of Linked List via Recursion](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/data_structure/reverse_part_of_a_linked_list_via_recursion.md)
--   [Queue Implement Stack/Stack implement Queue](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/data_structure/ImplementQueueUsingStacksImplementStackUsingQueues.md)
--   [My Way to Learn Algorithm](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/ThewaytoAlgorithmlearning.md)
--   [The Framework of Backtracking Algorithm](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/DetailsaboutBacktracking.md)
--   [Binary Search in Detail](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/DetailedBinarySearch.md)
--   [Backtracking Solve Subset/Permutation/Combination](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/Subset_Permutation_Combination.md)
--   [Diving into the technical parts of Double Pointers](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/double_pointer.md)
--   [Sliding Window Technique](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/SlidingWindowTechnique.md)
--   [The Core Concept of TwoSum Problems](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/The_key_to_resolving_TwoSum_problems.md)
--   [Common Bit Manipulations](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/CommonBitManipulation.md)
--   [Breaking down a Complicated Problem: Implement a Calculator](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/data_structure/Implementing_the_functions_of_a_calculator.md)
--   [Pancake Sorting Algorithm](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/PancakesSorting.md)
--   [Prefix Sum: Intro and Concept](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/prefix_sum.md)
--   [String Multiplication](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/string_multiplication.md)
--   [FloodFill Algorithm in Detail](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/flood_fill.md)
--   [Interval Scheduling: Interval Merging](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/IntervalMerging.md)
--   [Interval Scheduling: Intersections of Intervals](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/IntervalIntersection.md)
--   [Russian Doll Envelopes Problem](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/RussianDollEnvelopes.md)
--   [A collection of counter-intuitive Probability Problems](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/several_counter_intuitive_probability_problems.md)
--   [Shuffle Algorithm](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/Shuffle_Algorithm.md)
--   [Recursion In Detail](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/data_structure/RecursionInDetail.md)
--   [How to Implement LRU Cache](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/LRU_algorithm.md)
--   [How to Find Prime Number Efficiently](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/Print_PrimeNumbers.md)
--   [How to Calculate Minimium Edit Distance](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/EditDistance.md)
--   [How to use Binary Search](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/UsingBinarySearchAlgorithm.md)
--   [How to efficiently solve Trapping Rain Water Problem](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/Trapping_Rain_Water.md)
--   [How to Remove Duplicates From Sorted Array](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/RemoveDuplicatesfromSortedArray.md)
--   [How to Find Longest Palindromic Substring](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/TheLongestPalindromicSubstring.md)
--   [How to Reverse Linked List in K Group](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/reverse-nodes-in-k-group.md)
--   [How to Check the Validation of Parenthesis](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/valid-parentheses.md)
--   [How to Find Missing Element](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/missing_elements.md)
--   [How to Find Duplicates and Missing Elements](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/Find-Duplicate-and-Missing-Element.md)
--   [How to Check Palindromic LinkedList](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/check_palindromic_linkedlist.md)
--   [How to Pick Elements From an Infinite Arbitrary Sequence](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/ReservoirSampling.md)
--   [How to Schedule Seats for Students](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/Seatscheduling.md)
--   [Union-Find Algorithm in Detail](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/Union-find-Explanation.md)
--   [Union-Find Application](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/Union-Find-Application.md)
--   [Problems that can be solved in one line](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/one-line-code-puzzles.md)
--   [Find Subsequence With Binary Search](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/findSebesquenceWithBinarySearch.md)
--   [Difference Between Process and Thread in Linux](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/common_knowledge/linuxProcess.md)
--   [You Must Know About Linux Shell](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/common_knowledge/linuxshell.md)
--   [You Must Know About Cookie and Session](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/common_knowledge/SessionAndCookie.md)
--   [Cryptology Algorithm](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/common_knowledge/Cryptology.md)
--   [Some Good Online Practice Platforms](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/common_knowledge/OnlinePraticePlatform.md)
+- [The Framework for Learning Algorithms and intense problem solving exercises](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/Framework%20and%20thoughts%20about%20learning%20data%20structure%20and%20algorithm.md)
+- [Algs4: Recommended book for Learning Algorithms and Data Structures](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/why_i_recommend_algs4.md)
+- [An analysis of Dynamic Programming](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/AnalysisOfDynamicProgramming.md)
+- [Dynamic Programming Q&A --- What is Optimal Substructure](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/OptimalSubstructure.md)
+- [The Framework for Backtracking Algorithm](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/DetailsaboutBacktracking.md)
+- [Binary Search in Detail: I wrote a Poem](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/DetailedBinarySearch.md)
+- [The Sliding Window Technique](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/SlidingWindowTechnique.md)
+- [Difference Between Process and Thread in Linux](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/common_knowledge/linuxProcess.md)
+- [Some Good Online Practice Platforms](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/common_knowledge/OnlinePraticePlatform.md)
+- [Dynamic Programming in Details](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/AnalysisOfDynamicProgramming.md)
+- [Dynamic Programming Q&A --- What is Optimal Substructure](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/OptimalSubstructure.md)
+- [Classic DP: Longest Common Subsequence](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/LongestCommonSubsequence.md)
+- [Classic DP: Edit Distance](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/EditDistance.md)
+- [Classic DP: Super Egg](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/ThrowingEggsinHighBuildings.md)
+- [Classic DP: Super Egg (Advanced Solution)](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/SuperEggDropAdvanced.md)
+- [The Strategies of Subsequence Problem](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/StrategiesForSubsequenceProblem.md)
+- [Classic DP: Game Problems](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/GameProblemsInDynamicProgramming.md)
+- [Greedy: Interval Scheduling](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/IntervalScheduling.md)
+- [KMP Algorithm In Detail](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/KMPCharacterMatchingAlgorithmInDynamicProgramming.md)
+- [A solution to all Buy Time to Buy and Sell Stock Problems](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/BestTimeToBuyAndSellStock.md)
+- [A solution to all House Robber Problems](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/HouseRobber.md)
+- [4 Keys Keyboard](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/FourKeysKeyboard.md)
+- [Regular Expression](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/RegularExpression.md)
+- [Longest Increasing Subsequence](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/LongestIncreasingSubsequence.md)
+- [The Framework for Learning Algorithms and intense problem solving exercises](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/Framework%20and%20thoughts%20about%20learning%20data%20structure%20and%20algorithm.md)
+- [Algs4: Recommended book for Learning Algorithms and Data Structures](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/why_i_recommend_algs4.md)
+- [Binary Heap and Priority Queue](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/data_structure/binary_heap_implements_priority_queues.md)
+- [LRU Cache Strategy in Detail](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/LRU_algorithm.md)
+- [Collections of Binary Search Operations](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/data_structure/The_Manipulation_Collection_of_Binary_Search_Tree.md)
+- [Special Data Structure: Monotonic Stack](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/data_structure/MonotonicStack.md)
+- [Special Data Structure: Monotonic Stack](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/data_structure/Monotonic_queue.md)
+- [Design Twitter](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/data_structure/design_Twitter.md)
+- [Reverse Part of Linked List via Recursion](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/data_structure/reverse_part_of_a_linked_list_via_recursion.md)
+- [Queue Implement Stack/Stack implement Queue](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/data_structure/ImplementQueueUsingStacksImplementStackUsingQueues.md)
+- [My Way to Learn Algorithm](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/ThewaytoAlgorithmlearning.md)
+- [The Framework of Backtracking Algorithm](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/DetailsaboutBacktracking.md)
+- [Binary Search in Detail](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/DetailedBinarySearch.md)
+- [Backtracking Solve Subset/Permutation/Combination](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/Subset_Permutation_Combination.md)
+- [Diving into the technical parts of Double Pointers](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/double_pointer.md)
+- [Sliding Window Technique](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/SlidingWindowTechnique.md)
+- [The Core Concept of TwoSum Problems](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/The_key_to_resolving_TwoSum_problems.md)
+- [Common Bit Manipulations](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/CommonBitManipulation.md)
+- [Breaking down a Complicated Problem: Implement a Calculator](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/data_structure/Implementing_the_functions_of_a_calculator.md)
+- [Pancake Sorting Algorithm](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/PancakesSorting.md)
+- [Prefix Sum: Intro and Concept](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/prefix_sum.md)
+- [String Multiplication](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/string_multiplication.md)
+- [FloodFill Algorithm in Detail](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/flood_fill.md)
+- [Interval Scheduling: Interval Merging](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/IntervalMerging.md)
+- [Interval Scheduling: Intersections of Intervals](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/IntervalIntersection.md)
+- [Russian Doll Envelopes Problem](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/RussianDollEnvelopes.md)
+- [A collection of counter-intuitive Probability Problems](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/several_counter_intuitive_probability_problems.md)
+- [Shuffle Algorithm](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/Shuffle_Algorithm.md)
+- [Recursion In Detail](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/data_structure/RecursionInDetail.md)
+- [How to Implement LRU Cache](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/LRU_algorithm.md)
+- [How to Find Prime Number Efficiently](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/Print_PrimeNumbers.md)
+- [How to Calculate Minimium Edit Distance](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/dynamic_programming/EditDistance.md)
+- [How to use Binary Search](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/UsingBinarySearchAlgorithm.md)
+- [How to efficiently solve Trapping Rain Water Problem](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/Trapping_Rain_Water.md)
+- [How to Remove Duplicates From Sorted Array](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/RemoveDuplicatesfromSortedArray.md)
+- [How to Find Longest Palindromic Substring](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/TheLongestPalindromicSubstring.md)
+- [How to Reverse Linked List in K Group](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/reverse-nodes-in-k-group.md)
+- [How to Check the Validation of Parenthesis](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/valid-parentheses.md)
+- [How to Find Missing Element](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/missing_elements.md)
+- [How to Find Duplicates and Missing Elements](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/Find-Duplicate-and-Missing-Element.md)
+- [How to Check Palindromic LinkedList](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/check_palindromic_linkedlist.md)
+- [How to Pick Elements From an Infinite Arbitrary Sequence](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/ReservoirSampling.md)
+- [How to Schedule Seats for Students](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/Seatscheduling.md)
+- [Union-Find Algorithm in Detail](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/Union-find-Explanation.md)
+- [Union-Find Application](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/think_like_computer/Union-Find-Application.md)
+- [Problems that can be solved in one line](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/one-line-code-puzzles.md)
+- [Find Subsequence With Binary Search](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/interview/findSebesquenceWithBinarySearch.md)
+- [Difference Between Process and Thread in Linux](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/common_knowledge/linuxProcess.md)
+- [You Must Know About Linux Shell](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/common_knowledge/linuxshell.md)
+- [You Must Know About Cookie and Session](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/common_knowledge/SessionAndCookie.md)
+- [Cryptology Algorithm](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/common_knowledge/Cryptology.md)
+- [Some Good Online Practice Platforms](https://72a70b9d-739e-477a-bd84-85357c883a09.vscode-webview-test.com/vscode-resource/file///c:/MY-WEB-DEV/_JOB-SEARCH/03-Interview-Prep/01-reference-guides/common_knowledge/OnlinePraticePlatform.md)
 
 ### Algorithms:
 
--   [100 days of algorithms](https://github.com/coells/100days)
--   [Algorithms](https://github.com/marcosfede/algorithms) --- Solved algorithms and data structures problems in many languages.
--   [Algorithms by Jeff Erickson](http://jeffe.cs.illinois.edu/teaching/algorithms/) ([Code](https://github.com/jeffgerickson/algorithms)) ([HN](https://news.ycombinator.com/item?id=26074289))
--   [Top algos/DS to learn](https://www.reddit.com/r/compsci/comments/5uz9lb/top_algorithmsdata_structuresconcepts_every/ddy8azz/)
--   [Some neat algorithms](https://www.nayuki.io/category/programming)
--   [Mathematical Proof of Algorithm Correctness and Efficiency (2019)](https://stackabuse.com/mathematical-proof-of-algorithm-correctness-and-efficiency/)
--   [Algorithm Visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer) --- Interactive online platform that visualizes algorithms from code.
--   [Algorithms for Optimization book](https://mitpress.mit.edu/books/algorithms-optimization)
--   [Collaborative book on algorithms](https://www.algorithm-archive.org/) ([Code](https://github.com/algorithm-archivists/algorithm-archive))
--   [Algorithms in C by Robert Sedgewick](http://index-of.co.uk/Algorithms/Algorithms%20in%20C.pdf)
--   [Algorithm Design Manual](http://mimoza.marmara.edu.tr/~msakalli/cse706_12/SkienaTheAlgorithmDesignManual.pdf)
--   [MIT Introduction to Algorithms course (2011)](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/)
--   [How to implement an algorithm from a scientific paper (2012)](http://codecapsule.com/2012/01/18/how-to-implement-a-paper/)
--   [Quadsort](https://github.com/scandum/quadsort) --- Stable non-recursive merge sort named quadsort.
--   [System design algorithms](https://github.com/resumejob/system-design-algorithms) --- Algorithms you should know before system design.
--   [Algorithms Design book](http://www.cs.sjtu.edu.cn/~jiangli/teaching/CS222/files/materials/Algorithm%20Design.pdf)
--   [Think Complexity](http://greenteapress.com/complexity/html/index.html)
--   [All Algorithms implemented in Rust](https://github.com/TheAlgorithms/Rust)
--   [Solutions to Introduction to Algorithms book](https://walkccc.github.io/CLRS/) ([Code](https://github.com/walkccc/CLRS))
--   [Maze Algorithms (2011)](https://www.jamisbuck.org/mazes/) ([HN](https://news.ycombinator.com/item?id=23429368))
--   [Algorithmic Design Paradigms book](https://page.skerritt.blog/algorithms/) ([Code](https://github.com/brandonskerritt/AlgorithmsBook))
--   [Words and buttons Online Blog](https://wordsandbuttons.online/) ([Code](https://github.com/akalenuk/wordsandbuttons))
--   [Algorithms animated](https://www.chrislaux.com/)
--   [Cache Oblivious Algorithms (2020)](https://jiahai-feng.github.io/posts/cache-oblivious-algorithms/) ([HN](https://news.ycombinator.com/item?id=23662434))
--   [You could have invented fractional cascading (2012)](http://blog.ezyang.com/2012/03/you-could-have-invented-fractional-cascading/)
--   [Guide to learning algorithms through LeetCode](https://labuladong.gitbook.io/algo-en/) ([Code](https://github.com/labuladong/fucking-algorithm/tree/english)) ([HN](https://news.ycombinator.com/item?id=24167297))
--   [How hard is unshuffling a string?](https://cstheory.stackexchange.com/questions/34/how-hard-is-unshuffling-a-string)
--   [Optimization Algorithms on Matrix Manifolds](https://sites.uclouvain.be/absil/amsbook/)
--   [Problem Solving with Algorithms and Data Structures](https://runestone.academy/runestone/books/published/pythonds/index.html) ([HN](https://news.ycombinator.com/item?id=24287622)) ([PDF](https://www.cs.auckland.ac.nz/compsci105s1c/resources/ProblemSolvingwithAlgorithmsandDataStructures.pdf))
--   [Algorithms implemented in Python](https://github.com/TheAlgorithms/Python)
--   [Algorithms implemented in JavaScript](https://github.com/TheAlgorithms/Javascript)
--   [Algorithms & Data Structures in Java](https://github.com/williamfiset/Algorithms)
--   [Wolfsort](https://github.com/scandum/wolfsort) --- Stable adaptive hybrid radix / merge sort.
--   [Evolutionary Computation Bestiary](https://github.com/fcampelo/EC-Bestiary) --- Bestiary of evolutionary, swarm and other metaphor-based algorithms.
--   [Elements of Programming book](http://elementsofprogramming.com/) --- Decomposing programs into a system of algorithmic components. ([Review](http://www.pathsensitive.com/2020/09/book-review-elements-of-programmnig.html)) ([HN](https://news.ycombinator.com/item?id=24635947)) ([Lobsters](https://lobste.rs/s/bqnhbo/book_review_elements_programmnig))
--   [Competitive Programming Algorithms](https://cp-algorithms.com/)
--   [CPP/C](https://github.com/akshitagit/CPP) --- C/C++ algorithms/DS problems.
--   [How to design an algorithm (2018)](https://www.adamconrad.dev/blog/how-to-design-an-algorithm/)
--   [CSE 373 --- Introduction to Algorithms, by Steven Skiena (2020)](https://www.youtube.com/playlist?list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx)
--   [Computer Algorithms II course (2020)](http://homepages.math.uic.edu/~lreyzin/f20_mcs501/)
--   [Improving Binary Search by Guessing (2019)](https://notebook.drmaciver.com/posts/2019-04-30-13:03.html)
--   [The case for a learned sorting algorithm (2020)](https://blog.acolyer.org/2020/10/19/the-case-for-a-learned-sorting-algorithm/) ([HN](https://news.ycombinator.com/item?id=24823611))
--   [Elementary Algorithms](https://github.com/liuxinyu95/AlgoXY) --- Introduces elementary algorithms and data structures. Includes side-by-side comparisons of purely functional realization and their imperative counterpart.
--   [Combinatorics Algorithms for Coding Interviews (2018)](https://sahandsaba.com/combinatorial-generation-for-coding-interviews-in-python.html)
--   [Algorithms written in different programming languages](https://github.com/ZoranPandovski/al-go-rithms) ([Web](https://zoranpandovski.github.io/al-go-rithms/))
--   [Solving the Sequence Alignment problem in Python (2020)](https://johnlekberg.com/blog/2020-10-25-seq-align.html)
--   [The Sound of Sorting](https://github.com/bingmann/sound-of-sorting) --- Visualization and "Audibilization" of Sorting Algorithms. ([Web](https://panthema.net/2013/sound-of-sorting/))
--   [Miniselect: Practical and Generic Selection Algorithms (2020)](https://danlark.org/2020/11/11/miniselect-practical-and-generic-selection-algorithms/)
--   [The Slowest Quicksort (2019)](https://chasewilson.dev/blog/slowest-quicksort/)
--   [Functional Algorithm Design (2020)](https://blog.sigplan.org/2020/11/17/functional-algorithm-design-part-0/)
--   [Algorithms To Live By --- Book Notes](https://milofultz.com/2020/12/27/atlb-notes)
--   [Numerical Algorithms (2015)](http://people.csail.mit.edu/jsolomon/share/book/numerical_book.pdf)
--   [Using approximate nearest neighbor search in real world applications (2020)](https://blog.vespa.ai/using-approximate-nearest-neighbor-search-in-real-world-applications/)
--   [In search of the fastest concurrent Union-Find algorithm (2019)](https://arxiv.org/pdf/1911.06347.pdf)
--   [Computer Science 521 Advanced Algorithm Design](https://www.cs.princeton.edu/courses/archive/fall13/cos521/)
+- [100 days of algorithms](https://github.com/coells/100days)
+- [Algorithms](https://github.com/marcosfede/algorithms) --- Solved algorithms and data structures problems in many languages.
+- [Algorithms by Jeff Erickson](http://jeffe.cs.illinois.edu/teaching/algorithms/) ([Code](https://github.com/jeffgerickson/algorithms)) ([HN](https://news.ycombinator.com/item?id=26074289))
+- [Top algos/DS to learn](https://www.reddit.com/r/compsci/comments/5uz9lb/top_algorithmsdata_structuresconcepts_every/ddy8azz/)
+- [Some neat algorithms](https://www.nayuki.io/category/programming)
+- [Mathematical Proof of Algorithm Correctness and Efficiency (2019)](https://stackabuse.com/mathematical-proof-of-algorithm-correctness-and-efficiency/)
+- [Algorithm Visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer) --- Interactive online platform that visualizes algorithms from code.
+- [Algorithms for Optimization book](https://mitpress.mit.edu/books/algorithms-optimization)
+- [Collaborative book on algorithms](https://www.algorithm-archive.org/) ([Code](https://github.com/algorithm-archivists/algorithm-archive))
+- [Algorithms in C by Robert Sedgewick](http://index-of.co.uk/Algorithms/Algorithms%20in%20C.pdf)
+- [Algorithm Design Manual](http://mimoza.marmara.edu.tr/~msakalli/cse706_12/SkienaTheAlgorithmDesignManual.pdf)
+- [MIT Introduction to Algorithms course (2011)](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/)
+- [How to implement an algorithm from a scientific paper (2012)](http://codecapsule.com/2012/01/18/how-to-implement-a-paper/)
+- [Quadsort](https://github.com/scandum/quadsort) --- Stable non-recursive merge sort named quadsort.
+- [System design algorithms](https://github.com/resumejob/system-design-algorithms) --- Algorithms you should know before system design.
+- [Algorithms Design book](http://www.cs.sjtu.edu.cn/~jiangli/teaching/CS222/files/materials/Algorithm%20Design.pdf)
+- [Think Complexity](http://greenteapress.com/complexity/html/index.html)
+- [All Algorithms implemented in Rust](https://github.com/TheAlgorithms/Rust)
+- [Solutions to Introduction to Algorithms book](https://walkccc.github.io/CLRS/) ([Code](https://github.com/walkccc/CLRS))
+- [Maze Algorithms (2011)](https://www.jamisbuck.org/mazes/) ([HN](https://news.ycombinator.com/item?id=23429368))
+- [Algorithmic Design Paradigms book](https://page.skerritt.blog/algorithms/) ([Code](https://github.com/brandonskerritt/AlgorithmsBook))
+- [Words and buttons Online Blog](https://wordsandbuttons.online/) ([Code](https://github.com/akalenuk/wordsandbuttons))
+- [Algorithms animated](https://www.chrislaux.com/)
+- [Cache Oblivious Algorithms (2020)](https://jiahai-feng.github.io/posts/cache-oblivious-algorithms/) ([HN](https://news.ycombinator.com/item?id=23662434))
+- [You could have invented fractional cascading (2012)](http://blog.ezyang.com/2012/03/you-could-have-invented-fractional-cascading/)
+- [Guide to learning algorithms through LeetCode](https://labuladong.gitbook.io/algo-en/) ([Code](https://github.com/labuladong/fucking-algorithm/tree/english)) ([HN](https://news.ycombinator.com/item?id=24167297))
+- [How hard is unshuffling a string?](https://cstheory.stackexchange.com/questions/34/how-hard-is-unshuffling-a-string)
+- [Optimization Algorithms on Matrix Manifolds](https://sites.uclouvain.be/absil/amsbook/)
+- [Problem Solving with Algorithms and Data Structures](https://runestone.academy/runestone/books/published/pythonds/index.html) ([HN](https://news.ycombinator.com/item?id=24287622)) ([PDF](https://www.cs.auckland.ac.nz/compsci105s1c/resources/ProblemSolvingwithAlgorithmsandDataStructures.pdf))
+- [Algorithms implemented in Python](https://github.com/TheAlgorithms/Python)
+- [Algorithms implemented in JavaScript](https://github.com/TheAlgorithms/Javascript)
+- [Algorithms & Data Structures in Java](https://github.com/williamfiset/Algorithms)
+- [Wolfsort](https://github.com/scandum/wolfsort) --- Stable adaptive hybrid radix / merge sort.
+- [Evolutionary Computation Bestiary](https://github.com/fcampelo/EC-Bestiary) --- Bestiary of evolutionary, swarm and other metaphor-based algorithms.
+- [Elements of Programming book](http://elementsofprogramming.com/) --- Decomposing programs into a system of algorithmic components. ([Review](http://www.pathsensitive.com/2020/09/book-review-elements-of-programmnig.html)) ([HN](https://news.ycombinator.com/item?id=24635947)) ([Lobsters](https://lobste.rs/s/bqnhbo/book_review_elements_programmnig))
+- [Competitive Programming Algorithms](https://cp-algorithms.com/)
+- [CPP/C](https://github.com/akshitagit/CPP) --- C/C++ algorithms/DS problems.
+- [How to design an algorithm (2018)](https://www.adamconrad.dev/blog/how-to-design-an-algorithm/)
+- [CSE 373 --- Introduction to Algorithms, by Steven Skiena (2020)](https://www.youtube.com/playlist?list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx)
+- [Computer Algorithms II course (2020)](http://homepages.math.uic.edu/~lreyzin/f20_mcs501/)
+- [Improving Binary Search by Guessing (2019)](https://notebook.drmaciver.com/posts/2019-04-30-13:03.html)
+- [The case for a learned sorting algorithm (2020)](https://blog.acolyer.org/2020/10/19/the-case-for-a-learned-sorting-algorithm/) ([HN](https://news.ycombinator.com/item?id=24823611))
+- [Elementary Algorithms](https://github.com/liuxinyu95/AlgoXY) --- Introduces elementary algorithms and data structures. Includes side-by-side comparisons of purely functional realization and their imperative counterpart.
+- [Combinatorics Algorithms for Coding Interviews (2018)](https://sahandsaba.com/combinatorial-generation-for-coding-interviews-in-python.html)
+- [Algorithms written in different programming languages](https://github.com/ZoranPandovski/al-go-rithms) ([Web](https://zoranpandovski.github.io/al-go-rithms/))
+- [Solving the Sequence Alignment problem in Python (2020)](https://johnlekberg.com/blog/2020-10-25-seq-align.html)
+- [The Sound of Sorting](https://github.com/bingmann/sound-of-sorting) --- Visualization and "Audibilization" of Sorting Algorithms. ([Web](https://panthema.net/2013/sound-of-sorting/))
+- [Miniselect: Practical and Generic Selection Algorithms (2020)](https://danlark.org/2020/11/11/miniselect-practical-and-generic-selection-algorithms/)
+- [The Slowest Quicksort (2019)](https://chasewilson.dev/blog/slowest-quicksort/)
+- [Functional Algorithm Design (2020)](https://blog.sigplan.org/2020/11/17/functional-algorithm-design-part-0/)
+- [Algorithms To Live By --- Book Notes](https://milofultz.com/2020/12/27/atlb-notes)
+- [Numerical Algorithms (2015)](http://people.csail.mit.edu/jsolomon/share/book/numerical_book.pdf)
+- [Using approximate nearest neighbor search in real world applications (2020)](https://blog.vespa.ai/using-approximate-nearest-neighbor-search-in-real-world-applications/)
+- [In search of the fastest concurrent Union-Find algorithm (2019)](https://arxiv.org/pdf/1911.06347.pdf)
+- [Computer Science 521 Advanced Algorithm Design](https://www.cs.princeton.edu/courses/archive/fall13/cos521/)
 
-* * * * *
+---
 
 [![](https://camo.githubusercontent.com/e5235ab559f728208bbb9662c2c09e515bc94d284112374b12d31ccae80f890f/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a32666237696f385644397a38303830462e6a7067)](https://camo.githubusercontent.com/e5235ab559f728208bbb9662c2c09e515bc94d284112374b12d31ccae80f890f/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a32666237696f385644397a38303830462e6a7067)
 
 ### Data Structures:
 
--   [Data Structures and Algorithms implementation in Go](https://github.com/floyernick/Data-Structures-and-Algorithms)
--   [Which algorithms/data structures should I "recognize" and know by name?](https://softwareengineering.stackexchange.com/questions/155639/which-algorithms-data-structures-should-i-recognize-and-know-by-name)
--   [Dictionary of Algorithms and Data Structures](https://xlinux.nist.gov/dads/)
--   [Phil's Data Structure Zoo](https://g1thubhub.github.io/data-structure-zoo.html)
--   [The Periodic Table of Data Structures](https://stratos.seas.harvard.edu/files/stratos/files/periodictabledatastructures.pdf) ([HN](https://news.ycombinator.com/item?id=18314555))
--   [Data Structure Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html) ([HN](https://news.ycombinator.com/item?id=19082943))
--   [Data structures to name-drop when you want to sound smart in an interview](http://blog.amynguyen.net/?p=853)
--   [On lists, cache, algorithms, and microarchitecture (2019)](https://pdziepak.github.io/2019/05/02/on-lists-cache-algorithms-and-microarchitecture/)
--   [Topics in Advanced Data Structures (2019)](http://web.stanford.edu/class/cs166/handouts/100%20Suggested%20Final%20Project%20Topics.pdf) ([HN](https://news.ycombinator.com/item?id=19780387))
--   [CS166 Advanced DS Course (2019)](http://web.stanford.edu/class/cs166/)
--   [Advanced Data Structures (2017)](https://courses.csail.mit.edu/6.851/fall17/) ([HN](https://news.ycombinator.com/item?id=20044876))
--   [Write a hash table in C](https://github.com/jamesroutley/write-a-hash-table)
--   [Python Data Structures and Algorithms](https://github.com/prabhupant/python-ds)
--   [HAMTs from Scratch (2018)](https://vaibhavsagar.com/blog/2018/07/29/hamts-from-scratch/)
--   [JavaScript Data Structures and Algorithms](https://github.com/JoeKarlsson/data-structures)
--   [Implementing a Key-Value Store series](http://codecapsule.com/2012/11/07/ikvs-implementing-a-key-value-store-table-of-contents/)
--   [Open Data Structures](https://opendatastructures.org/) --- Provide a high-quality open content data structures textbook that is both mathematically rigorous and provides complete implementations. ([Code](https://github.com/patmorin/ods))
--   [A new analysis of the false positive rate of a Bloom filter (2009)](https://www.csee.usf.edu/~kchriste/energy/ipl10.pdf)
--   [Ideal Hash Trees](https://lampwww.epfl.ch/papers/idealhashtrees.pdf)
--   [RRB-Trees: Efficient Immutable Vectors](http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=0265C1992F573129BCC7D4AF7734DBF7?doi=10.1.1.592.5377&rep=rep1&type=pdf)
--   [Some data structures and algorithms written in OCaml](https://github.com/jdan/ocaml-data-structures)
--   [Let's Invent B(+)-Trees](https://shachaf.net/w/b-trees) ([HN](https://news.ycombinator.com/item?id=23001831))
--   [Anna](https://github.com/hydro-project/anna) --- Low-latency, cloud-native KVS.
--   [Persistent data structures thanks to recursive type aliases (2019)](https://www.aleksandra.codes/persistent-data-structures)
--   [Log-Structured Merge-Trees (2020)](https://yetanotherdevblog.com/lsm/)
--   [Bloom Filters for the Perplexed (2017)](https://sagi.io/bloom-filters-for-the-perplexed/)
--   [Understanding Bloom Filters (2020)](https://yetanotherdevblog.com/bloom-filters/)
--   [Dense vs. Sparse Indexes (2020)](https://yetanotherdevblog.com/dense-vs-sparse-indexes/)
--   [Data Structures and Algorithms Problems](https://www.techiedelight.com/list-of-problems/)
--   [Data Structures & Algorithms I Actually Used Working at Tech Companies (2020)](https://blog.pragmaticengineer.com/data-structures-and-algorithms-i-actually-used-day-to-day/) ([Lobsters](https://lobste.rs/s/n8tyip/data_structures_algorithms_i_actually)) ([HN](https://news.ycombinator.com/item?id=23841491))
--   [Let's implement a Bloom Filter (2020)](https://onatm.dev/2020/08/10/let-s-implement-a-bloom-filter/) ([HN](https://news.ycombinator.com/item?id=24102617))
--   [Data Structures Part 1: Bulk Data (2019)](https://ourmachinery.com/post/data-structures-part-1-bulk-data/) ([Lobsters](https://lobste.rs/s/t8mrxn/data_structures_part_1_bulk_data))
--   [Data Structures Explained](https://www.freecodecamp.org/news/learn-all-about-data-structures-used-in-computer-science/)
--   [Introduction to Cache-Oblivious Data Structures (2018)](https://rcoh.me/posts/cache-oblivious-datastructures/)
--   [The Daily Coding newsletter](https://thedailycoding.com/) --- Master JavaScript and Data Structures.
--   [Lectures Note for Data Structures and Algorithms (2019)](https://www.cs.bham.ac.uk/~jxb/DSA/dsa.pdf)
--   [Mechanically Deriving Binary Tree Iterators with Continuation Defunctionalization (2020)](https://abhinavsarkar.net/posts/continuation-defunctionalization/)
--   [Segment Tree data structure](https://cp-algorithms.com/data_structures/segment_tree.html)
--   [Structure of a binary state tree (2020)](https://medium.com/@gballet/structure-of-a-binary-state-tree-part-1-48c587836d2f)
--   [Introductory data structures and algorithms](https://github.com/sushinoya/fundamentals)
--   [Applying Textbook Data Structures for Real Life Wins (2020)](https://heap.io/blog/engineering/applying-textbook-data-structures-for-real-life-wins) ([HN](https://news.ycombinator.com/item?id=24761105))
--   [Michael Scott --- Nonblocking data structures lectures (2020)](https://www.youtube.com/watch?v=9XAx279s7gs) --- Nonblocking concurrent data structures are an increasingly valuable tool for shared-memory parallel programming.
--   [Scal](https://github.com/cksystemsgroup/scal) --- High-performance multicore-scalable data structures and benchmarks. ([Web](http://scal.cs.uni-salzburg.at/))
--   [Hyperbolic embedding implementations](https://github.com/HazyResearch/hyperbolics)
--   [Morphisms of Computational Constructs](https://github.com/prathyvsh/morphisms-of-computational-structures) --- Visual catalogue + story of morphisms displayed across computational structures.
--   [What is key-value store? (build-your-own-x) (2020)](http://djkooks.github.io/build-your-own-kv-store)
--   [Lesser Known but Useful Data Structures](https://stackoverflow.com/questions/500607/what-are-the-lesser-known-but-useful-data-structures)
--   [Using Bloom filters to efficiently synchronize hash graphs (2020)](https://martin.kleppmann.com/2020/12/02/bloom-filter-hash-graph-sync.html)
--   [Bloom Filters by Example](https://llimllib.github.io/bloomfilter-tutorial/) ([Code](https://github.com/llimllib/bloomfilter-tutorial))
--   [Binary Decision Diagrams](https://crypto.stanford.edu/pbc/notes/zdd/) ([HN](https://news.ycombinator.com/item?id=25342922))
--   [3 Steps to Designing Better Data Structures (2020)](https://mochromatic.com/3-steps-to-designing-better-data-structures-in-elixir/)
--   [Sparse Matrices (2019)](https://matteding.github.io/2019/04/25/sparse-matrices/) ([HN](https://news.ycombinator.com/item?id=25601288))
--   [Algorithms & Data Structures in C++](https://github.com/xtaci/algorithms)
--   [Fancy Tree Traversals (2019)](https://drs.is/post/fancy-tree-traversals/)
--   [The Robson Tree Traversal (2019)](https://drs.is/post/robson-traversal/)
--   [Data structures and program structures](http://cr.yp.to/data.html)
--   [cdb](http://cr.yp.to/cdb.html) --- Fast, reliable, simple package for creating and reading constant databases.
--   [PGM-index](https://pgm.di.unipi.it/) --- Learned indexes that match B-tree performance with 83x less space. ([HN](https://news.ycombinator.com/item?id=25899286)) ([Code](https://github.com/gvinciguerra/PGM-index))
--   [Structural and pure attributes](https://minimalmodeling.substack.com/p/structural-and-pure-attributes)
--   [Cache-Tries: O(1) Concurrent Lock-Free Hash Tries (2018)](http://aleksandar-prokopec.com/resources/docs/p137-prokopec.pdf)
+- [Data Structures and Algorithms implementation in Go](https://github.com/floyernick/Data-Structures-and-Algorithms)
+- [Which algorithms/data structures should I "recognize" and know by name?](https://softwareengineering.stackexchange.com/questions/155639/which-algorithms-data-structures-should-i-recognize-and-know-by-name)
+- [Dictionary of Algorithms and Data Structures](https://xlinux.nist.gov/dads/)
+- [Phil's Data Structure Zoo](https://g1thubhub.github.io/data-structure-zoo.html)
+- [The Periodic Table of Data Structures](https://stratos.seas.harvard.edu/files/stratos/files/periodictabledatastructures.pdf) ([HN](https://news.ycombinator.com/item?id=18314555))
+- [Data Structure Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html) ([HN](https://news.ycombinator.com/item?id=19082943))
+- [Data structures to name-drop when you want to sound smart in an interview](http://blog.amynguyen.net/?p=853)
+- [On lists, cache, algorithms, and microarchitecture (2019)](https://pdziepak.github.io/2019/05/02/on-lists-cache-algorithms-and-microarchitecture/)
+- [Topics in Advanced Data Structures (2019)](http://web.stanford.edu/class/cs166/handouts/100%20Suggested%20Final%20Project%20Topics.pdf) ([HN](https://news.ycombinator.com/item?id=19780387))
+- [CS166 Advanced DS Course (2019)](http://web.stanford.edu/class/cs166/)
+- [Advanced Data Structures (2017)](https://courses.csail.mit.edu/6.851/fall17/) ([HN](https://news.ycombinator.com/item?id=20044876))
+- [Write a hash table in C](https://github.com/jamesroutley/write-a-hash-table)
+- [Python Data Structures and Algorithms](https://github.com/prabhupant/python-ds)
+- [HAMTs from Scratch (2018)](https://vaibhavsagar.com/blog/2018/07/29/hamts-from-scratch/)
+- [JavaScript Data Structures and Algorithms](https://github.com/JoeKarlsson/data-structures)
+- [Implementing a Key-Value Store series](http://codecapsule.com/2012/11/07/ikvs-implementing-a-key-value-store-table-of-contents/)
+- [Open Data Structures](https://opendatastructures.org/) --- Provide a high-quality open content data structures textbook that is both mathematically rigorous and provides complete implementations. ([Code](https://github.com/patmorin/ods))
+- [A new analysis of the false positive rate of a Bloom filter (2009)](https://www.csee.usf.edu/~kchriste/energy/ipl10.pdf)
+- [Ideal Hash Trees](https://lampwww.epfl.ch/papers/idealhashtrees.pdf)
+- [RRB-Trees: Efficient Immutable Vectors](http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=0265C1992F573129BCC7D4AF7734DBF7?doi=10.1.1.592.5377&rep=rep1&type=pdf)
+- [Some data structures and algorithms written in OCaml](https://github.com/jdan/ocaml-data-structures)
+- [Let's Invent B(+)-Trees](https://shachaf.net/w/b-trees) ([HN](https://news.ycombinator.com/item?id=23001831))
+- [Anna](https://github.com/hydro-project/anna) --- Low-latency, cloud-native KVS.
+- [Persistent data structures thanks to recursive type aliases (2019)](https://www.aleksandra.codes/persistent-data-structures)
+- [Log-Structured Merge-Trees (2020)](https://yetanotherdevblog.com/lsm/)
+- [Bloom Filters for the Perplexed (2017)](https://sagi.io/bloom-filters-for-the-perplexed/)
+- [Understanding Bloom Filters (2020)](https://yetanotherdevblog.com/bloom-filters/)
+- [Dense vs. Sparse Indexes (2020)](https://yetanotherdevblog.com/dense-vs-sparse-indexes/)
+- [Data Structures and Algorithms Problems](https://www.techiedelight.com/list-of-problems/)
+- [Data Structures & Algorithms I Actually Used Working at Tech Companies (2020)](https://blog.pragmaticengineer.com/data-structures-and-algorithms-i-actually-used-day-to-day/) ([Lobsters](https://lobste.rs/s/n8tyip/data_structures_algorithms_i_actually)) ([HN](https://news.ycombinator.com/item?id=23841491))
+- [Let's implement a Bloom Filter (2020)](https://onatm.dev/2020/08/10/let-s-implement-a-bloom-filter/) ([HN](https://news.ycombinator.com/item?id=24102617))
+- [Data Structures Part 1: Bulk Data (2019)](https://ourmachinery.com/post/data-structures-part-1-bulk-data/) ([Lobsters](https://lobste.rs/s/t8mrxn/data_structures_part_1_bulk_data))
+- [Data Structures Explained](https://www.freecodecamp.org/news/learn-all-about-data-structures-used-in-computer-science/)
+- [Introduction to Cache-Oblivious Data Structures (2018)](https://rcoh.me/posts/cache-oblivious-datastructures/)
+- [The Daily Coding newsletter](https://thedailycoding.com/) --- Master JavaScript and Data Structures.
+- [Lectures Note for Data Structures and Algorithms (2019)](https://www.cs.bham.ac.uk/~jxb/DSA/dsa.pdf)
+- [Mechanically Deriving Binary Tree Iterators with Continuation Defunctionalization (2020)](https://abhinavsarkar.net/posts/continuation-defunctionalization/)
+- [Segment Tree data structure](https://cp-algorithms.com/data_structures/segment_tree.html)
+- [Structure of a binary state tree (2020)](https://medium.com/@gballet/structure-of-a-binary-state-tree-part-1-48c587836d2f)
+- [Introductory data structures and algorithms](https://github.com/sushinoya/fundamentals)
+- [Applying Textbook Data Structures for Real Life Wins (2020)](https://heap.io/blog/engineering/applying-textbook-data-structures-for-real-life-wins) ([HN](https://news.ycombinator.com/item?id=24761105))
+- [Michael Scott --- Nonblocking data structures lectures (2020)](https://www.youtube.com/watch?v=9XAx279s7gs) --- Nonblocking concurrent data structures are an increasingly valuable tool for shared-memory parallel programming.
+- [Scal](https://github.com/cksystemsgroup/scal) --- High-performance multicore-scalable data structures and benchmarks. ([Web](http://scal.cs.uni-salzburg.at/))
+- [Hyperbolic embedding implementations](https://github.com/HazyResearch/hyperbolics)
+- [Morphisms of Computational Constructs](https://github.com/prathyvsh/morphisms-of-computational-structures) --- Visual catalogue + story of morphisms displayed across computational structures.
+- [What is key-value store? (build-your-own-x) (2020)](http://djkooks.github.io/build-your-own-kv-store)
+- [Lesser Known but Useful Data Structures](https://stackoverflow.com/questions/500607/what-are-the-lesser-known-but-useful-data-structures)
+- [Using Bloom filters to efficiently synchronize hash graphs (2020)](https://martin.kleppmann.com/2020/12/02/bloom-filter-hash-graph-sync.html)
+- [Bloom Filters by Example](https://llimllib.github.io/bloomfilter-tutorial/) ([Code](https://github.com/llimllib/bloomfilter-tutorial))
+- [Binary Decision Diagrams](https://crypto.stanford.edu/pbc/notes/zdd/) ([HN](https://news.ycombinator.com/item?id=25342922))
+- [3 Steps to Designing Better Data Structures (2020)](https://mochromatic.com/3-steps-to-designing-better-data-structures-in-elixir/)
+- [Sparse Matrices (2019)](https://matteding.github.io/2019/04/25/sparse-matrices/) ([HN](https://news.ycombinator.com/item?id=25601288))
+- [Algorithms & Data Structures in C++](https://github.com/xtaci/algorithms)
+- [Fancy Tree Traversals (2019)](https://drs.is/post/fancy-tree-traversals/)
+- [The Robson Tree Traversal (2019)](https://drs.is/post/robson-traversal/)
+- [Data structures and program structures](http://cr.yp.to/data.html)
+- [cdb](http://cr.yp.to/cdb.html) --- Fast, reliable, simple package for creating and reading constant databases.
+- [PGM-index](https://pgm.di.unipi.it/) --- Learned indexes that match B-tree performance with 83x less space. ([HN](https://news.ycombinator.com/item?id=25899286)) ([Code](https://github.com/gvinciguerra/PGM-index))
+- [Structural and pure attributes](https://minimalmodeling.substack.com/p/structural-and-pure-attributes)
+- [Cache-Tries: O(1) Concurrent Lock-Free Hash Tries (2018)](http://aleksandar-prokopec.com/resources/docs/p137-prokopec.pdf)
 
 By [Bryan Guner](https://medium.com/@bryanguner) on [June 4, 2021](https://medium.com/p/8bad647a8ad8).
 
@@ -4270,18 +4261,17 @@ Exported from [Medium](https://medium.com/) on July 13, 2021.
 
 [view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/Data-Struc.md)[Data-Struc.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-data-struc-md) hosted with ❤ by [GitHub](https://github.com/)
 
-Data Structures... Under The Hood
-===============================
+# Data Structures... Under The Hood
 
 Data Structures Reference
 
-* * * * *
+---
 
 ### Data Structures... Under The Hood
 
 ### Data Structures Reference
 
-* * * * *
+---
 
 ### Array
 
@@ -4349,7 +4339,7 @@ Since node 3 has edges to nodes 1 and 2, graph[3][1] and graph[3][2] have value 
 
 a = LinkedListNode(5) b = LinkedListNode(1) c = LinkedListNode(9) a.next = b b.next = c
 
-* * * * *
+---
 
 ### Arrays
 
@@ -4365,7 +4355,7 @@ And let's store the kombucha counts right next to each other in RAM, starting at
 
 [![](https://camo.githubusercontent.com/f8ba26d45b52880f827807785e5c4f0ac9ce429261f91b1394882da1be7e3eda/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a464d5f572d456b585947597747364c4b)](https://camo.githubusercontent.com/f8ba26d45b52880f827807785e5c4f0ac9ce429261f91b1394882da1be7e3eda/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a464d5f572d456b585947597747364c4b)
 
-Bam. That's an **array**. RAM is *basically* an array already.
+Bam. That's an **array**. RAM is _basically_ an array already.
 
 Just like with RAM, the elements of an array are numbered. We call that number the **index** of the array element (plural: indices). In *this* example, each array element's index is the same as its address in RAM.
 
@@ -4377,7 +4367,7 @@ We'd have to start our array below it, for example at memory address 3. So index
 
 [![](https://camo.githubusercontent.com/8777bae8a6a2e15851493172f6f364cdec94bd277332a30209672282b115f505/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a5a65717075622d7a4b53577979426567)](https://camo.githubusercontent.com/8777bae8a6a2e15851493172f6f364cdec94bd277332a30209672282b115f505/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a5a65717075622d7a4b53577979426567)
 
-Suppose we wanted to get the kombucha count at index 4 in our array. How do we figure out what *address in memory* to go to? Simple math:
+Suppose we wanted to get the kombucha count at index 4 in our array. How do we figure out what _address in memory_ to go to? Simple math:
 
 Take the array's starting address (3), add the index we're looking for (4), and that's the address of the item we're looking for. 3 + 4 = 7. In general, for getting the nth item in our array:
 
@@ -4395,7 +4385,7 @@ We simply give each array index *8* address slots instead of 1:
 
 So we can still use simple math to grab the start of the nth item in our array --- just gotta throw in some multiplication:
 
-\text{address of nth item in array} = \text{address of array start} + (n * \text{size of each item in bytes})
+\text{address of nth item in array} = \text{address of array start} + (n \* \text{size of each item in bytes})
 
 Don't worry --- adding this multiplication doesn't really slow us down. Remember: addition, subtraction, multiplication, and division of fixed-width integers takes time. So *all* the math we're using here to get the address of the nth item in the array takes time.
 
@@ -4421,7 +4411,7 @@ But they also constrain what kinds of things we can put in an array. Every item 
 
 That's the tradeoff. Arrays have fast lookups ( time), but each item in the array needs to be the same size, and you need a big block of uninterrupted free memory to store the array.
 
-* * * * *
+---
 
 ## Pointers
 
@@ -4473,7 +4463,7 @@ That's the tradeoff. This pointer-based array requires less uninterrupted memory
 
 This slowdown isn't reflected in the big O time cost. Lookups in this pointer-based array are *still* time.
 
-* * * * *
+---
 
 ### Linked lists
 
@@ -4497,7 +4487,7 @@ Here's how we'd actually implement it in memory:
 
 [![](https://camo.githubusercontent.com/fa90537e2be3dfa23b63efbd0a60c90e6255cf8b41f1aeee2b443982ea863964/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a304b5a6c39684e4e5f49465031355248)](https://camo.githubusercontent.com/fa90537e2be3dfa23b63efbd0a60c90e6255cf8b41f1aeee2b443982ea863964/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a304b5a6c39684e4e5f49465031355248)
 
-Notice how we're free to store our nodes wherever we can find two open slots in memory. They don't have to be next to each other. They don't even have to be *in order*:
+Notice how we're free to store our nodes wherever we can find two open slots in memory. They don't have to be next to each other. They don't even have to be _in order_:
 
 [![](https://camo.githubusercontent.com/180f34f807d7726c7917f4e798570eba0d7a815cc3e24a27e39926b3826e7fb4/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6c534f417846754d415332784b334a49)](https://camo.githubusercontent.com/180f34f807d7726c7917f4e798570eba0d7a815cc3e24a27e39926b3826e7fb4/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6c534f417846754d415332784b334a49)
 
@@ -4531,7 +4521,7 @@ And tweak some pointers:
 
 [![](https://camo.githubusercontent.com/30aea8d568b63eb484fa8dbd9d403c3291ce5602ecf0c8720462a291a1631cde/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a2d4341384b4863317464526656596f65)](https://camo.githubusercontent.com/30aea8d568b63eb484fa8dbd9d403c3291ce5602ecf0c8720462a291a1631cde/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a2d4341384b4863317464526656596f65)
 
-​3. Update the tail pointer to point to our *new* last letter, "S".
+​3. Update the tail pointer to point to our _new_ last letter, "S".
 
 [![](https://camo.githubusercontent.com/a1849ade52332da6fd69ff6916fa2f7bb181648bd27d20e319aa2e38a0b3d58d/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a476266393138484f766c4a684d484566)](https://camo.githubusercontent.com/a1849ade52332da6fd69ff6916fa2f7bb181648bd27d20e319aa2e38a0b3d58d/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a476266393138484f766c4a684d484566)
 
@@ -4543,7 +4533,7 @@ Now, what if instead of a linked list, our string had been a *dynamic array*? W
 
 [![](https://camo.githubusercontent.com/ba31868847dd51ae385573076d4dc8336dbf2858400fdf337754b180acb682ff/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a77534b2d464756306b4369736b4c4e53)](https://camo.githubusercontent.com/ba31868847dd51ae385573076d4dc8336dbf2858400fdf337754b180acb682ff/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a77534b2d464756306b4369736b4c4e53)
 
-So with a dynamic array, our append would have a *worst-case* time cost of .
+So with a dynamic array, our append would have a _worst-case_ time cost of .
 
 **Linked lists have worst-case -time appends, which is better than the worst-case time of dynamic arrays.**
 
@@ -4571,7 +4561,7 @@ And we wanted to add in that "B":
 
 [![](https://camo.githubusercontent.com/1656932fdf0003fde8b14bf6d4739bc93b93fdd40d5e8e0080271d1947f198e0/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6e34716a50464e7a3442564842743577)](https://camo.githubusercontent.com/1656932fdf0003fde8b14bf6d4739bc93b93fdd40d5e8e0080271d1947f198e0/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6e34716a50464e7a3442564842743577)
 
-Eep. We have to *make room* for the "B"!
+Eep. We have to _make room_ for the "B"!
 
 We have to move *each character* one space down:
 
@@ -4583,7 +4573,7 @@ We have to move *each character* one space down:
 
 [![](https://camo.githubusercontent.com/e3ca290511c73d382deea4d6b91b54a32d966ce6ed32229ede93474d163acbbd/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a44616d70674967794f3653696c6b3855)](https://camo.githubusercontent.com/e3ca290511c73d382deea4d6b91b54a32d966ce6ed32229ede93474d163acbbd/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a44616d70674967794f3653696c6b3855)
 
-*Now* we can drop the "B" in there:
+_Now_ we can drop the "B" in there:
 
 [![](https://camo.githubusercontent.com/59f836874d541429901b4f0972c717c701eb8f876bfe200dbbabb739f3cdd9f5/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a58786b7234735950392d64725a654565)](https://camo.githubusercontent.com/59f836874d541429901b4f0972c717c701eb8f876bfe200dbbabb739f3cdd9f5/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a58786b7234735950392d64725a654565)
 
@@ -4609,7 +4599,7 @@ Not only that --- **walking down a linked list is *not* cache-friendly.**�
 
 So the tradeoff with linked lists is they have faster prepends and faster appends than dynamic arrays, *but* they have slower lookups.
 
-* * * * *
+---
 
 ## Doubly Linked Lists
 
@@ -4619,7 +4609,7 @@ In a **doubly linked list**, items have pointers to the next *and the previous
 
 [![](https://camo.githubusercontent.com/56f6c06117255c0c01115ccff8cca2d49baaaaee8fd1a0b33a8e2769605bb9c5/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a4f45415072396f4c5554576f766d3836)](https://camo.githubusercontent.com/56f6c06117255c0c01115ccff8cca2d49baaaaee8fd1a0b33a8e2769605bb9c5/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a4f45415072396f4c5554576f766d3836)
 
-Doubly linked lists allow us to traverse our list *backwards*. In a *singly* linked list, if you just had a pointer to a node in the *middle* of a list, there would be *no way* to know what nodes came before it. Not a problem in a doubly linked list.
+Doubly linked lists allow us to traverse our list _backwards_. In a _singly_ linked list, if you just had a pointer to a node in the _middle_ of a list, there would be _no way_ to know what nodes came before it. Not a problem in a doubly linked list.
 
 ### Not cache-friendly
 
@@ -4629,7 +4619,7 @@ Most computers have [caching systems that make reading from sequential addresse
 
 So iterating through a linked list is usually quite a bit slower than iterating through the items in an array, even though they're both theoretically time.
 
-* * * * *
+---
 
 ### Hash tables
 
@@ -4663,7 +4653,7 @@ Grab the number value for each character and add those up.
 
 [![](https://camo.githubusercontent.com/392807a3d97f2205f464230020a1c8e8fafaecb0e19e1ead680d0d9f471c65ba/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a76694830664e764a4b65703830656348)](https://camo.githubusercontent.com/392807a3d97f2205f464230020a1c8e8fafaecb0e19e1ead680d0d9f471c65ba/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a76694830664e764a4b65703830656348)
 
-The result is 429. But what if we only have *30* slots in our array? We'll use a common trick for forcing a number into a specific range: the modulus operator (%). Modding our sum by 30 ensures we get a whole number that's less than 30 (and at least 0):
+The result is 429. But what if we only have _30_ slots in our array? We'll use a common trick for forcing a number into a specific range: the modulus operator (%). Modding our sum by 30 ensures we get a whole number that's less than 30 (and at least 0):
 
 429 \: \% \: 30 = 9
 
@@ -4697,11 +4687,11 @@ Here's a common one: instead of storing the actual values in our array, let's ha
 
 [![](https://camo.githubusercontent.com/c15fb6ac2979f5c32c4ca7833ebf7ea4daa6ac75ecdc2e8107d9cc5775de403c/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a464a5f6f4659776d3378693567765336)](https://camo.githubusercontent.com/c15fb6ac2979f5c32c4ca7833ebf7ea4daa6ac75ecdc2e8107d9cc5775de403c/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a464a5f6f4659776d3378693567765336)
 
-One problem --- how do we know which count is for "lies" and which is for "foes"? To fix this, we'll store the *word* as well as the count in each linked list node:
+One problem --- how do we know which count is for "lies" and which is for "foes"? To fix this, we'll store the _word_ as well as the count in each linked list node:
 
 [![](https://camo.githubusercontent.com/1dcb69eabe60f093b98347f801c8c7a59c10fba7f5ded200c91e96bf1043baf5/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a7a5571714b344e4a696c366e436a6c4b)](https://camo.githubusercontent.com/1dcb69eabe60f093b98347f801c8c7a59c10fba7f5ded200c91e96bf1043baf5/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a7a5571714b344e4a696c366e436a6c4b)
 
-"But wait!" you may be thinking, "Now lookups in our hash table take time in the worst case, since we have to walk down a linked list." That's true! You could even say that in the worst case *every* key creates a hash collision, so our whole hash table *degrades to a linked list*.
+"But wait!" you may be thinking, "Now lookups in our hash table take time in the worst case, since we have to walk down a linked list." That's true! You could even say that in the worst case _every_ key creates a hash collision, so our whole hash table _degrades to a linked list_.
 
 In industry though, we usually wave our hands and say **collisions are rare enough that on *average* lookups in a hash table are time**. And there are fancy algorithms that keep the number of collisions low and keep the lengths of our linked lists nice and short.
 
@@ -4721,7 +4711,7 @@ We'd visit all the immediate children (all the nodes that're one step away from 
 
 [![](https://camo.githubusercontent.com/893fcfe7d9a610d9c376ca91833d0b8f0785acc5dc88f9e652a5b37728760181/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a5f756e3078734b44703270674e506f4d)](https://camo.githubusercontent.com/893fcfe7d9a610d9c376ca91833d0b8f0785acc5dc88f9e652a5b37728760181/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a5f756e3078734b44703270674e506f4d)
 
-Then we'd move on to all *those* nodes' children (all the nodes that're *two steps* away from our starting node):
+Then we'd move on to all _those_ nodes' children (all the nodes that're _two steps_ away from our starting node):
 
 [![](https://camo.githubusercontent.com/cd65b212e133960b5495dcd36371bb1b0d2d5938a79b65ff2605c196d3b3a6dc/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a623676424f4c545f4830427066327634)](https://camo.githubusercontent.com/cd65b212e133960b5495dcd36371bb1b0d2d5938a79b65ff2605c196d3b3a6dc/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a623676424f4c545f4830427066327634)
 
@@ -4735,20 +4725,20 @@ Breadth-first search is often compared with **depth-first search**.
 
 Advantages:
 
--   A BFS will find the **shortest path** between the starting point and
+- A BFS will find the **shortest path** between the starting point and
 
 any other reachable node. A depth-first search will not necessarily find the shortest path.
 
 Disadvantages
 
--   A BFS on a binary tree *generally* requires more memory than a DFS.
+- A BFS on a binary tree *generally* requires more memory than a DFS.
 
 [![](https://camo.githubusercontent.com/ac98fc3add038571063512b38e20f6c789b68db02db1db580ee16ddbf533de70/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a317074772d3938596a6a317363525836)](https://camo.githubusercontent.com/ac98fc3add038571063512b38e20f6c789b68db02db1db580ee16ddbf533de70/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a317074772d3938596a6a317363525836)
 
 ### Binary Search Tree
 
-A **binary tree** is a **tree** where <==(***every node has two or fewer children***)==>.\
-The children are usually called ***left*** and ***right***.
+A **binary tree** is a **tree** where <==(**_every node has two or fewer children_**)==>.\
+The children are usually called **_left_** and **_right_**.
 
 class BinaryTreeNode(object):
 
@@ -4764,11 +4754,11 @@ Binary trees have a few interesting properties when they're perfect:
 
 [![](https://camo.githubusercontent.com/8ced6ded62dd04e04f917d305291236fa9b645a0837c67d0fe0e3ce94e4643ca/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a72316e5471624e5f544a79616154344c)](https://camo.githubusercontent.com/8ced6ded62dd04e04f917d305291236fa9b645a0837c67d0fe0e3ce94e4643ca/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a72316e5471624e5f544a79616154344c)
 
-**Property 2: the number of nodes on the last level is equal to the sum of the number of nodes on all other levels (plus 1).** In other words, about *half* of our nodes are on the last level.
+**Property 2: the number of nodes on the last level is equal to the sum of the number of nodes on all other levels (plus 1).** In other words, about _half_ of our nodes are on the last level.
 
 <==(**Let's call the number of nodes n, **)==>
 
-<==(**_**and the height of the tree h. **_**)==>
+<==(**\_**and the height of the tree h. **\_**)==>
 
 **h can also be thought of as the "number of levels."**
 
@@ -4792,9 +4782,9 @@ Why only up to 2^{h-1}?
 
 Notice that we **started counting our levels at 0.**
 
--   So if we have h levels in total,
--   the last level is actually the "h-1"-th level.
--   That means the number of nodes on the last level is 2^{h-1}.
+- So if we have h levels in total,
+- the last level is actually the "h-1"-th level.
+- That means the number of nodes on the last level is 2^{h-1}.
 
 But we can simplify.
 
@@ -4802,11 +4792,11 @@ But we can simplify.
 
 **so we can just take the number of nodes on the last level, multiply it by 2, and subtract 1 to get the number of nodes overall**.
 
--   We know the number of nodes on the last level is 2^{h-1},
--   So:
+- We know the number of nodes on the last level is 2^{h-1},
+- So:
 
-**n = 2^{h-1} * 2--1\
-n = 2^{h-1} * 2¹ --- 1\
+**n = 2^{h-1} _ 2--1\
+n = 2^{h-1} _ 2¹ --- 1\
 n = 2^{h-1+1}- 1\
 n = 2^{h} --- 1**
 
@@ -4818,7 +4808,7 @@ That's what logs are for!
 
 First, some quick review.
 
-<==(log_{10} (100) )==>
+<==(log\_{10} (100) )==>
 
 simply means,
 
@@ -4848,7 +4838,7 @@ To understand binary, let's take a closer look at how decimal numbers work. Take
 
 [![](https://camo.githubusercontent.com/fc802e73f1ef094949162a929fdf1fb252b02df030561d3d3622291c1f7600f7/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a53654c39326c636d5f525475472d3332)](https://camo.githubusercontent.com/fc802e73f1ef094949162a929fdf1fb252b02df030561d3d3622291c1f7600f7/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a53654c39326c636d5f525475472d3332)
 
-Notice we have two "1"s here, but they don't *mean* the same thing. The leftmost "1" *means* 100, and the rightmost "1" *means* 1. That's because the leftmost "1" is in the hundreds place, while the rightmost "1" is in the ones place. And the "0" between them is in the tens place.
+Notice we have two "1"s here, but they don't _mean_ the same thing. The leftmost "1" _means_ 100, and the rightmost "1" _means_ 1. That's because the leftmost "1" is in the hundreds place, while the rightmost "1" is in the ones place. And the "0" between them is in the tens place.
 
 [![](https://camo.githubusercontent.com/25bd7c4f77c852191bf68fa626910583501e1fa518cbb7264664c5b5541b6151/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a356b794c774974464c4a697773445259)](https://camo.githubusercontent.com/25bd7c4f77c852191bf68fa626910583501e1fa518cbb7264664c5b5541b6151/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a356b794c774974464c4a697773445259)
 
@@ -4856,13 +4846,13 @@ Notice we have two "1"s here, but they don't *mean* the same thing. The leftmost
 
 [![](https://camo.githubusercontent.com/496ab15fd74a0098d3c8c03bd7ccf0b23d3dde69f82a4520a947a55cef6a1250/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a4248545971796d453737436e7a4b7050)](https://camo.githubusercontent.com/496ab15fd74a0098d3c8c03bd7ccf0b23d3dde69f82a4520a947a55cef6a1250/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a4248545971796d453737436e7a4b7050)
 
-Notice how the *places* in base 10 (ones place, tens place, hundreds place, etc.) are *sequential powers of 10*:
+Notice how the _places_ in base 10 (ones place, tens place, hundreds place, etc.) are _sequential powers of 10_:
 
--   10⁰=1 * 10¹=10 * 10²=100 * 10³=1000 * etc.
+- 10⁰=1 _ 10¹=10 _ 10²=100 _ 10³=1000 _ etc.
 
 **The places in *binary* (base 2) are sequential powers of *2*:**
 
--   2⁰=1 * 2¹=2 * 2²=4 * 2³=8 * etc.
+- 2⁰=1 _ 2¹=2 _ 2²=4 _ 2³=8 _ etc.
 
 So let's take that same "101" but this time let's read it as a *binary* number:
 
@@ -4885,12 +4875,11 @@ Exported from [Medium](https://medium.com/) on July 13, 2021.
 
 [view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/Data-Structures--Under-The.md)[Data-Structures--Under-The.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-data-structures-under-the-md) hosted with ❤ by [GitHub](https://github.com/)
 
-Deploy React App To Heroku Using Postgres & Express
-===================================================
+# Deploy React App To Heroku Using Postgres & Express
 
 Heroku is an web application that makes deploying applications easy for a beginner.
 
-* * * * *
+---
 
 ### Deploy React App To Heroku Using Postgres & Express
 
@@ -5124,18 +5113,17 @@ Exported from [Medium](https://medium.com/) on July 13, 2021.
 
 [view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/Deploy-Rea.md)[Deploy-Rea.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-deploy-rea-md) hosted with ❤ by [GitHub](https://github.com/)
 
-Emmet Cheat Sheet
-=================
+# Emmet Cheat Sheet
 
 EMMET
 
-* * * * *
+---
 
 ### Emmet Cheat Sheet
 
 ### EMMET
 
-*The a toolkit for web-developers*
+_The a toolkit for web-developers_
 
 ### Introduction
 
@@ -5149,8 +5137,8 @@ Normally, installation for Emmet should be a straight-forward process from the p
 
 You can use Emmet in two ways:
 
--   Tab Expand Way: Type your emmet code and press `Tab` key
--   Interactive Method: Press `alt + ctrl + Enter` and start typing your expressions. This should automatically generate HTML snippets on the fly.
+- Tab Expand Way: Type your emmet code and press `Tab` key
+- Interactive Method: Press `alt + ctrl + Enter` and start typing your expressions. This should automatically generate HTML snippets on the fly.
 
 **This cheatsheet will assume that you press** `Tab` **after each expressions.**
 
@@ -5348,7 +5336,7 @@ To start the numbering from specific number, use this way
 
 ### Tips
 
--   Use `:` to expand known abbreviations
+- Use `:` to expand known abbreviations
 
 `input:date`
 
@@ -5371,7 +5359,7 @@ To start the numbering from specific number, use this way
 
 ```
 
--   Building Navbar
+- Building Navbar
 
 `.navbar>ul>li*3>a[href=#]{Item $@-}`
 
@@ -5390,7 +5378,7 @@ To start the numbering from specific number, use this way
 
 Emmet works surprisingly well with css as well.
 
--   `f:l`
+- `f:l`
 
 ```
 float: left;
@@ -5399,7 +5387,7 @@ float: left;
 
 You can also use any options n/r/l
 
--   `pos:a­`
+- `pos:a­`
 
 ```
 position: absolute;
@@ -5408,7 +5396,7 @@ position: absolute;
 
 Also use any options, pos:a/r/f
 
--   `d:n/b­/f/­i/ib`
+- `d:n/b­/f/­i/ib`
 
 `d:ib`
 
@@ -5417,13 +5405,13 @@ display: inline-block;
 
 ```
 
--   You can use `m` for margin and `p` for padding followed by direction
+- You can use `m` for margin and `p` for padding followed by direction
 
 `mr` -> `margin-right`
 
 `pr` -> `padding-right`
 
--   `@f` will result in
+- `@f` will result in
 
 ```
 @font-face {
@@ -5457,12 +5445,11 @@ Exported from [Medium](https://medium.com/) on July 13, 2021.
 
 [view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/Emmet-Chea.md)[Emmet-Chea.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-emmet-chea-md) hosted with ❤ by [GitHub](https://github.com/)
 
-10 Essential React Interview Questions For Aspiring Frontend Developers
-=======================================================================
+# 10 Essential React Interview Questions For Aspiring Frontend Developers
 
 Comprehensive React Cheatsheet included at the bottom of this article!
 
-* * * * *
+---
 
 ### 10 Essential React Interview Questions For Aspiring Frontend Developers
 
@@ -5490,7 +5477,7 @@ Comprehensive React Cheatsheet included at the bottom of this article!
 
 [![](https://camo.githubusercontent.com/86e675c1851f4e9ef4b8d39b6cd9e10120086713e74b8cd71f68420ee0a82265/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a74335551683834386e6474347267725f6644546f61772e706e67)](https://camo.githubusercontent.com/86e675c1851f4e9ef4b8d39b6cd9e10120086713e74b8cd71f68420ee0a82265/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a74335551683834386e6474347267725f6644546f61772e706e67)
 
-* * * * *
+---
 
 [![Photo by Ferenc Almasi on Unsplash](https://camo.githubusercontent.com/23ed62a6888c0bfccb6c0847b2a8fd9de0d12826ce874ccfecdbf081a3c3d015/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a33397765436a6e56644466304b757a6a)](https://camo.githubusercontent.com/23ed62a6888c0bfccb6c0847b2a8fd9de0d12826ce874ccfecdbf081a3c3d015/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a33397765436a6e56644466304b757a6a)
 
@@ -5527,9 +5514,9 @@ Photo by [Ferenc Almasi](https://unsplash.com/@flowforfrank?utm_source=medium&u
 
 React uses a **Virtual DOM**, which is essentially a tree of JavaScript objects representing the actual browser DOM. The advantage of using this for the developers is that they don't manipulate the DOM directly as developers do with jQuery when they write React apps. Instead, they would tell React how they want the DOM to make changes to the state object and allow React to make the necessary updates to the browser DOM. This helps create a comprehensive development model for developers as they don't need to track all DOM changes. They can modify the state object, and React would use its algorithms to understand what part of UI changed compared to the previous DOM. Using this information updates the actual browser DOM. Virtual DOM provides an excellent API for creating UI and minimizes the update count to be made on the browser DOM.
 
-However, it is **not faster** than the actual DOM. You just read that it needs to pull extra strings to figure out what part of UI needs to be updated before actually performing those updates. Hence, Virtual DOM is beneficial for many things, but it ***isn't faster than DOM.***
+However, it is **not faster** than the actual DOM. You just read that it needs to pull extra strings to figure out what part of UI needs to be updated before actually performing those updates. Hence, Virtual DOM is beneficial for many things, but it **_isn't faster than DOM._**
 
-* * * * *
+---
 
 ### **1\. Explain how React uses a tree data structure called the virtual DOM to model the DOM**
 
@@ -5551,11 +5538,11 @@ However, it is **not faster** than the actual DOM. You just read that it needs
 
 ### **4\. Describe how JSX transforms into actual DOM nodes**
 
--   To transfer JSX into DOM nodes, we use the ReactDOM.render method. It takes a React virtual DOM node's changes allows Babel to transpile it and sends the JS changes to commit to the DOM.
+- To transfer JSX into DOM nodes, we use the ReactDOM.render method. It takes a React virtual DOM node's changes allows Babel to transpile it and sends the JS changes to commit to the DOM.
 
 ### **5\. Use the** `ReactDOM.render` **method to have React render your virtual DOM nodes under an actual DOM node**
 
-* * * * *
+---
 
 ### **6\. Attach an event listener to an actual DOM node using a virtual node**
 
@@ -5569,11 +5556,11 @@ Since "virtual DOM" is more of a pattern than a specific technology, people some
 
 No, they are different. The Shadow DOM is a browser technology designed primarily for scoping variables and CSS in web components. The virtual DOM is a concept implemented by libraries in JavaScript on top of browser APIs.
 
--   To add an event listener to an element, define a method to handle the event and associate that method with the element event you want to listen for:
+- To add an event listener to an element, define a method to handle the event and associate that method with the element event you want to listen for:
 
 ### **7\. Use** `create-react-app` **to initialize a new React app and import required dependencies**
 
--   Create the default create-react-application by typing in our terminal
+- Create the default create-react-application by typing in our terminal
 
 #### [Explanation of npm vs npx from Free Code Camp:](https://www.freecodecamp.org/news/npm-vs-npx-whats-the-difference/)
 
@@ -5591,8 +5578,8 @@ npm by itself doesn't run any packages. If you want to run a package using npm, 
 
 When executables are installed via npm packages, npm creates links to them:
 
--   **local** installs have links created at the `./node_modules/.bin/` directory
--   **global** installs have links created from the global `bin/` directory (for example: `/usr/local/bin` on Linux or at `%AppData%/npm` on Windows)
+- **local** installs have links created at the `./node_modules/.bin/` directory
+- **global** installs have links created from the global `bin/` directory (for example: `/usr/local/bin` on Linux or at `%AppData%/npm` on Windows)
 
 To execute a package with npm you either have to type the local path, like this:
 
@@ -5670,14 +5657,14 @@ Sometimes you just want to use some CLI tools but you don't want to install them
 
 `npx create-react-app <name of app> --use-npm`
 
--   npx gives us the latest version. `--use-npm` just means to use npm instead of yarn or some other package manager
+- npx gives us the latest version. `--use-npm` just means to use npm instead of yarn or some other package manager
 
 ### **8\. Pass props into a React component**
 
--   `props` is an object that gets passed down from the parent component to the child component. The values can be of any data structure including a function (which is an object)
+- `props` is an object that gets passed down from the parent component to the child component. The values can be of any data structure including a function (which is an object)
 
--   You can also [interpolate values](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) into JSX.
--   Set a variable to the string, "world", and replace the string of "world" in the NavLinks JSX element with the variable wrapped in curly braces:
+- You can also [interpolate values](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) into JSX.
+- Set a variable to the string, "world", and replace the string of "world" in the NavLinks JSX element with the variable wrapped in curly braces:
 
 > **Accessing props:**
 
@@ -5713,7 +5700,7 @@ class Welcome extends React.Component {
 
 The above two components are equivalent from React's point of view.
 
--   You can pass down **as many props keys as you want**.
+- You can pass down **as many props keys as you want**.
 
 ### **9\. Destructure props**
 
@@ -5733,7 +5720,7 @@ npm i react-router-dom
 1.  Above you import your BrowserRouter with which you can wrap your entire route hierarchy. This makes routing information from React Router available to all its descendent components.
 2.  Then in the component of your choosing, usually top tier such as App.js, you can create your routes using the Route and Switch Components
 
-* * * * *
+---
 
 ### Discover More:
 
@@ -5742,7 +5729,7 @@ npm i react-router-dom
 
 ### REACT CHEAT SHEET:
 
-*More content at* [*plainenglish.io*](http://plainenglish.io/)
+*More content at* [_plainenglish.io_](http://plainenglish.io/)
 
 By [Bryan Guner](https://medium.com/@bryanguner) on [June 11, 2021](https://medium.com/p/cbaafb31765d).
 
@@ -5752,12 +5739,11 @@ Exported from [Medium](https://medium.com/) on July 13, 2021.
 
 [view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/Essential-.md)[Essential-.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-essential-md) hosted with ❤ by [GitHub](https://github.com/)
 
-Everything You Need to Get Started With VSCode + Extensions & Resources
-=======================================================================
+# Everything You Need to Get Started With VSCode + Extensions & Resources
 
 Commands:
 
-* * * * *
+---
 
 ### Everything You Need to Get Started With VSCode + Extensions & Resources
 
@@ -5774,7 +5760,7 @@ Commands:
 
 [](https://github.com/bgoonz/vscode-Extension-readmes)<https://github.com/bgoonz/vscode-Extension-readmes>
 
-* * * * *
+---
 
 ### Commands:
 
@@ -5812,7 +5798,7 @@ Commands:
 
 [![](https://camo.githubusercontent.com/a5641b8f4497c310845e0bf9b12e2be20a213ecfe149398ec8412390b3280e01/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f302a6c6c706b6c356a73494d68574d7563522e706e67)](https://camo.githubusercontent.com/a5641b8f4497c310845e0bf9b12e2be20a213ecfe149398ec8412390b3280e01/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f302a6c6c706b6c356a73494d68574d7563522e706e67)
 
-* * * * *
+---
 
 ### Tips-N-Tricks:
 
@@ -5834,7 +5820,7 @@ You can add additional cursors to all occurrences of the current selection with 
 
 [![](https://camo.githubusercontent.com/ca95e33fda0a33d81759eb0d50c3cd33515e2be7bb07ba48921526e64044551c/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a5763726677496c6e364e4947337a4e572e676966)](https://camo.githubusercontent.com/ca95e33fda0a33d81759eb0d50c3cd33515e2be7bb07ba48921526e64044551c/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a5763726677496c6e364e4947337a4e572e676966)
 
-*Note: You can also change the modifier to Ctrl/Cmd for applying multiple cursors with the* `editor.multiCursorModifier` [*setting*](https://code.visualstudio.com/docs/getstarted/settings)* . See* [*Multi-cursor Modifier*](https://code.visualstudio.com/docs/editor/codebasics#_multicursor-modifier) *for details.*
+_Note: You can also change the modifier to Ctrl/Cmd for applying multiple cursors with the_ `editor.multiCursorModifier` [_setting_](https://code.visualstudio.com/docs/getstarted/settings)* . See* [_Multi-cursor Modifier_](https://code.visualstudio.com/docs/editor/codebasics#_multicursor-modifier) *for details.*
 
 If you do not want to add all occurrences of the current selection, you can use Ctrl+D instead. This only selects the next occurrence after the one you selected so you can add selections one by one.
 
@@ -5848,13 +5834,13 @@ You can select blocks of text by holding Shift+Alt (Shift+Option on macOS) while
 
 You can also use [keyboard shortcuts](https://code.visualstudio.com/docs/editor/codebasics#_column-box-selection) to trigger column selection.
 
-* * * * *
+---
 
 ### Extensions:
 
 #### [AutoHotkey Plus](https://marketplace.visualstudio.com/items?itemName=cweijan.vscode-autohotkey-plus)
 
-> *Syntax Highlighting, Snippets, Go to Definition, Signature helper and Code formatter*
+> _Syntax Highlighting, Snippets, Go to Definition, Signature helper and Code formatter_
 
 ### [Bash Debug](https://marketplace.visualstudio.com/items?itemName=rogalmic.bash-debug)
 
@@ -5864,7 +5850,7 @@ You can also use [keyboard shortcuts](https://code.visualstudio.com/docs/editor
 
 ### [Shellman](https://marketplace.visualstudio.com/items?itemName=Remisa.shellman)
 
-> *Bash script snippets extension*
+> _Bash script snippets extension_
 
 [![](https://camo.githubusercontent.com/938c787b8a2ffc94feccd14762dd9f14fb2aad7eb4282de45850abb2c10d322d/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a7779696d745832376757796741654f622e676966)](https://camo.githubusercontent.com/938c787b8a2ffc94feccd14762dd9f14fb2aad7eb4282de45850abb2c10d322d/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a7779696d745832376757796741654f622e676966)
 
@@ -5884,7 +5870,7 @@ You can also use [keyboard shortcuts](https://code.visualstudio.com/docs/editor
 
 #### More
 
--   [Microsoft's tutorial on using VSCode for remote C/C++ development](https://devblogs.microsoft.com/cppblog/vscode-cpp-may-2019-update/)
+- [Microsoft's tutorial on using VSCode for remote C/C++ development](https://devblogs.microsoft.com/cppblog/vscode-cpp-may-2019-update/)
 
 ### C#, ASP .NET and .NET Core
 
@@ -5902,13 +5888,13 @@ You can also use [keyboard shortcuts](https://code.visualstudio.com/docs/editor
 
 [![](https://camo.githubusercontent.com/0ae54492c25734909991ede2d948c8154ad3a0fb62b8dfc0dcf6348517eac907/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a5a473557345f5656427638397a4f5f672e676966)](https://camo.githubusercontent.com/0ae54492c25734909991ede2d948c8154ad3a0fb62b8dfc0dcf6348517eac907/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a5a473557345f5656427638397a4f5f672e676966)
 
-* * * * *
+---
 
 ### CSS
 
 ### [CSS Peek](https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek)
 
-> *Peek or Jump to a CSS definition directly from HTML, just like in Brackets!*
+> _Peek or Jump to a CSS definition directly from HTML, just like in Brackets!_
 
 [![](https://camo.githubusercontent.com/f3f58f70e8f99711c6fdea6d8bf7b76caed294440471c644b762e8a46afd9c2e/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a4d4e34704e71784477344679526b38672e676966)](https://camo.githubusercontent.com/f3f58f70e8f99711c6fdea6d8bf7b76caed294440471c644b762e8a46afd9c2e/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a4d4e34704e71784477344679526b38672e676966)
 
@@ -5922,31 +5908,31 @@ You can also use [keyboard shortcuts](https://code.visualstudio.com/docs/editor
 
 ### Groovy
 
--   [VsCode Groovy Lint](https://marketplace.visualstudio.com/items?itemName=NicolasVuillamy.vscode-groovy-lint) --- Groovy lint, format, prettify and auto-fix
+- [VsCode Groovy Lint](https://marketplace.visualstudio.com/items?itemName=NicolasVuillamy.vscode-groovy-lint) --- Groovy lint, format, prettify and auto-fix
 
 [![](https://camo.githubusercontent.com/cd9c62a3de546812c442839e58938c85d1d813dde5327d85a8e0326a2c272e71/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6a6d69355f2d65724a6a37574f4d71372e676966)](https://camo.githubusercontent.com/cd9c62a3de546812c442839e58938c85d1d813dde5327d85a8e0326a2c272e71/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6a6d69355f2d65724a6a37574f4d71372e676966)
 
 ### Haskell
 
--   [haskell-linter](https://marketplace.visualstudio.com/items?itemName=hoovercj.haskell-linter)
--   [Haskell IDE engine](https://marketplace.visualstudio.com/items?itemName=alanz.vscode-hie-server) --- provides [language server](https://github.com/haskell/haskell-ide-engine) for stack and cabal projects.
--   [autocomplate-shell](https://marketplace.visualstudio.com/items?itemName=truman.autocomplate-shell)
+- [haskell-linter](https://marketplace.visualstudio.com/items?itemName=hoovercj.haskell-linter)
+- [Haskell IDE engine](https://marketplace.visualstudio.com/items?itemName=alanz.vscode-hie-server) --- provides [language server](https://github.com/haskell/haskell-ide-engine) for stack and cabal projects.
+- [autocomplate-shell](https://marketplace.visualstudio.com/items?itemName=truman.autocomplate-shell)
 
-* * * * *
+---
 
 ### Java
 
--   [Language Support for Java(TM) by Red Hat](https://marketplace.visualstudio.com/items?itemName=redhat.java)
--   [Debugger for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-debug)
--   [Maven for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-maven)
--   [Lombok](https://marketplace.visualstudio.com/items?itemName=GabrielBB.vscode-lombok)
+- [Language Support for Java(TM) by Red Hat](https://marketplace.visualstudio.com/items?itemName=redhat.java)
+- [Debugger for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-debug)
+- [Maven for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-maven)
+- [Lombok](https://marketplace.visualstudio.com/items?itemName=GabrielBB.vscode-lombok)
 
-* * * * *
+---
 
 ### JavaScript
 
--   [Babel JavaScript](https://marketplace.visualstudio.com/items?itemName=mgmcdermott.vscode-language-babel)
--   [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) --- This extension provides AI-assisted development features including autocomplete and other insights based on understanding your code context.
+- [Babel JavaScript](https://marketplace.visualstudio.com/items?itemName=mgmcdermott.vscode-language-babel)
+- [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) --- This extension provides AI-assisted development features including autocomplete and other insights based on understanding your code context.
 
 [![](https://camo.githubusercontent.com/27d55d075ce1f9a029a1f7daa69ff750c70f8641097e9629288caad4b2111976/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6937435a6253624871735771454d34772e676966)](https://camo.githubusercontent.com/27d55d075ce1f9a029a1f7daa69ff750c70f8641097e9629288caad4b2111976/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6937435a6253624871735771454d34772e676966)
 
@@ -5972,43 +5958,43 @@ Framework-specific:
 
 [![](https://camo.githubusercontent.com/6d38d709acada12a1cb3a13aebf44c66684f9fe55d58f726b55ab6a3f55c59dd/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a46374a5f765730495362564d5458495a2e706e67)](https://camo.githubusercontent.com/6d38d709acada12a1cb3a13aebf44c66684f9fe55d58f726b55ab6a3f55c59dd/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a46374a5f765730495362564d5458495a2e706e67)
 
-* * * * *
+---
 
 ### [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
 
-> *A VS Code extension to debug your JavaScript code in the Chrome browser, or other targets that support the Chrome Debugging Protocol.*
+> _A VS Code extension to debug your JavaScript code in the Chrome browser, or other targets that support the Chrome Debugging Protocol._
 
 ### Facebook Flow
 
--   [Flow Language Support](https://marketplace.visualstudio.com/items?itemName=flowtype.flow-for-vscode) --- provides all the functionality you would expect --- linting, intellisense, type tooltips and click-to-definition
--   [vscode-flow-ide](https://marketplace.visualstudio.com/items?itemName=gcazaciuc.vscode-flow-ide) --- an alternative Flowtype extension for Visual Studio Code
+- [Flow Language Support](https://marketplace.visualstudio.com/items?itemName=flowtype.flow-for-vscode) --- provides all the functionality you would expect --- linting, intellisense, type tooltips and click-to-definition
+- [vscode-flow-ide](https://marketplace.visualstudio.com/items?itemName=gcazaciuc.vscode-flow-ide) --- an alternative Flowtype extension for Visual Studio Code
 
 ### TypeScript
 
--   [tslint](https://marketplace.visualstudio.com/items?itemName=eg2.tslint) --- TSLint for Visual Studio Code
--   [TypeScript Hero](https://marketplace.visualstudio.com/items?itemName=rbbit.typescript-hero) --- Code outline view of your open TS, sort and organize your imports.
+- [tslint](https://marketplace.visualstudio.com/items?itemName=eg2.tslint) --- TSLint for Visual Studio Code
+- [TypeScript Hero](https://marketplace.visualstudio.com/items?itemName=rbbit.typescript-hero) --- Code outline view of your open TS, sort and organize your imports.
 
-* * * * *
+---
 
 ### Markdown
 
 ### [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
 
-> *Linter for* [*markdownlint*](https://github.com/DavidAnson/markdownlint)*.*
+> *Linter for* [_markdownlint_](https://github.com/DavidAnson/markdownlint)_._
 
 ### [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
 
-> *All-in-one markdown plugin (keyboard shortcuts, table of contents, auto preview, list editing and more)*
+> _All-in-one markdown plugin (keyboard shortcuts, table of contents, auto preview, list editing and more)_
 
 [![](https://camo.githubusercontent.com/676a2ef49a744d88f59961ff5f41811e143f3e1eeb6206036ccb084ce63cb1da/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a386f567259755a396b4c524e537542732e676966)](https://camo.githubusercontent.com/676a2ef49a744d88f59961ff5f41811e143f3e1eeb6206036ccb084ce63cb1da/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a386f567259755a396b4c524e537542732e676966)
 
 ### [Markdown Emoji](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-emoji)
 
-> *Adds emoji syntax support to VS Code's built-in Markdown preview*
+> _Adds emoji syntax support to VS Code's built-in Markdown preview_
 
 [![](https://camo.githubusercontent.com/da1699e8dc4017c380c88ab75f158618f57b849903aaf76f42f66d8f13247ab9/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a72636b554d49495a394a6837554535712e706e67)](https://camo.githubusercontent.com/da1699e8dc4017c380c88ab75f158618f57b849903aaf76f42f66d8f13247ab9/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a72636b554d49495a394a6837554535712e706e67)
 
-* * * * *
+---
 
 ### PHP
 
@@ -6016,13 +6002,13 @@ Framework-specific:
 
 These extensions provide slightly different sets of features. While the first one offers better autocompletion support, the second one seems to have more features overall.
 
--   [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
--   [PHP IntelliSense](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-intellisense)
+- [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
+- [PHP IntelliSense](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-intellisense)
 
 ### Laravel
 
--   [Laravel 5 Snippets](https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel5-snippets) --- Laravel 5 snippets for Visual Studio Code
--   [Laravel Blade Snippets](https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel-blade) --- Laravel blade snippets and syntax highlight support
+- [Laravel 5 Snippets](https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel5-snippets) --- Laravel 5 snippets for Visual Studio Code
+- [Laravel Blade Snippets](https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel-blade) --- Laravel blade snippets and syntax highlight support
 
 [![](https://camo.githubusercontent.com/cf54eea6d971d7236bc7aab3e0495fd751d1b49becdf7cd019fa87e9fe63729c/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6634684d4665316c374e704a544738762e676966)](https://camo.githubusercontent.com/cf54eea6d971d7236bc7aab3e0495fd751d1b49becdf7cd019fa87e9fe63729c/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6634684d4665316c374e704a544738762e676966)
 
@@ -6038,129 +6024,129 @@ These extensions provide slightly different sets of features. While the first on
 
 [![](https://camo.githubusercontent.com/a9b7bc4c2bc860e7e51f1105a6f4d48859ab6d8a9825904d0b1a0675b4dbca88/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a665341617170586642783153677a74662e706e67)](https://camo.githubusercontent.com/a9b7bc4c2bc860e7e51f1105a6f4d48859ab6d8a9825904d0b1a0675b4dbca88/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a665341617170586642783153677a74662e706e67)
 
-* * * * *
+---
 
 ### Other extensions
 
--   [Format HTML in PHP](https://marketplace.visualstudio.com/items?itemName=rifi2k.format-html-in-php) --- Formatting for the HTML in PHP files. Runs before the save action so you can still have a PHP formatter.
+- [Format HTML in PHP](https://marketplace.visualstudio.com/items?itemName=rifi2k.format-html-in-php) --- Formatting for the HTML in PHP files. Runs before the save action so you can still have a PHP formatter.
 
 [![](https://camo.githubusercontent.com/b61d460d28b84280af361697ec9facb0f0c68bd3877d33252208db04ad2dc0a9/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a366746304b3230694b65733749395a462e676966)](https://camo.githubusercontent.com/b61d460d28b84280af361697ec9facb0f0c68bd3877d33252208db04ad2dc0a9/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a366746304b3230694b65733749395a462e676966)
 
 - [Composer](https://marketplace.visualstudio.com/items?itemName=ikappas.composer) - [PHP Debug](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug) --- XDebug extension for Visual Studio Code - [PHP DocBlocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker) - [php cs fixer](https://marketplace.visualstudio.com/items?itemName=junstyle.php-cs-fixer) --- PHP CS Fixer extension for VS Code, php formatter, php code beautify tool - [phpcs](https://marketplace.visualstudio.com/items?itemName=ikappas.phpcs) --- PHP CodeSniffer for Visual Studio Code - [phpfmt](https://marketplace.visualstudio.com/items?itemName=kokororin.vscode-phpfmt) --- phpfmt for Visual Studio Code
 
-* * * * *
+---
 
 ### Python
 
--   [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) --- Linting, Debugging (multi threaded, web apps), Intellisense, auto-completion, code formatting, snippets, unit testing, and more.
+- [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) --- Linting, Debugging (multi threaded, web apps), Intellisense, auto-completion, code formatting, snippets, unit testing, and more.
 
 ### TensorFlow
 
--   [TensorFlow Snippets](https://marketplace.visualstudio.com/items?itemName=vahidk.tensorflow-snippets) --- This extension includes a set of useful code snippets for developing TensorFlow models in Visual Studio Code.
+- [TensorFlow Snippets](https://marketplace.visualstudio.com/items?itemName=vahidk.tensorflow-snippets) --- This extension includes a set of useful code snippets for developing TensorFlow models in Visual Studio Code.
 
 [![](https://camo.githubusercontent.com/8b7e5d165be3538a013dd5555b04877f1c6eeaa9c25bc5014a1e2276aaa1c8c2/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a73746d686751337347764a42547666322e676966)](https://camo.githubusercontent.com/8b7e5d165be3538a013dd5555b04877f1c6eeaa9c25bc5014a1e2276aaa1c8c2/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a73746d686751337347764a42547666322e676966)
 
-* * * * *
+---
 
 ### Rust
 
--   [Rust](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust) --- Linting, auto-completion, code formatting, snippets and more
+- [Rust](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust) --- Linting, auto-completion, code formatting, snippets and more
 
-* * * * *
+---
 
 ### Productivity
 
 ### [ARM Template Viewer](https://marketplace.visualstudio.com/items?itemName=bencoleman.armview)
 
-> *Displays a graphical preview of Azure Resource Manager (ARM) templates. The view will show all resources with the official Azure icons and also linkage between the resources.*
+> _Displays a graphical preview of Azure Resource Manager (ARM) templates. The view will show all resources with the official Azure icons and also linkage between the resources._
 
 [![](https://camo.githubusercontent.com/aa561bb547b632bd0533995a5b563174f0c41574e694f03a21ae875fc737a022/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a7038627643493944584634346d347a332e706e67)](https://camo.githubusercontent.com/aa561bb547b632bd0533995a5b563174f0c41574e694f03a21ae875fc737a022/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a7038627643493944584634346d347a332e706e67)
 
 ### [Azure Cosmos DB](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb)
 
-> *Browse your database inside the vs code editor*
+> _Browse your database inside the vs code editor_
 
 [![](https://camo.githubusercontent.com/13ba27b4eaabaad95fa98eb522ce319abb0f717e9975df7b5eebdb80954a6a01/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a56577653553648626632304b66635f502e676966)](https://camo.githubusercontent.com/13ba27b4eaabaad95fa98eb522ce319abb0f717e9975df7b5eebdb80954a6a01/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a56577653553648626632304b66635f502e676966)
 
 ### [Azure IoT Toolkit](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-toolkit)
 
-> *Everything you need for the Azure IoT development: Interact with Azure IoT Hub, manage devices connected to Azure IoT Hub, and develop with code snippets for Azure IoT Hub*
+> _Everything you need for the Azure IoT development: Interact with Azure IoT Hub, manage devices connected to Azure IoT Hub, and develop with code snippets for Azure IoT Hub_
 
 [![](https://camo.githubusercontent.com/5e27f32fa083089b96071249ed371a9d79fab279df023f08fed445916c7932f3/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a416f62744364383066494372625150492e706e67)](https://camo.githubusercontent.com/5e27f32fa083089b96071249ed371a9d79fab279df023f08fed445916c7932f3/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a416f62744364383066494372625150492e706e67)
 
 ### [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
 
-> *Mark lines and jump to them*
+> _Mark lines and jump to them_
 
 ### [Color Tabs](https://marketplace.visualstudio.com/items?itemName=orepor.color-tabs-vscode-ext)
 
-> *An extension for big projects or monorepos that colors your tab/titlebar based on the current package*
+> _An extension for big projects or monorepos that colors your tab/titlebar based on the current package_
 
 [![](https://camo.githubusercontent.com/833754dc1026397923a48f050a712b412b9eda1e79c5446744d699fa43e7e56a/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a5345702d686766444c6c75624e5279632e676966)](https://camo.githubusercontent.com/833754dc1026397923a48f050a712b412b9eda1e79c5446744d699fa43e7e56a/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a5345702d686766444c6c75624e5279632e676966)
 
 ### [Create tests](https://marketplace.visualstudio.com/items?itemName=hardikmodha.create-tests)
 
-> *An extension to quickly generate test files.*
+> _An extension to quickly generate test files._
 
 [![](https://camo.githubusercontent.com/dcc8b0632ad8b9e82f7db620ace1f927d8afac7ddbd897bce49589333245cddf/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a444c5a4c596d724269756930594f42742e676966)](https://camo.githubusercontent.com/dcc8b0632ad8b9e82f7db620ace1f927d8afac7ddbd897bce49589333245cddf/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a444c5a4c596d724269756930594f42742e676966)
 
 ### [Deploy](https://marketplace.visualstudio.com/items?itemName=mkloubert.vs-deploy)
 
-> *Commands for upload or copy files of a workspace to a destination.*
+> _Commands for upload or copy files of a workspace to a destination._
 
 [![](https://camo.githubusercontent.com/d0e8b243352cd858c50b247e067868c1793efa36cf38eed241232d5c2329814e/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6c4c61736a7a6c6d576e4277646241542e676966)](https://camo.githubusercontent.com/d0e8b243352cd858c50b247e067868c1793efa36cf38eed241232d5c2329814e/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6c4c61736a7a6c6d576e4277646241542e676966)
 
 ### [Duplicate Action](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-duplicate)
 
-> *Ability to duplicate files and directories.*
+> _Ability to duplicate files and directories._
 
 ### [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens)
 
-> *Show language diagnostics inline (errors/warnings/...).*
+> _Show language diagnostics inline (errors/warnings/...)._
 
 [![](https://camo.githubusercontent.com/691d05494de65a4dfd4518fc852c8834acf13769ff8806eefa4eb1edd22aebd1/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a31744a4a6b563070324b615f573036722e676966)](https://camo.githubusercontent.com/691d05494de65a4dfd4518fc852c8834acf13769ff8806eefa4eb1edd22aebd1/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a31744a4a6b563070324b615f573036722e676966)
 
 ### [ES7 React/Redux/GraphQL/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
 
-> *Provides Javascript and React/Redux snippets in ES7*
+> _Provides Javascript and React/Redux snippets in ES7_
 
 [![](https://camo.githubusercontent.com/2655ac72211d14654811ec60904fc1232be7fdd01ea6b02254494a5a69c607c4/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a57334e306b626745756d5759612d6d342e706e67)](https://camo.githubusercontent.com/2655ac72211d14654811ec60904fc1232be7fdd01ea6b02254494a5a69c607c4/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a57334e306b626745756d5759612d6d342e706e67)
 
 ### [Gi](https://marketplace.visualstudio.com/items?itemName=rubbersheep.gi)
 
-> *Generating .gitignore files made easy*
+> _Generating .gitignore files made easy_
 
 [![](https://camo.githubusercontent.com/9e0d19c317f75e0040f8b13828e791e3c9c63609369b5fed14ce16217435e24c/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a7366646467687a3842314433363255422e676966)](https://camo.githubusercontent.com/9e0d19c317f75e0040f8b13828e791e3c9c63609369b5fed14ce16217435e24c/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a7366646467687a3842314433363255422e676966)
 
 ### [GistPad](https://marketplace.visualstudio.com/items?itemName=vsls-contrib.gistfs)
 
-> *Allows you to manage GitHub Gists entirely within the editor. You can open, create, delete, fork, star and clone gists, and then seamlessly begin editing files as if they were local. It's like your very own developer library for building and referencing code snippets, commonly used config/scripts, programming-related notes/documentation, and interactive samples.*
+> _Allows you to manage GitHub Gists entirely within the editor. You can open, create, delete, fork, star and clone gists, and then seamlessly begin editing files as if they were local. It's like your very own developer library for building and referencing code snippets, commonly used config/scripts, programming-related notes/documentation, and interactive samples._
 
 [![](https://camo.githubusercontent.com/6bd0e93693839c38a609808a932bb31e532787fbb2061f9edad189a1634de65e/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a314d6942513075345a3854504e6147392e676966)](https://camo.githubusercontent.com/6bd0e93693839c38a609808a932bb31e532787fbb2061f9edad189a1634de65e/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a314d6942513075345a3854504e6147392e676966)
 
 ### [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
 
-> *View git log, file or line History*
+> _View git log, file or line History_
 
 ### [Git Project Manager](https://marketplace.visualstudio.com/items?itemName=felipecaputo.git-project-manager)
 
-> *Automatically indexes your git projects and lets you easily toggle between them*
+> _Automatically indexes your git projects and lets you easily toggle between them_
 
 ### [GitLink](https://marketplace.visualstudio.com/items?itemName=qezhu.gitlink)
 
-> *GoTo current file's online link in browser and Copy the link in clipboard.*
+> _GoTo current file's online link in browser and Copy the link in clipboard._
 
 [![](https://camo.githubusercontent.com/dec54cbfd18f33e7d5177df5e2d5e6dd2ab5553a6d26a1e92a6415e266df572b/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a416367666e32726d68696e7549506a6b2e676966)](https://camo.githubusercontent.com/dec54cbfd18f33e7d5177df5e2d5e6dd2ab5553a6d26a1e92a6415e266df572b/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a416367666e32726d68696e7549506a6b2e676966)
 
 ### [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 
-> *Provides Git CodeLens information (most recent commit, # of authors), on-demand inline blame annotations, status bar blame information, file and blame history explorers, and commands to compare changes with the working tree or previous versions.*
+> _Provides Git CodeLens information (most recent commit, # of authors), on-demand inline blame annotations, status bar blame information, file and blame history explorers, and commands to compare changes with the working tree or previous versions._
 
 [![](https://camo.githubusercontent.com/45de93c139b1cd115ad0e362af29fd5c154560e31258986c1926d1542829280d/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a4d5a7534475637534f435738385551512e676966)](https://camo.githubusercontent.com/45de93c139b1cd115ad0e362af29fd5c154560e31258986c1926d1542829280d/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a4d5a7534475637534f435738385551512e676966)
 
 ### [Git Indicators](https://marketplace.visualstudio.com/items?itemName=lamartire.git-indicators)
 
-> *Atom-like git indicators on active panel*
+> _Atom-like git indicators on active panel_
 
 [![](https://camo.githubusercontent.com/89352707024208a1cacec112976610aedd00932ac0a0093bfa7da3cc5edeab55/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a7669745a7244395a55305f6557636b552e706e67)](https://camo.githubusercontent.com/89352707024208a1cacec112976610aedd00932ac0a0093bfa7da3cc5edeab55/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a7669745a7244395a55305f6557636b552e706e67)
 
@@ -6170,47 +6156,47 @@ These extensions provide slightly different sets of features. While the first on
 
 ### [GitHub](https://marketplace.visualstudio.com/items?itemName=KnisterPeter.vscode-github)
 
-> *Provides GitHub workflow support. For example browse project, issues, file (the current line), create and manage pull request. Support for other providers (e.g. gitlab or bitbucket) is planned. Have a look at the* [*README.md*](https://github.com/KnisterPeter/vscode-github/blob/master/README.md) *on how to get started with the setup for this extension.*
+> *Provides GitHub workflow support. For example browse project, issues, file (the current line), create and manage pull request. Support for other providers (e.g. gitlab or bitbucket) is planned. Have a look at the* [_README.md_](https://github.com/KnisterPeter/vscode-github/blob/master/README.md) *on how to get started with the setup for this extension.*
 
 ### [GitHub Pull Request Monitor](https://marketplace.visualstudio.com/items?itemName=erichbehrens.pull-request-monitor)
 
-> *This extension uses the GitHub api to monitor the state of your pull requests and let you know when it's time to merge or if someone requested changes.*
+> _This extension uses the GitHub api to monitor the state of your pull requests and let you know when it's time to merge or if someone requested changes._
 
 [![](https://camo.githubusercontent.com/34e115de28c65948a3b41c6bca1a732a74a6ae4ea9fc2d6385528a9ac051db02/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a544f71354f45526b67514e455447504b2e706e67)](https://camo.githubusercontent.com/34e115de28c65948a3b41c6bca1a732a74a6ae4ea9fc2d6385528a9ac051db02/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a544f71354f45526b67514e455447504b2e706e67)
 
 ### [GitLab Workflow](https://marketplace.visualstudio.com/items?itemName=gitlab.gitlab-workflow)
 
-> *Adds a GitLab sidebar icon to view issues, merge requests and other GitLab resources. You can also view the results of your GitLab CI/CD pipeline and check the syntax of your *`.gitlab-ci.yml`*.*
+> _Adds a GitLab sidebar icon to view issues, merge requests and other GitLab resources. You can also view the results of your GitLab CI/CD pipeline and check the syntax of your _`.gitlab-ci.yml`_._
 
 #### [Gradle Tasks](https://marketplace.visualstudio.com/items?itemName=richardwillis.vscode-gradle)
 
-> *Run gradle tasks in VS Code.*
+> _Run gradle tasks in VS Code._
 
 [![](https://camo.githubusercontent.com/67af061b9b661f8be8a57817ef52687de291883356a9c716d2a97b4de9a8cc7f/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a56782d334449543232424a70456e4a722e676966)](https://camo.githubusercontent.com/67af061b9b661f8be8a57817ef52687de291883356a9c716d2a97b4de9a8cc7f/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a56782d334449543232424a70456e4a722e676966)
 
 ### [Icon Fonts](https://marketplace.visualstudio.com/items?itemName=idleberg.icon-fonts)
 
-> *Snippets for popular icon fonts such as Font Awesome, Ionicons, Glyphicons, Octicons, Material Design Icons and many more!*
+> _Snippets for popular icon fonts such as Font Awesome, Ionicons, Glyphicons, Octicons, Material Design Icons and many more!_
 
 ### [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
 
-> *This extension will display inline in the editor the size of the imported package. The extension utilizes webpack with babili-webpack-plugin in order to detect the imported size.*
+> _This extension will display inline in the editor the size of the imported package. The extension utilizes webpack with babili-webpack-plugin in order to detect the imported size._
 
 ### [Jira and Bitbucket](https://marketplace.visualstudio.com/items?itemName=Atlassian.atlascode)
 
-> *Bringing the power of Jira and Bitbucket to VS Code --- With Atlassian for VS Code you can create and view issues, start work on issues, create pull requests, do code reviews, start builds, get build statuses and more!*
+> _Bringing the power of Jira and Bitbucket to VS Code --- With Atlassian for VS Code you can create and view issues, start work on issues, create pull requests, do code reviews, start builds, get build statuses and more!_
 
 [![](https://camo.githubusercontent.com/80ac6c60c7dbe689146d8b881775f6f5782deaf646c3e77d8339d8a7d293ceba/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a543669754832566e50596a39335971572e676966)](https://camo.githubusercontent.com/80ac6c60c7dbe689146d8b881775f6f5782deaf646c3e77d8339d8a7d293ceba/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a543669754832566e50596a39335971572e676966)
 
 ### [JS Parameter Annotations](https://marketplace.visualstudio.com/items?itemName=lannonbr.vscode-js-annotations)
 
-> *Provides annotations on function calls in JS/TS files to provide parameter names to arguments.*
+> _Provides annotations on function calls in JS/TS files to provide parameter names to arguments._
 
 [![](https://camo.githubusercontent.com/9242422004d343c36efb8970adb335635bb0368823a71a3c726ff223f0574891/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a7a486666507359576c6e3464786875732e706e67)](https://camo.githubusercontent.com/9242422004d343c36efb8970adb335635bb0368823a71a3c726ff223f0574891/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a7a486666507359576c6e3464786875732e706e67)
 
 ### [Jumpy](https://marketplace.visualstudio.com/items?itemName=wmaurer.vscode-jumpy)
 
-> *Provides fast cursor movement, inspired by Atom's package of the same name.*
+> _Provides fast cursor movement, inspired by Atom's package of the same name._
 
 [![](https://camo.githubusercontent.com/139b39b338db9cc62c301590156e9a41e84a512da1e90ca9b06563050aeb99bc/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a75504f6365554a34654d6a43505f51742e676966)](https://camo.githubusercontent.com/139b39b338db9cc62c301590156e9a41e84a512da1e90ca9b06563050aeb99bc/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a75504f6365554a34654d6a43505f51742e676966)
 
@@ -6218,219 +6204,219 @@ These extensions provide slightly different sets of features. While the first on
 
 [![](https://camo.githubusercontent.com/7c00e5cc47b966d9cad0657ca9072571a0d9e2866ce9fbfb6e08aeff606e458b/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a537a554733555531666c3575623762412e676966)](https://camo.githubusercontent.com/7c00e5cc47b966d9cad0657ca9072571a0d9e2866ce9fbfb6e08aeff606e458b/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a537a554733555531666c3575623762412e676966)
 
-*Simple Kanban board for use in Visual Studio Code, with time tracking and Markdown support.*
+_Simple Kanban board for use in Visual Studio Code, with time tracking and Markdown support._
 
 ### [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
-> *Launch a development local Server with live reload feature for static & dynamic pages.*
+> _Launch a development local Server with live reload feature for static & dynamic pages._
 
 [![](https://camo.githubusercontent.com/fdcbf9ec2fb91a1d21d77e8b0e94f7530f04b83e860117a9d5b8c0a8b27eb561/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a4f6a357a507257774d624342566942692e676966)](https://camo.githubusercontent.com/fdcbf9ec2fb91a1d21d77e8b0e94f7530f04b83e860117a9d5b8c0a8b27eb561/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a4f6a357a507257774d624342566942692e676966)
 
 ### [Multiple clipboards](https://marketplace.visualstudio.com/items?itemName=slevesque.vscode-multiclip)
 
-> *Override the regular Copy and Cut commands to keep selections in a clipboard ring*
+> _Override the regular Copy and Cut commands to keep selections in a clipboard ring_
 
 ### [ngrok for VSCode](https://marketplace.visualstudio.com/items?itemName=philnash.ngrok-for-vscode)
 
-> *ngrok allows you to expose a web server running on your local machine to the internet. Just tell ngrok what port your web server is listening on. This extension allows you to control* [*ngrok*](https://ngrok.com/) *from the VSCode command palette*
+> *ngrok allows you to expose a web server running on your local machine to the internet. Just tell ngrok what port your web server is listening on. This extension allows you to control* [_ngrok_](https://ngrok.com/) *from the VSCode command palette*
 
 [![](https://camo.githubusercontent.com/9e35efecccceabc295622f0e7f9b89098f7d5e1c47f23a2b2404aff4eb4d608f/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a495831354d754a7245564263546430462e676966)](https://camo.githubusercontent.com/9e35efecccceabc295622f0e7f9b89098f7d5e1c47f23a2b2404aff4eb4d608f/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a495831354d754a7245564263546430462e676966)
 
 ### [Instant Markdown](https://marketplace.visualstudio.com/items?itemName=dbankier.vscode-instant-markdown)
 
-> *Simply, edit markdown documents in vscode and instantly preview it in your browser as you type.*
+> _Simply, edit markdown documents in vscode and instantly preview it in your browser as you type._
 
 [![](https://camo.githubusercontent.com/636b3a0f474caea1a8f5261746d164b52a00af6ba25de2763aeef50093feb834/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6a4277397650396341747676324963562e676966)](https://camo.githubusercontent.com/636b3a0f474caea1a8f5261746d164b52a00af6ba25de2763aeef50093feb834/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6a4277397650396341747676324963562e676966)
 
 ### [npm Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense)
 
-> *Visual Studio Code plugin that autocompletes npm modules in import statements.*
+> _Visual Studio Code plugin that autocompletes npm modules in import statements._
 
 [![](https://camo.githubusercontent.com/0be79c1907f15dc6460d6c3af1ea9df3440a35fc136369fb4d92bf4c225d3814/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a69564a616d4a7567745f62372d5673562e676966)](https://camo.githubusercontent.com/0be79c1907f15dc6460d6c3af1ea9df3440a35fc136369fb4d92bf4c225d3814/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a69564a616d4a7567745f62372d5673562e676966)
 
 ### [Parameter Hints](https://marketplace.visualstudio.com/items?itemName=DominicVonk.parameter-hints)
 
-> *Provides parameter hints on function calls in JS/TS/PHP files.*
+> _Provides parameter hints on function calls in JS/TS/PHP files._
 
 [![](https://camo.githubusercontent.com/3d363f4d008fa63e588d2bd0e1e4051353b8f1afa7828ab561de926757a91c1b/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a42536a382d51743778745654736c315a2e706e67)](https://camo.githubusercontent.com/3d363f4d008fa63e588d2bd0e1e4051353b8f1afa7828ab561de926757a91c1b/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a42536a382d51743778745654736c315a2e706e67)
 
 ### [Partial Diff](https://marketplace.visualstudio.com/items?itemName=ryu1kn.partial-diff)
 
-> *Compare (diff) text selections within a file, across different files, or to the clipboard*
+> _Compare (diff) text selections within a file, across different files, or to the clipboard_
 
 [![](https://camo.githubusercontent.com/fd423f7c8367c6b1238d0c13edb5832b83a6030f051073f3799420bf1accb775/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a4b486b6938356a647631685a655933562e676966)](https://camo.githubusercontent.com/fd423f7c8367c6b1238d0c13edb5832b83a6030f051073f3799420bf1accb775/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a4b486b6938356a647631685a655933562e676966)
 
 ### [Paste JSON as Code](https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype)
 
-> *Infer the structure of JSON and paste is as types in many programming languages*
+> _Infer the structure of JSON and paste is as types in many programming languages_
 
 [![](https://camo.githubusercontent.com/7d72c4e43f7c57d854c4eb76486696c972d3e91e6d35aff95cdf2e8af66111f6/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a4b324743524d4773596a70734b384f582e676966)](https://camo.githubusercontent.com/7d72c4e43f7c57d854c4eb76486696c972d3e91e6d35aff95cdf2e8af66111f6/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a4b324743524d4773596a70734b384f582e676966)
 
 ### [Path IntelliSense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
 
-> *Visual Studio Code plugin that autocompletes filenames*
+> _Visual Studio Code plugin that autocompletes filenames_
 
 [![](https://camo.githubusercontent.com/be1566137bfeedfd3169b197c3e57cc60eb1e25b86fe9621c8afce8fdde81f59/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a787778555f3166665a765a3644656f4f2e676966)](https://camo.githubusercontent.com/be1566137bfeedfd3169b197c3e57cc60eb1e25b86fe9621c8afce8fdde81f59/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a787778555f3166665a765a3644656f4f2e676966)
 
 ### [Power Tools](https://marketplace.visualstudio.com/items?itemName=ego-digital.vscode-powertools)
 
-> *Extends Visual Studio Code via things like Node.js based scripts or shell commands, without writing separate extensions*
+> _Extends Visual Studio Code via things like Node.js based scripts or shell commands, without writing separate extensions_
 
 [![](https://camo.githubusercontent.com/b65b4c960ab9b6c0201a743122b19792ca125cd80a893434d284e7147fe6af5f/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a4362374a362d50597358736e6a71534e2e676966)](https://camo.githubusercontent.com/b65b4c960ab9b6c0201a743122b19792ca125cd80a893434d284e7147fe6af5f/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a4362374a362d50597358736e6a71534e2e676966)
 
 ### [PrintCode](https://marketplace.visualstudio.com/items?itemName=nobuhito.printcode)
 
-> *PrintCode converts the code being edited into an HTML file, displays it by browser and prints it.*
+> _PrintCode converts the code being edited into an HTML file, displays it by browser and prints it._
 
 [![](https://camo.githubusercontent.com/a2d5ce5ca2e31c42dd0ca74cfdc40ebfc1e34b81d2de56c54f7a2e675528f129/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a327370764e534545484d2d4554645f462e676966)](https://camo.githubusercontent.com/a2d5ce5ca2e31c42dd0ca74cfdc40ebfc1e34b81d2de56c54f7a2e675528f129/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a327370764e534545484d2d4554645f462e676966)
 
 ### [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager)
 
-> *Easily switch between projects.*
+> _Easily switch between projects._
 
 ### [Project Dashboard](https://marketplace.visualstudio.com/items?itemName=kruemelkatze.vscode-dashboard)
 
-> *VSCode Project Dashboard is a Visual Studio Code extension that lets you organize your projects in a speed-dial like manner. Pin your frequently visited folders, files, and SSH remotes onto a dashboard to access them quickly.*
+> _VSCode Project Dashboard is a Visual Studio Code extension that lets you organize your projects in a speed-dial like manner. Pin your frequently visited folders, files, and SSH remotes onto a dashboard to access them quickly._
 
 [![](https://camo.githubusercontent.com/97ddfefcf2193a87da5e7030af2d6da8bdb029c2a128338c98a3b301ab98da9c/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a50784f6f4152524f68693172663633522e676966)](https://camo.githubusercontent.com/97ddfefcf2193a87da5e7030af2d6da8bdb029c2a128338c98a3b301ab98da9c/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a50784f6f4152524f68693172663633522e676966)
 
 ### [Rainbow CSV](https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv)
 
-> *Highlight columns in comma, tab, semicolon and pipe separated files, consistency check and linting with CSVLint, multi-cursor column editing, column trimming and realignment, and SQL-style querying with RBQL.*
+> _Highlight columns in comma, tab, semicolon and pipe separated files, consistency check and linting with CSVLint, multi-cursor column editing, column trimming and realignment, and SQL-style querying with RBQL._
 
 [![](https://camo.githubusercontent.com/ae87e93b9daac2c50d5d2b82f8af39144d0c210b64325463197a539ab1a72c28/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a584162396a6c4f6647576c456143454d2e706e67)](https://camo.githubusercontent.com/ae87e93b9daac2c50d5d2b82f8af39144d0c210b64325463197a539ab1a72c28/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a584162396a6c4f6647576c456143454d2e706e67)
 
 ### [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
 
-> *Allows users to open any folder in a container, on a remote machine, container or in Windows Subsystem for Linux(WSL) and take advantage of VS Code's full feature set.*
+> _Allows users to open any folder in a container, on a remote machine, container or in Windows Subsystem for Linux(WSL) and take advantage of VS Code's full feature set._
 
 [![](https://camo.githubusercontent.com/f5add8d7f6c40c977fe539bd6c78d7a203182981178ba211199a101c0549931b/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a62365845506839504a7a655744425f7a2e676966)](https://camo.githubusercontent.com/f5add8d7f6c40c977fe539bd6c78d7a203182981178ba211199a101c0549931b/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a62365845506839504a7a655744425f7a2e676966)
 
 ### [Remote VSCode](https://marketplace.visualstudio.com/items?itemName=rafaelmaiolla.remote-vscode)
 
-> *Allow user to edit files from Remote server in Visual Studio Code directly.*
+> _Allow user to edit files from Remote server in Visual Studio Code directly._
 
 ### [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
 
-> *Allows you to send HTTP request and view the response in Visual Studio Code directly.*
+> _Allows you to send HTTP request and view the response in Visual Studio Code directly._
 
 [![](https://camo.githubusercontent.com/2807e7564d9079b0fe9c6c8760161f767692edf4520f8a9c1b94a046acef011a/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a7a476e653738626e69446254587a79662e676966)](https://camo.githubusercontent.com/2807e7564d9079b0fe9c6c8760161f767692edf4520f8a9c1b94a046acef011a/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a7a476e653738626e69446254587a79662e676966)
 
 ### [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)
 
-> *Synchronize settings, snippets, themes, file icons, launch, key bindings, workspaces and extensions across multiple machines using GitHub Gist*
+> _Synchronize settings, snippets, themes, file icons, launch, key bindings, workspaces and extensions across multiple machines using GitHub Gist_
 
 [![](https://camo.githubusercontent.com/c1eac08e83946ac81fbf8201d8f4dd617f8d4cb2ba50d1252b1dc84b3b20d3d6/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a696c4839314d5267476e4d46364338632e676966)](https://camo.githubusercontent.com/c1eac08e83946ac81fbf8201d8f4dd617f8d4cb2ba50d1252b1dc84b3b20d3d6/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a696c4839314d5267476e4d46364338632e676966)
 
 ### [Text Power Tools](https://marketplace.visualstudio.com/items?itemName=qcz.text-power-tools)
 
-> *All-in-one extension for text manipulation: filtering (grep), remove lines, insert number sequences and GUIDs, format content as table, change case, converting numbers and more. Great for finding information in logs and manipulating text.*
+> _All-in-one extension for text manipulation: filtering (grep), remove lines, insert number sequences and GUIDs, format content as table, change case, converting numbers and more. Great for finding information in logs and manipulating text._
 
 [![](https://camo.githubusercontent.com/4c8c1da00483fb4789baf88ddd2cc8e8c22651e6f5944238d146c1f69ea9b854/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a506670346e6f44354f655152626d735a2e676966)](https://camo.githubusercontent.com/4c8c1da00483fb4789baf88ddd2cc8e8c22651e6f5944238d146c1f69ea9b854/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a506670346e6f44354f655152626d735a2e676966)
 
 ### [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
 
-> *Custom keywords, highlighting, and colors for TODO comments. As well as a sidebar to view all your current tags.*
+> _Custom keywords, highlighting, and colors for TODO comments. As well as a sidebar to view all your current tags._
 
 [![](https://camo.githubusercontent.com/c1f1f74429c48a2a60d79bd6287e89875f349e73d1dd9409e7747aad752aa5f3/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a3675747a3530322d72504361305863672e676966)](https://camo.githubusercontent.com/c1f1f74429c48a2a60d79bd6287e89875f349e73d1dd9409e7747aad752aa5f3/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a3675747a3530322d72504361305863672e676966)
 
 ### [Toggle Quotes](https://marketplace.visualstudio.com/items?itemName=BriteSnow.vscode-toggle-quotes)
 
-> *Cycle between single, double and backtick quotes*
+> _Cycle between single, double and backtick quotes_
 
 [![](https://camo.githubusercontent.com/a568be353d6763140b8f3f724e06a72be3886f42649cf2d94066de61a4cc1265/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a376b5a46706767764741566b766f5961)](https://camo.githubusercontent.com/a568be353d6763140b8f3f724e06a72be3886f42649cf2d94066de61a4cc1265/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a376b5a46706767764741566b766f5961)
 
 ### [Typescript Destructure](https://marketplace.visualstudio.com/items?itemName=tusaeff.vscode-typescript-destructure-plugin)
 
-> *TypeScript Language Service Plugin providing a set of source actions for easy objects destructuring*
+> _TypeScript Language Service Plugin providing a set of source actions for easy objects destructuring_
 
 [![](https://camo.githubusercontent.com/3f70fdb19729667e900cdea292251d0cc99036ee071e7f1da781285f0a78f687/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a73456930696d584b32597836396d37482e676966)](https://camo.githubusercontent.com/3f70fdb19729667e900cdea292251d0cc99036ee071e7f1da781285f0a78f687/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a73456930696d584b32597836396d37482e676966)
 
 ### [WakaTime](https://marketplace.visualstudio.com/items?itemName=WakaTime.vscode-wakatime)
 
-> *Automatic time tracker and productivity dashboard showing how long you coded in each project, file, branch, and language.*
+> _Automatic time tracker and productivity dashboard showing how long you coded in each project, file, branch, and language._
 
-* * * * *
+---
 
 ### Formatting & Beautification
 
 ### [Better Align](https://marketplace.visualstudio.com/items?itemName=wwm.better-align)
 
-> *Align your code by colon(:), assignment(=,+=,-=,*=,/=) and arrow(=>). It has additional support for comma-first coding style and trailing comment.*
+> _Align your code by colon(:), assignment(=,+=,-=,_=,/=) and arrow(=>). It has additional support for comma-first coding style and trailing comment.\*
 
-> *And it doesn't require you to select what to be aligned, the extension will figure it out by itself.*
+> _And it doesn't require you to select what to be aligned, the extension will figure it out by itself._
 
 [![](https://camo.githubusercontent.com/cf3e0b32d135af0b8ee711163b5eb70f046ca4c74c63cdc1b4c799a2347e4630/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a356d61446a76764835374d416b73316c2e676966)](https://camo.githubusercontent.com/cf3e0b32d135af0b8ee711163b5eb70f046ca4c74c63cdc1b4c799a2347e4630/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a356d61446a76764835374d416b73316c2e676966)
 
 ### [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
 
-> *Automatically add HTML/XML close tag, same as Visual Studio IDE or Sublime Text*
+> _Automatically add HTML/XML close tag, same as Visual Studio IDE or Sublime Text_
 
 [![](https://camo.githubusercontent.com/10b8918b50fdd1d987af7144dd58198ec4961532661d93993868ff79d7caebbd/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a68365136484c51386a66484c6e506c4a2e676966)](https://camo.githubusercontent.com/10b8918b50fdd1d987af7144dd58198ec4961532661d93993868ff79d7caebbd/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a68365136484c51386a66484c6e506c4a2e676966)
 
 ### [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
 
-> *Auto rename paired HTML/XML tags*
+> _Auto rename paired HTML/XML tags_
 
 [![](https://camo.githubusercontent.com/28f5d07fb90c909984c8fe30641d3e57a48b33ae344ae19725a86a27fcaa3191/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a75524b58322d756d6853517a6c4553762e676966)](https://camo.githubusercontent.com/28f5d07fb90c909984c8fe30641d3e57a48b33ae344ae19725a86a27fcaa3191/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a75524b58322d756d6853517a6c4553762e676966)
 
 ### [beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify)
 
-> *Beautify code in place for VS Code*
+> _Beautify code in place for VS Code_
 
 ### [html2pug](https://marketplace.visualstudio.com/items?itemName=dbalas.vscode-html2pug)
 
-> *Transform html to pug inside your Visual Studio Code, forget about using an external page anymore.*
+> _Transform html to pug inside your Visual Studio Code, forget about using an external page anymore._
 
 ### [ECMAScript Quotes Transformer](https://marketplace.visualstudio.com/items?itemName=vilicvane.es-quotes)
 
-> *Transform quotes of ECMAScript string literals*
+> _Transform quotes of ECMAScript string literals_
 
 [![](https://camo.githubusercontent.com/7d860bdc05801bb1da7246cf4aca48a8de7eb360e69ffadefef700f33f0c846d/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a57315a316649764f476750636c464d4a2e676966)](https://camo.githubusercontent.com/7d860bdc05801bb1da7246cf4aca48a8de7eb360e69ffadefef700f33f0c846d/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a57315a316649764f476750636c464d4a2e676966)
 
 ### [Paste and Indent](https://marketplace.visualstudio.com/items?itemName=Rubymaniac.vscode-paste-and-indent)
 
-> *Paste code with "correct" indentation*
+> _Paste code with "correct" indentation_
 
 ### [Sort Lines](https://marketplace.visualstudio.com/items?itemName=Tyriar.sort-lines)
 
-> *Sorts lines of text in specific order*
+> _Sorts lines of text in specific order_
 
 [![](https://camo.githubusercontent.com/cdde469a6b25b383ee290edb2b8d7c1577481b138fefb4087ec0394e13cd33d4/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a61347750684137566a4a716b70336c752e676966)](https://camo.githubusercontent.com/cdde469a6b25b383ee290edb2b8d7c1577481b138fefb4087ec0394e13cd33d4/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a61347750684137566a4a716b70336c752e676966)
 
 ### [Surround](https://marketplace.visualstudio.com/items?itemName=yatki.vscode-surround)
 
-> *A simple yet powerful extension to add wrapper templates around your code blocks.*
+> _A simple yet powerful extension to add wrapper templates around your code blocks._
 
 [![](https://camo.githubusercontent.com/f01b662af7d4ad5ae506b5b9d0d5d8d6b2d5073743ee130e39ed70e011b63b28/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6c796a526766537276646d68474658642e676966)](https://camo.githubusercontent.com/f01b662af7d4ad5ae506b5b9d0d5d8d6b2d5073743ee130e39ed70e011b63b28/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6c796a526766537276646d68474658642e676966)
 
 ### [Wrap Selection](https://marketplace.visualstudio.com/items?itemName=konstantin.wrapSelection)
 
-> *Wraps selection or multiple selections with symbol or multiple symbols*
+> _Wraps selection or multiple selections with symbol or multiple symbols_
 
 ### [Formatting Toggle](https://marketplace.visualstudio.com/items?itemName=tombonnike.vscode-status-bar-format-toggle)
 
-> *Allows you to toggle your formatter on and off with a simple click*
+> _Allows you to toggle your formatter on and off with a simple click_
 
 ### [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
 
-> *This extension allows matching brackets to be identified with colours. The user can define which characters to match, and which colours to use.*
+> _This extension allows matching brackets to be identified with colours. The user can define which characters to match, and which colours to use._
 
 [![](https://camo.githubusercontent.com/f7de82e18f0654e1a0daba01eae54934d4436aafee9e51d408312069554fb1d2/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6d336e552d35557867557858342d654a2e706e67)](https://camo.githubusercontent.com/f7de82e18f0654e1a0daba01eae54934d4436aafee9e51d408312069554fb1d2/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6d336e552d35557867557858342d654a2e706e67)
 
 ### [Auto Import](https://marketplace.visualstudio.com/items?itemName=steoates.autoimport)
 
-> *Automatically finds, parses and provides code actions and code completion for all available imports. Works with Typescript and TSX.*
+> _Automatically finds, parses and provides code actions and code completion for all available imports. Works with Typescript and TSX._
 
 ### [shell-format](https://github.com/foxundermoon/vs-shell-format)
 
-> *shell script & Dockerfile & dotenv format*
+> _shell script & Dockerfile & dotenv format_
 
 [![](https://camo.githubusercontent.com/1296b225f8b1ca6bb36089177fa4fdead01fb8d2c547f0d92fa6c6cb33f67d9a/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a5454686c6b664b314b67516d35414b552e676966)](https://camo.githubusercontent.com/1296b225f8b1ca6bb36089177fa4fdead01fb8d2c547f0d92fa6c6cb33f67d9a/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a5454686c6b664b314b67516d35414b552e676966)
 
 ### [Vscode Google Translate](https://marketplace.visualstudio.com/items?itemName=funkyremi.vscode-google-translate)
 
-> *Quickly translate selected text right in your code*
+> _Quickly translate selected text right in your code_
 
 [![](https://camo.githubusercontent.com/6adf709c5b38db8fe8eaa90eb0d24a03e78644ba9c3b76f52d3efd99f2bca956/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a4a46384e7578414644785869546e5f752e676966)](https://camo.githubusercontent.com/6adf709c5b38db8fe8eaa90eb0d24a03e78644ba9c3b76f52d3efd99f2bca956/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a4a46384e7578414644785869546e5f752e676966)
 
@@ -6444,91 +6430,91 @@ These extensions provide slightly different sets of features. While the first on
 
 ### [Browser Preview](https://marketplace.visualstudio.com/items?itemName=auchenberg.vscode-browser-preview)
 
-> *Browser Preview for VS Code enables you to open a real browser preview inside your editor that you can debug. Browser Preview is powered by Chrome Headless, and works by starting a headless Chrome instance in a new process. This enables a secure way to render web content inside VS Code, and enables interesting features such as in-editor debugging and more!*
+> _Browser Preview for VS Code enables you to open a real browser preview inside your editor that you can debug. Browser Preview is powered by Chrome Headless, and works by starting a headless Chrome instance in a new process. This enables a secure way to render web content inside VS Code, and enables interesting features such as in-editor debugging and more!_
 
-> ***FYI:... I HAVE TRIED ENDLESSLEY TO GET THE DEBUGGER TO WORK IN VSCODE BUT IT DOES NOT... I SUSPECT THAT'S WHY IT HAS A 3 STAR RATING FOR AN OTHERWISE PHENOMINAL EXTENSION.***
+> **_FYI:... I HAVE TRIED ENDLESSLEY TO GET THE DEBUGGER TO WORK IN VSCODE BUT IT DOES NOT... I SUSPECT THAT'S WHY IT HAS A 3 STAR RATING FOR AN OTHERWISE PHENOMINAL EXTENSION._**
 
 [![](https://camo.githubusercontent.com/eb10ff26a6e936c4ba9fa3171fa4afad25a04ade23770cca27537b9af8fe90ec/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a4f696c77736937454b4770435a6234362e676966)](https://camo.githubusercontent.com/eb10ff26a6e936c4ba9fa3171fa4afad25a04ade23770cca27537b9af8fe90ec/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a4f696c77736937454b4770435a6234362e676966)
 
 ### [CodeRoad](https://marketplace.visualstudio.com/items?itemName=CodeRoad.coderoad)
 
-> *Play interactive tutorials in your favorite editor.*
+> _Play interactive tutorials in your favorite editor._
 
 [![](https://camo.githubusercontent.com/81dac7470dcb21a24b043b47525360a0cd469fee9818ea7c05ca01066ee8c824/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a695638503933514d6d576459666e72512e676966)](https://camo.githubusercontent.com/81dac7470dcb21a24b043b47525360a0cd469fee9818ea7c05ca01066ee8c824/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a695638503933514d6d576459666e72512e676966)
 
 ### [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
 
-> *Run code snippet or code file for multiple languages: C, C++, Java, JavaScript, PHP, Python, Perl, Ruby, Go, Lua, Groovy, PowerShell, BAT/CMD, BASH/SH, F# Script, C# Script, VBScript, TypeScript, CoffeeScript, Scala, Swift, Julia, Crystal, OCaml Script*
+> _Run code snippet or code file for multiple languages: C, C++, Java, JavaScript, PHP, Python, Perl, Ruby, Go, Lua, Groovy, PowerShell, BAT/CMD, BASH/SH, F# Script, C# Script, VBScript, TypeScript, CoffeeScript, Scala, Swift, Julia, Crystal, OCaml Script_
 
 [![](https://camo.githubusercontent.com/689f1b28670ca0ba30f371f53f7efb96d5eb4c8a8312f036ea1bea604705b31f/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a684d734d5f494579426b6c51586368642e676966)](https://camo.githubusercontent.com/689f1b28670ca0ba30f371f53f7efb96d5eb4c8a8312f036ea1bea604705b31f/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a684d734d5f494579426b6c51586368642e676966)
 
 ### [Code Time](https://marketplace.visualstudio.com/items?itemName=softwaredotcom.swdc-vscode)
 
-> *Automatic time reports by project and other programming metrics right in VS Code.*
+> _Automatic time reports by project and other programming metrics right in VS Code._
 
 [![](https://camo.githubusercontent.com/25d74b4089eaf69ec9be6f6db96bc6c58da5713c53b63dc5ae2e4c9bb81784bd/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a556f31425965784a656e707270674c61)](https://camo.githubusercontent.com/25d74b4089eaf69ec9be6f6db96bc6c58da5713c53b63dc5ae2e4c9bb81784bd/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a556f31425965784a656e707270674c61)
 
 ### [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
 
-> *Highlight web colors in your editor*
+> _Highlight web colors in your editor_
 
 [![](https://camo.githubusercontent.com/fd5ed85c6ea561c6cf07d3da4dc4ec248ee9ebacfaa86c932ad89784c920fef5/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a5a7745374f484b52356f707644434a4a4f77394b65512e706e67)](https://camo.githubusercontent.com/fd5ed85c6ea561c6cf07d3da4dc4ec248ee9ebacfaa86c932ad89784c920fef5/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a5a7745374f484b52356f707644434a4a4f77394b65512e706e67)
 
 ### [Output Colorizer](https://marketplace.visualstudio.com/items?itemName=IBM.output-colorizer)
 
-> *Syntax highlighting for the VS Code Output Panel and log files*
+> _Syntax highlighting for the VS Code Output Panel and log files_
 
 [![](https://camo.githubusercontent.com/640e0a228c1d63a3c63a2f1e47a8b55a858ee4423149717cf8a97547389af1d2/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a3944707a565a3963554e7032544d79442e6a7067)](https://camo.githubusercontent.com/640e0a228c1d63a3c63a2f1e47a8b55a858ee4423149717cf8a97547389af1d2/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a3944707a565a3963554e7032544d79442e6a7067)
 
 ### [Dash](https://marketplace.visualstudio.com/items?itemName=deerawan.vscode-dash)
 
-> *Dash integration in Visual Studio Code*
+> _Dash integration in Visual Studio Code_
 
 [![](https://camo.githubusercontent.com/364ec92ce7736d6df89fdc3b2376d04885e597510408dfe4c5861a0ed2e46ca5/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a7371476c6c432d7067584e61454266422d63784739512e706e67)](https://camo.githubusercontent.com/364ec92ce7736d6df89fdc3b2376d04885e597510408dfe4c5861a0ed2e46ca5/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a7371476c6c432d7067584e61454266422d63784739512e706e67)
 
 ### [Edit with Shell Command](https://marketplace.visualstudio.com/items?itemName=ryu1kn.edit-with-shell)
 
-> *Leverage your favourite shell commands to edit text*
+> _Leverage your favourite shell commands to edit text_
 
 [![](https://camo.githubusercontent.com/f71ba14e5997b405c8e4ea274ad4be7776a9cb1d8ad81082a9e16d4f882452bd/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a3277573331484a316e55436a4f525a652e676966)](https://camo.githubusercontent.com/f71ba14e5997b405c8e4ea274ad4be7776a9cb1d8ad81082a9e16d4f882452bd/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a3277573331484a316e55436a4f525a652e676966)
 
 ### [Editor Config for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 
-> *Editor Config for VS Code*
+> _Editor Config for VS Code_
 
 ### [ftp-sync](https://marketplace.visualstudio.com/items?itemName=lukasz-wronski.ftp-sync)
 
-> *Auto-sync your work to remote FTP server*
+> _Auto-sync your work to remote FTP server_
 
 [![](https://camo.githubusercontent.com/840b76b60a7aa86643d89823e7af50490df3f8dd05eee650213b79a65ed4adfb/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a2d76694b6877787065595164574852452e676966)](https://camo.githubusercontent.com/840b76b60a7aa86643d89823e7af50490df3f8dd05eee650213b79a65ed4adfb/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a2d76694b6877787065595164574852452e676966)
 
 ### [Highlight JSX/HTML tags](https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag)
 
-> *Highlights matching tags in the file.*
+> _Highlights matching tags in the file._
 
 ### [Indent Rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
 
-> *A simple extension to make indentation more readable.*
+> _A simple extension to make indentation more readable._
 
 [![](https://camo.githubusercontent.com/09011f983f2f38b07669ff904c4521e847eec271995a7424530c619655971de2/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a474b5f7945642d353053553379635f792e706e67)](https://camo.githubusercontent.com/09011f983f2f38b07669ff904c4521e847eec271995a7424530c619655971de2/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a474b5f7945642d353053553379635f792e706e67)
 
 ### [Password Generator](https://marketplace.visualstudio.com/items?itemName=ftonato.password-generator)
 
-> *Create a secure password using our generator tool. Help prevent a security threat by getting a strong password today.*
+> _Create a secure password using our generator tool. Help prevent a security threat by getting a strong password today._
 
 [![](https://camo.githubusercontent.com/741f7243ba460e676049fffa6cb2cee0d79349e92e5bd718e144ad813c22958e/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a71504a415a6b392d4e635967737837482e676966)](https://camo.githubusercontent.com/741f7243ba460e676049fffa6cb2cee0d79349e92e5bd718e144ad813c22958e/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a71504a415a6b392d4e635967737837482e676966)
 
 ### [PlatformIO](https://marketplace.visualstudio.com/items?itemName=formulahendry.platformio)
 
-> *An open source ecosystem for IoT development: supports 350+ embedded boards, 20+ development platforms, 10+ frameworks. Arduino and ARM mbed compatible.*
+> _An open source ecosystem for IoT development: supports 350+ embedded boards, 20+ development platforms, 10+ frameworks. Arduino and ARM mbed compatible._
 
 [![](https://camo.githubusercontent.com/ecaa2ce898cdd7c1245c100e462e68e0262d2159faa55edd523a265a4776741b/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a52797756745f76696b71422d3575724f2e676966)](https://camo.githubusercontent.com/ecaa2ce898cdd7c1245c100e462e68e0262d2159faa55edd523a265a4776741b/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a52797756745f76696b71422d3575724f2e676966)
 
 ### [Polacode](https://marketplace.visualstudio.com/items?itemName=pnp.polacode)
 
-> *Polaroid for your code 📸.*
+> _Polaroid for your code 📸._
 
-> ***Note: Polacode no longer works as of the most recent update... go for Polacode2020 or CodeSnap...***
+> **_Note: Polacode no longer works as of the most recent update... go for Polacode2020 or CodeSnap..._**
 
 [![](https://camo.githubusercontent.com/633af0b1fa1c6285683a9d8064cd40ac655e0e2be07c67e67bfdf80e7857702c/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a496f3466506f6a445272446635436d572e676966)](https://camo.githubusercontent.com/633af0b1fa1c6285683a9d8064cd40ac655e0e2be07c67e67bfdf80e7857702c/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a496f3466506f6a445272446635436d572e676966)
 
@@ -6536,13 +6522,13 @@ These extensions provide slightly different sets of features. While the first on
 
 #### This one is super cool!
 
-> *Rapid prototyping playground for JavaScript and TypeScript in VS Code, with access to your project's files, inline reporting, code coverage and rich output formatting.*
+> _Rapid prototyping playground for JavaScript and TypeScript in VS Code, with access to your project's files, inline reporting, code coverage and rich output formatting._
 
 [![](https://camo.githubusercontent.com/8b9126e0e44fee57f27247df12d562df2c824e415e4ff57ce38def4335c5f264/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a51396b703845575a48544430486672752e676966)](https://camo.githubusercontent.com/8b9126e0e44fee57f27247df12d562df2c824e415e4ff57ce38def4335c5f264/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a51396b703845575a48544430486672752e676966)
 
 ### [Slack](https://marketplace.visualstudio.com/items?itemName=sozercan.slack)
 
-> *Send messages and code snippets, upload files to Slack*
+> _Send messages and code snippets, upload files to Slack_
 
 Personally I found this extension to slow down my editor in addition to confliction with other extensions: (I have over 200 as of this writing)..... **yes I have been made fully aware that I have a problem and need to get help**
 
@@ -6550,25 +6536,25 @@ Personally I found this extension to slow down my editor in addition to conflict
 
 ### [Spotify](https://marketplace.visualstudio.com/items?itemName=shyykoserhiy.vscode-spotify)
 
-*No real advantage over just using Spotify normally... it's problematic enough in implementation that you won't save any time using it. Further, it's a bit tricky to configure ... or at least it was the last time I tried syncing it with my spotify account.*
+_No real advantage over just using Spotify normally... it's problematic enough in implementation that you won't save any time using it. Further, it's a bit tricky to configure ... or at least it was the last time I tried syncing it with my spotify account._
 
-> *Provides integration with Spotify Desktop client. Shows the currently playing song in status bar, search lyrics and provides commands for controlling Spotify with buttons and hotkeys.*
+> _Provides integration with Spotify Desktop client. Shows the currently playing song in status bar, search lyrics and provides commands for controlling Spotify with buttons and hotkeys._
 
 [![](https://camo.githubusercontent.com/80a023491e84557678d8e41b3fcd1b0f2389b584c422daa5c6e157f11c2c46a3/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a49717378586947705a515762516266442e676966)](https://camo.githubusercontent.com/80a023491e84557678d8e41b3fcd1b0f2389b584c422daa5c6e157f11c2c46a3/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a49717378586947705a515762516266442e676966)
 
 ### [SVG](https://marketplace.visualstudio.com/items?itemName=jock.svg)
 
-> *A Powerful SVG Language Support Extension(beta). Almost all the features you need to handle SVG.*
+> _A Powerful SVG Language Support Extension(beta). Almost all the features you need to handle SVG._
 
 [![](https://camo.githubusercontent.com/a4367fbaeae83e7ea95f5df4771b7f6576c45329f549030a49054fc063479606/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a5343367a43584761426e4d5f4c6b67432e706e67)](https://camo.githubusercontent.com/a4367fbaeae83e7ea95f5df4771b7f6576c45329f549030a49054fc063479606/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a5343367a43584761426e4d5f4c6b67432e706e67)
 
 ### [SVG Viewer](https://marketplace.visualstudio.com/items?itemName=cssho.vscode-svgviewer)
 
-> *View an SVG in the editor and export it as data URI scheme or PNG.*
+> _View an SVG in the editor and export it as data URI scheme or PNG._
 
 ### [Text Marker (Highlighter)](https://marketplace.visualstudio.com/items?itemName=ryu1kn.text-marker)
 
-> *Highlight multiple text patterns with different colors at the same time. Highlighting a single text pattern can be done with the editor's search functionality, but it cannot highlight multiple patterns at the same time, and this is where this extension comes handy.*
+> _Highlight multiple text patterns with different colors at the same time. Highlighting a single text pattern can be done with the editor's search functionality, but it cannot highlight multiple patterns at the same time, and this is where this extension comes handy._
 
 [![](https://camo.githubusercontent.com/7e76c5ec945a4fd41835c4732056435827fce76452a7eb243b46337d0042f22b/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a594472655679474e6a5a6d716a5f4b432e676966)](https://camo.githubusercontent.com/7e76c5ec945a4fd41835c4732056435827fce76452a7eb243b46337d0042f22b/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a594472655679474e6a5a6d716a5f4b432e676966)
 
@@ -6576,7 +6562,7 @@ Personally I found this extension to slow down my editor in addition to conflict
 
 ### THIS IS A MUST HAVE
 
-> *Quickly bring up helpful MDN documentation in the editor*
+> _Quickly bring up helpful MDN documentation in the editor_
 
 [![](https://camo.githubusercontent.com/9c84f3ffe4040eac9b74b1c78f3e93b1bed148cf78f8efad11ef91e247fa2b67/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a786955665742737a38783862655937302e676966)](https://camo.githubusercontent.com/9c84f3ffe4040eac9b74b1c78f3e93b1bed148cf78f8efad11ef91e247fa2b67/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a786955665742737a38783862655937302e676966)
 
@@ -6589,7 +6575,7 @@ In the interest of not making the reader scroll endlessly as I often do... I've 
 [**My Favorite VSCode *Themes***\
 Themesbryanguner.medium.com](https://bryanguner.medium.com/my-favorite-vscode-themes-9bab65af3f0f "https://bryanguner.medium.com/my-favorite-vscode-themes-9bab65af3f0f")[](https://bryanguner.medium.com/my-favorite-vscode-themes-9bab65af3f0f)
 
-* * * * *
+---
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
@@ -6612,12 +6598,11 @@ Exported from [Medium](https://medium.com/) on July 13, 2021.
 
 [view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/Everything-You-Need-to-Get-Started-With-VSCode---Extensions--.md)[Everything-You-Need-to-Get-Started-With-VSCode---Extensions--.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-everything-you-need-to-get-started-with-vscode-extensions-md) hosted with ❤ by [GitHub](https://github.com/)
 
-Everything You Need To Know About Relational Databases, SQL, PostgreSQL and Sequelize To Build...
-===============================================================================================
+# Everything You Need To Know About Relational Databases, SQL, PostgreSQL and Sequelize To Build...
 
 For Front end developers who like myself struggle with making the jump to fullstack.
 
-* * * * *
+---
 
 #### [CODEX](http://medium.com/codex)
 
@@ -6629,93 +6614,93 @@ You can access and query the data using the findByPk, findOne, and findAll metho
 
 **Terminology:**
 
--   [NodeJS](https://nodejs.org/en/) We re going to use this to run JavaScript code on the server. I ve decided to use the latest version of Node, v6.3.0 at the time of writing, so that we ll have access to most of the new features introduced in ES6.
--   [Express](https://expressjs.com/) As per their website, Express is a Fast, unopinionated, minimalist web framework for Node.js , that we re going to be building our Todo list application on.
--   [PostgreSQL](https://www.postgresql.org/docs/9.5/static/index.html) This is a powerful open-source database that we re going to use. I ve attached an article I published on the setup below!
+- [NodeJS](https://nodejs.org/en/) We re going to use this to run JavaScript code on the server. I ve decided to use the latest version of Node, v6.3.0 at the time of writing, so that we ll have access to most of the new features introduced in ES6.
+- [Express](https://expressjs.com/) As per their website, Express is a Fast, unopinionated, minimalist web framework for Node.js , that we re going to be building our Todo list application on.
+- [PostgreSQL](https://www.postgresql.org/docs/9.5/static/index.html) This is a powerful open-source database that we re going to use. I ve attached an article I published on the setup below!
 
 [**PostgreSQL Setup For Windows & WSL/Ubuntu**\
 *If you follow this guide to a tee you will install PostgreSQL itself on your Windows installation. Then, you will* bryanguner.medium.com](https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089 "https://bryanguner.medium.com/postgresql-setup-for-windows-wsl-ubuntu-801672ab7089")
 
--   However, if you face issues while installing PostgreSQL, or you don t want to dive into installing it, you can opt for a version of PostgreSQL hosted online. I recommend [ElephantSQL](https://www.elephantsql.com/). I found it s pretty easy to get started with. However, the free version will only give you a 20MB allowance.
--   [Sequelize](http://docs.sequelizejs.com/en/latest/) In addition, we re going to use Sequelize, which is a database [ORM](https://en.wikipedia.org/wiki/Object-relational_mapping) that will interface with the Postgres database for us.
+- However, if you face issues while installing PostgreSQL, or you don t want to dive into installing it, you can opt for a version of PostgreSQL hosted online. I recommend [ElephantSQL](https://www.elephantsql.com/). I found it s pretty easy to get started with. However, the free version will only give you a 20MB allowance.
+- [Sequelize](http://docs.sequelizejs.com/en/latest/) In addition, we re going to use Sequelize, which is a database [ORM](https://en.wikipedia.org/wiki/Object-relational_mapping) that will interface with the Postgres database for us.
 
 **RDBMS and Database Entities**
 
 **Define what a relational database management system is**
 
--   RDBMS stands for Relational Database Management System
--   A software application that you run that your programs can connect to so that they can store, modify, and retrieve data.
--   An RDBMS can track many databases. We will use PostgreSQL, or postgres , primarily for our RDBMS and it will be able to create individual databases for each of our projects.
+- RDBMS stands for Relational Database Management System
+- A software application that you run that your programs can connect to so that they can store, modify, and retrieve data.
+- An RDBMS can track many databases. We will use PostgreSQL, or postgres , primarily for our RDBMS and it will be able to create individual databases for each of our projects.
 
 **Describe what relational data is**
 
--   In general, relational data is information that is connected to other pieces of information.
--   When working with relational databases, we can connect two entries together utilizing foreign keys (explained below).
--   In a pets database, we could be keeping track of dogs and cats as well as the toys that each of them own. That ownership of a cat to a toy is the relational aspect of relational data. Two pieces of information that can be connected together to show some sort of meaning.
+- In general, relational data is information that is connected to other pieces of information.
+- When working with relational databases, we can connect two entries together utilizing foreign keys (explained below).
+- In a pets database, we could be keeping track of dogs and cats as well as the toys that each of them own. That ownership of a cat to a toy is the relational aspect of relational data. Two pieces of information that can be connected together to show some sort of meaning.
 
 **Define what a database is**
 
--   The actual location that data is stored.
--   A database can be made up of many tables that each store specific kinds of information.
--   We could have a pets database that stores information about many different types of animals. Each animal type could potentially be represented by a different table.
+- The actual location that data is stored.
+- A database can be made up of many tables that each store specific kinds of information.
+- We could have a pets database that stores information about many different types of animals. Each animal type could potentially be represented by a different table.
 
 **Define what a database table is**
 
--   Within a database, a table stores one specific kind of information.
--   The records (entries) on these tables can be connected to records on other tables through the use of foreign keys
--   In our pets database, we could have a dogs table, with individual records
+- Within a database, a table stores one specific kind of information.
+- The records (entries) on these tables can be connected to records on other tables through the use of foreign keys
+- In our pets database, we could have a dogs table, with individual records
 
 **Describe the purpose of a primary key**
 
--   A primary key is used in the database as a unique identifier for the table.
--   We often use an id field that simply increments with each entry. The incrementing ensures that each record has a unique identifier, even if their are other fields of the record that are repeated (two people with the same name would still need to have a unique identifier, for example).
--   With a unique identifier, we can easily connect records within the table to records from other tables.
+- A primary key is used in the database as a unique identifier for the table.
+- We often use an id field that simply increments with each entry. The incrementing ensures that each record has a unique identifier, even if their are other fields of the record that are repeated (two people with the same name would still need to have a unique identifier, for example).
+- With a unique identifier, we can easily connect records within the table to records from other tables.
 
 **Describe the purpose of a foreign key**
 
--   A foreign key is used as the connector from this record to the primary key of another table s record.
--   In our pets example, we can imagine two tables to demonstrate: a table to represent cats and a table to represent toys. Each of these tables has a primary key of id that is used as the unique identifier. In order to make a connection between a toy and a cat, we can add another field to the cat table called owner_id , indicating that it is a foreign key for the cat table. By setting a toy s owner_id to the same value as a particular cat s id , we can indicate that the cat is the owner of that toy.
+- A foreign key is used as the connector from this record to the primary key of another table s record.
+- In our pets example, we can imagine two tables to demonstrate: a table to represent cats and a table to represent toys. Each of these tables has a primary key of id that is used as the unique identifier. In order to make a connection between a toy and a cat, we can add another field to the cat table called owner_id , indicating that it is a foreign key for the cat table. By setting a toy s owner_id to the same value as a particular cat s id , we can indicate that the cat is the owner of that toy.
 
 **Describe how to properly name things in PostgreSQL**
 
--   Names within postgres should generally consist of only lowercase letters, numbers, and underscores.
--   Tables within a database are plural by convention, so a table for cats would typically be cats and office locations would be office_locations (all lowercase, underscores to replace spaces, plural)
+- Names within postgres should generally consist of only lowercase letters, numbers, and underscores.
+- Tables within a database are plural by convention, so a table for cats would typically be cats and office locations would be office_locations (all lowercase, underscores to replace spaces, plural)
 
 **Connect to an instance of PostgreSQL with the command line tool psql**
 
--   The psql command by default will try to connect to a database and username that matches your system s username
--   We connect to a different database by providing an argument to the psql command
--   psql pets
--   To connect with a different username we can use the -U flag followed by the username we would like to use. To connect to the pets database as pets_user
--   psql -U pets_user pets
--   If there is a password for the user, we can tell psql that we would like a prompt for the password to show up by using the -W flag.
--   psql -U pets_user -W pets (the order of our flags doesn t matter, as long as any arguments associated with them are together, such as pets_user directly following -U in this example)
+- The psql command by default will try to connect to a database and username that matches your system s username
+- We connect to a different database by providing an argument to the psql command
+- psql pets
+- To connect with a different username we can use the -U flag followed by the username we would like to use. To connect to the pets database as pets_user
+- psql -U pets_user pets
+- If there is a password for the user, we can tell psql that we would like a prompt for the password to show up by using the -W flag.
+- psql -U pets_user -W pets (the order of our flags doesn t matter, as long as any arguments associated with them are together, such as pets_user directly following -U in this example)
 
 **Identify whether a user is a normal user or a superuser by the prompt in the psql shell**
 
--   You can tell if you are logged in as a superuser or normal user by the prompt in the terminal.
--   If the prompt shows =>, the user is a normal user
--   If the prompt show =#, the user is a superuser
+- You can tell if you are logged in as a superuser or normal user by the prompt in the terminal.
+- If the prompt shows =>, the user is a normal user
+- If the prompt show =#, the user is a superuser
 
 **Create a user for the relational database management system**
 
--   Within psql, we can create a user with the CREATE USER {username} {WITH options} command.
--   The most common options we ll want to use are WITH PASSWORD 'mypassword' to provide a password for the user we are creating, CREATEDB to allow the user to create new databases, or SUPERUSER to create a user with all elevated permissions.
+- Within psql, we can create a user with the CREATE USER {username} {WITH options} command.
+- The most common options we ll want to use are WITH PASSWORD 'mypassword' to provide a password for the user we are creating, CREATEDB to allow the user to create new databases, or SUPERUSER to create a user with all elevated permissions.
 
 **Create a database in the database management system**
 
--   We can use the command CREATE DATABASE {database name} {options} inside psql to create a new database.
--   A popular option we may utilize is WITH OWNER {owner name} to set another user as the owner of the database we are making.
+- We can use the command CREATE DATABASE {database name} {options} inside psql to create a new database.
+- A popular option we may utilize is WITH OWNER {owner name} to set another user as the owner of the database we are making.
 
 **Configure a database so that only the owner (and superusers) can connect to it**
 
--   We can GRANT and REVOKE privileges from a database to users or categories of users.
--   In order to remove connection privileges to a database from the public we can use REVOKE CONNECT ON DATABASE {db_name} FROM PUBLIC;, removing all public connection access.
--   If we wanted to grant it back, or to a specific user, we could similarly do GRANT CONNECT ON DATABASE {db_name} FROM {specific user, PUBLIC, etc.};
+- We can GRANT and REVOKE privileges from a database to users or categories of users.
+- In order to remove connection privileges to a database from the public we can use REVOKE CONNECT ON DATABASE {db_name} FROM PUBLIC;, removing all public connection access.
+- If we wanted to grant it back, or to a specific user, we could similarly do GRANT CONNECT ON DATABASE {db_name} FROM {specific user, PUBLIC, etc.};
 
 **View a list of databases in an installation of PostgreSQL**
 
--   To list all databases we can use the \l or \list command in psql.
+- To list all databases we can use the \l or \list command in psql.
 
 **Create tables in a database**
 
@@ -6728,32 +6713,32 @@ etc...
 
 ```
 
--   The whitespace does not matter. Creating the SQL statements on multiple lines is easier to read, but just like JavaScript, they can be presented differently.
--   One common issue is that SQL does not like trailing commas, so the last column cannot have a comma after its type in this example.
+- The whitespace does not matter. Creating the SQL statements on multiple lines is easier to read, but just like JavaScript, they can be presented differently.
+- One common issue is that SQL does not like trailing commas, so the last column cannot have a comma after its type in this example.
 
 **View a list of tables in a database**
 
--   To list all database tables, use the \dt command.
+- To list all database tables, use the \dt command.
 
 **Identify and describe the common data types used in PostgreSQL**
 
--   There are many different data types that we can use in our tables, here are some common examples:
--   SERIAL: autoincrementing, very useful for IDs
--   VARCHAR(n): a string with a character limit of n
--   TEXT: doesn t have character limit, but less performant
--   BOOLEAN: true/false
--   SMALLINT: signed two-byte integer (-32768 to 32767)
--   INTEGER: signed four-byte integer (standard)
--   BIGINT: signed eight-byte integer (very large numbers)
--   NUMERIC: or DECIMAL, can store exact decimal values
--   TIMESTAMP: date and time
+- There are many different data types that we can use in our tables, here are some common examples:
+- SERIAL: autoincrementing, very useful for IDs
+- VARCHAR(n): a string with a character limit of n
+- TEXT: doesn t have character limit, but less performant
+- BOOLEAN: true/false
+- SMALLINT: signed two-byte integer (-32768 to 32767)
+- INTEGER: signed four-byte integer (standard)
+- BIGINT: signed eight-byte integer (very large numbers)
+- NUMERIC: or DECIMAL, can store exact decimal values
+- TIMESTAMP: date and time
 
 **Describe the purpose of the UNIQUE and NOT NULL constraints, and create columns in database tables that have them**
 
--   In addition to the data type, we can provide flags for constraints to place on our column data.
--   The UNIQUE flag indicates that the data for the column must not be repeated.
--   By default we can create entries in our tables that are missing data from columns. When creating a pet, maybe we don t provide an age because we don t know it, for example. If we want to require that the data be present in order to create a new record, we can indicate that column must be NOT NULL.
--   In the example below, we are requiring our pets to have unique names and for them to be present (both UNIQUE and NOT NULL). We have no such constraints on the age column, allowing repetition of ages or their complete absence.
+- In addition to the data type, we can provide flags for constraints to place on our column data.
+- The UNIQUE flag indicates that the data for the column must not be repeated.
+- By default we can create entries in our tables that are missing data from columns. When creating a pet, maybe we don t provide an age because we don t know it, for example. If we want to require that the data be present in order to create a new record, we can indicate that column must be NOT NULL.
+- In the example below, we are requiring our pets to have unique names and for them to be present (both UNIQUE and NOT NULL). We have no such constraints on the age column, allowing repetition of ages or their complete absence.
 
 ```
 CREATE TABLE pets (
@@ -6766,7 +6751,7 @@ age SMALLINT
 
 **Create a primary key for a table**
 
--   When creating a table we can indicate the primary key by passing in the column name to parentheses like so:
+- When creating a table we can indicate the primary key by passing in the column name to parentheses like so:
 
 ```
 CREATE TABLE people (
@@ -6778,7 +6763,7 @@ PRIMARY KEY (id)
 
 ```
 
--   We could have also used the PRIMARY KEY flag on the column definition itself:
+- We could have also used the PRIMARY KEY flag on the column definition itself:
 
 ```
 CREATE TABLE people (
@@ -6791,8 +6776,8 @@ last_name VARCHAR(50)
 
 **Create foreign key constraints to relate tables**
 
--   In our table definition, we can use the line FOREIGN KEY (foreign_key_stored_in_this_table) REFERENCE {other table} ({other_tables_key_name}) to connect two tables.
--   This is probably easier to see in an example:
+- In our table definition, we can use the line FOREIGN KEY (foreign_key_stored_in_this_table) REFERENCE {other table} ({other_tables_key_name}) to connect two tables.
+- This is probably easier to see in an example:
 
 ```
 CREATE TABLE people (
@@ -6813,15 +6798,15 @@ FOREIGN KEY (person_id) REFERENCES people (id)
 
 **SQL is not case sensitive for its keywords but is for its entity names**
 
--   Exactly as the LO states, CREATE TABLE and create table are interpreted the same way. Using capitalization is a good convention in order to distinguish your keywords.
--   The entity names that we use ARE case-sensitive, however. So a table named pets is unique from a table named Pets. In general, we prefer to use all lowercase for our entities to avoid any of this confusion.
+- Exactly as the LO states, CREATE TABLE and create table are interpreted the same way. Using capitalization is a good convention in order to distinguish your keywords.
+- The entity names that we use ARE case-sensitive, however. So a table named pets is unique from a table named Pets. In general, we prefer to use all lowercase for our entities to avoid any of this confusion.
 
 **SQL**
 
 1.  How to use the SELECT ... FROM ... statement to select data from a single table
 
--   Supply the column names in the SELECT clause. If we want all columns, we can also use *
--   Supply the table names in the FROM clause
+- Supply the column names in the SELECT clause. If we want all columns, we can also use \*
+- Supply the table names in the FROM clause
 
 --- Selects all columns from the friends table
 
@@ -6837,7 +6822,7 @@ friends;
 SELECT name\
 FROM friends;
 
--   Sometimes we may need to specify what table we are selecting a column from, particulurly if we had joined multiple tables together.
+- Sometimes we may need to specify what table we are selecting a column from, particulurly if we had joined multiple tables together.
 
 --- Notice here we are indicating that we want the "name" field from the "friends" table as well as the "name" field from the "puppies" table. We indicate the table name by table.column\
  --- We are also aliasing these fields with the AS keyword so that our returned results have friend_name and puppy_name as field headers
@@ -6854,14 +6839,14 @@ puppies ON friends.puppy_id = puppies.id
 
 **How to use the WHERE clause on SELECT, UPDATE, and DELETE statements to narrow the scope of the command**
 
--   The WHERE clause allows us to select or apply actions to records that match specific criteria instead of to a whole table.
--   We can use WHERE with a couple of different operators when making our comparison
--   WHERE {column} = {value} provides an exact comparison
--   WHERE {column} IN ({value1}, {value2}, {value3}, etc.) matches any provided value in the IN statement. We can make this more complex by having a subquery inside of the parentheses, having our column match any values within the returned results.
--   WHERE {column} BETWEEN {value1} AND {value2} can check for matches between two values (numeric ranges)
--   WHERE {column} LIKE {pattern} can check for matches to a string. This is most useful when we use the wildcard %, such as WHERE breed LIKE '%Shepherd', which will match any breed that ends in Shepherd
--   The NOT operator can also be used for negation in the checks.
--   Mathematical operators can be used when performing calculations or comparisons within a query as well, such as
+- The WHERE clause allows us to select or apply actions to records that match specific criteria instead of to a whole table.
+- We can use WHERE with a couple of different operators when making our comparison
+- WHERE {column} = {value} provides an exact comparison
+- WHERE {column} IN ({value1}, {value2}, {value3}, etc.) matches any provided value in the IN statement. We can make this more complex by having a subquery inside of the parentheses, having our column match any values within the returned results.
+- WHERE {column} BETWEEN {value1} AND {value2} can check for matches between two values (numeric ranges)
+- WHERE {column} LIKE {pattern} can check for matches to a string. This is most useful when we use the wildcard %, such as WHERE breed LIKE '%Shepherd', which will match any breed that ends in Shepherd
+- The NOT operator can also be used for negation in the checks.
+- Mathematical operators can be used when performing calculations or comparisons within a query as well, such as
 
 ```
 SELECT name, breed, weight_lbs FROM puppies WHERE weight_lbs > 50; --- OR SELECT name, breed, age_yrs FROM puppies WHERE age_yrs * 10 = 5;
@@ -6870,7 +6855,7 @@ SELECT name, breed, weight_lbs FROM puppies WHERE weight_lbs > 50; --- OR SELECT
 
 **How to use the JOIN keyword to join two (or more) tables together into a single virtual table**
 
--   When we want to get information from a related table or do querying based on related table values, we can join the connected table by comparing the foreign key to where it lines up on the other table:
+- When we want to get information from a related table or do querying based on related table values, we can join the connected table by comparing the foreign key to where it lines up on the other table:
 
 --- Here we are joining the puppies table on to the friends table. We are specifying that the comparison we should make is the foreign key puppy_id on the friends table should line up with the primary key id on the puppies table.
 
@@ -6886,8 +6871,8 @@ puppies ON friends.puppy_id = puppies.id
 
 **How to use the INSERT statement to insert data into a table**
 
--   When a table is already created we can then insert records into it using the INSERT INTO keywords.
--   We provide the name of the table that we would like to add records to, followed by the VALUES keyword and each record we are adding. Here s an example:
+- When a table is already created we can then insert records into it using the INSERT INTO keywords.
+- We provide the name of the table that we would like to add records to, followed by the VALUES keyword and each record we are adding. Here s an example:
 
 --- We are providing the table name, then multiple records to insert\
  --- The values are listed in the order that they are defined on the table
@@ -6901,7 +6886,7 @@ VALUES
 
 ```
 
--   We can also specify columns when we are inserting data. This makes it clear which fields we are providing data for and allows us to provide them out of order, skip null or default values, etc.
+- We can also specify columns when we are inserting data. This makes it clear which fields we are providing data for and allows us to provide them out of order, skip null or default values, etc.
 
 --- In this example, we want to use the default value for id since it is autoincremented, so we provide DEFAULT for this field
 
@@ -6926,10 +6911,10 @@ VALUES
 
 **How to use an UPDATE statement to update data in a table**
 
--   The UPDATE keyword can be used to find records and change their values in our database.
--   We generally follow the pattern of UPDATE {table} SET {column} = {new value} WHERE {match condition};.
--   Without a condition to narrow our records down, we will update every record in the table, so this is an important thing to double check!
--   We can update multiple fields as well by specifying each column in parentheses and their associated new values: UPDATE {table} SET ({column1}, {column2}) = ({value1}, {value2}) WHERE {match condition};
+- The UPDATE keyword can be used to find records and change their values in our database.
+- We generally follow the pattern of UPDATE {table} SET {column} = {new value} WHERE {match condition};.
+- Without a condition to narrow our records down, we will update every record in the table, so this is an important thing to double check!
+- We can update multiple fields as well by specifying each column in parentheses and their associated new values: UPDATE {table} SET ({column1}, {column2}) = ({value1}, {value2}) WHERE {match condition};
 
 --- Updates the pet with id of 4 to change their name and breed
 
@@ -6943,9 +6928,9 @@ SET
 
 **How to use a DELETE statement to remove data from a table**
 
--   Similar to selecting records, we can delete records from a table by specifying what table we are deleting from and what criteria we would like to match in order to delete.
--   We follow the general structure DELETE FROM {table} WHERE {condition};
--   The condition here is also very important! Without a condition, all records match and will be deleted.
+- Similar to selecting records, we can delete records from a table by specifying what table we are deleting from and what criteria we would like to match in order to delete.
+- We follow the general structure DELETE FROM {table} WHERE {condition};
+- The condition here is also very important! Without a condition, all records match and will be deleted.
 
 --- Deletes from the pets table any record that either has a name Floofy, a name Doggo, or an id of 3.
 
@@ -6959,31 +6944,31 @@ name IN ('Floofy', 'Doggo') OR id = 3;
 
 **How to use a seed file to populate data in a database**
 
--   Seed files are a great way for us to create records that we want to start our database out with.
--   Instead of having to individually add records to our tables or manually entering them in psql or postbird, we can create a file that has all of these records and then just pass this file to psql to run.
--   Seed files are also great if we ever need to reset our database. We can clear out any records that we have by dropping all of our tables, then just run our seed files to get it into a predetermined starting point. This is great for our personal projects, testing environments, starting values for new tables we create, etc.
--   There are two main ways we can use a seed file with psql, the < and the | operators. They perform the same function for us, just in slightly different orders, taking the content of a .sql file and executing in within the psql environment:
--   psql -d {database} < {sql filepath}
--   cat {sql filepath} | psql -d {database}
+- Seed files are a great way for us to create records that we want to start our database out with.
+- Instead of having to individually add records to our tables or manually entering them in psql or postbird, we can create a file that has all of these records and then just pass this file to psql to run.
+- Seed files are also great if we ever need to reset our database. We can clear out any records that we have by dropping all of our tables, then just run our seed files to get it into a predetermined starting point. This is great for our personal projects, testing environments, starting values for new tables we create, etc.
+- There are two main ways we can use a seed file with psql, the < and the | operators. They perform the same function for us, just in slightly different orders, taking the content of a .sql file and executing in within the psql environment:
+- psql -d {database} < {sql filepath}
+- cat {sql filepath} | psql -d {database}
 
 **SQL (continued)**
 
 **How to perform relational database design**
 
--   Steps to Designing the Database:
--   Define the entities. What data are are you storing, what are the fields for each entity?
--   You can think of this in similar ways to OOP (object oriented programming).
--   If you wanted to model this information using classes, what classes would you make? Those are generally going to be the tables that are created in your database.
--   The attributes of your classes are generally going to be the fields/columns that we need for each table.
--   Identify primary keys. Most of the time these will be ids that you can generate as a serial field, incrementing with each addition to the database.
--   Establish table relationships. Connect related data together with foreign keys. Know how we store these keys in a one-to-one, one-to-many, or many-to-many relationship.
--   With a one-to-one or one-to-many relationship, we are able to use a foreign key on the table to indicate the other specific record that it is connected to.
--   With a many-to-many relationship, each record could be connected to multiple records, so we have to create a join table to connect these entities. A record on this join table connects a record from one table to a record from another table.
+- Steps to Designing the Database:
+- Define the entities. What data are are you storing, what are the fields for each entity?
+- You can think of this in similar ways to OOP (object oriented programming).
+- If you wanted to model this information using classes, what classes would you make? Those are generally going to be the tables that are created in your database.
+- The attributes of your classes are generally going to be the fields/columns that we need for each table.
+- Identify primary keys. Most of the time these will be ids that you can generate as a serial field, incrementing with each addition to the database.
+- Establish table relationships. Connect related data together with foreign keys. Know how we store these keys in a one-to-one, one-to-many, or many-to-many relationship.
+- With a one-to-one or one-to-many relationship, we are able to use a foreign key on the table to indicate the other specific record that it is connected to.
+- With a many-to-many relationship, each record could be connected to multiple records, so we have to create a join table to connect these entities. A record on this join table connects a record from one table to a record from another table.
 
 **How to use transactions to group multiple SQL commands into one succeed or fail operation**
 
--   We can define an explicit transaction using BEGIN and ending with either COMMIT or ROLLBACK.
--   If any command inside the block fails, everything will be rolled back. We can also specify that we want to roll back at the end of the block instead of committing. We saw that this can be useful when analyzing operations that would manipulate our database.
+- We can define an explicit transaction using BEGIN and ending with either COMMIT or ROLLBACK.
+- If any command inside the block fails, everything will be rolled back. We can also specify that we want to roll back at the end of the block instead of committing. We saw that this can be useful when analyzing operations that would manipulate our database.
 
 ```
 BEGIN;
@@ -7008,37 +6993,37 @@ ROLLBACK;
 
 **How to apply indexes to tables to improve performance**
 
--   An index can help optimize queries that we have to run regularly. If we are constantly looking up records in a table by a particular field (such as username or phone number), we can add an index in order to speed up this process.
--   An index maintains a sorted version of the field with a reference to the record that it points to in the table (via primary key). If we want to find a record based on a field that we have an index for, we can look through this index in a more efficient manner than having to scan through the entire table (generally O(log n) since the index is sorted, instead of O(n) for a sequential scan).
--   To add an index to a field we can use the following syntax:
+- An index can help optimize queries that we have to run regularly. If we are constantly looking up records in a table by a particular field (such as username or phone number), we can add an index in order to speed up this process.
+- An index maintains a sorted version of the field with a reference to the record that it points to in the table (via primary key). If we want to find a record based on a field that we have an index for, we can look through this index in a more efficient manner than having to scan through the entire table (generally O(log n) since the index is sorted, instead of O(n) for a sequential scan).
+- To add an index to a field we can use the following syntax:
 
 ```
 CREATE INDEX index_name ON table_name (column_name);
 
 ```
 
--   To drop an index we can do the following:
+- To drop an index we can do the following:
 
 ```
 DROP INDEX index_name
 
 ```
 
--   Making an index is not always the best approach. Indices allow for faster lookup, but slow down record insertion and the updating of associated fields, since we not only have to add the information to the table, but also manipulate the index.
--   We generally wouldn t care about adding an index if:
--   The tables are small
--   We are updating the table frequently, especially the associated columns
--   The column has many NULL values
+- Making an index is not always the best approach. Indices allow for faster lookup, but slow down record insertion and the updating of associated fields, since we not only have to add the information to the table, but also manipulate the index.
+- We generally wouldn t care about adding an index if:
+- The tables are small
+- We are updating the table frequently, especially the associated columns
+- The column has many NULL values
 
 **Explain what the EXPLAIN command is used for:**
 
--   EXPLAIN gives us information about how a query will run (the query plan)
--   It gives us an idea of how our database will search for data as well as a qualitative comparitor for how expensive that operation will be. Comparing the cost of two queries will tell us which one is more efficient (lower cost).
--   We can also use the ANALYZE command with EXPLAIN, which will actually run the specified query. Doing so gives us more detailed information, such as the milliseconds it took our query to execute as well as specifics like the exact number of rows filtered and returned.
+- EXPLAIN gives us information about how a query will run (the query plan)
+- It gives us an idea of how our database will search for data as well as a qualitative comparitor for how expensive that operation will be. Comparing the cost of two queries will tell us which one is more efficient (lower cost).
+- We can also use the ANALYZE command with EXPLAIN, which will actually run the specified query. Doing so gives us more detailed information, such as the milliseconds it took our query to execute as well as specifics like the exact number of rows filtered and returned.
 
 1.  Demonstrate how to install and use the node-postgres library and its Pool class to query a PostgreSQL-managed database
 
--   We can add the node-postgres library to our application with npm install pg. From there we will typically use the Pool class associated with this library. That way we can run many SQL queries with one database connection (as opposed to Client, which closes the connection after a query).
+- We can add the node-postgres library to our application with npm install pg. From there we will typically use the Pool class associated with this library. That way we can run many SQL queries with one database connection (as opposed to Client, which closes the connection after a query).
 
 ```
 const { Pool } = require('pg');
@@ -7052,7 +7037,7 @@ const pool = new Pool({ username: '<<username>>', password: '<<password>>', data
 
 ```
 
--   The query method on the Pool instance will allow us to execute a SQL query on our database. We can pass in a string that represents the query we want to run
+- The query method on the Pool instance will allow us to execute a SQL query on our database. We can pass in a string that represents the query we want to run
 
 ```
 const allAirportsSql = `
@@ -7070,12 +7055,12 @@ pool.end(); // invoking end() will close our connection to the database
 
 selectAllAirports();
 
--   The return value of this asynchronous function is an object with a rows key that points to an array of objects, each object representing a record with field names as keys.
+- The return value of this asynchronous function is an object with a rows key that points to an array of objects, each object representing a record with field names as keys.
 
 **Explain how to write prepared statements with placeholders for parameters of the form $1 , $2 , and so on**
 
--   The prepared statement (SQL string that we wrote) can also be made more dynamic by allowing for parameters to be passed in.
--   The Pool instance s query function allows us to pass a second argument, an array of parameters to be used in the query string. The location of the parameter substitutions are designated with $1, $2, etc., to signify the first, second, etc., arguments.
+- The prepared statement (SQL string that we wrote) can also be made more dynamic by allowing for parameters to be passed in.
+- The Pool instance s query function allows us to pass a second argument, an array of parameters to be used in the query string. The location of the parameter substitutions are designated with $1, $2, etc., to signify the first, second, etc., arguments.
 
 ```
 const airportsByNameSql = `
@@ -7106,16 +7091,16 @@ selectAirportsByName(name);
 
 1.  How to install, configure, and use Sequelize, an ORM for JavaScript
 
--   To start a new project we use our standard npm initialize statement
--   npm init -y
--   Add in the packages we will need (sequelize, sequelize-cli, and pg)
--   npm install sequelize@⁵.0.0 sequelize-cli@⁵.0.0 pg@⁸.0.0
--   Initialize sequelize in our project
--   npx sequelize-cli init
--   Create a database user with credentials we will use for the project
--   psql
--   CREATE USER example_user WITH PASSWORD 'badpassword'
--   Here we can also create databases since we are already in postgres
+- To start a new project we use our standard npm initialize statement
+- npm init -y
+- Add in the packages we will need (sequelize, sequelize-cli, and pg)
+- npm install sequelize@⁵.0.0 sequelize-cli@⁵.0.0 pg@⁸.0.0
+- Initialize sequelize in our project
+- npx sequelize-cli init
+- Create a database user with credentials we will use for the project
+- psql
+- CREATE USER example_user WITH PASSWORD 'badpassword'
+- Here we can also create databases since we are already in postgres
 
 ```
 CREATE DATABASE example_app_development WITH OWNER example_user
@@ -7126,10 +7111,10 @@ CREATE DATABASE example_app_production WITH OWNER example_user
 
 ```
 
--   If we don t create these databases now, we could also create them after we make our changes to our config file. If we take this approach, we need to make sure our user that we created has the CREATEDB option when we make them, since sequelize will attempt to make the databases with this user. This other approach would look like:
--   In psql: CREATE USER example_user WITH PASSWORD 'badpassword' CREATEDB
--   In terminal: npx sequelize-cli db:create
--   Double check that our configuration file matches our username, password, database, dialect, and seederStorage (these will be filled out for you in an assessment scenario):
+- If we don t create these databases now, we could also create them after we make our changes to our config file. If we take this approach, we need to make sure our user that we created has the CREATEDB option when we make them, since sequelize will attempt to make the databases with this user. This other approach would look like:
+- In psql: CREATE USER example_user WITH PASSWORD 'badpassword' CREATEDB
+- In terminal: npx sequelize-cli db:create
+- Double check that our configuration file matches our username, password, database, dialect, and seederStorage (these will be filled out for you in an assessment scenario):
 
 ```
 {
@@ -7165,24 +7150,24 @@ CREATE DATABASE example_app_production WITH OWNER example_user
 
 **Migrations**
 
--   In order to make new database tables and sequelize models that reflect them, we want to generate a migration file and model file using model:generate
+- In order to make new database tables and sequelize models that reflect them, we want to generate a migration file and model file using model:generate
 
 ```
 npx sequelize-cli model:generate --- name Cat --- attributes "firstName:string,specialSkill:string"
 
 ```
 
--   Here we are creating a migration file and a model file for a Cat. We are specifying that we want this table to have fields for firstName and specialSkill. Sequelize will automatically make fields for an id, createdAt, and updatedAt, as well, so we do not need to specify these.
--   Once our migration file is created, we can go in and edit any details that we need to. Most often we will want to add in database constraints such as allowNull: false, adding a uniqueness constraint with unique: true, adding in character limits to fields such as type: Sequelize.STRING(100), or specifying a foreign key with references to another table references: { model: 'Categories' }.
--   After we make any necessary changes to our migration file, we need to perform the migration, which will run the SQL commands to actually create the table.
+- Here we are creating a migration file and a model file for a Cat. We are specifying that we want this table to have fields for firstName and specialSkill. Sequelize will automatically make fields for an id, createdAt, and updatedAt, as well, so we do not need to specify these.
+- Once our migration file is created, we can go in and edit any details that we need to. Most often we will want to add in database constraints such as allowNull: false, adding a uniqueness constraint with unique: true, adding in character limits to fields such as type: Sequelize.STRING(100), or specifying a foreign key with references to another table references: { model: 'Categories' }.
+- After we make any necessary changes to our migration file, we need to perform the migration, which will run the SQL commands to actually create the table.
 
 ```
 npx sequelize-cli db:migrate
 
 ```
 
--   This command runs any migration files that have not been previously run, in the order that they were created (this is why the timestamp in the file name is important)
--   If we realize that we made a mistake after migrating, we can undo our previous migration, or all of our migrations. After undoing them, we can make any changes necessary to our migration files (They won t be deleted from the undo, so we don t need to generate anything! Just make the necessary changes to the files that already exist and save the files.). Running the migrations again will make the tables with the updates reflected.
+- This command runs any migration files that have not been previously run, in the order that they were created (this is why the timestamp in the file name is important)
+- If we realize that we made a mistake after migrating, we can undo our previous migration, or all of our migrations. After undoing them, we can make any changes necessary to our migration files (They won t be deleted from the undo, so we don t need to generate anything! Just make the necessary changes to the files that already exist and save the files.). Running the migrations again will make the tables with the updates reflected.
 
 ```
 npx sequelize-cli db:migrate:undo
@@ -7193,8 +7178,8 @@ npx sequelize-cli db:migrate:undo:all
 
 **Models Validations and Associations**
 
--   In addition to the migration files, our model:generate command also created a model file for us. This file is what allows sequelize to transform the results of its SQL queries into useful JavaScript objects for us.
--   The model is where we can specify a validation that we want to perform before trying to run a SQL query. If the validation fails, we can respond with a message instead of running the query, which can be an expensive operation that we know won t work.
+- In addition to the migration files, our model:generate command also created a model file for us. This file is what allows sequelize to transform the results of its SQL queries into useful JavaScript objects for us.
+- The model is where we can specify a validation that we want to perform before trying to run a SQL query. If the validation fails, we can respond with a message instead of running the query, which can be an expensive operation that we know won t work.
 
 ```
 // Before we make changes, sequelize generates the type that this field represents specification:
@@ -7215,11 +7200,11 @@ specification: {
 
 ```
 
--   Another key part of the model file is setting up our associations. We can use the belongsTo, hasMany, and belongsToMany methods to set up model-level associations. Doing so is what creates the helpful functionality like addOwner that we saw in the pets example, a function that automatically generates the SQL necessary to create a petOwner record and supplies the appropriate petId and ownerId.
--   In a one-to-many association, we need to have a belongsTo association on the many side, and a hasMany association on the one side:
--   Instruction.belongsTo(models.Recipe, { foreignKey: 'recipeId' });
--   Recipe.hasMany(models.Instruction, { foreignKey: 'recipeId' });
--   In a many-to-many association, we need to have a belongsToMany on each side of the association. We generally specify a columnMapping object to show the association more clearly:
+- Another key part of the model file is setting up our associations. We can use the belongsTo, hasMany, and belongsToMany methods to set up model-level associations. Doing so is what creates the helpful functionality like addOwner that we saw in the pets example, a function that automatically generates the SQL necessary to create a petOwner record and supplies the appropriate petId and ownerId.
+- In a one-to-many association, we need to have a belongsTo association on the many side, and a hasMany association on the one side:
+- Instruction.belongsTo(models.Recipe, { foreignKey: 'recipeId' });
+- Recipe.hasMany(models.Instruction, { foreignKey: 'recipeId' });
+- In a many-to-many association, we need to have a belongsToMany on each side of the association. We generally specify a columnMapping object to show the association more clearly:
 
 ```
 // In our Owner model
@@ -7266,11 +7251,11 @@ Pet.belongsToMany( models.Owner, columnMapping );
 
 ### **How to perform CRUD operations with Sequelize**
 
--   Seed Files
--   Seed files can be used to populate our database with starter data.
--   npx sequelize-cli seed:generate --- name add-cats
--   up indicates what to create when we seed our database, down indicates what to delete if we want to unseed the database.
--   For our up, we use the queryInterface.bulkInsert() method, which takes in the name of the table to seed and an array of objects representing the records we want to create:
+- Seed Files
+- Seed files can be used to populate our database with starter data.
+- npx sequelize-cli seed:generate --- name add-cats
+- up indicates what to create when we seed our database, down indicates what to delete if we want to unseed the database.
+- For our up, we use the queryInterface.bulkInsert() method, which takes in the name of the table to seed and an array of objects representing the records we want to create:
 
 ```
 up: (queryInterface, Sequelize) => {
@@ -7288,7 +7273,7 @@ up: (queryInterface, Sequelize) => {
 
 ```
 
--   For our down, we use the queryInterface.bulkDelete() method, which takes in the name of the table and an object representing our WHERE clause. Unseeding will delete all records from the specified table that match the WHERE clause.
+- For our down, we use the queryInterface.bulkDelete() method, which takes in the name of the table and an object representing our WHERE clause. Unseeding will delete all records from the specified table that match the WHERE clause.
 
 ```
 // If we want to specify what to remove:
@@ -7304,12 +7289,12 @@ return queryInterface.bulkDelete('<<TableName>>', null, {});
 
 ```
 
--   Running npx sequelize-cli db:seed:all will run all of our seeder files.
--   npx sequelize-cli db:seed:undo:all will undo all of our seeding.
--   If we omit the :all we can run specific seed files
--   Inserting with Build and Create
--   In addition to seed files, which we generally use for starter data, we can create new records in our database by using build and save, or the combined create
--   Use the .build method of the Cat model to create a new Cat instance in index.js
+- Running npx sequelize-cli db:seed:all will run all of our seeder files.
+- npx sequelize-cli db:seed:undo:all will undo all of our seeding.
+- If we omit the :all we can run specific seed files
+- Inserting with Build and Create
+- In addition to seed files, which we generally use for starter data, we can create new records in our database by using build and save, or the combined create
+- Use the .build method of the Cat model to create a new Cat instance in index.js
 
 ```
 // Constructs an instance of the JavaScript `Cat` class. **Does not
@@ -7334,14 +7319,14 @@ const newerCat = await Cat.create({
 
 **Updating Records**
 
--   When we have a reference to an instance of a model (i.e. after we have queried for it or created it), we can update values by simply reassigning those fields and using the save method
+- When we have a reference to an instance of a model (i.e. after we have queried for it or created it), we can update values by simply reassigning those fields and using the save method
 
 **Deleting Records**
 
--   When we have a reference to an instance of a model, we can delete that record by using destroy
--   const cat = await Cat.findByPk(1); // Remove the Markov record. await cat.destroy();
--   We can also call destroy on the model itself. By passing in an object that specifies a where clause, we can destroy all records that match that query
--   await Cat.destroy({ where: { specialSkill: 'jumping' } });
+- When we have a reference to an instance of a model, we can delete that record by using destroy
+- const cat = await Cat.findByPk(1); // Remove the Markov record. await cat.destroy();
+- We can also call destroy on the model itself. By passing in an object that specifies a where clause, we can destroy all records that match that query
+- await Cat.destroy({ where: { specialSkill: 'jumping' } });
 
 **How to query using Sequelize**
 
@@ -7359,9 +7344,9 @@ console.log(JSON.stringify(cats, null, 2));
 
 **WHERE clause**
 
--   Passing an object to findAll can add on clauses to our query
--   The where key takes an object as a value to indicate what we are filtering by
--   { where: { field: value } } => WHERE field = value
+- Passing an object to findAll can add on clauses to our query
+- The where key takes an object as a value to indicate what we are filtering by
+- { where: { field: value } } => WHERE field = value
 
 ```
 const cats = await Cat.findAll({ where: { firstName: "Markov" } }); console.log(JSON.stringify(cats, null, 2));
@@ -7370,7 +7355,7 @@ const cats = await Cat.findAll({ where: { firstName: "Markov" } }); console.log(
 
 **OR in the WHERE clause**
 
--   Using an array for the value tells sequelize we want to match any of these values
+- Using an array for the value tells sequelize we want to match any of these values
 
 { where: { field: [value1, value2] } => WHERE field IN (value1, value2)
 
@@ -7389,14 +7374,14 @@ console.log(JSON.stringify(cats, null, 2));
 
 **AND in the WHERE clause**
 
--   Providing additional key/value pairs to the where object indicates all filters must match
--   { where: { field1: value1, field2: value2 } } => WHERE field1 = value1 AND field2 = value2
+- Providing additional key/value pairs to the where object indicates all filters must match
+- { where: { field1: value1, field2: value2 } } => WHERE field1 = value1 AND field2 = value2
 
 ### Sequelize Op operator
 
--   By requiring Op from the sequelize library we can provide more advanced comparison operators
--   const { Op } = require("sequelize");
--   Op.ne: Not equal operator
+- By requiring Op from the sequelize library we can provide more advanced comparison operators
+- const { Op } = require("sequelize");
+- Op.ne: Not equal operator
 
 ```
 const cats = await Cat.findAll({
@@ -7456,10 +7441,10 @@ const cats = await Cat.findAll({ where: { // Find all cats where the age is grea
 
 #### Ordering results
 
--   Just like the where clause, we can pass an order key to specify we want our results ordered
--   The key order points to an array with the fields that we want to order by
--   By default, the order is ascending, just like standard SQL. If we want to specify descending, we can instead use a nested array with the field name as the first element and DESC as the second element. (We could also specify ASC as a second element in a nested array, but it is unnecessary as it is default)
--   const cats = await Cat.findAll({ // Order by age descending, then by firstName ascending if cats have the same age order: [["age", "DESC"], "firstName"], }); console.log(JSON.stringify(cats, null, 2));
+- Just like the where clause, we can pass an order key to specify we want our results ordered
+- The key order points to an array with the fields that we want to order by
+- By default, the order is ascending, just like standard SQL. If we want to specify descending, we can instead use a nested array with the field name as the first element and DESC as the second element. (We could also specify ASC as a second element in a nested array, but it is unnecessary as it is default)
+- const cats = await Cat.findAll({ // Order by age descending, then by firstName ascending if cats have the same age order: [["age", "DESC"], "firstName"], }); console.log(JSON.stringify(cats, null, 2));
 
 ```
 // Get a reference to the cat record that we want to update (here just the cat with primary key of 1)
@@ -7473,8 +7458,8 @@ await cat.save();
 
 ```
 
--   Limiting results
--   We can provide a limit key in order to limit our results to a specified number
+- Limiting results
+- We can provide a limit key in order to limit our results to a specified number
 
 ```
 const cats = await Cat.findAll({
@@ -7490,16 +7475,16 @@ console.log(JSON.stringify(cats, null, 2));
 
 ### findOne
 
--   If we only want one record to be returned we can use findOne instead of findAll
--   If multiple records would have matched our findOne query, it will return the first record
--   Unlike findAll, findOne will return the object directly instead of an array. If no records matched the query it will return null.
+- If we only want one record to be returned we can use findOne instead of findAll
+- If multiple records would have matched our findOne query, it will return the first record
+- Unlike findAll, findOne will return the object directly instead of an array. If no records matched the query it will return null.
 
 ```
 // finds the oldest cat const cat = await Cat.findOne({ order: [["age", "DESC"]], }); console.log(JSON.stringify(cat, null, 2));
 
 ```
 
--   **Querying with Associations**
+- **Querying with Associations**
 
 We can include associated data by adding an include key to our options object
 
@@ -7515,8 +7500,8 @@ We can get nested associations by having include point to an object that specifi
 
 **How to perform data validations with Sequelize**
 
--   See the database migrations section above.
--   In general, we add in a validate key to each field that we want validations for. This key points to an object that specifies all of the validations we want to make on that field, such as notEmpty, notNull, len, isIn, etc.
+- See the database migrations section above.
+- In general, we add in a validate key to each field that we want validations for. This key points to an object that specifies all of the validations we want to make on that field, such as notEmpty, notNull, len, isIn, etc.
 
 ```
 specification: {
@@ -7536,9 +7521,9 @@ specification: {
 
 **How to use transactions with Sequelize**
 
--   We can create a transaction block in order to make sure either all operations are performed or none of them are
--   We use the .transaction method in order to create our block. The method takes in a callback with an argument to track our transaction id (typically just a simple tx variable).
--   All of our sequelize operations can be passed a transaction key on their options argument which points to our transaction id. This indicates that this operation is part of the transaction block and should only be executed in the database when the whole block executes without error.
+- We can create a transaction block in order to make sure either all operations are performed or none of them are
+- We use the .transaction method in order to create our block. The method takes in a callback with an argument to track our transaction id (typically just a simple tx variable).
+- All of our sequelize operations can be passed a transaction key on their options argument which points to our transaction id. This indicates that this operation is part of the transaction block and should only be executed in the database when the whole block executes without error.
 
 ```
 async function main() {
@@ -7584,7 +7569,7 @@ main();
 
 ```
 
-* * * * *
+---
 
 ### Sequelize Cheatsheet
 
@@ -8061,12 +8046,12 @@ await deleteThis.destroy();
 ### Documentation
 
 For the data types and validations in your models, here are the official docs. The sequelize docs are hard to look at, so these are the specific sections with just the lists:\
-**Sequelize Data Types:** [](https://sequelize.org/v5/manual/data-types.html)*<https://sequelize.org/v5/manual/data-types.html>*\
-**Validations:** [](https://sequelize.org/v5/manual/models-definition.html#validations)*<https://sequelize.org/v5/manual/models-definition.html#validations>*\
+**Sequelize Data Types:** [](https://sequelize.org/v5/manual/data-types.html)_<https://sequelize.org/v5/manual/data-types.html>_\
+**Validations:** [](https://sequelize.org/v5/manual/models-definition.html#validations)_<https://sequelize.org/v5/manual/models-definition.html#validations>_\
 When you access the data in your queries, here are the operators available, again because the docs are hard to navigate, this is the specific section with the list of operators.\
-**Operators:** [](https://sequelize.org/v5/manual/querying.html#operators)*<https://sequelize.org/v5/manual/querying.html#operators>*\
+**Operators:** [](https://sequelize.org/v5/manual/querying.html#operators)_<https://sequelize.org/v5/manual/querying.html#operators>_\
 The documentation for building, saving, creating, updating and destroying is linked here, it does a pretty good job of explaining in my opinion, it just has a title that we have not been using in this course. When they talk about an instance, they mean an item stored in your table.\
-**Create/Update/Destroy:** [](https://sequelize.org/v5/manual/instances.html)*<https://sequelize.org/v5/manual/instances.html>*
+**Create/Update/Destroy:** [](https://sequelize.org/v5/manual/instances.html)_<https://sequelize.org/v5/manual/instances.html>_
 
 #### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
@@ -8091,12 +8076,11 @@ Exported from [Medium](https://medium.com/) on July 13, 2021.
 
 [view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/Everything.md)[Everything.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-everything-md) hosted with ❤ by [GitHub](https://github.com/)
 
-Front End Interview Questions Part 2
-====================================
+# Front End Interview Questions Part 2
 
 These will focus more on vocabulary and concepts than the application driven approach in my last post!
 
-* * * * *
+---
 
 #### [CODEX](http://medium.com/codex)
 
@@ -8111,11 +8095,11 @@ These will focus more on vocabulary and concepts than the application driven app
 [**The Web Developer's Technical Interview**\
 *Questions....Answers... and links to the missing pieces.*bryanguner.medium.com](https://bryanguner.medium.com/the-web-developers-technical-interview-e347d7db3822 "https://bryanguner.medium.com/the-web-developers-technical-interview-e347d7db3822")[](https://bryanguner.medium.com/the-web-developers-technical-interview-e347d7db3822)
 
--   **­­­­If you were to describe semantic HTML to the next cohort of students, what would you say?**
+- **­­­­If you were to describe semantic HTML to the next cohort of students, what would you say?**
 
 Semantic HTML is markup that conveys meaning, not appearance, to search engines to make everything easier to identify.
 
--   **Name two big differences between display: block; and display: inline;.**
+- **Name two big differences between display: block; and display: inline;.**
 
 block starts on a new line and takes up the full width of the content.\
  inline starts on the same line as previous content, in line with other content, and takes up only the space needed for the content.
@@ -8178,23 +8162,23 @@ It is code identified elsewhere that we can use later; gives the ability to put 
 
 Super ties the parent to the child.
 
--   **What is the DOM?**
+- **What is the DOM?**
 
 Document object model, the 'window' or container that holds all the page's elements
 
--   **What is an event?**
+- **What is an event?**
 
 An event is something happening on or to the page, like a mouse click, doubleclick, key up/down, pointer out of element/over element, things like this. There are tons of "events" that javascript can detect.
 
--   **What is an event listener?**
+- **What is an event listener?**
 
 Javascript command that 'listens' for an event to happen on the page to a given element and then runs a function when that event happens
 
--   **Why would we convert a NodeList into an Array?**
+- **Why would we convert a NodeList into an Array?**
 
 A NodeList isn't a real array, so it won't have access to array methods such as slice or map.
 
--   **What is a component?**
+- **What is a component?**
 
 Reusable pieces of code to display info in a consistent repeatable way
 
@@ -8369,12 +8353,11 @@ Exported from [Medium](https://medium.com/) on July 13, 2021.
 
 [view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/Front-End-Interview-Questions-Part.md)[Front-End-Interview-Questions-Part.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-front-end-interview-questions-part-md) hosted with ❤ by [GitHub](https://github.com/)
 
-Fundamental Concepts In React That Will Probably Come Up On An Interview
-========================================================================
+# Fundamental Concepts In React That Will Probably Come Up On An Interview
 
 Incomplete Article
 
-* * * * *
+---
 
 ### Fundamental Concepts In React That Will Probably Come Up On An Interview
 
@@ -8390,7 +8373,7 @@ Incomplete Article
 
 [![](https://camo.githubusercontent.com/e3cd9d1bd4ebb67918f022fb3a0de7ac530ccaa20cb75c415ba8df0bb3b62c13/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a69565364524e5457696b6576553464472e706e67)](https://camo.githubusercontent.com/e3cd9d1bd4ebb67918f022fb3a0de7ac530ccaa20cb75c415ba8df0bb3b62c13/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a69565364524e5457696b6576553464472e706e67)
 
-* * * * *
+---
 
 ### **Describe how JSX transforms into React.createElement calls:**
 
@@ -8398,7 +8381,7 @@ Incomplete Article
 
 #### ↠ReactDOM.render is a simple function which accepts 2 arguments: what to render and where to render it:
 
-* * * * *
+---
 
 ### Describe how JSX transforms into React.createElement calls:
 
@@ -8406,9 +8389,9 @@ Incomplete Article
 
 > ↠You can put the JSX directly into your .js files, however you must run the JSX through a pre-compiler like [Babel](https://babeljs.io/) in order for the browser to understand it.
 
-* * * * *
+---
 
-> ***Here we initialize a Clock component using JSX instead of React.createElement .***
+> **_Here we initialize a Clock component using JSX instead of React.createElement ._**
 
 > Using [Babel](https://babeljs.io/) this code is compiled to a series of recursively nested createElement calls:
 
@@ -8422,12 +8405,11 @@ Exported from [Medium](https://medium.com/) on July 13, 2021.
 
 [view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/Fundamenta.md)[Fundamenta.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-fundamenta-md) hosted with ❤ by [GitHub](https://github.com/)
 
-Fundamental Data Structures in JavaScript
-=========================================
+# Fundamental Data Structures in JavaScript
 
 A simple to follow guide to Lists Stacks and Queues, with animated gifs, diagrams, and code examples!
 
-* * * * *
+---
 
 ### Fundamental Data Structures in JavaScript
 
@@ -8477,13 +8459,13 @@ Admittedly, this does *sound* a lot like an Array so far, and that's because A
 
 Recall that Arrays contain *contiguous* data. Each element of an array is actually stored *next to* it's neighboring element *in the actual hardware of your machine*, in a single continuous block in memory.
 
-*An Array's contiguous data being stored in a continuous block of addresses in memory.*
+_An Array's contiguous data being stored in a continuous block of addresses in memory._
 
 Unlike Arrays, Linked Lists contain *non-contiguous* data. Though Linked Lists *represent* data that is ordered linearly, that mental model is just that --- an interpretation of the *representation* of information, not reality.
 
 In reality, in the actual hardware of your machine, whether it be in disk or in memory, a Linked List's Nodes are not stored in a single continuous block of addresses. Rather, Linked List Nodes live at randomly distributed addresses throughout your machine! The only reason we know which node comes next in the list is because we've assigned its reference to the current node's `next` pointer.
 
-*A Singly Linked List's non-contiguous data (Nodes) being stored at randomly distributed addresses in memory.*
+_A Singly Linked List's non-contiguous data (Nodes) being stored at randomly distributed addresses in memory._
 
 For this reason, Linked List Nodes have *no indices*, and no *random access*. Without random access, we do not have the ability to look up an individual Linked List Node in constant time. Instead, to find a particular Node, we have to start at the very first Node and iterate through the Linked List one node at a time, checking each Node's *next* Node until we find the one we're interested in.
 
@@ -8497,12 +8479,12 @@ There are four flavors of Linked List you should be familiar with when walking i
 
 [![](https://camo.githubusercontent.com/21fe4daf92e64b603d732003308ea9194e4bbc4f16ffded101d12d29579b1fbb/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a5a6f5949454a614f7050695941757174504c743879772e706e67)](https://camo.githubusercontent.com/21fe4daf92e64b603d732003308ea9194e4bbc4f16ffded101d12d29579b1fbb/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a5a6f5949454a614f7050695941757174504c743879772e706e67)
 
-***Note:*** *These Linked List types are not always mutually exclusive.*
+**_Note:_** _These Linked List types are not always mutually exclusive._
 
 For instance:
 
--   Any type of Linked List can be implemented Circularly (e.g. A Circular Doubly Linked List).
--   A Doubly Linked List is actually just a special case of a Multiply Linked List.
+- Any type of Linked List can be implemented Circularly (e.g. A Circular Doubly Linked List).
+- A Doubly Linked List is actually just a special case of a Multiply Linked List.
 
 You are most likely to encounter Singly and Doubly Linked Lists in your upcoming job search, so we are going to focus exclusively on those two moving forward. However, in more senior level interviews, it is very valuable to have some familiarity with the other types of Linked Lists. Though you may not actually code them out, *you will win extra points by illustrating your ability to weigh the tradeoffs of your technical decisions* by discussing how your choice of Linked List type may affect the efficiency of the solutions you propose.
 
@@ -8560,7 +8542,7 @@ Yes, it is tempting to call insertion or deletion in the middle of a Linked List
 
 For this reason, we separate the Access time complexity from the Insertion/Deletion time complexity, and formally state that Insertion and Deletion in a Linked List are **Constant Time** across the board.
 
-***Note:*** *Without a reference to the node at which an insertion or deletion will occur, due to linear time lookup, an insertion or deletion in the middle of a Linked List will still take Linear Time, sum total.*
+**_Note:_** *Without a reference to the node at which an insertion or deletion will occur, due to linear time lookup, an insertion or deletion in the middle of a Linked List will still take Linear Time, sum total.*
 
 ### Space Complexity
 
@@ -8577,9 +8559,9 @@ In Scenario 1, we *are not* creating a new Linked List. We simply need to oper
 
 In Scenario 2, we *are* creating a new Linked List. If the number of nodes we create is linearly correlated to the size of our input data, we are now operating in Linear Space.
 
-***Note****: Linked Lists can be traversed both iteratively and recursively. If you choose to traverse a Linked List recursively, there will be a recursive function call added to the call stack for every node in the Linked List. Even if you're provided the Linked List, as in Scenario 1, you will still use Linear Space in the call stack, and that counts.*
+**\*Note\*\***: Linked Lists can be traversed both iteratively and recursively. If you choose to traverse a Linked List recursively, there will be a recursive function call added to the call stack for every node in the Linked List. Even if you're provided the Linked List, as in Scenario 1, you will still use Linear Space in the call stack, and that counts.\*
 
-* * * * *
+---
 
 ### Stacks and Queues
 
@@ -8605,7 +8587,7 @@ We add things to the *top* of a stack. We remove things from the *top* of a 
 
 Note: We can use JavaScript Arrays to implement a basic stack. `Array#push` adds to the top of the stack and `Array#pop` will remove from the top of the stack. In the exercise that follows, we'll build our own Stack class from scratch (without using any arrays). In an interview setting, your evaluator may be okay with you using an array as a stack.
 
-* * * * *
+---
 
 ### What is a Queue?
 
@@ -8631,7 +8613,7 @@ Stacks and Queues are so similar in composition that we can discuss their proper
 
 Notice that rather than having a `head` and a `tail` like Linked Lists, Stacks have a `top`, and Queues have a `front` and a `back` instead. Stacks don't have the equivalent of a `tail` because you only ever push or pop things off the top of Stacks. These properties are essentially the same; pointers to the end points of the respective List ADT where important actions way take place. The differences in naming conventions are strictly for human comprehension.
 
-* * * * *
+---
 
 Similarly to Linked Lists, the values stored inside a Stack or a Queue are actually contained within Stack Node and Queue Node instances. Stack, Queue, and Singly Linked List Nodes are all identical, but just as a reminder and for the sake of completion, these List Nodes track the following two properties:
 
@@ -8677,22 +8659,22 @@ Additionally, Stacks and Queues serve as the essential underlying data structure
 
 #### Stacks
 
--   The Call Stack is a Stack data structure, and is used to manage the order of function invocations in your code.
--   Browser History is often implemented using a Stack, with one great example being the browser history object in the very popular React Router module.
--   Undo/Redo functionality in just about any application. For example:
--   When you're coding in your text editor, each of the actions you take on your keyboard are recorded by `push`ing that event to a Stack.
--   When you hit [cmd + z] to undo your most recent action, that event is `pop`ed off the Stack, because the last event that occured should be the first one to be undone (LIFO).
--   When you hit [cmd + y] to redo your most recent action, that event is `push`ed back onto the Stack.
+- The Call Stack is a Stack data structure, and is used to manage the order of function invocations in your code.
+- Browser History is often implemented using a Stack, with one great example being the browser history object in the very popular React Router module.
+- Undo/Redo functionality in just about any application. For example:
+- When you're coding in your text editor, each of the actions you take on your keyboard are recorded by `push`ing that event to a Stack.
+- When you hit [cmd + z] to undo your most recent action, that event is `pop`ed off the Stack, because the last event that occured should be the first one to be undone (LIFO).
+- When you hit [cmd + y] to redo your most recent action, that event is `push`ed back onto the Stack.
 
 #### Queues
 
--   Printers use a Queue to manage incoming jobs to ensure that documents are printed in the order they are received.
--   Chat rooms, online video games, and customer service phone lines use a Queue to ensure that patrons are served in the order they arrive.
--   In the case of a Chat Room, to be admitted to a size-limited room.
--   In the case of an Online Multi-Player Game, players wait in a lobby until there is enough space and it is their turn to be admitted to a game.
--   In the case of a Customer Service Phone Line...you get the point.
--   As a more advanced use case, Queues are often used as components or services in the system design of a service-oriented architecture. A very popular and easy to use example of this is Amazon's Simple Queue Service (SQS), which is a part of their Amazon Web Services (AWS) offering.
--   You would add this service to your system between two other services, one that is sending information for processing, and one that is receiving information to be processed, when the volume of incoming requests is high and the integrity of the order with which those requests are processed must be maintained.
+- Printers use a Queue to manage incoming jobs to ensure that documents are printed in the order they are received.
+- Chat rooms, online video games, and customer service phone lines use a Queue to ensure that patrons are served in the order they arrive.
+- In the case of a Chat Room, to be admitted to a size-limited room.
+- In the case of an Online Multi-Player Game, players wait in a lobby until there is enough space and it is their turn to be admitted to a game.
+- In the case of a Customer Service Phone Line...you get the point.
+- As a more advanced use case, Queues are often used as components or services in the system design of a service-oriented architecture. A very popular and easy to use example of this is Amazon's Simple Queue Service (SQS), which is a part of their Amazon Web Services (AWS) offering.
+- You would add this service to your system between two other services, one that is sending information for processing, and one that is receiving information to be processed, when the volume of incoming requests is high and the integrity of the order with which those requests are processed must be maintained.
 
 **If you found this guide helpful feel free to checkout my other articles:**
 
@@ -8722,12 +8704,11 @@ Exported from [Medium](https://medium.com/) on July 13, 2021.
 
 [view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/Fundamental-Data-Structures-in.md)[Fundamental-Data-Structures-in.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-fundamental-data-structures-in-md) hosted with ❤ by [GitHub](https://github.com/)
 
-Fundamental Javascript Concepts You Should Understand
-=====================================================
+# Fundamental Javascript Concepts You Should Understand
 
 Plain Old JS Object Lesson Concepts
 
-* * * * *
+---
 
 ### Fundamental Javascript Concepts You Should Understand
 
@@ -8748,11 +8729,11 @@ let a = "b";
 
 ```
 
--   Use the `obj[key] !== undefined` pattern to check if a given variable that contains a key exists in an object
--   can also use `(key in object)` syntax interchangeably (returns a boolean)
--   Utilize Object.keys and Object.values in a function
--   `Object.keys(obj)` returns an array of all the keys in `obj`
--   `Object.values(obj)` returns an array of the values in `obj`
+- Use the `obj[key] !== undefined` pattern to check if a given variable that contains a key exists in an object
+- can also use `(key in object)` syntax interchangeably (returns a boolean)
+- Utilize Object.keys and Object.values in a function
+- `Object.keys(obj)` returns an array of all the keys in `obj`
+- `Object.values(obj)` returns an array of the values in `obj`
 
 #### Iterate through an object using a `for in` loop
 
@@ -8768,8 +8749,8 @@ let printValues = function(obj) {
 
 #### Define a function that utilizes `...rest` syntax to accept an arbitrary number of arguments
 
--   `...rest` syntax will store all additional arguments in an array
--   array will be empty if there are no additional arguments
+- `...rest` syntax will store all additional arguments in an array
+- array will be empty if there are no additional arguments
 
 ```
 let myFunction = function(str, ...strs) {
@@ -8792,7 +8773,7 @@ let arr1 = ["a", "b", "c"];
 
 ```
 
--   Destructure an array to reference specific elements
+- Destructure an array to reference specific elements
 
 ```
 let array = [35, 9];
@@ -8860,13 +8841,13 @@ console.log(color, vegetable); //=> mauve spaghetti squash
 
 ### Callbacks Lesson Concepts
 
--   Given multiple plausible reasons, identify why functions are called "First Class Objects" in JavaScript.
--   they can be stored in variables, passed as arguments to other functions, and serve as return value for a function
--   supports same basic operations as other types (strings, bools, numbers)
--   higher-order functions take functions as arguments or return functions as values
--   Given a code snippet containing an anonymous callback, a named callback, and multiple `console.log`s, predict what will be printed
--   what is this referring to?
--   Write a function that takes in a value and two callbacks. The function should return the result of the callback that is greater.
+- Given multiple plausible reasons, identify why functions are called "First Class Objects" in JavaScript.
+- they can be stored in variables, passed as arguments to other functions, and serve as return value for a function
+- supports same basic operations as other types (strings, bools, numbers)
+- higher-order functions take functions as arguments or return functions as values
+- Given a code snippet containing an anonymous callback, a named callback, and multiple `console.log`s, predict what will be printed
+- what is this referring to?
+- Write a function that takes in a value and two callbacks. The function should return the result of the callback that is greater.
 
 ```
 let greaterCB = function(val, callback1, callback2) {
@@ -8953,32 +8934,32 @@ let myEvery = function(array, callback) {
 
 ### Scope Lesson Concepts
 
--   Identify the difference between `const`, `let`, and `var` declarations
--   `const` - cannot reassign variable, scoped to block
--   `let` - can reassign variable, scoped to block
--   `var` - outdated, may or may not be reassigned, scoped to function. can be not just reassigned, but also redeclared!
--   a variable will always evaluate to the value it contains regardless of how it was declared
--   Explain the difference between `const`, `let`, and `var` declarations
--   `var` is function scoped---so if you declare it anywhere in a function, the declaration (but not assignment) is "hoisted"
--   so it will exist in memory as "undefined" which is bad and unpredictable
--   `var` will also allow you to redeclare a variable, while `let` or `const` will raise a syntax error. you shouldn't be able to do that!
--   `const` won't let you reassign a variable, but if it points to a mutable object, you will still be able to change the value by mutating the object
--   block-scoped variables allow new variables with the same name in new scopes
--   block-scoped still performs hoisting of all variables within the block, but it doesn't initialize to the value of `undefined` like `var` does, so it throws a specific reference error if you try to access the value before it has been declared
--   if you do not use `var` or `let` or `const` when initializing, it will be declared as global---THIS IS BAD
--   if you assign a value without a declaration, it exists in the global scope (so then it would be accessible by all outer scopes, so bad). however, there's no hoisting, so it doesn't exist in the scope until after the line is run
--   Predict the evaluation of code that utilizes function scope, block scope, lexical scope, and scope chaining
--   scope of a program means the set of variables that are available for use within the program
--   global scope is represented by the `window` object in the browser and the `global` object in Node.js
--   global variables are available everywhere, and so increase the risk of name collisions
--   local scope is the set of variables available for use within the function
--   when we enter a function, we enter a new scope
--   includes functions arguments, local variables declared inside function, and any variables that were already declared when the function is defined (hmm about that last one)
--   for blocks (denoted by curly braces `{}`, as in conditionals or `for` loops), variables can be block scoped
--   inner scope does not have access to variables in the outer scope
--   scope chaining --- if a given variable is not found in immediate scope, javascript will search all accessible outer scopes until variable is found
--   so an inner scope can access outer scope variables
--   but an outer scope can never access inner scope variables
+- Identify the difference between `const`, `let`, and `var` declarations
+- `const` - cannot reassign variable, scoped to block
+- `let` - can reassign variable, scoped to block
+- `var` - outdated, may or may not be reassigned, scoped to function. can be not just reassigned, but also redeclared!
+- a variable will always evaluate to the value it contains regardless of how it was declared
+- Explain the difference between `const`, `let`, and `var` declarations
+- `var` is function scoped---so if you declare it anywhere in a function, the declaration (but not assignment) is "hoisted"
+- so it will exist in memory as "undefined" which is bad and unpredictable
+- `var` will also allow you to redeclare a variable, while `let` or `const` will raise a syntax error. you shouldn't be able to do that!
+- `const` won't let you reassign a variable, but if it points to a mutable object, you will still be able to change the value by mutating the object
+- block-scoped variables allow new variables with the same name in new scopes
+- block-scoped still performs hoisting of all variables within the block, but it doesn't initialize to the value of `undefined` like `var` does, so it throws a specific reference error if you try to access the value before it has been declared
+- if you do not use `var` or `let` or `const` when initializing, it will be declared as global---THIS IS BAD
+- if you assign a value without a declaration, it exists in the global scope (so then it would be accessible by all outer scopes, so bad). however, there's no hoisting, so it doesn't exist in the scope until after the line is run
+- Predict the evaluation of code that utilizes function scope, block scope, lexical scope, and scope chaining
+- scope of a program means the set of variables that are available for use within the program
+- global scope is represented by the `window` object in the browser and the `global` object in Node.js
+- global variables are available everywhere, and so increase the risk of name collisions
+- local scope is the set of variables available for use within the function
+- when we enter a function, we enter a new scope
+- includes functions arguments, local variables declared inside function, and any variables that were already declared when the function is defined (hmm about that last one)
+- for blocks (denoted by curly braces `{}`, as in conditionals or `for` loops), variables can be block scoped
+- inner scope does not have access to variables in the outer scope
+- scope chaining --- if a given variable is not found in immediate scope, javascript will search all accessible outer scopes until variable is found
+- so an inner scope can access outer scope variables
+- but an outer scope can never access inner scope variables
 
 #### Define an arrow function
 
@@ -9001,10 +8982,10 @@ return sum;
 
 #### Given an arrow function, deduce the value of `this` without executing the code
 
--   arrow functions are automatically bound to the context they were declared in.
--   unlike regular function which use the context they are invoked in (unless they have been bound using `Function#bind`).
--   if you implement an arrow function as a method in an object the context it will be bound to is NOT the object itself, but the global context.
--   so you can't use an arrow function to define a method directly
+- arrow functions are automatically bound to the context they were declared in.
+- unlike regular function which use the context they are invoked in (unless they have been bound using `Function#bind`).
+- if you implement an arrow function as a method in an object the context it will be bound to is NOT the object itself, but the global context.
+- so you can't use an arrow function to define a method directly
 
 ```
 let obj = {
@@ -9139,14 +9120,14 @@ console.log(counter3());
 
 #### Define a method that references `this` on an object literal
 
--   when we use `this` in a method it refers to the object that the method is invoked on
--   it will let you access other pieces of information from within that object, or even other methods
--   method style invocation --- `object.method(args)` (e.g. built in examples like `Array#push`, or `String#toUpperCase`)
--   context is set every time we invoke a function
--   function style invocation sets the context to the global object no matter what
--   being inside an object does not make the context that object! you still have to use method-style invocation
--   Utilize the built in `Function#bind` on a callback to maintain the context of this
--   when we call bind on a function, we get an exotic function back --- so the context will always be the same for that new function
+- when we use `this` in a method it refers to the object that the method is invoked on
+- it will let you access other pieces of information from within that object, or even other methods
+- method style invocation --- `object.method(args)` (e.g. built in examples like `Array#push`, or `String#toUpperCase`)
+- context is set every time we invoke a function
+- function style invocation sets the context to the global object no matter what
+- being inside an object does not make the context that object! you still have to use method-style invocation
+- Utilize the built in `Function#bind` on a callback to maintain the context of this
+- when we call bind on a function, we get an exotic function back --- so the context will always be the same for that new function
 
 ```
 let cat = {
@@ -9203,9 +9184,9 @@ console.log(this); // Object [global] {etc, etc, etc,  name: 'Layla'}
 
 ### CALLING SOMETHING IN THE WRONG CONTEXT CAN MESS YOU UP!
 
--   could throw an error if it expects this to have some other method or whatever that doesn't exist
--   you could also overwrite values or assign values to exist in a space where they should not exist
--   if you call a function as a callback, it will set `this` to be the outer function itself, even if the function you were calling is a method that was called on a particular object
+- could throw an error if it expects this to have some other method or whatever that doesn't exist
+- you could also overwrite values or assign values to exist in a space where they should not exist
+- if you call a function as a callback, it will set `this` to be the outer function itself, even if the function you were calling is a method that was called on a particular object
 
 ```
 let cat = {
@@ -9268,10 +9249,10 @@ console.log(this); // Object [global] {etc, etc, etc,  name: 'Layla'}
 
 ```
 
--   CALLING SOMETHING IN THE WRONG CONTEXT CAN MESS YOU UP!
--   could throw an error if it expects this to have some other method or whatever that doesn't exist
--   you could also overwrite values or assign values to exist in a space where they should not exist
--   if you call a function as a callback, it will set `this` to be the outer function itself, even if the function you were calling is a method that was called on a particular object
+- CALLING SOMETHING IN THE WRONG CONTEXT CAN MESS YOU UP!
+- could throw an error if it expects this to have some other method or whatever that doesn't exist
+- you could also overwrite values or assign values to exist in a space where they should not exist
+- if you call a function as a callback, it will set `this` to be the outer function itself, even if the function you were calling is a method that was called on a particular object
 
 > we can use strict mode with `"use strict";` this will prevent you from accessing the global object with `this` in functions, so if you try to call `this` in the global context and change a value, you will get a type error, and the things you try to access will be undefined
 
@@ -9281,14 +9262,14 @@ console.log(this); // Object [global] {etc, etc, etc,  name: 'Layla'}
 
 Javascript considers most data types to be 'primitive', these data types are immutable, and are passed by value. The more complex data types: Array and Object are mutable, are considered 'reference' data types, and are passed by reference.
 
--   Boolean --- Primitive
--   Null --- Primitive
--   Undefined --- Primitive
--   Number --- Primitive
--   String --- Primitive
--   Array --- Reference
--   Object --- Reference
--   Function --- Reference
+- Boolean --- Primitive
+- Null --- Primitive
+- Undefined --- Primitive
+- Number --- Primitive
+- String --- Primitive
+- Array --- Reference
+- Object --- Reference
+- Function --- Reference
 
 #### 2\. Identify when to use . vs [] when accessing values of an object
 
@@ -9490,27 +9471,27 @@ var a = "a";
 
 ```
 
--   `var` is the historical keyword used for variable declaration.
--   `var` declares variables in function scope, or global scope if not inside a function.
--   We consider `var` to be deprecated and it is never used in this course.
+- `var` is the historical keyword used for variable declaration.
+- `var` declares variables in function scope, or global scope if not inside a function.
+- We consider `var` to be deprecated and it is never used in this course.
 
 ```
 let b = "b";
 
 ```
 
--   `let` is the keyword we use most often for variable declaration.
--   `let` declares variables in block scope.
--   variables declared with `let` are re-assignable.
+- `let` is the keyword we use most often for variable declaration.
+- `let` declares variables in block scope.
+- variables declared with `let` are re-assignable.
 
 ```
 const c = "c";
 
 ```
 
--   `const` is a specialized form of `let` that can only be used to **initialize** a variable.
--   Except when it is declared, you cannot assign to a `const` variable.
--   `const` scopes variables the same way that `let` does.
+- `const` is a specialized form of `let` that can only be used to **initialize** a variable.
+- Except when it is declared, you cannot assign to a `const` variable.
+- `const` scopes variables the same way that `let` does.
 
 #### 3\. Predict the evaluation of code that utilizes function scope, block scope, lexical scope, and scope chaining
 
@@ -9703,50 +9684,49 @@ Exported from [Medium](https://medium.com/) on July 13, 2021.
 
 [view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/Fundamental-Javascript-Concepts-You-Should.md)[Fundamental-Javascript-Concepts-You-Should.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-fundamental-javascript-concepts-you-should-md) hosted with ❤ by [GitHub](https://github.com/)
 
-General guidelines
-==================
+# General guidelines
 
 Help Google find your pages
 
-* * * * *
+---
 
 ### General guidelines
 
 ### Help Google find your pages
 
--   Ensure that all pages on the site can be reached by a link from another findable page. The referring link should include either text or, for images, an alt attribute, that is relevant to the target page. Crawlable links are `<a>` [tags with an href attribute](https://developers.google.com/search/docs/advanced/guidelines/links-crawlable).
--   Provide a [sitemap file](http://sitemaps.org/) with links that point to the important pages on your site. Also provide a page with a human-readable list of links to these pages (sometimes called a site index or site map page).
--   Limit the number of links on a page to a reasonable number (a few thousand at most).
--   Make sure that your web server correctly supports the `If-Modified-Since` HTTP header. This feature directs your web server to tell Google if your content has changed since we last crawled your site. Supporting this feature saves you bandwidth and overhead.
--   Use the robots.txt file on your web server to manage your crawling budget by preventing crawling of infinite spaces such as search result pages. Keep your robots.txt file up to date. [Learn how to manage crawling with the robots.txt file](https://developers.google.com/search/docs/advanced/robots/robots-faq). Test the coverage and syntax of your robots.txt file using the [robots.txt Tester](https://www.google.com/webmasters/tools/robots-testing-tool).
+- Ensure that all pages on the site can be reached by a link from another findable page. The referring link should include either text or, for images, an alt attribute, that is relevant to the target page. Crawlable links are `<a>` [tags with an href attribute](https://developers.google.com/search/docs/advanced/guidelines/links-crawlable).
+- Provide a [sitemap file](http://sitemaps.org/) with links that point to the important pages on your site. Also provide a page with a human-readable list of links to these pages (sometimes called a site index or site map page).
+- Limit the number of links on a page to a reasonable number (a few thousand at most).
+- Make sure that your web server correctly supports the `If-Modified-Since` HTTP header. This feature directs your web server to tell Google if your content has changed since we last crawled your site. Supporting this feature saves you bandwidth and overhead.
+- Use the robots.txt file on your web server to manage your crawling budget by preventing crawling of infinite spaces such as search result pages. Keep your robots.txt file up to date. [Learn how to manage crawling with the robots.txt file](https://developers.google.com/search/docs/advanced/robots/robots-faq). Test the coverage and syntax of your robots.txt file using the [robots.txt Tester](https://www.google.com/webmasters/tools/robots-testing-tool).
 
 **Ways to help Google find your site:**
 
--   [Ask Google to crawl your pages](https://developers.google.com/search/docs/advanced/crawling/ask-google-to-recrawl).
--   Make sure that any sites that should know about your pages are aware your site is online.
+- [Ask Google to crawl your pages](https://developers.google.com/search/docs/advanced/crawling/ask-google-to-recrawl).
+- Make sure that any sites that should know about your pages are aware your site is online.
 
 ### Help Google understand your pages
 
--   Create a useful, information-rich site, and write pages that clearly and accurately describe your content.
--   Think about the words users would type to find your pages, and make sure that your site actually includes those words within it.
--   Ensure that your `<title>` elements and `alt` attributes are descriptive, specific, and accurate.
--   Design your site to have a clear conceptual page hierarchy.
--   Follow our recommended best practices for [images](https://developers.google.com/search/docs/advanced/guidelines/google-images), [video](https://developers.google.com/search/docs/advanced/guidelines/video), and [structured data](https://developers.google.com/search/docs/guides/intro-structured-data).
--   When using a content management system (for example, Wix or WordPress), make sure that it creates pages and links that search engines can crawl.
--   To help Google fully understand your site's contents, allow all site assets that would significantly affect page rendering to be crawled: for example, CSS and JavaScript files that affect the understanding of the pages. The Google indexing system renders a web page as the user would see it, including images, CSS, and JavaScript files. To see which page assets that Googlebot cannot crawl use the [URL Inspection tool](https://support.google.com/webmasters/answer/9012289); to debug directives in your robots.txt file, use the [robots.txt Tester](https://support.google.com/webmasters/answer/6062598) tool.
--   Allow search bots to crawl your site without session IDs or URL parameters that track their path through the site. These techniques are useful for tracking individual user behavior, but the access pattern of bots is entirely different. Using these techniques may result in incomplete indexing of your site, as bots may not be able to eliminate URLs that look different but actually point to the same page.
--   Make your site's important content visible by default. Google is able to crawl HTML content hidden inside navigational elements such as tabs or expanding sections, however we consider this content less accessible to users, and believe that you should make your most important information visible in the default page view.
--   Make a reasonable effort to ensure that advertisement links on your pages do not affect search engine rankings. For example, use [robots.txt](https://developers.google.com/search/docs/advanced/robots/intro), `rel="nofollow"`, or `rel="sponsored"` to prevent advertisement links from being followed by a crawler.
+- Create a useful, information-rich site, and write pages that clearly and accurately describe your content.
+- Think about the words users would type to find your pages, and make sure that your site actually includes those words within it.
+- Ensure that your `<title>` elements and `alt` attributes are descriptive, specific, and accurate.
+- Design your site to have a clear conceptual page hierarchy.
+- Follow our recommended best practices for [images](https://developers.google.com/search/docs/advanced/guidelines/google-images), [video](https://developers.google.com/search/docs/advanced/guidelines/video), and [structured data](https://developers.google.com/search/docs/guides/intro-structured-data).
+- When using a content management system (for example, Wix or WordPress), make sure that it creates pages and links that search engines can crawl.
+- To help Google fully understand your site's contents, allow all site assets that would significantly affect page rendering to be crawled: for example, CSS and JavaScript files that affect the understanding of the pages. The Google indexing system renders a web page as the user would see it, including images, CSS, and JavaScript files. To see which page assets that Googlebot cannot crawl use the [URL Inspection tool](https://support.google.com/webmasters/answer/9012289); to debug directives in your robots.txt file, use the [robots.txt Tester](https://support.google.com/webmasters/answer/6062598) tool.
+- Allow search bots to crawl your site without session IDs or URL parameters that track their path through the site. These techniques are useful for tracking individual user behavior, but the access pattern of bots is entirely different. Using these techniques may result in incomplete indexing of your site, as bots may not be able to eliminate URLs that look different but actually point to the same page.
+- Make your site's important content visible by default. Google is able to crawl HTML content hidden inside navigational elements such as tabs or expanding sections, however we consider this content less accessible to users, and believe that you should make your most important information visible in the default page view.
+- Make a reasonable effort to ensure that advertisement links on your pages do not affect search engine rankings. For example, use [robots.txt](https://developers.google.com/search/docs/advanced/robots/intro), `rel="nofollow"`, or `rel="sponsored"` to prevent advertisement links from being followed by a crawler.
 
 ### Help visitors use your pages
 
--   Try to use text instead of images to display important names, content, or links. If you must use images for textual content, use the `alt` attribute to include a few words of descriptive text.
--   Ensure that all links go to live web pages. Use [valid HTML](https://validator.w3.org/).
--   Optimize your page loading times. Fast sites make users happy and improve the overall quality of the web (especially for those users with slow Internet connections). Google recommends that you use tools like [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) and [Webpagetest.org](https://www.webpagetest.org/) to test the performance of your page.
--   Design your site for all device types and sizes, including desktops, tablets, and smartphones. Use the [Mobile-Friendly Test](https://search.google.com/test/mobile-friendly) to test how well your pages work on mobile devices, and get feedback on what needs to be fixed.
--   Ensure that your site [appears correctly in different browsers](https://developers.google.com/search/docs/advanced/guidelines/browser-compatibility).
--   If possible, [secure your site's connections](https://developers.google.com/search/docs/advanced/security/https) with HTTPS. Encrypting interactions between the user and your website is a good practice for communication on the web.
--   Ensure that your pages are useful for readers with visual impairments, for example, by testing usability with a screen-reader.
+- Try to use text instead of images to display important names, content, or links. If you must use images for textual content, use the `alt` attribute to include a few words of descriptive text.
+- Ensure that all links go to live web pages. Use [valid HTML](https://validator.w3.org/).
+- Optimize your page loading times. Fast sites make users happy and improve the overall quality of the web (especially for those users with slow Internet connections). Google recommends that you use tools like [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) and [Webpagetest.org](https://www.webpagetest.org/) to test the performance of your page.
+- Design your site for all device types and sizes, including desktops, tablets, and smartphones. Use the [Mobile-Friendly Test](https://search.google.com/test/mobile-friendly) to test how well your pages work on mobile devices, and get feedback on what needs to be fixed.
+- Ensure that your site [appears correctly in different browsers](https://developers.google.com/search/docs/advanced/guidelines/browser-compatibility).
+- If possible, [secure your site's connections](https://developers.google.com/search/docs/advanced/security/https) with HTTPS. Encrypting interactions between the user and your website is a good practice for communication on the web.
+- Ensure that your pages are useful for readers with visual impairments, for example, by testing usability with a screen-reader.
 
 ### Quality guidelines
 
@@ -9756,33 +9736,33 @@ If you believe that another site is abusing Google's quality guidelines, please 
 
 ### Basic principles
 
--   Make pages primarily for users, not for search engines.
--   Don't deceive your users.
--   Avoid tricks intended to improve search engine rankings. A good rule of thumb is whether you'd feel comfortable explaining what you've done to a website that competes with you, or to a Google employee. Another useful test is to ask, "Does this help my users? Would I do this if search engines didn't exist?"
--   Think about what makes your website unique, valuable, or engaging. Make your website stand out from others in your field.
+- Make pages primarily for users, not for search engines.
+- Don't deceive your users.
+- Avoid tricks intended to improve search engine rankings. A good rule of thumb is whether you'd feel comfortable explaining what you've done to a website that competes with you, or to a Google employee. Another useful test is to ask, "Does this help my users? Would I do this if search engines didn't exist?"
+- Think about what makes your website unique, valuable, or engaging. Make your website stand out from others in your field.
 
 ### Specific guidelines
 
 **Avoid** the following techniques:
 
--   [Automatically generated content](https://developers.google.com/search/docs/advanced/guidelines/auto-gen-content)
--   Participating in [link schemes](https://developers.google.com/search/docs/advanced/guidelines/link-schemes)
--   Creating pages with [little or no original content](https://support.google.com/webmasters/answer/66361)
--   [Cloaking](https://developers.google.com/search/docs/advanced/guidelines/cloaking)
--   [Sneaky redirects](https://developers.google.com/search/docs/advanced/guidelines/sneaky-redirects)
--   [Hidden text or links](https://developers.google.com/search/docs/advanced/guidelines/hidden-text-links)
--   [Doorway pages](https://developers.google.com/search/docs/advanced/guidelines/doorway-pages)
--   [Scraped content](https://developers.google.com/search/docs/advanced/guidelines/scraped-content)
--   Participating in [affiliate programs without adding sufficient value](https://developers.google.com/search/docs/advanced/guidelines/affiliate-programs)
--   Loading pages with [irrelevant keywords](https://developers.google.com/search/docs/advanced/guidelines/irrelevant-keywords)
--   Creating pages with [malicious behavior](https://developers.google.com/search/docs/advanced/guidelines/malicious-behavior), such as phishing or installing viruses, trojans, or other badware
--   Abusing [structured data](https://developers.google.com/search/docs/guides/sd-policies) markup
--   Sending [automated queries](https://developers.google.com/search/docs/advanced/guidelines/automated-queries) to Google
+- [Automatically generated content](https://developers.google.com/search/docs/advanced/guidelines/auto-gen-content)
+- Participating in [link schemes](https://developers.google.com/search/docs/advanced/guidelines/link-schemes)
+- Creating pages with [little or no original content](https://support.google.com/webmasters/answer/66361)
+- [Cloaking](https://developers.google.com/search/docs/advanced/guidelines/cloaking)
+- [Sneaky redirects](https://developers.google.com/search/docs/advanced/guidelines/sneaky-redirects)
+- [Hidden text or links](https://developers.google.com/search/docs/advanced/guidelines/hidden-text-links)
+- [Doorway pages](https://developers.google.com/search/docs/advanced/guidelines/doorway-pages)
+- [Scraped content](https://developers.google.com/search/docs/advanced/guidelines/scraped-content)
+- Participating in [affiliate programs without adding sufficient value](https://developers.google.com/search/docs/advanced/guidelines/affiliate-programs)
+- Loading pages with [irrelevant keywords](https://developers.google.com/search/docs/advanced/guidelines/irrelevant-keywords)
+- Creating pages with [malicious behavior](https://developers.google.com/search/docs/advanced/guidelines/malicious-behavior), such as phishing or installing viruses, trojans, or other badware
+- Abusing [structured data](https://developers.google.com/search/docs/guides/sd-policies) markup
+- Sending [automated queries](https://developers.google.com/search/docs/advanced/guidelines/automated-queries) to Google
 
 **Follow** good practices:
 
--   Monitoring your site for [hacking](https://developers.google.com/search/docs/advanced/security/what-is-hacked) and removing hacked content as soon as it appears
--   Preventing and removing [user-generated spam](https://developers.google.com/search/docs/advanced/guidelines/user-gen-spam) on your site
+- Monitoring your site for [hacking](https://developers.google.com/search/docs/advanced/security/what-is-hacked) and removing hacked content as soon as it appears
+- Preventing and removing [user-generated spam](https://developers.google.com/search/docs/advanced/guidelines/user-gen-spam) on your site
 
 If your site violates one or more of these guidelines, then Google may take [manual action](https://support.google.com/webmasters/answer/9044175) against it. Once you have remedied the problem, you can [submit your site for reconsideration](https://support.google.com/webmasters/answer/35843).
 
@@ -9792,19 +9772,18 @@ Exported from [Medium](https://medium.com/) on July 13, 2021.
 
 [view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/General.ht.md)[General.ht.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-general-ht-md) hosted with ❤ by [GitHub](https://github.com/)
 
-Getting Started With PostgreSQL
-===============================
+# Getting Started With PostgreSQL
 
 In database jargon, PostgreSQL uses a client/server model. A PostgreSQL session consists of the following cooperating processes (programs):
 
-* * * * *
+---
 
 ### Getting Started With PostgreSQL
 
 #### In database jargon, PostgreSQL uses a client/server model. A PostgreSQL session consists of the following cooperating processes (programs):
 
--   A server process, which manages the database files, accepts connections to the database from client applications, and performs database actions on behalf of the clients. The database server program is called `postgres`.
--   The user's client (frontend) application that wants to perform database operations. Client applications can be very diverse in nature: a client could be a text-oriented tool, a graphical application, a web server that accesses the database to display web pages, or a specialized database maintenance tool. Some client applications are supplied with the PostgreSQL distribution; most are developed by users.
+- A server process, which manages the database files, accepts connections to the database from client applications, and performs database actions on behalf of the clients. The database server program is called `postgres`.
+- The user's client (frontend) application that wants to perform database operations. Client applications can be very diverse in nature: a client could be a text-oriented tool, a graphical application, a web server that accesses the database to display web pages, or a specialized database maintenance tool. Some client applications are supplied with the PostgreSQL distribution; most are developed by users.
 
 As is typical of client/server applications, the client and the server can be on different hosts. In that case they communicate over a TCP/IP network connection. You should keep this in mind, because the files that can be accessed on a client machine might not be accessible (or might only be accessible using a different file name) on the database server machine.
 
@@ -9816,12 +9795,12 @@ SQL is short for Structured Query Language. Originally, it used to be called SEQ
 
 SQL is a powerful language where we can perform a wide range of operations:
 
--   execute queries
--   fetch data
--   insert, update, and delete records in a database (DML operations)
--   create new objects in a database (DDL operations)
--   set permissions on tables, procedures, functions, and views
--   and much, much more...
+- execute queries
+- fetch data
+- insert, update, and delete records in a database (DML operations)
+- create new objects in a database (DDL operations)
+- set permissions on tables, procedures, functions, and views
+- and much, much more...
 
 ### What is the ANSI SQL standard?
 
@@ -9849,18 +9828,18 @@ But to be compliant with the ANSI standard, all databases support commands (like
 
 If we check the [PostgreSQL documentation of the INSERT statement](https://www.postgresql.org/docs/12/sql-insert.html), its conformity to the SQL standard is discussed in the page's Compatibility section:
 
-> *Compatibility*
+> _Compatibility_
 
-> *INSERT conforms to the SQL standard, except that the RETURNING clause is a PostgreSQL extension, as is the ability to use WITH with INSERT, and the ability to specify an alternative action with ON CONFLICT. Also, the case in which a column name list is omitted, but not all the columns are filled from the VALUES clause or query, is disallowed by the standard.*
+> _INSERT conforms to the SQL standard, except that the RETURNING clause is a PostgreSQL extension, as is the ability to use WITH with INSERT, and the ability to specify an alternative action with ON CONFLICT. Also, the case in which a column name list is omitted, but not all the columns are filled from the VALUES clause or query, is disallowed by the standard._
 
-> *The SQL standard specifies that OVERRIDING SYSTEM VALUE can only be specified if an identity column that is generated always exists. PostgreSQL allows the clause in any case and ignores it if it is not applicable.*
+> _The SQL standard specifies that OVERRIDING SYSTEM VALUE can only be specified if an identity column that is generated always exists. PostgreSQL allows the clause in any case and ignores it if it is not applicable._
 
 The PostgreSQL documentation includes clear descriptions of any differences from the SQL standard for any command, including:
 
--   DML (INSERT, SELECT, DELETE)
--   DDL (CREATE, ALTER, TRUNCATE, DROP, RENAME)
--   TCL (COMMIT, ROLLBACK, SAVEPOINT)
--   DCL (GRANT, REVOKE)
+- DML (INSERT, SELECT, DELETE)
+- DDL (CREATE, ALTER, TRUNCATE, DROP, RENAME)
+- TCL (COMMIT, ROLLBACK, SAVEPOINT)
+- DCL (GRANT, REVOKE)
 
 under each command's Compatibility section.
 
@@ -10382,20 +10361,20 @@ COPY 5
 
 ```
 
--   With the help of common table expressions (CTE):
+- With the help of common table expressions (CTE):
 
--   `postgres=#WITH RECURSIVE cte AS ( SELECT emp_no, ename, manager_no, 1 AS level FROM test_table where manager_no is null UNION ALL SELECT e.emp_no, e.ename, e.manager_no, c.level + 1 FROM cte c JOIN test_table e ON e.manager_no = c.emp_no ) SELECT * FROM cte; emp_no | ename | manager_no | level -----------+----------+------------------+------- 10 | A1 | | 1 11 | B1 | 10 | 2 12 | B2 | 10 | 2 13 | B3 | 10 | 2 14 | C1 | 13 | 3 17 | E1 | 11 | 3 18 | E2 | 11 | 3 15 | C2 | 13 | 3 16 | D1 | 15 | 4 (9 rows) postgres=#`
+- `postgres=#WITH RECURSIVE cte AS ( SELECT emp_no, ename, manager_no, 1 AS level FROM test_table where manager_no is null UNION ALL SELECT e.emp_no, e.ename, e.manager_no, c.level + 1 FROM cte c JOIN test_table e ON e.manager_no = c.emp_no ) SELECT * FROM cte; emp_no | ename | manager_no | level -----------+----------+------------------+------- 10 | A1 | | 1 11 | B1 | 10 | 2 12 | B2 | 10 | 2 13 | B3 | 10 | 2 14 | C1 | 13 | 3 17 | E1 | 11 | 3 18 | E2 | 11 | 3 15 | C2 | 13 | 3 16 | D1 | 15 | 4 (9 rows) postgres=#`
 
--   Using the tablefunc extension:
+- Using the tablefunc extension:
 
 1.  The [tablefunc extension](https://www.postgresql.org/docs/8.3/tablefunc.html) is a contrib module that resides in the contrib/ folder in PostgreSQL sources.
 2.  First, create the tablefunc extension:
 
--   `postgres=# CREATE EXTENSION tablefunc; CREATE EXTENSION postgres=#`
+- `postgres=# CREATE EXTENSION tablefunc; CREATE EXTENSION postgres=#`
 
 1.  Then, use tablefunc's connectby function to display results hierarchically:
 
--   `postgres=# SELECT * FROM connectby('dummy_table', 'emp_no', 'manager_no', '10', 0, '->') AS t(emp_no int, manager_no int, level int, ord text) order by emp_no; emp_no | manager_no | level | ord --------+------------+-------+---------------- 10 | | 0 | 10 11 | 10 | 1 | 10->11 12 | 10 | 1 | 10->12 13 | 10 | 1 | 10->13 14 | 13 | 2 | 10->13->14 15 | 13 | 2 | 10->13->15 16 | 15 | 3 | 10->13->15->16 17 | 11 | 2 | 10->11->17 18 | 11 | 2 | 10->11->18 (9 rows) postgres=#`
+- `postgres=# SELECT * FROM connectby('dummy_table', 'emp_no', 'manager_no', '10', 0, '->') AS t(emp_no int, manager_no int, level int, ord text) order by emp_no; emp_no | manager_no | level | ord --------+------------+-------+---------------- 10 | | 0 | 10 11 | 10 | 1 | 10->11 12 | 10 | 1 | 10->12 13 | 10 | 1 | 10->13 14 | 13 | 2 | 10->13->14 15 | 13 | 2 | 10->13->15 16 | 15 | 3 | 10->13->15->16 17 | 11 | 2 | 10->11->17 18 | 11 | 2 | 10->11->18 (9 rows) postgres=#`
 
 ### 20\. Listing databases query in PostgreSQL
 
@@ -10460,7 +10439,7 @@ DO
 
 ### 23\. COUNT query in PostgreSQL
 
-The [COUNT query](https://www.postgresql.org/docs/8.2/functions-aggregate.html) returns the number of rows in a table. If we use (*) this will include null values; otherwise null values will be excluded.
+The [COUNT query](https://www.postgresql.org/docs/8.2/functions-aggregate.html) returns the number of rows in a table. If we use (\*) this will include null values; otherwise null values will be excluded.
 
 ```
 postgres=# select count(*) from dummy_table;
@@ -10843,9 +10822,9 @@ NOT = reverses the value of Boolean operator
 
 ### Some logical operator examples
 
--   `If both expressions are true, then the result is TRUE. postgresql=# select 1=1/1 and 200=2+198 as result_and_operator; result_and_operator --------------------- t (1 row) postgresql=#`
--   `If one expression is true and another expression is NULL, then the result is NULL. postgresql=# select 4=4 and null; ?column? ---------- (1 row)`
--   `If one expression is true and another expression is false, then the result is TRUE. postgres=# select 1=100 OR 2=2; ?column? ---------- t (1 row)`
+- `If both expressions are true, then the result is TRUE. postgresql=# select 1=1/1 and 200=2+198 as result_and_operator; result_and_operator --------------------- t (1 row) postgresql=#`
+- `If one expression is true and another expression is NULL, then the result is NULL. postgresql=# select 4=4 and null; ?column? ---------- (1 row)`
+- `If one expression is true and another expression is false, then the result is TRUE. postgres=# select 1=100 OR 2=2; ?column? ---------- t (1 row)`
 
 ### 36\. Catching duplicate rows in a PostgreSQL table
 
@@ -11083,12 +11062,11 @@ Exported from [Medium](https://medium.com/) on July 13, 2021.
 
 [view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/Getting-St.md)[Getting-St.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-getting-st-md) hosted with ❤ by [GitHub](https://github.com/)
 
-Git-Tricks
-==========
+# Git-Tricks
 
 Refs
 
-* * * * *
+---
 
 ### Awesome GitHub Commands Reference Sheet (Quick Reference)
 
@@ -11465,29 +11443,28 @@ Exported from [Medium](https://medium.com/) on July 13, 2021.
 
 [view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/Git.md)[Git.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-git-md) hosted with ❤ by [GitHub](https://github.com/)
 
-Github Repositories That Will Teach You How To Code For Free!
-=============================================================
+# Github Repositories That Will Teach You How To Code For Free!
 
 30-seconds/30-seconds-of-code
 
-* * * * *
+---
 
 ### Github Repositories That Will Teach You How To Code For Free!
 
 ### 30-seconds/30-seconds-of-code
 
-> *Short JavaScript code snippets for all your development needs*
+> _Short JavaScript code snippets for all your development needs_
 
--   Visit [their website](https://30secondsofcode.org/) to view multiple snippet collections.
--   Use the [Search page](https://30secondsofcode.org/search) to find snippets that suit your needs. You can search by name, tag, language or using a snippet's description. Just start typing a term and see what comes up.
--   Browse the [JavaScript Snippet List](https://30secondsofcode.org/js/p/1) to see all the snippets in this project or click individual tags at the top of the same page to narrow down your search to a specific tag.
--   Click on each snippet card to view the whole snippet, including code, explanation and examples.
--   You can use the button on the right side of a snippet card to copy the code to clipboard.
+- Visit [their website](https://30secondsofcode.org/) to view multiple snippet collections.
+- Use the [Search page](https://30secondsofcode.org/search) to find snippets that suit your needs. You can search by name, tag, language or using a snippet's description. Just start typing a term and see what comes up.
+- Browse the [JavaScript Snippet List](https://30secondsofcode.org/js/p/1) to see all the snippets in this project or click individual tags at the top of the same page to narrow down your search to a specific tag.
+- Click on each snippet card to view the whole snippet, including code, explanation and examples.
+- You can use the button on the right side of a snippet card to copy the code to clipboard.
 
 [**30-seconds/30-seconds-of-code**\
 *Short JavaScript code snippets for all your development needs Visit our website to view our snippet collection. Use the...*github.com](https://github.com/30-seconds/30-seconds-of-code "https://github.com/30-seconds/30-seconds-of-code")[](https://github.com/30-seconds/30-seconds-of-code)
 
-* * * * *
+---
 
 ### railsgirls/railsgirls.github.io
 
@@ -11502,7 +11479,7 @@ You can use our materials and instructions to roll out your own workshop in your
 [**railsgirls/railsgirls.github.io**\
 *The purpose of Rails Girls is to give tools for women to understand technology. The Rails Girls events do this by...*github.com](https://github.com/railsgirls/railsgirls.github.io "https://github.com/railsgirls/railsgirls.github.io")[](https://github.com/railsgirls/railsgirls.github.io)
 
-* * * * *
+---
 
 ### railsbridge/docs
 
@@ -11517,9 +11494,9 @@ This is a Sinatra app, deployed at [](http://docs.railsbridge.org/)[http://docs
 Each subproject (a "site") comprises files stored under the "sites" directory; for instance, the installfest instructions are located at ROOT/sites/en/installfest, while the intro rails curriculum can be found under ROOT/sites/en/intro-to-rails. (The "en" means "English" --- see "Locales" below.)
 
 [**railsbridge/docs**\
-*This is a Sinatra app, deployed at *](https://github.com/railsbridge/docs "https://github.com/railsbridge/docs")*[http://docs.railsbridge.org](http://docs.railsbridge.org/). The RailsBridge documentation project is home to a few...*github.com[](https://github.com/railsbridge/docs)
+_This is a Sinatra app, deployed at _](https://github.com/railsbridge/docs "https://github.com/railsbridge/docs")*[http://docs.railsbridge.org](http://docs.railsbridge.org/). The RailsBridge documentation project is home to a few...*github.com[](https://github.com/railsbridge/docs)
 
-* * * * *
+---
 
 ### freeCodeCamp/freeCodeCamp
 
@@ -11532,7 +11509,7 @@ Our full-stack web development and machine learning curriculum is completely fre
 [**freeCodeCamp/freeCodeCamp**\
 *freeCodeCamp.org is a friendly community where you can learn to code for free. It is run by a donor-supported 501(c)(3)...*github.com](https://github.com/freeCodeCamp/freeCodeCamp "https://github.com/freeCodeCamp/freeCodeCamp")[](https://github.com/freeCodeCamp/freeCodeCamp)
 
-* * * * *
+---
 
 ### leachim6/hello-world
 
@@ -11549,7 +11526,7 @@ Make sure to see [contributing.md](https://github.com/leachim6/hello-world/blob
 [**leachim6/hello-world**\
 *Hello World in every computer language. As I watch the collection expand, this project has blown up more than I ever...*github.com](https://github.com/leachim6/hello-world "https://github.com/leachim6/hello-world")[](https://github.com/leachim6/hello-world)
 
-* * * * *
+---
 
 ### datasciencemasters/go
 
@@ -11559,35 +11536,35 @@ The open-source curriculum for learning Data Science. Foundational in both theor
 
 ### Contents
 
--   [The Open-Source Data Science Masters](https://github.com/datasciencemasters/go#the-open-source-data-science-masters)
--   [Contents](https://github.com/datasciencemasters/go#contents)
--   [The Internet is Your Oyster](https://github.com/datasciencemasters/go#the-internet-is-your-oyster)
--   [The Motivation](https://github.com/datasciencemasters/go#the-motivation)
--   [An Academic Shortfall](https://github.com/datasciencemasters/go#an-academic-shortfall)
--   [Ready?](https://github.com/datasciencemasters/go#ready)
--   [The Open Source Data Science Curriculum](https://github.com/datasciencemasters/go#the-open-source-data-science-curriculum)
--   [A Note About Direction](https://github.com/datasciencemasters/go#a-note-about-direction)
--   [Math](https://github.com/datasciencemasters/go#math)
--   [Computing](https://github.com/datasciencemasters/go#computing)
--   [Data Analysis](https://github.com/datasciencemasters/go#data-analysis)
--   [Data Communication and Design](https://github.com/datasciencemasters/go#data-communication-and-design)
--   [Python (Learning)](https://github.com/datasciencemasters/go#python-learning)
--   [Python (Libraries)](https://github.com/datasciencemasters/go#python-libraries)
--   [Datasets are now here](https://github.com/datasciencemasters/go#datasets-are-now-here)
--   [R resources are now here](https://github.com/datasciencemasters/go#r-resources-are-now-here)
--   [Data Science as a Profession](https://github.com/datasciencemasters/go#data-science-as-a-profession)
--   [Capstone Project](https://github.com/datasciencemasters/go#capstone-project)
--   [Resources](https://github.com/datasciencemasters/go#resources)
--   [Read](https://github.com/datasciencemasters/go#read)
--   [Watch & Listen](https://github.com/datasciencemasters/go#watch--listen)
--   [Learn](https://github.com/datasciencemasters/go#learn)
--   [Notation](https://github.com/datasciencemasters/go#notation)
--   [Contribute](https://github.com/datasciencemasters/go#contribute)
+- [The Open-Source Data Science Masters](https://github.com/datasciencemasters/go#the-open-source-data-science-masters)
+- [Contents](https://github.com/datasciencemasters/go#contents)
+- [The Internet is Your Oyster](https://github.com/datasciencemasters/go#the-internet-is-your-oyster)
+- [The Motivation](https://github.com/datasciencemasters/go#the-motivation)
+- [An Academic Shortfall](https://github.com/datasciencemasters/go#an-academic-shortfall)
+- [Ready?](https://github.com/datasciencemasters/go#ready)
+- [The Open Source Data Science Curriculum](https://github.com/datasciencemasters/go#the-open-source-data-science-curriculum)
+- [A Note About Direction](https://github.com/datasciencemasters/go#a-note-about-direction)
+- [Math](https://github.com/datasciencemasters/go#math)
+- [Computing](https://github.com/datasciencemasters/go#computing)
+- [Data Analysis](https://github.com/datasciencemasters/go#data-analysis)
+- [Data Communication and Design](https://github.com/datasciencemasters/go#data-communication-and-design)
+- [Python (Learning)](https://github.com/datasciencemasters/go#python-learning)
+- [Python (Libraries)](https://github.com/datasciencemasters/go#python-libraries)
+- [Datasets are now here](https://github.com/datasciencemasters/go#datasets-are-now-here)
+- [R resources are now here](https://github.com/datasciencemasters/go#r-resources-are-now-here)
+- [Data Science as a Profession](https://github.com/datasciencemasters/go#data-science-as-a-profession)
+- [Capstone Project](https://github.com/datasciencemasters/go#capstone-project)
+- [Resources](https://github.com/datasciencemasters/go#resources)
+- [Read](https://github.com/datasciencemasters/go#read)
+- [Watch & Listen](https://github.com/datasciencemasters/go#watch--listen)
+- [Learn](https://github.com/datasciencemasters/go#learn)
+- [Notation](https://github.com/datasciencemasters/go#notation)
+- [Contribute](https://github.com/datasciencemasters/go#contribute)
 
 [**datasciencemasters/go**\
 *The open-source curriculum for learning Data Science. Foundational in both theory and technologies, the OSDSM breaks...*github.com](https://github.com/datasciencemasters/go "https://github.com/datasciencemasters/go")[](https://github.com/datasciencemasters/go)
 
-* * * * *
+---
 
 ### tuvtran/project-based-learning
 
@@ -11598,7 +11575,7 @@ A list of programming tutorials in which learners build an application from scra
 [**tuvtran/project-based-learning**\
 *A list of programming tutorials in which learners build an application from scratch. These tutorials are divided into...*github.com](https://github.com/tuvtran/project-based-learning "https://github.com/tuvtran/project-based-learning")[](https://github.com/tuvtran/project-based-learning)
 
-* * * * *
+---
 
 ### zhiwehu/Python-programming-exercises
 
@@ -11612,9 +11589,9 @@ A list of programming tutorials in which learners build an application from scra
 *100+ Python Projects Challenge. Contribute to zhiwehu/100_plus_Python_Projects_Challenge development by creating an...*github.com](https://github.com/zhiwehu/100_plus_Python_Projects_Challenge "https://github.com/zhiwehu/100_plus_Python_Projects_Challenge")[](https://github.com/zhiwehu/100_plus_Python_Projects_Challenge)
 
 [**zhiwehu/Python-programming-exercises**\
-*100+ Python challenge programming exercises. *](https://github.com/zhiwehu/Python-programming-exercises "https://github.com/zhiwehu/Python-programming-exercises")*<https://github.com/zhiwehu/100_plus_Python_Projects_Challenge> Hey guys I...*github.com[](https://github.com/zhiwehu/Python-programming-exercises)
+_100+ Python challenge programming exercises. _](https://github.com/zhiwehu/Python-programming-exercises "https://github.com/zhiwehu/Python-programming-exercises")*<https://github.com/zhiwehu/100_plus_Python_Projects_Challenge> Hey guys I...*github.com[](https://github.com/zhiwehu/Python-programming-exercises)
 
-* * * * *
+---
 
 ### MunGell/awesome-for-beginners
 
@@ -11633,7 +11610,7 @@ If you are not a programmer but would like to contribute, check out the [Awesom
 [**MunGell/awesome-for-beginners**\
 *A list of awesome beginners-friendly projects. Contribute to MunGell/awesome-for-beginners development by creating an...*github.com](https://github.com/MunGell/awesome-for-beginners "https://github.com/MunGell/awesome-for-beginners")[](https://github.com/MunGell/awesome-for-beginners)
 
-* * * * *
+---
 
 ### appacademy/welcome-to-open
 
@@ -11656,7 +11633,7 @@ The rest of the courses from our legendary Full-Stack curriculum are available t
 [**appacademy/welcome-to-open**\
 *tl;dr: click here to learn to code for free With App Academy Open you'll get free access to App Academy's entire...*github.com](https://github.com/appacademy/welcome-to-open "https://github.com/appacademy/welcome-to-open")[](https://github.com/appacademy/welcome-to-open)
 
-* * * * *
+---
 
 ### webgems/webgems
 
@@ -11667,19 +11644,19 @@ This project should help anyone to find new resources but especially beginners i
 [**lostdesign/webgems**\
 *A curated list of resources for devs and designers. Join me on devcord.com if you are up for a chit chat :) Permalink...*github.com](https://github.com/lostdesign/webgems "https://github.com/lostdesign/webgems")[](https://github.com/lostdesign/webgems)
 
-* * * * *
+---
 
 ### kamranahmedse/developer-roadmap
 
 ### Purpose of these Roadmaps
 
-> *The purpose of these roadmaps is to give you an idea about the landscape and to guide you if you are confused about what to learn next and not to encourage you to pick what is hip and trendy. You should grow some understanding of why one tool would be better suited for some cases than the other and remember hip and trendy never means best suited for the job.*
+> _The purpose of these roadmaps is to give you an idea about the landscape and to guide you if you are confused about what to learn next and not to encourage you to pick what is hip and trendy. You should grow some understanding of why one tool would be better suited for some cases than the other and remember hip and trendy never means best suited for the job._
 
 ### Note to Beginners
 
-> *These roadmaps cover everything that is there to learn for the paths listed below. Don't feel overwhelmed, you don't need to learn it all in the beginning if you are just getting started. We are working on the beginner versions of these and will* [*release it soon*](https://roadmap.sh/) *after we are done with the 2021 release of the Backend and DevOps roadmaps.*
+> *These roadmaps cover everything that is there to learn for the paths listed below. Don't feel overwhelmed, you don't need to learn it all in the beginning if you are just getting started. We are working on the beginner versions of these and will* [_release it soon_](https://roadmap.sh/) *after we are done with the 2021 release of the Backend and DevOps roadmaps.*
 
-* * * * *
+---
 
 If you think that these can be improved in any way, please do suggest.
 
@@ -11696,7 +11673,7 @@ If you think that these can be improved in any way, please do suggest.
 [**kamranahmedse/developer-roadmap**\
 *Roadmap to becoming a web developer in 2021 Below you find a set of charts demonstrating the paths that you can take...*github.com](https://github.com/kamranahmedse/developer-roadmap "https://github.com/kamranahmedse/developer-roadmap")[](https://github.com/kamranahmedse/developer-roadmap)
 
-* * * * *
+---
 
 ### AMAI-GmbH/AI-Expert-Roadmap
 
@@ -11725,14 +11702,14 @@ The purpose of these roadmaps is to give you an idea about the landscape and to 
 [**AMAI-GmbH/AI-Expert-Roadmap**\
 *Roadmap to becoming an Artificial Intelligence Expert in 2021 Below you find a set of charts demonstrating the paths...*github.com](https://github.com/AMAI-GmbH/AI-Expert-Roadmap "https://github.com/AMAI-GmbH/AI-Expert-Roadmap")[](https://github.com/AMAI-GmbH/AI-Expert-Roadmap)
 
-* * * * *
+---
 
 ### trekhleb/javascript-algorithms
 
 [**trekhleb/javascript-algorithms**\
 *This repository contains JavaScript based examples of many popular algorithms and data structures. Each algorithm and...*github.com](https://github.com/trekhleb/javascript-algorithms "https://github.com/trekhleb/javascript-algorithms")[](https://github.com/trekhleb/javascript-algorithms)
 
-* * * * *
+---
 
 ### My personal Contribution:
 
@@ -11755,7 +11732,7 @@ The purpose of these roadmaps is to give you an idea about the landscape and to 
 
 here's a list of what's covered
 
-* * * * *
+---
 
 ### Microsoft/web-dev-for-beginners
 
@@ -11766,7 +11743,7 @@ Azure Cloud Advocates at Microsoft are pleased to offer a 12-week, 24-lesson cur
 [**microsoft/Web-Dev-For-Beginners**\
 *Azure Cloud Advocates at Microsoft are pleased to offer a 12-week, 24-lesson curriculum all about JavaScript, CSS, and...*github.com](https://github.com/microsoft/Web-Dev-For-Beginners "https://github.com/microsoft/Web-Dev-For-Beginners")[](https://github.com/microsoft/Web-Dev-For-Beginners)
 
-* * * * *
+---
 
 ### karan/Projects
 
@@ -11787,7 +11764,7 @@ You can find implementations of these projects in many other languages by other 
 [**karan/Projects**\
 *A list of practical projects that anyone can solve in any programming language (See solutions). These projects are...*github.com](https://github.com/karan/Projects "https://github.com/karan/Projects")[](https://github.com/karan/Projects)
 
-* * * * *
+---
 
 ### sindresorhus/awesome
 
@@ -11808,7 +11785,7 @@ This badge is for Awesome lists.
 [**sindresorhus/awesome**\
 *What is an awesome list? Contribution guide Creating a list Twitter Stickers & t-shirts Just type to go here. Check out...*github.com](https://github.com/sindresorhus/awesome "https://github.com/sindresorhus/awesome")[](https://github.com/sindresorhus/awesome)
 
-* * * * *
+---
 
 ### donnemartin/system-design-primer
 
@@ -11818,9 +11795,9 @@ This badge is for Awesome lists.
 
 ### Motivation
 
-> *Learn how to design large-scale systems.*
+> _Learn how to design large-scale systems._
 
-> *Prep for the system design interview.*
+> _Prep for the system design interview._
 
 ### Learn how to design large-scale systems
 
@@ -11845,7 +11822,7 @@ Practice common system design interview questions and compare your results with 
 [**donnemartin/system-design-primer**\
 *Learn how to design large-scale systems. Prep for the system design interview. Learning how to design scalable systems...*github.com](https://github.com/donnemartin/system-design-primer "https://github.com/donnemartin/system-design-primer")[](https://github.com/donnemartin/system-design-primer)
 
-* * * * *
+---
 
 ### danistefanovic/build-your-own-x
 
@@ -11855,59 +11832,59 @@ Practice common system design interview questions and compare your results with 
 
 ### Table of contents
 
--   [3D Renderer](https://github.com/danistefanovic/build-your-own-x#build-your-own-3d-renderer)
--   [Augmented Reality](https://github.com/danistefanovic/build-your-own-x#build-your-own-augmented-reality)
--   [BitTorrent Client](https://github.com/danistefanovic/build-your-own-x#build-your-own-bittorrent-client)
--   [Blockchain / Cryptocurrency](https://github.com/danistefanovic/build-your-own-x#build-your-own-blockchain--cryptocurrency)
--   [Bot](https://github.com/danistefanovic/build-your-own-x#build-your-own-bot)
--   [Command-Line Tool](https://github.com/danistefanovic/build-your-own-x#build-your-own-command-line-tool)
--   [Database](https://github.com/danistefanovic/build-your-own-x#build-your-own-database)
--   [Docker](https://github.com/danistefanovic/build-your-own-x#build-your-own-docker)
--   [Emulator / Virtual Machine](https://github.com/danistefanovic/build-your-own-x#build-your-own-emulator--virtual-machine)
--   [Front-end Framework / Library](https://github.com/danistefanovic/build-your-own-x#build-your-own-front-end-framework--library)
--   [Game](https://github.com/danistefanovic/build-your-own-x#build-your-own-game)
--   [Git](https://github.com/danistefanovic/build-your-own-x#build-your-own-git)
--   [Network Stack](https://github.com/danistefanovic/build-your-own-x#build-your-own-network-stack)
--   [Neural Network](https://github.com/danistefanovic/build-your-own-x#build-your-own-neural-network)
--   [Operating System](https://github.com/danistefanovic/build-your-own-x#build-your-own-operating-system)
--   [Physics Engine](https://github.com/danistefanovic/build-your-own-x#build-your-own-physics-engine)
--   [Programming Language](https://github.com/danistefanovic/build-your-own-x#build-your-own-programming-language)
--   [Regex Engine](https://github.com/danistefanovic/build-your-own-x#build-your-own-regex-engine)
--   [Search Engine](https://github.com/danistefanovic/build-your-own-x#build-your-own-search-engine)
--   [Shell](https://github.com/danistefanovic/build-your-own-x#build-your-own-shell)
--   [Template Engine](https://github.com/danistefanovic/build-your-own-x#build-your-own-template-engine)
--   [Text Editor](https://github.com/danistefanovic/build-your-own-x#build-your-own-text-editor)
--   [Visual Recognition System](https://github.com/danistefanovic/build-your-own-x#build-your-own-visual-recognition-system)
--   [Voxel Engine](https://github.com/danistefanovic/build-your-own-x#build-your-own-voxel-engine)
--   [Web Search Engine](https://github.com/danistefanovic/build-your-own-x#build-your-own-web-search-engine)
--   [Web Server](https://github.com/danistefanovic/build-your-own-x#build-your-own-web-server)
--   [Uncategorized](https://github.com/danistefanovic/build-your-own-x#uncategorized)
+- [3D Renderer](https://github.com/danistefanovic/build-your-own-x#build-your-own-3d-renderer)
+- [Augmented Reality](https://github.com/danistefanovic/build-your-own-x#build-your-own-augmented-reality)
+- [BitTorrent Client](https://github.com/danistefanovic/build-your-own-x#build-your-own-bittorrent-client)
+- [Blockchain / Cryptocurrency](https://github.com/danistefanovic/build-your-own-x#build-your-own-blockchain--cryptocurrency)
+- [Bot](https://github.com/danistefanovic/build-your-own-x#build-your-own-bot)
+- [Command-Line Tool](https://github.com/danistefanovic/build-your-own-x#build-your-own-command-line-tool)
+- [Database](https://github.com/danistefanovic/build-your-own-x#build-your-own-database)
+- [Docker](https://github.com/danistefanovic/build-your-own-x#build-your-own-docker)
+- [Emulator / Virtual Machine](https://github.com/danistefanovic/build-your-own-x#build-your-own-emulator--virtual-machine)
+- [Front-end Framework / Library](https://github.com/danistefanovic/build-your-own-x#build-your-own-front-end-framework--library)
+- [Game](https://github.com/danistefanovic/build-your-own-x#build-your-own-game)
+- [Git](https://github.com/danistefanovic/build-your-own-x#build-your-own-git)
+- [Network Stack](https://github.com/danistefanovic/build-your-own-x#build-your-own-network-stack)
+- [Neural Network](https://github.com/danistefanovic/build-your-own-x#build-your-own-neural-network)
+- [Operating System](https://github.com/danistefanovic/build-your-own-x#build-your-own-operating-system)
+- [Physics Engine](https://github.com/danistefanovic/build-your-own-x#build-your-own-physics-engine)
+- [Programming Language](https://github.com/danistefanovic/build-your-own-x#build-your-own-programming-language)
+- [Regex Engine](https://github.com/danistefanovic/build-your-own-x#build-your-own-regex-engine)
+- [Search Engine](https://github.com/danistefanovic/build-your-own-x#build-your-own-search-engine)
+- [Shell](https://github.com/danistefanovic/build-your-own-x#build-your-own-shell)
+- [Template Engine](https://github.com/danistefanovic/build-your-own-x#build-your-own-template-engine)
+- [Text Editor](https://github.com/danistefanovic/build-your-own-x#build-your-own-text-editor)
+- [Visual Recognition System](https://github.com/danistefanovic/build-your-own-x#build-your-own-visual-recognition-system)
+- [Voxel Engine](https://github.com/danistefanovic/build-your-own-x#build-your-own-voxel-engine)
+- [Web Search Engine](https://github.com/danistefanovic/build-your-own-x#build-your-own-web-search-engine)
+- [Web Server](https://github.com/danistefanovic/build-your-own-x#build-your-own-web-server)
+- [Uncategorized](https://github.com/danistefanovic/build-your-own-x#uncategorized)
 
 ### Tutorials
 
 #### Build your own `3D Renderer`
 
--   [C++: *Introduction to Ray Tracing: a Simple Method for Creating 3D Images*](https://www.scratchapixel.com/lessons/3d-basic-rendering/introduction-to-ray-tracing/how-does-it-work)
--   [C++: *How OpenGL works: software rendering in 500 lines of code*](https://github.com/ssloy/tinyrenderer/wiki)
--   [C++: *Raycasting engine of Wolfenstein 3D*](http://lodev.org/cgtutor/raycasting.html)
--   [C++: *Physically Based Rendering:From Theory To Implementation*](http://www.pbr-book.org/)
--   [C++: *Rasterization: a Practical Implementation*](https://www.scratchapixel.com/lessons/3d-basic-rendering/rasterization-practical-implementation/overview-rasterization-algorithm)
--   [C# / TypeScript / JavaScript: *Learning how to write a 3D soft engine from scratch in C#, TypeScript or JavaScript*](https://www.davrous.com/2013/06/13/tutorial-series-learning-how-to-write-a-3d-soft-engine-from-scratch-in-c-typescript-or-javascript/)
--   [Java / JavaScript: *Build your own 3D renderer*](https://avik-das.github.io/build-your-own-raytracer/)
--   [Java: *How to create your own simple 3D render engine in pure Java*](http://blog.rogach.org/2015/08/how-to-create-your-own-simple-3d-render.html)
--   [JavaScript / Pseudocode: *Computer Graphics from scratch*](http://www.gabrielgambetta.com/computer-graphics-from-scratch/introduction.html)
--   [Python: *A 3D Modeller*](http://aosabook.org/en/500L/a-3d-modeller.html)
+- [C++: *Introduction to Ray Tracing: a Simple Method for Creating 3D Images*](https://www.scratchapixel.com/lessons/3d-basic-rendering/introduction-to-ray-tracing/how-does-it-work)
+- [C++: *How OpenGL works: software rendering in 500 lines of code*](https://github.com/ssloy/tinyrenderer/wiki)
+- [C++: *Raycasting engine of Wolfenstein 3D*](http://lodev.org/cgtutor/raycasting.html)
+- [C++: *Physically Based Rendering:From Theory To Implementation*](http://www.pbr-book.org/)
+- [C++: *Rasterization: a Practical Implementation*](https://www.scratchapixel.com/lessons/3d-basic-rendering/rasterization-practical-implementation/overview-rasterization-algorithm)
+- [C# / TypeScript / JavaScript: *Learning how to write a 3D soft engine from scratch in C#, TypeScript or JavaScript*](https://www.davrous.com/2013/06/13/tutorial-series-learning-how-to-write-a-3d-soft-engine-from-scratch-in-c-typescript-or-javascript/)
+- [Java / JavaScript: *Build your own 3D renderer*](https://avik-das.github.io/build-your-own-raytracer/)
+- [Java: *How to create your own simple 3D render engine in pure Java*](http://blog.rogach.org/2015/08/how-to-create-your-own-simple-3d-render.html)
+- [JavaScript / Pseudocode: *Computer Graphics from scratch*](http://www.gabrielgambetta.com/computer-graphics-from-scratch/introduction.html)
+- [Python: *A 3D Modeller*](http://aosabook.org/en/500L/a-3d-modeller.html)
 
 [**danistefanovic/build-your-own-x**\
 *🤓 Build your own (insert technology here). Contribute to danistefanovic/build-your-own-x development by creating an...*github.com](https://github.com/danistefanovic/build-your-own-x "https://github.com/danistefanovic/build-your-own-x")[](https://github.com/danistefanovic/build-your-own-x)
 
-* * * * *
+---
 
 ### public-apis/public-apis
 
 ### Public APIs
 
-*A collective list of free APIs for use in software and web development.*
+_A collective list of free APIs for use in software and web development._
 
 A public API for this project can be found [here](https://github.com/davemachado/public-api)!
 
@@ -11918,7 +11895,7 @@ NOTE: A passing build status indicates all listed APIs are available since the l
 [**public-apis/public-apis**\
 *A collective list of free APIs. Contribute to public-apis/public-apis development by creating an account on GitHub.*github.com](https://github.com/public-apis/public-apis "https://github.com/public-apis/public-apis")[](https://github.com/public-apis/public-apis)
 
-* * * * *
+---
 
 ### EbookFoundation/free-programming-books
 
@@ -11933,9 +11910,9 @@ The list was moved to GitHub by Victor Felder for collaborative updating and mai
 The [Free Ebook Foundation](https://ebookfoundation.org/) now administers the repo, a not-for-profit organization devoted to promoting the creation, distribution, archiving, and sustainability of free ebooks. [Donations](https://ebookfoundation.org/contributions.html) to the Free Ebook Foundation are tax-deductible in the US.
 
 [**EbookFoundation/free-programming-books**\
-*This page is available as an easy-to-read website at *](https://github.com/EbookFoundation/free-programming-books "https://github.com/EbookFoundation/free-programming-books")*<https://ebookfoundation.github.io/>. This list was originally a...*github.com[](https://github.com/EbookFoundation/free-programming-books)
+_This page is available as an easy-to-read website at _](https://github.com/EbookFoundation/free-programming-books "https://github.com/EbookFoundation/free-programming-books")*<https://ebookfoundation.github.io/>. This list was originally a...*github.com[](https://github.com/EbookFoundation/free-programming-books)
 
-* * * * *
+---
 
 ### amitness/learning
 
@@ -11945,68 +11922,68 @@ The [Free Ebook Foundation](https://ebookfoundation.org/) now administers the 
 
 Learning Philosophy:
 
--   [The Power of Tiny Gains](https://jamesclear.com/continuous-improvement)
--   [Master Adjacent Disciplines](http://www.effectiveengineer.com/blog/master-adjacent-disciplines)
--   [T-shaped skills](https://en.wikipedia.org/wiki/T-shaped_skills)
--   [Data Scientists Should Be More End-to-End](https://eugeneyan.com/writing/end-to-end-data-science/)
--   [Just in Time Learning](https://www.developgoodhabits.com/just-in-time-learning/)
+- [The Power of Tiny Gains](https://jamesclear.com/continuous-improvement)
+- [Master Adjacent Disciplines](http://www.effectiveengineer.com/blog/master-adjacent-disciplines)
+- [T-shaped skills](https://en.wikipedia.org/wiki/T-shaped_skills)
+- [Data Scientists Should Be More End-to-End](https://eugeneyan.com/writing/end-to-end-data-science/)
+- [Just in Time Learning](https://www.developgoodhabits.com/just-in-time-learning/)
 
 ### Index
 
--   [Have basic business understanding](https://github.com/amitness/learning#have-basic-business-understanding)
--   [Be able to frame an ML problem](https://github.com/amitness/learning#be-able-to-frame-an-ml-problem)
--   [Be familiar with data ethics](https://github.com/amitness/learning#be-familiar-with-data-ethics)
--   [Be able to import data from multiple sources](https://github.com/amitness/learning#be-able-to-import-data-from-multiple-sources)
--   [Be able to setup data annotation efficiently](https://github.com/amitness/learning#be-able-to-setup-data-annotation-efficiently)
--   [Be able to manipulate data with Numpy](https://github.com/amitness/learning#be-able-to-manipulate-data-with-numpy)
--   [Be able to manipulate data with Pandas](https://github.com/amitness/learning#be-able-to-manipulate-data-with-pandas)
--   [Be able to manipulate data in spreadsheets](https://github.com/amitness/learning#be-able-to-manipulate-data-in-spreadsheets)
--   [Be able to manipulate data in databases](https://github.com/amitness/learning#be-able-to-manipulate-data-in-databases)
--   [Be able to use Linux tools](https://github.com/amitness/learning#be-able-to-use-linux-tools)
--   [Be able to perform feature engineering](https://github.com/amitness/learning#be-able-to-perform-feature-engineering)
--   [Be able to experiment in a notebook](https://github.com/amitness/learning#be-able-to-experiment-in-a-notebook)
--   [Be able to visualize data](https://github.com/amitness/learning#be-able-to-visualize-data)
--   [Be able to do literature review using research papers](https://github.com/amitness/learning#be-able-to-do-literature-review-using-research-papers)
--   [Be able to model problems mathematically](https://github.com/amitness/learning#be-able-to-model-problems-mathematically)
--   [Be able to structure machine learning projects](https://github.com/amitness/learning#be-able-to-structure-machine-learning-projects)
--   [Be able to version control code](https://github.com/amitness/learning#be-able-to-version-control-code)
--   [Be able to version control data](https://github.com/amitness/learning#be-able-to-version-control-data)
--   [Be familiar with fundamentals of ML and DL](https://github.com/amitness/learning#be-familiar-with-fundamentals-of-ml-and-dl)
--   [Be able to implement models in scikit-learn](https://github.com/amitness/learning#be-able-to-implement-models-in-scikit-learn)
--   [Be able to implement models in Tensorflow and Keras](https://github.com/amitness/learning#be-able-to-implement-models-in-tensorflow-and-keras)
--   [Be able to implement models in PyTorch](https://github.com/amitness/learning#be-able-to-implement-models-in-pytorch)
--   [Be able to implement models using cloud services](https://github.com/amitness/learning#be-able-to-implement-models-using-cloud-services)
--   [Be able to apply unsupervised learning algorithms](https://github.com/amitness/learning#be-able-to-apply-unsupervised-learning-algorithms)
--   [Be able to implement NLP models](https://github.com/amitness/learning#be-able-to-implement-nlp-models)
--   [Be familiar with multi-modal machine learning](https://github.com/amitness/learning#be-familiar-with-multi-modal-machine-learning)
--   [Be familiar with Recommendation Systems](https://github.com/amitness/learning#be-familiar-with-recommendation-systems)
--   [Be able to implement computer vision models](https://github.com/amitness/learning#be-able-to-implement-computer-vision-models)
--   [Be able to model graphs and network data](https://github.com/amitness/learning#be-able-to-model-graphs-and-network-data)
--   [Be able to implement models for timeseries and forecasting](https://github.com/amitness/learning#be-able-to-implement-models-for-timeseries-and-forecasting)
--   [Be familiar with Reinforcement Learning](https://github.com/amitness/learning#be-familiar-with-reinforcement-learning)
--   [Be able to optimize performance metric](https://github.com/amitness/learning#be-able-to-optimize-performance-metric)
--   [Be familiar with literature on model interpretability](https://github.com/amitness/learning#be-familiar-with-literature-on-model-interpretability)
--   [Be able to optimize models for inference](https://github.com/amitness/learning#be-able-to-optimize-models-for-inference)
--   [Be able to write unit tests](https://github.com/amitness/learning#be-able-to-write-unit-tests)
--   [Be able to serve models via APIs](https://github.com/amitness/learning#be-able-to-serve-models-via-apis)
--   [Be able to build interactive UI for models](https://github.com/amitness/learning#be-able-to-build-interactive-ui-for-models)
--   [Be able to deploy model to production](https://github.com/amitness/learning#be-able-to-deploy-model-to-production)
--   [Be able to perform load testing](https://github.com/amitness/learning#be-able-to-perform-load-testing)
--   [Be able to perform A/B testing](https://github.com/amitness/learning#be-able-to-perform-ab-testing)
--   [Be proficient in Python](https://github.com/amitness/learning#be-proficient-in-python)
--   [Be familiar with compiled languages](https://github.com/amitness/learning#be-familiar-with-compiled-languages)
--   [Have a general understanding of other parts of the stack](https://github.com/amitness/learning#have-a-general-understanding-of-other-parts-of-the-stack)
--   [Be familiar with fundamental Computer Science concepts](https://github.com/amitness/learning#be-familiar-with-fundamental-computer-science-concepts)
--   [Be able to apply proper software engineering process](https://github.com/amitness/learning#be-able-to-apply-proper-software-engineering-process)
--   [Be able to efficiently use a text editor](https://github.com/amitness/learning#be-able-to-efficiently-use-a-text-editor)
--   [Be able to communicate and collaborate well](https://github.com/amitness/learning#be-able-to-communicate-and-collaborate-well)
--   [Be familiar with the hiring pipeline](https://github.com/amitness/learning#be-familiar-with-the-hiring-pipeline)
--   [Broaden Perspective](https://github.com/amitness/learning#broaden-perspective)
+- [Have basic business understanding](https://github.com/amitness/learning#have-basic-business-understanding)
+- [Be able to frame an ML problem](https://github.com/amitness/learning#be-able-to-frame-an-ml-problem)
+- [Be familiar with data ethics](https://github.com/amitness/learning#be-familiar-with-data-ethics)
+- [Be able to import data from multiple sources](https://github.com/amitness/learning#be-able-to-import-data-from-multiple-sources)
+- [Be able to setup data annotation efficiently](https://github.com/amitness/learning#be-able-to-setup-data-annotation-efficiently)
+- [Be able to manipulate data with Numpy](https://github.com/amitness/learning#be-able-to-manipulate-data-with-numpy)
+- [Be able to manipulate data with Pandas](https://github.com/amitness/learning#be-able-to-manipulate-data-with-pandas)
+- [Be able to manipulate data in spreadsheets](https://github.com/amitness/learning#be-able-to-manipulate-data-in-spreadsheets)
+- [Be able to manipulate data in databases](https://github.com/amitness/learning#be-able-to-manipulate-data-in-databases)
+- [Be able to use Linux tools](https://github.com/amitness/learning#be-able-to-use-linux-tools)
+- [Be able to perform feature engineering](https://github.com/amitness/learning#be-able-to-perform-feature-engineering)
+- [Be able to experiment in a notebook](https://github.com/amitness/learning#be-able-to-experiment-in-a-notebook)
+- [Be able to visualize data](https://github.com/amitness/learning#be-able-to-visualize-data)
+- [Be able to do literature review using research papers](https://github.com/amitness/learning#be-able-to-do-literature-review-using-research-papers)
+- [Be able to model problems mathematically](https://github.com/amitness/learning#be-able-to-model-problems-mathematically)
+- [Be able to structure machine learning projects](https://github.com/amitness/learning#be-able-to-structure-machine-learning-projects)
+- [Be able to version control code](https://github.com/amitness/learning#be-able-to-version-control-code)
+- [Be able to version control data](https://github.com/amitness/learning#be-able-to-version-control-data)
+- [Be familiar with fundamentals of ML and DL](https://github.com/amitness/learning#be-familiar-with-fundamentals-of-ml-and-dl)
+- [Be able to implement models in scikit-learn](https://github.com/amitness/learning#be-able-to-implement-models-in-scikit-learn)
+- [Be able to implement models in Tensorflow and Keras](https://github.com/amitness/learning#be-able-to-implement-models-in-tensorflow-and-keras)
+- [Be able to implement models in PyTorch](https://github.com/amitness/learning#be-able-to-implement-models-in-pytorch)
+- [Be able to implement models using cloud services](https://github.com/amitness/learning#be-able-to-implement-models-using-cloud-services)
+- [Be able to apply unsupervised learning algorithms](https://github.com/amitness/learning#be-able-to-apply-unsupervised-learning-algorithms)
+- [Be able to implement NLP models](https://github.com/amitness/learning#be-able-to-implement-nlp-models)
+- [Be familiar with multi-modal machine learning](https://github.com/amitness/learning#be-familiar-with-multi-modal-machine-learning)
+- [Be familiar with Recommendation Systems](https://github.com/amitness/learning#be-familiar-with-recommendation-systems)
+- [Be able to implement computer vision models](https://github.com/amitness/learning#be-able-to-implement-computer-vision-models)
+- [Be able to model graphs and network data](https://github.com/amitness/learning#be-able-to-model-graphs-and-network-data)
+- [Be able to implement models for timeseries and forecasting](https://github.com/amitness/learning#be-able-to-implement-models-for-timeseries-and-forecasting)
+- [Be familiar with Reinforcement Learning](https://github.com/amitness/learning#be-familiar-with-reinforcement-learning)
+- [Be able to optimize performance metric](https://github.com/amitness/learning#be-able-to-optimize-performance-metric)
+- [Be familiar with literature on model interpretability](https://github.com/amitness/learning#be-familiar-with-literature-on-model-interpretability)
+- [Be able to optimize models for inference](https://github.com/amitness/learning#be-able-to-optimize-models-for-inference)
+- [Be able to write unit tests](https://github.com/amitness/learning#be-able-to-write-unit-tests)
+- [Be able to serve models via APIs](https://github.com/amitness/learning#be-able-to-serve-models-via-apis)
+- [Be able to build interactive UI for models](https://github.com/amitness/learning#be-able-to-build-interactive-ui-for-models)
+- [Be able to deploy model to production](https://github.com/amitness/learning#be-able-to-deploy-model-to-production)
+- [Be able to perform load testing](https://github.com/amitness/learning#be-able-to-perform-load-testing)
+- [Be able to perform A/B testing](https://github.com/amitness/learning#be-able-to-perform-ab-testing)
+- [Be proficient in Python](https://github.com/amitness/learning#be-proficient-in-python)
+- [Be familiar with compiled languages](https://github.com/amitness/learning#be-familiar-with-compiled-languages)
+- [Have a general understanding of other parts of the stack](https://github.com/amitness/learning#have-a-general-understanding-of-other-parts-of-the-stack)
+- [Be familiar with fundamental Computer Science concepts](https://github.com/amitness/learning#be-familiar-with-fundamental-computer-science-concepts)
+- [Be able to apply proper software engineering process](https://github.com/amitness/learning#be-able-to-apply-proper-software-engineering-process)
+- [Be able to efficiently use a text editor](https://github.com/amitness/learning#be-able-to-efficiently-use-a-text-editor)
+- [Be able to communicate and collaborate well](https://github.com/amitness/learning#be-able-to-communicate-and-collaborate-well)
+- [Be familiar with the hiring pipeline](https://github.com/amitness/learning#be-familiar-with-the-hiring-pipeline)
+- [Broaden Perspective](https://github.com/amitness/learning#broaden-perspective)
 
 [**amitness/learning**\
 *Becoming better at data science every day. Contribute to amitness/learning development by creating an account on...*github.com](https://github.com/amitness/learning "https://github.com/amitness/learning")[](https://github.com/amitness/learning)
 
-* * * * *
+---
 
 ### mhinz/vim-galore
 
@@ -12018,39 +11995,39 @@ Licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0).
 
 ### [Intro](https://github.com/mhinz/vim-galore#intro-1)
 
--   [What is Vim?](https://github.com/mhinz/vim-galore#what-is-vim)
--   [The Vim Philosophy](https://github.com/mhinz/vim-galore#the-vim-philosophy)
--   [First steps](https://github.com/mhinz/vim-galore#first-steps)
--   [Minimal vimrc](https://github.com/mhinz/vim-galore#minimal-vimrc)
--   [What kind of Vim am I running?](https://github.com/mhinz/vim-galore#what-kind-of-vim-am-i-running)
--   [Cheatsheets](https://github.com/mhinz/vim-galore#cheatsheets)
+- [What is Vim?](https://github.com/mhinz/vim-galore#what-is-vim)
+- [The Vim Philosophy](https://github.com/mhinz/vim-galore#the-vim-philosophy)
+- [First steps](https://github.com/mhinz/vim-galore#first-steps)
+- [Minimal vimrc](https://github.com/mhinz/vim-galore#minimal-vimrc)
+- [What kind of Vim am I running?](https://github.com/mhinz/vim-galore#what-kind-of-vim-am-i-running)
+- [Cheatsheets](https://github.com/mhinz/vim-galore#cheatsheets)
 
 ### [Basics](https://github.com/mhinz/vim-galore#basics-1)
 
--   [Buffers, windows, tabs](https://github.com/mhinz/vim-galore#buffers-windows-tabs)
--   [Active, loaded, listed, named buffers](https://github.com/mhinz/vim-galore#active-loaded-listed-named-buffers)
--   [Argument list](https://github.com/mhinz/vim-galore#argument-list)
--   [Mappings](https://github.com/mhinz/vim-galore#mappings)
--   [Mapleader](https://github.com/mhinz/vim-galore#mapleader)
--   [Registers](https://github.com/mhinz/vim-galore#registers)
--   [Ranges](https://github.com/mhinz/vim-galore#ranges)
--   [Marks](https://github.com/mhinz/vim-galore#marks)
--   [Completion](https://github.com/mhinz/vim-galore#completion)
--   [Motions, operators, text objects](https://github.com/mhinz/vim-galore#motions-operators-text-objects)
--   [Autocmds](https://github.com/mhinz/vim-galore#autocmds)
--   [Changelist, jumplist](https://github.com/mhinz/vim-galore#changelist-jumplist)
--   [Undo tree](https://github.com/mhinz/vim-galore#undo-tree)
--   [Quickfix and location lists](https://github.com/mhinz/vim-galore#quickfix-and-location-lists)
--   [Macros](https://github.com/mhinz/vim-galore#macros)
--   [Colorschemes](https://github.com/mhinz/vim-galore#colorschemes)
--   [Folding](https://github.com/mhinz/vim-galore#folding)
--   [Sessions](https://github.com/mhinz/vim-galore#sessions)
--   [Locality](https://github.com/mhinz/vim-galore#locality)
+- [Buffers, windows, tabs](https://github.com/mhinz/vim-galore#buffers-windows-tabs)
+- [Active, loaded, listed, named buffers](https://github.com/mhinz/vim-galore#active-loaded-listed-named-buffers)
+- [Argument list](https://github.com/mhinz/vim-galore#argument-list)
+- [Mappings](https://github.com/mhinz/vim-galore#mappings)
+- [Mapleader](https://github.com/mhinz/vim-galore#mapleader)
+- [Registers](https://github.com/mhinz/vim-galore#registers)
+- [Ranges](https://github.com/mhinz/vim-galore#ranges)
+- [Marks](https://github.com/mhinz/vim-galore#marks)
+- [Completion](https://github.com/mhinz/vim-galore#completion)
+- [Motions, operators, text objects](https://github.com/mhinz/vim-galore#motions-operators-text-objects)
+- [Autocmds](https://github.com/mhinz/vim-galore#autocmds)
+- [Changelist, jumplist](https://github.com/mhinz/vim-galore#changelist-jumplist)
+- [Undo tree](https://github.com/mhinz/vim-galore#undo-tree)
+- [Quickfix and location lists](https://github.com/mhinz/vim-galore#quickfix-and-location-lists)
+- [Macros](https://github.com/mhinz/vim-galore#macros)
+- [Colorschemes](https://github.com/mhinz/vim-galore#colorschemes)
+- [Folding](https://github.com/mhinz/vim-galore#folding)
+- [Sessions](https://github.com/mhinz/vim-galore#sessions)
+- [Locality](https://github.com/mhinz/vim-galore#locality)
 
 [**mhinz/vim-galore**\
 *Vim is a text editor with a long line of ancestors that goes back to qed. Bram Moolenaar released it in 1991. The...*github.com](https://github.com/mhinz/vim-galore "https://github.com/mhinz/vim-galore")[](https://github.com/mhinz/vim-galore)
 
-* * * * *
+---
 
 ### tayllan/awesome-algorithms
 
@@ -12060,19 +12037,19 @@ A curated list of awesome places to learn and/or practice algorithms. Inspired b
 
 If you want to contribute, please read the [contribution guidelines](https://github.com/tayllan/awesome-algorithms/blob/master/CONTRIBUTING.md).
 
--   [Awesome Algorithms](https://github.com/tayllan/awesome-algorithms#awesome-algorithms)
--   [Websites](https://github.com/tayllan/awesome-algorithms#websites)
--   [Online Courses](https://github.com/tayllan/awesome-algorithms#online-courses)
--   [Books](https://github.com/tayllan/awesome-algorithms#books)
--   [Cheat Sheets](https://github.com/tayllan/awesome-algorithms#cheat-sheets)
--   [Github Libraries](https://github.com/tayllan/awesome-algorithms#github-libraries)
--   [Online Judges](https://github.com/tayllan/awesome-algorithms#online-judges)
--   [Tools](https://github.com/tayllan/awesome-algorithms#tools)
+- [Awesome Algorithms](https://github.com/tayllan/awesome-algorithms#awesome-algorithms)
+- [Websites](https://github.com/tayllan/awesome-algorithms#websites)
+- [Online Courses](https://github.com/tayllan/awesome-algorithms#online-courses)
+- [Books](https://github.com/tayllan/awesome-algorithms#books)
+- [Cheat Sheets](https://github.com/tayllan/awesome-algorithms#cheat-sheets)
+- [Github Libraries](https://github.com/tayllan/awesome-algorithms#github-libraries)
+- [Online Judges](https://github.com/tayllan/awesome-algorithms#online-judges)
+- [Tools](https://github.com/tayllan/awesome-algorithms#tools)
 
 [**tayllan/awesome-algorithms**\
 *A curated list of awesome places to learn and/or practice algorithms. Inspired by awesome-awesomeness and all the other...*github.com](https://github.com/tayllan/awesome-algorithms "https://github.com/tayllan/awesome-algorithms")[](https://github.com/tayllan/awesome-algorithms)
 
-* * * * *
+---
 
 ### karlhorky/learn-to-program
 
@@ -12089,78 +12066,78 @@ This list aims to be a curated set of high quality educational resources. The av
 #### [Mozilla Webmaker](https://webmaker.org/)
 
 Free community and toolset to learn to create web pages and apps\
-*(HTML, CSS, JavaScript?)*
+_(HTML, CSS, JavaScript?)_
 
 #### [Codecademy](https://www.codecademy.com/)
 
 Free platform for learning to code in web technologies\
-*(HTML, CSS, JavaScript, jQuery, Python, Ruby, Rails, PHP)*
+_(HTML, CSS, JavaScript, jQuery, Python, Ruby, Rails, PHP)_
 
 #### [Khan Academy's Hour of Code](https://www.khanacademy.org/hourofcode)
 
 Free interactive 1-hour course to learn the very basics of web development\
-*(HTML, CSS, JavaScript, SQL)*
+_(HTML, CSS, JavaScript, SQL)_
 
 #### [UpLeveled Bootcamp Prep Course](https://learn.upleveled.io/)
 
 Freemium platform for learning the basics of web development\
-*(HTML, CSS, JavaScript, Node.js, Git, GitHub)*
+_(HTML, CSS, JavaScript, Node.js, Git, GitHub)_
 
 #### [Treehouse](https://teamtreehouse.com/)
 
 Paid platform for courses how to build websites & apps\
-*(Web Design, Front End Web Development, Rails, iOS, Android, PHP)*
+_(Web Design, Front End Web Development, Rails, iOS, Android, PHP)_
 
 #### [Learn CSS Layout](https://learnlayout.com/)
 
 Free tutorial for how to do layout with CSS\
-*(CSS)*
+_(CSS)_
 
 #### Udemy [Programming](https://www.udemy.com/courses/search/?q=programming), [Development](https://www.udemy.com/courses/Development/)
 
 Freemium marketplace of courses from third party providers. Quality may vary.\
-*(HTML, CSS, JavaScript, Ruby, Rails, Python, iOS, Android)*
+_(HTML, CSS, JavaScript, Ruby, Rails, Python, iOS, Android)_
 
 #### [Code Avengers](https://www.codeavengers.com/)
 
 Freemium platform for basic web and app develoment courses\
-*(HTML, CSS, JavaScript)*
+_(HTML, CSS, JavaScript)_
 
 #### [learn.shayhowe.com](https://learn.shayhowe.com/)
 
 Free beginner to intermediate guides on web development\
-*(HTML, CSS, JavaScript)*
+_(HTML, CSS, JavaScript)_
 
 #### [HTML Dog](https://www.htmldog.com/)
 
 Free beginner and intermediate guides on web development\
-*(HTML, CSS, JavaScript)*
+_(HTML, CSS, JavaScript)_
 
 #### Degreed [Web Development](https://degreed.com/learning/web%20development), [Programming](https://degreed.com/learning/programming)
 
 Mixed directory of courses, videos and other learning resources for web development and programming. Quality may vary.\
-*(HTML, CSS, JavaScript, AngularJS, Rails)*
+_(HTML, CSS, JavaScript, AngularJS, Rails)_
 
 #### [Platzi](https://courses.platzi.com/)
 
 Free Platform for classes on Design, Marketing, Startup and Code. Learn the future of the web.\
-*(RethinkDB, SailsJs, NodeJS, Git, Startup Class, etc)*
+_(RethinkDB, SailsJs, NodeJS, Git, Startup Class, etc)_
 
 #### [Free Code Camp](https://www.freecodecamp.org/)
 
 Free Learn to code and help nonprofits. An open source community of people who learn to code and help nonprofits.\
-*(HTML, CSS, JavaScript, Databases, Git & GitHub, Node.js, React.js, D3.js)*
+_(HTML, CSS, JavaScript, Databases, Git & GitHub, Node.js, React.js, D3.js)_
 
 [**karlhorky/learn-to-program**\
 *Foundation in Web Development The Internet is filled with an ever-expanding number of courses, books and guides for...*github.com](https://github.com/karlhorky/learn-to-program "https://github.com/karlhorky/learn-to-program")[](https://github.com/karlhorky/learn-to-program)
 
-* * * * *
+---
 
 ### therebelrobot/awesome-workshopper
 
 ### awesome-workshopper
 
-*alternatively, awesome-adventure*
+_alternatively, awesome-adventure_
 
 A list of workshopper/adventure-based tutorials for various things. Inspired by awesome. These are terminal-based guides to learning a new programming concept. Here's an example screenshot from rvagg's [learnyounode](https://github.com/workshopper/learnyounode):
 
@@ -12171,25 +12148,25 @@ If you know of any other workshopper/adventure tutorials, feel free to fork/PR o
 [**therebelrobot/awesome-workshopper**\
 *A list of workshopper/adventure-based tutorials for various things. Inspired by awesome. These are terminal-based...*github.com](https://github.com/therebelrobot/awesome-workshopper "https://github.com/therebelrobot/awesome-workshopper")[](https://github.com/therebelrobot/awesome-workshopper)
 
-* * * * *
+---
 
 ### jlevy/the-art-of-command-line
 
 ### The Art of Command Line
 
-*Note: I'm planning to revise this and looking for a new co-author to help with expanding this into a more comprehensive guide. While it's very popular, it could be broader and a bit deeper. If you like to write and are close to being an expert on this material and willing to consider helping, please drop me a note at josh (0x40) holloway.com. --*[*jlevy*](https://github.com/jlevy)*,* [*Holloway*](https://www.holloway.com/)*. Thank you!*
+_Note: I'm planning to revise this and looking for a new co-author to help with expanding this into a more comprehensive guide. While it's very popular, it could be broader and a bit deeper. If you like to write and are close to being an expert on this material and willing to consider helping, please drop me a note at josh (0x40) holloway.com. --_[_jlevy_](https://github.com/jlevy)*,* [_Holloway_](https://www.holloway.com/)_. Thank you!_
 
--   [Meta](https://github.com/jlevy/the-art-of-command-line#meta)
--   [Basics](https://github.com/jlevy/the-art-of-command-line#basics)
--   [Everyday use](https://github.com/jlevy/the-art-of-command-line#everyday-use)
--   [Processing files and data](https://github.com/jlevy/the-art-of-command-line#processing-files-and-data)
--   [System debugging](https://github.com/jlevy/the-art-of-command-line#system-debugging)
--   [One-liners](https://github.com/jlevy/the-art-of-command-line#one-liners)
--   [Obscure but useful](https://github.com/jlevy/the-art-of-command-line#obscure-but-useful)
--   [macOS only](https://github.com/jlevy/the-art-of-command-line#macos-only)
--   [Windows only](https://github.com/jlevy/the-art-of-command-line#windows-only)
--   [More resources](https://github.com/jlevy/the-art-of-command-line#more-resources)
--   [Disclaimer](https://github.com/jlevy/the-art-of-command-line#disclaimer)
+- [Meta](https://github.com/jlevy/the-art-of-command-line#meta)
+- [Basics](https://github.com/jlevy/the-art-of-command-line#basics)
+- [Everyday use](https://github.com/jlevy/the-art-of-command-line#everyday-use)
+- [Processing files and data](https://github.com/jlevy/the-art-of-command-line#processing-files-and-data)
+- [System debugging](https://github.com/jlevy/the-art-of-command-line#system-debugging)
+- [One-liners](https://github.com/jlevy/the-art-of-command-line#one-liners)
+- [Obscure but useful](https://github.com/jlevy/the-art-of-command-line#obscure-but-useful)
+- [macOS only](https://github.com/jlevy/the-art-of-command-line#macos-only)
+- [Windows only](https://github.com/jlevy/the-art-of-command-line#windows-only)
+- [More resources](https://github.com/jlevy/the-art-of-command-line#more-resources)
+- [Disclaimer](https://github.com/jlevy/the-art-of-command-line#disclaimer)
 
 [![](https://camo.githubusercontent.com/141556dff696b29c3ac84f933ee0b7b50769ca9092df3da9d8bab5b14881b4f0/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a55456d5a34466f585f453232416c4b472e706e67)](https://camo.githubusercontent.com/141556dff696b29c3ac84f933ee0b7b50769ca9092df3da9d8bab5b14881b4f0/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a55456d5a34466f585f453232416c4b472e706e67)
 
@@ -12200,11 +12177,11 @@ This work is the result of [many authors and translators](https://github.com/jl
 [**jlevy/the-art-of-command-line**\
 *Master the command line, in one page. Contribute to jlevy/the-art-of-command-line development by creating an account on...*github.com](https://github.com/jlevy/the-art-of-command-line "https://github.com/jlevy/the-art-of-command-line")[](https://github.com/jlevy/the-art-of-command-line)
 
-* * * * *
+---
 
 ### papers-we-love/papers-we-love
 
-Papers We Love (*PWL*) is a community built around reading, discussing and learning more about academic computer science papers. This repository serves as a directory of some of the best papers the community can find, bringing together documents scattered across the web. You can also visit the [Papers We Love site](http://paperswelove.org/) for more info.
+Papers We Love (_PWL_) is a community built around reading, discussing and learning more about academic computer science papers. This repository serves as a directory of some of the best papers the community can find, bringing together documents scattered across the web. You can also visit the [Papers We Love site](http://paperswelove.org/) for more info.
 
 Due to [licenses](https://github.com/papers-we-love/papers-we-love/blob/master/.github/CONTRIBUTING.md#respect-content-licenses) we cannot always host the papers themselves (when we do, you will see a 📜 emoji next to its title in the directory README) but we can provide links to their locations.
 
@@ -12213,7 +12190,7 @@ If you enjoy the papers, perhaps stop by a local chapter meetup and join in on t
 [**papers-we-love/papers-we-love**\
 *Papers We Love ( PWL) is a community built around reading, discussing and learning more about academic computer science...*github.com](https://github.com/papers-we-love/papers-we-love "https://github.com/papers-we-love/papers-we-love")[](https://github.com/papers-we-love/papers-we-love)
 
-* * * * *
+---
 
 ### awesome-selfhosted/awesome-selfhosted
 
@@ -12228,7 +12205,7 @@ See [Contributing](https://github.com/awesome-selfhosted/awesome-selfhosted/blo
 [**awesome-selfhosted/awesome-selfhosted**\
 *A list of Free Software network services and web applications which can be hosted on your own servers ...*github.com](https://github.com/awesome-selfhosted/awesome-selfhosted "https://github.com/awesome-selfhosted/awesome-selfhosted")[](https://github.com/awesome-selfhosted/awesome-selfhosted)
 
-* * * * *
+---
 
 ### ripienaar/free-for-dev
 
@@ -12247,7 +12224,7 @@ This list is the result of Pull Requests, reviews, ideas and work done by 900+ p
 [**ripienaar/free-for-dev**\
 *Developers and Open Source authors now have a massive amount of services offering free tiers, but it can be hard to...*github.com](https://github.com/ripienaar/free-for-dev "https://github.com/ripienaar/free-for-dev")[](https://github.com/ripienaar/free-for-dev)
 
-* * * * *
+---
 
 ### gothinkster/realworld
 
@@ -12265,7 +12242,7 @@ While most "todo" demos provide an excellent cursory glance at a framework's cap
 
 RealWorld solves this by allowing you to choose any frontend (React, Angular 2, & more) and any backend (Node, Django, & more) and see how they power a real world, beautifully designed fullstack app called "[Conduit](https://demo.realworld.io/)".
 
-*Read the* [*full blog post announcing RealWorld on Medium.*](https://medium.com/@ericsimons/introducing-realworld-6016654d36b5)
+*Read the* [_full blog post announcing RealWorld on Medium._](https://medium.com/@ericsimons/introducing-realworld-6016654d36b5)
 
 ### Implementations
 
@@ -12291,23 +12268,23 @@ Yup! We've built step-by-step tutorials for all of our stacks that teach you how
 
 Forks, tutorials, workshops, and other resources based on the RealWorld project:
 
--   [React+Redux / Node testing workshop](https://github.com/kentcdodds/testing-workshop) by [Kent C. Dodds](https://github.com/kentcdodds)
--   Example repo showing the React+Redux and Node stacks working together w/ TDD
--   Live recording of his workshop is [available on YouTube](https://www.youtube.com/watch?v=DdqiXcYDv-8)
--   [RealWorld React/NodeJS E2E Tests](https://github.com/anishkny/realworld-e2e-test) by [Anish Karandikar](https://github.com/anishkny)
--   A repo showing how to wire [React](https://github.com/gothinkster/react-redux-realworld-example-app) frontend with [NodeJS](https://github.com/gothinkster/node-express-realworld-example-app) backend for a RealWorld fullstack
--   Includes E2E integration tests that use [Chrome Puppeteer](https://github.com/GoogleChrome/puppeteer) and [Mocha](https://mochajs.org/) and work with CI systems like [Travis CI](https://travis-ci.org/anishkny/realworld-e2e-test) and [CircleCI](https://circleci.com/gh/anishkny/realworld-e2e-test)
--   Also demonstrates usage of [Greenkeeper](https://greenkeeper.io/) for automatic dependency updates and [Snyk](https://snyk.io/) for vulnerability monitoring
--   Performance comparisons:
--   [A Real-World Comparison of Front-End Frameworks with Benchmarks 2020](https://medium.com/dailyjs/a-realworld-comparison-of-front-end-frameworks-2020-4e50655fe4c1)
--   [A Real-World Comparison of Front-End Frameworks with Benchmarks 2019](https://medium.freecodecamp.org/a-realworld-comparison-of-front-end-frameworks-with-benchmarks-2019-update-4be0d3c78075)
--   [A Real-World Comparison of Front-End Frameworks with Benchmarks 2018](https://medium.freecodecamp.org/a-real-world-comparison-of-front-end-frameworks-with-benchmarks-2018-update-e5760fb4a962)
--   [A Real-World Comparison of Front-End Frameworks with Benchmarks 2017](https://medium.freecodecamp.org/a-real-world-comparison-of-front-end-frameworks-with-benchmarks-e1cb62fd526c)
+- [React+Redux / Node testing workshop](https://github.com/kentcdodds/testing-workshop) by [Kent C. Dodds](https://github.com/kentcdodds)
+- Example repo showing the React+Redux and Node stacks working together w/ TDD
+- Live recording of his workshop is [available on YouTube](https://www.youtube.com/watch?v=DdqiXcYDv-8)
+- [RealWorld React/NodeJS E2E Tests](https://github.com/anishkny/realworld-e2e-test) by [Anish Karandikar](https://github.com/anishkny)
+- A repo showing how to wire [React](https://github.com/gothinkster/react-redux-realworld-example-app) frontend with [NodeJS](https://github.com/gothinkster/node-express-realworld-example-app) backend for a RealWorld fullstack
+- Includes E2E integration tests that use [Chrome Puppeteer](https://github.com/GoogleChrome/puppeteer) and [Mocha](https://mochajs.org/) and work with CI systems like [Travis CI](https://travis-ci.org/anishkny/realworld-e2e-test) and [CircleCI](https://circleci.com/gh/anishkny/realworld-e2e-test)
+- Also demonstrates usage of [Greenkeeper](https://greenkeeper.io/) for automatic dependency updates and [Snyk](https://snyk.io/) for vulnerability monitoring
+- Performance comparisons:
+- [A Real-World Comparison of Front-End Frameworks with Benchmarks 2020](https://medium.com/dailyjs/a-realworld-comparison-of-front-end-frameworks-2020-4e50655fe4c1)
+- [A Real-World Comparison of Front-End Frameworks with Benchmarks 2019](https://medium.freecodecamp.org/a-realworld-comparison-of-front-end-frameworks-with-benchmarks-2019-update-4be0d3c78075)
+- [A Real-World Comparison of Front-End Frameworks with Benchmarks 2018](https://medium.freecodecamp.org/a-real-world-comparison-of-front-end-frameworks-with-benchmarks-2018-update-e5760fb4a962)
+- [A Real-World Comparison of Front-End Frameworks with Benchmarks 2017](https://medium.freecodecamp.org/a-real-world-comparison-of-front-end-frameworks-with-benchmarks-e1cb62fd526c)
 
 [**gothinkster/realworld**\
 *"The mother of all demo apps" - Exemplary fullstack Medium.com clone powered by React, Angular, Node, Django, and many...*github.com](https://github.com/gothinkster/realworld "https://github.com/gothinkster/realworld")[](https://github.com/gothinkster/realworld)
 
-* * * * *
+---
 
 ### thedaviddias/Front-End-Checklist
 
@@ -12324,28 +12301,28 @@ Other Checklists:\
 
 It is based on Front-End developers' years of experience, with the additions coming from some other open-source checklists.
 
-* * * * *
+---
 
 ### How to use?
 
 All items in the Front-End Checklist are required for the majority of the projects, but some elements can be omitted or are not essential (in the case of an administration web app, you may not need RSS feed for example). We choose to use 3 levels of flexibility:
 
--   means that the item is recommended but can be omitted in some particular situations.
--   means that the item is highly recommended and can eventually be omitted in some really particular cases. Some elements, if omitted, can have bad repercussions in terms of performance or SEO.
--   means that the item can't be omitted by any reason. You may cause a dysfunction in your page or have accessibility or SEO issues. The testing priority needs to be on these elements first.
+- means that the item is recommended but can be omitted in some particular situations.
+- means that the item is highly recommended and can eventually be omitted in some really particular cases. Some elements, if omitted, can have bad repercussions in terms of performance or SEO.
+- means that the item can't be omitted by any reason. You may cause a dysfunction in your page or have accessibility or SEO issues. The testing priority needs to be on these elements first.
 
 Some resources possess an emoticon to help you understand which type of content / help you may find on the checklist:
 
--   📖: documentation or article
--   🛠: online tool / testing tool
--   📹: media or video content
+- 📖: documentation or article
+- 🛠: online tool / testing tool
+- 📹: media or video content
 
-> *You can contribute to the* Front-End Checklist App *reading the* [*CONTRIBUTING.md file*](https://github.com/thedaviddias/Front-End-Checklist/blob/master/CONTRIBUTING.md) *which explains everything about the project.*
+> *You can contribute to the* Front-End Checklist App *reading the* [_CONTRIBUTING.md file_](https://github.com/thedaviddias/Front-End-Checklist/blob/master/CONTRIBUTING.md) *which explains everything about the project.*
 
 [**thedaviddias/Front-End-Checklist**\
 *The Front-End Checklist is an exhaustive list of all elements you need to have / to test before launching your website...*github.com](https://github.com/thedaviddias/Front-End-Checklist "https://github.com/thedaviddias/Front-End-Checklist")[](https://github.com/thedaviddias/Front-End-Checklist)
 
-* * * * *
+---
 
 ### Level Up Coding
 
@@ -12362,12 +12339,11 @@ Exported from [Medium](https://medium.com/) on July 13, 2021.
 
 [view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/Github-Rep.md)[Github-Rep.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-github-rep-md) hosted with ❤ by [GitHub](https://github.com/)
 
-Graph Data Structure Interview Questions At A Glance
-====================================================
+# Graph Data Structure Interview Questions At A Glance
 
 Because they're just about the most important data structure there is.
 
-* * * * *
+---
 
 ### Graph Data Structure Interview Questions At A Glance
 
@@ -12387,28 +12363,28 @@ trees are a type of graph
 
 Components required to make a graph:
 
--   **nodes or vertices**: represent objects in a dataset (cities, animals, web pages)
--   **edges**: connections between vertices; can be bidirectional
--   **weight**: cost to travel across an edge; optional (aka cost)
+- **nodes or vertices**: represent objects in a dataset (cities, animals, web pages)
+- **edges**: connections between vertices; can be bidirectional
+- **weight**: cost to travel across an edge; optional (aka cost)
 
 Useful for:
 
--   maps
--   networks of activity
--   anything you can represent as a network
--   multi-way relational data
+- maps
+- networks of activity
+- anything you can represent as a network
+- multi-way relational data
 
 Types of Graphs:
 
--   **directed**: can only move in one direction along edges; which direction indicated by arrows
--   **undirected**: allows movement in both directions along edges; bidirectional
--   **cyclic**: weighted; edges allow you to revisit at least 1 vertex; example weather
--   **acyclical**: vertices can only be visited once; example recipe
+- **directed**: can only move in one direction along edges; which direction indicated by arrows
+- **undirected**: allows movement in both directions along edges; bidirectional
+- **cyclic**: weighted; edges allow you to revisit at least 1 vertex; example weather
+- **acyclical**: vertices can only be visited once; example recipe
 
 Two common ways to represent graphs in code:
 
--   **adjacency lists**: graph stores list of vertices; for each vertex, it stores list of connected vertices
--   **adjacency matrices**: two-dimensional array of lists with built-in edge weights; denotes no relationship
+- **adjacency lists**: graph stores list of vertices; for each vertex, it stores list of connected vertices
+- **adjacency matrices**: two-dimensional array of lists with built-in edge weights; denotes no relationship
 
 Both have strengths and weaknesses.
 
@@ -12497,8 +12473,8 @@ e: Average number of edges per vertex
 
 #### Space Complexity
 
--   **Adjacency Matrix**: O(V ^ 2)
--   **Adjacency List**: O(V + E)
+- **Adjacency Matrix**: O(V ^ 2)
+- **Adjacency List**: O(V + E)
 
 Consider a sparse graph with 100 vertices and only one edge. An adjacency list would have to store all 100 vertices but only needs to keep track of that single edge. The adjacency matrix would need to store 100x100=10,000 possible connections, even though all but one would be 0.
 
@@ -12508,8 +12484,8 @@ Takeaway: Adjacency lists are more space efficient for **sparse** graphs while
 
 #### Add Vertex
 
--   **Adjacency Matrix**: O(V)
--   **Adjacency List**: O(1)
+- **Adjacency Matrix**: O(V)
+- **Adjacency List**: O(1)
 
 Adding a vertex is extremely simple in an adjacency list:
 
@@ -12535,8 +12511,8 @@ Takeaway: Adding vertices is very efficient in adjacency lists but very ineffici
 
 #### Remove Vertex
 
--   **Adjacency Matrix**: O(V ^ 2)
--   **Adjacency List**: O(V)
+- **Adjacency Matrix**: O(V ^ 2)
+- **Adjacency List**: O(V)
 
 Removing vertices is pretty inefficient in both representations. In an adjacency matrix, we need to remove the removed vertex's row, then remove that column from each other row. Removing an element from a list requires moving everything after that element over by one slot which takes an average of V/2 operations. Since we need to do that for every single row in our matrix, that results in a V² time complexity. On top of that, we need to reduce the index of each vertex after our removed index by 1 as well which doesn't add to our quadratic time complexity, but does add extra operations.
 
@@ -12546,8 +12522,8 @@ Takeaway: Removing vertices is inefficient in both adjacency matrices and lists 
 
 #### Add Edge
 
--   **Adjacency Matrix**: O(1)
--   **Adjacency List**: O(1)
+- **Adjacency Matrix**: O(1)
+- **Adjacency List**: O(1)
 
 Adding an edge in an adjacency matrix is quite simple:
 
@@ -12569,8 +12545,8 @@ Takeaway: Adding edges to both adjacency lists and matrices is very efficient.
 
 #### Remove Edge
 
--   **Adjacency Matrix**: O(1)
--   **Adjacency List**: O(1)
+- **Adjacency Matrix**: O(1)
+- **Adjacency List**: O(1)
 
 Removing an edge from an adjacency matrix is quite simple:
 
@@ -12592,8 +12568,8 @@ Takeaway: Removing edges from both adjacency lists and matrices is very efficien
 
 #### Find Edge
 
--   **Adjacency Matrix**: O(1)
--   **Adjacency List**: O(1)
+- **Adjacency Matrix**: O(1)
+- **Adjacency List**: O(1)
 
 Finding an edge in an adjacency matrix is quite simple:
 
@@ -12615,8 +12591,8 @@ Takeaway: Finding edges from both adjacency lists and matrices is very efficient
 
 #### Get All Edges from Vertex
 
--   **Adjacency Matrix**: O(V)
--   **Adjacency List**: O(1)
+- **Adjacency Matrix**: O(V)
+- **Adjacency List**: O(1)
 
 Say you want to know all the edges originating from a particular vertex. With an adjacency list, this is as simple as returning the value from the vertex dictionary:
 
@@ -12648,15 +12624,15 @@ Can use breadth-first search when searching a graph; explores graph outward in r
 
 ### Applications of BFS
 
--   pathfinding, routing
--   web crawlers
--   find neighbor nodes in P2P network
--   finding people/connections away on social network
--   find neighboring locations on graph
--   broadcasting on a network
--   cycle detection in a graph
--   finding connected components
--   solving several theoretical graph problems
+- pathfinding, routing
+- web crawlers
+- find neighbor nodes in P2P network
+- finding people/connections away on social network
+- find neighboring locations on graph
+- broadcasting on a network
+- cycle detection in a graph
+- finding connected components
+- solving several theoretical graph problems
 
 ### Coloring BFS
 
@@ -12709,12 +12685,12 @@ dives down the graph as far as it can before backtracking and exploring another 
 
 ### Applications of DFS
 
--   preferred method for exploring a graph if we want to ensure we visit every node in graph
--   finding minimum spanning trees of weighted graphs
--   pathfinding
--   detecting cycles in graphs
--   solving and generating mazes
--   topological sorting, useful for scheduling sequences of dependent jobs
+- preferred method for exploring a graph if we want to ensure we visit every node in graph
+- finding minimum spanning trees of weighted graphs
+- pathfinding
+- detecting cycles in graphs
+- solving and generating mazes
+- topological sorting, useful for scheduling sequences of dependent jobs
 
 ### DFS Pseudocode
 
@@ -12761,21 +12737,21 @@ def DFS_visit(v):
 
 ### Uses
 
--   typically very large graphs, networks
--   social networks
--   networks (which devices can reach one another)
--   epidemics (how spread, who started, where next)
+- typically very large graphs, networks
+- social networks
+- networks (which devices can reach one another)
+- epidemics (how spread, who started, where next)
 
 **key to finding connected components**: searching algorithms, breadth-first search
 
 ### How to find connected componnents
 
--   for each node in graph:
--   has it been explored
--   if no, do BFS
--   all nodes reached are connected
--   if yes, already in connected component
--   go to next node
+- for each node in graph:
+- has it been explored
+- if no, do BFS
+- all nodes reached are connected
+- if yes, already in connected component
+- go to next node
 
 **strongly connected components**: any node in this group can get to any other node
 
@@ -12816,10 +12792,10 @@ graph = {
 
 [![](https://camo.githubusercontent.com/dc23144a862e137f89dafc818c5a0b9c11af1552a30d2baf335ffc593adb5810/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f302a6f4f594567444256327968696d395343)](https://camo.githubusercontent.com/dc23144a862e137f89dafc818c5a0b9c11af1552a30d2baf335ffc593adb5810/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f302a6f4f594567444256327968696d395343)
 
--   A graph is any collection of nodes and edges.
--   A graph is a less restrictive class of collections of nodes than structures like a tree.
--   It doesn't need to have a root node (not every node needs to be accessible from a single node)
--   It can have cycles (a group of nodes whose paths begin and end at the same node)
+- A graph is any collection of nodes and edges.
+- A graph is a less restrictive class of collections of nodes than structures like a tree.
+- It doesn't need to have a root node (not every node needs to be accessible from a single node)
+- It can have cycles (a group of nodes whose paths begin and end at the same node)
 
 [![Cycles in a graph](https://camo.githubusercontent.com/de5a7e15b8f44e6e7ac31147d9656171b6b231f1ca88a4b7d857e3d6f758b98d/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6e4e325836544379304a5368346d664c2e676966)](https://camo.githubusercontent.com/de5a7e15b8f44e6e7ac31147d9656171b6b231f1ca88a4b7d857e3d6f758b98d/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6e4e325836544379304a5368346d664c2e676966)
 
@@ -12839,28 +12815,28 @@ Cycles in a graph- Cycles are not always "isolated", they can be one part of a
 
 ### Dense Graph
 
--   Dense Graph --- A graph with lots of edges.
--   "Dense graphs have many edges. But, wait! ⚠️ I know what you must be thinking, how can you determine what qualifies as "many edges"? This is a little bit too subjective, right? ? I agree with you, so let's quantify it a little bit:
--   Let's find the maximum number of edges in a directed graph. If there are |V| nodes in a directed graph (in the example below, six nodes), that means that each node can have up to |v| connections (in the example below, six connections).
--   Why? Because each node could potentially connect with all other nodes and with itself (see "loop" below). Therefore, the maximum number of edges that the graph can have is |V|\*|V| , which is the total number of nodes multiplied by the maximum number of connections that each node can have."
--   When the number of edges in the graph is close to the maximum number of edges, the graph is dense.
+- Dense Graph --- A graph with lots of edges.
+- "Dense graphs have many edges. But, wait! ⚠️ I know what you must be thinking, how can you determine what qualifies as "many edges"? This is a little bit too subjective, right? ? I agree with you, so let's quantify it a little bit:
+- Let's find the maximum number of edges in a directed graph. If there are |V| nodes in a directed graph (in the example below, six nodes), that means that each node can have up to |v| connections (in the example below, six connections).
+- Why? Because each node could potentially connect with all other nodes and with itself (see "loop" below). Therefore, the maximum number of edges that the graph can have is |V|\*|V| , which is the total number of nodes multiplied by the maximum number of connections that each node can have."
+- When the number of edges in the graph is close to the maximum number of edges, the graph is dense.
 
 ### Sparse Graph
 
--   Sparse Graph --- Few edges
--   When the number of edges in the graph is significantly fewer than the maximum number of edges, the graph is sparse.
+- Sparse Graph --- Few edges
+- When the number of edges in the graph is significantly fewer than the maximum number of edges, the graph is sparse.
 
 ### Weighted Graph
 
--   Weighted Graph --- Edges have a cost or a weight to traversal
+- Weighted Graph --- Edges have a cost or a weight to traversal
 
 ### Directed Graph
 
--   Directed Graph --- Edges only go one direction
+- Directed Graph --- Edges only go one direction
 
 ### *Undirected* Graph
 
--   Undirected Graph --- Edges don't have a direction. All graphs are assumed to be undirected unless otherwise stated
+- Undirected Graph --- Edges don't have a direction. All graphs are assumed to be undirected unless otherwise stated
 
 ### Node Class
 
@@ -12870,9 +12846,9 @@ Uses a class to define the neighbors as properties of each node.
 
 The row index will correspond to the source of an edge and the column index will correspond to the edges destination.
 
--   When the edges have a direction, `matrix[i][j]` may not be the same as `matrix[j][i]`
--   It is common to say that a node is adjacent to itself so `matrix[x][x]` is true for any node
--   Will be O(n²) space complexity
+- When the edges have a direction, `matrix[i][j]` may not be the same as `matrix[j][i]`
+- It is common to say that a node is adjacent to itself so `matrix[x][x]` is true for any node
+- Will be O(n²) space complexity
 
 [![](https://camo.githubusercontent.com/e4dfe8588a77a6455a8ed6d95b19a37f88442a17d4d904e5b635c243227fac57/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a326241555369715f656a33585453554d72796a4a55412e706e67)](https://camo.githubusercontent.com/e4dfe8588a77a6455a8ed6d95b19a37f88442a17d4d904e5b635c243227fac57/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a326241555369715f656a33585453554d72796a4a55412e706e67)
 
@@ -12888,12 +12864,11 @@ Exported from [Medium](https://medium.com/) on July 13, 2021.
 
 [view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/Graph-Data.md)[Graph-Data.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-graph-data-md) hosted with ❤ by [GitHub](https://github.com/)
 
-How To Implement Native(ES6) Data Structures Using Arrays & Objects
-===================================================================
+# How To Implement Native(ES6) Data Structures Using Arrays & Objects
 
 Smart data structures and dumb code works better than the other way around -"Eric S. Raymond"
 
-* * * * *
+---
 
 ### How To Implement Native(ES6) Data Structures Using Arrays & Objects
 
@@ -12901,9 +12876,9 @@ Smart data structures and dumb code works better than the other way around -"Eri
 
 [![https://data-flair.training/blogs/javascript-data-structures/](https://camo.githubusercontent.com/1e9ab85271f1179370efa57c723d198f90e2e32656e6c1155ffd527c1be50603/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3630302f302a5a42424f7a6f586a35536758745a62372e706e67)](https://camo.githubusercontent.com/1e9ab85271f1179370efa57c723d198f90e2e32656e6c1155ffd527c1be50603/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3630302f302a5a42424f7a6f586a35536758745a62372e706e67)
 
-<https://data-flair.training/blogs/javascript-data-structures/>#### *Abstract Data type (ADT) is a type (or class) for objects whose behavior is*
+<https://data-flair.training/blogs/javascript-data-structures/>#### _Abstract Data type (ADT) is a type (or class) for objects whose behavior is_
 
-#### *defined by a set of value and a set of operations. The definition of ADT only mentions what operations are to be performed but not how these operations will be implemented.*
+#### _defined by a set of value and a set of operations. The definition of ADT only mentions what operations are to be performed but not how these operations will be implemented._
 
 > [Abstract Data Type(ADT) is a data type, where only behavior is defined but not implementation.](https://stackoverflow.com/a/31113335/15158587)
 
@@ -12936,7 +12911,7 @@ Further Reading:
 ### For more content... go to :
 
 [**bgoonz - Overview**\
-*Web Developer, Electrical Engineer *](https://github.com/bgoonz "https://github.com/bgoonz")*<https://bryanguner.medium.com/> [https://portfolio42.netlify.app/...](https://portfolio42.netlify.app/%E2%80%A6)*github.com[](https://github.com/bgoonz)
+_Web Developer, Electrical Engineer _](https://github.com/bgoonz "https://github.com/bgoonz")*<https://bryanguner.medium.com/> [https://portfolio42.netlify.app/...](https://portfolio42.netlify.app/%E2%80%A6)*github.com[](https://github.com/bgoonz)
 
 By [Bryan Guner](https://medium.com/@bryanguner) on [May 15, 2021](https://medium.com/p/ce953b9f6a07).
 
@@ -12946,16 +12921,15 @@ Exported from [Medium](https://medium.com/) on July 13, 2021.
 
 [view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/How-To-Imp.md)[How-To-Imp.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-how-to-imp-md) hosted with ❤ by [GitHub](https://github.com/)
 
-HTTP Basics
-===========
+# HTTP Basics
 
 "If you want to build a ship, don't drum up the men and women to gather wood, divide the work, and give orders. Instead, teach them to...
 
-* * * * *
+---
 
 ### HTTP Basics
 
-> *"If you want to build a ship, don't drum up the men and women to gather wood, divide the work, and give orders. Instead, teach them to yearn for the vast and endless sea." --- Antoine de Saint-Exupery;*
+> _"If you want to build a ship, don't drum up the men and women to gather wood, divide the work, and give orders. Instead, teach them to yearn for the vast and endless sea." --- Antoine de Saint-Exupery;_
 
 [![](https://camo.githubusercontent.com/cf68a9f610eba11c0051053740c4c2cb435f107cebca391b0352c7ded13ea0e7/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a4c555165363044324665567a444569382e706e67)](https://camo.githubusercontent.com/cf68a9f610eba11c0051053740c4c2cb435f107cebca391b0352c7ded13ea0e7/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a4c555165363044324665567a444569382e706e67)
 
@@ -12973,17 +12947,17 @@ Each individual request is sent to a server, which handles it and provides an an
 
 **Properties of HTTP**
 
--   `Reliable Connections` : Messages passed between a client & server sacrifice a little speed for the sake of trust.
--   `TCP` is HTTP's preferred connection type.
--   `Stateless Transfer` : HTTP is a stateless protocol - meaning it does not store any kind of information.
--   HTTP supports cookies.
--   `Intermediaries` : Servers or devices that pass your request along which come in three types:
+- `Reliable Connections` : Messages passed between a client & server sacrifice a little speed for the sake of trust.
+- `TCP` is HTTP's preferred connection type.
+- `Stateless Transfer` : HTTP is a stateless protocol - meaning it does not store any kind of information.
+- HTTP supports cookies.
+- `Intermediaries` : Servers or devices that pass your request along which come in three types:
 
 1.  `Proxies` : Modify your request so it appears to come from a different source.
 2.  `Gateways` : Pretend to be the resource server you requested.
 3.  `Tunnels` : Simply passes your request along.
 
-* * * * *
+---
 
 ### HTTP Requests
 
@@ -13005,45 +12979,45 @@ Accept-Language: en-US,en;q=0.9
 
 [![](https://camo.githubusercontent.com/60e77e8f739f6f34b7f7185304be4fffe23443dcbd4316db274ee217afd8f12c/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a74712d425259757a5a5f44783873316735784a4b4b512e706e67)](https://camo.githubusercontent.com/60e77e8f739f6f34b7f7185304be4fffe23443dcbd4316db274ee217afd8f12c/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a74712d425259757a5a5f44783873316735784a4b4b512e706e67)
 
--   **Request-line & HTTP verbs**
--   The first line of an HTTP Request made up of three parts:
+- **Request-line & HTTP verbs**
+- The first line of an HTTP Request made up of three parts:
 
 1.  The `Method` : Indicated by an HTTP Verb.
 2.  The `URI` : Uniform Resource Indicator that ID's our request.
 3.  THe `HTTP` **Version** : Version we expect to use.
 
--   HTTP Verbs are a simply way of declaring our intention to the server.
--   `GET` : Used for direct requests.
--   `POST`: Used for creating new resources on the server.
--   `PUT`: Used to updated a resource on the server.
--   `PATCH` : Similar to PUT, but do not require the whole resource to perform the update.
--   `DELETE` : Used to destroy resources on the server.
+- HTTP Verbs are a simply way of declaring our intention to the server.
+- `GET` : Used for direct requests.
+- `POST`: Used for creating new resources on the server.
+- `PUT`: Used to updated a resource on the server.
+- `PATCH` : Similar to PUT, but do not require the whole resource to perform the update.
+- `DELETE` : Used to destroy resources on the server.
 
 **Headers**
 
--   Key-Value pairs that come after the request line --- they appear on sep. lines and define metadata needed to process the request.
--   Some common headers:
--   `Host` : Root path for our URI.
--   `User-Agent` : Displays information about which browser the request originated from.
--   `Referer` : Defines the URL you're coming from.
--   `Accept` : Indicates what the client will receive.
--   `Content`**-** : Define Details about the body of the request.
+- Key-Value pairs that come after the request line --- they appear on sep. lines and define metadata needed to process the request.
+- Some common headers:
+- `Host` : Root path for our URI.
+- `User-Agent` : Displays information about which browser the request originated from.
+- `Referer` : Defines the URL you're coming from.
+- `Accept` : Indicates what the client will receive.
+- `Content`**-** : Define Details about the body of the request.
 
 **Body**
 
--   For when we need to send data that doesn't fit into the header & is too complex for the URI we can use the *body*.
--   `URL encoding` : Most common way form data is formatted.
--   `name=claire&age=29&iceCream=vanilla`
--   We can also format using JSON or XML.
+- For when we need to send data that doesn't fit into the header & is too complex for the URI we can use the *body*.
+- `URL encoding` : Most common way form data is formatted.
+- `name=claire&age=29&iceCream=vanilla`
+- We can also format using JSON or XML.
 
 **Sending an HTTP request from the command line**
 
--   **netcat** : (nc) A Utility that comes as part of Unix-line environments such as Ubuntu and macOS.
--   Allows us to open a direct connection with a URL and manually send HTTP requests.
--   `nc -v appacademy.io 80`
--   `man nc` to open the netcat manual.
+- **netcat** : (nc) A Utility that comes as part of Unix-line environments such as Ubuntu and macOS.
+- Allows us to open a direct connection with a URL and manually send HTTP requests.
+- `nc -v appacademy.io 80`
+- `man nc` to open the netcat manual.
 
-* * * * *
+---
 
 ### HTTP Responses
 
@@ -13078,45 +13052,45 @@ CF-RAY: 51d641d1ca7d2d45-TXL
 
 **Status**
 
--   First line of an HTTP response --- gives us a high level overview of the server's intentions. (`status line`)
--   `HTTP/1.1 200 OK`
--   `HTTP status codes` : numeric way of representing a server's response.
--   Follow the structure: x: xxx --- xxx;
+- First line of an HTTP response --- gives us a high level overview of the server's intentions. (`status line`)
+- `HTTP/1.1 200 OK`
+- `HTTP status codes` : numeric way of representing a server's response.
+- Follow the structure: x: xxx --- xxx;
 
 ### `Status codes 100 - 199: Informational`
 
--   Allow the clinet to know that a req. was received, and provides extra info from the server.
+- Allow the clinet to know that a req. was received, and provides extra info from the server.
 
 ### `Status codes 200 - 299: Successful`
 
--   Indicate that the request has succeeded and the server is handling it.
--   Common Examples: 200 OK (req received and fulfilled) & 201 Created (received and new record was created)
+- Indicate that the request has succeeded and the server is handling it.
+- Common Examples: 200 OK (req received and fulfilled) & 201 Created (received and new record was created)
 
 ### `Status codes 300 - 399: Redirection`
 
--   Let the client know if there has been a change.
--   Common Examples: 301 Moved Permanently (resource you requested is in a totally new location) & 302 Found (indicates a temporary move)
+- Let the client know if there has been a change.
+- Common Examples: 301 Moved Permanently (resource you requested is in a totally new location) & 302 Found (indicates a temporary move)
 
 ### `Status codes 400 - 499: Client Error`
 
--   Indicate problem with client's request.
--   Common Examples: 400 Bad Request (received, but could not understand) & 401 Unauthorized (resource exists but you're not allowed to see w/o authentication) & 403 Forbidden (resource exists but you're not allowed to see it at all ) & 404 Not Found (resource requested does not exist);
+- Indicate problem with client's request.
+- Common Examples: 400 Bad Request (received, but could not understand) & 401 Unauthorized (resource exists but you're not allowed to see w/o authentication) & 403 Forbidden (resource exists but you're not allowed to see it at all ) & 404 Not Found (resource requested does not exist);
 
 ### `Status codes 500 - 599: Server Error`
 
--   Indicates request was formatted correctly, but the server couldn't do what you asked due to an internal problem.
--   Common Examples: 500 Internal Server Error (Server had trouble processing) & 504 Gateway Timeout (Server timeout);
+- Indicates request was formatted correctly, but the server couldn't do what you asked due to an internal problem.
+- Common Examples: 500 Internal Server Error (Server had trouble processing) & 504 Gateway Timeout (Server timeout);
 
 ### **Headers** : Work just like HTTP requests.
 
 > Common Examples:
 
--   `Location` : Used by client for redirection responses.
--   `Content-Type` : Let's client know what format the body is in.
--   `Expires` : When response is no longer valid
--   `Content-Disposition` : Let's client know how to display the response.
--   `Set-Cookie` : Sends data back to the client to set on the cookie.
--   `Data` : If the request is successful, the body of the response will contain the resource you have requested.
+- `Location` : Used by client for redirection responses.
+- `Content-Type` : Let's client know what format the body is in.
+- `Expires` : When response is no longer valid
+- `Content-Disposition` : Let's client know how to display the response.
+- `Set-Cookie` : Sends data back to the client to set on the cookie.
+- `Data` : If the request is successful, the body of the response will contain the resource you have requested.
 
 ### If you found this guide helpful feel free to checkout my GitHub/gists where I host similar content:
 
@@ -13145,12 +13119,11 @@ Exported from [Medium](https://medium.com/) on July 13, 2021.
 
 [view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/HTTP.md)[HTTP.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-http-md) hosted with ❤ by [GitHub](https://github.com/)
 
-Introduction to React for Complete Beginners
-============================================
+# Introduction to React for Complete Beginners
 
 All of the code examples below will be included a second time at the bottom of this article as an embedded gist.
 
-* * * * *
+---
 
 ### Introduction to React for Complete Beginners
 
@@ -13162,21 +13135,21 @@ React uses a syntax extension of JavaScript called JSX that allows you to write 
 
 ### React
 
-> *React uses a syntax extension of JavaScript called JSX that allows you to write HTML directly within JavaScript*
+> _React uses a syntax extension of JavaScript called JSX that allows you to write HTML directly within JavaScript_
 
-> *because JSX is a syntactic extension of JavaScript, you can actually write JavaScript directly within JSX*
+> _because JSX is a syntactic extension of JavaScript, you can actually write JavaScript directly within JSX_
 
-> *include the code you want to be treated as JavaScript within curly braces: { 'this is treated as JavaScript code' }*
+> _include the code you want to be treated as JavaScript within curly braces: { 'this is treated as JavaScript code' }_
 
-> *JSX code must be compiled into JavaScript*
+> _JSX code must be compiled into JavaScript_
 
-> *under the hood the challenges are calling ReactDOM.render (JSX, document.getElementById('root'))*
+> _under the hood the challenges are calling ReactDOM.render (JSX, document.getElementById('root'))_
 
-> *One important thing to know about nested JSX is that it must return a single element.*
+> _One important thing to know about nested JSX is that it must return a single element._
 
-> *For instance, several JSX elements written as siblings with no parent wrapper element will not transpile.*
+> _For instance, several JSX elements written as siblings with no parent wrapper element will not transpile._
 
-* * * * *
+---
 
 ### From the React Docs:
 
@@ -13220,7 +13193,7 @@ return React.createElement('div', {className: 'shopping-list'},
 
 ```
 
-* * * * *
+---
 
 ### Valid JSX:
 
@@ -13233,7 +13206,7 @@ return React.createElement('div', {className: 'shopping-list'},
 
 ```
 
-* * * * *
+---
 
 ### Invalid JSX:
 
@@ -13244,9 +13217,9 @@ return React.createElement('div', {className: 'shopping-list'},
 
 ```
 
-#### To put comments inside JSX, you use the syntax {/* */} to wrap around the comment text.
+#### To put comments inside JSX, you use the syntax {/\* \*/} to wrap around the comment text.
 
-To put comments inside JSX, you use the syntax {/* */} to wrap around the comment text.
+To put comments inside JSX, you use the syntax {/\* \*/} to wrap around the comment text.
 
 The code editor has a JSX element similar to what you created in the last challenge. Add a comment somewhere within the provided div element, without modifying the existing h1 or p elements.
 
@@ -13261,31 +13234,31 @@ const JSX = (
 
 ```
 
-* * * * *
+---
 
-> *With React, we can render this JSX directly to the HTML DOM using React's rendering API known as ReactDOM.*
+> _With React, we can render this JSX directly to the HTML DOM using React's rendering API known as ReactDOM._
 
-> *ReactDOM offers a simple method to render React elements to the DOM which looks like this:*
+> _ReactDOM offers a simple method to render React elements to the DOM which looks like this:_
 
 `ReactDOM.render(componentToRender, targetNode)`
 
--   the first argument is the React element or component that you want to render,
--   and the second argument is the DOM node that you want to render the component to.
+- the first argument is the React element or component that you want to render,
+- and the second argument is the DOM node that you want to render the component to.
 
-> *ReactDOM.render() must be called after the JSX element declarations, just like how you must declare variables before using them.*
+> _ReactDOM.render() must be called after the JSX element declarations, just like how you must declare variables before using them._
 
-> *key difference in JSX is that you can no longer use the word class to define HTML classes.*
+> _key difference in JSX is that you can no longer use the word class to define HTML classes._
 
--   --- -> This is because class is a reserved word in JavaScript. Instead, JSX uses className
+- --- -> This is because class is a reserved word in JavaScript. Instead, JSX uses className
 
-> *the naming convention for all HTML attributes and event references in JSX become camelCase*
+> _the naming convention for all HTML attributes and event references in JSX become camelCase_
 
-> *a click event in JSX is onClick, instead of onclick. Likewise, onchange becomes onChange. While this is a subtle difference, it is an important one to keep in mind moving forward.*
+> _a click event in JSX is onClick, instead of onclick. Likewise, onchange becomes onChange. While this is a subtle difference, it is an important one to keep in mind moving forward._
 
 ### Apply a class of myDiv to the div provided in the JSX code.
 
--   The constant JSX should return a div element.
--   The div should have a class of myDiv.
+- The constant JSX should return a div element.
+- The div should have a class of myDiv.
 
 ```
 const JSX = (
@@ -13313,14 +13286,14 @@ const JSX = (
 
 > *In HTML, almost all tags have both an opening and closing tag:* `<div></div>;` *the closing tag always has a forward slash before the tag name that you are closing.*
 
-> *there are special instances in HTML called "self-closing tags", or tags that don't require both an opening and closing tag before another tag can start.*
+> _there are special instances in HTML called "self-closing tags", or tags that don't require both an opening and closing tag before another tag can start._
 
-> *For example the line-break tag can be written as* `<br>` *or as* `<br />,` *but should never be written as* `<br></br>`*, since it doesn't contain any content.*
+> *For example the line-break tag can be written as* `<br>` *or as* `<br />,` *but should never be written as* `<br></br>`_, since it doesn't contain any content._
 
 > *In JSX, the rules are a little different. Any JSX element can be written with a self-closing tag, and every element must be closed.\
 > The line-break tag, for example, must always be written as* `<br />` *in order to be valid JSX that can be transpiled.\
-> A* `<div>`*, on the other hand, can be written as* `<div />`*or*`<div></div>`*.\
-> The difference is that in the first syntax version there is no way to include anything in the* `<div />`*.*
+> A* `<div>`*, on the other hand, can be written as* `<div />`_or_`<div></div>`*.\
+> The difference is that in the first syntax version there is no way to include anything in the* `<div />`_._
 
 ### Fix the errors in the code editor so that it is valid JSX and successfully transpiles. Make sure you don't change any of the content --- you only need to close tags where they are needed.
 
@@ -13348,21 +13321,21 @@ const JSX = (
 
 ```
 
-* * * * *
+---
 
 ### React: Create a Stateless Functional Component
 
-> *There are two ways to create a React component. The first way is to use a JavaScript function.*
+> _There are two ways to create a React component. The first way is to use a JavaScript function._
 
-> *Defining a component in this way creates a stateless functional component.*
+> _Defining a component in this way creates a stateless functional component._
 
-> *think of a stateless component as one that can receive data and render it, but does not manage or track changes to that data.*
+> _think of a stateless component as one that can receive data and render it, but does not manage or track changes to that data._
 
 #### To create a component with a function, you simply write a JavaScript function that returns either JSX or null
 
--   React requires your function name to begin with a capital letter.
+- React requires your function name to begin with a capital letter.
 
-> *Here's an example of a stateless functional component that assigns an HTML class in JSX:*
+> _Here's an example of a stateless functional component that assigns an HTML class in JSX:_
 
 ```
 // After being transpiled, the <div> will have a CSS class of 'customClass'
@@ -13374,7 +13347,7 @@ const DemoComponent = function() {
 
 ```
 
-> *Because a JSX component represents HTML, you could put several components together to create a more complex HTML page.*
+> _Because a JSX component represents HTML, you could put several components together to create a more complex HTML page._
 
 ### The code editor has a function called MyComponent. Complete this function so it returns a single div element which contains some string of text.
 
@@ -13404,11 +13377,11 @@ return (
 
 ```
 
-* * * * *
+---
 
 ### React: Create a React Component
 
-> *The other way to define a React component is with the ES6 class syntax. In the following example, Kitten extends React.Component:*
+> _The other way to define a React component is with the ES6 class syntax. In the following example, Kitten extends React.Component:_
 
 ```
 class Kitten extends React.Component {
@@ -13425,17 +13398,17 @@ class Kitten extends React.Component {
 
 ```
 
-> *This creates an ES6 class Kitten which extends the React.Component class.*
+> _This creates an ES6 class Kitten which extends the React.Component class._
 
-> *So the Kitten class now has access to many useful React features, such as local state and lifecycle hooks.*
+> _So the Kitten class now has access to many useful React features, such as local state and lifecycle hooks._
 
-> *Also notice the Kitten class has a constructor defined within it that calls super()*
+> _Also notice the Kitten class has a constructor defined within it that calls super()_
 
-> *It uses super() to call the constructor of the parent class, in this case React.Component*
+> _It uses super() to call the constructor of the parent class, in this case React.Component_
 
-> *The constructor is a special method used during the initialization of objects that are created with the class keyword. It is best practice to call a component's constructor with super, and pass props to both.*
+> _The constructor is a special method used during the initialization of objects that are created with the class keyword. It is best practice to call a component's constructor with super, and pass props to both._
 
-> *This makes sure the component is initialized properly. For now, know that it is standard for this code to be included.*
+> _This makes sure the component is initialized properly. For now, know that it is standard for this code to be included._
 
 ### MyComponent is defined in the code editor using class syntax. Finish writing the render method so it returns a div element that contains an h1 with the text Hello React!.
 
@@ -13474,15 +13447,15 @@ class MyComponent extends React.Component {
 
 ```
 
-* * * * *
+---
 
 ### React: Create a Component with Composition
 
-> *Imagine you are building an App and have created three components, a Navbar, Dashboard, and Footer.*
+> _Imagine you are building an App and have created three components, a Navbar, Dashboard, and Footer._
 
-> *To compose these components together, you could create an App parent component which renders each of these three components as children. To render a component as a child in a React component, you include the component name written as a custom HTML tag in the JSX.*
+> _To compose these components together, you could create an App parent component which renders each of these three components as children. To render a component as a child in a React component, you include the component name written as a custom HTML tag in the JSX._
 
--   For example, in the render method you could write:
+- For example, in the render method you could write:
 
 ```
 return (
@@ -13495,14 +13468,14 @@ return (
 
 ```
 
-> *When React encounters a custom HTML tag that references another component (a component name wrapped in < /> like in this example), it renders the markup for that component in the location of the tag. This should illustrate the parent/child relationship between the App component and the Navbar, Dashboard, and Footer.*
+> _When React encounters a custom HTML tag that references another component (a component name wrapped in < /> like in this example), it renders the markup for that component in the location of the tag. This should illustrate the parent/child relationship between the App component and the Navbar, Dashboard, and Footer._
 
 ### Challenge:
 
-> *In the code editor, there is a simple functional component called ChildComponent and a class component called ParentComponent. Compose the two together by rendering the ChildComponent within the ParentComponent. Make sure to close the ChildComponent tag with a forward slash.*
+> _In the code editor, there is a simple functional component called ChildComponent and a class component called ParentComponent. Compose the two together by rendering the ChildComponent within the ParentComponent. Make sure to close the ChildComponent tag with a forward slash._
 
--   Note:**ChildComponent is defined with an ES6 arrow function because this is a very common practice when using React**.
--   However, know that this is just a function.
+- Note:**ChildComponent is defined with an ES6 arrow function because this is a very common practice when using React**.
+- However, know that this is just a function.
 
 ```
 const ChildComponent = () => {
@@ -13569,9 +13542,9 @@ class ParentComponent extends React.Component {
 For more content follow me on GitHub:
 
 [**bgoonz - Overview**\
-*Web Developer, Electrical Engineer *](https://github.com/bgoonz "https://github.com/bgoonz")*<https://bryanguner.medium.com/> [https://portfolio42.netlify.app/...](https://portfolio42.netlify.app/%E2%80%A6)*github.com[](https://github.com/bgoonz)
+_Web Developer, Electrical Engineer _](https://github.com/bgoonz "https://github.com/bgoonz")*<https://bryanguner.medium.com/> [https://portfolio42.netlify.app/...](https://portfolio42.netlify.app/%E2%80%A6)*github.com[](https://github.com/bgoonz)
 
-*More content at* [*plainenglish.io*](http://plainenglish.io/)
+*More content at* [_plainenglish.io_](http://plainenglish.io/)
 
 By [Bryan Guner](https://medium.com/@bryanguner) on [May 19, 2021](https://medium.com/p/8021738aa1ad).
 
@@ -13581,10 +13554,9 @@ Exported from [Medium](https://medium.com/) on July 13, 2021.
 
 [view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/Introducti.md)[Introducti.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-introducti-md) hosted with ❤ by [GitHub](https://github.com/)
 
-It's my genuine pleasure... more coming soon!
-=============================================
+# It's my genuine pleasure... more coming soon!
 
-* * * * *
+---
 
 It's my genuine pleasure... more coming soon!
 
@@ -13596,12 +13568,11 @@ Exported from [Medium](https://medium.com/) on July 13, 2021.
 
 [view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/It-s-my-ge.md)[It-s-my-ge.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-it-s-my-ge-md) hosted with ❤ by [GitHub](https://github.com/)
 
-JavaScript Rotate (Array) ProblemWalkthrough
-============================================
+# JavaScript Rotate (Array) ProblemWalkthrough
 
 Explanation for Rotate Right
 
-* * * * *
+---
 
 #### [CODEX](http://medium.com/codex)
 
@@ -13622,7 +13593,7 @@ Write a function `rotateRight(array, num)` that takes in an array and a number
 
 **HINT:** you can use [Array#slice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice) to create a copy of an array
 
-* * * * *
+---
 
 > JavaScript gives us four methods to add or remove items from the beginning or end of arrays:
 
@@ -13685,35 +13656,35 @@ We need to start the function and create a variable to hold a COPY of our input 
 [**Array.prototype.slice()**\
 *The slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end...*developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice")[](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
 
--   We assign array.slice(0) to a variable called result.
--   Slicing our input array simply creates a sliced copy of the data.
--   Remember that by excluding a second argument in our slice parameter allows us to slice from the first argument all the way to the end.
+- We assign array.slice(0) to a variable called result.
+- Slicing our input array simply creates a sliced copy of the data.
+- Remember that by excluding a second argument in our slice parameter allows us to slice from the first argument all the way to the end.
 
 **Step 2.**\
 We need to create a for loop to tell our function how many times we want to rotate.
 
--   By setting our second delimiter to i < num we will ask our loops to run num times.
--   Running num times is the same as executing the code block within num times.
+- By setting our second delimiter to i < num we will ask our loops to run num times.
+- Running num times is the same as executing the code block within num times.
 
 **Step 3.**\
 We need to put some executable code within our for loop to be run during every cycle.
 
--   Since we are rotating to the right, every change to our result array under the hood will look like this (if we ref. our first test case):
--   `['a', 'b', 'c', 'd', 'e'];` (how it looks like at the start)
--   `['e', 'a', 'b', 'c', 'd'];` (after one run of the for loop)
--   `['d', 'e', 'a', 'b', 'c'];` (after second/last run of the for loop)
--   To accomplish this we first need to '`pop`' off or remove our last element.
--   Two things happen when we use this built-in function.
--   Our copied array is mutated to lose it's last ele.
--   The removed element is stored in the variable we assigned to the function.
--   Our second step is to add it to the start of our array, to do this we can use `unshift`.
--   By inputting the variable we are using to hold our removed element into the parameter of unshift we are adding our element to the front of the array.
+- Since we are rotating to the right, every change to our result array under the hood will look like this (if we ref. our first test case):
+- `['a', 'b', 'c', 'd', 'e'];` (how it looks like at the start)
+- `['e', 'a', 'b', 'c', 'd'];` (after one run of the for loop)
+- `['d', 'e', 'a', 'b', 'c'];` (after second/last run of the for loop)
+- To accomplish this we first need to '`pop`' off or remove our last element.
+- Two things happen when we use this built-in function.
+- Our copied array is mutated to lose it's last ele.
+- The removed element is stored in the variable we assigned to the function.
+- Our second step is to add it to the start of our array, to do this we can use `unshift`.
+- By inputting the variable we are using to hold our removed element into the parameter of unshift we are adding our element to the front of the array.
 
 **Step 4.**
 
 Now that our for loop has ended and our copied array looks just like how the answer looks, we need to output the answer.
 
--   We accomplish this by creating a `return` line AFTER the for loop.
+- We accomplish this by creating a `return` line AFTER the for loop.
 
 ### End Result
 
@@ -13740,12 +13711,11 @@ Exported from [Medium](https://medium.com/) on July 13, 2021.
 
 [view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/JavaScript-Rotate--Array-.md)[JavaScript-Rotate--Array-.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-javascript-rotate-array-md) hosted with ❤ by [GitHub](https://github.com/)
 
-JavaScript Frameworks & Libraries
-=================================
+# JavaScript Frameworks & Libraries
 
 My Awesome JavaScript List Part 2
 
-* * * * *
+---
 
 ### JavaScript Frameworks & Libraries
 
@@ -13755,12 +13725,12 @@ My Awesome JavaScript List Part 2
 
 #### Here's the rest of my stash!
 
-***...well... not really... here's the rest of my stash:***
+**_...well... not really... here's the rest of my stash:_**
 
 [**bgoonz/Cumulative-Resource-List**\
 *List of useful cheats heets Inspired by @sindresorhus awesome and improved by these amazing contributors . If you see a...*github.com](https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s "https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s")[](https://github.com/bgoonz/Cumulative-Resource-List/tree/master/README-s)
 
-* * * * *
+---
 
 ### Web Development frameworks
 
@@ -13858,7 +13828,7 @@ My Awesome JavaScript List Part 2
 
 > - ​[Lumino](https://github.com/jupyterlab/lumino) --- Library for building interactive web applications.
 
-* * * * *
+---
 
 > Animation
 
@@ -13886,7 +13856,7 @@ My Awesome JavaScript List Part 2
 
 > - ​[flubber](https://github.com/veltman/flubber) --- Tools for smoother shape animations.
 
-* * * * *
+---
 
 > ‌
 
@@ -13896,7 +13866,7 @@ My Awesome JavaScript List Part 2
 
 > - ​[qoa](https://github.com/klaussinani/qoa) --- Minimal interactive command-line prompts.
 
-* * * * *
+---
 
 > Test
 
@@ -13914,7 +13884,7 @@ My Awesome JavaScript List Part 2
 
 > - ​[Vest](https://github.com/ealush/vest) --- Declarative Validation Testing.
 
-* * * * *
+---
 
 > ‌
 
@@ -13954,7 +13924,7 @@ My Awesome JavaScript List Part 2
 
 > - ​[Statery](https://github.com/hmans/statery) --- Surprise-Free State Management. Designed for React with functional components.
 
-* * * * *
+---
 
 > ‌
 
@@ -13964,7 +13934,7 @@ My Awesome JavaScript List Part 2
 
 > - ​[NodeJS Instagram private API client](https://github.com/dilame/instagram-private-api)​
 
-* * * * *
+---
 
 > ‌
 
@@ -13980,7 +13950,7 @@ My Awesome JavaScript List Part 2
 
 > - ​[Connect PG Simple](https://github.com/voxpelli/node-connect-pg-simple) --- Simple, minimal PostgreSQL session store for Express/Connect.
 
-* * * * *
+---
 
 > ‌
 
@@ -14032,7 +14002,7 @@ My Awesome JavaScript List Part 2
 
 > Overlay
 
-> *Display overlay / modal / alert / dialog / lightbox / popup*
+> _Display overlay / modal / alert / dialog / lightbox / popup_
 
 > [react-dock](https://github.com/alexkuz/react-dock) --- Resizable dockable react component.
 
@@ -14054,7 +14024,7 @@ My Awesome JavaScript List Part 2
 
 > Notification
 
-> *Toaster / snackbar --- Notify the user with a modeless temporary little popup*
+> _Toaster / snackbar --- Notify the user with a modeless temporary little popup_
 
 > [react-notification-system](https://github.com/igorprado/react-notification-system) --- A complete and totally customizable component for notifications in React.
 
@@ -14076,7 +14046,7 @@ My Awesome JavaScript List Part 2
 
 > Menu
 
-> *Menus / sidebars*
+> _Menus / sidebars_
 
 > [react-burger-menu](https://github.com/negomi/react-burger-menu) --- An off-canvas sidebar component with a collection of effects and styles using CSS transitions and SVG path animations.
 
@@ -14096,7 +14066,7 @@ My Awesome JavaScript List Part 2
 
 > Sticky
 
-> *Fixed headers / scroll-up headers / sticky elements*
+> _Fixed headers / scroll-up headers / sticky elements_
 
 > [react-sticky](https://github.com/captivationsoftware/react-sticky) --- < Sticky /> component for awesome React apps.
 
@@ -14120,7 +14090,7 @@ My Awesome JavaScript List Part 2
 
 > Loader
 
-> *Loaders / spinners / progress bars --- Let the user know that something is loading*
+> _Loaders / spinners / progress bars --- Let the user know that something is loading_
 
 > [halogen](https://github.com/yuanyan/halogen) --- A collection of loading spinners with React.js.
 
@@ -14158,7 +14128,7 @@ My Awesome JavaScript List Part 2
 
 > Chart
 
-> *Display data in charts / graphs / diagrams*
+> _Display data in charts / graphs / diagrams_
 
 > [react-chartist](https://github.com/fraserxu/react-chartist) --- React component for Chartist.js.
 
@@ -14198,7 +14168,7 @@ My Awesome JavaScript List Part 2
 
 > Tree
 
-> *Display a tree data structure*
+> _Display a tree data structure_
 
 > [react-treeview](https://github.com/chenglou/react-treeview) --- Easy, light, flexible tree view made with React.
 
@@ -14208,7 +14178,7 @@ My Awesome JavaScript List Part 2
 
 > UI Navigation
 
-> *Ways to navigate views*
+> _Ways to navigate views_
 
 > [react-scroll](https://github.com/fisshy/react-scroll) --- React scroll component.
 
@@ -14260,7 +14230,7 @@ My Awesome JavaScript List Part 2
 
 > Time / Date / Age
 
-> *Display time / date / age*
+> _Display time / date / age_
 
 > [react-time](https://github.com/andreypopp/react-time) --- Component for React to render relative and/or formatted dates into < time> HTML5 element.
 
@@ -14270,7 +14240,7 @@ My Awesome JavaScript List Part 2
 
 > Photo / Image
 
-> *Display images / photos*
+> _Display images / photos_
 
 > [react-image-gallery](https://github.com/xiaolin/react-image-gallery) --- Responsive image gallery, carousel, image slider react component.
 
@@ -14286,7 +14256,7 @@ My Awesome JavaScript List Part 2
 
 > Icons
 
-> *Display icons / icon set / emojis*
+> _Display icons / icon set / emojis_
 
 > [react-icons](https://github.com/gorangajic/react-icons) --- Svg react icons of popular icon packs using ES6 imports.
 
@@ -14296,13 +14266,13 @@ My Awesome JavaScript List Part 2
 
 > Paginator
 
-> *Display a control element to paginate*
+> _Display a control element to paginate_
 
 > [react-paginate](https://github.com/AdeleD/react-paginate) --- A ReactJS component that creates a pagination.
 
 > Markdown Viewer
 
-> *Display parsed markdow source*
+> _Display parsed markdow source_
 
 > [react-markdown](https://github.com/rexxars/react-markdown) --- Render Markdown as React components.
 
@@ -14342,11 +14312,11 @@ My Awesome JavaScript List Part 2
 
 > Form Components
 
-> *Let the user enter data*
+> _Let the user enter data_
 
 > Date / Time picker
 
-> *Date picker / time picker / datetime picker / date range picker*
+> _Date picker / time picker / datetime picker / date range picker_
 
 > [react-datepicker](https://github.com/Hacker0x01/react-datepicker) --- A simple and reusable datepicker component for React.
 
@@ -14382,7 +14352,7 @@ My Awesome JavaScript List Part 2
 
 > Input Types
 
-> *Masked inputs, specialized inputs; email / telephone number / credit card / etc.*
+> _Masked inputs, specialized inputs; email / telephone number / credit card / etc._
 
 > [react-input-mask](https://github.com/sanniassin/react-input-mask) --- Yet another react component for input masking.
 
@@ -14394,7 +14364,7 @@ My Awesome JavaScript List Part 2
 
 > Autocomplete
 
-> *Autosuggest / autocomplete / typeahead*
+> _Autosuggest / autocomplete / typeahead_
 
 > [react-autosuggest](https://github.com/moroshko/react-autosuggest) --- WAI-ARIA compliant React autosuggest component.
 
@@ -14438,7 +14408,7 @@ My Awesome JavaScript List Part 2
 
 > Type Select
 
-> *Let the user select something (e.g. a tag) while typing*
+> _Let the user select something (e.g. a tag) while typing_
 
 > [react-tagsinput](https://github.com/olahol/react-tagsinput) --- A simple react component for inputing tags.
 
@@ -14480,7 +14450,7 @@ My Awesome JavaScript List Part 2
 
 > Sortable List
 
-> *Let the user define an order on a list*
+> _Let the user define an order on a list_
 
 > [sortablejs](https://github.com/RubaXa/Sortable) --- Sortable --- is a JavaScript library for reorderable drag-and-drop lists on modern browsers and touch devices. No jQuery. Supports Meteor, AngularJS, React, Polymer, Knockout and any CSS library, e.g. Bootstrap.
 
@@ -14522,7 +14492,7 @@ My Awesome JavaScript List Part 2
 
 > Image Editing
 
-> *Image manipulation*
+> _Image manipulation_
 
 > [react-avatar-cropper](https://github.com/DropsOfSerenity/react-avatar-cropper) --- Aiming to be a complete solution for avatar cropping in react.
 
@@ -14550,7 +14520,7 @@ My Awesome JavaScript List Part 2
 
 > [react-tabguard](https://github.com/avocode/react-tabguard) --- React Tabguard.
 
-* * * * *
+---
 
 > MISC
 
@@ -14836,7 +14806,7 @@ My Awesome JavaScript List Part 2
 
 > - ​[core-js](https://github.com/zloirock/core-js) --- Modular standard library for JavaScript.
 
-> - ​[timeago.js](https://github.com/hustcc/timeago.js) --- Nano library (less than 2 kb) used to format datetime with *** time ago statement. eg: '3 hours ago'.
+> - ​[timeago.js](https://github.com/hustcc/timeago.js) --- Nano library (less than 2 kb) used to format datetime with \*\*\* time ago statement. eg: '3 hours ago'.
 
 > - ​[Serialize JavaScript](https://github.com/yahoo/serialize-javascript) --- Serialize JavaScript to a superset of JSON that includes regular expressions, dates and functions.
 
@@ -15341,12 +15311,11 @@ Exported from [Medium](https://medium.com/) on July 13, 2021.
 
 [view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/JavaScript.md)[JavaScript.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-javascript-md) hosted with ❤ by [GitHub](https://github.com/)
 
-Job Boards and The Hunt
-=======================
+# Job Boards and The Hunt
 
 I can't imagine the kind of masochism it would take to enjoy the act of posting and daily maintenance on a job board...It's part of the...
 
-* * * * *
+---
 
 ### Job Boards and The Hunt
 
@@ -15354,7 +15323,7 @@ I can't imagine the kind of masochism it would take to enjoy the act of posting 
 
 [![](https://camo.githubusercontent.com/7278c0fec3d3a82d863c0175f47e3a08d105e905af3d37040448b5c4b5a5c736/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a48347077777544456a6b5954574b704a2e676966)](https://camo.githubusercontent.com/7278c0fec3d3a82d863c0175f47e3a08d105e905af3d37040448b5c4b5a5c736/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a48347077777544456a6b5954574b704a2e676966)
 
-* * * * *
+---
 
 > Here I will maintain a running list of applicable job boards and below I will go into detail about the niches they occupy and whatever I resource I have found to use them to your maximum advantage. !
 
@@ -15362,54 +15331,54 @@ I can't imagine the kind of masochism it would take to enjoy the act of posting 
 
 #### General Boards
 
--   [Built In](https://builtin.com/jobs)
--   [Stack Overflow](https://stackoverflow.com/jobs)
--   [angel.co](http://angel.co/jobs)
--   [The Ladders](https://www.theladders.com/jobs/search-jobs)
--   [CrunchBoard](http://www.crunchboard.com/jobs)
--   [Uncubed](https://uncubed.com/)
--   [Technical.ly](https://technical.ly/jobs/)
--   [Dice](https://www.dice.com/)
--   [Tech Careers](https://www.techcareers.com/)
--   [Mashable](http://jobs.mashable.com/jobs/search/results)
+- [Built In](https://builtin.com/jobs)
+- [Stack Overflow](https://stackoverflow.com/jobs)
+- [angel.co](http://angel.co/jobs)
+- [The Ladders](https://www.theladders.com/jobs/search-jobs)
+- [CrunchBoard](http://www.crunchboard.com/jobs)
+- [Uncubed](https://uncubed.com/)
+- [Technical.ly](https://technical.ly/jobs/)
+- [Dice](https://www.dice.com/)
+- [Tech Careers](https://www.techcareers.com/)
+- [Mashable](http://jobs.mashable.com/jobs/search/results)
 
 #### Remote or Relocation Boards:
 
--   [We Work Remotely](https://weworkremotely.com/)
--   [Relocate](https://relocate.me/)[‍](https://workfromhomejobs.me/)
--   [Work From Home Jobs](https://workfromhomejobs.me/)
--   [Remote Boards & Companies Spreadsheet](https://docs.google.com/spreadsheets/d/16V7hG7l24hBAnlcmaSG3mrusDx1uj_ZsLwnTu7L_wsQ/edit?usp=sharing)
--   [Career Vault](https://careervault.io/)
+- [We Work Remotely](https://weworkremotely.com/)
+- [Relocate](https://relocate.me/)[‍](https://workfromhomejobs.me/)
+- [Work From Home Jobs](https://workfromhomejobs.me/)
+- [Remote Boards & Companies Spreadsheet](https://docs.google.com/spreadsheets/d/16V7hG7l24hBAnlcmaSG3mrusDx1uj_ZsLwnTu7L_wsQ/edit?usp=sharing)
+- [Career Vault](https://careervault.io/)
 
 #### DS Boards:
 
--   [BigDataJobs](https://www.bigdatajobs.com/)
--   [Icrunchdata](https://icrunchdata.com/data-science-jobs/)
--   [Analyticsjobs.co.uk](https://www.analyticsjobs.co.uk/)
+- [BigDataJobs](https://www.bigdatajobs.com/)
+- [Icrunchdata](https://icrunchdata.com/data-science-jobs/)
+- [Analyticsjobs.co.uk](https://www.analyticsjobs.co.uk/)
 
 #### Design Boards
 
--   [Behance](https://www.behance.net/joblist)
--   [UX Jobs Board](https://www.uxjobsboard.com/)
--   [Krop](https://www.krop.com/creative-jobs/ux-ui-designer/)
+- [Behance](https://www.behance.net/joblist)
+- [UX Jobs Board](https://www.uxjobsboard.com/)
+- [Krop](https://www.krop.com/creative-jobs/ux-ui-designer/)
 
 #### Software Development
 
--   [Honeypot.io](https://www.honeypot.io/pages/for_employers)
--   [GitHub](https://jobs.github.com/)
--   [BlablaDev](https://blabladev.eu/)
--   [Smashing **Magazine**](http://jobs.smashingmagazine.com/)
--   [arstechnica](http://jobs.arstechnica.com/)
--   [obs.37signals](http://jobs.37signals.com/)
--   [ycombinator](http://news.ycombinator.com/submitted?id=whoishiring)
--   [jobs.slashdot.org](http://jobs.slashdot.org/jobboard.php)
--   [](http://angel.co/talent)<http://angel.co/talent>
--   [whitetruffle](https://www.whitetruffle.com/)
--   [crunchboard](http://www.crunchboard.com/jobs/)
+- [Honeypot.io](https://www.honeypot.io/pages/for_employers)
+- [GitHub](https://jobs.github.com/)
+- [BlablaDev](https://blabladev.eu/)
+- [Smashing **Magazine**](http://jobs.smashingmagazine.com/)
+- [arstechnica](http://jobs.arstechnica.com/)
+- [obs.37signals](http://jobs.37signals.com/)
+- [ycombinator](http://news.ycombinator.com/submitted?id=whoishiring)
+- [jobs.slashdot.org](http://jobs.slashdot.org/jobboard.php)
+- [](http://angel.co/talent)<http://angel.co/talent>
+- [whitetruffle](https://www.whitetruffle.com/)
+- [crunchboard](http://www.crunchboard.com/jobs/)
 
 **I am intentionally not linking glassdoor because they have irritated me for the last time by insisting I provide a job review every time I want to access their content... (To the makers of glassdoor... HOW MANY TIMES A MONTH DO YOU THINK I CHANGE JOBS!!!!) I don't have 15 minutes to make up a job experience every time I want to read a review.**
 
-* * * * *
+---
 
 > Also here is a repo of compiled job search and interviewing resources:
 
@@ -15426,7 +15395,7 @@ I can't imagine the kind of masochism it would take to enjoy the act of posting 
 
 Seek to leverage the connections you have with people you know and companies you want to work with. I know that that's a violation of the premise of this article but without even feeling the need to provide quantitative proof; I can confidently assume that this is the most [RO](https://www.investopedia.com/terms/r/returnoninvestment.asp)I efficient way to produce a desirable result. (Sorry introverts... 2020 may have been your year but this is our world. 😘)
 
-**If personal connections don't come through, the next best thing is cold outreach (*best in terms of results.... personally I hate cold calling strangers and I am an extrovert*.)**
+**If personal connections don't come through, the next best thing is cold outreach (_best in terms of results.... personally I hate cold calling strangers and I am an extrovert_.)**
 
 1.  Before or after submitting an application, **identify 1--3 professionals to reach out to** at the company to express interest in opportunities.
 2.  **Send a message to express interest and request an informational interview** with the individual via LinkedIn, email, Twitter, or other available communication methods.
@@ -15440,7 +15409,7 @@ Once you send off a message in step two, there are a variety of responses you ma
 
 [![](https://camo.githubusercontent.com/dbad6fe15c856f7ceba70dccd8ffab8110ad84f585e45f46855324b4b6f59186/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3630302f312a35654f62464439665632666535447a7469745a6673412e706e67)](https://camo.githubusercontent.com/dbad6fe15c856f7ceba70dccd8ffab8110ad84f585e45f46855324b4b6f59186/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3630302f312a35654f62464439665632666535447a7469745a6673412e706e67)
 
-### ***2. LinkedIn***.
+### **_2. LinkedIn_**.
 
 I am going to devote a lot of time to this one because it is the largest and most active of all the job board ecosystems... period... full stop regardless of your industry.
 
@@ -15462,16 +15431,16 @@ Here's A Linkedin Checklist I will be using before I return to the job hunt!
 
 #### Experience Section
 
--   [ ] I **have** listed all professional roles included on my resume in this section and any that I had to cut from my resume for space
--   [ ] I **have** written 2--4 power statements for each experience listed (okay to copy and paste from resume)
--   [ ] My power statements for each experience [are bulleted](https://www.linkedin.com/pulse/update-how-add-bullet-points-your-linkedin-profile-erin-dore-miller/), not in paragraph form.
--   [ ] I **did** list responsibilities in bullet point format (I **did not** leave in paragraph format)
--   [ ] I **did** start each bullet point with [an action verb](https://docs.google.com/document/d/1wZkDPBWtQZDGGdvStD61iRx_jOWVlIyyQl9UOYHtZgA/edit?usp=sharing) and I **did not** use phrases such as: `Assisted with...` `Worked on...` `Helped with...` (`Solely responsible for...` ok)
--   [ ] I **did** describe past projects in past tense and current projects in present tense
--   [ ] I **did not** use pronouns such as: "I," "we," "they, "you," "me," "us"
--   [ ] **Optional:** Bootcamp student experience and projects can be listed under your experience section if you have no (or almost no) prior work experience.
--   [ ] If I listed my Bootcamp student experience, my title is [name of program] Student (example: Data Science Student)
--   [ ] I copied and pasted my Lambda projects in my student description and also included them in the Accomplishments section
+- [ ] I **have** listed all professional roles included on my resume in this section and any that I had to cut from my resume for space
+- [ ] I **have** written 2--4 power statements for each experience listed (okay to copy and paste from resume)
+- [ ] My power statements for each experience [are bulleted](https://www.linkedin.com/pulse/update-how-add-bullet-points-your-linkedin-profile-erin-dore-miller/), not in paragraph form.
+- [ ] I **did** list responsibilities in bullet point format (I **did not** leave in paragraph format)
+- [ ] I **did** start each bullet point with [an action verb](https://docs.google.com/document/d/1wZkDPBWtQZDGGdvStD61iRx_jOWVlIyyQl9UOYHtZgA/edit?usp=sharing) and I **did not** use phrases such as: `Assisted with...` `Worked on...` `Helped with...` (`Solely responsible for...` ok)
+- [ ] I **did** describe past projects in past tense and current projects in present tense
+- [ ] I **did not** use pronouns such as: "I," "we," "they, "you," "me," "us"
+- [ ] **Optional:** Bootcamp student experience and projects can be listed under your experience section if you have no (or almost no) prior work experience.
+- [ ] If I listed my Bootcamp student experience, my title is [name of program] Student (example: Data Science Student)
+- [ ] I copied and pasted my Lambda projects in my student description and also included them in the Accomplishments section
 
 ### Do's:
 
@@ -15479,7 +15448,7 @@ Here's A Linkedin Checklist I will be using before I return to the job hunt!
 
 **Follow business owners and senior managers, successful team leaders in large organizations, startup owners. You would be surprised how willing some otherwise busy executives are to rub elbows with veritable newcomers. They're not just doing this out of the kindness of their hearts, just like you... they have an ulterior motive. They are hoping to build goodwill with the incoming workforce in a bid to make their company more attractive to high quality candidates. If they give you any of their time...treat it like an interview.**
 
-> *To leverage this information, (the trick is to constantly remind yourself to be on your game with speaking with them.) I do not care what your teacher's past have said... mark my words...* ***THERE IS MOST CERTAINLY SUCH A THING AS A STUPID QUESTION****...Anyone who tells you otherwise is either stupid themselves or just overcome with their own compassion (an admirable trait but ultimately a disservice to you the competitive job seeker).*
+> *To leverage this information, (the trick is to constantly remind yourself to be on your game with speaking with them.) I do not care what your teacher's past have said... mark my words...* **\*THERE IS MOST CERTAINLY SUCH A THING AS A STUPID QUESTION\*\***...Anyone who tells you otherwise is either stupid themselves or just overcome with their own compassion (an admirable trait but ultimately a disservice to you the competitive job seeker).\*
 
 [**How to Ask Great Questions**\
 *In Brief The Problem Some professionals such as litigators, journalists and even doctors, are taught to ask questions...*hbr.org](https://hbr.org/2018/05/the-surprising-power-of-questions "https://hbr.org/2018/05/the-surprising-power-of-questions")[](https://hbr.org/2018/05/the-surprising-power-of-questions)
@@ -15512,7 +15481,7 @@ Placing keywords strategically into your LinkedIn profile is virtually the only 
 
 [![](https://camo.githubusercontent.com/83948b5c61a6d4ca082484f0755724675f7757d596fc34cf16378670e6c98a7d/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3630302f312a61493150666b537073556b733539384c414a764b6f512e706e67)](https://camo.githubusercontent.com/83948b5c61a6d4ca082484f0755724675f7757d596fc34cf16378670e6c98a7d/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3630302f312a61493150666b537073556b733539384c414a764b6f512e706e67)
 
-* * * * *
+---
 
 ### Why it matters*¿*
 
@@ -15520,17 +15489,17 @@ Placing keywords strategically into your LinkedIn profile is virtually the only 
 
 Most of us are familiar with the concept of six degrees of separation --- the idea is that anyone in the planet can be connected to anyone else in just six steps. So through just five other people, you're effectively connected to the Queen of England, Jim Belushi or even yo mamma.
 
-* * * * *
+---
 
 ### Back to the other Job Board Niches:
 
-***3\. Traditional job boards***. Dice.com, Monster.com, etc. They will not find you great jobs at technology companies; they may find you openings as a software engineer at other types of more traditional companies (for example, banks, retail chains, etc though.
+**_3\. Traditional job boards_**. Dice.com, Monster.com, etc. They will not find you great jobs at technology companies; they may find you openings as a software engineer at other types of more traditional companies (for example, banks, retail chains, etc though.
 
-***4\. Local-focused sites***. The biggest is Craigslist, but there are others. Often great for contract work and opportunities you wouldn't have otherwise come across.
+**_4\. Local-focused sites_**. The biggest is Craigslist, but there are others. Often great for contract work and opportunities you wouldn't have otherwise come across.
 
-***5\. Freelancer websites***. oDesk.com, Elance.com, etc. Lower pay, but 100% contract work, and has a lot of flexible opportunities if you're not looking for traditional full-time employment or remote work.
+**_5\. Freelancer websites_**. oDesk.com, Elance.com, etc. Lower pay, but 100% contract work, and has a lot of flexible opportunities if you're not looking for traditional full-time employment or remote work.
 
--   [Source](https://www.quora.com/What-are-the-best-job-boards-for-software-engineers)
+- [Source](https://www.quora.com/What-are-the-best-job-boards-for-software-engineers)
 
 [![](https://camo.githubusercontent.com/0bb1814eddf9ff4cc9f47659aa55478701b4746030e1b36e9fba60858d770932/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3630302f312a335f334362373353514d5f59617a5747705a577449772e706e67)](https://camo.githubusercontent.com/0bb1814eddf9ff4cc9f47659aa55478701b4746030e1b36e9fba60858d770932/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3630302f312a335f334362373353514d5f59617a5747705a577449772e706e67)
 
@@ -15552,7 +15521,7 @@ Medium is causing strange formatting... they normally form a grid!
 
 [![](https://camo.githubusercontent.com/47f7122786ef9fd528e4e17aad37bbc607133dd2db632dbfeca815eee2948fb0/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a352d465978576a30713873557670446f4152335a4c412e706e67)](https://camo.githubusercontent.com/47f7122786ef9fd528e4e17aad37bbc607133dd2db632dbfeca815eee2948fb0/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313230302f312a352d465978576a30713873557670446f4152335a4c412e706e67)
 
-* * * * *
+---
 
 ### Discover More:
 
@@ -15567,23 +15536,22 @@ Exported from [Medium](https://medium.com/) on July 13, 2021.
 
 [view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/Job-Boards.md)[Job-Boards.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-job-boards-md) hosted with ❤ by [GitHub](https://github.com/)
 
-Learn CSS So That Your Site Doesn't Look Like Garbage
-=====================================================
+# Learn CSS So That Your Site Doesn't Look Like Garbage
 
 CSS Selectors
 
-* * * * *
+---
 
 ### Learn CSS So That Your Site Doesn't Look Like Garbage
 
 ### CSS Selectors
 
--   `CSS Selector` : Applies styles to a specific DOM element(s), there are various types:
--   `Type Selectors` : Matches by node name.
--   `Class Selectors` : Matches by class name.
--   `ID Selectors` : Matches by ID name.
--   `Universal Selectors` : Selects all HTML elements on a page.
--   `Attribute Selectors` : Matches elements based on the prescence or value of a given attribute. (i.e. a[title] will match all a elements with a title attribute)
+- `CSS Selector` : Applies styles to a specific DOM element(s), there are various types:
+- `Type Selectors` : Matches by node name.
+- `Class Selectors` : Matches by class name.
+- `ID Selectors` : Matches by ID name.
+- `Universal Selectors` : Selects all HTML elements on a page.
+- `Attribute Selectors` : Matches elements based on the prescence or value of a given attribute. (i.e. a[title] will match all a elements with a title attribute)
 
 ```
 /* Type selector */
@@ -15607,13 +15575,13 @@ a[title] {
 
 **Class Selectors**
 
--   Used to select all elements of a certain class denoted with a `.[class name]`
--   You can assign multiple classes to a DOM element by separating them with a space.
+- Used to select all elements of a certain class denoted with a `.[class name]`
+- You can assign multiple classes to a DOM element by separating them with a space.
 
 **Compound Class Selectors**
 
--   To get around accidentally selecting elements with multiple classes beyond what we want to grab we can chain dots.
--   TO use a compound class selector just append the classes together when referencing them in the CSS.
+- To get around accidentally selecting elements with multiple classes beyond what we want to grab we can chain dots.
+- TO use a compound class selector just append the classes together when referencing them in the CSS.
 
 ```
 <div class="box yellow"></div>
@@ -15622,8 +15590,8 @@ a[title] {
 
 ```
 
--   i.e. .box.yellow will select only the first element.
--   KEEP IN MIND that if you do include a space it will make the selector into a *descendant selector*.
+- i.e. .box.yellow will select only the first element.
+- KEEP IN MIND that if you do include a space it will make the selector into a *descendant selector*.
 
 ```
 h1#heading,
@@ -15633,50 +15601,50 @@ h2.subheading {
 
 ```
 
--   When we want to target all `h1` tags with the id of `heading`.
+- When we want to target all `h1` tags with the id of `heading`.
 
 **CSS Combinators**
 
--   CSS Combinators are used to combine other selectors into more complex or targeted selectors --- they are very powerful!
--   Be careful not to use too many of them as they will make your CSS far too complex.
--   `Descendant Selectors`
--   Separated by a space.
--   Selects all descendants of a parent container.
--   `Direct Child Selectors`
--   Indicated with a `>`.
--   Different from descendants because it only affects the direct children of an element.
--   `.menu > .is-active { background-color: #ffe0b2; }`
--   `<body> <div class="menu"> <div class="is-active">Belka</div> <div> <div class="is-active">Strelka</div> </div> </div> </body> <div class="is-active"> Laika </div> </body>`
--   Belka would be the only element selected.
--   `Adjacent Sibling Selectors`
--   Uses the `+` symbol.
--   Used for elements that directly follow one another and who both have the same parent.
--   `h1 + h2 { font-style: italic; } <h1>Big header</h1> <h2>This one is styled because it is directly adjacent to the H1</h2> <h2>This one is NOT styled because there is no H1 right before it</h2>`
+- CSS Combinators are used to combine other selectors into more complex or targeted selectors --- they are very powerful!
+- Be careful not to use too many of them as they will make your CSS far too complex.
+- `Descendant Selectors`
+- Separated by a space.
+- Selects all descendants of a parent container.
+- `Direct Child Selectors`
+- Indicated with a `>`.
+- Different from descendants because it only affects the direct children of an element.
+- `.menu > .is-active { background-color: #ffe0b2; }`
+- `<body> <div class="menu"> <div class="is-active">Belka</div> <div> <div class="is-active">Strelka</div> </div> </div> </body> <div class="is-active"> Laika </div> </body>`
+- Belka would be the only element selected.
+- `Adjacent Sibling Selectors`
+- Uses the `+` symbol.
+- Used for elements that directly follow one another and who both have the same parent.
+- `h1 + h2 { font-style: italic; } <h1>Big header</h1> <h2>This one is styled because it is directly adjacent to the H1</h2> <h2>This one is NOT styled because there is no H1 right before it</h2>`
 
 **Pseudo-Classes**
 
--   `Pseudo-Class` : Specifies a special state of the seleted element(s) and does not refer to any elements or attributes contained in the DOM.
--   Format is a `Selector:Pseudo-Class Name` or `A:B`
--   `a:hover { font-family: "Roboto Condensed", sans-serif; color: #4fc3f7; text-decoration: none; border-bottom: 2px solid #4fc3f7; }`
--   Some common pseudo-classes that are frequently used are:
--   `active` : 'push down', when ele are activated.
--   `checked` : applies to things like radio buttons or checkbox inputs.
--   `disabled` : any disabled element.
--   `first-child` : first element in a group of children/siblings.
--   `focus` : elements that have current focus.
--   `hover` : elements that have cursor hovering over it.
--   `invalid` : any form elements in an invalid state from client-side form validation.
--   `last-child` : last element in a group of children/siblings.
--   `not(selector)` : elements that do not match the provided selector.
--   `required` : form elements that are required.
--   `valid` : form elements in a valid state.
--   `visited` : anchor tags of whih the user has already been to the URL that the href points to.
+- `Pseudo-Class` : Specifies a special state of the seleted element(s) and does not refer to any elements or attributes contained in the DOM.
+- Format is a `Selector:Pseudo-Class Name` or `A:B`
+- `a:hover { font-family: "Roboto Condensed", sans-serif; color: #4fc3f7; text-decoration: none; border-bottom: 2px solid #4fc3f7; }`
+- Some common pseudo-classes that are frequently used are:
+- `active` : 'push down', when ele are activated.
+- `checked` : applies to things like radio buttons or checkbox inputs.
+- `disabled` : any disabled element.
+- `first-child` : first element in a group of children/siblings.
+- `focus` : elements that have current focus.
+- `hover` : elements that have cursor hovering over it.
+- `invalid` : any form elements in an invalid state from client-side form validation.
+- `last-child` : last element in a group of children/siblings.
+- `not(selector)` : elements that do not match the provided selector.
+- `required` : form elements that are required.
+- `valid` : form elements in a valid state.
+- `visited` : anchor tags of whih the user has already been to the URL that the href points to.
 
 `Pseudo-Selectors`
 
--   Used to create pseudo-elements as children of the elements to which the property applies.
--   `::after`
--   `::before`
+- Used to create pseudo-elements as children of the elements to which the property applies.
+- `::after`
+- `::before`
 
 ```
 <style>
@@ -15694,13 +15662,13 @@ h2.subheading {
 
 ```
 
--   Will add some blue smiley faces before the p tag elements.
+- Will add some blue smiley faces before the p tag elements.
 
 **CSS Rules**
 
--   `CSS Rule` : Collection of single or compound selectors, a curly brace, zero or more properties
--   `CSS Rule Specificity` : Sometimes CSS rules will contain multiple elements and may have overlapping properties rules for those same elements - there is an algorithm in CSS that calculates which rule takes precedence.
--   `The Four Number Calculation` : listed in increasing order of importance.
+- `CSS Rule` : Collection of single or compound selectors, a curly brace, zero or more properties
+- `CSS Rule Specificity` : Sometimes CSS rules will contain multiple elements and may have overlapping properties rules for those same elements - there is an algorithm in CSS that calculates which rule takes precedence.
+- `The Four Number Calculation` : listed in increasing order of importance.
 
 Who has the most IDs? If no one, continue.
 
@@ -15720,49 +15688,49 @@ Last Read in the browser wins.
 
 <style> .box { width: 50px; height: 50px; border: 1px solid black; } .orange { background-color: orange; } .yellow { background-color: yellow; border: 1px solid purple; } </style>
 
--   Coming back to our example where all the CSS Rules have tied, the last step 4 wins out so our element will have a `purple border`.
+- Coming back to our example where all the CSS Rules have tied, the last step 4 wins out so our element will have a `purple border`.
 
-* * * * *
+---
 
 ### CSS: Type, Properties, and Imports
 
 **Typography**
 
--   `font-family` : change the font.
+- `font-family` : change the font.
 
 [![](https://camo.githubusercontent.com/999f5ef47a84a86c265bc2b10bedf6ed10f806e5c6af135a32819e3a464e5495/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a7373566354314264394564666f364b46)](https://camo.githubusercontent.com/999f5ef47a84a86c265bc2b10bedf6ed10f806e5c6af135a32819e3a464e5495/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a7373566354314264394564666f364b46)
 
 [![](https://camo.githubusercontent.com/7cecd636fa0d1d9cf4b51fcca40653ab82e7c2a93d27f46f80e1a0924f2c51e2/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a576d7155794b69756d4d3852434a516f2e706e67)](https://camo.githubusercontent.com/7cecd636fa0d1d9cf4b51fcca40653ab82e7c2a93d27f46f80e1a0924f2c51e2/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a576d7155794b69756d4d3852434a516f2e706e67)
 
-- Remember that not all computers have the same fonts on them. - You can import web fonts via an api by using - `@import url('[https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap');`](https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap%27);`) and pasting it st the top of your CSS file. - And then reference it in your font-family. - `font-size` : Changes the size of your font. - Keep in mind the two kind of units CSS uses: - `Absolute` : `Pixels`, Points, Inches, Centimeters. - `Relative` : Em, Rem. - Em: Calulating the size relative to the previous div (bubbles down) - Rem: Calulates relative to the parent element always. - `font-style` : Used to set a font to italics. - `font-weight` : Used to make a font bold. - `text-align` : Used to align your text to the left, center, or right. - `text-decoration` : Use to put lines above, through, or under text. Lines can be solid, dashed, or wavy! - `text-transform` : Used to set text to all lowercase, uppercase, or capitalize all words.
+- Remember that not all computers have the same fonts on them. - You can import web fonts via an api by using - `@import url('[https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap');`](https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap%27);`) and pasting it st the top of your CSS file. - And then reference it in your font-family. - `font-size` : Changes the size of your font. - Keep in mind the two kind of units CSS uses: - `Absolute` : `Pixels`, Points, Inches, Centimeters. - `Relative` : Em, Rem. - Em: Calulating the size relative to the previous div (bubbles down) - Rem: Calulates relative to the parent element always. - `font-style` : Used to set a font to italics. - `font-weight` : Used to make a font bold. - `text-align` : Used to align your text to the left, center, or right. - `text-decoration` : Use to put lines above, through, or under text. Lines can be solid, dashed, or wavy! - `text-transform` : Used to set text to all lowercase, uppercase, or capitalize all words.
 
 **Background-Images**
 
--   You can use the background-image property to set a background image for an element.
+- You can use the background-image property to set a background image for an element.
 
-* * * * *
+---
 
 ### CSS: Colors, Borders, and Shadows
 
 **Colors**
 
--   You can set colors in CSS in three popular ways: by name, by hexadecimal RGB value, and by their decimal RGB value.
--   rgba() is used to make an rbg value more transparent, the `a` is used to specify the `alpha channel`.
--   **Color** : Property used to change the color of text.
--   **Background-Color** : Property to change the backgrounf color of an element.
+- You can set colors in CSS in three popular ways: by name, by hexadecimal RGB value, and by their decimal RGB value.
+- rgba() is used to make an rbg value more transparent, the `a` is used to specify the `alpha channel`.
+- **Color** : Property used to change the color of text.
+- **Background-Color** : Property to change the backgrounf color of an element.
 
 **Borders**
 
--   Borders take three values: The width of the border, the style (i.e. solid, dotted, dashed), color of the border.
+- Borders take three values: The width of the border, the style (i.e. solid, dotted, dashed), color of the border.
 
 **Shadows**
 
--   There are two kinds of shadows in CSS: `box shadows` and `text shadows`.
--   Box refers to HTML elements.
--   Text refers to text.
--   Shadows take values such as, the horizontal & vertical offsets of the shadow, the blur radius of the shadow, the spread radius, and of course the colors.
+- There are two kinds of shadows in CSS: `box shadows` and `text shadows`.
+- Box refers to HTML elements.
+- Text refers to text.
+- Shadows take values such as, the horizontal & vertical offsets of the shadow, the blur radius of the shadow, the spread radius, and of course the colors.
 
-* * * * *
+---
 
 ### The Box Model
 
@@ -15784,20 +15752,20 @@ This bothered many programmers so they created the **border box** to include t
 
 ### Positioning
 
--   The `position` property allows us to set the position of elements on a page and is an integral part of creatnig a Web page layout.
--   It accepts five values: `static`, `relative`, `absolute`, `fixed`, `sticky`.
--   Every property (minus `static`) is used with: `top`, `right`, `bottom`, and `left` to position an element on a page.
+- The `position` property allows us to set the position of elements on a page and is an integral part of creatnig a Web page layout.
+- It accepts five values: `static`, `relative`, `absolute`, `fixed`, `sticky`.
+- Every property (minus `static`) is used with: `top`, `right`, `bottom`, and `left` to position an element on a page.
 
 **Static Positioning**
 
--   The default position value of page elements.
--   Most likely will not use static that much.
+- The default position value of page elements.
+- Most likely will not use static that much.
 
 **Relative Positioning**
 
--   Remains in it's original position in the page flow.
--   It is positioned *RELATIVE* to the it's *ORIGINAL PLACE* on the page flow.
--   Creates a **stacking context** : overlapping elements whose order can be set by the z-index property.
+- Remains in it's original position in the page flow.
+- It is positioned *RELATIVE* to the it's *ORIGINAL PLACE* on the page flow.
+- Creates a **stacking context** : overlapping elements whose order can be set by the z-index property.
 
 ```
 #pink-box {
@@ -15817,8 +15785,8 @@ This bothered many programmers so they created the **border box** to include t
 
 **Absolute Positioning**
 
--   Absolute elements are removed from the normal page flow and other elements around it act like it's not there. (how we can easily achieve some layering)
--   Here are some examples to illustration absolute positioning:
+- Absolute elements are removed from the normal page flow and other elements around it act like it's not there. (how we can easily achieve some layering)
+- Here are some examples to illustration absolute positioning:
 
 ```
 .container {
@@ -15893,33 +15861,33 @@ This bothered many programmers so they created the **border box** to include t
 
 **Fixed Positioning**
 
--   Another positioning that removes it's element from the page flow, and automatically positions it's parent as the HTML doc itself.
--   Fixed also uses top, right, bottom, and left.
--   Useful for things like nav bars or other features we want to keep visible as the user scrolls.
+- Another positioning that removes it's element from the page flow, and automatically positions it's parent as the HTML doc itself.
+- Fixed also uses top, right, bottom, and left.
+- Useful for things like nav bars or other features we want to keep visible as the user scrolls.
 
 **Sticky Positioning**
 
--   Remains in it's original position in the page flow, and it is positioned relative to it's closest block-level ancestor and any *scrolling* ancestors.
--   Behaves like a relatively positioned element until the point at which you would normally scroll past it's viewport --- then it sticks!
--   It is positioned with top, right, bottom, and left.
--   A good example are headers in a scrollable list.
+- Remains in it's original position in the page flow, and it is positioned relative to it's closest block-level ancestor and any *scrolling* ancestors.
+- Behaves like a relatively positioned element until the point at which you would normally scroll past it's viewport --- then it sticks!
+- It is positioned with top, right, bottom, and left.
+- A good example are headers in a scrollable list.
 
 [![](https://camo.githubusercontent.com/fe8623179f047d1e2cf262b7bbfef86b230965d8b119316bf5816a231a2876a2/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a4252566c716f624b4b30495a746e5871)](https://camo.githubusercontent.com/fe8623179f047d1e2cf262b7bbfef86b230965d8b119316bf5816a231a2876a2/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a4252566c716f624b4b30495a746e5871)
 
 [![](https://camo.githubusercontent.com/ad6388c9a9023ef6402d2e9208b805c910d8a1340174850fbf411c6dfb46d32a/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6a51514a5957566f515932654e414e532e676966)](https://camo.githubusercontent.com/ad6388c9a9023ef6402d2e9208b805c910d8a1340174850fbf411c6dfb46d32a/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a6a51514a5957566f515932654e414e532e676966)
 
-* * * * *
+---
 
 ### Flexible Box Model
 
--   Flexbox is a **CSS module** that provides a convenient way for us to display items inside a flexible container so that the layout is responsive.
--   Float was used back in the day to display position of elements in a container.
--   A very inconvenient aspect of float is the need to *clear* the float.
--   To 'clear' a float we need to set up a ghost div to properly align --- this is already sounds so inefficient.
+- Flexbox is a **CSS module** that provides a convenient way for us to display items inside a flexible container so that the layout is responsive.
+- Float was used back in the day to display position of elements in a container.
+- A very inconvenient aspect of float is the need to *clear* the float.
+- To 'clear' a float we need to set up a ghost div to properly align --- this is already sounds so inefficient.
 
 **Using Flexbox**
 
--   Flexbox automatically resizes a container element to fit the viewport size without needing to use breakpoints.
+- Flexbox automatically resizes a container element to fit the viewport size without needing to use breakpoints.
 
 [![](https://camo.githubusercontent.com/616d3d2080f74469d07a95763062c45172ea943c324b813b21790794a306163d/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a5f53584f51707133797279775743634c)](https://camo.githubusercontent.com/616d3d2080f74469d07a95763062c45172ea943c324b813b21790794a306163d/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a5f53584f51707133797279775743634c)
 
@@ -15936,28 +15904,28 @@ This bothered many programmers so they created the **border box** to include t
 
 ```
 
--   `flex-flow` can be used to combine wrap and direction.
--   `justify-content` used to define the alignment of flex items along the main axis.
--   `align-items` used to define the alignment on the Y-axis.
--   `align-content` redistributes extra space on the cross axis.
--   By default, flex items will appear in the order they are added to the DOM, but we can use the `order` property to change that.
--   Some other properties we can use on flex items are:
--   `flex-grow` : dictates amount of avail. space the item should take up.
--   `flex-shrink` : defines the ability for a flex item to shrink.
--   `flex-basis` : Default size of an element before the remaining space is distributed.
--   `flex` : shorthand for grow, shrink and basis.
--   `align-self` : Overrides default alignment in the container.
+- `flex-flow` can be used to combine wrap and direction.
+- `justify-content` used to define the alignment of flex items along the main axis.
+- `align-items` used to define the alignment on the Y-axis.
+- `align-content` redistributes extra space on the cross axis.
+- By default, flex items will appear in the order they are added to the DOM, but we can use the `order` property to change that.
+- Some other properties we can use on flex items are:
+- `flex-grow` : dictates amount of avail. space the item should take up.
+- `flex-shrink` : defines the ability for a flex item to shrink.
+- `flex-basis` : Default size of an element before the remaining space is distributed.
+- `flex` : shorthand for grow, shrink and basis.
+- `align-self` : Overrides default alignment in the container.
 
-* * * * *
+---
 
 ### Grid Layout
 
--   CSS Grid is a 2d layout system that let's use create a grid with columns and rows purely using Vanilla CSS. (flex is one dimensional)
+- CSS Grid is a 2d layout system that let's use create a grid with columns and rows purely using Vanilla CSS. (flex is one dimensional)
 
 **Bootstrap vs CSS Grid**
 
--   Bootstrap was a front-end library commonly used to create grid layouts but now CSS grid provides greater flexibility and control.
--   Grid applies style to a parent container and it's child elements.
+- Bootstrap was a front-end library commonly used to create grid layouts but now CSS grid provides greater flexibility and control.
+- Grid applies style to a parent container and it's child elements.
 
 ```
 .grid-container {
@@ -15988,12 +15956,12 @@ This bothered many programmers so they created the **border box** to include t
 
 ```
 
--   Columns and Rows can be defined with: pixels, percentages, auto, named grid lines, using `repeat`, fractions.
--   `Grid Template Areas` gives us a handy way to map out and visualize areas of the grid layout.
--   Combine areas with templates to define how much space an area should take up.
--   `Grid Gaps` can be used to create 'gutters' between grid item.s
--   The way we have defined our grid with `grid-templates` and `areas` are considered **explicit**.
--   We can also `implicitly` define grids.
+- Columns and Rows can be defined with: pixels, percentages, auto, named grid lines, using `repeat`, fractions.
+- `Grid Template Areas` gives us a handy way to map out and visualize areas of the grid layout.
+- Combine areas with templates to define how much space an area should take up.
+- `Grid Gaps` can be used to create 'gutters' between grid item.s
+- The way we have defined our grid with `grid-templates` and `areas` are considered **explicit**.
+- We can also `implicitly` define grids.
 
 ```
 .grid-container {
@@ -16006,16 +15974,16 @@ This bothered many programmers so they created the **border box** to include t
 
 ```
 
--   Any grid items that aren't explicity placed are automatically placed or *re-flowed*
+- Any grid items that aren't explicity placed are automatically placed or *re-flowed*
 
 **Spanning Columns & Rows**
 
--   We can use the following properties to take up a specified num of cols and rows.
--   `grid-column-start`
--   `grid-column-end`
--   `grid-row-start`
--   `grid-row-end`
--   All four properties can take any of the following values: the line number, span #, span name, auto.
+- We can use the following properties to take up a specified num of cols and rows.
+- `grid-column-start`
+- `grid-column-end`
+- `grid-row-start`
+- `grid-row-end`
+- All four properties can take any of the following values: the line number, span #, span name, auto.
 
 ```
 .item-1 {
@@ -16034,18 +16002,18 @@ This bothered many programmers so they created the **border box** to include t
 
 **Grid Areas**
 
--   We use the grid areas in conjunction with grid-container property to **define sections of the layout**.
--   We can then assign named sections to individual element's css rules.
+- We use the grid areas in conjunction with grid-container property to **define sections of the layout**.
+- We can then assign named sections to individual element's css rules.
 
 **Justify & Align Self**
 
--   Justify items and Align Items can be used to align all grid items at once.
--   **Justify Self** is used to align self on the row.
--   It can take four values: start, end, center, stretch.
--   **Align Self** is used to align self on the column.
--   It can take four values: start, end, center, stretch.
+- Justify items and Align Items can be used to align all grid items at once.
+- **Justify Self** is used to align self on the row.
+- It can take four values: start, end, center, stretch.
+- **Align Self** is used to align self on the column.
+- It can take four values: start, end, center, stretch.
 
-* * * * *
+---
 
 **CSS Hover Effect and Handling**
 
@@ -16065,14 +16033,14 @@ There are three members in the overflow family: --- `overflow-x` : Apply ho
 
 ### Transitions
 
--   Transitions provide a way to control animation speed when changing CSS properties.
--   **Implicit Transitions** : Animations that involve transitioning between two states.
+- Transitions provide a way to control animation speed when changing CSS properties.
+- **Implicit Transitions** : Animations that involve transitioning between two states.
 
 **Defining Transitions**
 
--   `transition-property` : specifies the name of the CSS property to apply the transition.
--   `transition-duration` : during of the transition.
--   `transition-delay` : time before the transition should start.
+- `transition-property` : specifies the name of the CSS property to apply the transition.
+- `transition-duration` : during of the transition.
+- `transition-delay` : time before the transition should start.
 
 **Examples** :
 
@@ -16118,31 +16086,31 @@ There are three members in the overflow family: --- `overflow-x` : Apply ho
 
 - When the mouse hovers over a box, it spins due to the rotate transform. Width and height change and also the bg color.
 
-* * * * *
+---
 
 ### BEM Guidelines
 
--   BEM was created as a guideline to solve the issue of loose standards around CSS naming conventions.
--   **BEM** stands for `block`, `element`, `modifier`.
--   **Block**
--   A standalone entity that is meaningful on it's own.
--   Can be nested and interact with one another.
--   Holistic entities without DOM rep can be blocks.
--   May consist latin letters, digits, and dashes.
--   Any DOM node can be a block if it accepts a class name.
--   **Element**
--   Part of a block and has no standalone meaning.
--   Any element that is semantically tied to a block.
--   May consist latin letters, digits, and dashes.
--   Formed by using two underscores after it's block name.
--   Any DOM node within a block can be an element.
--   Element classes should be used independently.
--   **Modifier**
--   A flag on blocks or elements. Use them to change appearance, behavior or state.
--   Extra class name to add onto blocks or elements.
--   Add mods only to the elements they modify.
--   Modifier names may consist of Latin letters, digits, dashes and underscores.
--   Written with two dashes.
+- BEM was created as a guideline to solve the issue of loose standards around CSS naming conventions.
+- **BEM** stands for `block`, `element`, `modifier`.
+- **Block**
+- A standalone entity that is meaningful on it's own.
+- Can be nested and interact with one another.
+- Holistic entities without DOM rep can be blocks.
+- May consist latin letters, digits, and dashes.
+- Any DOM node can be a block if it accepts a class name.
+- **Element**
+- Part of a block and has no standalone meaning.
+- Any element that is semantically tied to a block.
+- May consist latin letters, digits, and dashes.
+- Formed by using two underscores after it's block name.
+- Any DOM node within a block can be an element.
+- Element classes should be used independently.
+- **Modifier**
+- A flag on blocks or elements. Use them to change appearance, behavior or state.
+- Extra class name to add onto blocks or elements.
+- Add mods only to the elements they modify.
+- Modifier names may consist of Latin letters, digits, dashes and underscores.
+- Written with two dashes.
 
 **BEM Example**
 
@@ -16240,12 +16208,11 @@ Exported from [Medium](https://medium.com/) on July 13, 2021.
 
 [view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/js-under-the-hood.md)[js-under-the-hood.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-js-under-the-hood-md) hosted with ❤ by [GitHub](https://github.com/)
 
-LocalStorage VS SessionStorage
-==============================
+# LocalStorage VS SessionStorage
 
 Web storage objects localStorage and sessionStorage allow to save key/value pairs in the browser.
 
-* * * * *
+---
 
 ### LocalStorage VS SessionStorage
 
@@ -16259,18 +16226,18 @@ What's interesting about them is that the data survives a page refresh (for `ses
 
 We already have cookies. Why additional objects?
 
--   Unlike cookies, web storage objects are not sent to server with each request. Because of that, we can store much more. Most browsers allow at least 2 megabytes of data (or more) and have settings to configure that.
--   Also unlike cookies, the server can't manipulate storage objects via HTTP headers. Everything's done in JavaScript.
--   The storage is bound to the origin (domain/protocol/port triplet). That is, different protocols or subdomains infer different storage objects, they can't access data from each other.
+- Unlike cookies, web storage objects are not sent to server with each request. Because of that, we can store much more. Most browsers allow at least 2 megabytes of data (or more) and have settings to configure that.
+- Also unlike cookies, the server can't manipulate storage objects via HTTP headers. Everything's done in JavaScript.
+- The storage is bound to the origin (domain/protocol/port triplet). That is, different protocols or subdomains infer different storage objects, they can't access data from each other.
 
 Both storage objects provide same methods and properties:
 
--   `setItem(key, value)` -- store key/value pair.
--   `getItem(key)` -- get the value by key.
--   `removeItem(key)` -- remove the key with its value.
--   `clear()` -- delete everything.
--   `key(index)` -- get the key on a given position.
--   `length` -- the number of stored items.
+- `setItem(key, value)` -- store key/value pair.
+- `getItem(key)` -- get the value by key.
+- `removeItem(key)` -- remove the key with its value.
+- `clear()` -- delete everything.
+- `key(index)` -- get the key on a given position.
+- `length` -- the number of stored items.
 
 As you can see, it's like a `Map` collection (`setItem/getItem/removeItem`), but also allows access by index with `key(index)`.
 
@@ -16280,8 +16247,8 @@ Let's see how it works.
 
 The main features of `localStorage` are:
 
--   Shared between all tabs and windows from the same origin.
--   The data does not expire. It remains after the browser restart and even OS reboot.
+- Shared between all tabs and windows from the same origin.
+- The data does not expire. It remains after the browser restart and even OS reboot.
 
 For instance, if you run this code...
 
@@ -16417,10 +16384,10 @@ The `sessionStorage` object is used much less often than `localStorage`.
 
 Properties and methods are the same, but it's much more limited:
 
--   The `sessionStorage` exists only within the current browser tab.
--   Another tab with the same page will have a different storage.
--   But it is shared between iframes in the same tab (assuming they come from the same origin).
--   The data survives page refresh, but not closing/opening the tab.
+- The `sessionStorage` exists only within the current browser tab.
+- Another tab with the same page will have a different storage.
+- But it is shared between iframes in the same tab (assuming they come from the same origin).
+- The data survives page refresh, but not closing/opening the tab.
 
 Let's see that in action.
 
@@ -16446,11 +16413,11 @@ That's exactly because `sessionStorage` is bound not only to the origin, but a
 
 When the data gets updated in `localStorage` or `sessionStorage`, [storage](https://www.w3.org/TR/webstorage/#the-storage-event) event triggers, with properties:
 
--   `key` -- the key that was changed (`null` if `.clear()` is called).
--   `oldValue` -- the old value (`null` if the key is newly added).
--   `newValue` -- the new value (`null` if the key is removed).
--   `url` -- the url of the document where the update happened.
--   `storageArea` -- either `localStorage` or `sessionStorage` object where the update happened.
+- `key` -- the key that was changed (`null` if `.clear()` is called).
+- `oldValue` -- the old value (`null` if the key is newly added).
+- `newValue` -- the new value (`null` if the key is removed).
+- `url` -- the url of the document where the update happened.
+- `storageArea` -- either `localStorage` or `sessionStorage` object where the update happened.
 
 The important thing is: the event triggers on all `window` objects where the storage is accessible, except the one that caused it.
 
@@ -16750,1549 +16717,1465 @@ Modern browsers also support Broadcast channel API, the special API for same-ori
 
 [view raw](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821/raw/6df51b57737eabd32d1c68c57e110600f471619a/Writing-Fi.md)[Writing-Fi.md](https://gist.github.com/bgoonz/674c3f169d75d5ab9453d4c7ffbdd821#file-writing-fi-md) hosted with ❤ by [GitHub](https://github.com/)
 
--   [Awesome Python](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#awesome-python)
-    -   [Environment Management](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#environment-management)
-    -   [Package Management](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#package-management)
-    -   [Package Repositories](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#package-repositories)
-    -   [Distribution](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#distribution)
-    -   [Build Tools](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#build-tools)
-    -   [Interactive Interpreter](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#interactive-interpreter)
-    -   [Files](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#files)
-    -   [Date and Time](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#date-and-time)
-    -   [Text Processing](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#text-processing)
-    -   [Specific Formats Processing](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#specific-formats-processing)
-    -   [Natural Language Processing](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#natural-language-processing)
-    -   [Documentation](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#documentation)
-    -   [Configuration](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#configuration)
-    -   [Command-line Tools](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#command-line-tools)
-    -   [Downloader](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#downloader)
-    -   [Imagery](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#imagery)
-    -   [OCR](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#ocr)
-    -   [Audio](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#audio)
-    -   [Video](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#video)
-    -   [Geolocation](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#geolocation)
-    -   [HTTP](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#http)
-    -   [Database](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#database)
-    -   [Database Drivers](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#database-drivers)
-    -   [ORM](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#orm)
-    -   [Web Frameworks](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#web-frameworks)
-    -   [Permissions](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#permissions)
-    -   [CMS](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#cms)
-    -   [E-commerce](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#e-commerce)
-    -   [RESTful API](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#restful-api)
-    -   [Authentication](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#authentication)
-    -   [Template Engine](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#template-engine)
-    -   [Queue](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#queue)
-    -   [Search](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#search)
-    -   [News Feed](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#news-feed)
-    -   [Asset Management](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#asset-management)
-    -   [Caching](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#caching)
-    -   [Email](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#email)
-    -   [Internationalization](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#internationalization)
-    -   [URL Manipulation](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#url-manipulation)
-    -   [HTML Manipulation](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#html-manipulation)
-    -   [Web Crawling](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#web-crawling)
-    -   [Web Content Extracting](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#web-content-extracting)
-    -   [Forms](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#forms)
-    -   [Data Validation](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#data-validation)
-    -   [Anti-spam](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#anti-spam)
-    -   [Tagging](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#tagging)
-    -   [Admin Panels](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#admin-panels)
-    -   [Static Site Generator](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#static-site-generator)
-    -   [Processes and Threads](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#processes-and-threads)
-    -   [Concurrency and Networking](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#concurrency-and-networking)
-    -   [WebSocket](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#websocket)
-    -   [WSGI Servers](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#wsgi-servers)
-    -   [RPC Servers](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#rpc-servers)
-    -   [Cryptography](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#cryptography)
-    -   [GUI](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#gui)
-    -   [Game Development](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#game-development)
-    -   [Logging](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#logging)
-    -   [Testing](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#testing)
-    -   [Code Analysis and Linter](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#code-analysis-and-linter)
-    -   [Debugging Tools](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#debugging-tools)
-    -   [Science and Data Analysis](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#science-and-data-analysis)
-    -   [Data Visualization](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#data-visualization)
-    -   [Computer Vision](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#computer-vision)
-    -   [Machine Learning](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#machine-learning)
-    -   [Functional Programming](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#functional-programming)
-    -   [MapReduce](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#mapreduce)
-    -   [Third-party APIs](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#third-party-apis)
-    -   [DevOps Tools](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#devops-tools)
-    -   [Job Scheduler](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#job-scheduler)
-    -   [Foreign Function Interface](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#foreign-function-interface)
-    -   [High Performance](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#high-performance)
-    -   [Network Virtualization and SDN](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#network-virtualization-and-sdn)
-    -   [Hardware](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#hardware)
-    -   [Compatibility](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#compatibility)
-    -   [Miscellaneous](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#miscellaneous)
-    -   [Algorithms and Design Patterns](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#algorithms-and-design-patterns)
-    -   [Editor Plugins](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#editor-plugins)
-    -   [Boilerplates](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#boilerplates)
--   [Resources](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#resources)
-    -   [Websites](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#websites)
-    -   [Weekly](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#weekly)
-    -   [Twitter](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#twitter)
--   [Other Awesome Lists](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#other-awesome-lists)
--   [Contributing](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#contributing)
+- [Awesome Python](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#awesome-python)
+  - [Environment Management](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#environment-management)
+  - [Package Management](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#package-management)
+  - [Package Repositories](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#package-repositories)
+  - [Distribution](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#distribution)
+  - [Build Tools](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#build-tools)
+  - [Interactive Interpreter](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#interactive-interpreter)
+  - [Files](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#files)
+  - [Date and Time](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#date-and-time)
+  - [Text Processing](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#text-processing)
+  - [Specific Formats Processing](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#specific-formats-processing)
+  - [Natural Language Processing](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#natural-language-processing)
+  - [Documentation](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#documentation)
+  - [Configuration](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#configuration)
+  - [Command-line Tools](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#command-line-tools)
+  - [Downloader](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#downloader)
+  - [Imagery](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#imagery)
+  - [OCR](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#ocr)
+  - [Audio](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#audio)
+  - [Video](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#video)
+  - [Geolocation](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#geolocation)
+  - [HTTP](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#http)
+  - [Database](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#database)
+  - [Database Drivers](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#database-drivers)
+  - [ORM](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#orm)
+  - [Web Frameworks](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#web-frameworks)
+  - [Permissions](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#permissions)
+  - [CMS](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#cms)
+  - [E-commerce](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#e-commerce)
+  - [RESTful API](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#restful-api)
+  - [Authentication](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#authentication)
+  - [Template Engine](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#template-engine)
+  - [Queue](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#queue)
+  - [Search](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#search)
+  - [News Feed](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#news-feed)
+  - [Asset Management](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#asset-management)
+  - [Caching](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#caching)
+  - [Email](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#email)
+  - [Internationalization](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#internationalization)
+  - [URL Manipulation](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#url-manipulation)
+  - [HTML Manipulation](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#html-manipulation)
+  - [Web Crawling](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#web-crawling)
+  - [Web Content Extracting](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#web-content-extracting)
+  - [Forms](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#forms)
+  - [Data Validation](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#data-validation)
+  - [Anti-spam](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#anti-spam)
+  - [Tagging](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#tagging)
+  - [Admin Panels](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#admin-panels)
+  - [Static Site Generator](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#static-site-generator)
+  - [Processes and Threads](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#processes-and-threads)
+  - [Concurrency and Networking](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#concurrency-and-networking)
+  - [WebSocket](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#websocket)
+  - [WSGI Servers](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#wsgi-servers)
+  - [RPC Servers](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#rpc-servers)
+  - [Cryptography](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#cryptography)
+  - [GUI](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#gui)
+  - [Game Development](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#game-development)
+  - [Logging](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#logging)
+  - [Testing](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#testing)
+  - [Code Analysis and Linter](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#code-analysis-and-linter)
+  - [Debugging Tools](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#debugging-tools)
+  - [Science and Data Analysis](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#science-and-data-analysis)
+  - [Data Visualization](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#data-visualization)
+  - [Computer Vision](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#computer-vision)
+  - [Machine Learning](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#machine-learning)
+  - [Functional Programming](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#functional-programming)
+  - [MapReduce](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#mapreduce)
+  - [Third-party APIs](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#third-party-apis)
+  - [DevOps Tools](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#devops-tools)
+  - [Job Scheduler](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#job-scheduler)
+  - [Foreign Function Interface](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#foreign-function-interface)
+  - [High Performance](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#high-performance)
+  - [Network Virtualization and SDN](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#network-virtualization-and-sdn)
+  - [Hardware](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#hardware)
+  - [Compatibility](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#compatibility)
+  - [Miscellaneous](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#miscellaneous)
+  - [Algorithms and Design Patterns](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#algorithms-and-design-patterns)
+  - [Editor Plugins](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#editor-plugins)
+  - [Boilerplates](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#boilerplates)
+- [Resources](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#resources)
+  - [Websites](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#websites)
+  - [Weekly](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#weekly)
+  - [Twitter](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#twitter)
+- [Other Awesome Lists](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#other-awesome-lists)
+- [Contributing](http://127.0.0.1:5502/7-14-update/A-Collection-of-my-most.html#contributing)
 
-* * * * *
-
-Environment Management
-----------------------
-
-*Libraries for Python version and environment management.*
-
--   [p](https://github.com/qw3rtman/p) - Dead Simple Interactive Python Version Management.
--   [pyenv](https://github.com/yyuu/pyenv) - Simple Python version management.
--   [virtualenv](https://pypi.python.org/pypi/virtualenv) - A tool to create isolated Python environments.
--   [virtualenvwrapper](https://pypi.python.org/pypi/virtualenvwrapper) - A set of extensions to virtualenv.
--   [virtualenv-api](https://github.com/sjkingo/virtualenv-api) - An API for virtualenv and pip.
--   [pew](https://pypi.python.org/pypi/pew/) - A set of tools to manage multiple virtual environments.
--   [Vex](https://github.com/sashahart/vex) - Run a command in the named virtualenv.
--   [PyRun](https://www.egenix.com/products/python/PyRun/) - A one-file, no-installation-needed version of Python.
-
-Package Management
-------------------
-
-*Libraries for package and dependency management.*
-
--   [pip](https://pip.pypa.io/) - The Python package and dependency manager.
-    -   [Python Package Index](https://pypi.python.org/pypi)
--   [conda](https://github.com/conda/conda/) - Cross-platform, Python-agnostic binary package manager.
--   [Curdling](http://clarete.li/curdling/) - Curdling is a command line tool for managing Python packages.
--   [wheel](http://pythonwheels.com/) - The new standard of Python distribution and are intended to replace eggs.
-
-Package Repositories
---------------------
-
-*Local PyPI repository server and proxies.*
-
--   [warehouse](https://github.com/pypa/warehouse) - Next generation Python Package Repository (PyPI).
-    -   [Warehouse](https://warehouse.python.org/)
--   [devpi](http://doc.devpi.net/) - PyPI server and packaging/testing/release tool.
--   [localshop](https://github.com/mvantellingen/localshop) - PyPI server which mirrors official packages on-demand, and also supports local (private) package uploads.
-
-Distribution
-------------
-
-*Libraries to create packaged executables for release distribution.*
-
--   [cx-Freeze](http://cx-freeze.readthedocs.org/) - Freezes Python scripts (cross-platform).
--   [py2exe](http://www.py2exe.org/) - Freezes Python scripts (Windows).
--   [pynsist](http://pynsist.readthedocs.org/) - A tool to build Windows installers, installers bundle Python itself.
--   [py2app](http://pythonhosted.org/py2app/) - Freezes Python scripts (Mac OS X).
--   [PyInstaller](http://www.pyinstaller.org/) - Converts Python programs into stand-alone executables (cross-platform).
--   [dh-virtualenv](http://dh-virtualenv.readthedocs.org/) - Build and distribute a virtualenv as a Debian package.
--   [Nuitka](http://nuitka.net/) - Compile scripts, modules, packages to an executable or extension module.
-
-Build Tools
------------
-
-*Compile software from source code.*
-
--   [buildout](http://www.buildout.org/) - A build system for creating, assembling and deploying applications from multiple parts, some of which may be non-Python-based.
--   [SCons](http://www.scons.org/) - A software construction tool.
--   [PlatformIO](https://github.com/ivankravets/platformio) - A console tool to build code with different development platforms.
--   [BitBake](http://www.yoctoproject.org/docs/1.6/bitbake-user-manual/bitbake-user-manual.html) - A make-like build tool with the special focus of distributions and packages for embedded Linux.
--   [fabricate](https://code.google.com/p/fabricate/) - A build tool that finds dependencies automatically for any language.
-
-Interactive Interpreter
------------------------
-
-*Interactive Python interpreters (REPL).*
-
--   [IPython](https://github.com/ipython/ipython) - A rich toolkit to help you make the most out of using Python interactively.
--   [bpython](http://bpython-interpreter.org/) -- A fancy interface to the Python interpreter.
--   [ptpython](https://github.com/jonathanslenders/ptpython) - Advanced Python REPL built on top of the [python-prompt-toolkit](https://github.com/jonathanslenders/python-prompt-toolkit).
-
-Files
------
-
-*Libraries for file manipulation and MIME type detection.*
-
--   [mimetypes](https://docs.python.org/2/library/mimetypes.html) - (Python standard library) Map filenames to MIME types.
--   [imghdr](https://docs.python.org/2/library/imghdr.html) - (Python standard library) Determine the type of an image.
--   [python-magic](https://github.com/ahupp/python-magic) - A Python interface to the libmagic file type identification library.
--   [path.py](https://github.com/jaraco/path.py) - A module wrapper for [os.path](https://docs.python.org/2/library/os.path.html).
--   [watchdog](https://github.com/gorakhargosh/watchdog) - API and shell utilities to monitor file system events.
--   [Unipath](https://github.com/mikeorr/Unipath) - An object-oriented approach to file/directory operations.
--   [pathlib](https://pathlib.readthedocs.org/en/pep428/) - (Python standard library in Python 3.4+) An cross-platform, object-oriented path library.
-
-Date and Time
--------------
-
-*Libraries for working with dates and times.*
-
--   [arrow](https://github.com/crsmithdev/arrow) - Better dates & times for Python.
--   [Chronyk](https://github.com/KoffeinFlummi/Chronyk) - A Python 3 library for parsing human-written times and dates.
--   [dateutil](https://pypi.python.org/pypi/python-dateutil) - Extensions to the standard Python [datetime](https://docs.python.org/2/library/datetime.html) module.
--   [delorean](https://github.com/myusuf3/delorean/) - A library for clearing up the inconvenient truths that arise dealing with datetimes.
--   [when.py](https://github.com/dirn/When.py) - Providing user-friendly functions to help perform common date and time actions.
--   [moment](https://github.com/zachwill/moment) - A Python library for dealing with dates/times. Inspired by [Moment.js](http://momentjs.com/).
--   [pytz](https://launchpad.net/pytz) - World timezone definitions, modern and historical. Brings the [tz database](http://en.wikipedia.org/wiki/Tz_database) into Python.
-
-Text Processing
----------------
-
-*Libraries for parsing and manipulating plain texts.*
-
--   General
-    -   [difflib](https://docs.python.org/2/library/difflib.html) - (Python standard library) Helpers for computing deltas.
-    -   [Levenshtein](https://github.com/ztane/python-Levenshtein/) - Fast computation of Levenshtein distance and string similarity.
-    -   [fuzzywuzzy](https://github.com/seatgeek/fuzzywuzzy) - Fuzzy String Matching.
-    -   [esmre](https://code.google.com/p/esmre/) - Regular expression accelerator.
-    -   [shortuuid](https://github.com/stochastic-technologies/shortuuid) - A generator library for concise, unambiguous and URL-safe UUIDs.
-    -   [ftfy](https://github.com/LuminosoInsight/python-ftfy) - Makes Unicode text less broken and more consistent automagically.
-    -   [unidecode](https://pypi.python.org/pypi/Unidecode) - ASCII transliterations of Unicode text.
-    -   [chardet](https://github.com/chardet/chardet) - Python 2/3 compatible character encoding detector.
-    -   [xpinyin](https://github.com/lxneng/xpinyin) - A library to translate Chinese hanzi (漢字) to pinyin (拼音).
-    -   [pangu.py](https://github.com/vinta/pangu.py) - Spacing texts for CJK and alphanumerics.
-    -   [pyfiglet](https://github.com/pwaller/pyfiglet) - An implementation of figlet written in Python.
-    -   [uniout](https://github.com/moskytw/uniout) - Print readable chars instead of the escaped string.
--   Slugify
-    -   [awesome-slugify](https://github.com/dimka665/awesome-slugify) - A Python slugify library that can preserve unicode.
-    -   [python-slugify](https://github.com/un33k/python-slugify) - A Python slugify library that translates unicode to ASCII.
-    -   [unicode-slugify](https://github.com/mozilla/unicode-slugify) - A slugifier that generates unicode slugs with Django as a dependency.
--   Parser
-    -   [PLY](http://www.dabeaz.com/ply/) - Implementation of lex and yacc parsing tools for Python
-    -   [phonenumbers](https://github.com/daviddrysdale/python-phonenumbers) - Parsing, formatting, storing and validating international phone numbers.
-    -   [python-user-agents](https://github.com/selwin/python-user-agents) - Browser user agent parser.
-    -   [sqlparse](https://sqlparse.readthedocs.org/) - A non-validating SQL parser.
-    -   [Pygments](http://pygments.org/) - A generic syntax highlighter.
-    -   [python-nameparser](https://github.com/derek73/python-nameparser) - Parsing human names into their individual components.
-    -   [pyparsing](http://pyparsing.wikispaces.com/) - A general purpose framework for generating parsers.
-
-Specific Formats Processing
----------------------------
-
-*Libraries for parsing and manipulating specific text formats.*
-
--   General
-    -   [tablib](https://github.com/kennethreitz/tablib) - A module for Tabular Datasets in XLS, CSV, JSON, YAML.
--   Office
-    -   [python-docx](https://github.com/python-openxml/python-docx) - Reads, queries and modifies Microsoft Word 2007/2008 docx files.
-    -   [xlwt](https://github.com/python-excel/xlwt) / [xlrd](https://github.com/python-excel/xlrd) - Writing and reading data and formatting information from Excel files.
-    -   [XlsxWriter](https://xlsxwriter.readthedocs.org/) - A Python module for creating Excel .xlsx files.
-    -   [xlwings](http://xlwings.org/) - A BSD-licensed library that makes it easy to call Python from Excel and vice versa.
-    -   [openpyxl](https://openpyxl.readthedocs.org/en/latest/) - A library for reading and writing Excel 2010 xlsx/xlsm/xltx/xltm files.
-    -   [Marmir](https://github.com/brianray/mm) - Takes Python data structures and turns them into spreadsheets.
-    -   [unoconv](https://github.com/dagwieers/unoconv) - Convert between any document format supported by LibreOffice/OpenOffice.
--   PDF
-    -   [PDFMiner](https://github.com/euske/pdfminer) - A tool for extracting information from PDF documents.
-    -   [PyPDF2](https://github.com/mstamy2/PyPDF2) - A library capable of splitting, merging and transforming PDF pages.
-    -   [ReportLab](http://www.reportlab.com/opensource/) - Allowing Rapid creation of rich PDF documents.
--   Markdown
-    -   [Python-Markdown](https://github.com/waylan/Python-Markdown) - A Python implementation of John Gruber's Markdown.
-    -   [Mistune](https://github.com/lepture/mistune) - Fastest and full featured pure Python parsers of Markdown.
--   YAML
-    -   [PyYAML](http://pyyaml.org/) - YAML implementations for Python.
--   CSV
-    -   [csvkit](https://github.com/onyxfish/csvkit) - Utilities for converting to and working with CSV.
--   Archive
-    -   [unp](https://github.com/mitsuhiko/unp) - A command line tool that can unpack archives easily.
-
-Natural Language Processing
----------------------------
-
-*Libraries for working with human languages.*
-
--   [NLTK](http://www.nltk.org/) - A leading platform for building Python programs to work with human language data.
--   [Pattern](http://www.clips.ua.ac.be/pattern) - A web mining module for the Python. It has tools for natural language processing, machine learning, among others.
--   [TextBlob](http://textblob.readthedocs.org/) - Providing a consistent API for diving into common NLP tasks. Stands on the giant shoulders of NLTK and Pattern.
--   [jieba](https://github.com/fxsjy/jieba) - Chinese Words Segmentation Utilities.
--   [SnowNLP](https://github.com/isnowfy/snownlp) - A library for processing Chinese text.
--   [loso](https://github.com/victorlin/loso) - Another Chinese segmentation library.
--   [genius](https://github.com/duanhongyi/genius) - A Chinese segment base on Conditional Random Field.
--   [langid.py](https://github.com/saffsd/langid.py) - Stand-alone language identification system.
-
-Documentation
--------------
-
-*Libraries for generating project documentation.*
-
--   [Sphinx](http://sphinx-doc.org/) - Python Documentation generator.
-    -   [awesome-sphinxdoc](https://github.com/yoloseem/awesome-sphinxdoc)
--   [reStructuredText](http://docutils.sourceforge.net/rst.html) - Markup Syntax and Parser Component of Docutils.
--   [MkDocs](http://www.mkdocs.org/) - Markdown friendly documentation generator.
--   [Pycco](http://fitzgen.github.io/pycco/) - The original quick-and-dirty, hundred-line-long, literate-programming-style documentation generator.
--   [pdoc](https://github.com/BurntSushi/pdoc) - Epydoc replacement to auto generate API documentation for Python libraries.
-
-Configuration
--------------
-
-*Libraries for storing configuration options.*
-
--   [ConfigParser](https://docs.python.org/2/library/configparser.html) - (Python standard library) INI file parser.
--   [ConfigObj](http://www.voidspace.org.uk/python/configobj.html) - INI file parser with validation.
--   [config](http://www.red-dove.com/config-doc/) - Hierarchical config from the author of [logging](https://docs.python.org/2/library/logging.html).
--   [profig](http://profig.readthedocs.org/) - Config from multiple formats with value conversion.
-
-Command-line Tools
-------------------
-
-*Libraries for building command-line application.*
-
--   Command-line Application Development
-    -   [cement](http://builtoncement.com/) - Cement provides a light-weight and fully featured foundation to build anything from single file scripts to complex and intricately designed applications.
-    -   [click](http://click.pocoo.org/) - A package for creating beautiful command line interfaces in a composable way.
-    -   [clint](https://github.com/kennethreitz/clint) - Python Command-line Application Tools.
-    -   [cliff](https://cliff.readthedocs.org/) - A framework for creating command-line programs with multi-level commands.
-    -   [Clime](http://clime.mosky.tw/) -- Clime lets you convert any module into a multi-command CLI program without any configuration.
-    -   [docopt](http://docopt.org/) - Pythonic command line arguments parser.
-    -   [colorama](https://pypi.python.org/pypi/colorama) - Cross-platform colored terminal text.
-    -   [pyCLI](https://pythonhosted.org/pyCLI/) - Command-line applications supporting standard command line parsing, logging, unit and functional testing.
-    -   [Gooey](https://github.com/chriskiehl/Gooey) - Turn command line programs into a full GUI application with one line
-    -   [python-prompt-toolkit](https://github.com/jonathanslenders/python-prompt-toolkit) - A Library for building powerful interactive command lines.
--   Productivity Tools
-    -   [cookiecutter](https://github.com/audreyr/cookiecutter) - A command-line utility that creates projects from cookiecutters (project templates). E.g. Python package projects, jQuery plugin projects.
-    -   [httpie](https://github.com/jakubroztocil/httpie) - A command line HTTP client, a user-friendly cURL replacement.
-    -   [percol](https://github.com/mooz/percol) - Adds flavor of interactive selection to the traditional pipe concept on UNIX.
-    -   [RainbowStream](http://www.rainbowstream.org/) - Smart and nice Twitter client on terminal.
-    -   [caniusepython3](https://github.com/brettcannon/caniusepython3) - Determine what projects are blocking you from porting to Python 3.
-    -   [thefuck](https://github.com/nvbn/thefuck) - Correcting your previous console command.
-
-Downloader
-----------
-
-*Libraries for downloading.*
-
--   [s3cmd](https://github.com/s3tools/s3cmd) - A command line tool for managing Amazon S3 and CloudFront.
--   [youtube-dl](http://rg3.github.io/youtube-dl/) - A small command-line program to download videos from YouTube.
--   [you-get](http://www.soimort.org/you-get/) - A YouTube/Youku/Niconico video downloader written in Python 3.
--   [coursera](https://github.com/coursera-dl/coursera) - Script for downloading Coursera.org videos and naming them.
--   [WikiTeam](https://github.com/WikiTeam/wikiteam) - Tools for downloading and preserving wikis.
--   [subliminal](https://github.com/Diaoul/subliminal) - Library and command line tool to search and download subtitles.
-
-Imagery
--------
-
-*Libraries for manipulating images.*
-
--   [pillow](http://pillow.readthedocs.org/) - Pillow is the friendly [PIL](http://www.pythonware.com/products/pil/) fork.
--   [wand](https://github.com/dahlia/wand) - Python bindings for [MagickWand](http://www.imagemagick.org/script/magick-wand.php), C API for ImageMagick.
--   [thumbor](https://github.com/thumbor/thumbor) - A smart imaging service. It enables on-demand crop, resizing and flipping of images.
--   [imgSeek](http://www.imgseek.net/) - A project for searching a collection of images using visual similarity.
--   [python-qrcode](https://github.com/lincolnloop/python-qrcode) - A pure Python QR Code generator.
--   [pyBarcode](https://pythonhosted.org/pyBarcode/) - Create barcodes in Python without needing PIL.
--   [pygram](https://github.com/ajkumar25/pygram) - Instagram-like image filters.
--   [Quads](https://github.com/fogleman/Quads) - Computer art based on quadtrees.
--   [nude.py](https://github.com/hhatto/nude.py) - Nudity detection.
--   [scikit-image](http://scikit-image.org/) - A Python library for (scientific) image processing.
--   [hmap](https://github.com/rossgoodwin/hmap) - Image histogram remapping.
-
-OCR
 ---
 
-*Libraries for Optical Character Recognition.*
-
--   [python-tesseract](https://code.google.com/p/python-tesseract) - A wrapper class for [Google Tesseract OCR](https://code.google.com/p/tesseract-ocr/).
--   [pytesseract](https://github.com/madmaze/pytesseract) - Another wrapper for Google Tesseract OCR.
--   [pyocr](https://github.com/jflesch/pyocr) - A wrapper for Tesseract and Cuneiform.
-
-Audio
------
-
-*Libraries for manipulating audio.*
-
--   [audiolazy](https://github.com/danilobellini/audiolazy) - Expressive Digital Signal Processing (DSP) package for Python.
--   [audioread](https://github.com/sampsyo/audioread) - Cross-library (GStreamer + Core Audio + MAD + FFmpeg) audio decoding.
--   [beets](http://beets.radbox.org/) - A music library manager and [MusicBrainz](https://musicbrainz.org/) tagger.
--   [dejavu](https://github.com/worldveil/dejavu) - Audio fingerprinting and recognition.
--   [django-elastic-transcoder](https://github.com/StreetVoice/django-elastic-transcoder) - Django + [Amazon Elastic Transcoder](http://aws.amazon.com/elastictranscoder/).
--   [eyeD3](http://eyed3.nicfit.net/) - A tool for working with audio files, specifically MP3 files containing ID3 metadata.
--   [id3reader](http://nedbatchelder.com/code/modules/id3reader.py) - A Python module for reading MP3 meta data.
--   [mutagen](https://code.google.com/p/mutagen/) - A Python module to handle audio metadata.
--   [pydub](https://github.com/jiaaro/pydub) - Manipulate audio with a simple and easy high level interface.
--   [pyechonest](https://github.com/echonest/pyechonest) - Python client for the [Echo Nest](http://developer.echonest.com/docs/) API.
--   [talkbox](http://scikits.appspot.com/talkbox) - A Python library for speech/signal processing.
--   [TimeSide](https://github.com/yomguy/TimeSide) - Open web audio processing framework.
--   [tinytag](https://github.com/devsnd/tinytag) - A library for reading music meta data of MP3, OGG, FLAC and Wave files.
--   [m3u8](https://github.com/globocom/m3u8) - A module for parsing m3u8 file.
-
-Video
------
-
-*Libraries for manipulating video and GIFs.*
-
--   [moviepy](http://zulko.github.io/moviepy/) - A module for script-based movie editing with many formats, including animated GIFs.
--   [shorten.tv](http://www.shorten.tv/) - Video summarization.
--   [scikit-video](https://github.com/aizvorski/scikit-video) - Video processing routines for SciPy.
-
-Geolocation
------------
-
-*Libraries for geocoding addresses and working with latitudes and longitudes.*
-
--   [GeoDjango](https://docs.djangoproject.com/en/dev/ref/contrib/gis/) - A world-class geographic web framework.
--   [geopy](https://github.com/geopy/geopy) - Python Geocoding Toolbox.
--   [pygeoip](https://github.com/appliedsec/pygeoip) - Pure Python GeoIP API.
--   [GeoIP](https://github.com/maxmind/geoip-api-python) - Python API for MaxMind GeoIP Legacy Database.
--   [geojson](https://github.com/frewsxcv/python-geojson) - Python bindings and utlities for GeoJSON.
--   [django-countries](https://github.com/SmileyChris/django-countries) - A Django app that provides country choices for use with forms, flag icons static files, and a country field for models.
-
-HTTP
-----
-
-*Libraries for working with HTTP.*
-
--   [requests](http://docs.python-requests.org/) - HTTP Requests for Humans™.
--   [grequests](https://github.com/kennethreitz/grequests) - requests + gevent for asynchronous HTTP requests.
--   [urllib3](https://github.com/shazow/urllib3) - A HTTP library with thread-safe connection pooling, file post support, sanity friendly.
--   [httplib2](https://github.com/jcgregorio/httplib2) - Comprehensive HTTP client library.
--   [treq](https://github.com/dreid/treq) - Python requests like API built on top of Twisted's HTTP client.
-
-Database
---------
-
-*Databases implemented in Python.*
-
--   [ZODB](http://www.zodb.org/) - A native object database for Python. A key-value and object graph database.
--   [pickleDB](https://pythonhosted.org/pickleDB/) - A simple and lightweight key-value store for Python.
--   [TinyDB](https://github.com/msiemens/tinydb) - A tiny, document-oriented database.
-
-Database Drivers
-----------------
-
-*Libraries for connecting and operating databases.*
-
--   Relational Databases
-    -   [mysql-python](http://sourceforge.net/projects/mysql-python/) - The MySQL database connector for Python.
-    -   [mysqlclient](https://github.com/PyMySQL/mysqlclient-python) - mysql-python fork supporting Python 3.
-    -   [PyMySQL](https://github.com/PyMySQL/PyMySQL) - Pure Python MySQL driver compatible to mysql-python.
-    -   [mysql-connector-python](https://pypi.python.org/pypi/mysql-connector-python) - A pure Python MySQL driver from Oracle.
-    -   [oursql](https://pythonhosted.org/oursql/) - A better MySQL connector with support for native prepared statements and BLOBs.
-    -   [psycopg2](http://initd.org/psycopg/) - The most popular PostgreSQL adapter for Python.
-    -   [txpostgres](http://txpostgres.readthedocs.org/) - Twisted based asynchronous driver for PostgreSQL.
-    -   [queries](https://github.com/gmr/queries) - A wrapper of the psycopg2 library for interacting with PostgreSQL.
-    -   [dataset](https://github.com/pudo/dataset) - Store Python dicts in a database - works with SQLite, MySQL, and PostgreSQL.
--   NoSQL Databases
-    -   [cassandra-python-driver](https://github.com/datastax/python-driver) - Python driver for Cassandra.
-    -   [pycassa](https://github.com/pycassa/pycassa) - Python Thrift driver for Cassandra.
-    -   [HappyBase](http://happybase.readthedocs.org/) - A developer-friendly library for Apache HBase.
-    -   [PyMongo](http://docs.mongodb.org/ecosystem/drivers/python/) - The official Python client for MongoDB.
-    -   [Plyvel](https://plyvel.readthedocs.org/) - A fast and feature-rich Python interface to LevelDB.
-    -   [redis-py](https://github.com/andymccurdy/redis-py) - The Redis Python Client.
-    -   [py2neo](http://book.py2neo.org/) - Python wrapper client for Neo4j's restful interface.
-    -   [telephus](https://github.com/driftx/Telephus) - Twisted based client for Cassandra.
-    -   [txRedis](https://github.com/deldotdr/txRedis) - Twisted based client for Redis.
-
-ORM
----
-
-*Libraries that implement Object-Relational Mapping or datamapping techniques.*
-
--   Relational Databases
-    -   [Django Models](https://docs.djangoproject.com/en/dev/topics/db/models/) - A part of Django.
-    -   [SQLAlchemy](http://www.sqlalchemy.org/) - The Python SQL Toolkit and Object Relational Mapper.
-        -   [awesome-sqlalchemy](https://github.com/dahlia/awesome-sqlalchemy)
-    -   [peewee](https://github.com/coleifer/peewee) - A small, expressive ORM.
-    -   [PonyORM](http://ponyorm.com/) - ORM that provides a generator-oriented interface to SQL.
--   NoSQL Databases
-    -   [MongoEngine](http://mongoengine.org/) - A Python Object-Document-Mapper for working with MongoDB.
-    -   [django-mongodb-engine](https://github.com/django-nonrel/mongodb-engine) - Django MongoDB Backend.
-    -   [redisco](https://github.com/kiddouk/redisco) - A Python Library for Simple Models and Containers Persisted in Redis.
-    -   [flywheel](https://github.com/mathcamp/flywheel) - Object mapper for Amazon DynamoDB.
--   Others
-    -   [butterdb](https://github.com/Widdershin/butterdb) - A Python ORM for Google Drive Spreadsheets.
-
-Web Frameworks
---------------
-
-*Full stack web frameworks.*
-
--   [Django](https://www.djangoproject.com/) - The most popular web framework in Python.
-    -   [awesome-django](https://github.com/rosarior/awesome-django)
--   [Flask](http://flask.pocoo.org/) - A microframework for Python.
-    -   [awesome-flask](https://github.com/humiaozuzu/awesome-flask)
--   [Bottle](http://bottlepy.org/) - A fast, simple and lightweight WSGI micro web-framework.
--   [Pyramid](http://www.pylonsproject.org/) - A small, fast, down-to-earth, open source Python web framework.
-    -   [awesome-pyramid](https://github.com/ITCase/awesome-pyramid)
--   [web2py](http://www.web2py.com/) - A full stack web framework and platform focused in the ease of use.
--   [web.py](http://webpy.org/) - A web framework for Python that is as simple as it is powerful.
--   [TurboGears](http://www.turbogears.org/) - The Web Framework that starts as a microframework and scales up to a fullstack solution.
--   [CherryPy](http://www.cherrypy.org/) - A Minimalist Python Web Framework, HTTP/1.1-compliant and WSGI thread-pooled.
--   [Grok](http://grok.zope.org/) - A framework built on the existing Zope 3 libraries.
--   [Bluebream](http://bluebream.zope.org/) - An open-source web application server, framework and library, formerly known as Zope 3.
--   [guava](https://github.com/flatpeach/guava) - A lightweight and high performance web framework for Python written in C.
-
-Permissions
------------
-
-*Libraries that allow or deny users access to data or functionality.*
-
--   [django-guardian](https://github.com/lukaszb/django-guardian) - Implementation of per object permissions for Django 1.2+
--   [django-rules](https://github.com/dfunckt/django-rules) - A tiny but powerful app providing object-level permissions to Django, without requiring a database.
--   [Carteblanche](http://www.github.com/neuman/python-carteblanche/) - Module to align code with thoughts of users and designers. Also magically handles navigation and permissions.
-
-CMS
----
-
-*Content Management Systems.*
-
--   [django-cms](https://www.django-cms.org/en/) - An Open source enterprise CMS based on the Django.
--   [djedi-cms](http://djedi-cms.org/) - A lightweight but yet powerful Django CMS with plugins, inline editing and performance in mind.
--   [FeinCMS](http://www.feincms.org/) - One of the most advanced Content Management Systems built on Django.
--   [Kotte](http://kotti.pylonsproject.org/) - A high-level, Pythonic web application framework built on Pyramid.
--   [Mezzanine](http://mezzanine.jupo.org/) - A powerful, consistent, and flexible content management platform.
--   [Opps](http://oppsproject.org/) - A Django-based CMS for magazines, newspapers websites and portals with high-traffic.
--   [Plone](http://plone.org/) - A CMS built on top of the open source application server Zope.
--   [Quokka](http://quokkaproject.org/) - Flexible, extensible, small CMS powered by Flask and MongoDB.
--   [Wagtail](http://wagtail.io/) - A Django content management system.
--   [Widgy](http://wid.gy/) - Last CMS framework, based on Django.
-
-E-commerce
-----------
-
-*Frameworks and libraries for e-commerce and payments.*
-
--   [django-oscar](http://oscarcommerce.com/) - An open-source e-commerce framework for Django.
--   [django-shop](https://www.django-cms.org/) - A Django based shop system.
--   [merchant](https://github.com/agiliq/merchant) - A Django app to accept payments from various payment processors.
--   [money](https://github.com/carlospalol/money) - Money class with optional CLDR-backed locale-aware formatting and an extensible currency exchange solution.
--   [python-currencies](https://github.com/Alir3z4/python-currencies) - Display money format and its filthy currencies.
--   [alipay](https://github.com/lxneng/alipay) - Unofficial Alipay API for Python.
-
-RESTful API
------------
-
-*Libraries for developing RESTful APIs.*
-
--   [cornice](https://cornice.readthedocs.org/) - A REST framework for Pyramid.
--   [django-rest-framework](http://www.django-rest-framework.org/) - A powerful and flexible toolkit that makes it easy to build Web APIs.
--   [django-tastypie](http://tastypieapi.org/) - Creating delicious APIs for Django apps.
--   [django-formapi](https://github.com/5monkeys/django-formapi) - Create JSON APIs with HMAC authentication and Django form-validation.
--   [flask-api](http://www.flaskapi.org/) - An implementation of the same web browsable APIs that django-rest-framework provides.
--   [flask-restful](http://flask-restful.readthedocs.org/) - An extension for Flask that adds support for quickly building REST APIs.
--   [flask-restless](https://flask-restless.readthedocs.org/en/latest/) - A Flask extension for generating ReSTful APIs for database models defined with SQLAlchemy (or Flask-SQLAlchemy).
--   [flask-api-utils](https://github.com/marselester/flask-api-utils) - Flask extension that takes care of API representation and authentication.
--   [falcon](http://falconframework.org/) - A high-performance Python framework for building cloud APIs and web app backends.
--   [eve](https://github.com/nicolaiarocci/eve) - REST API framework powered by Flask, MongoDB and good intentions.
--   [sandman](https://github.com/jeffknupp/sandman) - Automated REST APIs for existing database-driven systems.
--   [restless](http://restless.readthedocs.org/en/latest/) - Framework agnostic REST framework based on lessons learned from TastyPie.
--   [savory-pie](https://github.com/RueLaLa/savory-pie/) - REST API building library (django, and others)
-
-Authentication
---------------
-
-*Libraries for implementing authentications schemes.*
-
--   OAuth
-    -   [Authomatic](http://peterhudec.github.io/authomatic/) - Simple but powerful framework agnostic authentication/authorization client package.
-    -   [OAuthLib](https://github.com/idan/oauthlib) - A generic, spec-compliant, thorough implementation of the OAuth request-signing logic.
-    -   [rauth](https://github.com/litl/rauth) - A Python library for OAuth 1.0/a, 2.0, and Ofly.
-    -   [python-oauth2](https://github.com/simplegeo/python-oauth2) - A fully tested, abstract interface to creating OAuth clients and servers.
-    -   [python-social-auth](https://github.com/omab/python-social-auth) - An easy-to-setup social authentication mechanism.
-    -   [django-oauth-toolkit](https://github.com/evonove/django-oauth-toolkit) - OAuth2 goodies for the Djangonauts.
-    -   [django-oauth2-provider](https://github.com/caffeinehit/django-oauth2-provider) - Providing OAuth2 access to Django app.
-    -   [django-allauth](https://github.com/pennersr/django-allauth) - Authentication app for Django that "just works."
-    -   [Flask-OAuthlib](https://github.com/lepture/flask-oauthlib) - OAuth 1.0/a, 2.0 implementation of client and provider for Flask.
-    -   [sanction](https://github.com/demianbrecht/sanction) - A dead simple OAuth2 client implementation.
--   Others
-    -   [PyJWT](https://github.com/progrium/pyjwt) - Implementation of the JSON Web Token draft 01.
-    -   [python-jwt](https://github.com/davedoesdev/python-jwt) - Module for generating and verifying JSON Web Tokens.
-    -   [python-jws](https://github.com/brianloveswords/python-jws) - Implementation of JSON Web Signatures draft 02.
-    -   [jose](https://github.com/demonware/jose) - JavaScript Object Signing and Encryption draft implementation.
-
-Template Engine
----------------
-
-*Libraries and tools for templating and lexing.*
-
--   [Jinja2](https://github.com/mitsuhiko/jinja2) - A modern and designer friendly templating language.
--   [Genshi](http://genshi.edgewall.org/) - Python templating toolkit for generation of web-aware output.
--   [Mako](http://www.makotemplates.org/) - Hyperfast and lightweight templating for the Python platform.
--   [Chameleon](https://chameleon.readthedocs.org/) - An HTML/XML template engine. Modeled after ZPT, optimized for speed.
--   [Spitfire](https://code.google.com/p/spitfire/) - A very fast Python template compiler.
-
-Queue
------
-
-*Libraries for working with event and task queues.*
-
--   [celery](http://www.celeryproject.org/) - An asynchronous task queue/job queue based on distributed message passing.
--   [huey](https://github.com/coleifer/huey) - Little multi-threaded task queue.
--   [mrq](https://github.com/pricingassistant/mrq) - Mr. Queue - A distributed worker task queue in Python using Redis & gevent.
--   [rq](http://python-rq.org/) - Simple job queues for Python.
--   [simpleq](https://github.com/rdegges/simpleq) - A simple, infinitely scalable, Amazon SQS based queue.
-
-Search
-------
-
-*Libraries and software for indexing and performing search queries on data.*
-
--   [django-haystack](https://github.com/toastdriven/django-haystack) - Modular search for Django.
--   [elasticsearch-py](http://www.elasticsearch.org/guide/en/elasticsearch/client/python-api/current/) - The official low-level Python client for [Elasticsearch](http://www.elasticsearch.org/).
--   [solrpy](https://code.google.com/p/solrpy/) - A Python client for [solr](http://lucene.apache.org/solr/).
--   [Whoosh](http://whoosh.readthedocs.org/) - A fast, pure Python search engine library.
-
-News Feed
----------
-
-*Libraries for building user's activities.*
-
--   [Feedly](https://github.com/tschellenbach/Feedly) - A library to build newsfeed and notification systems using Cassandra and Redis.
--   [django-activity-stream](https://github.com/justquick/django-activity-stream) - Generate generic activity streams from the actions on your site.
-
-Asset Management
-----------------
-
-*Tools for managing, compressing and minifying website assets.*
-
--   [django-compressor](https://github.com/django-compressor/django-compressor) - Compresses linked and inline javascript or CSS into a single cached file.
--   [jinja-assets-compressor](https://github.com/jaysonsantos/jinja-assets-compressor) - A Jinja extension to compile and compress your assets.
--   [webassets](http://webassets.readthedocs.org/) - Bundles, optimizes, and manages unique cache-busting URLs for static resources.
--   [fanstatic](http://www.fanstatic.org/) - Packages, optimizes, and serves static file dependencies as Python packages.
--   [fileconveyor](http://fileconveyor.org/) - Monitors changes, processes, and transports assets to CDNs and file storage systems.
--   [django-storages](http://code.larlet.fr/django-storages/) - A collection of custom storage backends for Django.
--   [glue](http://gluecss.com/) - Glue is a simple command line tool to generate CSS sprites.
--   [libsass-python](http://hongminhee.org/libsass-python/) - A Python binding of [libsass](https://github.com/hcatlin/libsass), the reference implementation of SASS/SCSS.
--   [Flask-Assets](http://flask-assets.readthedocs.org/) - Helps you integrate webassets into your Flask app.
-
-Caching
--------
-
-*Libraries for caching data.*
-
--   [Beaker](http://beaker.readthedocs.org/) - A library for caching and sessions for use with web applications and stand-alone Python scripts and applications.
--   [dogpile.cache](http://dogpilecache.readthedocs.org/) - dogpile.cache is next generation replacement for Beaker made by same authors.
--   [HermesCache](https://pypi.python.org/pypi/HermesCache) - Python caching library with tag-based invalidation and dogpile effect prevention.
--   [django-cache-machine](https://github.com/jbalogh/django-cache-machine) - Automatic caching and invalidation for Django models through the ORM.
--   [django-cacheops](https://github.com/Suor/django-cacheops) - A slick ORM cache with automatic granular event-driven invalidation.
--   [johnny-cache](https://github.com/jmoiron/johnny-cache) - A caching framework for django applications.
--   [django-viewlet](https://github.com/5monkeys/django-viewlet) - Render template parts with extended cache control.
--   [pylibmc](https://github.com/lericson/pylibmc) - A Python wrapper around the [libmemcached](http://libmemcached.org/libMemcached.html) interface.
-
-Email
------
-
-*Libraries for sending and parsing email.*
-
--   [inbox.py](https://github.com/kennethreitz/inbox.py) - Python SMTP Server for Humans.
--   [imbox](https://github.com/martinrusev/imbox) - Python IMAP for Humans.
--   [inbox](https://github.com/inboxapp/inbox) - The open source email toolkit.
--   [lamson](https://github.com/zedshaw/lamson) - Pythonic SMTP Application Server.
--   [flanker](https://github.com/mailgun/flanker) - A email address and Mime parsing library.
--   [marrow.mailer](https://github.com/marrow/marrow.mailer) - High-performance extensible mail delivery framework.
--   [django-celery-ses](https://github.com/StreetVoice/django-celery-ses) - Django email backend with AWS SES and Celery.
--   [modoboa](https://github.com/tonioo/modoboa) - A mail hosting and management platform including a modern and simplified Web UI.
--   [envelopes](http://tomekwojcik.github.io/envelopes/) - Mailing for human beings.
--   [mailjet](https://github.com/WoLpH/mailjet) - Mailjet API implementation for batch mailing, statistics and more.
--   [Talon](https://github.com/mailgun/talon) - Mailgun library to extract message quotations and signatures.
--   [pyzmail](http://www.magiksys.net/pyzmail/) - Compose, send and parse emails.
-
-Internationalization
---------------------
-
-*Libraries for working with i18n.*
-
--   [Babel](http://babel.pocoo.org/) - An internationalization library for Python.
--   [Korean](https://korean.readthedocs.org/) - A library for [Korean](http://en.wikipedia.org/wiki/Korean_language) morphology.
-
-URL Manipulation
-----------------
-
-*Libraries for parsing URLs.*
-
--   [furl](https://github.com/gruns/furl) - A small Python library that makes manipulating URLs simple.
--   [purl](https://github.com/codeinthehole/purl) - A simple, immutable URL class with a clean API for interrogation and manipulation.
--   [pyshorteners](https://github.com/ellisonleao/pyshorteners) - A pure Python URL shortening lib.
--   [short_url](https://github.com/Alir3z4/python-short_url) - Python implementation for generating Tiny URL and bit.ly-like URLs.
--   [webargs](https://github.com/sloria/webargs) - A friendly library for parsing HTTP request arguments, with built-in support for popular web frameworks, including Flask, Django, Bottle, Tornado, and Pyramid.
-
-HTML Manipulation
------------------
-
-*Libraries for working with HTML and XML.*
-
--   [BeautifulSoup](http://www.crummy.com/software/BeautifulSoup/bs4/doc/) - Providing Pythonic idioms for iterating, searching, and modifying HTML or XML.
--   [lxml](http://lxml.de/) - A very fast, easy-to-use and versatile library for handling HTML and XML.
--   [html5lib](https://github.com/html5lib/html5lib-python) - A standards-compliant library for parsing and serializing HTML documents and fragments.
--   [pyquery](https://github.com/gawel/pyquery) - A jQuery-like library for parsing HTML.
--   [cssutils](https://pypi.python.org/pypi/cssutils/) - A CSS library for Python.
--   [MarkupSafe](https://github.com/mitsuhiko/markupsafe) - Implements a XML/HTML/XHTML Markup safe string for Python.
--   [bleach](http://bleach.readthedocs.org/) - A whitelist-based HTML sanitization and text linkification library.
--   [xmltodict](https://github.com/martinblech/xmltodict) - Working with XML feel like you are working with JSON.
--   [xhtml2pdf](https://github.com/chrisglass/xhtml2pdf) - HTML/CSS to PDF converter.
--   [untangle](https://github.com/stchris/untangle) - Converts XML documents to Python objects for easy access.
-
-Web Crawling
-------------
-
-*Libraries for scraping websites.*
-
--   [Scrapy](http://scrapy.org/) - A fast high-level screen scraping and web crawling framework.
--   [portia](https://github.com/scrapinghub/portia) - Visual scraping for Scrapy.
--   [feedparser](http://pythonhosted.org/feedparser/) - Universal feed parser.
--   [RoboBrowser](https://github.com/jmcarp/robobrowser) - A simple, Pythonic library for browsing the web without a standalone web browser.
--   [MechanicalSoup](https://github.com/hickford/MechanicalSoup) - A Python library for automating interaction with websites.
--   [mechanize](http://wwwsearch.sourceforge.net/mechanize/) - Stateful programmatic web browsing.
--   [Demiurge](https://github.com/matiasb/demiurge) - PyQuery-based scraping micro-framework.
--   [cola](https://github.com/chineking/cola) - A distributed crawling framework.
--   [pyspider](https://github.com/binux/pyspider) - A powerful spider system.
--   [Grab](http://grablib.org/) - Site scraping framework.
-
-Web Content Extracting
-----------------------
-
-*Libraries for extracting web contents.*
-
--   [newspaper](https://github.com/codelucas/newspaper) - News extraction, article extraction and content curation in Python.
--   [html2text](https://github.com/Alir3z4/html2text) - Convert HTML to Markdown-formatted text.
--   [python-goose](https://github.com/grangier/python-goose) - HTML Content/Article Extractor.
--   [lassie](https://github.com/michaelhelmick/lassie) - Web Content Retrieval for Humans.
--   [micawber](https://github.com/coleifer/micawber) - A small library for extracting rich content from URLs.
--   [sumy](https://github.com/miso-belica/sumy) - A module for automatic summarization of text documents and HTML pages.
--   [Haul](https://github.com/vinta/Haul) - An Extensible Image Crawler.
--   [python-readability](https://github.com/buriy/python-readability) - Fast Python port of arc90's readability tool.
--   [opengraph](https://github.com/erikriver/opengraph) - A Python module to parse the Open Graph Protocol
--   [textract](https://github.com/deanmalmgren/textract) - Extract text from any document, Word, PowerPoint, PDFs, etc.
--   [sanitize](https://github.com/Alir3z4/sanitize) - Bringing sanity to world of messed-up data.
-
-Forms
------
-
-*Libraries for working with forms.*
-
--   [WTForms](http://wtforms.readthedocs.org/) - A flexible forms validation and rendering library.
--   [WTForms-JSON](http://wtforms-json.readthedocs.org/) - A WTForms extension for JSON data handling.
--   [Deform](http://deform.readthedocs.org/) - Python HTML form generation library influenced by the formish form generation library.
--   [django-bootstrap3](https://github.com/dyve/django-bootstrap3) - Bootstrap 3 integration with Django.
--   [django-crispy-forms](http://django-crispy-forms.readthedocs.org/) - A Django app which lets you create beautiful forms in a very elegant and DRY way.
--   [django-remote-forms](https://github.com/WiserTogether/django-remote-forms) - A platform independent Django form serializer.
-
-Data Validation
----------------
-
-*Libraries for validating data. Used for forms in many cases.*
-
--   [voluptuous](https://github.com/alecthomas/voluptuous) - A Python data validation library. It is primarily intended for validating data coming into Python as JSON, YAML, etc.
--   [colander](http://docs.pylonsproject.org/projects/colander/) - A system for validating and deserializing data obtained via XML, JSON, an HTML form post or any other equally simple data serialization.
--   [schema](https://github.com/halst/schema) - A library for validating Python data structures.
--   [Schematics](https://github.com/schematics/schematics) - Data Structure Validation.
--   [kmatch](https://github.com/ambitioninc/kmatch) - A language for matching/validating/filtering Python dictionaries.
--   [valideer](https://github.com/podio/valideer) - Lightweight extensible data validation and adaptation library.
-
-Anti-spam
----------
-
-*Libraries for fighting spam.*
-
--   [django-simple-spam-blocker](https://github.com/moqada/django-simple-spam-blocker) - Simple spam blocker for Django.
--   [django-simple-captcha](https://github.com/mbi/django-simple-captcha) - A simple and highly customizable Django app to add captcha images to any Django form.
-
-Tagging
--------
-
-*Libraries for tagging items.*
-
--   [django-taggit](https://github.com/alex/django-taggit) - Simple tagging for Django.
-
-Admin Panels
-------------
-
-*Libraries for administrative interfaces.*
-
--   [Ajenti](https://github.com/Eugeny/ajenti) - The admin panel your servers deserve.
--   [Grappelli](http://grappelliproject.com/) -- A jazzy skin for the Django Admin-Interface.
--   [django-suit](http://djangosuit.com/) - Alternative Django Admin-Interface (free only for Non-commercial use).
--   [django-xadmin](https://github.com/sshwsfc/django-xadmin) - Drop-in replacement of Django admin comes with lots of goodies.
--   [flask-admin](https://github.com/mrjoes/flask-admin) - Simple and extensible administrative interface framework for Flask.
--   [flower](https://github.com/mher/flower) - Real-time monitor and web admin for Celery.
-
-Static Site Generator
----------------------
-
-*Static site generator is a software that takes some text + templates as input and produces html files on the output.*
-
--   [Pelican](http://blog.getpelican.com/) - Uses Markdown or ReST for content and Jinja 2 for themes. Supports DVCS, Disqus. AGPL.
--   [Cactus](http://github.com/koenbok/Cactus/) -- Static site generator for designers.
--   [Hyde](https://hyde.github.com/) - Jinja2-based static web site generator.
--   [Nikola](http://www.getnikola.com/) - A static website and blog generator.
--   [Tinkerer](http://tinkerer.me/) - Tinkerer is a blogging engine/.static website generator powered by Sphinx.
-
-Processes and Threads
----------------------
-
-*Libraries for working with processes or threads*
-
--   [multiprocessing](https://docs.python.org/2/library/multiprocessing.html) - (Python standard library) Process-based "threading" interface.
--   [threading](https://docs.python.org/2/library/threading.html) - (Python standard library) Higher-level threading interface.
--   [envoy](https://github.com/kennethreitz/envoy) - Python Subprocesses for Humans™.
--   [sh](https://github.com/amoffat/sh) - A full-fledged [subprocess](https://docs.python.org/2/library/subprocess.html) replacement for Python.
--   [sarge](http://sarge.readthedocs.org/) - A wrapper for subprocess.
-
-Concurrency and Networking
---------------------------
-
-*Libraries for concurrency and network programming.*
-
--   [asyncio](https://docs.python.org/3/library/asyncio.html) - (Python standard library in Python 3.4+) Asynchronous I/O, event loop, coroutines and tasks.
--   [gevent](http://www.gevent.org/) - A coroutine-based Python networking library that uses [greenlet](https://github.com/python-greenlet/greenlet).
--   [Twisted](https://twistedmatrix.com/trac/) - An event-driven networking engine.
--   [Tornado](http://www.tornadoweb.org/) - A Web framework and asynchronous networking library.
--   [pulsar](https://github.com/quantmind/pulsar) - Event-driven concurrent framework for Python.
--   [diesel](https://github.com/jamwt/diesel) - Greenlet-based event I/O Framework for Python.
--   [eventlet](http://eventlet.net/) - Asynchronous framework with WSGI support.
--   [pyzmq](http://zeromq.github.io/pyzmq/) - A Python wrapper for the 0MQ message library.
--   [txZMQ](https://github.com/smira/txZMQ) - Twisted based wrapper for the 0MQ message library.
--   [Crossbar](http://crossbar.io/) - Open-source Unified Application Router (Websocket & WAMP for Python on Autobahn).
-
-WebSocket
----------
-
-*Libraries for working with WebSocket.*
-
--   [AutobahnPython](https://github.com/tavendo/AutobahnPython) - WebSocket & WAMP for Python on Twisted and [asyncio](https://docs.python.org/3/library/asyncio.html).
--   [WebSocket-for-Python](https://github.com/Lawouach/WebSocket-for-Python) - WebSocket client and server library for Python 2 and 3 as well as PyPy.
-
-WSGI Servers
-------------
-
-*WSGI-compatible web servers.*
-
--   [wsgiref](http://docs.python.org/library/wsgiref.html) - (Python standard library) WSGI reference implementation, single-threaded.
--   [Werkzeug](http://werkzeug.pocoo.org/) - A WSGI utility library for Python that powers Flask and can easily be embedded into your own projects.
--   [paste](http://pythonpaste.org/) - Multi-threaded, stable, tried and tested.
--   [rocket](http://pypi.python.org/pypi/rocket) - Multi-threaded.
--   [waitress](https://waitress.readthedocs.org/) - Multi-threaded, poweres Pyramid.
--   [netius](https://github.com/hivesolutions/netius) - Asynchronous, very fast.
--   [gunicorn](http://pypi.python.org/pypi/gunicorn) - Pre-forked, partly written in C.
--   [fapws3](http://www.fapws.org/) - Asynchronous (network side only), written in C.
--   [meinheld](http://pypi.python.org/pypi/meinheld) - Asynchronous, partly written in C.
--   [bjoern](http://pypi.python.org/pypi/bjoern) - Asynchronous, very fast and written in C.
-
-RPC Servers
------------
-
-*RPC-compatible servers.*
-
--   [SimpleXMLRPCServer](https://docs.python.org/2/library/simplexmlrpcserver.html) - (Python standard library) Simple XML-RPC server implementation, single-threaded.
--   [SimpleJSONRPCServer](https://github.com/joshmarshall/jsonrpclib/) - This library is an implementation of the JSON-RPC specification.
--   [zeroRPC](https://github.com/dotcloud/zerorpc-python) - zerorpc is a flexible RPC implementation based on [ZeroMQ](http://zeromq.org/) and [MessagePack](http://msgpack.org/).
-
-Cryptography
-------------
-
--   [PyCrypto](https://www.dlitz.net/software/pycrypto/) - The Python Cryptography Toolkit.
--   [Paramiko](http://www.paramiko.org/) - A Python (2.6+, 3.3+) implementation of the SSHv2 protocol, providing both client and server functionality.
--   [cryptography](https://cryptography.io/) - A package designed to expose cryptographic primitives and recipes to Python developers.
--   [PyNacl](https://github.com/pyca/pynacl) - Python binding to the Networking and Cryptography (NaCl) library.
--   [hashids](https://github.com/davidaurelio/hashids-python) - Implementation of [hashids](http://hashids.org/) in Python.
--   [Passlib](https://pythonhosted.org/passlib/) - Secure password storage/hashing library, very high level.
-
-GUI
----
-
-*Libraries for working with graphical user interface applications.*
-
--   [PyQt](http://www.riverbankcomputing.co.uk/software/pyqt/intro) - Python bindings for the [Qt](http://qt-project.org/) cross-platform application and UI framework, with support for both Qt v4 and Qt v5 frameworks.
--   [PySide](http://qt-project.org/wiki/pyside) - Python bindings for the [Qt](http://qt-project.org/) cross-platform application and UI framework, supporting the Qt v4 framework.
--   [wxPython](http://wxpython.org/) - A blending of the wxWidgets C++ class library with the Python.
--   [kivy](http://kivy.org/) - A library for creating NUI applications, running on Windows, Linux, Mac OS X, Android and iOS.
--   [curses](https://docs.python.org/2/library/curses.html#module-curses) - Built-in wrapper for [ncurses](http://www.gnu.org/software/ncurses/) used to create terminal GUI applications.
--   [urwid](http://urwid.org/) - A library for creating terminal GUI applications with strong support for widgets, events, rich colors, etc.
--   [pyglet](http://www.pyglet.org/) - A cross-platform windowing and multimedia library for Python.
--   [Tkinter](https://wiki.python.org/moin/TkInter) - Tkinter is Python's de-facto standard GUI package.
--   [enaml](https://github.com/nucleic/enaml) - Creating beautiful user-interfaces with Declaratic Syntax like QML.
--   [Toga](https://github.com/pybee/toga) - A Python native, OS native GUI toolkit.
-
-Game Development
-----------------
-
-*Awesome game development libraries.*
-
--   [Pygame](http://www.pygame.org/news.html) - Pygame is a set of Python modules designed for writing games.
--   [Cocos2d](http://cocos2d.org/) - cocos2d is a framework for building 2D games, demos, and other graphical/interactive applications. It is based on pyglet.
--   [PySDL2](http://pysdl2.readthedocs.org/) - A ctypes based wrapper for the SDL2 library.
--   [Panda3D](https://www.panda3d.org/) - 3D game engine developed by Disney and maintained by Carnegie Mellon's Entertainment Technology Center. Written in C++, completely wrapped in Python.
--   [PyOgre](http://www.ogre3d.org/tikiwiki/PyOgre) - Python bindings for the Ogre 3D render engine, can be used for games, simulations, anything 3D.
--   [PyOpenGL](http://pyopengl.sourceforge.net/) - Python ctypes bindings for OpenGL and it's related APIs.
--   [PySFML](http://www.python-sfml.org/) - Python bindings for [SFML](http://www.sfml-dev.org/)
--   [RenPy](http://www.renpy.org/) - A Visual Novel engine.
-
-Logging
--------
-
-*Libraries for generating and working with log files.*
-
--   [logging](https://docs.python.org/2/library/logging.html) - (Python standard library) Logging facility for Python.
--   [logbook](http://pythonhosted.org/Logbook/) - Logging replacement for Python.
--   [Sentry](https://pypi.python.org/pypi/sentry) - A realtime logging and aggregation server.
--   [Raven](http://raven.readthedocs.org/) - The Python client for Sentry.
-
-Testing
--------
-
-*Libraries for testing codebases and generating test data.*
-
--   Testing Frameworks
-    -   [unittest](https://docs.python.org/2/library/unittest.html) - (Python standard library) Unit testing framework.
-    -   [nose](https://nose.readthedocs.org/) - nose extends unittest.
-    -   [pytest](http://pytest.org/) - A mature full-featured Python testing tool.
-    -   [mamba](https://nestorsalceda.github.io/mamba) - The definitive testing tool for Python. Born under the banner of BDD.
-    -   [contexts](https://github.com/benjamin-hodgson/Contexts) - A BDD framework for Python 3.3+. Inspired by C#'s `Machine.Specifications`.
-    -   [pyshould](https://github.com/drslump/pyshould) - Should style asserts based on [PyHamcrest](https://github.com/hamcrest/PyHamcrest).
-    -   [pyvows](http://heynemann.github.io/pyvows/) - BDD style testing for Python. Inspired by [Vows.js](http://vowsjs.org/).
--   Web Testing
-    -   [Selenium](https://pypi.python.org/pypi/selenium) - Python bindings for [Selenium](http://www.seleniumhq.org/) WebDriver.
-    -   [splinter](http://splinter.cobrateam.info/) - Open source tool for testing web applications.
-    -   [locust](https://github.com/locustio/locust) - Scalable user load testing tool written in Python.
-    -   [sixpack](https://github.com/seatgeek/sixpack) - A language-agnostic A/B Testing framework.
--   Mock
-    -   [mock](https://pypi.python.org/pypi/mock) - A Python Mocking and Patching Library for Testing.
-    -   [responses](https://github.com/dropbox/responses) - A utility library for mocking out the requests Python library.
-    -   [doublex](https://pypi.python.org/pypi/doublex) - Powerful test doubles framework for Python.
-    -   [freezegun](https://github.com/spulec/freezegun) - Travel through time by mocking the datetime module.
-    -   [httpretty](http://falcao.it/HTTPretty/) - HTTP request mock tool for Python.
-    -   [httmock](https://github.com/patrys/httmock) - A mocking library for requests for Python 2.6+ and 3.2+.
--   Code Coverage
-    -   [coverage](https://pypi.python.org/pypi/coverage) - Code coverage measurement.
--   Fake Data
-    -   [faker](http://www.joke2k.net/faker/) - A Python package that generates fake data.
-    -   [fake2db](https://github.com/emirozer/fake2db) - Fake database generator.
-    -   [mixer](https://mixer.readthedocs.org/) - Generating fake data and creating random fixtures for testing in Django ORM, SQLAlchemy, Peewee, MongoEngine, Pony ORM and etc.
-    -   [model_mommy](https://model-mommy.readthedocs.org/) - Creating random fixtures for testing in Django.
-    -   [ForgeryPy](https://pypi.python.org/pypi/ForgeryPy) - An easy to use forged data generator for Python. It's a port of [forgery](http://rubygems.org/gems/forgery).
-    -   [radar](https://pypi.python.org/pypi/radar) - Generate random datetime / time.
--   Error Handler
-    -   [FuckIt.py](https://github.com/ajalt/fuckitpy) - FuckIt.py uses state-of-the-art technology to make sure your Python code runs whether it has any right to or not.
-
-Code Analysis and Linter
-------------------------
-
-*Libraries and tools for analysing, parsing and manipulation codebases.*
-
--   Code Analysis
-    -   [pysonar2](https://github.com/yinwang0/pysonar2) - A type inferencer and indexer for Python.
-    -   [pycallgraph](https://github.com/gak/pycallgraph) - A library that visualises the flow (call graph) of your Python application.
-    -   [code2flow](https://github.com/scottrogowski/code2flow) - Turn your Python and JavaScript code into DOT flowcharts.
--   Linter
-    -   [Flake8](https://pypi.python.org/pypi/flake8) - The modular source code checker: pep8, pyflakes and co.
-    -   [pylama](https://pylama.readthedocs.org/) - Code audit tool for Python and JavaScript.
-    -   [Pylint](http://www.pylint.org/) - A source code analyzer.
-
-Debugging Tools
----------------
-
-*Libraries for debugging code.*
-
--   [pdb](https://docs.python.org/2/library/pdb.html) - (Python standard library) The Python Debugger.
--   [ipdb](https://pypi.python.org/pypi/ipdb) - IPython-enabled pdb.
--   [winpdb](http://winpdb.org/) - A Platform Independent Python Debugger with GUI.
--   [pudb](https://pypi.python.org/pypi/pudb) -- A full-screen, console-based Python debugger.
--   [pyringe](https://github.com/google/pyringe) - Debugger capable of attaching to and injecting code into Python processes.
--   [python-statsd](https://github.com/WoLpH/python-statsd) - Python Client for the [statsd](https://github.com/etsy/statsd/) server.
--   [memory_profiler](https://github.com/fabianp/memory_profiler) - Monitor Memory usage of Python code.
--   [profiling](https://github.com/what-studio/profiling) - An interactive Python profiler.
--   [django-debug-toolbar](https://github.com/django-debug-toolbar/django-debug-toolbar) - Display various debug information about the current request/response.
--   [django-devserver](https://github.com/dcramer/django-devserver) - A drop-in replacement for Django's runserver.
--   [flask-debugtoolbar](https://github.com/mgood/flask-debugtoolbar) - A port of the django-debug-toolbar to flask.
--   [pyelftools](https://github.com/eliben/pyelftools) - A pure-Python library for parsing and analyzing ELF files and DWARF debugging information.
-
-Science and Data Analysis
--------------------------
-
-*Libraries for scientific computing and data analyzing.*
-
--   [SciPy](http://www.scipy.org/) - A Python-based ecosystem of open-source software for mathematics, science, and engineering.
--   [NumPy](http://www.numpy.org/) - A fundamental package for scientific computing with Python.
--   [Numba](http://numba.pydata.org/) - Python JIT (just in time) complier to LLVM aimed at scientific Python by the developers of Cython and NumPy.
--   [NetworkX](https://networkx.github.io/) - A high-productivity software for complex networks.
--   [Pandas](http://pandas.pydata.org/) - A library providing high-performance, easy-to-use data structures and data analysis tools.
--   [Open Mining](https://github.com/avelino/mining) - Business Intelligence (BI) in Python (Pandas web interface)
--   [PyMC](https://github.com/pymc-devs/pymc) - Markov Chain Monte Carlo sampling toolkit.
--   [zipline](https://github.com/quantopian/zipline) - A Pythonic algorithmic trading library.
--   [PyDy](https://pydy.org/) - Short for Python Dynamics, used to assist with workflow in the modeling of dynamic motion based around NumPy, SciPy, IPython, and matplotlib.
--   [SymPy](https://github.com/sympy/sympy) - A Python library for symbolic mathematics.
--   [statsmodels](https://github.com/statsmodels/statsmodels) - Statistical modeling and econometrics in Python.
--   [astropy](http://www.astropy.org/) - A community Python library for Astronomy.
--   [orange](http://orange.biolab.si/) - Data mining, data visualization, analysis and machine learning through visual programming or Python scripting.
--   [RDKit](http://www.rdkit.org/) - Cheminformatics and Machine Learning Software.
--   [Open Babel](http://openbabel.org/wiki/Main_Page) - A chemical toolbox designed to speak the many languages of chemical data.
--   [cclib](http://cclib.github.io/) - A library for parsing and interpreting the results of computational chemistry packages.
--   [Biopython](http://biopython.org/wiki/Main_Page) - Biopython is a set of freely available tools for biological computation.
--   [bccb](https://github.com/chapmanb/bcbb) - Collection of useful code related to biological analysis.
--   [bcbio-nextgen](https://github.com/chapmanb/bcbio-nextgen) - A toolkit providing best-practice pipelines for fully automated high throughput sequencing analysis.
--   [blaze](http://blaze.pydata.org/en/latest/) - NumPy and Pandas interface to Big Data.
-
-Data Visualization
-------------------
-
-*Libraries for visualizing data. See: [awesome-javascript](https://github.com/sorrycc/awesome-javascript#data-visualization).*
-
--   [matplotlib](http://matplotlib.org/) - A Python 2D plotting library.
--   [bokeh](https://github.com/ContinuumIO/bokeh) - Interactive Web Plotting for Python.
--   [plotly](https://plot.ly/python) - Collaborative web plotting for Python and matplotlib.
--   [vincent](https://github.com/wrobstory/vincent) - A Python to Vega translator.
--   [d3py](https://github.com/mikedewar/d3py) - A plottling library for Python, based on [D3.js](http://d3js.org/).
--   [ggplot](https://github.com/yhat/ggplot) - Same API as ggplot2 for R.
--   [Kartograph.py](https://github.com/kartograph/kartograph.py) - Rendering beautiful SVG maps in Python.
--   [pygal](http://pygal.org/) - A Python SVG Charts Creator.
--   [pygraphviz](https://pypi.python.org/pypi/pygraphviz) - Python interface to [Graphviz](http://www.graphviz.org/).
--   [PyQtGraph](http://www.pyqtgraph.org/) - Interactive and realtime 2D/3D/Image plotting and science/engineering widgets.
--   [VisPy](http://vispy.org/) - High-performance scientific visualization based on OpenGL.
-
-Computer Vision
----------------
-
-*Libraries for computer vision.*
-
--   [OpenCV](http://opencv.org/) - Open Source Computer Vision Library.
--   [SimpleCV](http://simplecv.org/) - An open source framework for building computer vision applications.
-
-Machine Learning
-----------------
-
-*Libraries for Machine Learning. See: [awesome-machine-learning](https://github.com/josephmisiti/awesome-machine-learning#python).*
-
--   [scikit-learn](http://scikit-learn.org/) - A Python module for machine learning built on top of SciPy.
--   [pattern](https://github.com/clips/pattern) - Web mining module for Python.
--   [NuPIC](https://github.com/numenta/nupic) - Numenta Platform for Intelligent Computing.
--   [Pylearn2](https://github.com/lisa-lab/pylearn2) - A Machine Learning library based on [Theano](https://github.com/Theano/Theano).
--   [hebel](https://github.com/hannes-brt/hebel) - GPU-Accelerated Deep Learning Library in Python.
--   [gensim](https://github.com/piskvorky/gensim) - Topic Modelling for Humans.
--   [PyBrain](https://github.com/pybrain/pybrain) - Another Python Machine Learning Library.
--   [Crab](https://github.com/muricoca/crab) - A ﬂexible, fast recommender engine.
--   [python-recsys](https://github.com/ocelma/python-recsys) - A Python library for implementing a Recommender System.
--   [vowpal_porpoise](https://github.com/josephreisinger/vowpal_porpoise) - A lightweight Python wrapper for [Vowpal Wabbit](https://github.com/JohnLangford/vowpal_wabbit/).
-
-MapReduce
----------
-
-*Framworks and libraries for MapReduce.*
-
--   [PySpark](http://spark.apache.org/docs/latest/programming-guide.html) - The Spark Python API.
--   [dpark](https://github.com/douban/dpark) - Python clone of Spark, a MapReduce alike framework in Python.
--   [luigi](https://github.com/spotify/luigi) - A module that helps you build complex pipelines of batch jobs.
--   [mrjob](https://github.com/Yelp/mrjob) - Run MapReduce jobs on Hadoop or Amazon Web Services.
--   [dumbo](https://github.com/klbostee/dumbo) - Python module that allows one to easily write and run Hadoop programs.
--   [streamparse](https://github.com/Parsely/streamparse) - Run Python code against real-time streams of data. Integrates with [Apache Storm](https://storm.incubator.apache.org/).
-
-Functional Programming
-----------------------
-
-*Functional Programming with Python.*
-
--   [fn.py](https://github.com/kachayev/fn.py) - Functional programming in Python: implementation of missing features to enjoy FP.
--   [funcy](https://github.com/Suor/funcy) - A fancy and practical functional tools.
--   [Toolz](https://github.com/pytoolz/toolz) - A collection of functional utilities for iterators, functions, and dictionaries.
--   [CyToolz](https://github.com/pytoolz/cytoolz/) - Cython implementation of Toolz: High performance functional utilities.
-
-Third-party APIs
-----------------
-
-*Libraries for accessing third party services APIs. See: [List of Python API Wrappers and Libraries](https://github.com/realpython/list-of-python-api-wrappers).*
-
--   [apache-libcloud](https://libcloud.apache.org/) - One Python library for all clouds.
--   [boto](https://github.com/boto/boto) - Python interface to Amazon Web Services.
--   [twython](https://github.com/ryanmcgrath/twython) - A Python wrapper for the Twitter API.
--   [google-api-python-client](https://github.com/google/google-api-python-client) - Google APIs Client Library for Python.
--   [gspread](https://github.com/burnash/gspread) - Google Spreadsheets Python API.
--   [facebook-sdk](https://github.com/pythonforfacebook/facebook-sdk) - Facebook Platform Python SDK.
--   [facepy](https://github.com/jgorset/facepy) - Facepy makes it really easy to interact with Facebook's Graph API
--   [gmail](https://github.com/charlierguo/gmail) - A Pythonic interface for Gmail.
--   [django-wordpress](https://github.com/sunlightlabs/django-wordpress/) - WordPress models and views for Django.
-
-DevOps Tools
-------------
-
-*Software and libraries for DevOps.*
-
--   [OpenStack](http://www.openstack.org/) - Open source software for building private and public clouds.
--   [Ansible](https://github.com/ansible/ansible) - A radically simple IT automation platform.
--   [SaltStack](https://github.com/saltstack/salt) - Infrastructure automation and management system.
--   [Fabric](http://www.fabfile.org/) - A simple, Pythonic tool for remote execution and deployment.
--   [Fabtools](https://github.com/ronnix/fabtools) - Tools for writing awesome Fabric files.
--   [cuisine](https://github.com/sebastien/cuisine) - Chef-like functionality for Fabric.
--   [psutil](https://github.com/giampaolo/psutil) - A cross-platform process and system utilities module.
--   [pexpect](https://github.com/pexpect/pexpect) - Controlling interactive programs in a pseudo-terminal like GNU expect.
--   [provy](https://github.com/python-provy/provy) - An easy-to-use provisioning system in Python.
--   [honcho](https://github.com/nickstenning/honcho) - A Python port of [Foreman](https://github.com/ddollar/foreman), a tool for managing Procfile-based applications.
--   [gunnery](https://github.com/gunnery/gunnery) - Multipurpose task execution tool for distributed systems with web-based interface.
--   [Docker-Compose](https://docs.docker.com/compose/) - Fast, isolated development environments using [Docker](https://www.docker.com/).
--   [hgapi](http://bitbucket.org/haard/hgapi) - Pure-Python API for Mercurial.
--   [gitapi](http://bitbucket.org/haard/gitapi) - Pure-Python API for git.
--   [supervisor](https://github.com/Supervisor/supervisor) - Supervisor process control system for UNIX.
-
-Job Scheduler
--------------
-
-*Libraries for scheduling jobs.*
-
--   [APScheduler](http://apscheduler.readthedocs.org/) - A light but powerful in-process task scheduler that lets you schedule functions.
--   [django-schedule](https://github.com/thauber/django-schedule) - A calendaring app for Django.
--   [doit](http://pydoit.org/) - A task runner/build tool.
--   [Joblib](http://pythonhosted.org/joblib/index.html) - A set of tools to provide lightweight pipelining in Python.
--   [Plan](https://github.com/fengsp/plan) - Writing crontab file in Python like a charm.
--   [Spiff](https://github.com/knipknap/SpiffWorkflow) - A powerful workflow engine implemented in pure Python.
--   [schedule](https://github.com/dbader/schedule) - Python job scheduling for humans.
--   [TaskFlow](http://docs.openstack.org/developer/taskflow/) - A Python library that helps to make task execution easy, consistent and reliable.
-
-Foreign Function Interface
---------------------------
-
-*Libraries for providing foreign function interface.*
-
--   [ctypes](https://docs.python.org/2/library/ctypes.html) - (Python standard library) Foreign Function Interface for Python calling C code.
--   [cffi](https://pypi.python.org/pypi/cffi) - Foreign Function Interface for Python calling C code.
--   [SWIG](http://www.swig.org/Doc1.3/Python.html) - Simplified Wrapper and Interface Generator.
--   [PyCUDA](http://mathema.tician.de/software/pycuda/) - A Python wrapper for Nvidia's CUDA API.
-
-High Performance
-----------------
-
-*Libraries for making Python faster.*
-
--   [Cython](http://cython.org/) - Optimizing Static Complier for Python. Uses type mixins to compile Python into C or C++ modules resulting in large performance gains.
--   [PyPy](http://pypy.org/) - An implementation of Python in Python. The interpreter uses black magic to make Python very fast without having to add in additional type information.
--   [Stackless Python](http://www.stackless.com/) - An enhanced version of the Python.
--   [Pyston](https://github.com/dropbox/pyston) - A Python implementation built using LLVM and modern JIT techniques with the goal of achieving good performance.
-
-Microsoft Windows
------------------
-
-*Python programming on Microsoft Windows.*
-
--   [PyWin32](http://sourceforge.net/projects/pywin32/) - Python Extensions for Windows.
--   [PythonNet](https://github.com/pythonnet/pythonnet) - Python Intergration with the .NET Common Language Runtime (CLR).
--   [pythonlibs](http://www.lfd.uci.edu/~gohlke/pythonlibs/) - Unofficial Windows binaries for Python extension packages.
--   [spyder](https://code.google.com/p/spyderlib/) - IDE for the Python language with advanced editing, interactive testing, debugging and introspection features (also comes with Anaconda, WinPython).
--   [Python(x,y)](https://code.google.com/p/pythonxy/) - Scientific-applications-oriented Python Distribution based on Qt and Spyder.
--   [WinPython](https://winpython.github.io/) - Portable development environment for Windows 7/8.
-
-Network Virtualization and SDN
-------------------------------
-
-*Tools and libraries for Virtual Networking and SDN (Software Defined Networking).*
-
--   [Mininet](http://mininet.org/) - A popular network emulator and API written in Python.
--   [POX](http://www.noxrepo.org/pox/about-pox/) - An open source development platform for Python-based Software Defined Networking (SDN) control applications, such as OpenFlow SDN controllers.
--   [Pyretic](http://frenetic-lang.org/pyretic/) - A member of the Frenetic family of SDN programming languages that provides powerful abstractions over network switches or emulators.
--   [SDX Platform](https://github.com/sdn-ixp/internet2award) - SDN based IXP implementation that leverages Mininet, POX and Pyretic.
-
-Hardware
---------
-
-*Libraries for programming with hardware.*
-
--   [PyUserInput](https://github.com/SavinaRoja/PyUserInput) - A module for cross-platform control of the mouse and keyboard.
--   [wifi](https://wifi.readthedocs.org/) - A Python library and command line tool for working with WiFi on Linux.
--   [scapy](http://www.secdev.org/projects/scapy/) - A brilliant packet manipulation library.
--   [ino](http://inotool.org/) - Command line toolkit for working with [Arduino](http://www.arduino.cc/).
--   [Pyro](http://pyrorobotics.com/) - Python Robotics.
-
-Compatibility
--------------
-
-*Libraries for migrating from Python 2 to 3.*
-
--   [Six](https://pypi.python.org/pypi/six) - Python 2 and 3 compatibility utilities.
--   [Python-Future](http://python-future.org/index.html) - The missing compatibility layer between Python 2 and Python 3.
--   [Python-Modernize](https://github.com/mitsuhiko/python-modernize) - Modernizes Python code for eventual Python 3 migration.
-
-Miscellaneous
--------------
-
-*Useful libraries or tools that don't fit in the categories above.*
-
--   [pluginbase](https://github.com/mitsuhiko/pluginbase) - A simple but flexible plugin system for Python.
--   [itsdangerous](https://github.com/mitsuhiko/itsdangerous) - Various helpers to pass trusted data to untrusted environments.
--   [blinker](https://github.com/jek/blinker) - A fast Python in-process signal/event dispatching system.
--   [Pychievements](https://github.com/PacketPerception/pychievements) - A framework for creating and tracking achievements.
-
-Algorithms and Design Patterns
-------------------------------
-
-*Python implementation of algorithms and design patterns.*
-
--   [python-patterns](https://github.com/faif/python-patterns) - A collection of design patterns in Python.
--   [algorithms](https://github.com/nryoung/algorithms) - module of algorithms for Python.
-
-Editor Plugins
---------------
-
-*Plugins for editors and IDEs.*
-
--   Vim
-    -   [Python-mode](https://github.com/klen/python-mode) - An all in one plugin for turning Vim into a Python IDE.
-    -   [Jedi-vim](https://github.com/davidhalter/jedi-vim) - Vim bindings for the [Jedi](https://github.com/davidhalter/jedi) autocompletion library for Python.
-    -   [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) - Includes [Jedi](https://github.com/davidhalter/jedi)-based completion engine for Python
--   Emacs
-    -   [Elpy](https://github.com/jorgenschaefer/elpy) - Emacs Python Development Environment.
--   Sublime Text
-    -   [SublimeJEDI](https://github.com/srusskih/SublimeJEDI) - A Sublime Text plugin to the awesome autocomplete library [Jedi](https://github.com/davidhalter/jedi).
-    -   [Anaconda](https://github.com/DamnWidget/anaconda) - Anaconda turns your Sublime Text 3 in a full featured Python development IDE.
--   Atom
-    -   [Linter](https://github.com/AtomLinter/Linter) - A static code analysis tool for Atom.
-    -   [Linter-flake8](https://github.com/AtomLinter/linter-flake8) - An addon to `linter`, that acts as an interface for `flake8`.
-    -   [virtualenv](https://github.com/jhutchins/virtualenv) - Atom package for virtualenv management.
-
-Boilerplates
-------------
-
-*Boilerplates for Python applications.*
-
--   [Django Hackathon Starter](https://github.com/DrkSephy/django-hackathon-starter) - A boilerplate for Django web applications.
-
-Resources
-=========
+## Environment Management
+
+_Libraries for Python version and environment management._
+
+- [p](https://github.com/qw3rtman/p) - Dead Simple Interactive Python Version Management.
+- [pyenv](https://github.com/yyuu/pyenv) - Simple Python version management.
+- [virtualenv](https://pypi.python.org/pypi/virtualenv) - A tool to create isolated Python environments.
+- [virtualenvwrapper](https://pypi.python.org/pypi/virtualenvwrapper) - A set of extensions to virtualenv.
+- [virtualenv-api](https://github.com/sjkingo/virtualenv-api) - An API for virtualenv and pip.
+- [pew](https://pypi.python.org/pypi/pew/) - A set of tools to manage multiple virtual environments.
+- [Vex](https://github.com/sashahart/vex) - Run a command in the named virtualenv.
+- [PyRun](https://www.egenix.com/products/python/PyRun/) - A one-file, no-installation-needed version of Python.
+
+## Package Management
+
+_Libraries for package and dependency management._
+
+- [pip](https://pip.pypa.io/) - The Python package and dependency manager.
+  - [Python Package Index](https://pypi.python.org/pypi)
+- [conda](https://github.com/conda/conda/) - Cross-platform, Python-agnostic binary package manager.
+- [Curdling](http://clarete.li/curdling/) - Curdling is a command line tool for managing Python packages.
+- [wheel](http://pythonwheels.com/) - The new standard of Python distribution and are intended to replace eggs.
+
+## Package Repositories
+
+_Local PyPI repository server and proxies._
+
+- [warehouse](https://github.com/pypa/warehouse) - Next generation Python Package Repository (PyPI).
+  - [Warehouse](https://warehouse.python.org/)
+- [devpi](http://doc.devpi.net/) - PyPI server and packaging/testing/release tool.
+- [localshop](https://github.com/mvantellingen/localshop) - PyPI server which mirrors official packages on-demand, and also supports local (private) package uploads.
+
+## Distribution
+
+_Libraries to create packaged executables for release distribution._
+
+- [cx-Freeze](http://cx-freeze.readthedocs.org/) - Freezes Python scripts (cross-platform).
+- [py2exe](http://www.py2exe.org/) - Freezes Python scripts (Windows).
+- [pynsist](http://pynsist.readthedocs.org/) - A tool to build Windows installers, installers bundle Python itself.
+- [py2app](http://pythonhosted.org/py2app/) - Freezes Python scripts (Mac OS X).
+- [PyInstaller](http://www.pyinstaller.org/) - Converts Python programs into stand-alone executables (cross-platform).
+- [dh-virtualenv](http://dh-virtualenv.readthedocs.org/) - Build and distribute a virtualenv as a Debian package.
+- [Nuitka](http://nuitka.net/) - Compile scripts, modules, packages to an executable or extension module.
+
+## Build Tools
+
+_Compile software from source code._
+
+- [buildout](http://www.buildout.org/) - A build system for creating, assembling and deploying applications from multiple parts, some of which may be non-Python-based.
+- [SCons](http://www.scons.org/) - A software construction tool.
+- [PlatformIO](https://github.com/ivankravets/platformio) - A console tool to build code with different development platforms.
+- [BitBake](http://www.yoctoproject.org/docs/1.6/bitbake-user-manual/bitbake-user-manual.html) - A make-like build tool with the special focus of distributions and packages for embedded Linux.
+- [fabricate](https://code.google.com/p/fabricate/) - A build tool that finds dependencies automatically for any language.
+
+## Interactive Interpreter
+
+_Interactive Python interpreters (REPL)._
+
+- [IPython](https://github.com/ipython/ipython) - A rich toolkit to help you make the most out of using Python interactively.
+- [bpython](http://bpython-interpreter.org/) -- A fancy interface to the Python interpreter.
+- [ptpython](https://github.com/jonathanslenders/ptpython) - Advanced Python REPL built on top of the [python-prompt-toolkit](https://github.com/jonathanslenders/python-prompt-toolkit).
+
+## Files
+
+_Libraries for file manipulation and MIME type detection._
+
+- [mimetypes](https://docs.python.org/2/library/mimetypes.html) - (Python standard library) Map filenames to MIME types.
+- [imghdr](https://docs.python.org/2/library/imghdr.html) - (Python standard library) Determine the type of an image.
+- [python-magic](https://github.com/ahupp/python-magic) - A Python interface to the libmagic file type identification library.
+- [path.py](https://github.com/jaraco/path.py) - A module wrapper for [os.path](https://docs.python.org/2/library/os.path.html).
+- [watchdog](https://github.com/gorakhargosh/watchdog) - API and shell utilities to monitor file system events.
+- [Unipath](https://github.com/mikeorr/Unipath) - An object-oriented approach to file/directory operations.
+- [pathlib](https://pathlib.readthedocs.org/en/pep428/) - (Python standard library in Python 3.4+) An cross-platform, object-oriented path library.
+
+## Date and Time
+
+_Libraries for working with dates and times._
+
+- [arrow](https://github.com/crsmithdev/arrow) - Better dates & times for Python.
+- [Chronyk](https://github.com/KoffeinFlummi/Chronyk) - A Python 3 library for parsing human-written times and dates.
+- [dateutil](https://pypi.python.org/pypi/python-dateutil) - Extensions to the standard Python [datetime](https://docs.python.org/2/library/datetime.html) module.
+- [delorean](https://github.com/myusuf3/delorean/) - A library for clearing up the inconvenient truths that arise dealing with datetimes.
+- [when.py](https://github.com/dirn/When.py) - Providing user-friendly functions to help perform common date and time actions.
+- [moment](https://github.com/zachwill/moment) - A Python library for dealing with dates/times. Inspired by [Moment.js](http://momentjs.com/).
+- [pytz](https://launchpad.net/pytz) - World timezone definitions, modern and historical. Brings the [tz database](http://en.wikipedia.org/wiki/Tz_database) into Python.
+
+## Text Processing
+
+_Libraries for parsing and manipulating plain texts._
+
+- General
+  - [difflib](https://docs.python.org/2/library/difflib.html) - (Python standard library) Helpers for computing deltas.
+  - [Levenshtein](https://github.com/ztane/python-Levenshtein/) - Fast computation of Levenshtein distance and string similarity.
+  - [fuzzywuzzy](https://github.com/seatgeek/fuzzywuzzy) - Fuzzy String Matching.
+  - [esmre](https://code.google.com/p/esmre/) - Regular expression accelerator.
+  - [shortuuid](https://github.com/stochastic-technologies/shortuuid) - A generator library for concise, unambiguous and URL-safe UUIDs.
+  - [ftfy](https://github.com/LuminosoInsight/python-ftfy) - Makes Unicode text less broken and more consistent automagically.
+  - [unidecode](https://pypi.python.org/pypi/Unidecode) - ASCII transliterations of Unicode text.
+  - [chardet](https://github.com/chardet/chardet) - Python 2/3 compatible character encoding detector.
+  - [xpinyin](https://github.com/lxneng/xpinyin) - A library to translate Chinese hanzi (漢字) to pinyin (拼音).
+  - [pangu.py](https://github.com/vinta/pangu.py) - Spacing texts for CJK and alphanumerics.
+  - [pyfiglet](https://github.com/pwaller/pyfiglet) - An implementation of figlet written in Python.
+  - [uniout](https://github.com/moskytw/uniout) - Print readable chars instead of the escaped string.
+- Slugify
+  - [awesome-slugify](https://github.com/dimka665/awesome-slugify) - A Python slugify library that can preserve unicode.
+  - [python-slugify](https://github.com/un33k/python-slugify) - A Python slugify library that translates unicode to ASCII.
+  - [unicode-slugify](https://github.com/mozilla/unicode-slugify) - A slugifier that generates unicode slugs with Django as a dependency.
+- Parser
+  - [PLY](http://www.dabeaz.com/ply/) - Implementation of lex and yacc parsing tools for Python
+  - [phonenumbers](https://github.com/daviddrysdale/python-phonenumbers) - Parsing, formatting, storing and validating international phone numbers.
+  - [python-user-agents](https://github.com/selwin/python-user-agents) - Browser user agent parser.
+  - [sqlparse](https://sqlparse.readthedocs.org/) - A non-validating SQL parser.
+  - [Pygments](http://pygments.org/) - A generic syntax highlighter.
+  - [python-nameparser](https://github.com/derek73/python-nameparser) - Parsing human names into their individual components.
+  - [pyparsing](http://pyparsing.wikispaces.com/) - A general purpose framework for generating parsers.
+
+## Specific Formats Processing
+
+_Libraries for parsing and manipulating specific text formats._
+
+- General
+  - [tablib](https://github.com/kennethreitz/tablib) - A module for Tabular Datasets in XLS, CSV, JSON, YAML.
+- Office
+  - [python-docx](https://github.com/python-openxml/python-docx) - Reads, queries and modifies Microsoft Word 2007/2008 docx files.
+  - [xlwt](https://github.com/python-excel/xlwt) / [xlrd](https://github.com/python-excel/xlrd) - Writing and reading data and formatting information from Excel files.
+  - [XlsxWriter](https://xlsxwriter.readthedocs.org/) - A Python module for creating Excel .xlsx files.
+  - [xlwings](http://xlwings.org/) - A BSD-licensed library that makes it easy to call Python from Excel and vice versa.
+  - [openpyxl](https://openpyxl.readthedocs.org/en/latest/) - A library for reading and writing Excel 2010 xlsx/xlsm/xltx/xltm files.
+  - [Marmir](https://github.com/brianray/mm) - Takes Python data structures and turns them into spreadsheets.
+  - [unoconv](https://github.com/dagwieers/unoconv) - Convert between any document format supported by LibreOffice/OpenOffice.
+- PDF
+  - [PDFMiner](https://github.com/euske/pdfminer) - A tool for extracting information from PDF documents.
+  - [PyPDF2](https://github.com/mstamy2/PyPDF2) - A library capable of splitting, merging and transforming PDF pages.
+  - [ReportLab](http://www.reportlab.com/opensource/) - Allowing Rapid creation of rich PDF documents.
+- Markdown
+  - [Python-Markdown](https://github.com/waylan/Python-Markdown) - A Python implementation of John Gruber's Markdown.
+  - [Mistune](https://github.com/lepture/mistune) - Fastest and full featured pure Python parsers of Markdown.
+- YAML
+  - [PyYAML](http://pyyaml.org/) - YAML implementations for Python.
+- CSV
+  - [csvkit](https://github.com/onyxfish/csvkit) - Utilities for converting to and working with CSV.
+- Archive
+  - [unp](https://github.com/mitsuhiko/unp) - A command line tool that can unpack archives easily.
+
+## Natural Language Processing
+
+_Libraries for working with human languages._
+
+- [NLTK](http://www.nltk.org/) - A leading platform for building Python programs to work with human language data.
+- [Pattern](http://www.clips.ua.ac.be/pattern) - A web mining module for the Python. It has tools for natural language processing, machine learning, among others.
+- [TextBlob](http://textblob.readthedocs.org/) - Providing a consistent API for diving into common NLP tasks. Stands on the giant shoulders of NLTK and Pattern.
+- [jieba](https://github.com/fxsjy/jieba) - Chinese Words Segmentation Utilities.
+- [SnowNLP](https://github.com/isnowfy/snownlp) - A library for processing Chinese text.
+- [loso](https://github.com/victorlin/loso) - Another Chinese segmentation library.
+- [genius](https://github.com/duanhongyi/genius) - A Chinese segment base on Conditional Random Field.
+- [langid.py](https://github.com/saffsd/langid.py) - Stand-alone language identification system.
+
+## Documentation
+
+_Libraries for generating project documentation._
+
+- [Sphinx](http://sphinx-doc.org/) - Python Documentation generator.
+  - [awesome-sphinxdoc](https://github.com/yoloseem/awesome-sphinxdoc)
+- [reStructuredText](http://docutils.sourceforge.net/rst.html) - Markup Syntax and Parser Component of Docutils.
+- [MkDocs](http://www.mkdocs.org/) - Markdown friendly documentation generator.
+- [Pycco](http://fitzgen.github.io/pycco/) - The original quick-and-dirty, hundred-line-long, literate-programming-style documentation generator.
+- [pdoc](https://github.com/BurntSushi/pdoc) - Epydoc replacement to auto generate API documentation for Python libraries.
+
+## Configuration
+
+_Libraries for storing configuration options._
+
+- [ConfigParser](https://docs.python.org/2/library/configparser.html) - (Python standard library) INI file parser.
+- [ConfigObj](http://www.voidspace.org.uk/python/configobj.html) - INI file parser with validation.
+- [config](http://www.red-dove.com/config-doc/) - Hierarchical config from the author of [logging](https://docs.python.org/2/library/logging.html).
+- [profig](http://profig.readthedocs.org/) - Config from multiple formats with value conversion.
+
+## Command-line Tools
+
+_Libraries for building command-line application._
+
+- Command-line Application Development
+  - [cement](http://builtoncement.com/) - Cement provides a light-weight and fully featured foundation to build anything from single file scripts to complex and intricately designed applications.
+  - [click](http://click.pocoo.org/) - A package for creating beautiful command line interfaces in a composable way.
+  - [clint](https://github.com/kennethreitz/clint) - Python Command-line Application Tools.
+  - [cliff](https://cliff.readthedocs.org/) - A framework for creating command-line programs with multi-level commands.
+  - [Clime](http://clime.mosky.tw/) -- Clime lets you convert any module into a multi-command CLI program without any configuration.
+  - [docopt](http://docopt.org/) - Pythonic command line arguments parser.
+  - [colorama](https://pypi.python.org/pypi/colorama) - Cross-platform colored terminal text.
+  - [pyCLI](https://pythonhosted.org/pyCLI/) - Command-line applications supporting standard command line parsing, logging, unit and functional testing.
+  - [Gooey](https://github.com/chriskiehl/Gooey) - Turn command line programs into a full GUI application with one line
+  - [python-prompt-toolkit](https://github.com/jonathanslenders/python-prompt-toolkit) - A Library for building powerful interactive command lines.
+- Productivity Tools
+  - [cookiecutter](https://github.com/audreyr/cookiecutter) - A command-line utility that creates projects from cookiecutters (project templates). E.g. Python package projects, jQuery plugin projects.
+  - [httpie](https://github.com/jakubroztocil/httpie) - A command line HTTP client, a user-friendly cURL replacement.
+  - [percol](https://github.com/mooz/percol) - Adds flavor of interactive selection to the traditional pipe concept on UNIX.
+  - [RainbowStream](http://www.rainbowstream.org/) - Smart and nice Twitter client on terminal.
+  - [caniusepython3](https://github.com/brettcannon/caniusepython3) - Determine what projects are blocking you from porting to Python 3.
+  - [thefuck](https://github.com/nvbn/thefuck) - Correcting your previous console command.
+
+## Downloader
+
+_Libraries for downloading._
+
+- [s3cmd](https://github.com/s3tools/s3cmd) - A command line tool for managing Amazon S3 and CloudFront.
+- [youtube-dl](http://rg3.github.io/youtube-dl/) - A small command-line program to download videos from YouTube.
+- [you-get](http://www.soimort.org/you-get/) - A YouTube/Youku/Niconico video downloader written in Python 3.
+- [coursera](https://github.com/coursera-dl/coursera) - Script for downloading Coursera.org videos and naming them.
+- [WikiTeam](https://github.com/WikiTeam/wikiteam) - Tools for downloading and preserving wikis.
+- [subliminal](https://github.com/Diaoul/subliminal) - Library and command line tool to search and download subtitles.
+
+## Imagery
+
+_Libraries for manipulating images._
+
+- [pillow](http://pillow.readthedocs.org/) - Pillow is the friendly [PIL](http://www.pythonware.com/products/pil/) fork.
+- [wand](https://github.com/dahlia/wand) - Python bindings for [MagickWand](http://www.imagemagick.org/script/magick-wand.php), C API for ImageMagick.
+- [thumbor](https://github.com/thumbor/thumbor) - A smart imaging service. It enables on-demand crop, resizing and flipping of images.
+- [imgSeek](http://www.imgseek.net/) - A project for searching a collection of images using visual similarity.
+- [python-qrcode](https://github.com/lincolnloop/python-qrcode) - A pure Python QR Code generator.
+- [pyBarcode](https://pythonhosted.org/pyBarcode/) - Create barcodes in Python without needing PIL.
+- [pygram](https://github.com/ajkumar25/pygram) - Instagram-like image filters.
+- [Quads](https://github.com/fogleman/Quads) - Computer art based on quadtrees.
+- [nude.py](https://github.com/hhatto/nude.py) - Nudity detection.
+- [scikit-image](http://scikit-image.org/) - A Python library for (scientific) image processing.
+- [hmap](https://github.com/rossgoodwin/hmap) - Image histogram remapping.
+
+## OCR
+
+_Libraries for Optical Character Recognition._
+
+- [python-tesseract](https://code.google.com/p/python-tesseract) - A wrapper class for [Google Tesseract OCR](https://code.google.com/p/tesseract-ocr/).
+- [pytesseract](https://github.com/madmaze/pytesseract) - Another wrapper for Google Tesseract OCR.
+- [pyocr](https://github.com/jflesch/pyocr) - A wrapper for Tesseract and Cuneiform.
+
+## Audio
+
+_Libraries for manipulating audio._
+
+- [audiolazy](https://github.com/danilobellini/audiolazy) - Expressive Digital Signal Processing (DSP) package for Python.
+- [audioread](https://github.com/sampsyo/audioread) - Cross-library (GStreamer + Core Audio + MAD + FFmpeg) audio decoding.
+- [beets](http://beets.radbox.org/) - A music library manager and [MusicBrainz](https://musicbrainz.org/) tagger.
+- [dejavu](https://github.com/worldveil/dejavu) - Audio fingerprinting and recognition.
+- [django-elastic-transcoder](https://github.com/StreetVoice/django-elastic-transcoder) - Django + [Amazon Elastic Transcoder](http://aws.amazon.com/elastictranscoder/).
+- [eyeD3](http://eyed3.nicfit.net/) - A tool for working with audio files, specifically MP3 files containing ID3 metadata.
+- [id3reader](http://nedbatchelder.com/code/modules/id3reader.py) - A Python module for reading MP3 meta data.
+- [mutagen](https://code.google.com/p/mutagen/) - A Python module to handle audio metadata.
+- [pydub](https://github.com/jiaaro/pydub) - Manipulate audio with a simple and easy high level interface.
+- [pyechonest](https://github.com/echonest/pyechonest) - Python client for the [Echo Nest](http://developer.echonest.com/docs/) API.
+- [talkbox](http://scikits.appspot.com/talkbox) - A Python library for speech/signal processing.
+- [TimeSide](https://github.com/yomguy/TimeSide) - Open web audio processing framework.
+- [tinytag](https://github.com/devsnd/tinytag) - A library for reading music meta data of MP3, OGG, FLAC and Wave files.
+- [m3u8](https://github.com/globocom/m3u8) - A module for parsing m3u8 file.
+
+## Video
+
+_Libraries for manipulating video and GIFs._
+
+- [moviepy](http://zulko.github.io/moviepy/) - A module for script-based movie editing with many formats, including animated GIFs.
+- [shorten.tv](http://www.shorten.tv/) - Video summarization.
+- [scikit-video](https://github.com/aizvorski/scikit-video) - Video processing routines for SciPy.
+
+## Geolocation
+
+_Libraries for geocoding addresses and working with latitudes and longitudes._
+
+- [GeoDjango](https://docs.djangoproject.com/en/dev/ref/contrib/gis/) - A world-class geographic web framework.
+- [geopy](https://github.com/geopy/geopy) - Python Geocoding Toolbox.
+- [pygeoip](https://github.com/appliedsec/pygeoip) - Pure Python GeoIP API.
+- [GeoIP](https://github.com/maxmind/geoip-api-python) - Python API for MaxMind GeoIP Legacy Database.
+- [geojson](https://github.com/frewsxcv/python-geojson) - Python bindings and utlities for GeoJSON.
+- [django-countries](https://github.com/SmileyChris/django-countries) - A Django app that provides country choices for use with forms, flag icons static files, and a country field for models.
+
+## HTTP
+
+_Libraries for working with HTTP._
+
+- [requests](http://docs.python-requests.org/) - HTTP Requests for Humans™.
+- [grequests](https://github.com/kennethreitz/grequests) - requests + gevent for asynchronous HTTP requests.
+- [urllib3](https://github.com/shazow/urllib3) - A HTTP library with thread-safe connection pooling, file post support, sanity friendly.
+- [httplib2](https://github.com/jcgregorio/httplib2) - Comprehensive HTTP client library.
+- [treq](https://github.com/dreid/treq) - Python requests like API built on top of Twisted's HTTP client.
+
+## Database
+
+_Databases implemented in Python._
+
+- [ZODB](http://www.zodb.org/) - A native object database for Python. A key-value and object graph database.
+- [pickleDB](https://pythonhosted.org/pickleDB/) - A simple and lightweight key-value store for Python.
+- [TinyDB](https://github.com/msiemens/tinydb) - A tiny, document-oriented database.
+
+## Database Drivers
+
+_Libraries for connecting and operating databases._
+
+- Relational Databases
+  - [mysql-python](http://sourceforge.net/projects/mysql-python/) - The MySQL database connector for Python.
+  - [mysqlclient](https://github.com/PyMySQL/mysqlclient-python) - mysql-python fork supporting Python 3.
+  - [PyMySQL](https://github.com/PyMySQL/PyMySQL) - Pure Python MySQL driver compatible to mysql-python.
+  - [mysql-connector-python](https://pypi.python.org/pypi/mysql-connector-python) - A pure Python MySQL driver from Oracle.
+  - [oursql](https://pythonhosted.org/oursql/) - A better MySQL connector with support for native prepared statements and BLOBs.
+  - [psycopg2](http://initd.org/psycopg/) - The most popular PostgreSQL adapter for Python.
+  - [txpostgres](http://txpostgres.readthedocs.org/) - Twisted based asynchronous driver for PostgreSQL.
+  - [queries](https://github.com/gmr/queries) - A wrapper of the psycopg2 library for interacting with PostgreSQL.
+  - [dataset](https://github.com/pudo/dataset) - Store Python dicts in a database - works with SQLite, MySQL, and PostgreSQL.
+- NoSQL Databases
+  - [cassandra-python-driver](https://github.com/datastax/python-driver) - Python driver for Cassandra.
+  - [pycassa](https://github.com/pycassa/pycassa) - Python Thrift driver for Cassandra.
+  - [HappyBase](http://happybase.readthedocs.org/) - A developer-friendly library for Apache HBase.
+  - [PyMongo](http://docs.mongodb.org/ecosystem/drivers/python/) - The official Python client for MongoDB.
+  - [Plyvel](https://plyvel.readthedocs.org/) - A fast and feature-rich Python interface to LevelDB.
+  - [redis-py](https://github.com/andymccurdy/redis-py) - The Redis Python Client.
+  - [py2neo](http://book.py2neo.org/) - Python wrapper client for Neo4j's restful interface.
+  - [telephus](https://github.com/driftx/Telephus) - Twisted based client for Cassandra.
+  - [txRedis](https://github.com/deldotdr/txRedis) - Twisted based client for Redis.
+
+## ORM
+
+_Libraries that implement Object-Relational Mapping or datamapping techniques._
+
+- Relational Databases
+  - [Django Models](https://docs.djangoproject.com/en/dev/topics/db/models/) - A part of Django.
+  - [SQLAlchemy](http://www.sqlalchemy.org/) - The Python SQL Toolkit and Object Relational Mapper.
+    - [awesome-sqlalchemy](https://github.com/dahlia/awesome-sqlalchemy)
+  - [peewee](https://github.com/coleifer/peewee) - A small, expressive ORM.
+  - [PonyORM](http://ponyorm.com/) - ORM that provides a generator-oriented interface to SQL.
+- NoSQL Databases
+  - [MongoEngine](http://mongoengine.org/) - A Python Object-Document-Mapper for working with MongoDB.
+  - [django-mongodb-engine](https://github.com/django-nonrel/mongodb-engine) - Django MongoDB Backend.
+  - [redisco](https://github.com/kiddouk/redisco) - A Python Library for Simple Models and Containers Persisted in Redis.
+  - [flywheel](https://github.com/mathcamp/flywheel) - Object mapper for Amazon DynamoDB.
+- Others
+  - [butterdb](https://github.com/Widdershin/butterdb) - A Python ORM for Google Drive Spreadsheets.
+
+## Web Frameworks
+
+_Full stack web frameworks._
+
+- [Django](https://www.djangoproject.com/) - The most popular web framework in Python.
+  - [awesome-django](https://github.com/rosarior/awesome-django)
+- [Flask](http://flask.pocoo.org/) - A microframework for Python.
+  - [awesome-flask](https://github.com/humiaozuzu/awesome-flask)
+- [Bottle](http://bottlepy.org/) - A fast, simple and lightweight WSGI micro web-framework.
+- [Pyramid](http://www.pylonsproject.org/) - A small, fast, down-to-earth, open source Python web framework.
+  - [awesome-pyramid](https://github.com/ITCase/awesome-pyramid)
+- [web2py](http://www.web2py.com/) - A full stack web framework and platform focused in the ease of use.
+- [web.py](http://webpy.org/) - A web framework for Python that is as simple as it is powerful.
+- [TurboGears](http://www.turbogears.org/) - The Web Framework that starts as a microframework and scales up to a fullstack solution.
+- [CherryPy](http://www.cherrypy.org/) - A Minimalist Python Web Framework, HTTP/1.1-compliant and WSGI thread-pooled.
+- [Grok](http://grok.zope.org/) - A framework built on the existing Zope 3 libraries.
+- [Bluebream](http://bluebream.zope.org/) - An open-source web application server, framework and library, formerly known as Zope 3.
+- [guava](https://github.com/flatpeach/guava) - A lightweight and high performance web framework for Python written in C.
+
+## Permissions
+
+_Libraries that allow or deny users access to data or functionality._
+
+- [django-guardian](https://github.com/lukaszb/django-guardian) - Implementation of per object permissions for Django 1.2+
+- [django-rules](https://github.com/dfunckt/django-rules) - A tiny but powerful app providing object-level permissions to Django, without requiring a database.
+- [Carteblanche](http://www.github.com/neuman/python-carteblanche/) - Module to align code with thoughts of users and designers. Also magically handles navigation and permissions.
+
+## CMS
+
+_Content Management Systems._
+
+- [django-cms](https://www.django-cms.org/en/) - An Open source enterprise CMS based on the Django.
+- [djedi-cms](http://djedi-cms.org/) - A lightweight but yet powerful Django CMS with plugins, inline editing and performance in mind.
+- [FeinCMS](http://www.feincms.org/) - One of the most advanced Content Management Systems built on Django.
+- [Kotte](http://kotti.pylonsproject.org/) - A high-level, Pythonic web application framework built on Pyramid.
+- [Mezzanine](http://mezzanine.jupo.org/) - A powerful, consistent, and flexible content management platform.
+- [Opps](http://oppsproject.org/) - A Django-based CMS for magazines, newspapers websites and portals with high-traffic.
+- [Plone](http://plone.org/) - A CMS built on top of the open source application server Zope.
+- [Quokka](http://quokkaproject.org/) - Flexible, extensible, small CMS powered by Flask and MongoDB.
+- [Wagtail](http://wagtail.io/) - A Django content management system.
+- [Widgy](http://wid.gy/) - Last CMS framework, based on Django.
+
+## E-commerce
+
+_Frameworks and libraries for e-commerce and payments._
+
+- [django-oscar](http://oscarcommerce.com/) - An open-source e-commerce framework for Django.
+- [django-shop](https://www.django-cms.org/) - A Django based shop system.
+- [merchant](https://github.com/agiliq/merchant) - A Django app to accept payments from various payment processors.
+- [money](https://github.com/carlospalol/money) - Money class with optional CLDR-backed locale-aware formatting and an extensible currency exchange solution.
+- [python-currencies](https://github.com/Alir3z4/python-currencies) - Display money format and its filthy currencies.
+- [alipay](https://github.com/lxneng/alipay) - Unofficial Alipay API for Python.
+
+## RESTful API
+
+_Libraries for developing RESTful APIs._
+
+- [cornice](https://cornice.readthedocs.org/) - A REST framework for Pyramid.
+- [django-rest-framework](http://www.django-rest-framework.org/) - A powerful and flexible toolkit that makes it easy to build Web APIs.
+- [django-tastypie](http://tastypieapi.org/) - Creating delicious APIs for Django apps.
+- [django-formapi](https://github.com/5monkeys/django-formapi) - Create JSON APIs with HMAC authentication and Django form-validation.
+- [flask-api](http://www.flaskapi.org/) - An implementation of the same web browsable APIs that django-rest-framework provides.
+- [flask-restful](http://flask-restful.readthedocs.org/) - An extension for Flask that adds support for quickly building REST APIs.
+- [flask-restless](https://flask-restless.readthedocs.org/en/latest/) - A Flask extension for generating ReSTful APIs for database models defined with SQLAlchemy (or Flask-SQLAlchemy).
+- [flask-api-utils](https://github.com/marselester/flask-api-utils) - Flask extension that takes care of API representation and authentication.
+- [falcon](http://falconframework.org/) - A high-performance Python framework for building cloud APIs and web app backends.
+- [eve](https://github.com/nicolaiarocci/eve) - REST API framework powered by Flask, MongoDB and good intentions.
+- [sandman](https://github.com/jeffknupp/sandman) - Automated REST APIs for existing database-driven systems.
+- [restless](http://restless.readthedocs.org/en/latest/) - Framework agnostic REST framework based on lessons learned from TastyPie.
+- [savory-pie](https://github.com/RueLaLa/savory-pie/) - REST API building library (django, and others)
+
+## Authentication
+
+_Libraries for implementing authentications schemes._
+
+- OAuth
+  - [Authomatic](http://peterhudec.github.io/authomatic/) - Simple but powerful framework agnostic authentication/authorization client package.
+  - [OAuthLib](https://github.com/idan/oauthlib) - A generic, spec-compliant, thorough implementation of the OAuth request-signing logic.
+  - [rauth](https://github.com/litl/rauth) - A Python library for OAuth 1.0/a, 2.0, and Ofly.
+  - [python-oauth2](https://github.com/simplegeo/python-oauth2) - A fully tested, abstract interface to creating OAuth clients and servers.
+  - [python-social-auth](https://github.com/omab/python-social-auth) - An easy-to-setup social authentication mechanism.
+  - [django-oauth-toolkit](https://github.com/evonove/django-oauth-toolkit) - OAuth2 goodies for the Djangonauts.
+  - [django-oauth2-provider](https://github.com/caffeinehit/django-oauth2-provider) - Providing OAuth2 access to Django app.
+  - [django-allauth](https://github.com/pennersr/django-allauth) - Authentication app for Django that "just works."
+  - [Flask-OAuthlib](https://github.com/lepture/flask-oauthlib) - OAuth 1.0/a, 2.0 implementation of client and provider for Flask.
+  - [sanction](https://github.com/demianbrecht/sanction) - A dead simple OAuth2 client implementation.
+- Others
+  - [PyJWT](https://github.com/progrium/pyjwt) - Implementation of the JSON Web Token draft 01.
+  - [python-jwt](https://github.com/davedoesdev/python-jwt) - Module for generating and verifying JSON Web Tokens.
+  - [python-jws](https://github.com/brianloveswords/python-jws) - Implementation of JSON Web Signatures draft 02.
+  - [jose](https://github.com/demonware/jose) - JavaScript Object Signing and Encryption draft implementation.
+
+## Template Engine
+
+_Libraries and tools for templating and lexing._
+
+- [Jinja2](https://github.com/mitsuhiko/jinja2) - A modern and designer friendly templating language.
+- [Genshi](http://genshi.edgewall.org/) - Python templating toolkit for generation of web-aware output.
+- [Mako](http://www.makotemplates.org/) - Hyperfast and lightweight templating for the Python platform.
+- [Chameleon](https://chameleon.readthedocs.org/) - An HTML/XML template engine. Modeled after ZPT, optimized for speed.
+- [Spitfire](https://code.google.com/p/spitfire/) - A very fast Python template compiler.
+
+## Queue
+
+_Libraries for working with event and task queues._
+
+- [celery](http://www.celeryproject.org/) - An asynchronous task queue/job queue based on distributed message passing.
+- [huey](https://github.com/coleifer/huey) - Little multi-threaded task queue.
+- [mrq](https://github.com/pricingassistant/mrq) - Mr. Queue - A distributed worker task queue in Python using Redis & gevent.
+- [rq](http://python-rq.org/) - Simple job queues for Python.
+- [simpleq](https://github.com/rdegges/simpleq) - A simple, infinitely scalable, Amazon SQS based queue.
+
+## Search
+
+_Libraries and software for indexing and performing search queries on data._
+
+- [django-haystack](https://github.com/toastdriven/django-haystack) - Modular search for Django.
+- [elasticsearch-py](http://www.elasticsearch.org/guide/en/elasticsearch/client/python-api/current/) - The official low-level Python client for [Elasticsearch](http://www.elasticsearch.org/).
+- [solrpy](https://code.google.com/p/solrpy/) - A Python client for [solr](http://lucene.apache.org/solr/).
+- [Whoosh](http://whoosh.readthedocs.org/) - A fast, pure Python search engine library.
+
+## News Feed
+
+_Libraries for building user's activities._
+
+- [Feedly](https://github.com/tschellenbach/Feedly) - A library to build newsfeed and notification systems using Cassandra and Redis.
+- [django-activity-stream](https://github.com/justquick/django-activity-stream) - Generate generic activity streams from the actions on your site.
+
+## Asset Management
+
+_Tools for managing, compressing and minifying website assets._
+
+- [django-compressor](https://github.com/django-compressor/django-compressor) - Compresses linked and inline javascript or CSS into a single cached file.
+- [jinja-assets-compressor](https://github.com/jaysonsantos/jinja-assets-compressor) - A Jinja extension to compile and compress your assets.
+- [webassets](http://webassets.readthedocs.org/) - Bundles, optimizes, and manages unique cache-busting URLs for static resources.
+- [fanstatic](http://www.fanstatic.org/) - Packages, optimizes, and serves static file dependencies as Python packages.
+- [fileconveyor](http://fileconveyor.org/) - Monitors changes, processes, and transports assets to CDNs and file storage systems.
+- [django-storages](http://code.larlet.fr/django-storages/) - A collection of custom storage backends for Django.
+- [glue](http://gluecss.com/) - Glue is a simple command line tool to generate CSS sprites.
+- [libsass-python](http://hongminhee.org/libsass-python/) - A Python binding of [libsass](https://github.com/hcatlin/libsass), the reference implementation of SASS/SCSS.
+- [Flask-Assets](http://flask-assets.readthedocs.org/) - Helps you integrate webassets into your Flask app.
+
+## Caching
+
+_Libraries for caching data._
+
+- [Beaker](http://beaker.readthedocs.org/) - A library for caching and sessions for use with web applications and stand-alone Python scripts and applications.
+- [dogpile.cache](http://dogpilecache.readthedocs.org/) - dogpile.cache is next generation replacement for Beaker made by same authors.
+- [HermesCache](https://pypi.python.org/pypi/HermesCache) - Python caching library with tag-based invalidation and dogpile effect prevention.
+- [django-cache-machine](https://github.com/jbalogh/django-cache-machine) - Automatic caching and invalidation for Django models through the ORM.
+- [django-cacheops](https://github.com/Suor/django-cacheops) - A slick ORM cache with automatic granular event-driven invalidation.
+- [johnny-cache](https://github.com/jmoiron/johnny-cache) - A caching framework for django applications.
+- [django-viewlet](https://github.com/5monkeys/django-viewlet) - Render template parts with extended cache control.
+- [pylibmc](https://github.com/lericson/pylibmc) - A Python wrapper around the [libmemcached](http://libmemcached.org/libMemcached.html) interface.
+
+## Email
+
+_Libraries for sending and parsing email._
+
+- [inbox.py](https://github.com/kennethreitz/inbox.py) - Python SMTP Server for Humans.
+- [imbox](https://github.com/martinrusev/imbox) - Python IMAP for Humans.
+- [inbox](https://github.com/inboxapp/inbox) - The open source email toolkit.
+- [lamson](https://github.com/zedshaw/lamson) - Pythonic SMTP Application Server.
+- [flanker](https://github.com/mailgun/flanker) - A email address and Mime parsing library.
+- [marrow.mailer](https://github.com/marrow/marrow.mailer) - High-performance extensible mail delivery framework.
+- [django-celery-ses](https://github.com/StreetVoice/django-celery-ses) - Django email backend with AWS SES and Celery.
+- [modoboa](https://github.com/tonioo/modoboa) - A mail hosting and management platform including a modern and simplified Web UI.
+- [envelopes](http://tomekwojcik.github.io/envelopes/) - Mailing for human beings.
+- [mailjet](https://github.com/WoLpH/mailjet) - Mailjet API implementation for batch mailing, statistics and more.
+- [Talon](https://github.com/mailgun/talon) - Mailgun library to extract message quotations and signatures.
+- [pyzmail](http://www.magiksys.net/pyzmail/) - Compose, send and parse emails.
+
+## Internationalization
+
+_Libraries for working with i18n._
+
+- [Babel](http://babel.pocoo.org/) - An internationalization library for Python.
+- [Korean](https://korean.readthedocs.org/) - A library for [Korean](http://en.wikipedia.org/wiki/Korean_language) morphology.
+
+## URL Manipulation
+
+_Libraries for parsing URLs._
+
+- [furl](https://github.com/gruns/furl) - A small Python library that makes manipulating URLs simple.
+- [purl](https://github.com/codeinthehole/purl) - A simple, immutable URL class with a clean API for interrogation and manipulation.
+- [pyshorteners](https://github.com/ellisonleao/pyshorteners) - A pure Python URL shortening lib.
+- [short_url](https://github.com/Alir3z4/python-short_url) - Python implementation for generating Tiny URL and bit.ly-like URLs.
+- [webargs](https://github.com/sloria/webargs) - A friendly library for parsing HTTP request arguments, with built-in support for popular web frameworks, including Flask, Django, Bottle, Tornado, and Pyramid.
+
+## HTML Manipulation
+
+_Libraries for working with HTML and XML._
+
+- [BeautifulSoup](http://www.crummy.com/software/BeautifulSoup/bs4/doc/) - Providing Pythonic idioms for iterating, searching, and modifying HTML or XML.
+- [lxml](http://lxml.de/) - A very fast, easy-to-use and versatile library for handling HTML and XML.
+- [html5lib](https://github.com/html5lib/html5lib-python) - A standards-compliant library for parsing and serializing HTML documents and fragments.
+- [pyquery](https://github.com/gawel/pyquery) - A jQuery-like library for parsing HTML.
+- [cssutils](https://pypi.python.org/pypi/cssutils/) - A CSS library for Python.
+- [MarkupSafe](https://github.com/mitsuhiko/markupsafe) - Implements a XML/HTML/XHTML Markup safe string for Python.
+- [bleach](http://bleach.readthedocs.org/) - A whitelist-based HTML sanitization and text linkification library.
+- [xmltodict](https://github.com/martinblech/xmltodict) - Working with XML feel like you are working with JSON.
+- [xhtml2pdf](https://github.com/chrisglass/xhtml2pdf) - HTML/CSS to PDF converter.
+- [untangle](https://github.com/stchris/untangle) - Converts XML documents to Python objects for easy access.
+
+## Web Crawling
+
+_Libraries for scraping websites._
+
+- [Scrapy](http://scrapy.org/) - A fast high-level screen scraping and web crawling framework.
+- [portia](https://github.com/scrapinghub/portia) - Visual scraping for Scrapy.
+- [feedparser](http://pythonhosted.org/feedparser/) - Universal feed parser.
+- [RoboBrowser](https://github.com/jmcarp/robobrowser) - A simple, Pythonic library for browsing the web without a standalone web browser.
+- [MechanicalSoup](https://github.com/hickford/MechanicalSoup) - A Python library for automating interaction with websites.
+- [mechanize](http://wwwsearch.sourceforge.net/mechanize/) - Stateful programmatic web browsing.
+- [Demiurge](https://github.com/matiasb/demiurge) - PyQuery-based scraping micro-framework.
+- [cola](https://github.com/chineking/cola) - A distributed crawling framework.
+- [pyspider](https://github.com/binux/pyspider) - A powerful spider system.
+- [Grab](http://grablib.org/) - Site scraping framework.
+
+## Web Content Extracting
+
+_Libraries for extracting web contents._
+
+- [newspaper](https://github.com/codelucas/newspaper) - News extraction, article extraction and content curation in Python.
+- [html2text](https://github.com/Alir3z4/html2text) - Convert HTML to Markdown-formatted text.
+- [python-goose](https://github.com/grangier/python-goose) - HTML Content/Article Extractor.
+- [lassie](https://github.com/michaelhelmick/lassie) - Web Content Retrieval for Humans.
+- [micawber](https://github.com/coleifer/micawber) - A small library for extracting rich content from URLs.
+- [sumy](https://github.com/miso-belica/sumy) - A module for automatic summarization of text documents and HTML pages.
+- [Haul](https://github.com/vinta/Haul) - An Extensible Image Crawler.
+- [python-readability](https://github.com/buriy/python-readability) - Fast Python port of arc90's readability tool.
+- [opengraph](https://github.com/erikriver/opengraph) - A Python module to parse the Open Graph Protocol
+- [textract](https://github.com/deanmalmgren/textract) - Extract text from any document, Word, PowerPoint, PDFs, etc.
+- [sanitize](https://github.com/Alir3z4/sanitize) - Bringing sanity to world of messed-up data.
+
+## Forms
+
+_Libraries for working with forms._
+
+- [WTForms](http://wtforms.readthedocs.org/) - A flexible forms validation and rendering library.
+- [WTForms-JSON](http://wtforms-json.readthedocs.org/) - A WTForms extension for JSON data handling.
+- [Deform](http://deform.readthedocs.org/) - Python HTML form generation library influenced by the formish form generation library.
+- [django-bootstrap3](https://github.com/dyve/django-bootstrap3) - Bootstrap 3 integration with Django.
+- [django-crispy-forms](http://django-crispy-forms.readthedocs.org/) - A Django app which lets you create beautiful forms in a very elegant and DRY way.
+- [django-remote-forms](https://github.com/WiserTogether/django-remote-forms) - A platform independent Django form serializer.
+
+## Data Validation
+
+_Libraries for validating data. Used for forms in many cases._
+
+- [voluptuous](https://github.com/alecthomas/voluptuous) - A Python data validation library. It is primarily intended for validating data coming into Python as JSON, YAML, etc.
+- [colander](http://docs.pylonsproject.org/projects/colander/) - A system for validating and deserializing data obtained via XML, JSON, an HTML form post or any other equally simple data serialization.
+- [schema](https://github.com/halst/schema) - A library for validating Python data structures.
+- [Schematics](https://github.com/schematics/schematics) - Data Structure Validation.
+- [kmatch](https://github.com/ambitioninc/kmatch) - A language for matching/validating/filtering Python dictionaries.
+- [valideer](https://github.com/podio/valideer) - Lightweight extensible data validation and adaptation library.
+
+## Anti-spam
+
+_Libraries for fighting spam._
+
+- [django-simple-spam-blocker](https://github.com/moqada/django-simple-spam-blocker) - Simple spam blocker for Django.
+- [django-simple-captcha](https://github.com/mbi/django-simple-captcha) - A simple and highly customizable Django app to add captcha images to any Django form.
+
+## Tagging
+
+_Libraries for tagging items._
+
+- [django-taggit](https://github.com/alex/django-taggit) - Simple tagging for Django.
+
+## Admin Panels
+
+_Libraries for administrative interfaces._
+
+- [Ajenti](https://github.com/Eugeny/ajenti) - The admin panel your servers deserve.
+- [Grappelli](http://grappelliproject.com/) -- A jazzy skin for the Django Admin-Interface.
+- [django-suit](http://djangosuit.com/) - Alternative Django Admin-Interface (free only for Non-commercial use).
+- [django-xadmin](https://github.com/sshwsfc/django-xadmin) - Drop-in replacement of Django admin comes with lots of goodies.
+- [flask-admin](https://github.com/mrjoes/flask-admin) - Simple and extensible administrative interface framework for Flask.
+- [flower](https://github.com/mher/flower) - Real-time monitor and web admin for Celery.
+
+## Static Site Generator
+
+_Static site generator is a software that takes some text + templates as input and produces html files on the output._
+
+- [Pelican](http://blog.getpelican.com/) - Uses Markdown or ReST for content and Jinja 2 for themes. Supports DVCS, Disqus. AGPL.
+- [Cactus](http://github.com/koenbok/Cactus/) -- Static site generator for designers.
+- [Hyde](https://hyde.github.com/) - Jinja2-based static web site generator.
+- [Nikola](http://www.getnikola.com/) - A static website and blog generator.
+- [Tinkerer](http://tinkerer.me/) - Tinkerer is a blogging engine/.static website generator powered by Sphinx.
+
+## Processes and Threads
+
+_Libraries for working with processes or threads_
+
+- [multiprocessing](https://docs.python.org/2/library/multiprocessing.html) - (Python standard library) Process-based "threading" interface.
+- [threading](https://docs.python.org/2/library/threading.html) - (Python standard library) Higher-level threading interface.
+- [envoy](https://github.com/kennethreitz/envoy) - Python Subprocesses for Humans™.
+- [sh](https://github.com/amoffat/sh) - A full-fledged [subprocess](https://docs.python.org/2/library/subprocess.html) replacement for Python.
+- [sarge](http://sarge.readthedocs.org/) - A wrapper for subprocess.
+
+## Concurrency and Networking
+
+_Libraries for concurrency and network programming._
+
+- [asyncio](https://docs.python.org/3/library/asyncio.html) - (Python standard library in Python 3.4+) Asynchronous I/O, event loop, coroutines and tasks.
+- [gevent](http://www.gevent.org/) - A coroutine-based Python networking library that uses [greenlet](https://github.com/python-greenlet/greenlet).
+- [Twisted](https://twistedmatrix.com/trac/) - An event-driven networking engine.
+- [Tornado](http://www.tornadoweb.org/) - A Web framework and asynchronous networking library.
+- [pulsar](https://github.com/quantmind/pulsar) - Event-driven concurrent framework for Python.
+- [diesel](https://github.com/jamwt/diesel) - Greenlet-based event I/O Framework for Python.
+- [eventlet](http://eventlet.net/) - Asynchronous framework with WSGI support.
+- [pyzmq](http://zeromq.github.io/pyzmq/) - A Python wrapper for the 0MQ message library.
+- [txZMQ](https://github.com/smira/txZMQ) - Twisted based wrapper for the 0MQ message library.
+- [Crossbar](http://crossbar.io/) - Open-source Unified Application Router (Websocket & WAMP for Python on Autobahn).
+
+## WebSocket
+
+_Libraries for working with WebSocket._
+
+- [AutobahnPython](https://github.com/tavendo/AutobahnPython) - WebSocket & WAMP for Python on Twisted and [asyncio](https://docs.python.org/3/library/asyncio.html).
+- [WebSocket-for-Python](https://github.com/Lawouach/WebSocket-for-Python) - WebSocket client and server library for Python 2 and 3 as well as PyPy.
+
+## WSGI Servers
+
+_WSGI-compatible web servers._
+
+- [wsgiref](http://docs.python.org/library/wsgiref.html) - (Python standard library) WSGI reference implementation, single-threaded.
+- [Werkzeug](http://werkzeug.pocoo.org/) - A WSGI utility library for Python that powers Flask and can easily be embedded into your own projects.
+- [paste](http://pythonpaste.org/) - Multi-threaded, stable, tried and tested.
+- [rocket](http://pypi.python.org/pypi/rocket) - Multi-threaded.
+- [waitress](https://waitress.readthedocs.org/) - Multi-threaded, poweres Pyramid.
+- [netius](https://github.com/hivesolutions/netius) - Asynchronous, very fast.
+- [gunicorn](http://pypi.python.org/pypi/gunicorn) - Pre-forked, partly written in C.
+- [fapws3](http://www.fapws.org/) - Asynchronous (network side only), written in C.
+- [meinheld](http://pypi.python.org/pypi/meinheld) - Asynchronous, partly written in C.
+- [bjoern](http://pypi.python.org/pypi/bjoern) - Asynchronous, very fast and written in C.
+
+## RPC Servers
+
+_RPC-compatible servers._
+
+- [SimpleXMLRPCServer](https://docs.python.org/2/library/simplexmlrpcserver.html) - (Python standard library) Simple XML-RPC server implementation, single-threaded.
+- [SimpleJSONRPCServer](https://github.com/joshmarshall/jsonrpclib/) - This library is an implementation of the JSON-RPC specification.
+- [zeroRPC](https://github.com/dotcloud/zerorpc-python) - zerorpc is a flexible RPC implementation based on [ZeroMQ](http://zeromq.org/) and [MessagePack](http://msgpack.org/).
+
+## Cryptography
+
+- [PyCrypto](https://www.dlitz.net/software/pycrypto/) - The Python Cryptography Toolkit.
+- [Paramiko](http://www.paramiko.org/) - A Python (2.6+, 3.3+) implementation of the SSHv2 protocol, providing both client and server functionality.
+- [cryptography](https://cryptography.io/) - A package designed to expose cryptographic primitives and recipes to Python developers.
+- [PyNacl](https://github.com/pyca/pynacl) - Python binding to the Networking and Cryptography (NaCl) library.
+- [hashids](https://github.com/davidaurelio/hashids-python) - Implementation of [hashids](http://hashids.org/) in Python.
+- [Passlib](https://pythonhosted.org/passlib/) - Secure password storage/hashing library, very high level.
+
+## GUI
+
+_Libraries for working with graphical user interface applications._
+
+- [PyQt](http://www.riverbankcomputing.co.uk/software/pyqt/intro) - Python bindings for the [Qt](http://qt-project.org/) cross-platform application and UI framework, with support for both Qt v4 and Qt v5 frameworks.
+- [PySide](http://qt-project.org/wiki/pyside) - Python bindings for the [Qt](http://qt-project.org/) cross-platform application and UI framework, supporting the Qt v4 framework.
+- [wxPython](http://wxpython.org/) - A blending of the wxWidgets C++ class library with the Python.
+- [kivy](http://kivy.org/) - A library for creating NUI applications, running on Windows, Linux, Mac OS X, Android and iOS.
+- [curses](https://docs.python.org/2/library/curses.html#module-curses) - Built-in wrapper for [ncurses](http://www.gnu.org/software/ncurses/) used to create terminal GUI applications.
+- [urwid](http://urwid.org/) - A library for creating terminal GUI applications with strong support for widgets, events, rich colors, etc.
+- [pyglet](http://www.pyglet.org/) - A cross-platform windowing and multimedia library for Python.
+- [Tkinter](https://wiki.python.org/moin/TkInter) - Tkinter is Python's de-facto standard GUI package.
+- [enaml](https://github.com/nucleic/enaml) - Creating beautiful user-interfaces with Declaratic Syntax like QML.
+- [Toga](https://github.com/pybee/toga) - A Python native, OS native GUI toolkit.
+
+## Game Development
+
+_Awesome game development libraries._
+
+- [Pygame](http://www.pygame.org/news.html) - Pygame is a set of Python modules designed for writing games.
+- [Cocos2d](http://cocos2d.org/) - cocos2d is a framework for building 2D games, demos, and other graphical/interactive applications. It is based on pyglet.
+- [PySDL2](http://pysdl2.readthedocs.org/) - A ctypes based wrapper for the SDL2 library.
+- [Panda3D](https://www.panda3d.org/) - 3D game engine developed by Disney and maintained by Carnegie Mellon's Entertainment Technology Center. Written in C++, completely wrapped in Python.
+- [PyOgre](http://www.ogre3d.org/tikiwiki/PyOgre) - Python bindings for the Ogre 3D render engine, can be used for games, simulations, anything 3D.
+- [PyOpenGL](http://pyopengl.sourceforge.net/) - Python ctypes bindings for OpenGL and it's related APIs.
+- [PySFML](http://www.python-sfml.org/) - Python bindings for [SFML](http://www.sfml-dev.org/)
+- [RenPy](http://www.renpy.org/) - A Visual Novel engine.
+
+## Logging
+
+_Libraries for generating and working with log files._
+
+- [logging](https://docs.python.org/2/library/logging.html) - (Python standard library) Logging facility for Python.
+- [logbook](http://pythonhosted.org/Logbook/) - Logging replacement for Python.
+- [Sentry](https://pypi.python.org/pypi/sentry) - A realtime logging and aggregation server.
+- [Raven](http://raven.readthedocs.org/) - The Python client for Sentry.
+
+## Testing
+
+_Libraries for testing codebases and generating test data._
+
+- Testing Frameworks
+  - [unittest](https://docs.python.org/2/library/unittest.html) - (Python standard library) Unit testing framework.
+  - [nose](https://nose.readthedocs.org/) - nose extends unittest.
+  - [pytest](http://pytest.org/) - A mature full-featured Python testing tool.
+  - [mamba](https://nestorsalceda.github.io/mamba) - The definitive testing tool for Python. Born under the banner of BDD.
+  - [contexts](https://github.com/benjamin-hodgson/Contexts) - A BDD framework for Python 3.3+. Inspired by C#'s `Machine.Specifications`.
+  - [pyshould](https://github.com/drslump/pyshould) - Should style asserts based on [PyHamcrest](https://github.com/hamcrest/PyHamcrest).
+  - [pyvows](http://heynemann.github.io/pyvows/) - BDD style testing for Python. Inspired by [Vows.js](http://vowsjs.org/).
+- Web Testing
+  - [Selenium](https://pypi.python.org/pypi/selenium) - Python bindings for [Selenium](http://www.seleniumhq.org/) WebDriver.
+  - [splinter](http://splinter.cobrateam.info/) - Open source tool for testing web applications.
+  - [locust](https://github.com/locustio/locust) - Scalable user load testing tool written in Python.
+  - [sixpack](https://github.com/seatgeek/sixpack) - A language-agnostic A/B Testing framework.
+- Mock
+  - [mock](https://pypi.python.org/pypi/mock) - A Python Mocking and Patching Library for Testing.
+  - [responses](https://github.com/dropbox/responses) - A utility library for mocking out the requests Python library.
+  - [doublex](https://pypi.python.org/pypi/doublex) - Powerful test doubles framework for Python.
+  - [freezegun](https://github.com/spulec/freezegun) - Travel through time by mocking the datetime module.
+  - [httpretty](http://falcao.it/HTTPretty/) - HTTP request mock tool for Python.
+  - [httmock](https://github.com/patrys/httmock) - A mocking library for requests for Python 2.6+ and 3.2+.
+- Code Coverage
+  - [coverage](https://pypi.python.org/pypi/coverage) - Code coverage measurement.
+- Fake Data
+  - [faker](http://www.joke2k.net/faker/) - A Python package that generates fake data.
+  - [fake2db](https://github.com/emirozer/fake2db) - Fake database generator.
+  - [mixer](https://mixer.readthedocs.org/) - Generating fake data and creating random fixtures for testing in Django ORM, SQLAlchemy, Peewee, MongoEngine, Pony ORM and etc.
+  - [model_mommy](https://model-mommy.readthedocs.org/) - Creating random fixtures for testing in Django.
+  - [ForgeryPy](https://pypi.python.org/pypi/ForgeryPy) - An easy to use forged data generator for Python. It's a port of [forgery](http://rubygems.org/gems/forgery).
+  - [radar](https://pypi.python.org/pypi/radar) - Generate random datetime / time.
+- Error Handler
+  - [FuckIt.py](https://github.com/ajalt/fuckitpy) - FuckIt.py uses state-of-the-art technology to make sure your Python code runs whether it has any right to or not.
+
+## Code Analysis and Linter
+
+_Libraries and tools for analysing, parsing and manipulation codebases._
+
+- Code Analysis
+  - [pysonar2](https://github.com/yinwang0/pysonar2) - A type inferencer and indexer for Python.
+  - [pycallgraph](https://github.com/gak/pycallgraph) - A library that visualises the flow (call graph) of your Python application.
+  - [code2flow](https://github.com/scottrogowski/code2flow) - Turn your Python and JavaScript code into DOT flowcharts.
+- Linter
+  - [Flake8](https://pypi.python.org/pypi/flake8) - The modular source code checker: pep8, pyflakes and co.
+  - [pylama](https://pylama.readthedocs.org/) - Code audit tool for Python and JavaScript.
+  - [Pylint](http://www.pylint.org/) - A source code analyzer.
+
+## Debugging Tools
+
+_Libraries for debugging code._
+
+- [pdb](https://docs.python.org/2/library/pdb.html) - (Python standard library) The Python Debugger.
+- [ipdb](https://pypi.python.org/pypi/ipdb) - IPython-enabled pdb.
+- [winpdb](http://winpdb.org/) - A Platform Independent Python Debugger with GUI.
+- [pudb](https://pypi.python.org/pypi/pudb) -- A full-screen, console-based Python debugger.
+- [pyringe](https://github.com/google/pyringe) - Debugger capable of attaching to and injecting code into Python processes.
+- [python-statsd](https://github.com/WoLpH/python-statsd) - Python Client for the [statsd](https://github.com/etsy/statsd/) server.
+- [memory_profiler](https://github.com/fabianp/memory_profiler) - Monitor Memory usage of Python code.
+- [profiling](https://github.com/what-studio/profiling) - An interactive Python profiler.
+- [django-debug-toolbar](https://github.com/django-debug-toolbar/django-debug-toolbar) - Display various debug information about the current request/response.
+- [django-devserver](https://github.com/dcramer/django-devserver) - A drop-in replacement for Django's runserver.
+- [flask-debugtoolbar](https://github.com/mgood/flask-debugtoolbar) - A port of the django-debug-toolbar to flask.
+- [pyelftools](https://github.com/eliben/pyelftools) - A pure-Python library for parsing and analyzing ELF files and DWARF debugging information.
+
+## Science and Data Analysis
+
+_Libraries for scientific computing and data analyzing._
+
+- [SciPy](http://www.scipy.org/) - A Python-based ecosystem of open-source software for mathematics, science, and engineering.
+- [NumPy](http://www.numpy.org/) - A fundamental package for scientific computing with Python.
+- [Numba](http://numba.pydata.org/) - Python JIT (just in time) complier to LLVM aimed at scientific Python by the developers of Cython and NumPy.
+- [NetworkX](https://networkx.github.io/) - A high-productivity software for complex networks.
+- [Pandas](http://pandas.pydata.org/) - A library providing high-performance, easy-to-use data structures and data analysis tools.
+- [Open Mining](https://github.com/avelino/mining) - Business Intelligence (BI) in Python (Pandas web interface)
+- [PyMC](https://github.com/pymc-devs/pymc) - Markov Chain Monte Carlo sampling toolkit.
+- [zipline](https://github.com/quantopian/zipline) - A Pythonic algorithmic trading library.
+- [PyDy](https://pydy.org/) - Short for Python Dynamics, used to assist with workflow in the modeling of dynamic motion based around NumPy, SciPy, IPython, and matplotlib.
+- [SymPy](https://github.com/sympy/sympy) - A Python library for symbolic mathematics.
+- [statsmodels](https://github.com/statsmodels/statsmodels) - Statistical modeling and econometrics in Python.
+- [astropy](http://www.astropy.org/) - A community Python library for Astronomy.
+- [orange](http://orange.biolab.si/) - Data mining, data visualization, analysis and machine learning through visual programming or Python scripting.
+- [RDKit](http://www.rdkit.org/) - Cheminformatics and Machine Learning Software.
+- [Open Babel](http://openbabel.org/wiki/Main_Page) - A chemical toolbox designed to speak the many languages of chemical data.
+- [cclib](http://cclib.github.io/) - A library for parsing and interpreting the results of computational chemistry packages.
+- [Biopython](http://biopython.org/wiki/Main_Page) - Biopython is a set of freely available tools for biological computation.
+- [bccb](https://github.com/chapmanb/bcbb) - Collection of useful code related to biological analysis.
+- [bcbio-nextgen](https://github.com/chapmanb/bcbio-nextgen) - A toolkit providing best-practice pipelines for fully automated high throughput sequencing analysis.
+- [blaze](http://blaze.pydata.org/en/latest/) - NumPy and Pandas interface to Big Data.
+
+## Data Visualization
+
+_Libraries for visualizing data. See: [awesome-javascript](https://github.com/sorrycc/awesome-javascript#data-visualization)._
+
+- [matplotlib](http://matplotlib.org/) - A Python 2D plotting library.
+- [bokeh](https://github.com/ContinuumIO/bokeh) - Interactive Web Plotting for Python.
+- [plotly](https://plot.ly/python) - Collaborative web plotting for Python and matplotlib.
+- [vincent](https://github.com/wrobstory/vincent) - A Python to Vega translator.
+- [d3py](https://github.com/mikedewar/d3py) - A plottling library for Python, based on [D3.js](http://d3js.org/).
+- [ggplot](https://github.com/yhat/ggplot) - Same API as ggplot2 for R.
+- [Kartograph.py](https://github.com/kartograph/kartograph.py) - Rendering beautiful SVG maps in Python.
+- [pygal](http://pygal.org/) - A Python SVG Charts Creator.
+- [pygraphviz](https://pypi.python.org/pypi/pygraphviz) - Python interface to [Graphviz](http://www.graphviz.org/).
+- [PyQtGraph](http://www.pyqtgraph.org/) - Interactive and realtime 2D/3D/Image plotting and science/engineering widgets.
+- [VisPy](http://vispy.org/) - High-performance scientific visualization based on OpenGL.
+
+## Computer Vision
+
+_Libraries for computer vision._
+
+- [OpenCV](http://opencv.org/) - Open Source Computer Vision Library.
+- [SimpleCV](http://simplecv.org/) - An open source framework for building computer vision applications.
+
+## Machine Learning
+
+_Libraries for Machine Learning. See: [awesome-machine-learning](https://github.com/josephmisiti/awesome-machine-learning#python)._
+
+- [scikit-learn](http://scikit-learn.org/) - A Python module for machine learning built on top of SciPy.
+- [pattern](https://github.com/clips/pattern) - Web mining module for Python.
+- [NuPIC](https://github.com/numenta/nupic) - Numenta Platform for Intelligent Computing.
+- [Pylearn2](https://github.com/lisa-lab/pylearn2) - A Machine Learning library based on [Theano](https://github.com/Theano/Theano).
+- [hebel](https://github.com/hannes-brt/hebel) - GPU-Accelerated Deep Learning Library in Python.
+- [gensim](https://github.com/piskvorky/gensim) - Topic Modelling for Humans.
+- [PyBrain](https://github.com/pybrain/pybrain) - Another Python Machine Learning Library.
+- [Crab](https://github.com/muricoca/crab) - A ﬂexible, fast recommender engine.
+- [python-recsys](https://github.com/ocelma/python-recsys) - A Python library for implementing a Recommender System.
+- [vowpal_porpoise](https://github.com/josephreisinger/vowpal_porpoise) - A lightweight Python wrapper for [Vowpal Wabbit](https://github.com/JohnLangford/vowpal_wabbit/).
+
+## MapReduce
+
+_Framworks and libraries for MapReduce._
+
+- [PySpark](http://spark.apache.org/docs/latest/programming-guide.html) - The Spark Python API.
+- [dpark](https://github.com/douban/dpark) - Python clone of Spark, a MapReduce alike framework in Python.
+- [luigi](https://github.com/spotify/luigi) - A module that helps you build complex pipelines of batch jobs.
+- [mrjob](https://github.com/Yelp/mrjob) - Run MapReduce jobs on Hadoop or Amazon Web Services.
+- [dumbo](https://github.com/klbostee/dumbo) - Python module that allows one to easily write and run Hadoop programs.
+- [streamparse](https://github.com/Parsely/streamparse) - Run Python code against real-time streams of data. Integrates with [Apache Storm](https://storm.incubator.apache.org/).
+
+## Functional Programming
+
+_Functional Programming with Python._
+
+- [fn.py](https://github.com/kachayev/fn.py) - Functional programming in Python: implementation of missing features to enjoy FP.
+- [funcy](https://github.com/Suor/funcy) - A fancy and practical functional tools.
+- [Toolz](https://github.com/pytoolz/toolz) - A collection of functional utilities for iterators, functions, and dictionaries.
+- [CyToolz](https://github.com/pytoolz/cytoolz/) - Cython implementation of Toolz: High performance functional utilities.
+
+## Third-party APIs
+
+_Libraries for accessing third party services APIs. See: [List of Python API Wrappers and Libraries](https://github.com/realpython/list-of-python-api-wrappers)._
+
+- [apache-libcloud](https://libcloud.apache.org/) - One Python library for all clouds.
+- [boto](https://github.com/boto/boto) - Python interface to Amazon Web Services.
+- [twython](https://github.com/ryanmcgrath/twython) - A Python wrapper for the Twitter API.
+- [google-api-python-client](https://github.com/google/google-api-python-client) - Google APIs Client Library for Python.
+- [gspread](https://github.com/burnash/gspread) - Google Spreadsheets Python API.
+- [facebook-sdk](https://github.com/pythonforfacebook/facebook-sdk) - Facebook Platform Python SDK.
+- [facepy](https://github.com/jgorset/facepy) - Facepy makes it really easy to interact with Facebook's Graph API
+- [gmail](https://github.com/charlierguo/gmail) - A Pythonic interface for Gmail.
+- [django-wordpress](https://github.com/sunlightlabs/django-wordpress/) - WordPress models and views for Django.
+
+## DevOps Tools
+
+_Software and libraries for DevOps._
+
+- [OpenStack](http://www.openstack.org/) - Open source software for building private and public clouds.
+- [Ansible](https://github.com/ansible/ansible) - A radically simple IT automation platform.
+- [SaltStack](https://github.com/saltstack/salt) - Infrastructure automation and management system.
+- [Fabric](http://www.fabfile.org/) - A simple, Pythonic tool for remote execution and deployment.
+- [Fabtools](https://github.com/ronnix/fabtools) - Tools for writing awesome Fabric files.
+- [cuisine](https://github.com/sebastien/cuisine) - Chef-like functionality for Fabric.
+- [psutil](https://github.com/giampaolo/psutil) - A cross-platform process and system utilities module.
+- [pexpect](https://github.com/pexpect/pexpect) - Controlling interactive programs in a pseudo-terminal like GNU expect.
+- [provy](https://github.com/python-provy/provy) - An easy-to-use provisioning system in Python.
+- [honcho](https://github.com/nickstenning/honcho) - A Python port of [Foreman](https://github.com/ddollar/foreman), a tool for managing Procfile-based applications.
+- [gunnery](https://github.com/gunnery/gunnery) - Multipurpose task execution tool for distributed systems with web-based interface.
+- [Docker-Compose](https://docs.docker.com/compose/) - Fast, isolated development environments using [Docker](https://www.docker.com/).
+- [hgapi](http://bitbucket.org/haard/hgapi) - Pure-Python API for Mercurial.
+- [gitapi](http://bitbucket.org/haard/gitapi) - Pure-Python API for git.
+- [supervisor](https://github.com/Supervisor/supervisor) - Supervisor process control system for UNIX.
+
+## Job Scheduler
+
+_Libraries for scheduling jobs._
+
+- [APScheduler](http://apscheduler.readthedocs.org/) - A light but powerful in-process task scheduler that lets you schedule functions.
+- [django-schedule](https://github.com/thauber/django-schedule) - A calendaring app for Django.
+- [doit](http://pydoit.org/) - A task runner/build tool.
+- [Joblib](http://pythonhosted.org/joblib/index.html) - A set of tools to provide lightweight pipelining in Python.
+- [Plan](https://github.com/fengsp/plan) - Writing crontab file in Python like a charm.
+- [Spiff](https://github.com/knipknap/SpiffWorkflow) - A powerful workflow engine implemented in pure Python.
+- [schedule](https://github.com/dbader/schedule) - Python job scheduling for humans.
+- [TaskFlow](http://docs.openstack.org/developer/taskflow/) - A Python library that helps to make task execution easy, consistent and reliable.
+
+## Foreign Function Interface
+
+_Libraries for providing foreign function interface._
+
+- [ctypes](https://docs.python.org/2/library/ctypes.html) - (Python standard library) Foreign Function Interface for Python calling C code.
+- [cffi](https://pypi.python.org/pypi/cffi) - Foreign Function Interface for Python calling C code.
+- [SWIG](http://www.swig.org/Doc1.3/Python.html) - Simplified Wrapper and Interface Generator.
+- [PyCUDA](http://mathema.tician.de/software/pycuda/) - A Python wrapper for Nvidia's CUDA API.
+
+## High Performance
+
+_Libraries for making Python faster._
+
+- [Cython](http://cython.org/) - Optimizing Static Complier for Python. Uses type mixins to compile Python into C or C++ modules resulting in large performance gains.
+- [PyPy](http://pypy.org/) - An implementation of Python in Python. The interpreter uses black magic to make Python very fast without having to add in additional type information.
+- [Stackless Python](http://www.stackless.com/) - An enhanced version of the Python.
+- [Pyston](https://github.com/dropbox/pyston) - A Python implementation built using LLVM and modern JIT techniques with the goal of achieving good performance.
+
+## Microsoft Windows
+
+_Python programming on Microsoft Windows._
+
+- [PyWin32](http://sourceforge.net/projects/pywin32/) - Python Extensions for Windows.
+- [PythonNet](https://github.com/pythonnet/pythonnet) - Python Intergration with the .NET Common Language Runtime (CLR).
+- [pythonlibs](http://www.lfd.uci.edu/~gohlke/pythonlibs/) - Unofficial Windows binaries for Python extension packages.
+- [spyder](https://code.google.com/p/spyderlib/) - IDE for the Python language with advanced editing, interactive testing, debugging and introspection features (also comes with Anaconda, WinPython).
+- [Python(x,y)](https://code.google.com/p/pythonxy/) - Scientific-applications-oriented Python Distribution based on Qt and Spyder.
+- [WinPython](https://winpython.github.io/) - Portable development environment for Windows 7/8.
+
+## Network Virtualization and SDN
+
+_Tools and libraries for Virtual Networking and SDN (Software Defined Networking)._
+
+- [Mininet](http://mininet.org/) - A popular network emulator and API written in Python.
+- [POX](http://www.noxrepo.org/pox/about-pox/) - An open source development platform for Python-based Software Defined Networking (SDN) control applications, such as OpenFlow SDN controllers.
+- [Pyretic](http://frenetic-lang.org/pyretic/) - A member of the Frenetic family of SDN programming languages that provides powerful abstractions over network switches or emulators.
+- [SDX Platform](https://github.com/sdn-ixp/internet2award) - SDN based IXP implementation that leverages Mininet, POX and Pyretic.
+
+## Hardware
+
+_Libraries for programming with hardware._
+
+- [PyUserInput](https://github.com/SavinaRoja/PyUserInput) - A module for cross-platform control of the mouse and keyboard.
+- [wifi](https://wifi.readthedocs.org/) - A Python library and command line tool for working with WiFi on Linux.
+- [scapy](http://www.secdev.org/projects/scapy/) - A brilliant packet manipulation library.
+- [ino](http://inotool.org/) - Command line toolkit for working with [Arduino](http://www.arduino.cc/).
+- [Pyro](http://pyrorobotics.com/) - Python Robotics.
+
+## Compatibility
+
+_Libraries for migrating from Python 2 to 3._
+
+- [Six](https://pypi.python.org/pypi/six) - Python 2 and 3 compatibility utilities.
+- [Python-Future](http://python-future.org/index.html) - The missing compatibility layer between Python 2 and Python 3.
+- [Python-Modernize](https://github.com/mitsuhiko/python-modernize) - Modernizes Python code for eventual Python 3 migration.
+
+## Miscellaneous
+
+_Useful libraries or tools that don't fit in the categories above._
+
+- [pluginbase](https://github.com/mitsuhiko/pluginbase) - A simple but flexible plugin system for Python.
+- [itsdangerous](https://github.com/mitsuhiko/itsdangerous) - Various helpers to pass trusted data to untrusted environments.
+- [blinker](https://github.com/jek/blinker) - A fast Python in-process signal/event dispatching system.
+- [Pychievements](https://github.com/PacketPerception/pychievements) - A framework for creating and tracking achievements.
+
+## Algorithms and Design Patterns
+
+_Python implementation of algorithms and design patterns._
+
+- [python-patterns](https://github.com/faif/python-patterns) - A collection of design patterns in Python.
+- [algorithms](https://github.com/nryoung/algorithms) - module of algorithms for Python.
+
+## Editor Plugins
+
+_Plugins for editors and IDEs._
+
+- Vim
+  - [Python-mode](https://github.com/klen/python-mode) - An all in one plugin for turning Vim into a Python IDE.
+  - [Jedi-vim](https://github.com/davidhalter/jedi-vim) - Vim bindings for the [Jedi](https://github.com/davidhalter/jedi) autocompletion library for Python.
+  - [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) - Includes [Jedi](https://github.com/davidhalter/jedi)-based completion engine for Python
+- Emacs
+  - [Elpy](https://github.com/jorgenschaefer/elpy) - Emacs Python Development Environment.
+- Sublime Text
+  - [SublimeJEDI](https://github.com/srusskih/SublimeJEDI) - A Sublime Text plugin to the awesome autocomplete library [Jedi](https://github.com/davidhalter/jedi).
+  - [Anaconda](https://github.com/DamnWidget/anaconda) - Anaconda turns your Sublime Text 3 in a full featured Python development IDE.
+- Atom
+  - [Linter](https://github.com/AtomLinter/Linter) - A static code analysis tool for Atom.
+  - [Linter-flake8](https://github.com/AtomLinter/linter-flake8) - An addon to `linter`, that acts as an interface for `flake8`.
+  - [virtualenv](https://github.com/jhutchins/virtualenv) - Atom package for virtualenv management.
+
+## Boilerplates
+
+_Boilerplates for Python applications._
+
+- [Django Hackathon Starter](https://github.com/DrkSephy/django-hackathon-starter) - A boilerplate for Django web applications.
+
+# Resources
 
 Where to discover new Python libraries.
 
-Websites
---------
+## Websites
 
--   [r/Python](http://www.reddit.com/r/python) - News about Python.
--   [Python 3 Wall of Superpowers](http://python3wos.appspot.com/) - Too many popular Python packages don't support Python 3.
--   [Trending Python repositories on GitHub today](https://github.com/trending?l=python) - Good place to find new Python libraries.
--   [Python Hackers](http://pythonhackers.com/open-source/) - List of top 400 projects in GitHub.
--   [CoolGithubProjects](http://coolgithubprojects.com/) - Sharing cool github projects just got easier!
--   [Full Stack Python](http://www.fullstackpython.com/) - Plain English explanations for every layer of the Python web application stack.
--   [Django Packages](https://www.djangopackages.com/) - A directory of reusable apps, sites, tools, and more for Django projects.
+- [r/Python](http://www.reddit.com/r/python) - News about Python.
+- [Python 3 Wall of Superpowers](http://python3wos.appspot.com/) - Too many popular Python packages don't support Python 3.
+- [Trending Python repositories on GitHub today](https://github.com/trending?l=python) - Good place to find new Python libraries.
+- [Python Hackers](http://pythonhackers.com/open-source/) - List of top 400 projects in GitHub.
+- [CoolGithubProjects](http://coolgithubprojects.com/) - Sharing cool github projects just got easier!
+- [Full Stack Python](http://www.fullstackpython.com/) - Plain English explanations for every layer of the Python web application stack.
+- [Django Packages](https://www.djangopackages.com/) - A directory of reusable apps, sites, tools, and more for Django projects.
 
-Weekly
-------
+## Weekly
 
--   [Pycoder's Weekly](http://pycoders.com/)
--   [Python Weekly](http://www.pythonweekly.com/)
--   [Import Python Newsletter](http://importpython.com/newsletter/)
+- [Pycoder's Weekly](http://pycoders.com/)
+- [Python Weekly](http://www.pythonweekly.com/)
+- [Import Python Newsletter](http://importpython.com/newsletter/)
 
-Twitter
--------
+## Twitter
 
--   [@pypi](https://twitter.com/pypi)
--   [@planetpython](https://twitter.com/planetpython)
--   [@getpy](https://twitter.com/getpy)
--   [@pycoders](https://twitter.com/pycoders)
--   [@PythonWeekly](https://twitter.com/PythonWeekly)
--   [@pythontrending](https://twitter.com/pythontrending)
+- [@pypi](https://twitter.com/pypi)
+- [@planetpython](https://twitter.com/planetpython)
+- [@getpy](https://twitter.com/getpy)
+- [@pycoders](https://twitter.com/pycoders)
+- [@PythonWeekly](https://twitter.com/PythonWeekly)
+- [@pythontrending](https://twitter.com/pythontrending)
 
-Other Awesome Lists
-===================
+# Other Awesome Lists
 
 List of lists.
 
--   Python
-    -   [pycrumbs](https://github.com/kirang89/pycrumbs/blob/master/pycrumbs.md)
-    -   [pythonidae](https://github.com/svaksha/pythonidae)
-    -   [python-github-projects](https://github.com/checkcheckzz/python-github-projects)
-    -   [python_reference](https://github.com/rasbt/python_reference)
-    -   [easy-python](http://easy-python.readthedocs.org/)
--   Monty
-    -   [awesome-awesomeness](https://github.com/bayandin/awesome-awesomeness)
-    -   [lists](https://github.com/jnv/lists)
+- Python
+  - [pycrumbs](https://github.com/kirang89/pycrumbs/blob/master/pycrumbs.md)
+  - [pythonidae](https://github.com/svaksha/pythonidae)
+  - [python-github-projects](https://github.com/checkcheckzz/python-github-projects)
+  - [python_reference](https://github.com/rasbt/python_reference)
+  - [easy-python](http://easy-python.readthedocs.org/)
+- Monty
+  - [awesome-awesomeness](https://github.com/bayandin/awesome-awesomeness)
+  - [lists](https://github.com/jnv/lists)
 
 [view raw](https://gist.github.com/bgoonz/2cf17321a12f5100676cd6a111ffe1f2/raw/e1f511549a02e248bae024410ec76a99e364e071/py-resource-list.md)[py-resource-list.md](https://gist.github.com/bgoonz/2cf17321a12f5100676cd6a111ffe1f2#file-py-resource-list-md) hosted with ❤ by [GitHub](https://github.com/)
 
-|  | # first: mkdir user && cd user && cp /path/to/get_gists.py . |
-|  | # python3 get_gists.py user |
-|  | import requests |
-|  | import sys |
-|  | from subprocess import call |
-|  |  |
-|  | user = sys.argv[1] |
-|  |  |
-|  | r = requests.get('https://api.github.com/users/{0}/gists'.format(user)) |
-|  |  |
-|  | for i in r.json(): |
-|  | call(['git', 'clone', i['git_pull_url']]) |
-|  |  |
-|  | description_file = './{0}/description.txt'.format(i['id']) |
-|  | with open(description_file, 'w') as f: |
-|  | f.write('{0}\n'.format(i['description'])) |
+| | # first: mkdir user && cd user && cp /path/to/get_gists.py . |
+| | # python3 get_gists.py user |
+| | import requests |
+| | import sys |
+| | from subprocess import call |
+| | |
+| | user = sys.argv[1] |
+| | |
+| | r = requests.get('https://api.github.com/users/{0}/gists'.format(user)) |
+| | |
+| | for i in r.json(): |
+| | call(['git', 'clone', i['git_pull_url']]) |
+| | |
+| | description_file = './{0}/description.txt'.format(i['id']) |
+| | with open(description_file, 'w') as f: |
+| | f.write('{0}\n'.format(i['description'])) |
 
 [view raw](https://gist.github.com/bgoonz/22ba574c318b387aa6ac200a756cf4fb/raw/43c5d6805e124e9777f5aa4af5b10dcce0465cf9/get-gists.py)[get-gists.py](https://gist.github.com/bgoonz/22ba574c318b387aa6ac200a756cf4fb#file-get-gists-py) hosted with ❤ by [GitHub](https://github.com/)
 
-|  | def memoize(func): |
-|  | cache = {} |
-|  |  |
-|  | def wrapped(*args, **kwargs): |
-|  | key = (tuple(args), tuple(kwargs.items())) |
-|  | if key not in cache: |
-|  | cache[key] = func(*args, **kwargs) |
-|  | return cache[key] |
-|  |  |
-|  | return wrapped |
+| | def memoize(func): |
+| | cache = {} |
+| | |
+| | def wrapped(*args, \*\*kwargs): |
+| | key = (tuple(args), tuple(kwargs.items())) |
+| | if key not in cache: |
+| | cache[key] = func(*args, \*\*kwargs) |
+| | return cache[key] |
+| | |
+| | return wrapped |
 
 [view raw](https://gist.github.com/bgoonz/22ba574c318b387aa6ac200a756cf4fb/raw/43c5d6805e124e9777f5aa4af5b10dcce0465cf9/memoize.py)[memoize.py](https://gist.github.com/bgoonz/22ba574c318b387aa6ac200a756cf4fb#file-memoize-py) hosted with ❤ by [GitHub](https://github.com/)
 
-|  | make git m="your message" |
+| | make git m="your message" |
 
 [view raw](https://gist.github.com/bgoonz/74c3cbe6710415e63e42759b98221769/raw/d5c99aa1f8855f6ac722e12bcdfa304bf0f84115/command.txt)[command.txt](https://gist.github.com/bgoonz/74c3cbe6710415e63e42759b98221769#file-command-txt) hosted with ❤ by [GitHub](https://github.com/)
 
-|  | git: |
-|  | git add . |
-|  | git commit -m "$m" |
-|  | git push -u origin master |
+| | git: |
+| | git add . |
+| | git commit -m "$m" |
+| | git push -u origin master |
 
 [view raw](https://gist.github.com/bgoonz/74c3cbe6710415e63e42759b98221769/raw/d5c99aa1f8855f6ac722e12bcdfa304bf0f84115/makefile)[makefile](https://gist.github.com/bgoonz/74c3cbe6710415e63e42759b98221769#file-makefile) hosted with ❤ by [GitHub](https://github.com/)
 
-|  | let arr1 = [ |
-|  | 'http://www.w3schools.com/jsref/met_form_submit.asp', |
-|  | 'http://www.w3schools.com/jsref/event_form_onreset.asp', |
-|  | 'http://www.w3schools.com/jsref/event_form_onsubmit.asp', |
-|  | 'http://www.w3schools.com/jsref/prop_img_align.asp', |
-|  | 'http://www.w3schools.com/jsref/prop_img_alt.asp', |
-|  | ]; |
-|  | const fs = require ('fs'); |
-|  |  |
-|  | function tagify (arr) { |
-|  | let tagsArr = []; |
-|  | for (let i = 0; i < arr.length; i++) { |
-|  | let curPath = arr[i]; |
-|  | let tag = |
-|  | '<div class="btn"><a class="btn" href="' + |
-|  | `${curPath}` + |
-|  | `"` + |
-|  | `>${curPath.slice (0, 1) + curPath.slice (6)}</a></div>`; |
-|  | console.log (tag); |
-|  | tagsArr.push (tag); |
-|  | tagsArr.push ('\n'); |
-|  | var tagStr = tagsArr.join (''); |
-|  | console.log ('tagStr: ', tagStr); |
-|  | } |
-|  | return tagStr; |
-|  | } |
-|  | let data = tagify (arr1); |
-|  | fs.writeFile ('output.txt', data, err => { |
-|  | // In case of a error throw err. |
-|  | if (err) throw err; |
-|  | }); |
+| | let arr1 = [ |
+| | 'http://www.w3schools.com/jsref/met_form_submit.asp', |
+| | 'http://www.w3schools.com/jsref/event_form_onreset.asp', |
+| | 'http://www.w3schools.com/jsref/event_form_onsubmit.asp', |
+| | 'http://www.w3schools.com/jsref/prop_img_align.asp', |
+| | 'http://www.w3schools.com/jsref/prop_img_alt.asp', |
+| | ]; |
+| | const fs = require ('fs'); |
+| | |
+| | function tagify (arr) { |
+| | let tagsArr = []; |
+| | for (let i = 0; i < arr.length; i++) { |
+| | let curPath = arr[i]; |
+| | let tag = |
+| | '<div class="btn"><a class="btn" href="' + |
+| | `${curPath}` + |
+| | `"` + |
+| | `>${curPath.slice (0, 1) + curPath.slice (6)}</a></div>`; |
+| | console.log (tag); |
+| | tagsArr.push (tag); |
+| | tagsArr.push ('\n'); |
+| | var tagStr = tagsArr.join (''); |
+| | console.log ('tagStr: ', tagStr); |
+| | } |
+| | return tagStr; |
+| | } |
+| | let data = tagify (arr1); |
+| | fs.writeFile ('output.txt', data, err => { |
+| | // In case of a error throw err. |
+| | if (err) throw err; |
+| | }); |
 
 [view raw](https://gist.github.com/bgoonz/09115567409c7b2fd3a455ca29bfe3fc/raw/b93b12cc7134ad870e1b00a7ac00ed8ff6c97513/convert-2-atag.js)[convert-2-atag.js](https://gist.github.com/bgoonz/09115567409c7b2fd3a455ca29bfe3fc#file-convert-2-atag-js) hosted with ❤ by [GitHub](https://github.com/)
 
-|  | const fs = require('fs') |
-|  |  |
-|  | fs.mkdir('./newdir', err => { |
-|  | if (err) { |
-|  | console.error(err) |
-|  | return |
-|  | } |
-|  |  |
-|  | console.log('directory created') |
-|  | }) |
+| | const fs = require('fs') |
+| | |
+| | fs.mkdir('./newdir', err => { |
+| | if (err) { |
+| | console.error(err) |
+| | return |
+| | } |
+| | |
+| | console.log('directory created') |
+| | }) |
 
 [view raw](https://gist.github.com/bgoonz/09115567409c7b2fd3a455ca29bfe3fc/raw/b93b12cc7134ad870e1b00a7ac00ed8ff6c97513/create-dir.js)[create-dir.js](https://gist.github.com/bgoonz/09115567409c7b2fd3a455ca29bfe3fc#file-create-dir-js) hosted with ❤ by [GitHub](https://github.com/)
 
-|  | const fs = require('fs') |
-|  |  |
-|  | // The async `opendir` method creates a stream from the directory |
-|  | // passed as its first argument. The stream is present in the callback |
-|  | fs.opendir('./', (err, dir) => { |
-|  |  |
-|  | if (err) { |
-|  | // log and return if theres any error |
-|  | console.error(err) |
-|  | return |
-|  | } |
-|  |  |
-|  | // A scoped function is defined that reads the next |
-|  | // file in the directory and calls itself recursively |
-|  | const readNext = (dir) => { |
-|  | // The `read` method gives us information on the |
-|  | // next file in the directory. If there are no |
-|  | // more files left, the value of `file` is null |
-|  | dir.read((err, file) => { |
-|  | if (err) { |
-|  | // log and return error |
-|  | console.error(err) |
-|  | return |
-|  | } |
-|  |  |
-|  | // If file is null, we are done. |
-|  | if (file === null) { |
-|  | return |
-|  | } |
-|  |  |
-|  | // If the file exists, log the name, along with |
-|  | // the icon for its type |
-|  | const type = file.isDirectory() ? '📂' : '📄' |
-|  | console.log(type, file.name) |
-|  | // Recursively call `readNext` for the next directory entry |
-|  | readNext(dir) |
-|  | }) |
-|  | } |
-|  |  |
-|  | // Call the `readNext` function with the first directory entry |
-|  | readNext(dir) |
-|  | }) |
+| | const fs = require('fs') |
+| | |
+| | // The async `opendir` method creates a stream from the directory |
+| | // passed as its first argument. The stream is present in the callback |
+| | fs.opendir('./', (err, dir) => { |
+| | |
+| | if (err) { |
+| | // log and return if theres any error |
+| | console.error(err) |
+| | return |
+| | } |
+| | |
+| | // A scoped function is defined that reads the next |
+| | // file in the directory and calls itself recursively |
+| | const readNext = (dir) => { |
+| | // The `read` method gives us information on the |
+| | // next file in the directory. If there are no |
+| | // more files left, the value of `file` is null |
+| | dir.read((err, file) => { |
+| | if (err) { |
+| | // log and return error |
+| | console.error(err) |
+| | return |
+| | } |
+| | |
+| | // If file is null, we are done. |
+| | if (file === null) { |
+| | return |
+| | } |
+| | |
+| | // If the file exists, log the name, along with |
+| | // the icon for its type |
+| | const type = file.isDirectory() ? '📂' : '📄' |
+| | console.log(type, file.name) |
+| | // Recursively call `readNext` for the next directory entry |
+| | readNext(dir) |
+| | }) |
+| | } |
+| | |
+| | // Call the `readNext` function with the first directory entry |
+| | readNext(dir) |
+| | }) |
 
 [view raw](https://gist.github.com/bgoonz/09115567409c7b2fd3a455ca29bfe3fc/raw/b93b12cc7134ad870e1b00a7ac00ed8ff6c97513/dir-stream.js)[dir-stream.js](https://gist.github.com/bgoonz/09115567409c7b2fd3a455ca29bfe3fc#file-dir-stream-js) hosted with ❤ by [GitHub](https://github.com/)
 
-|  | const fs = require('fs') |
-|  |  |
-|  | fs.readdir('./', { withFileTypes: true }, (err, files) => { |
-|  | if (err) { |
-|  | console.error(err) |
-|  | return |
-|  | } |
-|  |  |
-|  | console.log('files: ') |
-|  | files.forEach(file => { |
-|  | // the `isDirectory` method returns true if the entry is a directory |
-|  | const type = file.isDirectory() ? '📂' : '📄' |
-|  | console.log(type, file.name) |
-|  | }) |
-|  | }) |
+| | const fs = require('fs') |
+| | |
+| | fs.readdir('./', { withFileTypes: true }, (err, files) => { |
+| | if (err) { |
+| | console.error(err) |
+| | return |
+| | } |
+| | |
+| | console.log('files: ') |
+| | files.forEach(file => { |
+| | // the `isDirectory` method returns true if the entry is a directory |
+| | const type = file.isDirectory() ? '📂' : '📄' |
+| | console.log(type, file.name) |
+| | }) |
+| | }) |
 
 [view raw](https://gist.github.com/bgoonz/09115567409c7b2fd3a455ca29bfe3fc/raw/b93b12cc7134ad870e1b00a7ac00ed8ff6c97513/isDir.js)[isDir.js](https://gist.github.com/bgoonz/09115567409c7b2fd3a455ca29bfe3fc#file-isdir-js) hosted with ❤ by [GitHub](https://github.com/)
 
-|  | const fs = require('fs') |
-|  | // Initialize the time at which the program started |
-|  | const startTime = new Date() |
-|  |  |
-|  | fs.readFile('words.txt', (err, data) => { |
-|  |  |
-|  | if (err) { |
-|  | console.error(err) |
-|  | return |
-|  | } |
-|  |  |
-|  | // Split the words based on spaces and newlines and print the length |
-|  | const nWords = data.toString().split(/[\s\n]+/).length |
-|  | console.log('total words:', nWords) |
-|  |  |
-|  | // print the total time taken and total program memory used |
-|  | console.log('total time:', (new Date()) - startTime) |
-|  |  |
-|  | const memoryUsedMb = process.memoryUsage().heapUsed / 1024 / 1024 |
-|  | console.log('the program used', memoryUsedMb, 'MB') |
-|  | }) |
+| | const fs = require('fs') |
+| | // Initialize the time at which the program started |
+| | const startTime = new Date() |
+| | |
+| | fs.readFile('words.txt', (err, data) => { |
+| | |
+| | if (err) { |
+| | console.error(err) |
+| | return |
+| | } |
+| | |
+| | // Split the words based on spaces and newlines and print the length |
+| | const nWords = data.toString().split(/[\s\n]+/).length |
+| | console.log('total words:', nWords) |
+| | |
+| | // print the total time taken and total program memory used |
+| | console.log('total time:', (new Date()) - startTime) |
+| | |
+| | const memoryUsedMb = process.memoryUsage().heapUsed / 1024 / 1024 |
+| | console.log('the program used', memoryUsedMb, 'MB') |
+| | }) |
 
 [view raw](https://gist.github.com/bgoonz/09115567409c7b2fd3a455ca29bfe3fc/raw/b93b12cc7134ad870e1b00a7ac00ed8ff6c97513/READFILE.js)[READFILE.js](https://gist.github.com/bgoonz/09115567409c7b2fd3a455ca29bfe3fc#file-readfile-js) hosted with ❤ by [GitHub](https://github.com/)
 
-|  | const fs = require('fs') |
-|  |  |
-|  | fs.readdir('./', (err, files) => { |
-|  | if (err) { |
-|  | console.error(err) |
-|  | return |
-|  | } |
-|  |  |
-|  | console.log('files: ', files) |
-|  | }) |
+| | const fs = require('fs') |
+| | |
+| | fs.readdir('./', (err, files) => { |
+| | if (err) { |
+| | console.error(err) |
+| | return |
+| | } |
+| | |
+| | console.log('files: ', files) |
+| | }) |
 
 [view raw](https://gist.github.com/bgoonz/09115567409c7b2fd3a455ca29bfe3fc/raw/b93b12cc7134ad870e1b00a7ac00ed8ff6c97513/reading-dir.js)[reading-dir.js](https://gist.github.com/bgoonz/09115567409c7b2fd3a455ca29bfe3fc#file-reading-dir-js) hosted with ❤ by [GitHub](https://github.com/)
 
-|  | const fs = require('fs') |
-|  | // Initialize the time at which the program started |
-|  | const startTime = new Date() |
-|  |  |
-|  | // create a read stream from the `words.txt` file |
-|  | const rStream = fs.createReadStream('words.txt') |
-|  |  |
-|  | // initialize total word count |
-|  | let total = 0 |
-|  |  |
-|  | // the `on data` method registers a handler for everytime we |
-|  | // receive new data from the file stream |
-|  | rStream.on('data', b => { |
-|  | // `b` here is the chunk of data received from the |
-|  | // file stream |
-|  | const bStr = b.toString() |
-|  | // We split the string by spaces and new lines and add it to the |
-|  | // total -- we subtract one because of the extra space/newline/broken word |
-|  | // at the end of the chunk |
-|  | // we shouldn't do this for the last chunk of data, which we handle later |
-|  | total += bStr.split(/[\s\n]+/).length - 1 |
-|  | }) |
-|  |  |
-|  | rStream.on('end', () => { |
-|  | // Finally, the `on end` handler is called once the data stream completes |
-|  |  |
-|  | // we add one to the total, because we shouldn't subtract 1 from the last |
-|  | // chunk of data in the `data` handler, for which we're compensating here |
-|  | console.log('total words:', total + 1) |
-|  |  |
-|  |  |
-|  | // Print the total time taken, as well as the total used program memory |
-|  | console.log('total time:', (new Date()) - startTime) |
-|  |  |
-|  | const memoryUsedMb = process.memoryUsage().heapUsed / 1024 / 1024 |
-|  | console.log('the program used', memoryUsedMb, 'MB') |
-|  | }) |
+| | const fs = require('fs') |
+| | // Initialize the time at which the program started |
+| | const startTime = new Date() |
+| | |
+| | // create a read stream from the `words.txt` file |
+| | const rStream = fs.createReadStream('words.txt') |
+| | |
+| | // initialize total word count |
+| | let total = 0 |
+| | |
+| | // the `on data` method registers a handler for everytime we |
+| | // receive new data from the file stream |
+| | rStream.on('data', b => { |
+| | // `b` here is the chunk of data received from the |
+| | // file stream |
+| | const bStr = b.toString() |
+| | // We split the string by spaces and new lines and add it to the |
+| | // total -- we subtract one because of the extra space/newline/broken word |
+| | // at the end of the chunk |
+| | // we shouldn't do this for the last chunk of data, which we handle later |
+| | total += bStr.split(/[\s\n]+/).length - 1 |
+| | }) |
+| | |
+| | rStream.on('end', () => { |
+| | // Finally, the `on end` handler is called once the data stream completes |
+| | |
+| | // we add one to the total, because we shouldn't subtract 1 from the last |
+| | // chunk of data in the `data` handler, for which we're compensating here |
+| | console.log('total words:', total + 1) |
+| | |
+| | |
+| | // Print the total time taken, as well as the total used program memory |
+| | console.log('total time:', (new Date()) - startTime) |
+| | |
+| | const memoryUsedMb = process.memoryUsage().heapUsed / 1024 / 1024 |
+| | console.log('the program used', memoryUsedMb, 'MB') |
+| | }) |
 
 [view raw](https://gist.github.com/bgoonz/09115567409c7b2fd3a455ca29bfe3fc/raw/b93b12cc7134ad870e1b00a7ac00ed8ff6c97513/readStream.js)[readStream.js](https://gist.github.com/bgoonz/09115567409c7b2fd3a455ca29bfe3fc#file-readstream-js) hosted with ❤ by [GitHub](https://github.com/)
 
-|  | const fs = require('fs') |
-|  |  |
-|  | fs.rmdir('./newdir', err => { |
-|  | if (err) { |
-|  | console.error(err) |
-|  | return |
-|  | } |
-|  |  |
-|  | console.log('directory deleted') |
-|  | }) |
+| | const fs = require('fs') |
+| | |
+| | fs.rmdir('./newdir', err => { |
+| | if (err) { |
+| | console.error(err) |
+| | return |
+| | } |
+| | |
+| | console.log('directory deleted') |
+| | }) |
 
 [view raw](https://gist.github.com/bgoonz/09115567409c7b2fd3a455ca29bfe3fc/raw/b93b12cc7134ad870e1b00a7ac00ed8ff6c97513/remove-dir.js)[remove-dir.js](https://gist.github.com/bgoonz/09115567409c7b2fd3a455ca29bfe3fc#file-remove-dir-js) hosted with ❤ by [GitHub](https://github.com/)
 
-|  | const fs = require('fs') |
-|  |  |
-|  | class Fibonacci { |
-|  | // The Fibonacci class has the previous number and current |
-|  | // number as its instance attributes |
-|  | constructor() { |
-|  | this.prev = 0 |
-|  | this.current = 1 |
-|  | } |
-|  |  |
-|  | // the next method returns the current value, and |
-|  | // increments the current value by adding the past value to it |
-|  | next() { |
-|  | const current = this.current |
-|  | this.prev = current |
-|  | this.current = current + this.prev |
-|  | return current |
-|  | } |
-|  | } |
-|  |  |
-|  | // Iniitalize a writeStream to a a new file "fibonacci.txt" |
-|  | const writeStream = fs.createWriteStream('fibonacci.txt') |
-|  |  |
-|  | // the on ready callback gets called once the file is available to write |
-|  | writeStream.on('ready', () => { |
-|  | // initialize a new object of the Fibonacci class |
-|  | const f = new Fibonacci() |
-|  |  |
-|  | // For each iteration, obtain the next number in the sequence |
-|  | // and write to the file, adding a newline each time |
-|  | for (let i = 0; i < 1000; i++) { |
-|  | const n = f.next() |
-|  | writeStream.write(String(n) + '\n', err => { |
-|  | // if there is any error in writing, log it |
-|  | if (err) { |
-|  | console.error('error writing:', err) |
-|  | } |
-|  | }) |
-|  | } |
-|  |  |
-|  | // The `end` method closes the write stream, once we're done |
-|  | writeStream.end() |
-|  | }) |
+| | const fs = require('fs') |
+| | |
+| | class Fibonacci { |
+| | // The Fibonacci class has the previous number and current |
+| | // number as its instance attributes |
+| | constructor() { |
+| | this.prev = 0 |
+| | this.current = 1 |
+| | } |
+| | |
+| | // the next method returns the current value, and |
+| | // increments the current value by adding the past value to it |
+| | next() { |
+| | const current = this.current |
+| | this.prev = current |
+| | this.current = current + this.prev |
+| | return current |
+| | } |
+| | } |
+| | |
+| | // Iniitalize a writeStream to a a new file "fibonacci.txt" |
+| | const writeStream = fs.createWriteStream('fibonacci.txt') |
+| | |
+| | // the on ready callback gets called once the file is available to write |
+| | writeStream.on('ready', () => { |
+| | // initialize a new object of the Fibonacci class |
+| | const f = new Fibonacci() |
+| | |
+| | // For each iteration, obtain the next number in the sequence |
+| | // and write to the file, adding a newline each time |
+| | for (let i = 0; i < 1000; i++) { |
+| | const n = f.next() |
+| | writeStream.write(String(n) + '\n', err => { |
+| | // if there is any error in writing, log it |
+| | if (err) { |
+| | console.error('error writing:', err) |
+| | } |
+| | }) |
+| | } |
+| | |
+| | // The `end` method closes the write stream, once we're done |
+| | writeStream.end() |
+| | }) |
 
 [view raw](https://gist.github.com/bgoonz/09115567409c7b2fd3a455ca29bfe3fc/raw/b93b12cc7134ad870e1b00a7ac00ed8ff6c97513/write-stream.js)[write-stream.js](https://gist.github.com/bgoonz/09115567409c7b2fd3a455ca29bfe3fc#file-write-stream-js) hosted with ❤ by [GitHub](https://github.com/)
 
-|  | In Power Shell: Write-Output "$((Get-Date).ToString("HH:mm:ss")) - Restarting docker" |
+| | In Power Shell: Write-Output "$((Get-Date).ToString("HH:mm:ss")) - Restarting docker" |
 |  |  |
 |  | foreach($svc in (Get-Service | Where-Object {$_.name -ilike "*docker*" -and $_.Status -ieq "Running"})) |
 |  | { |
 |  | $svc | Stop-Service -ErrorAction Continue -Confirm:$false -Force |
-|  | $svc.WaitForStatus('Stopped','00:00:20') |
+| | $svc.WaitForStatus('Stopped','00:00:20') |
 |  | } |
 |  |  |
 |  | Get-Process | Where-Object {$_.Name -ilike "*docker*"} | Stop-Process -ErrorAction Continue -Confirm:$false -Force |
 |  |  |
-|  | foreach($svc in (Get-Service | Where-Object {$_.name -ilike "*docker*" -and $_.Status -ieq "Stopped"} )) |
+|  | foreach($svc in (Get-Service | Where-Object {$_.name -ilike "_docker_" -and $_.Status -ieq "Stopped"} )) |
 |  | { |
 |  | $svc | Start-Service |
 |  | $svc.WaitForStatus('Running','00:00:20') |
 |  | } |
 |  |  |
 |  | Write-Output "$((Get-Date).ToString("HH:mm:ss")) - Starting Docker Desktop" |
-|  | & "C:\Program Files\Docker\Docker\Docker Desktop.exe" |
-|  | $startTimeout = [DateTime]::Now.AddSeconds(90) |
+| | & "C:\Program Files\Docker\Docker\Docker Desktop.exe" |
+| | $startTimeout = [DateTime]::Now.AddSeconds(90) |
 |  | $timeoutHit = $true |
 |  | while ((Get-Date) -le $startTimeout) |
 |  | { |
@@ -18302,12 +18185,8 @@ List of lists.
 |  | try |
 |  | { |
 |  | $info = (docker info) |
-|  | Write-Verbose "$((Get-Date).ToString("HH:mm:ss")) - `tDocker info executed. Is Error?: $($info -ilike "*error*"). Result was: $info" |
-|  |  |
-|  | if ($info -ilike "*error*") |
-|  | { |
-|  | Write-Verbose "$((Get-Date).ToString("HH:mm:ss")) - `tDocker info had an error. throwing..." |
-|  | throw "Error running info command $info" |
+|  | Write-Verbose "$((Get-Date).ToString("HH:mm:ss")) - `tDocker info executed. Is Error?: $($info -ilike "*error*"). Result was: $info" | | | | | | if ($info -ilike "*error*") | | | { | | | Write-Verbose "$((Get-Date).ToString("HH:mm:ss")) - `tDocker info had an error. throwing..." |
+| | throw "Error running info command $info" |
 |  | } |
 |  | $timeoutHit = $false |
 |  | break |
@@ -18315,13 +18194,9 @@ List of lists.
 |  | catch |
 |  | { |
 |  |  |
-|  | if (($_ -ilike "*error during connect*") -or ($_ -ilike "*errors pretty printing info*") -or ($_ -ilike "*Error running info command*")) |
+|  | if (($_ -ilike "*error during connect*") -or ($_ -ilike "_errors pretty printing info_") -or ($_ -ilike "*Error running info command*")) |
 |  | { |
-|  | Write-Output "$((Get-Date).ToString("HH:mm:ss")) -`t Docker Desktop startup not yet completed, waiting and checking again" |
-|  | } |
-|  | else |
-|  | { |
-|  | Write-Output "Unexpected Error: `n $_" |
+|  | Write-Output "$((Get-Date).ToString("HH:mm:ss")) -`t Docker Desktop startup not yet completed, waiting and checking again" | | | } | | | else | | | { | | | Write-Output "Unexpected Error: `n $_" |
 |  | return |
 |  | } |
 |  | } |
@@ -18336,358 +18211,358 @@ List of lists.
 
 [view raw](https://gist.github.com/bgoonz/53d120a0fbdd46a13c59f76e5f3a2eec/raw/c710077e980aa6b9c9dd98c3b7d11392a271a442/restart-docker-desktop.ps1)[restart-docker-desktop.ps1](https://gist.github.com/bgoonz/53d120a0fbdd46a13c59f76e5f3a2eec#file-restart-docker-desktop-ps1) hosted with ❤ by [GitHub](https://github.com/)
 
-|  | ## Selectors |
-|  |  |
-|  | **Universal Selector** * {} |
-|  | **ID Selector** #id {} |
-|  | **Class Selector**.class {} |
-|  | **Type Selector**h1, h2 ,h3 {} |
-|  | **Adjacent Sibling Selector**h1 + p {} |
-|  | **Child Selector**ul > li {} |
-|  | **General Sibling Selector** h1 ~ p {} |
-|  | **Descendant Selector**p a {} |
-|  | **Attribute Selector**div[attribute="SomeValue"] {} |
-|  |  |
-|  | ## Pseudo Selectors & Elements |
-|  | **Mouse Over Selector** a:hover {} |
-|  | **Active Link Selector** a:active {} |
-|  | **Focus Selector** input:focus {} |
-|  | **Visited Links Selector** a:visited {} |
-|  | **Link Selector** .class:link {} |
-|  | **Checked elements selector** input:checked {} |
-|  | **Disabled elements selector** input:disabled {} |
-|  | **Enabled elements selector** input:enabled {} |
-|  | **Not a Specified Element Selector** :not(p) {} |
-|  | **First Line Selector** p::first-line {} |
-|  | **First Letter Selector** p::first-letter {} |
-|  | **First Child Selector** p:first-child {} |
-|  | **Last Child Selector** p:last-child {} |
-|  | **Only Child Selector** p:only-child {} |
-|  | **:nth-child Selector** p:nth-child() {} |
-|  | **First Element of its Parent Selector** p:first-of-type {} |
-|  | **Elements that have no Children Selector** p:empty {} |
-|  | **Before Element** .class::before {} |
-|  | **After Element** .class::after {} |
-|  |  |
-|  | ## Text Styling |
-|  | **Font style** |
-|  | font-style: normal | italic | oblique |
-|  | **Font Variant** |
-|  | font-variant: normal | small-caps |
-|  | **Font Weight** |
-|  | font-weight: normal | bold | bolder | lighter | 100 - 900 |
-|  | **Vertical Alignment** |
-|  | vertical-align: baseline | 10px | sub | super | top | text-top | middle | bottom | text-bottom | initial |
-|  | **Text Transform** |
-|  | text-transform: capitalise | lowercase | uppercase |
-|  | **Font Size** |
-|  | font-size: 12px | 0.8em | 80% |
-|  | **Space Between Characters** |
-|  | letter-spacing: normal | 4px |
-|  | **Line Height** |
-|  | line-height: normal | 3em | 34% |
-|  | **Horizontal Alignment** |
-|  | text-align: left | right | center | justify |
-|  | **Text Align Last** |
-|  | text-align-last: auto | left | right | center | justify | start | end | initial | inherit |
-|  | **Text Decoration** |
-|  | text-decoration: none | underline | overline | line-through |
-|  | **Indent First Line** |
-|  | text-indent: 25px |
-|  | **Font Family** |
-|  | font-family: 'Open Sans', sans-serif |
-|  | **Text Justify** |
-|  | text-justify: auto | inter-word | inter-character | none | initial | inherit |
-|  | **Text Overflow** |
-|  | text-overflow: clip | ellipsis | string | initial | inherit |
-|  | **Text Shadow** |
-|  | text-shadow: h-shadow v-shadow blur-radius color | none | initial | inherit |
-|  |  |
-|  | ## Position |
-|  | **Position** |
-|  | position: static | relative | absolute | fixed | sticky |
-|  | **Position Properties** |
-|  | top | right | bottom | left |
-|  | **Float Element** |
-|  | float: left | right | none |
-|  | **Clear Floating Elements** |
-|  | clear: none | left | right | both |
-|  | **Z Index** |
-|  | z-index: 3 | auto | inherit |
-|  |  |
-|  | ## Background |
-|  | **Background Image** |
-|  | background-image: url() |
-|  | **Background Repeat** |
-|  | background-repeat: repeat-x | repeat-y | repeat | space | round | no-repeat |
-|  | **Background Attachment** |
-|  | background-attachment: scroll | fixed | local | initial | inherit |
-|  | **Background Color** |
-|  | background-color: #2AA9E0 |
-|  | **Background Position** |
-|  | background-position: top | right | bottom | left | center |
-|  |  |
-|  | ## Box Properties |
-|  | **Box Sizing** |
-|  | box-sizing: border-box | content-box |
-|  | **Margin** |
-|  | margin: 2px 4px 6px 8px | 0 auto |
-|  | **Padding** |
-|  | padding: 2px 4px 6px 8px |
-|  | **Border Color** |
-|  | border-color: #2AA9E0 |
-|  | **Border Style** |
-|  | border-style: none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset |
-|  | **Border Width** |
-|  | border-width: 10px |
-|  |  |
-|  | ## List Styling |
-|  | **List Type** |
-|  | list-style-type: disc | circle | square | none |
-|  | **List Position** |
-|  | list-style-position: inside | outside |
-|  | **List Image** |
-|  | list-style-image: url() |
-|  |  |
-|  | ## Flexbox |
-|  | **Flex Direction** |
-|  | flex-direction: row | row-reverse | column | column-reverse |
-|  | **Flex Wrap** |
-|  | flex-wrap: nowrap | wrap | wrap-reverse |
-|  | **Justify Content** |
-|  | justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly |
-|  | **Align Items** |
-|  | align-items: flex-start | flex-end | center | baseline | stretch |
-|  | **Align Content** |
-|  | align-content: flex-start | flex-end | center | space-between | space-around | stretch |
-|  | **Order** |
-|  | order: 0 |
-|  | **Flex Grow** |
-|  | flex-grow: 0 |
-|  | **Flex Shrink** |
-|  | flex-shrink: 1 |
-|  | **Flex Basis** |
-|  | flex-basis: 3px | auto |
-|  | **Align Self** |
-|  | align-self: auto | flex-start | flex-end | center | baseline | stretch |
-|  |  |
-|  | ## CSS Grid |
-|  | **Grid Template Columns** |
-|  | grid-template-columns: 40px 50px auto 50px 40px |
-|  | **Grid Template Rows** |
-|  | grid-template-rows: 25% 100px auto |
-|  | **Grid Template Areas** |
-|  | grid-template-areas: "a b c" | none |
-|  | **Grid Template** |
-|  | grid-template: "a a a" 20% "b b b" auto | 100px 1fr / 50px 1fr |
-|  | **Grid Column Gap** |
-|  | grid-column-gap: 10px |
-|  | **Grid Row Gap** |
-|  | grid-row-gap: 10px |
-|  | **Justify Items** |
-|  | justify-items: start | end | center | stretch |
-|  | **Align Items** |
-|  | align-items: start | end | center | stretch |
-|  | **Justify Content** |
-|  | justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly |
-|  | **Align Content** |
-|  | align-content: flex-start | flex-end | center | space-between | space-around | stretch |
-|  | **Grid Auto Columns** |
-|  | grid-auto-columns: 100px | max-content | min-content |
-|  | **Grid Auto Rows** |
-|  | grid-auto-rows: 100px | max-content | min-content |
-|  | **Grid Auto Flow** |
-|  | grid-auto-flow: row | column | row dense | column dense |
-|  | **Grid Column Start** |
-|  | grid-column-start: 2 | areaname | span 2 | span areaname | auto |
-|  | **Grid Column End** |
-|  | grid-column-end: 2 | areaname | span 2 | span areaname | auto |
-|  | **Grid Row Start** |
-|  | grid-row-start: 2 | areaname | span 2 | span areaname | auto |
-|  | **Grid Row End** |
-|  | grid-row-end: 2 | areaname | span 2 | span areaname | auto |
-|  | **Grid Column** |
-|  | grid-column: 3 / span 2 |
-|  | **Grid Row** |
-|  | grid-row: 3 / span 2 |
-|  | **Justify Self** |
-|  | justify-self: start | end | center | stretch |
-|  | **Align Self** |
-|  | align-self: start | end | center | stretch |
-|  |  |
-|  | ## Dynamic Content |
-|  | **CSS Variable** |
-|  | --variable-name: value |
-|  | **Variable Usage** |
-|  | var(--variable-name) |
-|  | **Counter Reset** |
-|  | counter-reset: name-of-counter |
-|  | **Counter Increment** |
-|  | counter-increment: name-of-counter |
-|  | **Counter Dynamic Value** |
-|  | content: counter(name-of-counter) |
-|  | **Attribute Dynamic Value** |
-|  | content: attr(name-of-attribute) |
-|  |  |
+| | ## Selectors |
+| | |
+| | **Universal Selector** \* {} |
+| | **ID Selector** #id {} |
+| | **Class Selector**.class {} |
+| | **Type Selector**h1, h2 ,h3 {} |
+| | **Adjacent Sibling Selector**h1 + p {} |
+| | **Child Selector**ul > li {} |
+| | **General Sibling Selector** h1 ~ p {} |
+| | **Descendant Selector**p a {} |
+| | **Attribute Selector**div[attribute="SomeValue"] {} |
+| | |
+| | ## Pseudo Selectors & Elements |
+| | **Mouse Over Selector** a:hover {} |
+| | **Active Link Selector** a:active {} |
+| | **Focus Selector** input:focus {} |
+| | **Visited Links Selector** a:visited {} |
+| | **Link Selector** .class:link {} |
+| | **Checked elements selector** input:checked {} |
+| | **Disabled elements selector** input:disabled {} |
+| | **Enabled elements selector** input:enabled {} |
+| | **Not a Specified Element Selector** :not(p) {} |
+| | **First Line Selector** p::first-line {} |
+| | **First Letter Selector** p::first-letter {} |
+| | **First Child Selector** p:first-child {} |
+| | **Last Child Selector** p:last-child {} |
+| | **Only Child Selector** p:only-child {} |
+| | **:nth-child Selector** p:nth-child() {} |
+| | **First Element of its Parent Selector** p:first-of-type {} |
+| | **Elements that have no Children Selector** p:empty {} |
+| | **Before Element** .class::before {} |
+| | **After Element** .class::after {} |
+| | |
+| | ## Text Styling |
+| | **Font style** |
+| | font-style: normal | italic | oblique |
+| | **Font Variant** |
+| | font-variant: normal | small-caps |
+| | **Font Weight** |
+| | font-weight: normal | bold | bolder | lighter | 100 - 900 |
+| | **Vertical Alignment** |
+| | vertical-align: baseline | 10px | sub | super | top | text-top | middle | bottom | text-bottom | initial |
+| | **Text Transform** |
+| | text-transform: capitalise | lowercase | uppercase |
+| | **Font Size** |
+| | font-size: 12px | 0.8em | 80% |
+| | **Space Between Characters** |
+| | letter-spacing: normal | 4px |
+| | **Line Height** |
+| | line-height: normal | 3em | 34% |
+| | **Horizontal Alignment** |
+| | text-align: left | right | center | justify |
+| | **Text Align Last** |
+| | text-align-last: auto | left | right | center | justify | start | end | initial | inherit |
+| | **Text Decoration** |
+| | text-decoration: none | underline | overline | line-through |
+| | **Indent First Line** |
+| | text-indent: 25px |
+| | **Font Family** |
+| | font-family: 'Open Sans', sans-serif |
+| | **Text Justify** |
+| | text-justify: auto | inter-word | inter-character | none | initial | inherit |
+| | **Text Overflow** |
+| | text-overflow: clip | ellipsis | string | initial | inherit |
+| | **Text Shadow** |
+| | text-shadow: h-shadow v-shadow blur-radius color | none | initial | inherit |
+| | |
+| | ## Position |
+| | **Position** |
+| | position: static | relative | absolute | fixed | sticky |
+| | **Position Properties** |
+| | top | right | bottom | left |
+| | **Float Element** |
+| | float: left | right | none |
+| | **Clear Floating Elements** |
+| | clear: none | left | right | both |
+| | **Z Index** |
+| | z-index: 3 | auto | inherit |
+| | |
+| | ## Background |
+| | **Background Image** |
+| | background-image: url() |
+| | **Background Repeat** |
+| | background-repeat: repeat-x | repeat-y | repeat | space | round | no-repeat |
+| | **Background Attachment** |
+| | background-attachment: scroll | fixed | local | initial | inherit |
+| | **Background Color** |
+| | background-color: #2AA9E0 |
+| | **Background Position** |
+| | background-position: top | right | bottom | left | center |
+| | |
+| | ## Box Properties |
+| | **Box Sizing** |
+| | box-sizing: border-box | content-box |
+| | **Margin** |
+| | margin: 2px 4px 6px 8px | 0 auto |
+| | **Padding** |
+| | padding: 2px 4px 6px 8px |
+| | **Border Color** |
+| | border-color: #2AA9E0 |
+| | **Border Style** |
+| | border-style: none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset |
+| | **Border Width** |
+| | border-width: 10px |
+| | |
+| | ## List Styling |
+| | **List Type** |
+| | list-style-type: disc | circle | square | none |
+| | **List Position** |
+| | list-style-position: inside | outside |
+| | **List Image** |
+| | list-style-image: url() |
+| | |
+| | ## Flexbox |
+| | **Flex Direction** |
+| | flex-direction: row | row-reverse | column | column-reverse |
+| | **Flex Wrap** |
+| | flex-wrap: nowrap | wrap | wrap-reverse |
+| | **Justify Content** |
+| | justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly |
+| | **Align Items** |
+| | align-items: flex-start | flex-end | center | baseline | stretch |
+| | **Align Content** |
+| | align-content: flex-start | flex-end | center | space-between | space-around | stretch |
+| | **Order** |
+| | order: 0 |
+| | **Flex Grow** |
+| | flex-grow: 0 |
+| | **Flex Shrink** |
+| | flex-shrink: 1 |
+| | **Flex Basis** |
+| | flex-basis: 3px | auto |
+| | **Align Self** |
+| | align-self: auto | flex-start | flex-end | center | baseline | stretch |
+| | |
+| | ## CSS Grid |
+| | **Grid Template Columns** |
+| | grid-template-columns: 40px 50px auto 50px 40px |
+| | **Grid Template Rows** |
+| | grid-template-rows: 25% 100px auto |
+| | **Grid Template Areas** |
+| | grid-template-areas: "a b c" | none |
+| | **Grid Template** |
+| | grid-template: "a a a" 20% "b b b" auto | 100px 1fr / 50px 1fr |
+| | **Grid Column Gap** |
+| | grid-column-gap: 10px |
+| | **Grid Row Gap** |
+| | grid-row-gap: 10px |
+| | **Justify Items** |
+| | justify-items: start | end | center | stretch |
+| | **Align Items** |
+| | align-items: start | end | center | stretch |
+| | **Justify Content** |
+| | justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly |
+| | **Align Content** |
+| | align-content: flex-start | flex-end | center | space-between | space-around | stretch |
+| | **Grid Auto Columns** |
+| | grid-auto-columns: 100px | max-content | min-content |
+| | **Grid Auto Rows** |
+| | grid-auto-rows: 100px | max-content | min-content |
+| | **Grid Auto Flow** |
+| | grid-auto-flow: row | column | row dense | column dense |
+| | **Grid Column Start** |
+| | grid-column-start: 2 | areaname | span 2 | span areaname | auto |
+| | **Grid Column End** |
+| | grid-column-end: 2 | areaname | span 2 | span areaname | auto |
+| | **Grid Row Start** |
+| | grid-row-start: 2 | areaname | span 2 | span areaname | auto |
+| | **Grid Row End** |
+| | grid-row-end: 2 | areaname | span 2 | span areaname | auto |
+| | **Grid Column** |
+| | grid-column: 3 / span 2 |
+| | **Grid Row** |
+| | grid-row: 3 / span 2 |
+| | **Justify Self** |
+| | justify-self: start | end | center | stretch |
+| | **Align Self** |
+| | align-self: start | end | center | stretch |
+| | |
+| | ## Dynamic Content |
+| | **CSS Variable** |
+| | --variable-name: value |
+| | **Variable Usage** |
+| | var(--variable-name) |
+| | **Counter Reset** |
+| | counter-reset: name-of-counter |
+| | **Counter Increment** |
+| | counter-increment: name-of-counter |
+| | **Counter Dynamic Value** |
+| | content: counter(name-of-counter) |
+| | **Attribute Dynamic Value** |
+| | content: attr(name-of-attribute) |
+| | |
 
 [view raw](https://gist.github.com/bgoonz/772d898734b648e7a4f3aa47575bc3ef/raw/9c1850a3f5e3b7de7119a0c2b02614e1617924fb/css-cheat-sheet.sh)[css-cheat-sheet.sh](https://gist.github.com/bgoonz/772d898734b648e7a4f3aa47575bc3ef#file-css-cheat-sheet-sh) hosted with ❤ by [GitHub](https://github.com/)
 
-|  | const fs=require('fs'); |
-|  | let cat= require( 'child_process' ).execSync( 'cat *' ).toString( 'UTF-8' ) |
-|  | fs.writeFile( 'output.md', cat, ( err ) => { |
-|  |  |
-|  | // In case of a error throw err. |
-|  | if ( err ) throw err; |
-|  | } ); |
+| | const fs=require('fs'); |
+| | let cat= require( 'child_process' ).execSync( 'cat \*' ).toString( 'UTF-8' ) |
+| | fs.writeFile( 'output.md', cat, ( err ) => { |
+| | |
+| | // In case of a error throw err. |
+| | if ( err ) throw err; |
+| | } ); |
 
 [view raw](https://gist.github.com/bgoonz/095486593a3c0c6d05e1215d40e2e99a/raw/fe5c1c1bacff1090a68f9de3650f136e0ab790b5/combine-all-files-in-folder.js)[combine-all-files-in-folder.js](https://gist.github.com/bgoonz/095486593a3c0c6d05e1215d40e2e99a#file-combine-all-files-in-folder-js) hosted with ❤ by [GitHub](https://github.com/)
 
-|  | file_specification() { |
-|  | FILE_NAME="$(basename "${entry}")" |
-|  | DIR="$(dirname "${entry}")" |
-|  | NAME="${FILE_NAME%.*}" |
+| | file_specification() { |
+| | FILE_NAME="$(basename "${entry}")" |
+| | DIR="$(dirname "${entry}")" |
+| | NAME="${FILE_NAME%.*}" |
 |  | EXT="${FILE_NAME##*.}" |
-|  | SIZE="$(du -sh "${entry}" | cut -f1)" |
-|  |  |
-|  | printf "%*s${GRE}%s${NCL}\n" $((indent+4)) '' "${entry}" |
-|  | printf "%*s\tFile name:\t${YEL}%s${NCL}\n" $((indent+4)) '' "$FILE_NAME" |
-|  | printf "%*s\tDirectory:\t${YEL}%s${NCL}\n" $((indent+4)) '' "$DIR" |
-|  | printf "%*s\tName only:\t${YEL}%s${NCL}\n" $((indent+4)) '' "$NAME" |
-|  | printf "%*s\tExtension:\t${YEL}%s${NCL}\n" $((indent+4)) '' "$EXT" |
-|  | printf "%*s\tFile size:\t${YEL}%s${NCL}\n" $((indent+4)) '' "$SIZE" |
-|  | } |
-|  |  |
-|  | walk() { |
-|  | local indent="${2:-0}" |
-|  | printf "\n%*s${RED}%s${NCL}\n\n" "$indent" '' "$1" |
+| | SIZE="$(du -sh "${entry}" | cut -f1)" |
+| | |
+| | printf "%*s${GRE}%s${NCL}\n" $((indent+4)) '' "${entry}" |
+| | printf "%*s\tFile name:\t${YEL}%s${NCL}\n" $((indent+4)) '' "$FILE_NAME" |
+| | printf "%*s\tDirectory:\t${YEL}%s${NCL}\n" $((indent+4)) '' "$DIR" |
+| | printf "%*s\tName only:\t${YEL}%s${NCL}\n" $((indent+4)) '' "$NAME" |
+| | printf "%*s\tExtension:\t${YEL}%s${NCL}\n" $((indent+4)) '' "$EXT" |
+| | printf "%*s\tFile size:\t${YEL}%s${NCL}\n" $((indent+4)) '' "$SIZE" |
+| | } |
+| | |
+| | walk() { |
+| | local indent="${2:-0}" |
+| | printf "\n%*s${RED}%s${NCL}\n\n" "$indent" '' "$1" |
 |  | # If the entry is a file do some operations |
 |  | for entry in "$1"/*; do [[ -f "$entry" ]] && file_specification; done |
-|  | # If the entry is a directory call walk() == create recursion |
-|  | for entry in "$1"/*; do [[ -d "$entry" ]] && walk "$entry" $((indent+4)); done |
+| | # If the entry is a directory call walk() == create recursion |
+| | for entry in "$1"/*; do [[ -d "$entry" ]] && walk "$entry" $((indent+4)); done |
 |  | } |
 |  |  |
 |  | # If the path is empty use the current, otherwise convert relative to absolute; Exec walk() |
 |  | [[ -z "${1}" ]] && ABS_PATH="${PWD}" || cd "${1}" && ABS_PATH="${PWD}" |
 |  | walk "${ABS_PATH}" |
-|  | echo |
+| | echo |
 
 [view raw](https://gist.github.com/bgoonz/cd5c6a0bbcdc06be7bfb45f1bc134814/raw/aee7e4a21b1e860497d92b4b4a2a11b82fa0283e/walk.sh)[walk.sh](https://gist.github.com/bgoonz/cd5c6a0bbcdc06be7bfb45f1bc134814#file-walk-sh) hosted with ❤ by [GitHub](https://github.com/)
 
-|  | # ------------------------------------------------------------------------------ |
-|  | # ---------------------------- general shortcuts-------------------------------- |
-|  | # ------------------------------------------------------------------------------ |
-|  |  |
-|  | # -- easy reverse cd -- |
-|  |  |
-|  | alias .1='cd ..' |
-|  | alias .2='cd ../../' |
-|  | alias .3='cd ../../../' |
-|  | alias .4='cd ../../../../' |
-|  | alias .5='cd ../../../../../' |
-|  |  |
-|  | # -- easy ls with color-- |
-|  |  |
-|  | alias l='ls -CF' |
-|  | alias la='ls -A' |
-|  | alias ll='ls -alF' |
-|  | alias ls='ls --color=auto' |
-|  |  |
-|  | #order by size |
-|  | alias lt='ls --human-readable --size -1 -S --classify' |
-|  |  |
-|  | #only show hidden files |
-|  | alias lh='ls -lisAd .[^.]*' |
-|  |  |
-|  | # -- grep with color -- |
-|  |  |
-|  | alias egrep='egrep --color=auto' |
-|  | alias fgrep='fgrep --color=auto' |
-|  | alias grep='grep --color=auto' |
-|  |  |
-|  | # -- safety nets -- |
-|  |  |
-|  | alias mv='mv -i' |
-|  | alias rm='rm -i' |
-|  |  |
-|  | # -- system checks -- |
-|  |  |
-|  | alias meminfo='free -m -l -t' |
-|  | alias topmem='ps auxf | sort -nr -k 4' |
-|  | alias gpumeminfo='grep -i --color memory /var/log/Xorg.0.log' |
-|  | alias getipe='curl ipinfo.io/ip' |
-|  | alias speed='speedtest-cli --server 2406 --simple' |
-|  |  |
-|  | # -- true laziness -- |
-|  |  |
-|  | alias c='clear' |
-|  | alias update='sudo apt update && sudo apt upgrade' |
-|  | alias install='sudo apt install' |
-|  | alias change-terminal='sudo update-alternatives --config x-terminal-emulator' |
-|  | alias pip="pip3" |
-|  | alias www='python -m SimpleHTTPServer 8000' |
-|  | alias vim='nvim' |
-|  |  |
-|  |  |
-|  | # ------------------------------------------------------------------------------ |
-|  | # ------------------------------ git shortcuts---------------------------------- |
-|  | # ------------------------------------------------------------------------------ |
-|  |  |
-|  | alias commit='git commit -m' |
-|  | alias gc='git checkout' |
-|  | alias log='git log --oneline' |
-|  | alias status='git status' |
-|  | alias setremote='git remote set-url origin' |
-|  |  |
-|  |  |
-|  | # ------------------------------------------------------------------------------ |
-|  | # ------------------------------ psql shortcuts--------------------------------- |
-|  | # ------------------------------------------------------------------------------ |
-|  |  |
-|  | alias psql='psql -h localhost' |
-|  | alias sc='npx sequelize-cli' |
-|  | alias sc-init='npx sequelize-cli init' |
-|  |  |
-|  | alias sc-makedb='npx sequelize-cli db:create' |
-|  | alias sc-makemodel='npx sequelize-cli model:generate' |
-|  |  |
-|  | alias sc-migrate='npx sequelize-cli db:migrate' |
-|  |  |
-|  | alias sc-genseed='npx sequelize-cli seed:generate' |
-|  | alias sc-seed='npm sequelize-cli db:seed:all' |
-|  | ###-begin-npm-completion-### |
-|  | # |
-|  | # npm command completion script |
-|  | # |
-|  | # Installation: npm completion >> ~/.bashrc (or ~/.zshrc) |
-|  | # Or, maybe: npm completion > /usr/local/etc/bash_completion.d/npm |
-|  | # |
-|  |  |
-|  |  |
-|  |  |
-|  | ##------------------------------------ |
-|  |  |
-|  | alias ls='ls --color=auto' |
-|  |  |
-|  | alias ..='cd ..' |
-|  | alias ...='cd ../..' |
-|  | alias back='cd -' |
-|  |  |
-|  | alias l='ls' |
-|  | alias sl='ls' |
-|  |  |
-|  | alias ini="git init && git add . && git commit -m 'initial commit'" |
-|  | alias norm="git add . && git commit -m 'update'" |
-|  | alias commit='git commit' |
-|  | alias check='git checkout' |
-|  | alias status='git status' |
-|  | alias push='git push' |
-|  | alias pull='git pull' |
-|  | alias stash='git stash' |
-|  | alias pop='git stash pop' |
-|  |  |
-|  |  |
-|  |  |
-|  | alias unzipa='find . -name "*.zip" | while read filename; do unzip -o -d "`dirname "$filename"`" "$filename"; done;' |
+| | # ------------------------------------------------------------------------------ |
+| | # ---------------------------- general shortcuts-------------------------------- |
+| | # ------------------------------------------------------------------------------ |
+| | |
+| | # -- easy reverse cd -- |
+| | |
+| | alias .1='cd ..' |
+| | alias .2='cd ../../' |
+| | alias .3='cd ../../../' |
+| | alias .4='cd ../../../../' |
+| | alias .5='cd ../../../../../' |
+| | |
+| | # -- easy ls with color-- |
+| | |
+| | alias l='ls -CF' |
+| | alias la='ls -A' |
+| | alias ll='ls -alF' |
+| | alias ls='ls --color=auto' |
+| | |
+| | #order by size |
+| | alias lt='ls --human-readable --size -1 -S --classify' |
+| | |
+| | #only show hidden files |
+| | alias lh='ls -lisAd .[^.]_' |
+| | |
+| | # -- grep with color -- |
+| | |
+| | alias egrep='egrep --color=auto' |
+| | alias fgrep='fgrep --color=auto' |
+| | alias grep='grep --color=auto' |
+| | |
+| | # -- safety nets -- |
+| | |
+| | alias mv='mv -i' |
+| | alias rm='rm -i' |
+| | |
+| | # -- system checks -- |
+| | |
+| | alias meminfo='free -m -l -t' |
+| | alias topmem='ps auxf | sort -nr -k 4' |
+| | alias gpumeminfo='grep -i --color memory /var/log/Xorg.0.log' |
+| | alias getipe='curl ipinfo.io/ip' |
+| | alias speed='speedtest-cli --server 2406 --simple' |
+| | |
+| | # -- true laziness -- |
+| | |
+| | alias c='clear' |
+| | alias update='sudo apt update && sudo apt upgrade' |
+| | alias install='sudo apt install' |
+| | alias change-terminal='sudo update-alternatives --config x-terminal-emulator' |
+| | alias pip="pip3" |
+| | alias www='python -m SimpleHTTPServer 8000' |
+| | alias vim='nvim' |
+| | |
+| | |
+| | # ------------------------------------------------------------------------------ |
+| | # ------------------------------ git shortcuts---------------------------------- |
+| | # ------------------------------------------------------------------------------ |
+| | |
+| | alias commit='git commit -m' |
+| | alias gc='git checkout' |
+| | alias log='git log --oneline' |
+| | alias status='git status' |
+| | alias setremote='git remote set-url origin' |
+| | |
+| | |
+| | # ------------------------------------------------------------------------------ |
+| | # ------------------------------ psql shortcuts--------------------------------- |
+| | # ------------------------------------------------------------------------------ |
+| | |
+| | alias psql='psql -h localhost' |
+| | alias sc='npx sequelize-cli' |
+| | alias sc-init='npx sequelize-cli init' |
+| | |
+| | alias sc-makedb='npx sequelize-cli db:create' |
+| | alias sc-makemodel='npx sequelize-cli model:generate' |
+| | |
+| | alias sc-migrate='npx sequelize-cli db:migrate' |
+| | |
+| | alias sc-genseed='npx sequelize-cli seed:generate' |
+| | alias sc-seed='npm sequelize-cli db:seed:all' |
+| | ###-begin-npm-completion-### |
+| | # |
+| | # npm command completion script |
+| | # |
+| | # Installation: npm completion >> ~/.bashrc (or ~/.zshrc) |
+| | # Or, maybe: npm completion > /usr/local/etc/bash_completion.d/npm |
+| | # |
+| | |
+| | |
+| | |
+| | ##------------------------------------ |
+| | |
+| | alias ls='ls --color=auto' |
+| | |
+| | alias ..='cd ..' |
+| | alias ...='cd ../..' |
+| | alias back='cd -' |
+| | |
+| | alias l='ls' |
+| | alias sl='ls' |
+| | |
+| | alias ini="git init && git add . && git commit -m 'initial commit'" |
+| | alias norm="git add . && git commit -m 'update'" |
+| | alias commit='git commit' |
+| | alias check='git checkout' |
+| | alias status='git status' |
+| | alias push='git push' |
+| | alias pull='git pull' |
+| | alias stash='git stash' |
+| | alias pop='git stash pop' |
+| | |
+| | |
+| | |
+| | alias unzipa='find . -name "_.zip" | while read filename; do unzip -o -d "`dirname "$filename"`" "$filename"; done;' |
 |  |  |
 |  |  |
 |  | alias run='./manage.py runserver 0.0.0.0:8000' |
@@ -18759,1058 +18634,1058 @@ List of lists.
 |  | alias cal3='cal -3' |
 |  | alias da='date "+%Y-%m-%d %A %T %Z"' |
 |  | alias daysleft='echo "There are $(($(date +%j -d"Dec 31, $(date +%Y)")-$(date +%j))) left in year $(date +%Y)."' |
-|  | alias epochtime='date +%s' |
-|  | alias mytime='date +%H:%M:%S' |
-|  | alias secconvert='date -d@1234567890' |
-|  | alias stamp='date "+%Y%m%d%a%H%M"' |
-|  | alias timestamp='date "+%Y%m%dT%H%M%S"' |
-|  | alias today='date +"%A, %B %-d, %Y"' |
-|  | alias weeknum='date +%V' |
-|  | # Example aliases |
-|  | # alias bashconfig="mate ~/.bashrc" |
-|  | # alias ohmybash="mate ~/.oh-my-bash" |
-|  | # Alias definitions. |
-|  | # You may want to put all your additions into a separate file like |
-|  | # ~/.bash_aliases, instead of adding them here directly. |
-|  | # See /usr/share/doc/bash-doc/examples in the bash-doc package. |
+| | alias epochtime='date +%s' |
+| | alias mytime='date +%H:%M:%S' |
+| | alias secconvert='date -d@1234567890' |
+| | alias stamp='date "+%Y%m%d%a%H%M"' |
+| | alias timestamp='date "+%Y%m%dT%H%M%S"' |
+| | alias today='date +"%A, %B %-d, %Y"' |
+| | alias weeknum='date +%V' |
+| | # Example aliases |
+| | # alias bashconfig="mate ~/.bashrc" |
+| | # alias ohmybash="mate ~/.oh-my-bash" |
+| | # Alias definitions. |
+| | # You may want to put all your additions into a separate file like |
+| | # ~/.bash_aliases, instead of adding them here directly. |
+| | # See /usr/share/doc/bash-doc/examples in the bash-doc package. |
 
 [view raw](https://gist.github.com/bgoonz/18d15f15864356c8ff9bc093fb305cb9/raw/147bf0eba17cef94368747f94e8334a165e60a8f/bash-aliases.sh)[bash-aliases.sh](https://gist.github.com/bgoonz/18d15f15864356c8ff9bc093fb305cb9#file-bash-aliases-sh) hosted with ❤ by [GitHub](https://github.com/)
 
-|  | <!-- Latest compiled and minified CSS --> |
-|  | <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> |
-|  | <!-- jQuery library --> |
-|  | <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> |
-|  | <!-- Latest compiled JavaScript --> |
-|  | <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> |
-|  | //OR |
-|  | <!-- Latest compiled and minified CSS --> |
-|  | <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> |
-|  |  |
-|  | <!-- Optional theme --> |
-|  | <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> |
-|  |  |
-|  | <!-- Latest compiled and minified JavaScript --> |
-|  | <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> |
+| | <!-- Latest compiled and minified CSS --> |
+| | <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> |
+| | <!-- jQuery library --> |
+| | <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> |
+| | <!-- Latest compiled JavaScript --> |
+| | <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> |
+| | //OR |
+| | <!-- Latest compiled and minified CSS --> |
+| | <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> |
+| | |
+| | <!-- Optional theme --> |
+| | <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> |
+| | |
+| | <!-- Latest compiled and minified JavaScript --> |
+| | <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> |
 
 [view raw](https://gist.github.com/bgoonz/30bb612e00ae3ede678ee71173a68183/raw/9225e4a76289a61d4fcf78c9e934393c4e4e673a/bootstrap-cdn.html)[bootstrap-cdn.html](https://gist.github.com/bgoonz/30bb612e00ae3ede678ee71173a68183#file-bootstrap-cdn-html) hosted with ❤ by [GitHub](https://github.com/)
 
-|  | <iframe height="800px" width="100%" src="./path/to/file/fileName.html" scrolling="yes" frameborder="yes" |
-|  | allowtransparency="true" allowfullscreen="true" |
-|  | sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe> |
+| | <iframe height="800px" width="100%" src="./path/to/file/fileName.html" scrolling="yes" frameborder="yes" |
+| | allowtransparency="true" allowfullscreen="true" |
+| | sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe> |
 
 [view raw](https://gist.github.com/bgoonz/b9d17283b09bc31f5a42af0623b3ee66/raw/c0b10809e0372daf5760f91b30c4e184527b1eaf/embed-html-inside-html.html)[embed-html-inside-html.html](https://gist.github.com/bgoonz/b9d17283b09bc31f5a42af0623b3ee66#file-embed-html-inside-html-html) hosted with ❤ by [GitHub](https://github.com/)
 
-|  | # Single line comments start with a number symbol. |
-|  |  |
-|  | """ Multiline strings can be written |
-|  | using three "s, and are often used |
-|  | as documentation. |
-|  | """ |
-|  |  |
-|  | #################################################### |
-|  | ## 1. Primitive Datatypes and Operators |
-|  | #################################################### |
-|  |  |
-|  | # You have numbers |
-|  | 3 # => 3 |
-|  |  |
-|  | # Math is what you would expect |
-|  | 1 + 1 # => 2 |
-|  | 8 - 1 # => 7 |
-|  | 10 * 2 # => 20 |
-|  | 35 / 5 # => 7.0 |
-|  |  |
-|  | # Integer division rounds down for both positive and negative numbers. |
-|  | 5 // 3 # => 1 |
-|  | -5 // 3 # => -2 |
-|  | 5.0 // 3.0 # => 1.0 # works on floats too |
-|  | -5.0 // 3.0 # => -2.0 |
-|  |  |
-|  | # The result of division is always a float |
-|  | 10.0 / 3 # => 3.3333333333333335 |
-|  |  |
-|  | # Modulo operation |
-|  | 7 % 3 # => 1 |
-|  |  |
-|  | # Exponentiation (x**y, x to the yth power) |
-|  | 2**3 # => 8 |
-|  |  |
-|  | # Enforce precedence with parentheses |
-|  | (1 + 3) * 2 # => 8 |
-|  |  |
-|  | # Boolean values are primitives (Note: the capitalization) |
-|  | True |
-|  | False |
-|  |  |
-|  | # negate with not |
-|  | not True # => False |
-|  | not False # => True |
-|  |  |
-|  | # Boolean Operators |
-|  | # Note "and" and "or" are case-sensitive |
-|  | True and False # => False |
-|  | False or True # => True |
-|  |  |
-|  | # True and False are actually 1 and 0 but with different keywords |
-|  | True + True # => 2 |
-|  | True * 8 # => 8 |
-|  | False - 5 # => -5 |
-|  |  |
-|  | # Comparison operators look at the numerical value of True and False |
-|  | 0 == False # => True |
-|  | 1 == True # => True |
-|  | 2 == True # => False |
-|  | -5 != False # => True |
-|  |  |
-|  | # Using boolean logical operators on ints casts them to booleans for evaluation, but their non-cast value is returned |
-|  | # Don't mix up with bool(ints) and bitwise and/or (&,|) |
-|  | bool(0) # => False |
-|  | bool(4) # => True |
-|  | bool(-6) # => True |
-|  | 0 and 2 # => 0 |
-|  | -5 or 0 # => -5 |
-|  |  |
-|  | # Equality is == |
-|  | 1 == 1 # => True |
-|  | 2 == 1 # => False |
-|  |  |
-|  | # Inequality is != |
-|  | 1 != 1 # => False |
-|  | 2 != 1 # => True |
-|  |  |
-|  | # More comparisons |
-|  | 1 < 10 # => True |
-|  | 1 > 10 # => False |
-|  | 2 <= 2 # => True |
-|  | 2 >= 2 # => True |
-|  |  |
-|  | # Seeing whether a value is in a range |
-|  | 1 < 2 and 2 < 3 # => True |
-|  | 2 < 3 and 3 < 2 # => False |
-|  | # Chaining makes this look nicer |
-|  | 1 < 2 < 3 # => True |
-|  | 2 < 3 < 2 # => False |
-|  |  |
-|  | # (is vs. ==) is checks if two variables refer to the same object, but == checks |
-|  | # if the objects pointed to have the same values. |
-|  | a = [1, 2, 3, 4] # Point a at a new list, [1, 2, 3, 4] |
-|  | b = a # Point b at what a is pointing to |
-|  | b is a # => True, a and b refer to the same object |
-|  | b == a # => True, a's and b's objects are equal |
-|  | b = [1, 2, 3, 4] # Point b at a new list, [1, 2, 3, 4] |
-|  | b is a # => False, a and b do not refer to the same object |
-|  | b == a # => True, a's and b's objects are equal |
-|  |  |
-|  | # Strings are created with " or ' |
-|  | "This is a string." |
-|  | 'This is also a string.' |
-|  |  |
-|  | # Strings can be added too! But try not to do this. |
-|  | "Hello " + "world!" # => "Hello world!" |
-|  | # String literals (but not variables) can be concatenated without using '+' |
-|  | "Hello " "world!" # => "Hello world!" |
-|  |  |
-|  | # A string can be treated like a list of characters |
-|  | "This is a string"[0] # => 'T' |
-|  |  |
-|  | # You can find the length of a string |
-|  | len("This is a string") # => 16 |
-|  |  |
-|  | # .format can be used to format strings, like this: |
-|  | "{} can be {}".format("Strings", "interpolated") # => "Strings can be interpolated" |
-|  |  |
-|  | # You can repeat the formatting arguments to save some typing. |
-|  | "{0} be nimble, {0} be quick, {0} jump over the {1}".format("Jack", "candle stick") |
-|  | # => "Jack be nimble, Jack be quick, Jack jump over the candle stick" |
-|  |  |
-|  | # You can use keywords if you don't want to count. |
-|  | "{name} wants to eat {food}".format(name="Bob", food="lasagna") # => "Bob wants to eat lasagna" |
-|  |  |
-|  | # If your Python 3 code also needs to run on Python 2.5 and below, you can also |
-|  | # still use the old style of formatting: |
-|  | "%s can be %s the %s way" % ("Strings", "interpolated", "old") # => "Strings can be interpolated the old way" |
-|  |  |
-|  | # You can also format using f-strings or formatted string literals (in Python 3.6+) |
-|  | name = "Reiko" |
-|  | f"She said her name is {name}." # => "She said her name is Reiko" |
-|  | # You can basically put any Python statement inside the braces and it will be output in the string. |
-|  | f"{name} is {len(name)} characters long." # => "Reiko is 5 characters long." |
-|  |  |
-|  |  |
-|  | # None is an object |
-|  | None # => None |
-|  |  |
-|  | # Don't use the equality "==" symbol to compare objects to None |
-|  | # Use "is" instead. This checks for equality of object identity. |
-|  | "etc" is None # => False |
-|  | None is None # => True |
-|  |  |
-|  | # None, 0, and empty strings/lists/dicts/tuples all evaluate to False. |
-|  | # All other values are True |
-|  | bool(0) # => False |
-|  | bool("") # => False |
-|  | bool([]) # => False |
-|  | bool({}) # => False |
-|  | bool(()) # => False |
-|  |  |
-|  | #################################################### |
-|  | ## 2. Variables and Collections |
-|  | #################################################### |
-|  |  |
-|  | # Python has a print function |
-|  | print("I'm Python. Nice to meet you!") # => I'm Python. Nice to meet you! |
-|  |  |
-|  | # By default the print function also prints out a newline at the end. |
-|  | # Use the optional argument end to change the end string. |
-|  | print("Hello, World", end="!") # => Hello, World! |
-|  |  |
-|  | # Simple way to get input data from console |
-|  | input_string_var = input("Enter some data: ") # Returns the data as a string |
-|  | # Note: In earlier versions of Python, input() method was named as raw_input() |
-|  |  |
-|  | # There are no declarations, only assignments. |
-|  | # Convention is to use lower_case_with_underscores |
-|  | some_var = 5 |
-|  | some_var # => 5 |
-|  |  |
-|  | # Accessing a previously unassigned variable is an exception. |
-|  | # See Control Flow to learn more about exception handling. |
-|  | some_unknown_var # Raises a NameError |
-|  |  |
-|  | # if can be used as an expression |
-|  | # Equivalent of C's '?:' ternary operator |
-|  | "yahoo!" if 3 > 2 else 2 # => "yahoo!" |
-|  |  |
-|  | # Lists store sequences |
-|  | li = [] |
-|  | # You can start with a prefilled list |
-|  | other_li = [4, 5, 6] |
-|  |  |
-|  | # Add stuff to the end of a list with append |
-|  | li.append(1) # li is now [1] |
-|  | li.append(2) # li is now [1, 2] |
-|  | li.append(4) # li is now [1, 2, 4] |
-|  | li.append(3) # li is now [1, 2, 4, 3] |
-|  | # Remove from the end with pop |
-|  | li.pop() # => 3 and li is now [1, 2, 4] |
-|  | # Let's put it back |
-|  | li.append(3) # li is now [1, 2, 4, 3] again. |
-|  |  |
-|  | # Access a list like you would any array |
-|  | li[0] # => 1 |
-|  | # Look at the last element |
-|  | li[-1] # => 3 |
-|  |  |
-|  | # Looking out of bounds is an IndexError |
-|  | li[4] # Raises an IndexError |
-|  |  |
-|  | # You can look at ranges with slice syntax. |
-|  | # The start index is included, the end index is not |
-|  | # (It's a closed/open range for you mathy types.) |
-|  | li[1:3] # Return list from index 1 to 3 => [2, 4] |
-|  | li[2:] # Return list starting from index 2 => [4, 3] |
-|  | li[:3] # Return list from beginning until index 3 => [1, 2, 4] |
-|  | li[::2] # Return list selecting every second entry => [1, 4] |
-|  | li[::-1] # Return list in reverse order => [3, 4, 2, 1] |
-|  | # Use any combination of these to make advanced slices |
-|  | # li[start:end:step] |
-|  |  |
-|  | # Make a one layer deep copy using slices |
-|  | li2 = li[:] # => li2 = [1, 2, 4, 3] but (li2 is li) will result in false. |
-|  |  |
-|  | # Remove arbitrary elements from a list with "del" |
-|  | del li[2] # li is now [1, 2, 3] |
-|  |  |
-|  | # Remove first occurrence of a value |
-|  | li.remove(2) # li is now [1, 3] |
-|  | li.remove(2) # Raises a ValueError as 2 is not in the list |
-|  |  |
-|  | # Insert an element at a specific index |
-|  | li.insert(1, 2) # li is now [1, 2, 3] again |
-|  |  |
-|  | # Get the index of the first item found matching the argument |
-|  | li.index(2) # => 1 |
-|  | li.index(4) # Raises a ValueError as 4 is not in the list |
-|  |  |
-|  | # You can add lists |
-|  | # Note: values for li and for other_li are not modified. |
-|  | li + other_li # => [1, 2, 3, 4, 5, 6] |
-|  |  |
-|  | # Concatenate lists with "extend()" |
-|  | li.extend(other_li) # Now li is [1, 2, 3, 4, 5, 6] |
-|  |  |
-|  | # Check for existence in a list with "in" |
-|  | 1 in li # => True |
-|  |  |
-|  | # Examine the length with "len()" |
-|  | len(li) # => 6 |
-|  |  |
-|  |  |
-|  | # Tuples are like lists but are immutable. |
-|  | tup = (1, 2, 3) |
-|  | tup[0] # => 1 |
-|  | tup[0] = 3 # Raises a TypeError |
-|  |  |
-|  | # Note that a tuple of length one has to have a comma after the last element but |
-|  | # tuples of other lengths, even zero, do not. |
-|  | type((1)) # => <class 'int'> |
-|  | type((1,)) # => <class 'tuple'> |
-|  | type(()) # => <class 'tuple'> |
-|  |  |
-|  | # You can do most of the list operations on tuples too |
-|  | len(tup) # => 3 |
-|  | tup + (4, 5, 6) # => (1, 2, 3, 4, 5, 6) |
-|  | tup[:2] # => (1, 2) |
-|  | 2 in tup # => True |
-|  |  |
-|  | # You can unpack tuples (or lists) into variables |
-|  | a, b, c = (1, 2, 3) # a is now 1, b is now 2 and c is now 3 |
-|  | # You can also do extended unpacking |
-|  | a, *b, c = (1, 2, 3, 4) # a is now 1, b is now [2, 3] and c is now 4 |
-|  | # Tuples are created by default if you leave out the parentheses |
-|  | d, e, f = 4, 5, 6 # tuple 4, 5, 6 is unpacked into variables d, e and f |
-|  | # respectively such that d = 4, e = 5 and f = 6 |
-|  | # Now look how easy it is to swap two values |
-|  | e, d = d, e # d is now 5 and e is now 4 |
-|  |  |
-|  |  |
-|  | # Dictionaries store mappings from keys to values |
-|  | empty_dict = {} |
-|  | # Here is a prefilled dictionary |
-|  | filled_dict = {"one": 1, "two": 2, "three": 3} |
-|  |  |
-|  | # Note keys for dictionaries have to be immutable types. This is to ensure that |
-|  | # the key can be converted to a constant hash value for quick look-ups. |
-|  | # Immutable types include ints, floats, strings, tuples. |
-|  | invalid_dict = {[1,2,3]: "123"} # => Raises a TypeError: unhashable type: 'list' |
-|  | valid_dict = {(1,2,3):[1,2,3]} # Values can be of any type, however. |
-|  |  |
-|  | # Look up values with [] |
-|  | filled_dict["one"] # => 1 |
-|  |  |
-|  | # Get all keys as an iterable with "keys()". We need to wrap the call in list() |
-|  | # to turn it into a list. We'll talk about those later. Note - for Python |
-|  | # versions <3.7, dictionary key ordering is not guaranteed. Your results might |
-|  | # not match the example below exactly. However, as of Python 3.7, dictionary |
-|  | # items maintain the order at which they are inserted into the dictionary. |
-|  | list(filled_dict.keys()) # => ["three", "two", "one"] in Python <3.7 |
-|  | list(filled_dict.keys()) # => ["one", "two", "three"] in Python 3.7+ |
-|  |  |
-|  |  |
-|  | # Get all values as an iterable with "values()". Once again we need to wrap it |
-|  | # in list() to get it out of the iterable. Note - Same as above regarding key |
-|  | # ordering. |
-|  | list(filled_dict.values()) # => [3, 2, 1] in Python <3.7 |
-|  | list(filled_dict.values()) # => [1, 2, 3] in Python 3.7+ |
-|  |  |
-|  | # Check for existence of keys in a dictionary with "in" |
-|  | "one" in filled_dict # => True |
-|  | 1 in filled_dict # => False |
-|  |  |
-|  | # Looking up a non-existing key is a KeyError |
-|  | filled_dict["four"] # KeyError |
-|  |  |
-|  | # Use "get()" method to avoid the KeyError |
-|  | filled_dict.get("one") # => 1 |
-|  | filled_dict.get("four") # => None |
-|  | # The get method supports a default argument when the value is missing |
-|  | filled_dict.get("one", 4) # => 1 |
-|  | filled_dict.get("four", 4) # => 4 |
-|  |  |
-|  | # "setdefault()" inserts into a dictionary only if the given key isn't present |
-|  | filled_dict.setdefault("five", 5) # filled_dict["five"] is set to 5 |
-|  | filled_dict.setdefault("five", 6) # filled_dict["five"] is still 5 |
-|  |  |
-|  | # Adding to a dictionary |
-|  | filled_dict.update({"four":4}) # => {"one": 1, "two": 2, "three": 3, "four": 4} |
-|  | filled_dict["four"] = 4 # another way to add to dict |
-|  |  |
-|  | # Remove keys from a dictionary with del |
-|  | del filled_dict["one"] # Removes the key "one" from filled dict |
-|  |  |
-|  | # From Python 3.5 you can also use the additional unpacking options |
-|  | {'a': 1, **{'b': 2}} # => {'a': 1, 'b': 2} |
-|  | {'a': 1, **{'a': 2}} # => {'a': 2} |
-|  |  |
-|  |  |
-|  |  |
-|  | # Sets store ... well sets |
-|  | empty_set = set() |
-|  | # Initialize a set with a bunch of values. Yeah, it looks a bit like a dict. Sorry. |
-|  | some_set = {1, 1, 2, 2, 3, 4} # some_set is now {1, 2, 3, 4} |
-|  |  |
-|  | # Similar to keys of a dictionary, elements of a set have to be immutable. |
-|  | invalid_set = {[1], 1} # => Raises a TypeError: unhashable type: 'list' |
-|  | valid_set = {(1,), 1} |
-|  |  |
-|  | # Add one more item to the set |
-|  | filled_set = some_set |
-|  | filled_set.add(5) # filled_set is now {1, 2, 3, 4, 5} |
-|  | # Sets do not have duplicate elements |
-|  | filled_set.add(5) # it remains as before {1, 2, 3, 4, 5} |
-|  |  |
-|  | # Do set intersection with & |
-|  | other_set = {3, 4, 5, 6} |
-|  | filled_set & other_set # => {3, 4, 5} |
-|  |  |
-|  | # Do set union with | |
-|  | filled_set | other_set # => {1, 2, 3, 4, 5, 6} |
-|  |  |
-|  | # Do set difference with - |
-|  | {1, 2, 3, 4} - {2, 3, 5} # => {1, 4} |
-|  |  |
-|  | # Do set symmetric difference with ^ |
-|  | {1, 2, 3, 4} ^ {2, 3, 5} # => {1, 4, 5} |
-|  |  |
-|  | # Check if set on the left is a superset of set on the right |
-|  | {1, 2} >= {1, 2, 3} # => False |
-|  |  |
-|  | # Check if set on the left is a subset of set on the right |
-|  | {1, 2} <= {1, 2, 3} # => True |
-|  |  |
-|  | # Check for existence in a set with in |
-|  | 2 in filled_set # => True |
-|  | 10 in filled_set # => False |
-|  |  |
-|  |  |
-|  |  |
-|  | #################################################### |
-|  | ## 3. Control Flow and Iterables |
-|  | #################################################### |
-|  |  |
-|  | # Let's just make a variable |
-|  | some_var = 5 |
-|  |  |
-|  | # Here is an if statement. Indentation is significant in Python! |
-|  | # Convention is to use four spaces, not tabs. |
-|  | # This prints "some_var is smaller than 10" |
-|  | if some_var > 10: |
-|  | print("some_var is totally bigger than 10.") |
-|  | elif some_var < 10: # This elif clause is optional. |
-|  | print("some_var is smaller than 10.") |
-|  | else: # This is optional too. |
-|  | print("some_var is indeed 10.") |
-|  |  |
-|  |  |
-|  | """ |
-|  | For loops iterate over lists |
-|  | prints: |
-|  | dog is a mammal |
-|  | cat is a mammal |
-|  | mouse is a mammal |
-|  | """ |
-|  | for animal in ["dog", "cat", "mouse"]: |
-|  | # You can use format() to interpolate formatted strings |
-|  | print("{} is a mammal".format(animal)) |
-|  |  |
-|  | """ |
-|  | "range(number)" returns an iterable of numbers |
-|  | from zero to the given number |
-|  | prints: |
-|  | 0 |
-|  | 1 |
-|  | 2 |
-|  | 3 |
-|  | """ |
-|  | for i in range(4): |
-|  | print(i) |
-|  |  |
-|  | """ |
-|  | "range(lower, upper)" returns an iterable of numbers |
-|  | from the lower number to the upper number |
-|  | prints: |
-|  | 4 |
-|  | 5 |
-|  | 6 |
-|  | 7 |
-|  | """ |
-|  | for i in range(4, 8): |
-|  | print(i) |
-|  |  |
-|  | """ |
-|  | "range(lower, upper, step)" returns an iterable of numbers |
-|  | from the lower number to the upper number, while incrementing |
-|  | by step. If step is not indicated, the default value is 1. |
-|  | prints: |
-|  | 4 |
-|  | 6 |
-|  | """ |
-|  | for i in range(4, 8, 2): |
-|  | print(i) |
-|  |  |
-|  | """ |
-|  | To loop over a list, and retrieve both the index and the value of each item in the list |
-|  | prints: |
-|  | 0 dog |
-|  | 1 cat |
-|  | 2 mouse |
-|  | """ |
-|  | list = ["dog", "cat", "mouse"] |
-|  | for i, value in enumerate(list): |
-|  | print(i, value) |
-|  |  |
-|  | """ |
-|  | While loops go until a condition is no longer met. |
-|  | prints: |
-|  | 0 |
-|  | 1 |
-|  | 2 |
-|  | 3 |
-|  | """ |
-|  | x = 0 |
-|  | while x < 4: |
-|  | print(x) |
-|  | x += 1 # Shorthand for x = x + 1 |
-|  |  |
-|  | # Handle exceptions with a try/except block |
-|  | try: |
-|  | # Use "raise" to raise an error |
-|  | raise IndexError("This is an index error") |
-|  | except IndexError as e: |
-|  | pass # Pass is just a no-op. Usually you would do recovery here. |
-|  | except (TypeError, NameError): |
-|  | pass # Multiple exceptions can be handled together, if required. |
-|  | else: # Optional clause to the try/except block. Must follow all except blocks |
-|  | print("All good!") # Runs only if the code in try raises no exceptions |
-|  | finally: # Execute under all circumstances |
-|  | print("We can clean up resources here") |
-|  |  |
-|  | # Instead of try/finally to cleanup resources you can use a with statement |
-|  | with open("myfile.txt") as f: |
-|  | for line in f: |
-|  | print(line) |
-|  |  |
-|  | # Writing to a file |
-|  | contents = {"aa": 12, "bb": 21} |
-|  | with open("myfile1.txt", "w+") as file: |
-|  | file.write(str(contents)) # writes a string to a file |
-|  |  |
-|  | with open("myfile2.txt", "w+") as file: |
-|  | file.write(json.dumps(contents)) # writes an object to a file |
-|  |  |
-|  | # Reading from a file |
-|  | with open('myfile1.txt', "r+") as file: |
-|  | contents = file.read() # reads a string from a file |
-|  | print(contents) |
-|  | # print: {"aa": 12, "bb": 21} |
-|  |  |
-|  | with open('myfile2.txt', "r+") as file: |
-|  | contents = json.load(file) # reads a json object from a file |
-|  | print(contents) |
-|  | # print: {"aa": 12, "bb": 21} |
-|  |  |
-|  |  |
-|  | # Python offers a fundamental abstraction called the Iterable. |
-|  | # An iterable is an object that can be treated as a sequence. |
-|  | # The object returned by the range function, is an iterable. |
-|  |  |
-|  | filled_dict = {"one": 1, "two": 2, "three": 3} |
-|  | our_iterable = filled_dict.keys() |
-|  | print(our_iterable) # => dict_keys(['one', 'two', 'three']). This is an object that implements our Iterable interface. |
-|  |  |
-|  | # We can loop over it. |
-|  | for i in our_iterable: |
-|  | print(i) # Prints one, two, three |
-|  |  |
-|  | # However we cannot address elements by index. |
-|  | our_iterable[1] # Raises a TypeError |
-|  |  |
-|  | # An iterable is an object that knows how to create an iterator. |
-|  | our_iterator = iter(our_iterable) |
-|  |  |
-|  | # Our iterator is an object that can remember the state as we traverse through it. |
-|  | # We get the next object with "next()". |
-|  | next(our_iterator) # => "one" |
-|  |  |
-|  | # It maintains state as we iterate. |
-|  | next(our_iterator) # => "two" |
-|  | next(our_iterator) # => "three" |
-|  |  |
-|  | # After the iterator has returned all of its data, it raises a StopIteration exception |
-|  | next(our_iterator) # Raises StopIteration |
-|  |  |
-|  | # We can also loop over it, in fact, "for" does this implicitly! |
-|  | our_iterator = iter(our_iterable) |
-|  | for i in our_iterator: |
-|  | print(i) # Prints one, two, three |
-|  |  |
-|  | # You can grab all the elements of an iterable or iterator by calling list() on it. |
-|  | list(our_iterable) # => Returns ["one", "two", "three"] |
-|  | list(our_iterator) # => Returns [] because state is saved |
-|  |  |
-|  |  |
-|  | #################################################### |
-|  | ## 4. Functions |
-|  | #################################################### |
-|  |  |
-|  | # Use "def" to create new functions |
-|  | def add(x, y): |
-|  | print("x is {} and y is {}".format(x, y)) |
-|  | return x + y # Return values with a return statement |
-|  |  |
-|  | # Calling functions with parameters |
-|  | add(5, 6) # => prints out "x is 5 and y is 6" and returns 11 |
-|  |  |
-|  | # Another way to call functions is with keyword arguments |
-|  | add(y=6, x=5) # Keyword arguments can arrive in any order. |
-|  |  |
-|  | # You can define functions that take a variable number of |
-|  | # positional arguments |
-|  | def varargs(*args): |
-|  | return args |
-|  |  |
-|  | varargs(1, 2, 3) # => (1, 2, 3) |
-|  |  |
-|  | # You can define functions that take a variable number of |
-|  | # keyword arguments, as well |
-|  | def keyword_args(**kwargs): |
-|  | return kwargs |
-|  |  |
-|  | # Let's call it to see what happens |
-|  | keyword_args(big="foot", loch="ness") # => {"big": "foot", "loch": "ness"} |
-|  |  |
-|  |  |
-|  | # You can do both at once, if you like |
-|  | def all_the_args(*args, **kwargs): |
-|  | print(args) |
-|  | print(kwargs) |
-|  | """ |
-|  | all_the_args(1, 2, a=3, b=4) prints: |
-|  | (1, 2) |
-|  | {"a": 3, "b": 4} |
-|  | """ |
-|  |  |
-|  | # When calling functions, you can do the opposite of args/kwargs! |
-|  | # Use * to expand tuples and use ** to expand kwargs. |
-|  | args = (1, 2, 3, 4) |
-|  | kwargs = {"a": 3, "b": 4} |
-|  | all_the_args(*args) # equivalent to all_the_args(1, 2, 3, 4) |
-|  | all_the_args(**kwargs) # equivalent to all_the_args(a=3, b=4) |
-|  | all_the_args(*args, **kwargs) # equivalent to all_the_args(1, 2, 3, 4, a=3, b=4) |
-|  |  |
-|  | # Returning multiple values (with tuple assignments) |
-|  | def swap(x, y): |
-|  | return y, x # Return multiple values as a tuple without the parenthesis. |
-|  | # (Note: parenthesis have been excluded but can be included) |
-|  |  |
-|  | x = 1 |
-|  | y = 2 |
-|  | x, y = swap(x, y) # => x = 2, y = 1 |
-|  | # (x, y) = swap(x,y) # Again parenthesis have been excluded but can be included. |
-|  |  |
-|  | # Function Scope |
-|  | x = 5 |
-|  |  |
-|  | def set_x(num): |
-|  | # Local var x not the same as global variable x |
-|  | x = num # => 43 |
-|  | print(x) # => 43 |
-|  |  |
-|  | def set_global_x(num): |
-|  | global x |
-|  | print(x) # => 5 |
-|  | x = num # global var x is now set to 6 |
-|  | print(x) # => 6 |
-|  |  |
-|  | set_x(43) |
-|  | set_global_x(6) |
-|  |  |
-|  |  |
-|  | # Python has first class functions |
-|  | def create_adder(x): |
-|  | def adder(y): |
-|  | return x + y |
-|  | return adder |
-|  |  |
-|  | add_10 = create_adder(10) |
-|  | add_10(3) # => 13 |
-|  |  |
-|  | # There are also anonymous functions |
-|  | (lambda x: x > 2)(3) # => True |
-|  | (lambda x, y: x ** 2 + y ** 2)(2, 1) # => 5 |
-|  |  |
-|  | # There are built-in higher order functions |
-|  | list(map(add_10, [1, 2, 3])) # => [11, 12, 13] |
-|  | list(map(max, [1, 2, 3], [4, 2, 1])) # => [4, 2, 3] |
-|  |  |
-|  | list(filter(lambda x: x > 5, [3, 4, 5, 6, 7])) # => [6, 7] |
-|  |  |
-|  | # We can use list comprehensions for nice maps and filters |
-|  | # List comprehension stores the output as a list which can itself be a nested list |
-|  | [add_10(i) for i in [1, 2, 3]] # => [11, 12, 13] |
-|  | [x for x in [3, 4, 5, 6, 7] if x > 5] # => [6, 7] |
-|  |  |
-|  | # You can construct set and dict comprehensions as well. |
-|  | {x for x in 'abcddeef' if x not in 'abc'} # => {'d', 'e', 'f'} |
-|  | {x: x**2 for x in range(5)} # => {0: 0, 1: 1, 2: 4, 3: 9, 4: 16} |
-|  |  |
-|  |  |
-|  | #################################################### |
-|  | ## 5. Modules |
-|  | #################################################### |
-|  |  |
-|  | # You can import modules |
-|  | import math |
-|  | print(math.sqrt(16)) # => 4.0 |
-|  |  |
-|  | # You can get specific functions from a module |
-|  | from math import ceil, floor |
-|  | print(ceil(3.7)) # => 4.0 |
-|  | print(floor(3.7)) # => 3.0 |
-|  |  |
-|  | # You can import all functions from a module. |
-|  | # Warning: this is not recommended |
-|  | from math import * |
-|  |  |
-|  | # You can shorten module names |
-|  | import math as m |
-|  | math.sqrt(16) == m.sqrt(16) # => True |
-|  |  |
-|  | # Python modules are just ordinary Python files. You |
-|  | # can write your own, and import them. The name of the |
-|  | # module is the same as the name of the file. |
-|  |  |
-|  | # You can find out which functions and attributes |
-|  | # are defined in a module. |
-|  | import math |
-|  | dir(math) |
-|  |  |
-|  | # If you have a Python script named math.py in the same |
-|  | # folder as your current script, the file math.py will |
-|  | # be loaded instead of the built-in Python module. |
-|  | # This happens because the local folder has priority |
-|  | # over Python's built-in libraries. |
-|  |  |
-|  |  |
-|  | #################################################### |
-|  | ## 6. Classes |
-|  | #################################################### |
-|  |  |
-|  | # We use the "class" statement to create a class |
-|  | class Human: |
-|  |  |
-|  | # A class attribute. It is shared by all instances of this class |
-|  | species = "H. sapiens" |
-|  |  |
-|  | # Basic initializer, this is called when this class is instantiated. |
-|  | # Note that the double leading and trailing underscores denote objects |
-|  | # or attributes that are used by Python but that live in user-controlled |
-|  | # namespaces. Methods(or objects or attributes) like: __init__, __str__, |
-|  | # __repr__ etc. are called special methods (or sometimes called dunder methods) |
-|  | # You should not invent such names on your own. |
-|  | def __init__(self, name): |
-|  | # Assign the argument to the instance's name attribute |
-|  | self.name = name |
-|  |  |
-|  | # Initialize property |
-|  | self._age = 0 |
-|  |  |
-|  | # An instance method. All methods take "self" as the first argument |
-|  | def say(self, msg): |
-|  | print("{name}: {message}".format(name=self.name, message=msg)) |
-|  |  |
-|  | # Another instance method |
-|  | def sing(self): |
-|  | return 'yo... yo... microphone check... one two... one two...' |
-|  |  |
-|  | # A class method is shared among all instances |
-|  | # They are called with the calling class as the first argument |
-|  | @classmethod |
-|  | def get_species(cls): |
-|  | return cls.species |
-|  |  |
-|  | # A static method is called without a class or instance reference |
-|  | @staticmethod |
-|  | def grunt(): |
-|  | return "*grunt*" |
-|  |  |
-|  | # A property is just like a getter. |
-|  | # It turns the method age() into an read-only attribute of the same name. |
-|  | # There's no need to write trivial getters and setters in Python, though. |
-|  | @property |
-|  | def age(self): |
-|  | return self._age |
-|  |  |
-|  | # This allows the property to be set |
-|  | @age.setter |
-|  | def age(self, age): |
-|  | self._age = age |
-|  |  |
-|  | # This allows the property to be deleted |
-|  | @age.deleter |
-|  | def age(self): |
-|  | del self._age |
-|  |  |
-|  |  |
-|  | # When a Python interpreter reads a source file it executes all its code. |
-|  | # This __name__ check makes sure this code block is only executed when this |
-|  | # module is the main program. |
-|  | if __name__ == '__main__': |
-|  | # Instantiate a class |
-|  | i = Human(name="Ian") |
-|  | i.say("hi") # "Ian: hi" |
-|  | j = Human("Joel") |
-|  | j.say("hello") # "Joel: hello" |
-|  | # i and j are instances of type Human, or in other words: they are Human objects |
-|  |  |
-|  | # Call our class method |
-|  | i.say(i.get_species()) # "Ian: H. sapiens" |
-|  | # Change the shared attribute |
-|  | Human.species = "H. neanderthalensis" |
-|  | i.say(i.get_species()) # => "Ian: H. neanderthalensis" |
-|  | j.say(j.get_species()) # => "Joel: H. neanderthalensis" |
-|  |  |
-|  | # Call the static method |
-|  | print(Human.grunt()) # => "*grunt*" |
-|  |  |
-|  | # Cannot call static method with instance of object |
-|  | # because i.grunt() will automatically put "self" (the object i) as an argument |
-|  | print(i.grunt()) # => TypeError: grunt() takes 0 positional arguments but 1 was given |
-|  |  |
-|  | # Update the property for this instance |
-|  | i.age = 42 |
-|  | # Get the property |
-|  | i.say(i.age) # => "Ian: 42" |
-|  | j.say(j.age) # => "Joel: 0" |
-|  | # Delete the property |
-|  | del i.age |
-|  | # i.age # => this would raise an AttributeError |
-|  |  |
-|  |  |
-|  | #################################################### |
-|  | ## 6.1 Inheritance |
-|  | #################################################### |
-|  |  |
-|  | # Inheritance allows new child classes to be defined that inherit methods and |
-|  | # variables from their parent class. |
-|  |  |
-|  | # Using the Human class defined above as the base or parent class, we can |
-|  | # define a child class, Superhero, which inherits the class variables like |
-|  | # "species", "name", and "age", as well as methods, like "sing" and "grunt" |
-|  | # from the Human class, but can also have its own unique properties. |
-|  |  |
-|  | # To take advantage of modularization by file you could place the classes above in their own files, |
-|  | # say, human.py |
-|  |  |
-|  | # To import functions from other files use the following format |
-|  | # from "filename-without-extension" import "function-or-class" |
-|  |  |
-|  | from human import Human |
-|  |  |
-|  |  |
-|  | # Specify the parent class(es) as parameters to the class definition |
-|  | class Superhero(Human): |
-|  |  |
-|  | # If the child class should inherit all of the parent's definitions without |
-|  | # any modifications, you can just use the "pass" keyword (and nothing else) |
-|  | # but in this case it is commented out to allow for a unique child class: |
-|  | # pass |
-|  |  |
-|  | # Child classes can override their parents' attributes |
-|  | species = 'Superhuman' |
-|  |  |
-|  | # Children automatically inherit their parent class's constructor including |
-|  | # its arguments, but can also define additional arguments or definitions |
-|  | # and override its methods such as the class constructor. |
-|  | # This constructor inherits the "name" argument from the "Human" class and |
-|  | # adds the "superpower" and "movie" arguments: |
-|  | def __init__(self, name, movie=False, |
-|  | superpowers=["super strength", "bulletproofing"]): |
-|  |  |
-|  | # add additional class attributes: |
-|  | self.fictional = True |
-|  | self.movie = movie |
-|  | # be aware of mutable default values, since defaults are shared |
-|  | self.superpowers = superpowers |
-|  |  |
-|  | # The "super" function lets you access the parent class's methods |
-|  | # that are overridden by the child, in this case, the __init__ method. |
-|  | # This calls the parent class constructor: |
-|  | super().__init__(name) |
-|  |  |
-|  | # override the sing method |
-|  | def sing(self): |
-|  | return 'Dun, dun, DUN!' |
-|  |  |
-|  | # add an additional instance method |
-|  | def boast(self): |
-|  | for power in self.superpowers: |
-|  | print("I wield the power of {pow}!".format(pow=power)) |
-|  |  |
-|  |  |
-|  | if __name__ == '__main__': |
-|  | sup = Superhero(name="Tick") |
-|  |  |
-|  | # Instance type checks |
-|  | if isinstance(sup, Human): |
-|  | print('I am human') |
-|  | if type(sup) is Superhero: |
-|  | print('I am a superhero') |
-|  |  |
-|  | # Get the Method Resolution search Order used by both getattr() and super() |
-|  | # This attribute is dynamic and can be updated |
-|  | print(Superhero.__mro__) # => (<class '__main__.Superhero'>, |
-|  | # => <class 'human.Human'>, <class 'object'>) |
-|  |  |
-|  | # Calls parent method but uses its own class attribute |
-|  | print(sup.get_species()) # => Superhuman |
-|  |  |
-|  | # Calls overridden method |
-|  | print(sup.sing()) # => Dun, dun, DUN! |
-|  |  |
-|  | # Calls method from Human |
-|  | sup.say('Spoon') # => Tick: Spoon |
-|  |  |
-|  | # Call method that exists only in Superhero |
-|  | sup.boast() # => I wield the power of super strength! |
-|  | # => I wield the power of bulletproofing! |
-|  |  |
-|  | # Inherited class attribute |
-|  | sup.age = 31 |
-|  | print(sup.age) # => 31 |
-|  |  |
-|  | # Attribute that only exists within Superhero |
-|  | print('Am I Oscar eligible? ' + str(sup.movie)) |
-|  |  |
-|  | #################################################### |
-|  | ## 6.2 Multiple Inheritance |
-|  | #################################################### |
-|  |  |
-|  | # Another class definition |
-|  | # bat.py |
-|  | class Bat: |
-|  |  |
-|  | species = 'Baty' |
-|  |  |
-|  | def __init__(self, can_fly=True): |
-|  | self.fly = can_fly |
-|  |  |
-|  | # This class also has a say method |
-|  | def say(self, msg): |
-|  | msg = '... ... ...' |
-|  | return msg |
-|  |  |
-|  | # And its own method as well |
-|  | def sonar(self): |
-|  | return '))) ... (((' |
-|  |  |
-|  | if __name__ == '__main__': |
-|  | b = Bat() |
-|  | print(b.say('hello')) |
-|  | print(b.fly) |
-|  |  |
-|  |  |
-|  | # And yet another class definition that inherits from Superhero and Bat |
-|  | # superhero.py |
-|  | from superhero import Superhero |
-|  | from bat import Bat |
-|  |  |
-|  | # Define Batman as a child that inherits from both Superhero and Bat |
-|  | class Batman(Superhero, Bat): |
-|  |  |
-|  | def __init__(self, *args, **kwargs): |
-|  | # Typically to inherit attributes you have to call super: |
-|  | # super(Batman, self).__init__(*args, **kwargs) |
-|  | # However we are dealing with multiple inheritance here, and super() |
-|  | # only works with the next base class in the MRO list. |
-|  | # So instead we explicitly call __init__ for all ancestors. |
-|  | # The use of *args and **kwargs allows for a clean way to pass arguments, |
-|  | # with each parent "peeling a layer of the onion". |
-|  | Superhero.__init__(self, 'anonymous', movie=True, |
-|  | superpowers=['Wealthy'], *args, **kwargs) |
-|  | Bat.__init__(self, *args, can_fly=False, **kwargs) |
-|  | # override the value for the name attribute |
-|  | self.name = 'Sad Affleck' |
-|  |  |
-|  | def sing(self): |
-|  | return 'nan nan nan nan nan batman!' |
-|  |  |
-|  |  |
-|  | if __name__ == '__main__': |
-|  | sup = Batman() |
-|  |  |
-|  | # Get the Method Resolution search Order used by both getattr() and super(). |
-|  | # This attribute is dynamic and can be updated |
-|  | print(Batman.__mro__) # => (<class '__main__.Batman'>, |
-|  | # => <class 'superhero.Superhero'>, |
-|  | # => <class 'human.Human'>, |
-|  | # => <class 'bat.Bat'>, <class 'object'>) |
-|  |  |
-|  | # Calls parent method but uses its own class attribute |
-|  | print(sup.get_species()) # => Superhuman |
-|  |  |
-|  | # Calls overridden method |
-|  | print(sup.sing()) # => nan nan nan nan nan batman! |
-|  |  |
-|  | # Calls method from Human, because inheritance order matters |
-|  | sup.say('I agree') # => Sad Affleck: I agree |
-|  |  |
-|  | # Call method that exists only in 2nd ancestor |
-|  | print(sup.sonar()) # => ))) ... ((( |
-|  |  |
-|  | # Inherited class attribute |
-|  | sup.age = 100 |
-|  | print(sup.age) # => 100 |
-|  |  |
-|  | # Inherited attribute from 2nd ancestor whose default value was overridden. |
-|  | print('Can I fly? ' + str(sup.fly)) # => Can I fly? False |
-|  |  |
-|  |  |
-|  |  |
-|  | #################################################### |
-|  | ## 7. Advanced |
-|  | #################################################### |
-|  |  |
-|  | # Generators help you make lazy code. |
-|  | def double_numbers(iterable): |
-|  | for i in iterable: |
-|  | yield i + i |
-|  |  |
-|  | # Generators are memory-efficient because they only load the data needed to |
-|  | # process the next value in the iterable. This allows them to perform |
-|  | # operations on otherwise prohibitively large value ranges. |
-|  | # NOTE: `range` replaces `xrange` in Python 3. |
-|  | for i in double_numbers(range(1, 900000000)): # `range` is a generator. |
-|  | print(i) |
-|  | if i >= 30: |
-|  | break |
-|  |  |
-|  | # Just as you can create a list comprehension, you can create generator |
-|  | # comprehensions as well. |
-|  | values = (-x for x in [1,2,3,4,5]) |
-|  | for x in values: |
-|  | print(x) # prints -1 -2 -3 -4 -5 to console/terminal |
-|  |  |
-|  | # You can also cast a generator comprehension directly to a list. |
-|  | values = (-x for x in [1,2,3,4,5]) |
-|  | gen_to_list = list(values) |
-|  | print(gen_to_list) # => [-1, -2, -3, -4, -5] |
-|  |  |
-|  |  |
-|  | # Decorators |
-|  | # In this example `beg` wraps `say`. If say_please is True then it |
-|  | # will change the returned message. |
-|  | from functools import wraps |
-|  |  |
-|  |  |
-|  | def beg(target_function): |
-|  | @wraps(target_function) |
-|  | def wrapper(*args, **kwargs): |
-|  | msg, say_please = target_function(*args, **kwargs) |
-|  | if say_please: |
-|  | return "{} {}".format(msg, "Please! I am poor :(") |
-|  | return msg |
-|  |  |
-|  | return wrapper |
-|  |  |
-|  |  |
-|  | @beg |
-|  | def say(say_please=False): |
-|  | msg = "Can you buy me a beer?" |
-|  | return msg, say_please |
-|  |  |
-|  |  |
-|  | print(say()) # Can you buy me a beer? |
-|  | print(say(say_please=True)) # Can you buy me a beer? Please! I am poor :( |
+| | # Single line comments start with a number symbol. |
+| | |
+| | """ Multiline strings can be written |
+| | using three "s, and are often used |
+| | as documentation. |
+| | """ |
+| | |
+| | #################################################### |
+| | ## 1. Primitive Datatypes and Operators |
+| | #################################################### |
+| | |
+| | # You have numbers |
+| | 3 # => 3 |
+| | |
+| | # Math is what you would expect |
+| | 1 + 1 # => 2 |
+| | 8 - 1 # => 7 |
+| | 10 _ 2 # => 20 |
+| | 35 / 5 # => 7.0 |
+| | |
+| | # Integer division rounds down for both positive and negative numbers. |
+| | 5 // 3 # => 1 |
+| | -5 // 3 # => -2 |
+| | 5.0 // 3.0 # => 1.0 # works on floats too |
+| | -5.0 // 3.0 # => -2.0 |
+| | |
+| | # The result of division is always a float |
+| | 10.0 / 3 # => 3.3333333333333335 |
+| | |
+| | # Modulo operation |
+| | 7 % 3 # => 1 |
+| | |
+| | # Exponentiation (x**y, x to the yth power) |
+| | 2**3 # => 8 |
+| | |
+| | # Enforce precedence with parentheses |
+| | (1 + 3) _ 2 # => 8 |
+| | |
+| | # Boolean values are primitives (Note: the capitalization) |
+| | True |
+| | False |
+| | |
+| | # negate with not |
+| | not True # => False |
+| | not False # => True |
+| | |
+| | # Boolean Operators |
+| | # Note "and" and "or" are case-sensitive |
+| | True and False # => False |
+| | False or True # => True |
+| | |
+| | # True and False are actually 1 and 0 but with different keywords |
+| | True + True # => 2 |
+| | True * 8 # => 8 |
+| | False - 5 # => -5 |
+| | |
+| | # Comparison operators look at the numerical value of True and False |
+| | 0 == False # => True |
+| | 1 == True # => True |
+| | 2 == True # => False |
+| | -5 != False # => True |
+| | |
+| | # Using boolean logical operators on ints casts them to booleans for evaluation, but their non-cast value is returned |
+| | # Don't mix up with bool(ints) and bitwise and/or (&,|) |
+| | bool(0) # => False |
+| | bool(4) # => True |
+| | bool(-6) # => True |
+| | 0 and 2 # => 0 |
+| | -5 or 0 # => -5 |
+| | |
+| | # Equality is == |
+| | 1 == 1 # => True |
+| | 2 == 1 # => False |
+| | |
+| | # Inequality is != |
+| | 1 != 1 # => False |
+| | 2 != 1 # => True |
+| | |
+| | # More comparisons |
+| | 1 < 10 # => True |
+| | 1 > 10 # => False |
+| | 2 <= 2 # => True |
+| | 2 >= 2 # => True |
+| | |
+| | # Seeing whether a value is in a range |
+| | 1 < 2 and 2 < 3 # => True |
+| | 2 < 3 and 3 < 2 # => False |
+| | # Chaining makes this look nicer |
+| | 1 < 2 < 3 # => True |
+| | 2 < 3 < 2 # => False |
+| | |
+| | # (is vs. ==) is checks if two variables refer to the same object, but == checks |
+| | # if the objects pointed to have the same values. |
+| | a = [1, 2, 3, 4] # Point a at a new list, [1, 2, 3, 4] |
+| | b = a # Point b at what a is pointing to |
+| | b is a # => True, a and b refer to the same object |
+| | b == a # => True, a's and b's objects are equal |
+| | b = [1, 2, 3, 4] # Point b at a new list, [1, 2, 3, 4] |
+| | b is a # => False, a and b do not refer to the same object |
+| | b == a # => True, a's and b's objects are equal |
+| | |
+| | # Strings are created with " or ' |
+| | "This is a string." |
+| | 'This is also a string.' |
+| | |
+| | # Strings can be added too! But try not to do this. |
+| | "Hello " + "world!" # => "Hello world!" |
+| | # String literals (but not variables) can be concatenated without using '+' |
+| | "Hello " "world!" # => "Hello world!" |
+| | |
+| | # A string can be treated like a list of characters |
+| | "This is a string"[0] # => 'T' |
+| | |
+| | # You can find the length of a string |
+| | len("This is a string") # => 16 |
+| | |
+| | # .format can be used to format strings, like this: |
+| | "{} can be {}".format("Strings", "interpolated") # => "Strings can be interpolated" |
+| | |
+| | # You can repeat the formatting arguments to save some typing. |
+| | "{0} be nimble, {0} be quick, {0} jump over the {1}".format("Jack", "candle stick") |
+| | # => "Jack be nimble, Jack be quick, Jack jump over the candle stick" |
+| | |
+| | # You can use keywords if you don't want to count. |
+| | "{name} wants to eat {food}".format(name="Bob", food="lasagna") # => "Bob wants to eat lasagna" |
+| | |
+| | # If your Python 3 code also needs to run on Python 2.5 and below, you can also |
+| | # still use the old style of formatting: |
+| | "%s can be %s the %s way" % ("Strings", "interpolated", "old") # => "Strings can be interpolated the old way" |
+| | |
+| | # You can also format using f-strings or formatted string literals (in Python 3.6+) |
+| | name = "Reiko" |
+| | f"She said her name is {name}." # => "She said her name is Reiko" |
+| | # You can basically put any Python statement inside the braces and it will be output in the string. |
+| | f"{name} is {len(name)} characters long." # => "Reiko is 5 characters long." |
+| | |
+| | |
+| | # None is an object |
+| | None # => None |
+| | |
+| | # Don't use the equality "==" symbol to compare objects to None |
+| | # Use "is" instead. This checks for equality of object identity. |
+| | "etc" is None # => False |
+| | None is None # => True |
+| | |
+| | # None, 0, and empty strings/lists/dicts/tuples all evaluate to False. |
+| | # All other values are True |
+| | bool(0) # => False |
+| | bool("") # => False |
+| | bool([]) # => False |
+| | bool({}) # => False |
+| | bool(()) # => False |
+| | |
+| | #################################################### |
+| | ## 2. Variables and Collections |
+| | #################################################### |
+| | |
+| | # Python has a print function |
+| | print("I'm Python. Nice to meet you!") # => I'm Python. Nice to meet you! |
+| | |
+| | # By default the print function also prints out a newline at the end. |
+| | # Use the optional argument end to change the end string. |
+| | print("Hello, World", end="!") # => Hello, World! |
+| | |
+| | # Simple way to get input data from console |
+| | input_string_var = input("Enter some data: ") # Returns the data as a string |
+| | # Note: In earlier versions of Python, input() method was named as raw_input() |
+| | |
+| | # There are no declarations, only assignments. |
+| | # Convention is to use lower_case_with_underscores |
+| | some_var = 5 |
+| | some_var # => 5 |
+| | |
+| | # Accessing a previously unassigned variable is an exception. |
+| | # See Control Flow to learn more about exception handling. |
+| | some_unknown_var # Raises a NameError |
+| | |
+| | # if can be used as an expression |
+| | # Equivalent of C's '?:' ternary operator |
+| | "yahoo!" if 3 > 2 else 2 # => "yahoo!" |
+| | |
+| | # Lists store sequences |
+| | li = [] |
+| | # You can start with a prefilled list |
+| | other_li = [4, 5, 6] |
+| | |
+| | # Add stuff to the end of a list with append |
+| | li.append(1) # li is now [1] |
+| | li.append(2) # li is now [1, 2] |
+| | li.append(4) # li is now [1, 2, 4] |
+| | li.append(3) # li is now [1, 2, 4, 3] |
+| | # Remove from the end with pop |
+| | li.pop() # => 3 and li is now [1, 2, 4] |
+| | # Let's put it back |
+| | li.append(3) # li is now [1, 2, 4, 3] again. |
+| | |
+| | # Access a list like you would any array |
+| | li[0] # => 1 |
+| | # Look at the last element |
+| | li[-1] # => 3 |
+| | |
+| | # Looking out of bounds is an IndexError |
+| | li[4] # Raises an IndexError |
+| | |
+| | # You can look at ranges with slice syntax. |
+| | # The start index is included, the end index is not |
+| | # (It's a closed/open range for you mathy types.) |
+| | li[1:3] # Return list from index 1 to 3 => [2, 4] |
+| | li[2:] # Return list starting from index 2 => [4, 3] |
+| | li[:3] # Return list from beginning until index 3 => [1, 2, 4] |
+| | li[::2] # Return list selecting every second entry => [1, 4] |
+| | li[::-1] # Return list in reverse order => [3, 4, 2, 1] |
+| | # Use any combination of these to make advanced slices |
+| | # li[start:end:step] |
+| | |
+| | # Make a one layer deep copy using slices |
+| | li2 = li[:] # => li2 = [1, 2, 4, 3] but (li2 is li) will result in false. |
+| | |
+| | # Remove arbitrary elements from a list with "del" |
+| | del li[2] # li is now [1, 2, 3] |
+| | |
+| | # Remove first occurrence of a value |
+| | li.remove(2) # li is now [1, 3] |
+| | li.remove(2) # Raises a ValueError as 2 is not in the list |
+| | |
+| | # Insert an element at a specific index |
+| | li.insert(1, 2) # li is now [1, 2, 3] again |
+| | |
+| | # Get the index of the first item found matching the argument |
+| | li.index(2) # => 1 |
+| | li.index(4) # Raises a ValueError as 4 is not in the list |
+| | |
+| | # You can add lists |
+| | # Note: values for li and for other_li are not modified. |
+| | li + other_li # => [1, 2, 3, 4, 5, 6] |
+| | |
+| | # Concatenate lists with "extend()" |
+| | li.extend(other_li) # Now li is [1, 2, 3, 4, 5, 6] |
+| | |
+| | # Check for existence in a list with "in" |
+| | 1 in li # => True |
+| | |
+| | # Examine the length with "len()" |
+| | len(li) # => 6 |
+| | |
+| | |
+| | # Tuples are like lists but are immutable. |
+| | tup = (1, 2, 3) |
+| | tup[0] # => 1 |
+| | tup[0] = 3 # Raises a TypeError |
+| | |
+| | # Note that a tuple of length one has to have a comma after the last element but |
+| | # tuples of other lengths, even zero, do not. |
+| | type((1)) # => <class 'int'> |
+| | type((1,)) # => <class 'tuple'> |
+| | type(()) # => <class 'tuple'> |
+| | |
+| | # You can do most of the list operations on tuples too |
+| | len(tup) # => 3 |
+| | tup + (4, 5, 6) # => (1, 2, 3, 4, 5, 6) |
+| | tup[:2] # => (1, 2) |
+| | 2 in tup # => True |
+| | |
+| | # You can unpack tuples (or lists) into variables |
+| | a, b, c = (1, 2, 3) # a is now 1, b is now 2 and c is now 3 |
+| | # You can also do extended unpacking |
+| | a, *b, c = (1, 2, 3, 4) # a is now 1, b is now [2, 3] and c is now 4 |
+| | # Tuples are created by default if you leave out the parentheses |
+| | d, e, f = 4, 5, 6 # tuple 4, 5, 6 is unpacked into variables d, e and f |
+| | # respectively such that d = 4, e = 5 and f = 6 |
+| | # Now look how easy it is to swap two values |
+| | e, d = d, e # d is now 5 and e is now 4 |
+| | |
+| | |
+| | # Dictionaries store mappings from keys to values |
+| | empty_dict = {} |
+| | # Here is a prefilled dictionary |
+| | filled_dict = {"one": 1, "two": 2, "three": 3} |
+| | |
+| | # Note keys for dictionaries have to be immutable types. This is to ensure that |
+| | # the key can be converted to a constant hash value for quick look-ups. |
+| | # Immutable types include ints, floats, strings, tuples. |
+| | invalid_dict = {[1,2,3]: "123"} # => Raises a TypeError: unhashable type: 'list' |
+| | valid_dict = {(1,2,3):[1,2,3]} # Values can be of any type, however. |
+| | |
+| | # Look up values with [] |
+| | filled_dict["one"] # => 1 |
+| | |
+| | # Get all keys as an iterable with "keys()". We need to wrap the call in list() |
+| | # to turn it into a list. We'll talk about those later. Note - for Python |
+| | # versions <3.7, dictionary key ordering is not guaranteed. Your results might |
+| | # not match the example below exactly. However, as of Python 3.7, dictionary |
+| | # items maintain the order at which they are inserted into the dictionary. |
+| | list(filled_dict.keys()) # => ["three", "two", "one"] in Python <3.7 |
+| | list(filled_dict.keys()) # => ["one", "two", "three"] in Python 3.7+ |
+| | |
+| | |
+| | # Get all values as an iterable with "values()". Once again we need to wrap it |
+| | # in list() to get it out of the iterable. Note - Same as above regarding key |
+| | # ordering. |
+| | list(filled_dict.values()) # => [3, 2, 1] in Python <3.7 |
+| | list(filled_dict.values()) # => [1, 2, 3] in Python 3.7+ |
+| | |
+| | # Check for existence of keys in a dictionary with "in" |
+| | "one" in filled_dict # => True |
+| | 1 in filled_dict # => False |
+| | |
+| | # Looking up a non-existing key is a KeyError |
+| | filled_dict["four"] # KeyError |
+| | |
+| | # Use "get()" method to avoid the KeyError |
+| | filled_dict.get("one") # => 1 |
+| | filled_dict.get("four") # => None |
+| | # The get method supports a default argument when the value is missing |
+| | filled_dict.get("one", 4) # => 1 |
+| | filled_dict.get("four", 4) # => 4 |
+| | |
+| | # "setdefault()" inserts into a dictionary only if the given key isn't present |
+| | filled_dict.setdefault("five", 5) # filled_dict["five"] is set to 5 |
+| | filled_dict.setdefault("five", 6) # filled_dict["five"] is still 5 |
+| | |
+| | # Adding to a dictionary |
+| | filled_dict.update({"four":4}) # => {"one": 1, "two": 2, "three": 3, "four": 4} |
+| | filled_dict["four"] = 4 # another way to add to dict |
+| | |
+| | # Remove keys from a dictionary with del |
+| | del filled_dict["one"] # Removes the key "one" from filled dict |
+| | |
+| | # From Python 3.5 you can also use the additional unpacking options |
+| | {'a': 1, **{'b': 2}} # => {'a': 1, 'b': 2} |
+| | {'a': 1, **{'a': 2}} # => {'a': 2} |
+| | |
+| | |
+| | |
+| | # Sets store ... well sets |
+| | empty_set = set() |
+| | # Initialize a set with a bunch of values. Yeah, it looks a bit like a dict. Sorry. |
+| | some_set = {1, 1, 2, 2, 3, 4} # some_set is now {1, 2, 3, 4} |
+| | |
+| | # Similar to keys of a dictionary, elements of a set have to be immutable. |
+| | invalid_set = {[1], 1} # => Raises a TypeError: unhashable type: 'list' |
+| | valid_set = {(1,), 1} |
+| | |
+| | # Add one more item to the set |
+| | filled_set = some_set |
+| | filled_set.add(5) # filled_set is now {1, 2, 3, 4, 5} |
+| | # Sets do not have duplicate elements |
+| | filled_set.add(5) # it remains as before {1, 2, 3, 4, 5} |
+| | |
+| | # Do set intersection with & |
+| | other_set = {3, 4, 5, 6} |
+| | filled_set & other_set # => {3, 4, 5} |
+| | |
+| | # Do set union with | |
+| | filled_set | other_set # => {1, 2, 3, 4, 5, 6} |
+| | |
+| | # Do set difference with - |
+| | {1, 2, 3, 4} - {2, 3, 5} # => {1, 4} |
+| | |
+| | # Do set symmetric difference with ^ |
+| | {1, 2, 3, 4} ^ {2, 3, 5} # => {1, 4, 5} |
+| | |
+| | # Check if set on the left is a superset of set on the right |
+| | {1, 2} >= {1, 2, 3} # => False |
+| | |
+| | # Check if set on the left is a subset of set on the right |
+| | {1, 2} <= {1, 2, 3} # => True |
+| | |
+| | # Check for existence in a set with in |
+| | 2 in filled_set # => True |
+| | 10 in filled_set # => False |
+| | |
+| | |
+| | |
+| | #################################################### |
+| | ## 3. Control Flow and Iterables |
+| | #################################################### |
+| | |
+| | # Let's just make a variable |
+| | some_var = 5 |
+| | |
+| | # Here is an if statement. Indentation is significant in Python! |
+| | # Convention is to use four spaces, not tabs. |
+| | # This prints "some_var is smaller than 10" |
+| | if some_var > 10: |
+| | print("some_var is totally bigger than 10.") |
+| | elif some_var < 10: # This elif clause is optional. |
+| | print("some_var is smaller than 10.") |
+| | else: # This is optional too. |
+| | print("some_var is indeed 10.") |
+| | |
+| | |
+| | """ |
+| | For loops iterate over lists |
+| | prints: |
+| | dog is a mammal |
+| | cat is a mammal |
+| | mouse is a mammal |
+| | """ |
+| | for animal in ["dog", "cat", "mouse"]: |
+| | # You can use format() to interpolate formatted strings |
+| | print("{} is a mammal".format(animal)) |
+| | |
+| | """ |
+| | "range(number)" returns an iterable of numbers |
+| | from zero to the given number |
+| | prints: |
+| | 0 |
+| | 1 |
+| | 2 |
+| | 3 |
+| | """ |
+| | for i in range(4): |
+| | print(i) |
+| | |
+| | """ |
+| | "range(lower, upper)" returns an iterable of numbers |
+| | from the lower number to the upper number |
+| | prints: |
+| | 4 |
+| | 5 |
+| | 6 |
+| | 7 |
+| | """ |
+| | for i in range(4, 8): |
+| | print(i) |
+| | |
+| | """ |
+| | "range(lower, upper, step)" returns an iterable of numbers |
+| | from the lower number to the upper number, while incrementing |
+| | by step. If step is not indicated, the default value is 1. |
+| | prints: |
+| | 4 |
+| | 6 |
+| | """ |
+| | for i in range(4, 8, 2): |
+| | print(i) |
+| | |
+| | """ |
+| | To loop over a list, and retrieve both the index and the value of each item in the list |
+| | prints: |
+| | 0 dog |
+| | 1 cat |
+| | 2 mouse |
+| | """ |
+| | list = ["dog", "cat", "mouse"] |
+| | for i, value in enumerate(list): |
+| | print(i, value) |
+| | |
+| | """ |
+| | While loops go until a condition is no longer met. |
+| | prints: |
+| | 0 |
+| | 1 |
+| | 2 |
+| | 3 |
+| | """ |
+| | x = 0 |
+| | while x < 4: |
+| | print(x) |
+| | x += 1 # Shorthand for x = x + 1 |
+| | |
+| | # Handle exceptions with a try/except block |
+| | try: |
+| | # Use "raise" to raise an error |
+| | raise IndexError("This is an index error") |
+| | except IndexError as e: |
+| | pass # Pass is just a no-op. Usually you would do recovery here. |
+| | except (TypeError, NameError): |
+| | pass # Multiple exceptions can be handled together, if required. |
+| | else: # Optional clause to the try/except block. Must follow all except blocks |
+| | print("All good!") # Runs only if the code in try raises no exceptions |
+| | finally: # Execute under all circumstances |
+| | print("We can clean up resources here") |
+| | |
+| | # Instead of try/finally to cleanup resources you can use a with statement |
+| | with open("myfile.txt") as f: |
+| | for line in f: |
+| | print(line) |
+| | |
+| | # Writing to a file |
+| | contents = {"aa": 12, "bb": 21} |
+| | with open("myfile1.txt", "w+") as file: |
+| | file.write(str(contents)) # writes a string to a file |
+| | |
+| | with open("myfile2.txt", "w+") as file: |
+| | file.write(json.dumps(contents)) # writes an object to a file |
+| | |
+| | # Reading from a file |
+| | with open('myfile1.txt', "r+") as file: |
+| | contents = file.read() # reads a string from a file |
+| | print(contents) |
+| | # print: {"aa": 12, "bb": 21} |
+| | |
+| | with open('myfile2.txt', "r+") as file: |
+| | contents = json.load(file) # reads a json object from a file |
+| | print(contents) |
+| | # print: {"aa": 12, "bb": 21} |
+| | |
+| | |
+| | # Python offers a fundamental abstraction called the Iterable. |
+| | # An iterable is an object that can be treated as a sequence. |
+| | # The object returned by the range function, is an iterable. |
+| | |
+| | filled_dict = {"one": 1, "two": 2, "three": 3} |
+| | our_iterable = filled_dict.keys() |
+| | print(our_iterable) # => dict_keys(['one', 'two', 'three']). This is an object that implements our Iterable interface. |
+| | |
+| | # We can loop over it. |
+| | for i in our_iterable: |
+| | print(i) # Prints one, two, three |
+| | |
+| | # However we cannot address elements by index. |
+| | our_iterable[1] # Raises a TypeError |
+| | |
+| | # An iterable is an object that knows how to create an iterator. |
+| | our_iterator = iter(our_iterable) |
+| | |
+| | # Our iterator is an object that can remember the state as we traverse through it. |
+| | # We get the next object with "next()". |
+| | next(our_iterator) # => "one" |
+| | |
+| | # It maintains state as we iterate. |
+| | next(our_iterator) # => "two" |
+| | next(our_iterator) # => "three" |
+| | |
+| | # After the iterator has returned all of its data, it raises a StopIteration exception |
+| | next(our_iterator) # Raises StopIteration |
+| | |
+| | # We can also loop over it, in fact, "for" does this implicitly! |
+| | our_iterator = iter(our_iterable) |
+| | for i in our_iterator: |
+| | print(i) # Prints one, two, three |
+| | |
+| | # You can grab all the elements of an iterable or iterator by calling list() on it. |
+| | list(our_iterable) # => Returns ["one", "two", "three"] |
+| | list(our_iterator) # => Returns [] because state is saved |
+| | |
+| | |
+| | #################################################### |
+| | ## 4. Functions |
+| | #################################################### |
+| | |
+| | # Use "def" to create new functions |
+| | def add(x, y): |
+| | print("x is {} and y is {}".format(x, y)) |
+| | return x + y # Return values with a return statement |
+| | |
+| | # Calling functions with parameters |
+| | add(5, 6) # => prints out "x is 5 and y is 6" and returns 11 |
+| | |
+| | # Another way to call functions is with keyword arguments |
+| | add(y=6, x=5) # Keyword arguments can arrive in any order. |
+| | |
+| | # You can define functions that take a variable number of |
+| | # positional arguments |
+| | def varargs(*args): |
+| | return args |
+| | |
+| | varargs(1, 2, 3) # => (1, 2, 3) |
+| | |
+| | # You can define functions that take a variable number of |
+| | # keyword arguments, as well |
+| | def keyword_args(\*\*kwargs): |
+| | return kwargs |
+| | |
+| | # Let's call it to see what happens |
+| | keyword_args(big="foot", loch="ness") # => {"big": "foot", "loch": "ness"} |
+| | |
+| | |
+| | # You can do both at once, if you like |
+| | def all_the_args(*args, **kwargs): |
+| | print(args) |
+| | print(kwargs) |
+| | """ |
+| | all_the_args(1, 2, a=3, b=4) prints: |
+| | (1, 2) |
+| | {"a": 3, "b": 4} |
+| | """ |
+| | |
+| | # When calling functions, you can do the opposite of args/kwargs! |
+| | # Use \* to expand tuples and use ** to expand kwargs. |
+| | args = (1, 2, 3, 4) |
+| | kwargs = {"a": 3, "b": 4} |
+| | all_the_args(*args) # equivalent to all_the_args(1, 2, 3, 4) |
+| | all_the_args(\*\*kwargs) # equivalent to all_the_args(a=3, b=4) |
+| | all_the_args(*args, **kwargs) # equivalent to all_the_args(1, 2, 3, 4, a=3, b=4) |
+| | |
+| | # Returning multiple values (with tuple assignments) |
+| | def swap(x, y): |
+| | return y, x # Return multiple values as a tuple without the parenthesis. |
+| | # (Note: parenthesis have been excluded but can be included) |
+| | |
+| | x = 1 |
+| | y = 2 |
+| | x, y = swap(x, y) # => x = 2, y = 1 |
+| | # (x, y) = swap(x,y) # Again parenthesis have been excluded but can be included. |
+| | |
+| | # Function Scope |
+| | x = 5 |
+| | |
+| | def set_x(num): |
+| | # Local var x not the same as global variable x |
+| | x = num # => 43 |
+| | print(x) # => 43 |
+| | |
+| | def set_global_x(num): |
+| | global x |
+| | print(x) # => 5 |
+| | x = num # global var x is now set to 6 |
+| | print(x) # => 6 |
+| | |
+| | set_x(43) |
+| | set_global_x(6) |
+| | |
+| | |
+| | # Python has first class functions |
+| | def create_adder(x): |
+| | def adder(y): |
+| | return x + y |
+| | return adder |
+| | |
+| | add_10 = create_adder(10) |
+| | add_10(3) # => 13 |
+| | |
+| | # There are also anonymous functions |
+| | (lambda x: x > 2)(3) # => True |
+| | (lambda x, y: x ** 2 + y ** 2)(2, 1) # => 5 |
+| | |
+| | # There are built-in higher order functions |
+| | list(map(add_10, [1, 2, 3])) # => [11, 12, 13] |
+| | list(map(max, [1, 2, 3], [4, 2, 1])) # => [4, 2, 3] |
+| | |
+| | list(filter(lambda x: x > 5, [3, 4, 5, 6, 7])) # => [6, 7] |
+| | |
+| | # We can use list comprehensions for nice maps and filters |
+| | # List comprehension stores the output as a list which can itself be a nested list |
+| | [add_10(i) for i in [1, 2, 3]] # => [11, 12, 13] |
+| | [x for x in [3, 4, 5, 6, 7] if x > 5] # => [6, 7] |
+| | |
+| | # You can construct set and dict comprehensions as well. |
+| | {x for x in 'abcddeef' if x not in 'abc'} # => {'d', 'e', 'f'} |
+| | {x: x**2 for x in range(5)} # => {0: 0, 1: 1, 2: 4, 3: 9, 4: 16} |
+| | |
+| | |
+| | #################################################### |
+| | ## 5. Modules |
+| | #################################################### |
+| | |
+| | # You can import modules |
+| | import math |
+| | print(math.sqrt(16)) # => 4.0 |
+| | |
+| | # You can get specific functions from a module |
+| | from math import ceil, floor |
+| | print(ceil(3.7)) # => 4.0 |
+| | print(floor(3.7)) # => 3.0 |
+| | |
+| | # You can import all functions from a module. |
+| | # Warning: this is not recommended |
+| | from math import * |
+| | |
+| | # You can shorten module names |
+| | import math as m |
+| | math.sqrt(16) == m.sqrt(16) # => True |
+| | |
+| | # Python modules are just ordinary Python files. You |
+| | # can write your own, and import them. The name of the |
+| | # module is the same as the name of the file. |
+| | |
+| | # You can find out which functions and attributes |
+| | # are defined in a module. |
+| | import math |
+| | dir(math) |
+| | |
+| | # If you have a Python script named math.py in the same |
+| | # folder as your current script, the file math.py will |
+| | # be loaded instead of the built-in Python module. |
+| | # This happens because the local folder has priority |
+| | # over Python's built-in libraries. |
+| | |
+| | |
+| | #################################################### |
+| | ## 6. Classes |
+| | #################################################### |
+| | |
+| | # We use the "class" statement to create a class |
+| | class Human: |
+| | |
+| | # A class attribute. It is shared by all instances of this class |
+| | species = "H. sapiens" |
+| | |
+| | # Basic initializer, this is called when this class is instantiated. |
+| | # Note that the double leading and trailing underscores denote objects |
+| | # or attributes that are used by Python but that live in user-controlled |
+| | # namespaces. Methods(or objects or attributes) like: **init**, **str**, |
+| | # **repr** etc. are called special methods (or sometimes called dunder methods) |
+| | # You should not invent such names on your own. |
+| | def **init**(self, name): |
+| | # Assign the argument to the instance's name attribute |
+| | self.name = name |
+| | |
+| | # Initialize property |
+| | self.\_age = 0 |
+| | |
+| | # An instance method. All methods take "self" as the first argument |
+| | def say(self, msg): |
+| | print("{name}: {message}".format(name=self.name, message=msg)) |
+| | |
+| | # Another instance method |
+| | def sing(self): |
+| | return 'yo... yo... microphone check... one two... one two...' |
+| | |
+| | # A class method is shared among all instances |
+| | # They are called with the calling class as the first argument |
+| | @classmethod |
+| | def get_species(cls): |
+| | return cls.species |
+| | |
+| | # A static method is called without a class or instance reference |
+| | @staticmethod |
+| | def grunt(): |
+| | return "*grunt*" |
+| | |
+| | # A property is just like a getter. |
+| | # It turns the method age() into an read-only attribute of the same name. |
+| | # There's no need to write trivial getters and setters in Python, though. |
+| | @property |
+| | def age(self): |
+| | return self.\_age |
+| | |
+| | # This allows the property to be set |
+| | @age.setter |
+| | def age(self, age): |
+| | self.\_age = age |
+| | |
+| | # This allows the property to be deleted |
+| | @age.deleter |
+| | def age(self): |
+| | del self.\_age |
+| | |
+| | |
+| | # When a Python interpreter reads a source file it executes all its code. |
+| | # This **name** check makes sure this code block is only executed when this |
+| | # module is the main program. |
+| | if **name** == '**main**': |
+| | # Instantiate a class |
+| | i = Human(name="Ian") |
+| | i.say("hi") # "Ian: hi" |
+| | j = Human("Joel") |
+| | j.say("hello") # "Joel: hello" |
+| | # i and j are instances of type Human, or in other words: they are Human objects |
+| | |
+| | # Call our class method |
+| | i.say(i.get_species()) # "Ian: H. sapiens" |
+| | # Change the shared attribute |
+| | Human.species = "H. neanderthalensis" |
+| | i.say(i.get_species()) # => "Ian: H. neanderthalensis" |
+| | j.say(j.get_species()) # => "Joel: H. neanderthalensis" |
+| | |
+| | # Call the static method |
+| | print(Human.grunt()) # => "*grunt*" |
+| | |
+| | # Cannot call static method with instance of object |
+| | # because i.grunt() will automatically put "self" (the object i) as an argument |
+| | print(i.grunt()) # => TypeError: grunt() takes 0 positional arguments but 1 was given |
+| | |
+| | # Update the property for this instance |
+| | i.age = 42 |
+| | # Get the property |
+| | i.say(i.age) # => "Ian: 42" |
+| | j.say(j.age) # => "Joel: 0" |
+| | # Delete the property |
+| | del i.age |
+| | # i.age # => this would raise an AttributeError |
+| | |
+| | |
+| | #################################################### |
+| | ## 6.1 Inheritance |
+| | #################################################### |
+| | |
+| | # Inheritance allows new child classes to be defined that inherit methods and |
+| | # variables from their parent class. |
+| | |
+| | # Using the Human class defined above as the base or parent class, we can |
+| | # define a child class, Superhero, which inherits the class variables like |
+| | # "species", "name", and "age", as well as methods, like "sing" and "grunt" |
+| | # from the Human class, but can also have its own unique properties. |
+| | |
+| | # To take advantage of modularization by file you could place the classes above in their own files, |
+| | # say, human.py |
+| | |
+| | # To import functions from other files use the following format |
+| | # from "filename-without-extension" import "function-or-class" |
+| | |
+| | from human import Human |
+| | |
+| | |
+| | # Specify the parent class(es) as parameters to the class definition |
+| | class Superhero(Human): |
+| | |
+| | # If the child class should inherit all of the parent's definitions without |
+| | # any modifications, you can just use the "pass" keyword (and nothing else) |
+| | # but in this case it is commented out to allow for a unique child class: |
+| | # pass |
+| | |
+| | # Child classes can override their parents' attributes |
+| | species = 'Superhuman' |
+| | |
+| | # Children automatically inherit their parent class's constructor including |
+| | # its arguments, but can also define additional arguments or definitions |
+| | # and override its methods such as the class constructor. |
+| | # This constructor inherits the "name" argument from the "Human" class and |
+| | # adds the "superpower" and "movie" arguments: |
+| | def **init**(self, name, movie=False, |
+| | superpowers=["super strength", "bulletproofing"]): |
+| | |
+| | # add additional class attributes: |
+| | self.fictional = True |
+| | self.movie = movie |
+| | # be aware of mutable default values, since defaults are shared |
+| | self.superpowers = superpowers |
+| | |
+| | # The "super" function lets you access the parent class's methods |
+| | # that are overridden by the child, in this case, the **init** method. |
+| | # This calls the parent class constructor: |
+| | super().**init**(name) |
+| | |
+| | # override the sing method |
+| | def sing(self): |
+| | return 'Dun, dun, DUN!' |
+| | |
+| | # add an additional instance method |
+| | def boast(self): |
+| | for power in self.superpowers: |
+| | print("I wield the power of {pow}!".format(pow=power)) |
+| | |
+| | |
+| | if **name** == '**main**': |
+| | sup = Superhero(name="Tick") |
+| | |
+| | # Instance type checks |
+| | if isinstance(sup, Human): |
+| | print('I am human') |
+| | if type(sup) is Superhero: |
+| | print('I am a superhero') |
+| | |
+| | # Get the Method Resolution search Order used by both getattr() and super() |
+| | # This attribute is dynamic and can be updated |
+| | print(Superhero.**mro**) # => (<class '**main**.Superhero'>, |
+| | # => <class 'human.Human'>, <class 'object'>) |
+| | |
+| | # Calls parent method but uses its own class attribute |
+| | print(sup.get_species()) # => Superhuman |
+| | |
+| | # Calls overridden method |
+| | print(sup.sing()) # => Dun, dun, DUN! |
+| | |
+| | # Calls method from Human |
+| | sup.say('Spoon') # => Tick: Spoon |
+| | |
+| | # Call method that exists only in Superhero |
+| | sup.boast() # => I wield the power of super strength! |
+| | # => I wield the power of bulletproofing! |
+| | |
+| | # Inherited class attribute |
+| | sup.age = 31 |
+| | print(sup.age) # => 31 |
+| | |
+| | # Attribute that only exists within Superhero |
+| | print('Am I Oscar eligible? ' + str(sup.movie)) |
+| | |
+| | #################################################### |
+| | ## 6.2 Multiple Inheritance |
+| | #################################################### |
+| | |
+| | # Another class definition |
+| | # bat.py |
+| | class Bat: |
+| | |
+| | species = 'Baty' |
+| | |
+| | def **init**(self, can_fly=True): |
+| | self.fly = can_fly |
+| | |
+| | # This class also has a say method |
+| | def say(self, msg): |
+| | msg = '... ... ...' |
+| | return msg |
+| | |
+| | # And its own method as well |
+| | def sonar(self): |
+| | return '))) ... (((' |
+| | |
+| | if **name** == '**main**': |
+| | b = Bat() |
+| | print(b.say('hello')) |
+| | print(b.fly) |
+| | |
+| | |
+| | # And yet another class definition that inherits from Superhero and Bat |
+| | # superhero.py |
+| | from superhero import Superhero |
+| | from bat import Bat |
+| | |
+| | # Define Batman as a child that inherits from both Superhero and Bat |
+| | class Batman(Superhero, Bat): |
+| | |
+| | def **init**(self, *args, **kwargs): |
+| | # Typically to inherit attributes you have to call super: |
+| | # super(Batman, self).**init**(\*args, **kwargs) |
+| | # However we are dealing with multiple inheritance here, and super() |
+| | # only works with the next base class in the MRO list. |
+| | # So instead we explicitly call **init** for all ancestors. |
+| | # The use of *args and \*\*kwargs allows for a clean way to pass arguments, |
+| | # with each parent "peeling a layer of the onion". |
+| | Superhero.**init**(self, 'anonymous', movie=True, |
+| | superpowers=['Wealthy'], *args, **kwargs) |
+| | Bat.**init**(self, \*args, can_fly=False, **kwargs) |
+| | # override the value for the name attribute |
+| | self.name = 'Sad Affleck' |
+| | |
+| | def sing(self): |
+| | return 'nan nan nan nan nan batman!' |
+| | |
+| | |
+| | if **name** == '**main**': |
+| | sup = Batman() |
+| | |
+| | # Get the Method Resolution search Order used by both getattr() and super(). |
+| | # This attribute is dynamic and can be updated |
+| | print(Batman.**mro**) # => (<class '**main**.Batman'>, |
+| | # => <class 'superhero.Superhero'>, |
+| | # => <class 'human.Human'>, |
+| | # => <class 'bat.Bat'>, <class 'object'>) |
+| | |
+| | # Calls parent method but uses its own class attribute |
+| | print(sup.get_species()) # => Superhuman |
+| | |
+| | # Calls overridden method |
+| | print(sup.sing()) # => nan nan nan nan nan batman! |
+| | |
+| | # Calls method from Human, because inheritance order matters |
+| | sup.say('I agree') # => Sad Affleck: I agree |
+| | |
+| | # Call method that exists only in 2nd ancestor |
+| | print(sup.sonar()) # => ))) ... ((( |
+| | |
+| | # Inherited class attribute |
+| | sup.age = 100 |
+| | print(sup.age) # => 100 |
+| | |
+| | # Inherited attribute from 2nd ancestor whose default value was overridden. |
+| | print('Can I fly? ' + str(sup.fly)) # => Can I fly? False |
+| | |
+| | |
+| | |
+| | #################################################### |
+| | ## 7. Advanced |
+| | #################################################### |
+| | |
+| | # Generators help you make lazy code. |
+| | def double_numbers(iterable): |
+| | for i in iterable: |
+| | yield i + i |
+| | |
+| | # Generators are memory-efficient because they only load the data needed to |
+| | # process the next value in the iterable. This allows them to perform |
+| | # operations on otherwise prohibitively large value ranges. |
+| | # NOTE: `range` replaces `xrange` in Python 3. |
+| | for i in double_numbers(range(1, 900000000)): # `range` is a generator. |
+| | print(i) |
+| | if i >= 30: |
+| | break |
+| | |
+| | # Just as you can create a list comprehension, you can create generator |
+| | # comprehensions as well. |
+| | values = (-x for x in [1,2,3,4,5]) |
+| | for x in values: |
+| | print(x) # prints -1 -2 -3 -4 -5 to console/terminal |
+| | |
+| | # You can also cast a generator comprehension directly to a list. |
+| | values = (-x for x in [1,2,3,4,5]) |
+| | gen_to_list = list(values) |
+| | print(gen_to_list) # => [-1, -2, -3, -4, -5] |
+| | |
+| | |
+| | # Decorators |
+| | # In this example `beg` wraps `say`. If say_please is True then it |
+| | # will change the returned message. |
+| | from functools import wraps |
+| | |
+| | |
+| | def beg(target_function): |
+| | @wraps(target_function) |
+| | def wrapper(*args, \*\*kwargs): |
+| | msg, say_please = target_function(*args, \*\*kwargs) |
+| | if say_please: |
+| | return "{} {}".format(msg, "Please! I am poor :(") |
+| | return msg |
+| | |
+| | return wrapper |
+| | |
+| | |
+| | @beg |
+| | def say(say_please=False): |
+| | msg = "Can you buy me a beer?" |
+| | return msg, say_please |
+| | |
+| | |
+| | print(say()) # Can you buy me a beer? |
+| | print(say(say_please=True)) # Can you buy me a beer? Please! I am poor :( |
 
 [view raw](https://gist.github.com/bgoonz/282774d28326ff83d8b42ae77ab1fee3/raw/7bb9df45821950aa4cb17588ce88d3f78f64ed2e/python-cheatsheet.py)[python-cheatsheet.py](https://gist.github.com/bgoonz/282774d28326ff83d8b42ae77ab1fee3#file-python-cheatsheet-py) hosted with ❤ by [GitHub](https://github.com/)

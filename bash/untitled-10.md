@@ -166,4 +166,3 @@ Redirect both to a file:
 ```text
 grep -irl faker . &> file.log
 ```
-

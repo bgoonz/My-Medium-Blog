@@ -186,9 +186,9 @@ This text is part of the third item. Use two spaces at end of the the list item 
 A double line break, breaks out of the list.
 ```
 
-* Item 1
-* Item 2
-* Item 3 This text is part of the third item. Use two spaces at end of the the list item to break the line.
+- Item 1
+- Item 2
+- Item 3 This text is part of the third item. Use two spaces at end of the the list item to break the line.
 
 A double line break, breaks out of the list.
 
@@ -344,4 +344,3 @@ but shows up in a code box.
 [bgoonz’s gists · GitHub](https://gist.github.com/bgoonz)
 
 Or Checkout my personal Resource Site:
-

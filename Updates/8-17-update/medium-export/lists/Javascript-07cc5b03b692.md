@@ -1,8 +1,6 @@
-Javascript
-==========
+# Javascript
 
-Javascript
-----------
+## Javascript
 
 [The Penultimate Web Developer’s Cheat Sheet](https://medium.com/p/a02a423139a4)
 

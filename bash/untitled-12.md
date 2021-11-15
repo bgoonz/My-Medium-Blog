@@ -642,8 +642,8 @@ _The code to be executed if the expression within braces is true can be found af
 
 ## Loops <a id="a6ef"></a>
 
-* _**for**_
-* _**while**_
+- _**for**_
+- _**while**_
 
 > \(there’s another loop called until but I don’t use it so you can look it up if you’d like\)
 >
@@ -685,7 +685,7 @@ The **while** executes a piece of code if the control expression is true, and on
 
 As in almost any programming language, you can use functions to group pieces of code in a more logical way or practice the divine art of recursion.
 
-Declaring a function is just a matter of writing function my\_func { my\_code }.
+Declaring a function is just a matter of writing function my_func { my_code }.
 
 Calling a function is just like calling another program, you just write its name.
 
@@ -1430,9 +1430,8 @@ fi
 
 {: .-one-column}
 
-* [Bash-hackers wiki](http://wiki.bash-hackers.org/) _\(bash-hackers.org\)_
-* [Shell vars](http://wiki.bash-hackers.org/syntax/shellvars) _\(bash-hackers.org\)_
-* [Learn bash in y minutes](https://learnxinyminutes.com/docs/bash/) _\(learnxinyminutes.com\)_
-* [Bash Guide](http://mywiki.wooledge.org/BashGuide) _\(mywiki.wooledge.org\)_
-* [ShellCheck](https://www.shellcheck.net/) _\(shellcheck.net\)_
-
+- [Bash-hackers wiki](http://wiki.bash-hackers.org/) _\(bash-hackers.org\)_
+- [Shell vars](http://wiki.bash-hackers.org/syntax/shellvars) _\(bash-hackers.org\)_
+- [Learn bash in y minutes](https://learnxinyminutes.com/docs/bash/) _\(learnxinyminutes.com\)_
+- [Bash Guide](http://mywiki.wooledge.org/BashGuide) _\(mywiki.wooledge.org\)_
+- [ShellCheck](https://www.shellcheck.net/) _\(shellcheck.net\)_

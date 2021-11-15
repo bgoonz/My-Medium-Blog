@@ -1,9 +1,8 @@
-Job Boards and The Hunt
-=======================
+# Job Boards and The Hunt
 
 I can’t imagine the kind of masochism it would take to enjoy the act of posting and daily maintenance on a job board…It’s part of the…
 
-------------------------------------------------------------------------
+---
 
 ### Job Boards and The Hunt
 
@@ -12,7 +11,7 @@ I can’t imagine the kind of masochism it would take to enjoy the act of postin
 <a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b"><strong>A list of all of my articles to link to future posts</strong><br />
 <em>You should probably skip this one… seriously it’s just for internal use!</em>bryanguner.medium.com</a><a href="https://bryanguner.medium.com/a-list-of-all-of-my-articles-to-link-to-future-posts-1f6f88ebdf5b" class="js-mixtapeImage mixtapeImage mixtapeImage--empty u-ignoreBlock"></a>
 
-------------------------------------------------------------------------
+---
 
 ### Update(After The Interview):
 
@@ -24,33 +23,33 @@ As a candidate, there are key next steps that you can and should after every int
 
 ‍
 
-*Hi (name),*
+_Hi (name),_
 
-> *Thank you so much for taking the time to meet with me yesterday to discuss my candidacy for (role title). After learning more about (share one or two takeaways from the interview about the company/team’s priorities), I’m even more excited to bring my skills in (1–3 relevant skills) to the team.*
+> _Thank you so much for taking the time to meet with me yesterday to discuss my candidacy for (role title). After learning more about (share one or two takeaways from the interview about the company/team’s priorities), I’m even more excited to bring my skills in (1–3 relevant skills) to the team._
 
-> *I look forward to hearing from you about next steps, and if there is anything that I can clarify about my experience or qualifications for the (role title) position, please don’t hesitate to reach out.*
+> _I look forward to hearing from you about next steps, and if there is anything that I can clarify about my experience or qualifications for the (role title) position, please don’t hesitate to reach out._
 
-> *Thank you for your consideration,*
+> _Thank you for your consideration,_
 
-> *(your name)*
+> _(your name)_
 
 **Follow up**
 
 Don’t wait for the company to reach out to you! Be proactive in showing your interest by checking in to see where you stand in the process. If a company indicates a deadline by which you will hear back, and the deadline has passed, follow-up!
 
 **Check your email and phone regularly  
-‍***  
-*Don’t ghost on a company at any stage in the process; make sure you add their domain to your safe senders list and respond to any messages within 24 hours.
+‍\***  
+\*Don’t ghost on a company at any stage in the process; make sure you add their domain to your safe senders list and respond to any messages within 24 hours.
 
 ‍
 
 **Be prepared  
-‍***  
-*You might be invited for another interview on short notice; review the description regularly so it doesn’t slip from your memory, and keep brushing up on skills you may need for an interview (chances are, this won’t be the only job you’ll need them for anyway!)
+‍\***  
+\*You might be invited for another interview on short notice; review the description regularly so it doesn’t slip from your memory, and keep brushing up on skills you may need for an interview (chances are, this won’t be the only job you’ll need them for anyway!)
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*H4pwwuDEjkYTWKpJ.gif" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 > Here I will maintain a running list of applicable job boards and below I will go into detail about the niches they occupy and whatever I resource I have found to use them to your maximum advantage. !
 
@@ -82,60 +81,60 @@ Don’t wait for the company to reach out to you! Be proactive in showing your i
 24. <span id="f209"><a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#freelancer" class="markup--anchor markup--li-anchor">Freelancer</a></span>
 25. <span id="5ec4"><a href="https://www.freecodecamp.org/news/how-to-find-remote-jobs/#freelancermap" class="markup--anchor markup--li-anchor">freelancermap</a></span>
 
-------------------------------------------------------------------------
+---
 
 ### List:
 
 #### General Boards
 
--   <span id="a076"><a href="https://builtin.com/jobs" class="markup--anchor markup--li-anchor">Built In</a></span>
--   <span id="c522"><a href="https://stackoverflow.com/jobs" class="markup--anchor markup--li-anchor">Stack Overflow</a></span>
--   <span id="8235"><a href="http://angel.co/jobs" class="markup--anchor markup--li-anchor">angel.co</a></span>
--   <span id="ae9e"><a href="https://www.theladders.com/jobs/search-jobs" class="markup--anchor markup--li-anchor">The Ladders</a></span>
--   <span id="aceb"><a href="http://www.crunchboard.com/jobs" class="markup--anchor markup--li-anchor">CrunchBoard</a></span>
--   <span id="7e5f"><a href="https://uncubed.com/" class="markup--anchor markup--li-anchor">Uncubed</a></span>
--   <span id="8678"><a href="https://technical.ly/jobs/" class="markup--anchor markup--li-anchor">Technical.ly</a></span>
--   <span id="c7fe"><a href="https://www.dice.com/" class="markup--anchor markup--li-anchor">Dice</a></span>
--   <span id="23f7"><a href="https://www.techcareers.com/" class="markup--anchor markup--li-anchor">Tech Careers</a></span>
--   <span id="20cf"><a href="http://jobs.mashable.com/jobs/search/results" class="markup--anchor markup--li-anchor">Mashable</a></span>
+- <span id="a076"><a href="https://builtin.com/jobs" class="markup--anchor markup--li-anchor">Built In</a></span>
+- <span id="c522"><a href="https://stackoverflow.com/jobs" class="markup--anchor markup--li-anchor">Stack Overflow</a></span>
+- <span id="8235"><a href="http://angel.co/jobs" class="markup--anchor markup--li-anchor">angel.co</a></span>
+- <span id="ae9e"><a href="https://www.theladders.com/jobs/search-jobs" class="markup--anchor markup--li-anchor">The Ladders</a></span>
+- <span id="aceb"><a href="http://www.crunchboard.com/jobs" class="markup--anchor markup--li-anchor">CrunchBoard</a></span>
+- <span id="7e5f"><a href="https://uncubed.com/" class="markup--anchor markup--li-anchor">Uncubed</a></span>
+- <span id="8678"><a href="https://technical.ly/jobs/" class="markup--anchor markup--li-anchor">Technical.ly</a></span>
+- <span id="c7fe"><a href="https://www.dice.com/" class="markup--anchor markup--li-anchor">Dice</a></span>
+- <span id="23f7"><a href="https://www.techcareers.com/" class="markup--anchor markup--li-anchor">Tech Careers</a></span>
+- <span id="20cf"><a href="http://jobs.mashable.com/jobs/search/results" class="markup--anchor markup--li-anchor">Mashable</a></span>
 
 #### Remote or Relocation Boards:
 
--   <span id="1e47"><a href="https://weworkremotely.com/" class="markup--anchor markup--li-anchor">We Work Remotely</a></span>
--   <span id="37d2"><a href="https://relocate.me/" class="markup--anchor markup--li-anchor">Relocate</a><a href="https://workfromhomejobs.me/" class="markup--anchor markup--li-anchor">‍</a></span>
--   <span id="aad7"><a href="https://workfromhomejobs.me/" class="markup--anchor markup--li-anchor">Work From Home Jobs</a></span>
--   <span id="d1fc"><a href="https://docs.google.com/spreadsheets/d/16V7hG7l24hBAnlcmaSG3mrusDx1uj_ZsLwnTu7L_wsQ/edit?usp=sharing" class="markup--anchor markup--li-anchor">Remote Boards &amp; Companies Spreadsheet</a></span>
--   <span id="5267"><a href="https://careervault.io/" class="markup--anchor markup--li-anchor">Career Vault</a></span>
+- <span id="1e47"><a href="https://weworkremotely.com/" class="markup--anchor markup--li-anchor">We Work Remotely</a></span>
+- <span id="37d2"><a href="https://relocate.me/" class="markup--anchor markup--li-anchor">Relocate</a><a href="https://workfromhomejobs.me/" class="markup--anchor markup--li-anchor">‍</a></span>
+- <span id="aad7"><a href="https://workfromhomejobs.me/" class="markup--anchor markup--li-anchor">Work From Home Jobs</a></span>
+- <span id="d1fc"><a href="https://docs.google.com/spreadsheets/d/16V7hG7l24hBAnlcmaSG3mrusDx1uj_ZsLwnTu7L_wsQ/edit?usp=sharing" class="markup--anchor markup--li-anchor">Remote Boards &amp; Companies Spreadsheet</a></span>
+- <span id="5267"><a href="https://careervault.io/" class="markup--anchor markup--li-anchor">Career Vault</a></span>
 
 #### DS Boards:
 
--   <span id="a50a"><a href="https://www.bigdatajobs.com/" class="markup--anchor markup--li-anchor">BigDataJobs</a></span>
--   <span id="e7ce"><a href="https://icrunchdata.com/data-science-jobs/" class="markup--anchor markup--li-anchor">Icrunchdata</a></span>
--   <span id="d66f"><a href="https://www.analyticsjobs.co.uk/" class="markup--anchor markup--li-anchor">Analyticsjobs.co.uk</a></span>
+- <span id="a50a"><a href="https://www.bigdatajobs.com/" class="markup--anchor markup--li-anchor">BigDataJobs</a></span>
+- <span id="e7ce"><a href="https://icrunchdata.com/data-science-jobs/" class="markup--anchor markup--li-anchor">Icrunchdata</a></span>
+- <span id="d66f"><a href="https://www.analyticsjobs.co.uk/" class="markup--anchor markup--li-anchor">Analyticsjobs.co.uk</a></span>
 
 #### Design Boards
 
--   <span id="0a09"><a href="https://www.behance.net/joblist" class="markup--anchor markup--li-anchor">Behance</a></span>
--   <span id="0174"><a href="https://www.uxjobsboard.com/" class="markup--anchor markup--li-anchor">UX Jobs Board</a></span>
--   <span id="ef44"><a href="https://www.krop.com/creative-jobs/ux-ui-designer/" class="markup--anchor markup--li-anchor">Krop</a></span>
+- <span id="0a09"><a href="https://www.behance.net/joblist" class="markup--anchor markup--li-anchor">Behance</a></span>
+- <span id="0174"><a href="https://www.uxjobsboard.com/" class="markup--anchor markup--li-anchor">UX Jobs Board</a></span>
+- <span id="ef44"><a href="https://www.krop.com/creative-jobs/ux-ui-designer/" class="markup--anchor markup--li-anchor">Krop</a></span>
 
 #### Software Development
 
--   <span id="4702"><a href="https://www.honeypot.io/pages/for_employers" class="markup--anchor markup--li-anchor">Honeypot.io</a></span>
--   <span id="d025"><a href="https://jobs.github.com/" class="markup--anchor markup--li-anchor">GitHub</a></span>
--   <span id="ed46"><a href="https://blabladev.eu/" class="markup--anchor markup--li-anchor">BlablaDev</a></span>
--   <span id="c23f"><a href="http://jobs.smashingmagazine.com/" class="markup--anchor markup--li-anchor">Smashing <strong>Magazine</strong></a></span>
--   <span id="61fd"><a href="http://jobs.arstechnica.com/" class="markup--anchor markup--li-anchor">arstechnica</a></span>
--   <span id="c526"><a href="http://jobs.37signals.com/" class="markup--anchor markup--li-anchor">obs.37signals</a></span>
--   <span id="1ec6"><a href="http://news.ycombinator.com/submitted?id=whoishiring" class="markup--anchor markup--li-anchor">ycombinator</a></span>
--   <span id="fa87"><a href="http://jobs.slashdot.org/jobboard.php" class="markup--anchor markup--li-anchor">jobs.slashdot.org</a></span>
--   <span id="3dfc"><a href="http://angel.co/talent" class="markup--anchor markup--li-anchor">http://angel.co/talent</a></span>
--   <span id="319e"><a href="https://www.whitetruffle.com/" class="markup--anchor markup--li-anchor">whitetruffle</a></span>
--   <span id="428a"><a href="http://www.crunchboard.com/jobs/" class="markup--anchor markup--li-anchor">crunchboard</a></span>
+- <span id="4702"><a href="https://www.honeypot.io/pages/for_employers" class="markup--anchor markup--li-anchor">Honeypot.io</a></span>
+- <span id="d025"><a href="https://jobs.github.com/" class="markup--anchor markup--li-anchor">GitHub</a></span>
+- <span id="ed46"><a href="https://blabladev.eu/" class="markup--anchor markup--li-anchor">BlablaDev</a></span>
+- <span id="c23f"><a href="http://jobs.smashingmagazine.com/" class="markup--anchor markup--li-anchor">Smashing <strong>Magazine</strong></a></span>
+- <span id="61fd"><a href="http://jobs.arstechnica.com/" class="markup--anchor markup--li-anchor">arstechnica</a></span>
+- <span id="c526"><a href="http://jobs.37signals.com/" class="markup--anchor markup--li-anchor">obs.37signals</a></span>
+- <span id="1ec6"><a href="http://news.ycombinator.com/submitted?id=whoishiring" class="markup--anchor markup--li-anchor">ycombinator</a></span>
+- <span id="fa87"><a href="http://jobs.slashdot.org/jobboard.php" class="markup--anchor markup--li-anchor">jobs.slashdot.org</a></span>
+- <span id="3dfc"><a href="http://angel.co/talent" class="markup--anchor markup--li-anchor">http://angel.co/talent</a></span>
+- <span id="319e"><a href="https://www.whitetruffle.com/" class="markup--anchor markup--li-anchor">whitetruffle</a></span>
+- <span id="428a"><a href="http://www.crunchboard.com/jobs/" class="markup--anchor markup--li-anchor">crunchboard</a></span>
 
 **I am intentionally not linking glassdoor because they have irritated me for the last time by insisting I provide a job review every time I want to access their content… (To the makers of glassdoor… HOW MANY TIMES A MONTH DO YOU THINK I CHANGE JOBS!!!!) I don’t have 15 minutes to make up a job experience every time I want to read a review.**
 
-------------------------------------------------------------------------
+---
 
 > Also here is a repo of compiled job search and interviewing resources:
 
@@ -150,11 +149,11 @@ Don’t wait for the company to reach out to you! Be proactive in showing your i
 
 Seek to leverage the connections you have with people you know and companies you want to work with. I know that that’s a violation of the premise of this article but without even feeling the need to provide quantitative proof; I can confidently assume that this is the most <a href="https://www.investopedia.com/terms/r/returnoninvestment.asp" class="markup--anchor markup--p-anchor">RO</a>I efficient way to produce a desirable result. (Sorry introverts… 2020 may have been your year but this is our world. 😘)
 
-**If personal connections don’t come through, the next best thing is cold outreach (*best in terms of results…. personally I hate cold calling strangers and I am an extrovert*.)**
+**If personal connections don’t come through, the next best thing is cold outreach (_best in terms of results…. personally I hate cold calling strangers and I am an extrovert_.)**
 
 1.  <span id="2139">Before or after submitting an application, **identify 1–3 professionals to reach out to** at the company to express interest in opportunities.</span>
 2.  <span id="fb8b">**Send a message to express interest and request an informational interview** with the individual via LinkedIn, email, Twitter, or other available communication methods.</span>
-3.  <span id="840d">**If you hear back** and the individual is willing to connect, **confirm a day and time to conduct a preliminary interview.** *OR* **If you have yet to hear back after 3 business days, follow-up.**</span>
+3.  <span id="840d">**If you hear back** and the individual is willing to connect, **confirm a day and time to conduct a preliminary interview.** _OR_ **If you have yet to hear back after 3 business days, follow-up.**</span>
 
 Once you send off a message in step two, there are a variety of responses you may receive. Sometimes an individual will forward you along to someone who may be of better assistance, other times your message may be overlooked with no reply, and its possible (best case scenario) your request for a chat becomes an invitation to interview.
 
@@ -166,7 +165,7 @@ I am going to devote a lot of time to this one because it is the largest and mos
 
 LinkedIn now has <a href="https://news.linkedin.com/about-us#Statistics" class="markup--anchor markup--p-anchor">almost 740 million members</a> with over 55 million registered companies. (for comparison 12.3 million people visited Indeed in October, up 19.6 percent. <a href="http://www.monster.com/" class="markup--anchor markup--p-anchor">Monster.com</a> attracted 12.1 million people, and <a href="http://www.careerbuilder.com/" class="markup--anchor markup--p-anchor">CareerBuilder.com</a>attractedd 11.3 million in that same time) and LinkedIn is the most-used social media platform amongst Fortune 500 companies as it provides far more networking capabilities than pure recruitment.
 
-If you put your resume and skills on LinkedIn.com as a software Engineer, and state that you are open to new opportunities, you *will* be contacted by multiple recruiters, and if your skills are desirable possibly also directly by companies seeking to hire you. It’s a developer’s market; there’s not enough people out there, especially in America.
+If you put your resume and skills on LinkedIn.com as a software Engineer, and state that you are open to new opportunities, you _will_ be contacted by multiple recruiters, and if your skills are desirable possibly also directly by companies seeking to hire you. It’s a developer’s market; there’s not enough people out there, especially in America.
 
 Here’s my profile… feel free to connect… the larger your network the greater your exposure is to someone who works at your potential dream job.
 
@@ -182,16 +181,16 @@ Here’s A Linkedin Checklist I will be using before I return to the job hunt!
 
 #### Experience Section
 
--   <span id="a517">\[ \] I **have** listed all professional roles included on my resume in this section and any that I had to cut from my resume for space</span>
--   <span id="eca7">\[ \] I **have** written 2–4 power statements for each experience listed (okay to copy and paste from resume)</span>
--   <span id="d298">\[ \] My power statements for each experience <a href="https://www.linkedin.com/pulse/update-how-add-bullet-points-your-linkedin-profile-erin-dore-miller/" class="markup--anchor markup--li-anchor">are bulleted</a>, not in paragraph form.</span>
--   <span id="ec6c">\[ \] I **did** list responsibilities in bullet point format (I **did not** leave in paragraph format)</span>
--   <span id="f472">\[ \] I **did** start each bullet point with <a href="https://docs.google.com/document/d/1wZkDPBWtQZDGGdvStD61iRx_jOWVlIyyQl9UOYHtZgA/edit?usp=sharing" class="markup--anchor markup--li-anchor">an action verb</a> and I **did not** use phrases such as: `Assisted with...` `Worked on...` `Helped with...` (`Solely responsible for...` ok)</span>
--   <span id="9a26">\[ \] I **did** describe past projects in past tense and current projects in present tense</span>
--   <span id="0f5a">\[ \] I **did not** use pronouns such as: “I,” “we,” “they, “you,” “me,” “us”</span>
--   <span id="3616">\[ \] **Optional:** Bootcamp student experience and projects can be listed under your experience section if you have no (or almost no) prior work experience.</span>
--   <span id="7fa1">\[ \] If I listed my Bootcamp student experience, my title is \[name of program\] Student (example: Data Science Student)</span>
--   <span id="c928">\[ \] I copied and pasted my Lambda projects in my student description and also included them in the Accomplishments section</span>
+- <span id="a517">\[ \] I **have** listed all professional roles included on my resume in this section and any that I had to cut from my resume for space</span>
+- <span id="eca7">\[ \] I **have** written 2–4 power statements for each experience listed (okay to copy and paste from resume)</span>
+- <span id="d298">\[ \] My power statements for each experience <a href="https://www.linkedin.com/pulse/update-how-add-bullet-points-your-linkedin-profile-erin-dore-miller/" class="markup--anchor markup--li-anchor">are bulleted</a>, not in paragraph form.</span>
+- <span id="ec6c">\[ \] I **did** list responsibilities in bullet point format (I **did not** leave in paragraph format)</span>
+- <span id="f472">\[ \] I **did** start each bullet point with <a href="https://docs.google.com/document/d/1wZkDPBWtQZDGGdvStD61iRx_jOWVlIyyQl9UOYHtZgA/edit?usp=sharing" class="markup--anchor markup--li-anchor">an action verb</a> and I **did not** use phrases such as: `Assisted with...` `Worked on...` `Helped with...` (`Solely responsible for...` ok)</span>
+- <span id="9a26">\[ \] I **did** describe past projects in past tense and current projects in present tense</span>
+- <span id="0f5a">\[ \] I **did not** use pronouns such as: “I,” “we,” “they, “you,” “me,” “us”</span>
+- <span id="3616">\[ \] **Optional:** Bootcamp student experience and projects can be listed under your experience section if you have no (or almost no) prior work experience.</span>
+- <span id="7fa1">\[ \] If I listed my Bootcamp student experience, my title is \[name of program\] Student (example: Data Science Student)</span>
+- <span id="c928">\[ \] I copied and pasted my Lambda projects in my student description and also included them in the Accomplishments section</span>
 
 ### Do’s:
 
@@ -199,7 +198,7 @@ Here’s A Linkedin Checklist I will be using before I return to the job hunt!
 
 **Follow business owners and senior managers, successful team leaders in large organizations, startup owners. You would be surprised how willing some otherwise busy executives are to rub elbows with veritable newcomers. They’re not just doing this out of the kindness of their hearts, just like you… they have an ulterior motive. They are hoping to build goodwill with the incoming workforce in a bid to make their company more attractive to high quality candidates. If they give you any of their time…treat it like an interview.**
 
-> *To leverage this information, (the trick is to constantly remind yourself to be on your game with speaking with them.) I do not care what your teacher’s past have said… mark my words…* ***THERE IS MOST CERTAINLY SUCH A THING AS A STUPID QUESTION****…Anyone who tells you otherwise is either stupid themselves or just overcome with their own compassion (an admirable trait but ultimately a disservice to you the competitive job seeker).*
+> _To leverage this information, (the trick is to constantly remind yourself to be on your game with speaking with them.) I do not care what your teacher’s past have said… mark my words…_ **\*THERE IS MOST CERTAINLY SUCH A THING AS A STUPID QUESTION\*\***…Anyone who tells you otherwise is either stupid themselves or just overcome with their own compassion (an admirable trait but ultimately a disservice to you the competitive job seeker).\*
 
 <a href="https://hbr.org/2018/05/the-surprising-power-of-questions" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://hbr.org/2018/05/the-surprising-power-of-questions"><strong>How to Ask Great Questions</strong><br />
 <em>In Brief The Problem Some professionals such as litigators, journalists and even doctors, are taught to ask questions…</em>hbr.org</a><a href="https://hbr.org/2018/05/the-surprising-power-of-questions" class="js-mixtapeImage mixtapeImage u-ignoreBlock"></a>
@@ -226,7 +225,7 @@ Placing keywords strategically into your LinkedIn profile is virtually the only 
 
 <figure><img src="https://cdn-images-1.medium.com/max/600/1*3_3Cb73SQM_YazWGpZWtIw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*aI1PfkSpsUks598LAJvKoQ.png" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 ### Why it matters*¿*
 
@@ -234,17 +233,17 @@ Placing keywords strategically into your LinkedIn profile is virtually the only 
 
 Most of us are familiar with the concept of six degrees of separation — the idea is that anyone in the planet can be connected to anyone else in just six steps. So through just five other people, you’re effectively connected to the Queen of England, Jim Belushi or even yo mamma.
 
-------------------------------------------------------------------------
+---
 
 ### Back to the other Job Board Niches:
 
-***3. Traditional job boards***. Dice.com, Monster.com, etc. They will not find you great jobs at technology companies; they may find you openings as a software engineer at other types of more traditional companies (for example, banks, retail chains, etc though.
+**_3. Traditional job boards_**. Dice.com, Monster.com, etc. They will not find you great jobs at technology companies; they may find you openings as a software engineer at other types of more traditional companies (for example, banks, retail chains, etc though.
 
-***4. Local-focused sites***. The biggest is Craigslist, but there are others. Often great for contract work and opportunities you wouldn’t have otherwise come across.
+**_4. Local-focused sites_**. The biggest is Craigslist, but there are others. Often great for contract work and opportunities you wouldn’t have otherwise come across.
 
-***5. Freelancer websites***. oDesk.com, Elance.com, etc. Lower pay, but 100% contract work, and has a lot of flexible opportunities if you’re not looking for traditional full-time employment or remote work.
+**_5. Freelancer websites_**. oDesk.com, Elance.com, etc. Lower pay, but 100% contract work, and has a lot of flexible opportunities if you’re not looking for traditional full-time employment or remote work.
 
--   <span id="1350"><a href="https://www.quora.com/What-are-the-best-job-boards-for-software-engineers" class="markup--anchor markup--li-anchor">Source</a></span>
+- <span id="1350"><a href="https://www.quora.com/What-are-the-best-job-boards-for-software-engineers" class="markup--anchor markup--li-anchor">Source</a></span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/600/1*3_3Cb73SQM_YazWGpZWtIw.png" class="graf-image" /></figure><figure><img src="https://cdn-images-1.medium.com/max/600/1*aI1PfkSpsUks598LAJvKoQ.png" class="graf-image" /></figure>
 
@@ -256,7 +255,7 @@ Most of us are familiar with the concept of six degrees of separation — th
 
 <figure><img src="https://cdn-images-1.medium.com/max/1200/1*5-FYxWj0q8sUvpDoAR3ZLA.png" class="graf-image" /></figure>
 
-------------------------------------------------------------------------
+---
 
 ### Discover More:
 

@@ -1,8 +1,6 @@
-KeepList
-========
+# KeepList
 
-KeepList
---------
+## KeepList
 
 [Benchmarking the Best Way to Reverse a String in Python](https://medium.com/p/9c73d87b1b1a)
 

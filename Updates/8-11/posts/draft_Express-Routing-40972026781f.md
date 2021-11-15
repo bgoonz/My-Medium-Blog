@@ -1,44 +1,41 @@
-Express-Routing
-===============
+# Express-Routing
 
 Note: To read this in a rendered view, open your VS Code Command Palate (using Control+Shift+P on Windows, Command+Shift+P on macOS)
 
-------------------------------------------------------------------------
+---
 
 ### Express-Routing
 
 #### **Note:** To read this in a rendered view, open your VS Code Command Palate (using Control+Shift+P on Windows, Command+Shift+P on macOS) 
 
-  
+####
 
-####   
+Create an Express application.
 
-Create an Express application. 
-
--   <span id="216c">Has a page that shows a list of people</span>
--   <span id="fc00">Has a page that allows you to add a person</span>
--   <span id="b702">Is protected from Cross-Site Request Forgeries</span>
+- <span id="216c">Has a page that shows a list of people</span>
+- <span id="fc00">Has a page that allows you to add a person</span>
+- <span id="b702">Is protected from Cross-Site Request Forgeries</span>
 
 In the **images** directory, you will find
 
--   <span id="b45d">A screenshot of the person listing page</span>
--   <span id="39bc">A screenshot of the person creation form</span>
+- <span id="b45d">A screenshot of the person listing page</span>
+- <span id="39bc">A screenshot of the person creation form</span>
 
-The screenshots show you what is expected from a *structure* standpoint. They  
-are meant to be guides. The tests will *not* make any assertions about the  
+The screenshots show you what is expected from a _structure_ standpoint. They  
+are meant to be guides. The tests will _not_ make any assertions about the  
 styling of your pages, merely the structure of the pages and the data presented  
 on them.
 
 Use the technologies you have used up to this point. They are all installed in  
 the **package.json** for your convenience.
 
--   <span id="e52d">Express.js</span>
--   <span id="ab8b">pg (the library to connect to PostgreSQL), Sequelize, and Sequelize CLI</span>
--   <span id="8b4e">CSURF middleware</span>
--   <span id="b9f8">Pug.js</span>
--   <span id="b4d2">cookie-parser middleware</span>
--   <span id="52f9">body-parser middleware</span>
--   <span id="5536">nodemon (for development purposes)</span>
+- <span id="e52d">Express.js</span>
+- <span id="ab8b">pg (the library to connect to PostgreSQL), Sequelize, and Sequelize CLI</span>
+- <span id="8b4e">CSURF middleware</span>
+- <span id="b9f8">Pug.js</span>
+- <span id="b4d2">cookie-parser middleware</span>
+- <span id="52f9">body-parser middleware</span>
+- <span id="5536">nodemon (for development purposes)</span>
 
 A **package.json** file already exists with the dependencies. Please run `npm install` to install those before doing your development and running your tests.  
 Do not remove any dependencies already listed in the **package.json**.
@@ -50,13 +47,13 @@ and runnable from `npm run dev`.
 
 ### Running the tests
 
-This is “black-box testing”. The tests will *only* use your Express application.  
+This is “black-box testing”. The tests will _only_ use your Express application.  
 It will not make connections to the database or directly test your route  
 handlers. They will merely make HTTP requests of your Express app and analyze  
 the responses.
 
 To ease your development, tests will run against your **development** database  
-and *not* the test database.
+and _not_ the test database.
 
 **You** will be responsible for creating, migrating, and seeding the data in  
 your development database.
@@ -64,8 +61,8 @@ your development database.
 Run your tests with `npm test`. You can run `npm test test/test-file-name.js`  
 to run the tests for a specific part of the assessment.
 
--   <span id="5f97">Example: To only run the test `01-form-page.js` do,  
-    `npm test test/01-form-page.js`</span>
+- <span id="5f97">Example: To only run the test `01-form-page.js` do,  
+  `npm test test/01-form-page.js`</span>
 
 If you get tired of seeing all of the Sequelize failures, you can try running:
 
@@ -90,8 +87,8 @@ Please use port 8081 for your Express.js server.
 
 Create a database user with `CREATEDB` priveleges:
 
--   <span id="96a3">The login username that you must use is “express\_practice\_app”</span>
--   <span id="6e88">The login password that you must use is “EzB5Dxo2dabnQBF8”</span>
+- <span id="96a3">The login username that you must use is “express_practice_app”</span>
+- <span id="6e88">The login password that you must use is “EzB5Dxo2dabnQBF8”</span>
 
 Initialize Sequelize in your assessment and use the following configuration in  
 your `config/config.json` file:
@@ -129,8 +126,8 @@ Generate a model (and migration) for the “HairColor” model with the attribut
 
 Attribute nameAttribute typeConstraintscolorstringunique, not nullable
 
--   <span id="cda4">the “color” column will hold values up to 20 characters in length and  
-    will not allow `NULL`s</span>
+- <span id="cda4">the “color” column will hold values up to 20 characters in length and  
+  will not allow `NULL`s</span>
 
 Generate a model (and migration) for the “Person” model with the attributes:
 
@@ -138,12 +135,12 @@ Attribute nameAttribute typeConstraintsfirstNamestringnot nullablelastNamestring
 
 Configure the migration so that:
 
--   <span id="7b0d">the “firstName” column will hold values up to 50 characters in length and  
-    will not allow `NULL`s</span>
--   <span id="c44e">the “lastName” column will hold values up to 50 characters in length and  
-    will not allow `NULL`s</span>
--   <span id="e6f2">the “hairColorId” will not allow `NULL`s and references the "HairColors"  
-    table</span>
+- <span id="7b0d">the “firstName” column will hold values up to 50 characters in length and  
+  will not allow `NULL`s</span>
+- <span id="c44e">the “lastName” column will hold values up to 50 characters in length and  
+  will not allow `NULL`s</span>
+- <span id="e6f2">the “hairColorId” will not allow `NULL`s and references the "HairColors"  
+  table</span>
 
 Create a seeder file for `HairColors`:
 
@@ -186,12 +183,12 @@ Set up your CSRF middleware to use cookies.
 This page shows a form in which a visitor can add a new person. The form must  
 have
 
--   <span id="4869">a method of “post”</span>
--   <span id="1861">an action of “/new-person”</span>
+- <span id="4869">a method of “post”</span>
+- <span id="1861">an action of “/new-person”</span>
 
 In the form, you should have these inputs with the provided name:
 
-Field HTML nameField typeConstraintsDefault valuesfirstNamesingle-line textrequiredlastNamesingle-line textrequiredagenumberbiographymulti-line texthairColorIddropdownrequiredOne of the pre-defined hair colors\_csrfhiddenThe value provided by the CSURF middleware
+Field HTML nameField typeConstraintsDefault valuesfirstNamesingle-line textrequiredlastNamesingle-line textrequiredagenumberbiographymulti-line texthairColorIddropdownrequiredOne of the pre-defined hair colors_csrfhiddenThe value provided by the CSURF middleware
 
 You should also have a submit button.
 
@@ -218,11 +215,11 @@ you would not do this in a real application.
 When someone accesses your application, they should see a list of people that  
 are stored in your database. The list should contain:
 
--   <span id="8be4">The person’s first name</span>
--   <span id="30c2">The person’s last name</span>
--   <span id="c4ee">The person’s age</span>
--   <span id="392d">A short biography</span>
--   <span id="15a9">Their hair color</span>
+- <span id="8be4">The person’s first name</span>
+- <span id="30c2">The person’s last name</span>
+- <span id="c4ee">The person’s age</span>
+- <span id="392d">A short biography</span>
+- <span id="15a9">Their hair color</span>
 
 Please refer to the screenshot below:
 

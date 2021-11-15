@@ -1,8 +1,6 @@
-research
-========
+# research
 
-research
---------
+## research
 
 [The Penultimate Web Developer’s Cheat Sheet](https://medium.com/p/a02a423139a4)
 

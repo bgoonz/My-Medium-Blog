@@ -85,4 +85,3 @@ Awesome Web Development Youtube Video Archive
 General Learning:[Bryan Guner](https://bryanguner.medium.com/?source=post_sidebar--------------------------post_sidebar-----------)
 
 {% embed url="https://youtu.be/aircAruvnKk" caption="" %}
-

@@ -1,8 +1,6 @@
-web-dev-tools
-=============
+# web-dev-tools
 
-web-dev-tools
--------------
+## web-dev-tools
 
 [The Penultimate Web Developer’s Cheat Sheet](https://medium.com/p/a02a423139a4)
 

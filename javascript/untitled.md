@@ -43,32 +43,32 @@ Related posts: ![](https://cdn-images-1.medium.com/max/2560/1*2FC8D_rbP4cT3jukyd
 The **number** data type in JS is used to represent any numerical  
 values, including integers and decimal numbers. **Basic Arithmetic Operators** are the symbols that perform particular operations.
 
-* **+** \(addition\)
-* **-** \(subtraction\)
-* **asterisk** \(multiplication\)
-* **/** \(division\)
-* **%** \(modulo\)
+- **+** \(addition\)
+- **-** \(subtraction\)
+- **asterisk** \(multiplication\)
+- **/** \(division\)
+- **%** \(modulo\)
 
 JS evaluates more complex expressions using the general math order of  
 operations aka PEMDAS.
 
-* **PEMDAS** : Parentheses, Exponents, Multiplication, Division, Modulo, Addition, Subtraction.
-* _To force a specific order of operation, use the group operator \( \) around a part of the expression._
+- **PEMDAS** : Parentheses, Exponents, Multiplication, Division, Modulo, Addition, Subtraction.
+- _To force a specific order of operation, use the group operator \( \) around a part of the expression._
 
 **Modulo** : Very useful operation to check divisibility of numbers,  
 check for even & odd, whether a number is prime, and much more!  
 _\(Discrete Math concept, circular problems can be solved with modulo\)_
 
-* Whenever you have a smaller number % a larger number, the answer will just be the initial small number.
-* `console.log(7 % 10); // => 7;`
+- Whenever you have a smaller number % a larger number, the answer will just be the initial small number.
+- `console.log(7 % 10); // => 7;`
 
 ## The String Data Type <a id="76b9"></a>
 
 The **string** data type is a primitive data type that used to represent  
 textual data.
 
-* can be wrapped by either **single** or **double** quotation marks, _best to choose one and stick with it for consistency_.
-* If your string contains quotation marks inside, can layer single or double quotation marks to allow it to work.
+- can be wrapped by either **single** or **double** quotation marks, _best to choose one and stick with it for consistency_.
+- If your string contains quotation marks inside, can layer single or double quotation marks to allow it to work.
 
 ```text
 "That's a great string"; (valid)
@@ -76,7 +76,7 @@ textual data.
 'That's a bad string'; (invalid)
 ```
 
-* Alt. way to add other quotes within strings is to use template literals.
+- Alt. way to add other quotes within strings is to use template literals.
 
 ## `This is a template literal` <a id="cbef"></a>
 
@@ -95,32 +95,32 @@ console.log("boots"[1 * 2]); // => "o"
 console.log("boots"["boot".length - 1]); // => "t"
 ```
 
-* we can pass expressions through the brackets as well since JS always evaluates expressions first.
-* The index of the last character of a string is always one less than it’s length.
-* **indexOf\(\)** : method used to find the first index of a given character within a string.
-* `console.log("bagel".indexOf("b")); // => 0 console.log("bagel".indexOf("z")); // => -1`
-* **if the character inside the indexOf\(\) search does not exist in the string, the output will be -1.**
-* the indexOf\(\) search will return the first instanced index of the the char in the string.
-* **concatenate** : word to describe joining strings together into a single string.
+- we can pass expressions through the brackets as well since JS always evaluates expressions first.
+- The index of the last character of a string is always one less than it’s length.
+- **indexOf\(\)** : method used to find the first index of a given character within a string.
+- `console.log("bagel".indexOf("b")); // => 0 console.log("bagel".indexOf("z")); // => -1`
+- **if the character inside the indexOf\(\) search does not exist in the string, the output will be -1.**
+- the indexOf\(\) search will return the first instanced index of the the char in the string.
+- **concatenate** : word to describe joining strings together into a single string.
 
 ## The Boolean Data Type <a id="b731"></a>
 
 The **Boolean** data type is the simplest data type since there are only  
 two values: **true** and **false**.
 
-* **Logical Operators** \(Boolean Operators\) are used to establish logic in our code.
-* **!** \(not\) : reverses a Boolean value.
+- **Logical Operators** \(Boolean Operators\) are used to establish logic in our code.
+- **!** \(not\) : reverses a Boolean value.
 
 `console.log(!true); // => false console.log(!!false); // => false`
 
-* **&&** \(and\) **Truth Table**
+- **&&** \(and\) **Truth Table**
 
 ![](https://cdn-images-1.medium.com/max/800/0*Y4qzqSB0C-9AmtXf.png)
 
-* **Logical Order of Operations** : JS will evaluate !, then &&, then \|\|.
-* **De Morgan’s Law** : Common mistake in Boolean logic is incorrectly distributing ! across parentheses.
-* `!(A || B) === !A && !B; !(A && B) === !A || !B;`
-* In summary, to correctly distribute ! across parentheses we must also flip the operation within.
+- **Logical Order of Operations** : JS will evaluate !, then &&, then \|\|.
+- **De Morgan’s Law** : Common mistake in Boolean logic is incorrectly distributing ! across parentheses.
+- `!(A || B) === !A && !B; !(A && B) === !A || !B;`
+- In summary, to correctly distribute ! across parentheses we must also flip the operation within.
 
 ## Comparison Operators <a id="b016"></a>
 
@@ -128,12 +128,12 @@ All comparison operators will result in a Boolean output.
 
 **The relative comparators**
 
-* **&gt;** \(greater than\)
-* **&lt;** \(less than\)
-* **&gt;=** \(greater than or equal to\)
-* **&lt;=** \(less than or equal to\)
-* **===** \(equal to\)
-* **!==** \(not equal to\)
+- **&gt;** \(greater than\)
+- **&lt;** \(less than\)
+- **&gt;=** \(greater than or equal to\)
+- **&lt;=** \(less than or equal to\)
+- **===** \(equal to\)
+- **!==** \(not equal to\)
 
 > Fun Fact: “a” &lt; “b” is considered valid JS Code because string  
 > comparisons are compared lexicographically \(meaning dictionary order\),  
@@ -145,21 +145,21 @@ All comparison operators will result in a Boolean output.
 
 **Difference between == and ===**
 
-* **===** : Strict Equality, will only return true if the two comparisons are entirely the same.
-* **==** : Loose Equality, will return true even if the values are of a different type, due to coercion. \(Avoid using this\)
+- **===** : Strict Equality, will only return true if the two comparisons are entirely the same.
+- **==** : Loose Equality, will return true even if the values are of a different type, due to coercion. \(Avoid using this\)
 
 ## Variables <a id="a7af"></a>
 
 Variables are used to store information to be referenced and manipulated  
 in a program.
 
-* We initialize a variable by using the **let** keyword and a **=** single equals sign \(assignment operator\).
-* `let bootcamp = "Lambda"; console.log(bootcamp); // "Lambda"`
-* JS variable names can contain any alphanumeric characters, underscores, or dollar signs \(cannot being with a number\).
-* If you do not declare a value for a variable, undefined is automatically set.
-* `let bootcamp; console.log(bootcamp); // undefined`
-* We can change the value of a previously declared variable \(let, not const\) by re-assigning it another value.
-* **let** is the updated version of **var**; there are some differences in terms of hoisting and global/block scope — will be covered later in the course \(common interview question!\)
+- We initialize a variable by using the **let** keyword and a **=** single equals sign \(assignment operator\).
+- `let bootcamp = "Lambda"; console.log(bootcamp); // "Lambda"`
+- JS variable names can contain any alphanumeric characters, underscores, or dollar signs \(cannot being with a number\).
+- If you do not declare a value for a variable, undefined is automatically set.
+- `let bootcamp; console.log(bootcamp); // undefined`
+- We can change the value of a previously declared variable \(let, not const\) by re-assigning it another value.
+- **let** is the updated version of **var**; there are some differences in terms of hoisting and global/block scope — will be covered later in the course \(common interview question!\)
 
 **Assignment Shorthand**
 
@@ -167,9 +167,9 @@ in a program.
 let num = 0;num += 10; // same as num = num + 10num -= 2; // same as num = num - 2num /= 4; // same as num = num / 4num *= 7; // same as num = num * 7
 ```
 
-* In general, any nonsensical arithmetic will result in **NaN** ; usually operations that include undefined.
-* **declaration** : process of simply introducing a variable name.
-* **initialization** : process of both declaring and assigning a variable on the same line.
+- In general, any nonsensical arithmetic will result in **NaN** ; usually operations that include undefined.
+- **declaration** : process of simply introducing a variable name.
+- **initialization** : process of both declaring and assigning a variable on the same line.
 
 ## Functions <a id="678c"></a>
 
@@ -177,24 +177,24 @@ A function is a procedure of code that will run when called. Functions
 are used so that we do not have to rewrite code to do the same thing  
 over and over. \(Think of them as ‘subprograms’\)
 
-* **Function Declaration** : Process when we first initially write our function.
-* Includes three things:
-* Name of the function.
-* A list of _parameters_ \(\)
-* The code to execute {}
-* **Function Calls** : We can call upon our function whenever and wherever\* we want. \(\*wherever is only after the initial declaration\)
-* JS evaluates code top down, left to right.
-* When we execute a declared function later on in our program we refer to this as **invoking** our function.
-* Every function in JS returns undefined unless otherwise specified.
-* When we hit a **return** statement in a function we immediately exit the function and return to where we called the function.
-* When naming functions in JS always use camelCase and name it something appropriate. &gt; Great code reads like English and almost explains itself. Think: Elegant, readable, and maintainable!
+- **Function Declaration** : Process when we first initially write our function.
+- Includes three things:
+- Name of the function.
+- A list of _parameters_ \(\)
+- The code to execute {}
+- **Function Calls** : We can call upon our function whenever and wherever\* we want. \(\*wherever is only after the initial declaration\)
+- JS evaluates code top down, left to right.
+- When we execute a declared function later on in our program we refer to this as **invoking** our function.
+- Every function in JS returns undefined unless otherwise specified.
+- When we hit a **return** statement in a function we immediately exit the function and return to where we called the function.
+- When naming functions in JS always use camelCase and name it something appropriate. &gt; Great code reads like English and almost explains itself. Think: Elegant, readable, and maintainable!
 
 ## Parameters and Arguments <a id="56b3"></a>
 
-* **Parameters** : Comma separated variables specified as part of a function’s declaration.
-* **Arguments** : Values passed to the function when it is invoked.
-* _If the number of arguments passed during a function invocation is different than the number of parameters listed, it will still work._
-* However, is there are not enough arguments provided for parameters our function will likely yield **Nan**.
+- **Parameters** : Comma separated variables specified as part of a function’s declaration.
+- **Arguments** : Values passed to the function when it is invoked.
+- _If the number of arguments passed during a function invocation is different than the number of parameters listed, it will still work._
+- However, is there are not enough arguments provided for parameters our function will likely yield **Nan**.
 
 ![](https://cdn-images-1.medium.com/max/2560/1*2FC8D_rbP4cT3jukydhtkg.png)
 
@@ -214,9 +214,9 @@ Here’s a live code editor where you can mess with any of the examples…
 
 > _Something that data structure and algorithms have in common when talking about time complexity is that they are both dealing with data. When you deal with data you become dependent on them and as a result the time complexity is also dependent of the data that you received. To solve this problem we talk about 3 different time complexity._
 
-* **The best-case complexity: when the data looks the best**
-* **The worst-case complexity: when the data looks the worst**
-* **The average-case complexity: when the data looks average**
+- **The best-case complexity: when the data looks the best**
+- **The worst-case complexity: when the data looks the worst**
+- **The average-case complexity: when the data looks average**
 
 ## Big O notation <a id="b65d"></a>
 
@@ -236,8 +236,8 @@ Arrays are among the oldest and most important data structures and are used by e
 
 Here’s the paradox faced by the creator of JavaScript:
 
-* There are many things one would want to do with a primitive like a string or a number. It would be great to access them using methods.
-* Primitives must be as fast and lightweight as possible.
+- There are many things one would want to do with a primitive like a string or a number. It would be great to access them using methods.
+- Primitives must be as fast and lightweight as possible.
 
 The solution looks a little bit awkward, but here it is:
 
@@ -485,7 +485,7 @@ console.log(found);
 
 [https://codeburst.io/javascript-prototype-cb29d82b8809](https://codeburst.io/javascript-prototype-cb29d82b8809)
 
-[https://www.youtube.com/watch?v=Jh\_Uzqzz\_wM](https://www.youtube.com/watch?v=Jh_Uzqzz_wM)
+[https://www.youtube.com/watch?v=Jh_Uzqzz_wM](https://www.youtube.com/watch?v=Jh_Uzqzz_wM)
 
 [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)  
 [https://javascript.info/closure](https://javascript.info/closure)
@@ -499,4 +499,3 @@ console.log(found);
 [https://www.sitepoint.com/simple-inheritance-javascript/](https://www.sitepoint.com/simple-inheritance-javascript/)
 
 ≡
-

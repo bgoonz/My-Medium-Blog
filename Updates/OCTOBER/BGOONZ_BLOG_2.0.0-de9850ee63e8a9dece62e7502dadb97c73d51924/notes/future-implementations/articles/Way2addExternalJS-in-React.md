@@ -1,17 +1,18 @@
-## React Hooks and other methods
+React Hooks and other methods
+-----------------------------
 
 Despite the wide availability of npm packages, at times, we might need to rely on a few external libraries that require us to import some JS files.
 
 For features used across the application, we can simply add JS files to `head` using the `<script>` tag in our global `index.html` file.
 
-However, for the features that are used in specific components, this makes no sense. Since React doesn’t support the `<script>` tag in `Component`_,_ here are a few ways of appending JS files to specific components.
+However, for the features that are used in specific components, this makes no sense. Since React doesn’t support the `<script>` tag in `Component`*,* here are a few ways of appending JS files to specific components.
 
 This is the easiest way of loading JS files for a beginner.
 
 [React-script-tag](https://www.npmjs.com/package/react-script-tag) is an npm package that provides a React `<script>` tag that supports universal rendering. All standard `<script>` [attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) like `async`, `src`, `type`, and `defer` are supported, including `onLoad` and `onError` callbacks.
 
-**import** ScriptTag **from** 'react-script-tag';const Demo = props => (  
-**<**ScriptTag type**\=**"text/javascript" src**\=**"/path/to/resource.js" **/>  
+**import** ScriptTag **from** 'react-script-tag';const Demo = props ⇒ (  
+**&lt;**ScriptTag type**=**"text/javascript" src\*\*=\*\*"/path/to/resource.js" **/&gt;  
 )**
 
 We also have an `isHydrating` flag, which is a `boolean` value. It defaults to `false` and must be `true` if the client is `hydrate()`ing the server render.
@@ -44,6 +45,6 @@ React allows us to build [custom Hooks](https://reactjs.org/docs/hooks-custom.ht
 
 Which could be used in components as below:
 
-import importScript from 'customHooks/importScript';const Demo = props => {  
- importScript("/path/to/resource.js");  
+import importScript from 'customHooks/importScript';const Demo = props ⇒ {  
+importScript("/path/to/resource.js");  
 }

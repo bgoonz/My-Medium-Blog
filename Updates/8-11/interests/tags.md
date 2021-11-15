@@ -99,4 +99,4 @@
 97. [Ruby](https://medium.com/tag/ruby)
 98. [Dom Manipulation](https://medium.com/tag/dom-manipulation)
 99. [Nextjs](https://medium.com/tag/nextjs)
-100. [Vuejs](https://medium.com/tag/vuejs)
+100.  [Vuejs](https://medium.com/tag/vuejs)
