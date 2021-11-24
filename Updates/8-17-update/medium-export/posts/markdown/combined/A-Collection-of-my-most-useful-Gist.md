@@ -2434,7 +2434,7 @@ Unlike many other languages, there is no `var`, `let`, or `const` to declare
 
 Remember, there is a difference between integers and strings. *Remember: String =* `""`*.* To convert between these two, you can put an int in a `str()` function, and a string in a `int()` function. There is also a less used one, called a float. Mainly, these are integers with decimals. Change them using the `float()` command.
 
-[](https://repl.it/@bgoonz/second-scr?lite=true&referrer=https%3A%2F%2Fbryanguner.medium.com)<https://repl.it/@bgoonz/second-scr?lite=true&amp;referrer=https%3A%2F%2Fbryanguner.medium.com>
+[](https://repl.it/@bgoonz/second-scr?lite=true&referrer=https%3A%2F%2Fbryanguner.medium.com)<https://repl.it/@bgoonz/second-scr?lite=true&referrer=https%3A%2F%2Fbryanguner.medium.com>
 
 ```
 x = 5
@@ -15702,7 +15702,7 @@ Last Read in the browser wins.
 
 [![](https://camo.githubusercontent.com/7cecd636fa0d1d9cf4b51fcca40653ab82e7c2a93d27f46f80e1a0924f2c51e2/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a576d7155794b69756d4d3852434a516f2e706e67)](https://camo.githubusercontent.com/7cecd636fa0d1d9cf4b51fcca40653ab82e7c2a93d27f46f80e1a0924f2c51e2/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f302a576d7155794b69756d4d3852434a516f2e706e67)
 
-- Remember that not all computers have the same fonts on them. - You can import web fonts via an api by using - `@import url('[https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap');`](https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap%27);`) and pasting it st the top of your CSS file. - And then reference it in your font-family. - `font-size` : Changes the size of your font. - Keep in mind the two kind of units CSS uses: - `Absolute` : `Pixels`, Points, Inches, Centimeters. - `Relative` : Em, Rem. - Em: Calulating the size relative to the previous div (bubbles down) - Rem: Calulates relative to the parent element always. - `font-style` : Used to set a font to italics. - `font-weight` : Used to make a font bold. - `text-align` : Used to align your text to the left, center, or right. - `text-decoration` : Use to put lines above, through, or under text. Lines can be solid, dashed, or wavy! - `text-transform` : Used to set text to all lowercase, uppercase, or capitalize all words.
+- Remember that not all computers have the same fonts on them. - You can import web fonts via an api by using - `@import url('[https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap');`](https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap%27);`) and pasting it st the top of your CSS file. - And then reference it in your font-family. - `font-size`: Changes the size of your font. - Keep in mind the two kind of units CSS uses: -`Absolute`:`Pixels`, Points, Inches, Centimeters. - `Relative`: Em, Rem. - Em: Calulating the size relative to the previous div (bubbles down) - Rem: Calulates relative to the parent element always. -`font-style`: Used to set a font to italics. -`font-weight`: Used to make a font bold. -`text-align`: Used to align your text to the left, center, or right. -`text-decoration`: Use to put lines above, through, or under text. Lines can be solid, dashed, or wavy! -`text-transform` : Used to set text to all lowercase, uppercase, or capitalize all words.
 
 **Background-Images**
 
