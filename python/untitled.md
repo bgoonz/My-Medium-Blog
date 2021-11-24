@@ -68,7 +68,7 @@ print(27e-5) # => 0.00027
 
 > **The** **`i`** **is switched to a** **`j`** **in programming.**
 
-T*his is because the letter i is common place as the de facto index for any and all enumerable entities so it just makes sense not to compete for name-**space*** _when there’s another 25 letters that don’t get used for every loop under the sun. My most medium apologies to Leonhard Euler._
+T\*his is because the letter i is common place as the de facto index for any and all enumerable entities so it just makes sense not to compete for name-**space\*** _when there’s another 25 letters that don’t get used for every loop under the sun. My most medium apologies to Leonhard Euler._
 
 ```text
 print(7j) # => 7j
