@@ -14,7 +14,7 @@ import idx from "idx";
 import { isObject, arrEq, isArray } from "../util";
 
 function quote(str) {
-  return "`" + String(str).replace(/`/g, "``") + "`";
+  return `\`${String(str).replace(/`/g, "``")}\``;
 }
 
 function throwErr() {
@@ -197,7 +197,7 @@ function interpretForKeysetPaging(node, dialect) {
     descending = sortKey.order.toUpperCase() === "DESC";
     sortTable = node.as;
     // flip the sort order if doing backwards paging
-    if (idx(node, (_) => _.args.last)) {
+    if (idx(node, ({args}) => args.last)) {
       descending = !descending;
     }
     if (node.orderBy) {
@@ -216,7 +216,7 @@ function interpretForKeysetPaging(node, dialect) {
     descending = sortKey.order.toUpperCase() === "DESC";
     sortTable = node.junction.as;
     // flip the sort order if doing backwards paging
-    if (idx(node, (_) => _.args.last)) {
+    if (idx(node, ({args}) => args.last)) {
       descending = !descending;
     }
     for (let column of wrap(sortKey.key)) {
@@ -229,7 +229,7 @@ function interpretForKeysetPaging(node, dialect) {
     ? "18446744073709551615"
     : "ALL";
   let whereCondition = "";
-  if (idx(node, (_) => _.args.first)) {
+  if (idx(node, ({args}) => args.first)) {
     limit = parseInt(node.args.first, 10) + 1;
     if (node.args.after) {
       const cursorObj = cursorToObj(node.args.after);
@@ -244,7 +244,7 @@ function interpretForKeysetPaging(node, dialect) {
     if (node.args.before) {
       throw new Error('Using "before" with "first" is nonsensical.');
     }
-  } else if (idx(node, (_) => _.args.last)) {
+  } else if (idx(node, ({args}) => args.last)) {
     limit = parseInt(node.args.last, 10) + 1;
     if (node.args.before) {
       const cursorObj = cursorToObj(node.args.before);

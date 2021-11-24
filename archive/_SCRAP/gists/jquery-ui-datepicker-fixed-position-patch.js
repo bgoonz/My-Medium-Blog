@@ -1,7 +1,7 @@
 const checkOffset = $.datepicker._checkOffset;
 
 $.extend($.datepicker, {
-  _checkOffset: function (inst, offset, isFixed) {
+  _checkOffset(inst, offset, isFixed) {
     if (!isFixed) {
       return checkOffset.apply(this, arguments);
     }

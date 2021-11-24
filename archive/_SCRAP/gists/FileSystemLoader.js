@@ -1,15 +1,15 @@
-var nunjucks = require("nunjucks");
-var gaze = require("gaze");
-var lib = require("nunjucks/src/lib");
-var fs = require("fs");
-var path = require("path");
-var _ = require("lodash");
+import nunjucks from "nunjucks";
+import gaze from "gaze";
+import lib from "nunjucks/src/lib";
+import fs from "fs";
+import path from "path";
+import _ from "lodash";
 
 // Node <0.7.1 compatibility
-var existsSync = fs.existsSync || path.existsSync;
+const existsSync = fs.existsSync || path.existsSync;
 
-module.exports = nunjucks.Loader.extend({
-  init: function (searchPaths, options) {
+export default nunjucks.Loader.extend({
+  init(searchPaths, options) {
     this.options = _.extend(
       {
         fileExtension: "njs",
@@ -29,38 +29,38 @@ module.exports = nunjucks.Loader.extend({
     }
 
     if (!this.options.noWatch) {
-      var patterns = _.map(
+      const patterns = _.map(
         this.searchPaths,
-        function (p) {
-          return p + "**/*." + this.options.fileExtension;
-        }.bind(this)
+        p => {
+          return `${p}**/*.${this.options.fileExtension}`;
+        }
       );
       gaze(
         patterns,
-        function (err, watcher) {
+        (err, watcher) => {
           watcher.on(
             "changed",
-            function (filepath) {
+            filepath => {
               if (this.pathsToNames.hasOwnProperty(filepath)) {
                 this.emit("update", this.pathsToNames[filepath]);
               }
-            }.bind(this)
+            }
           );
-        }.bind(this)
+        }
       );
     }
   },
 
-  getSource: function (name) {
-    var nameWithExtension = name;
+  getSource(name) {
+    let nameWithExtension = name;
     if (this.options.fileExtension && !/\.[^\/\\]+$/.test(nameWithExtension)) {
-      nameWithExtension += "." + this.options.fileExtension;
+      nameWithExtension += `.${this.options.fileExtension}`;
     }
-    var fullpath = null;
-    var paths = this.searchPaths;
+    let fullpath = null;
+    const paths = this.searchPaths;
 
-    for (var i = 0; i < paths.length; i++) {
-      var p = path.resolve(paths[i], nameWithExtension);
+    for (let i = 0; i < paths.length; i++) {
+      const p = path.resolve(paths[i], nameWithExtension);
 
       if (existsSync(p)) {
         fullpath = p;

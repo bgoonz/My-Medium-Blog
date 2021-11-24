@@ -1,5 +1,5 @@
 $.validator.setDefaults({
-  onfocusout: function (element, event) {
+  onfocusout(element, event) {
     if (
       element.tagName === "TEXTAREA" ||
       (element.tagName === "INPUT" && element.type !== "password")

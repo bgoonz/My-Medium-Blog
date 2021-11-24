@@ -1,34 +1,34 @@
-var webdriver = require("selenium-webdriver");
-var fs = require("fs");
+import webdriver from "selenium-webdriver";
+import fs from "fs";
 
-var driver = new webdriver.Builder()
+const driver = new webdriver.Builder()
   .withCapabilities(webdriver.Capabilities.phantomjs())
   .build();
 
-webdriver.WebDriver.prototype.saveScreenshot = function (filename) {
-  return driver.takeScreenshot().then(function (data) {
+webdriver.WebDriver.prototype.saveScreenshot = filename => {
+  return driver.takeScreenshot().then(data => {
     fs.writeFile(
       filename,
       data.replace(/^data:image\/png;base64,/, ""),
       "base64",
-      function (err) {
+      err => {
         if (err) throw err;
       }
     );
   });
 };
 
-webdriver.By.sizzle = function (selector) {
+webdriver.By.sizzle = selector => {
   driver
     .executeScript("return typeof Sizzle==='undefined'")
-    .then(function (noSizzle) {
+    .then(noSizzle => {
       if (noSizzle)
         driver.executeScript(
           fs.readFileSync("sizzle.min.js", { encoding: "utf8" })
         );
     });
   return new webdriver.By.js(
-    "return Sizzle('" + selector.replace(/"/g, '\\"') + "')[0]"
+    `return Sizzle('${selector.replace(/"/g, '\\"')}')[0]`
   );
 };
 

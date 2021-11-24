@@ -9,18 +9,18 @@
  * @param   {number}  b       The blue color value
  * @return  {array}           The HSL representation
  */
-exports.rgbToHsl = function (r, g, b) {
+export function rgbToHsl(r, g, b) {
   (r /= 255), (g /= 255), (b /= 255);
-  var max = Math.max(r, g, b),
-    min = Math.min(r, g, b);
-  var h,
-    s,
-    l = (max + min) / 2;
+  const max = Math.max(r, g, b);
+  const min = Math.min(r, g, b);
+  let h;
+  let s;
+  const l = (max + min) / 2;
 
   if (max == min) {
     h = s = 0; // achromatic
   } else {
-    var d = max - min;
+    const d = max - min;
     s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
     switch (max) {
       case r:
@@ -37,7 +37,7 @@ exports.rgbToHsl = function (r, g, b) {
   }
 
   return [h, s, l];
-};
+}
 
 /**
  * Converts an HSL color value to RGB. Conversion formula
@@ -50,8 +50,10 @@ exports.rgbToHsl = function (r, g, b) {
  * @param   {number}  l       The lightness
  * @return  {array}           The RGB representation
  */
-exports.hslToRgb = function (h, s, l) {
-  var r, g, b;
+export function hslToRgb(h, s, l) {
+  let r;
+  let g;
+  let b;
 
   if (s == 0) {
     r = g = b = l; // achromatic
@@ -65,15 +67,15 @@ exports.hslToRgb = function (h, s, l) {
       return p;
     }
 
-    var q = l < 0.5 ? l * (1 + s) : l + s - l * s;
-    var p = 2 * l - q;
+    const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+    const p = 2 * l - q;
     r = hue2rgb(p, q, h + 1 / 3);
     g = hue2rgb(p, q, h);
     b = hue2rgb(p, q, h - 1 / 3);
   }
 
   return [r * 255, g * 255, b * 255].map(Math.round);
-};
+}
 
 /**
  * Converts an RGB color value to HSV. Conversion formula
@@ -86,15 +88,15 @@ exports.hslToRgb = function (h, s, l) {
  * @param   {number}  b       The blue color value
  * @return  {array}           The HSV representation
  */
-exports.rgbToHsv = function (r, g, b) {
+export function rgbToHsv(r, g, b) {
   (r = r / 255), (g = g / 255), (b = b / 255);
-  var max = Math.max(r, g, b),
-    min = Math.min(r, g, b);
-  var h,
-    s,
-    v = max;
+  const max = Math.max(r, g, b);
+  const min = Math.min(r, g, b);
+  let h;
+  let s;
+  const v = max;
 
-  var d = max - min;
+  const d = max - min;
   s = max == 0 ? 0 : d / max;
 
   if (max == min) {
@@ -115,7 +117,7 @@ exports.rgbToHsv = function (r, g, b) {
   }
 
   return [h, s, v];
-};
+}
 
 /**
  * Converts an HSV color value to RGB. Conversion formula
@@ -128,14 +130,16 @@ exports.rgbToHsv = function (r, g, b) {
  * @param   {number}  v       The value
  * @return  {array}           The RGB representation
  */
-exports.hsvToRgb = function (h, s, v) {
-  var r, g, b;
+export function hsvToRgb(h, s, v) {
+  let r;
+  let g;
+  let b;
 
-  var i = Math.floor(h * 6);
-  var f = h * 6 - i;
-  var p = v * (1 - s);
-  var q = v * (1 - f * s);
-  var t = v * (1 - (1 - f) * s);
+  const i = Math.floor(h * 6);
+  const f = h * 6 - i;
+  const p = v * (1 - s);
+  const q = v * (1 - f * s);
+  const t = v * (1 - (1 - f) * s);
 
   switch (i % 6) {
     case 0:
@@ -159,4 +163,4 @@ exports.hsvToRgb = function (h, s, v) {
   }
 
   return [r * 255, g * 255, b * 255].map(Math.round);
-};
+}

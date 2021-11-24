@@ -1,19 +1,14 @@
-exports.bindSelectDataFilter = function (
-  select1,
-  select2,
-  dataAttr,
-  backFilter
-) {
-  var $select1 = $(select1);
-  var $select2 = $(select2);
-  var $options = $select2.find("option"); // we need to cache these outside of the DOM; unfortunately this will break <optgroups>
-  var changeFunc = function () {
-    var $oldOption = $select2.find("option:selected");
-    var selectValue = $select1.val();
+export function bindSelectDataFilter(select1, select2, dataAttr, backFilter) {
+  const $select1 = $(select1);
+  const $select2 = $(select2);
+  const $options = $select2.find("option"); // we need to cache these outside of the DOM; unfortunately this will break <optgroups>
+  const changeFunc = () => {
+    const $oldOption = $select2.find("option:selected");
+    const selectValue = $select1.val();
     if (selectValue && selectValue != "0") {
       $select2.html(
         $options.filter(function () {
-          var dataValue = $(this).data(dataAttr);
+          const dataValue = $(this).data(dataAttr);
           return !this.value || !dataValue || selectValue == dataValue;
         })
       );
@@ -27,8 +22,8 @@ exports.bindSelectDataFilter = function (
   $select1.on("change", changeFunc);
   changeFunc();
   if (backFilter) {
-    $select2.on("change", function () {
-      var dataValue = $select2.find("option:selected").data(dataAttr);
+    $select2.on("change", () => {
+      const dataValue = $select2.find("option:selected").data(dataAttr);
       if (dataValue) {
         $select1
           .find("option:enabled")
@@ -40,7 +35,7 @@ exports.bindSelectDataFilter = function (
       }
     });
   }
-};
+}
 
 // helper function
 $.fn.isDetached = function () {
